@@ -34,6 +34,10 @@ Several buffs are included to open up these options to Hiigaran again, and also 
 ### Bombers
 *Same as ints*
 * **Damage multiplier vs collectors slightly up:** `0.2 => 0.3 (+50%)` (*`hgn_antishipbomblauncher.wepn`*) Same as ints, minus the rush?
+### Probes
+*No reason not to.*
+* **Default stance change:** `Neutral => Evasive` Provides a small boost to maneuverability
+* **Default tactics change:** `Neutral => Passive`
 
 
 
