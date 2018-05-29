@@ -21,7 +21,12 @@ In addition to nerfing and adding weak points to the unstoppable macro engine, t
 *Straddling the line between 'never used' and 'sometimes okay?', Vaygr destroyers are certainly more viable than their Hiigaran counterparts, however they are still somewhat less desirable than their HW1 counterparts. Moreover, they are much worse in their role than HMFs (who are so spammable they represent more HP AND more DPS per unit time in a typical game) and especially laser corvettes, who are immune / highly resistant to most frigates and completely wipe them off the map in turn. Rather than compete with these other units and try to overlap their roles, these changes attempt to buff destroyers while keeping their identity unique.*
 * **Build time down:** `165 => 140 (-17%)` Still outclassed for DPS by more dedicated options, however a lowered build time allows for a faster return on investment regarding represented HP.
 * **Regeneration time down:** `1074 => 900 (-19%)` High HP with a relatively low DPS at high range puts destroyers in an interesting (and mostly unique) position. A group of 2 or more destroyers is able to handle frigates and other destroyers extremely effectively if kited correctly (imagine a cycle of destroyers moving forwards and backwards). Upping their regeneration allows them identify themselves in this role, and provides value to the unit without forcing them to overlap into a DPS role already occupied by so many other units.
-
+### Assault Craft
+*Doing fine, however struggling to follow up a clear sky with good econ damage*
+* **Damage multiplier vs collectors slightly up:** `0.33 => 0.5 (+51%)` Unscouted int rushes should hurt. Being flanked should hurt.
+### Bombers
+*Same as ints*
+* **Damage multiplier vs collectors slightly up:** `0.2 => 0.3 (+50%)` Same as ints, minus the rush?
 
 
 ## Nerfs
@@ -30,6 +35,8 @@ In addition to nerfing and adding weak points to the unstoppable macro engine, t
 *One of the most oppressive aspects of facing a Vaygr player is attempting to keep up with their production. Vaygr have the fastest building and cheapest carriers in the game, which is a core tenet of their playstyle - however, the decision of 'carrier or not to carrier' is largely answered for the Vaygr player by the presence of a cheap, easy-access upgrade which they can use to superdrive their production even further. Since Vaygr will almost always have **more** carriers, this upgrade will naturally effect more ships. This, in tandem with its easy access, is too overbearing to deal with. (FYI, all imp. manufacturing upgrades are a 1.3x multiplier)*
 * **Cost up:** `1500 => 2000 (+33%)`
 * **Research time up:** `100 => 120 (+20%)`
+### Missile Corvettes
+*Missile corvettes utterly wipe collectors off the face of the galaxy. No unit even comes close to their collector kill speed. Combined with their high survivability, missile vettes are **slightly** too good in this role.
 ### Scouts
 *Part of a larger problem in HWR, scouts are currently waypointable to provide extremely hard to kill vision for a low cost and low attention investment.*
 * **Primary sensor radius down (blue sphere in manager):** `8000 => 6500 (-18%)`
