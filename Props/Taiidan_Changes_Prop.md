@@ -34,10 +34,12 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
 * **Damage multiplier vs frigates up:** `0.55 => 1.0 (+81%)` (*`tai_hvcorvette1.wepn; tai_hvcorvette2.wepn`*) This causes heavies to be worth about 0.3 torpedo frigates which reflects their cost and build time.
 
 ### Repair Corvettes
-*Not bad, however their main role (fast response repairer) is sabotaged by a lackluster speed stat. Repair vettes will often fail to move into range with a friendly vette / whatever before its already dead. In the case of vettes, they can often strafe or move away faster than the repair vette can follow.*
+*Not bad, however their main role (fast response repairer) is sabotaged by a lackluster speed stat. Repair vettes will often fail to move into range with a friendly vette / whatever before its already dead. In the case of vettes, they can often strafe or move away faster than the repair vette can follow. Taiidan repair vettes also have a specific issue where their repair beam is fixed forwards, this means they waste tons of time positioning themselves before they think they can shoot.*
 * **Max speed up:** `255 => 290 (+14%)`
 * **Rotation accel time down:** `0.6 => 0.3 (-50%)`
 * **Rotation brake time down:** `0.3 => 0.2 (-33%)`
+* **Weapon turret can now turn:** `[0, 0] => [-45, 45]` (*`tai_repairgunheal.wepn`*) Now matches Kushan repair vette behavior.
+* **Removed nonsensical firing cone range:** `80 -> 0` (*`tai_repairgunheal.wepn`*)
 ### Multigun Corvettes
 *Outclassed by light vettes on all fronts, multiguns should come into the fore with the light vette nerf (below). However, even when uncontested in fighter sniping, the speed and especially agility of multiguns leaves a lot to be desired, especially considering their target unit class.*
 * **Max speed up:** `275 => 290 (+6%)`
@@ -66,10 +68,15 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
 * **Max speed up:** `165 => 230 (+39%)`
 * **Max rotation speed up:"** `22 => 30 (+36%)`
 * **Rotation accel time down:** `0.75 => 0.5 (-33%)`
+* **Default stance change:** `Neutral => Evasive`
+* **Default tactics change:** `Neutral => Passive`
 * **Max HP up:** `9000 => 14000 (+55%)`
 ### Probes
 *No reason not to.*
 * **Default stance change:** `Neutral => Evasive` Provides a small boost to maneuverability
+* **Default tactics change:** `Neutral => Passive`
+### Proximity Detector
+* **Default stance change:** `Neutral => Evasive`
 * **Default tactics change:** `Neutral => Passive`
 
 
