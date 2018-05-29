@@ -23,10 +23,10 @@ In addition to nerfing and adding weak points to the unstoppable macro engine, t
 * **Regeneration time down:** `1074 => 900 (-19%)` High HP with a relatively low DPS at high range puts destroyers in an interesting (and mostly unique) position. A group of 2 or more destroyers is able to handle frigates and other destroyers extremely effectively if kited correctly (imagine a cycle of destroyers moving forwards and backwards). Upping their regeneration allows them identify themselves in this role, and provides value to the unit without forcing them to overlap into a DPS role already occupied by so many other units.
 ### Assault Craft
 *Doing fine, however struggling to follow up a clear sky with good econ damage*
-* **Damage multiplier vs collectors slightly up:** `0.33 => 0.5 (+51%)` Unscouted int rushes should hurt. Being flanked should hurt.
+* **Damage multiplier vs collectors slightly up:** `0.33 => 0.5 (+51%)` (*`vgr_flechettecannon.wepn`*) Unscouted int rushes should hurt. Being flanked should hurt.
 ### Bombers
 *Same as ints*
-* **Damage multiplier vs collectors slightly up:** `0.2 => 0.3 (+50%)` Same as ints, minus the rush?
+* **Damage multiplier vs collectors slightly up:** `0.17 => 0.3 (+76%)` (*`vgr_antishipbomblauncher.wepn`*) Same as ints, minus the rush?
 
 
 ## Nerfs
@@ -36,7 +36,8 @@ In addition to nerfing and adding weak points to the unstoppable macro engine, t
 * **Cost up:** `1500 => 2000 (+33%)`
 * **Research time up:** `100 => 120 (+20%)`
 ### Missile Corvettes
-*Missile corvettes utterly wipe collectors off the face of the galaxy. No unit even comes close to their collector kill speed. Combined with their high survivability, missile vettes are **slightly** too good in this role.
+*Missile corvettes utterly wipe collectors off the face of the galaxy. No unit even comes close to their collector kill speed. Combined with their high survivability, missile vettes are **slightly** too good in this role.*
+* **Damage multiplier vs collectors slightly down:** `1.0 => 0.9` (*`vgr_concussionmissilelauncher.wepn`*)
 ### Scouts
 *Part of a larger problem in HWR, scouts are currently waypointable to provide extremely hard to kill vision for a low cost and low attention investment.*
 * **Primary sensor radius down (blue sphere in manager):** `8000 => 6500 (-18%)`
