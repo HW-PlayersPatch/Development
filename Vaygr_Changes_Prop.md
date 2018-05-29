@@ -27,7 +27,7 @@ In addition to nerfing and adding weak points to the unstoppable macro engine, t
 ## Nerfs
 
 ### Improved Manufacturing (Carriers)
-*One of the most oppressive aspects of facing a Vaygr player is attempting to keep up with their production. Vaygr have the fastest building and cheapest carriers in the game, which is a core tenet of their playstyle - however, the decision of 'carrier or not to carrier' is largely answered for the Vaygr player by the presence of a cheap, easy-access upgrade which they can use to superdrive their production even further. (FYI, all imp. manufacturing upgrades are a 1.3x multiplier)*
+*One of the most oppressive aspects of facing a Vaygr player is attempting to keep up with their production. Vaygr have the fastest building and cheapest carriers in the game, which is a core tenet of their playstyle - however, the decision of 'carrier or not to carrier' is largely answered for the Vaygr player by the presence of a cheap, easy-access upgrade which they can use to superdrive their production even further. Since Vaygr will almost always have **more** carriers, this upgrade will naturally effect more ships. This, in tandem with its easy access, is too overbearing to deal with. (FYI, all imp. manufacturing upgrades are a 1.3x multiplier)*
 * **Cost up:** `1500 => 2000 (+33%)`
 * **Research time up:** `100 => 120 (+20%)`
 ### Scouts
