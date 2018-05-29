@@ -42,8 +42,8 @@ In addition to nerfing and adding weak points to the unstoppable macro engine, t
 * *It introduces extra volatility into an already volatile game*
 
 *Removing EMP or changing its mechanics would be short sighted - this is a still a skill-based ability which should reward a player for correct positioning and timing, however it is simply too oppressive, especially for races trying to prevent Vaygr macro from spiralling out of control. Instead of changing EMP itself, some peripheral factors are changing, such as scout EMP shielding (so they stun themselves more easily, making EMP have an associated risk for its reward).*
-* **Cost up:** `1500 => 2000` Having unrivalled dominance in fighter battles should come with a price tag.
-* **Research time up:** `70 => 90` It should also be pre-meditated.
+* **Cost up:** `1500 => 2000 (+33%)` Having unrivalled dominance in fighter battles should come with a price tag.
+* **Research time up:** `70 => 90 (+29%)` It should also be pre-meditated.
 ### Mobile Refineries
 *Losing refineries due to poor scouting/defence is currently a minor annoyance at best. Incentivising refinery snipes on smaller maps leads to less linear gameplay.*
 * **Cost up:** `800 => 1000 (+25%)`
