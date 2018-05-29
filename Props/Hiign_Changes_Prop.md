@@ -27,13 +27,13 @@ Several buffs are included to open up these options to Hiigaran again, and also 
 *Destroyers are currently not worth the build time; even their relatively high HP value is offset by a 165 second build time: ion cannons build *more than three times faster*, from easier to build (and more plentiful) queues, and whats worse: four ions are already a match for the HP a destroyer represents. Factor in other options such as ion platforms, battlecruisers and pulsars, and destroyers are simply outclassed on all fronts. Rather than compete with these other units and try to overlap their roles, these changes attempt to buff destroyers while keeping their identity unique.*
 * **Build time down:** `165 => 140 (-17%)` Still outclassed for DPS by more dedicated options, however a lowered build time allows for a faster return on investment regarding represented HP.
 * **Regeneration time down:** `1074 => 900 (-19%)` High HP with a relatively low DPS *at high range* puts destroyers in an interesting (and mostly unique) position. A group of 2 or more destroyers is able to handle frigates and other destroyers extremely effectively if kited correctly (imagine a cycle of destroyers moving forwards and backwards). Upping their regeneration allows them identify themselves in this role, and provides value to the unit without forcing them to overlap into a DPS role already occupied by so many other units.
-* **Damage multiplier vs collectors up:** `0.7 => 1.0 (+42%)` Destroyers are currently underperforming against collectors. Jumping a destroyer at an angle / through a gap in inhibs in order to snipe collectors is an old style which is currently never used. This is *partly* because of their other issues, however collectors (especially upgraded HW2 collectors) are shrugging off the damage coming from a super-capital ship too easily.
+* **Damage multiplier vs collectors up:** `0.7 => 1.0 (+42%)` (*`hgn_kineticburstcannondestroyer.wepn`*) Destroyers are currently underperforming against collectors. Jumping a destroyer at an angle / through a gap in inhibs in order to snipe collectors is an old style which is currently never used. This is *partly* because of their other issues, however collectors (especially upgraded HW2 collectors) are shrugging off the damage coming from a super-capital ship too easily.
 ### Interceptors
 *Doing fine, however struggling to follow up a clear sky with good econ damage*
-* **Damage multiplier vs collectors slightly up:** `0.8 => 0.9 (+12.5%)` Unscouted int rushes should hurt. Being flanked should hurt.
+* **Damage multiplier vs collectors slightly up:** `0.33 => 0.5 (+51%)` (*`hgn_kineticautogun.wepn`*) Unscouted int rushes should hurt. Being flanked should hurt.
 ### Bombers
 *Same as ints*
-* **Damage multiplier vs collectors slightly up:** `0.2 => 0.3 (+50%)` Same as ints, minus the rush?
+* **Damage multiplier vs collectors slightly up:** `0.2 => 0.3 (+50%)` (*`hgn_antishipbomblauncher.wepn`*) Same as ints, minus the rush?
 
 
 
@@ -41,8 +41,8 @@ Several buffs are included to open up these options to Hiigaran again, and also 
 
 ### Pulsar Corvettes
 *Currently the focal point of Hiigaran play (in part due to corvettes being so amazing in general now), pulsars have too much power in too many scenarios. Distributing some of this power to torpedoes and destroyers is a healthier solution*
-* **Damage multiplier vs frigates *(Medium armour)* slightly down:** `1.5 => 1.35 (-10%)` Hiigaran have many options for dealing with frigates - most of them are designed for this role and are simply underpowered. Pulsars should not act as a bandaid for underperforming partners.
-* **Damage multiplier vs collectors down:** `0.59 => 0.4 (-32%)` There is no reason for pulsars to perform this well against collectors. They are already outperforming most other vettes (except missiles) in this role whilst also outperforming most other vettes in most other roles. Generalist units are fine, but not to this extent.
+* **Damage multiplier vs frigates *(Medium armour)* slightly down:** `1.5 => 1.35 (-10%)` (*`hgn_pulsar.wepn`*) Hiigaran have many options for dealing with frigates - most of them are designed for this role and are simply underpowered. Pulsars should not act as a bandaid for underperforming partners.
+* **Damage multiplier vs collectors down:** `0.59 => 0.4 (-32%)` (*`hgn_pulsar.wepn`*) There is no reason for pulsars to perform this well against collectors. They are already outperforming most other vettes (except missiles) in this role whilst also outperforming most other vettes in most other roles. Generalist units are fine, but not to this extent.
 ### Scouts
 *Part of a larger problem in HWR, scouts are currently waypointable to provide extremely hard to kill vision for a low cost and low attention investment.*
 * **Primary sensor radius down (blue sphere in manager):** `9000 => 6500 (-27%)`
