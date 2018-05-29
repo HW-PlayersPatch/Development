@@ -9,9 +9,9 @@ Several buffs are included to open up these options to Hiigaran again, and also 
 ## Buffs
 
 ### Minelayers
-*Currently in the 'never used' tier of units, minelayers are currently held back not by their stats or DPS, but their infastructure (and their own) cost and build times.*
+*Currently in the 'never used' tier of units, minelayers are currently held back not by their stats or DPS, but their infastructure (and their own) cost and build times. Minelayers have great potential as a backstab unit, these changes are designed to make them easier to deploy during normal build cycles.*
 * **Cost down:** `800 => 600 (-25%)`
-* **Build time down:** `45 => 35 (-22%)`
+* **Build time down:** `45 => 40 (-9%)`
 ### Minelayer Research
 * **Cost down:** `750 => 600 (-20%)`
 * **Research time down:** `40 => 30 (-25%)`
