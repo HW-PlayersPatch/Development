@@ -38,6 +38,7 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
 * **Max speed up:** `255 => 290 (+14%)`
 * **Rotation accel time down:** `0.6 => 0.3 (-50%)`
 * **Rotation brake time down:** `0.3 => 0.2 (-33%)`
+* **Evasive tactics no longer reduce weapon damage:** `0.9 => 1.0` Reducing weapon DPS means the healing weapon's output is also reduced.
 * **Weapon turret can now turn:** `[0, 0] => [-45, 45]` (*`tai_repairgunheal.wepn`*) Now matches Kushan repair vette behavior.
 * **Removed nonsensical firing cone range:** `80 -> 0` (*`tai_repairgunheal.wepn`*)
 ### Multigun Corvettes
@@ -54,12 +55,7 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
 * **Max HP up:** `25000 => 30000 (+20%)`
 * **Regen time down:** `1500 => 900 (-40%)`
 * **Default stance change:** `Neutral => Evasive` Provides a small boost to maneuverability
-* **Default tactics change:** `Neutral => Passive`
-### Field Frigates
-*Similar reasoning to the agility buff to [Hiigaran field frigates](https://github.com/HW-PlayersPatch/2.3/blob/master/Props/Hiigaran_Changes_Prop.md#defence-field-frigates), Taiidan field frigates are simply too slow to react accordingly to the threats they are designed to handle (light munitions).*
-* **Max speed up:** `166 => 210 (+26%)`
-* **Max rotation speed up:** `25 => 30 (+20%)`
-* **Rotation accel time down:** `0.75 => 0.5 (-33%)`
+* **Default tactics change:** `Defensive => Passive`
 ### Bombers
 *Doing fine, but doing surprisingly low damage to collectors.*
 * **Damage multiplier vs collectors slightly up:** `0.2 => 0.3 (+50%)` (*`hw1_bomber.wepn`*)
@@ -69,16 +65,21 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
 * **Max rotation speed up:"** `22 => 30 (+36%)`
 * **Rotation accel time down:** `0.75 => 0.5 (-33%)`
 * **Default stance change:** `Neutral => Evasive`
-* **Default tactics change:** `Neutral => Passive`
+* **Default tactics change:** `Defensive => Passive`
 * **Max HP up:** `9000 => 14000 (+55%)`
 ### Probes
 *No reason not to.*
 * **Default stance change:** `Neutral => Evasive` Provides a small boost to maneuverability
-* **Default tactics change:** `Neutral => Passive`
+* **Default tactics change:** `Defensive => Passive`
 ### Proximity Detector
 * **Default stance change:** `Neutral => Evasive`
-* **Default tactics change:** `Neutral => Passive`
-
+* **Default tactics change:** `Defensive => Passive`
+### Field Frigates
+*Similar reasoning to the agility buff to [Hiigaran field frigates](https://github.com/HW-PlayersPatch/2.3/blob/master/Props/Hiigaran_Changes_Prop.md#defence-field-frigates), Taiidan field frigates are simply too slow to react accordingly to the threats they are designed to handle (light munitions).*
+* **Max speed up:** `166 => 210 (+26%)`
+* **Max rotation speed up:** `25 => 30 (+20%)`
+* **Rotation accel time down:** `0.75 => 0.5 (-33%)`
+* **Default stance change:** `Neutral => Evasive`
 
 
 ## Nerfs
@@ -95,7 +96,10 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
   * vs `LightArmour_hw1`: `0.5 => 0.4 (-20%)`
 ### Heavy Corvettes
 *No need to overlap the anti-corvette role with functioning assault frigates. Still decent.*
-* **Damage multiplier vs corvettes slightly down:** `0.275 => 0.25 (-9%)`
+* **Damage multiplier vs corvettes slightly down:** 
+* (*`tai_hvcorvette1.wepn; tai_hvcorvette2.wepn`*)
+ * vs `LightArmour`: `0.275 => 0.25 (-9%)`
+ * vs `LightArmour_hw1`: `0.275 => 0.25 (-9%)`
 ### Minelayer Corvettes
 *Compared to its 'never build' HW2 counterparts, the HW1 minelayer is much cheaper, faster building and more accessible. Its stats are a little worse and it can't clear mines, but ints fill this role anyway.*
 * **Build time slightly up:** `25 => 30`
