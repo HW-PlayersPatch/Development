@@ -47,6 +47,9 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
 * **Max rotation speed up a lot:** `97 => 170 (+75%)` Contrast to gunships: `163`. Multiguns need to turn to face their targets due to their attack script (stationary pivot vs circling)
 * **Rotation accel time down:** `1.65 => 0.65 (-61%)` Contrast to gunships: `0.6`
 * **Rotation brake time down:** `0.825 => 0.4 (-51%)`
+### Resource Collectors
+*A plethora of units from all races were buffed against collectors this update. HW1 collectors were already easier to snipe for most units due to their slow movespeed and large hitboxes. A slight buff to their HP keeps HW1 players from fielding collectors which are made of papier mache.*
+* **Max HP up:** `6000 => 7000 (+17%)`
 ### Resource Controllers
 *Outclassed heavily by its HW2 counterpart, with just one dropoff, no hull defence, and glacial movement speed / agility, and more expensive to boot. HW1 refineries need some love.*
 * **Build time down slightly:** `60 => 55 (-8%)`
