@@ -16,6 +16,7 @@ Several buffs are included to open up these options to Hiigaran again, and also 
 * **Cost down:** `750 => 600 (-20%)`
 * **Research time down:** `40 => 30 (-25%)`
 ### Torpedo Frigates
+* **Missile speed up:** `<need cloaked>`
 *Currently consigned to killing collectors only, torpedo frigates are fine by the numbers: however some minimal micro from your opponent will leave you wishing you never built a frigate facility. HW2 collectors and most vettes can **outrun** torpedo missiles.*
 * **Missile speed up:** To allow missiles to catch corvettes and collectors reliably.
 ### Defence Field Frigates
@@ -25,7 +26,7 @@ Several buffs are included to open up these options to Hiigaran again, and also 
 * **Rotation accel time:** `0.75 => 0.5 (-33%)`
 ### Destroyers
 *Destroyers are currently not worth the build time; even their relatively high HP value is offset by a 165 second build time: ion cannons build *more than three times faster*, from easier to build (and more plentiful) queues, and whats worse: four ions are already a match for the HP a destroyer represents. Factor in other options such as ion platforms, battlecruisers and pulsars, and destroyers are simply outclassed on all fronts. Rather than compete with these other units and try to overlap their roles, these changes attempt to buff destroyers while keeping their identity unique.*
-* **Build time down:** `165 => 140 (-17%)` Still outclassed for DPS by more dedicated options, however a lowered build time allows for a faster return on investment regarding represented HP.
+* **Build time down:** `165 => 148 (-10%)` Still outclassed for DPS by more dedicated options, however a lowered build time allows for a faster return on investment regarding represented HP.
 * **Regeneration time down:** `1074 => 900 (-19%)` High HP with a relatively low DPS *at high range* puts destroyers in an interesting (and mostly unique) position. A group of 2 or more destroyers is able to handle frigates and other destroyers extremely effectively if kited correctly (imagine a cycle of destroyers moving forwards and backwards). Upping their regeneration allows them identify themselves in this role, and provides value to the unit without forcing them to overlap into a DPS role already occupied by so many other units.
 * **Damage multiplier vs collectors up:** `0.7 => 1.0 (+42%)` (*`hgn_kineticburstcannondestroyer.wepn`*) Destroyers are currently underperforming against collectors. Jumping a destroyer at an angle / through a gap in inhibs in order to snipe collectors is an old style which is currently never used. This is *partly* because of their other issues, however collectors (especially upgraded HW2 collectors) are shrugging off the damage coming from a super-capital ship too easily.
 ### Interceptors
@@ -33,12 +34,17 @@ Several buffs are included to open up these options to Hiigaran again, and also 
 * **Damage multiplier vs collectors slightly up:** `0.33 => 0.5 (+51%)` (*`hgn_kineticautogun.wepn`*) Unscouted int rushes should hurt. Being flanked should hurt.
 ### Bombers
 *Same as ints*
-* **Damage multiplier vs collectors slightly up:** `0.2 => 0.3 (+50%)` (*`hgn_antishipbomblauncher.wepn`*) Same as ints, minus the rush?
-### All Probes
+* **Damage multiplier vs collectors slightly up:** `0.17 => 0.25 (+32%)` (*`hgn_antishipbomblauncher.wepn`*) Same as ints, minus the rush?
+### Probes
 *No reason not to.*
 * **Default stance change:** `Neutral => Evasive` Provides a small boost to maneuverability
 * **Default tactics change:** `Defensive => Passive`
-
+### Proximity Probes
+* **Default stance change:** `Neutral => Evasive` Provides a small boost to maneuverability
+* **Default tactics change:** `Defensive => Passive`
+### Sensor Distortion Probes
+* **Default stance change:** `Neutral => Evasive` Provides a small boost to maneuverability
+* **Default tactics change:** `Defensive => Passive`
 
 
 ## Nerfs
@@ -57,7 +63,7 @@ Several buffs are included to open up these options to Hiigaran again, and also 
 ### Mobile Refinery Armor Upgrade
 *In the same vein as the price hike for building refineries, the cost of upgrading this unit is stunningly low. This is currently a 'why not?' upgrade.*
 * **Cost up:** `400 => 1000 (+150%)`
-* **Research time up:** `60 => 90 (+50%)`
+* **Research time up:** `60 => 75 (+25%)`
 ### Resource Collector Armor Upgrade
 *Collectors are currently shrugging off harrassment damage with no problems - harrassment is an attention-intensive option for the harrasser, so it should be for the harrassed also. Tanky workers mean the defender has far less to worry about, and the harrasser will find their return-on-investment depressingly low. Fighters in particular trade quite poorly against even a single layer of hull defence.*
 * **Cost up:** `800 => 1100 (+38%)`
