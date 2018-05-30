@@ -27,10 +27,10 @@ In addition to nerfing and adding weak points to the unstoppable macro engine, t
 ### Bombers
 *Same as ints*
 * **Damage multiplier vs collectors slightly up:** `0.17 => 0.3 (+76%)` (*`vgr_antishipbomblauncher.wepn`*) Same as ints, minus the rush?
-### Probes
+### All Probes
 *No reason not to.*
 * **Default stance change:** `Neutral => Evasive` Provides a small boost to maneuverability
-* **Default tactics change:** `Neutral => Passive`
+* **Default tactics change:** `Defensive => Passive`
 
 
 
