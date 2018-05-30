@@ -43,6 +43,10 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 * **Rotation accel time down:** `1.65 => 0.65 (-61%)` Contrast to gunships: `0.6`
 * **Rotation brake time down:** `0.825 => 0.4 (-51%)`
 
+### Resource Collectors
+*See the [note for the same change](https://github.com/HW-PlayersPatch/2.3/blob/master/Props/Taiidan_Changes_Prop.md#resource-collectors) happening to Taiidan collectors.*
+* **Max HP up:** `6000 => 7000 (+17%)`
+
 ### Resource Controllers
 *See the [note for the same change](https://github.com/HW-PlayersPatch/2.3/blob/master/Props/Taiidan_Changes_Prop.md#resource-controllers) happening to Taiidan resource controllers.*
 * **Build time down slightly:** `60 => 55 (-8%)`
