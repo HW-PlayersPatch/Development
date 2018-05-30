@@ -80,7 +80,7 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 * **Default tactics change:** `Defensive => Passive`
 
 ### Cloaked Fighters
-*Cloaked fighters sturggle to find a place in the game - their stats **would** let them be something akin to super-interceptors, however their costs and unit cap means they struggle to find a place here. These changes instead emphasise the guerilla aspects of cloaked fighters, making them a true harrassment tool to be feared.*
+*Cloaked fighters struggle to find a place in the game - their stats **would** let them be something akin to super-interceptors, however their costs and unit cap means they struggle to find a place here. These changes instead emphasise the guerilla aspects of cloaked fighters, making them a true harrassment tool to be feared.*
 * **Unit caps raised by 1.5x:**
   * `12 => 18` in `small`
   * `20 => 30` in `normal`
