@@ -1,75 +1,71 @@
-supplyLimit("Fighter", 100);
+supplyLimit("Fighter", 125);
 
-supplyLimit("Scout", 24);
-supplyLimit("Interceptor", 100);
-supplyLimit("Bomber", 100);
-supplyLimit("LanceFighter", 95);
-supplyLimit("Defenders", 32);
-supplyLimit("Defensefighters", 15);
-supplyLimit("CloakedFighters", 25);
+supplyLimit("Scout", 30);
+supplyLimit("Interceptor", 125);
+supplyLimit("Bomber", 125);
+supplyLimit("LanceFighter", 125);
+supplyLimit("Defenders", 38);
+supplyLimit("Defensefighters", 20);
+supplyLimit("CloakedFighters", 45);
 --
--- Vaygr FamilyOverride Fighter 170
--- Vaygr ShipOverride Interceptor 140
--- Vaygr ShipOverride Bomber 140
+-- Vaygr FamilyOverride Fighter 205
+-- Vaygr ShipOverride Interceptor 175
+-- Vaygr ShipOverride Bomber 175
 --
-supplyLimit("Corvette", 60);
+supplyLimit("Corvette", 75);
 
-supplyLimit("MinelayerCorvette",6);
-supplyLimit("CommandCorvette",3);
-supplyLimit("SalvageCorvette",18);
+supplyLimit("MinelayerCorvette",8);
+supplyLimit("CommandCorvette",4);
+supplyLimit("SalvageCorvette",22);
 --
--- Vaygr FamilyOverride Corvette 80
+-- Vaygr FamilyOverride Corvette 100
 --
-supplyLimit("Frigate", 30);
+supplyLimit("Frigate", 35);
 
-supplyLimit("DefenseFieldFrigate",3);
-supplyLimit("CaptureFrigate",8);		
+supplyLimit("DefenseFieldFrigate",4);
+supplyLimit("CaptureFrigate",10);
 --
--- Kushan FamilyOverride Frigate 24
--- Taiidan FamilyOverride Frigate 24	
---
-supplyLimit("Capital", 21);
-	
-supplyLimit("Destroyer", 9);
-supplyLimit("MissileDestroyer", 4);
-supplyLimit("Carrier", 4);
-supplyLimit("Battlecruiser",3);
-supplyLimit("HeavyCruiser",3);
+supplyLimit("Capital", 27);
+
+supplyLimit("Destroyer", 11);
+supplyLimit("MissileDestroyer", 6);	
+supplyLimit("Carrier", 5);
+supplyLimit("Battlecruiser",6);
+supplyLimit("HeavyCruiser",6);
 supplyLimit("Shipyard", 1);
 --
-supplyLimit("Utility", 55);
+supplyLimit("Utility", 71);
 
-supplyLimit("Probe", 8);
-supplyLimit("ECMProbe", 8);
-supplyLimit("ProximitySensor", 8);
+supplyLimit("Probe", 12);
+supplyLimit("ECMProbe", 12);
+supplyLimit("ProximitySensor", 12);
 --
-supplyLimit("Resource", 31);
+supplyLimit("Resource", 35);
 
-supplyLimit("ResourceCollector", 26);
+supplyLimit("ResourceCollector", 30);
 supplyLimit("ResourceController", 5);
 --
-supplyLimit("NonCombat", 40);
+supplyLimit("NonCombat", 60);
 
-supplyLimit("Probe_hw1", 8);
-supplyLimit("ProximitySensor_hw1", 8);
+supplyLimit("Probe_hw1", 12);
+supplyLimit("ProximitySensor_hw1", 12);
 supplyLimit("Research", 1);
 supplyLimit("Research1", 1);
 supplyLimit("Research2", 1);
 supplyLimit("Research3", 1);
 supplyLimit("Research4", 1);
 supplyLimit("Research5", 1);
-supplyLimit("CloakGenerator", 6);
-supplyLimit("GravWellGenerator", 6);
-supplyLimit("SensorArray", 6);
+supplyLimit("CloakGenerator", 10);
+supplyLimit("GravWellGenerator", 10);
+supplyLimit("SensorArray", 10);
 --
-supplyLimit("Platform", 30);
+supplyLimit("Platform", 35);
 
-supplyLimit("HyperspacePlatform", 8);
+supplyLimit("HyperspacePlatform", 10);
 --
 supplyLimit("Mothership", 1);
 --
 supplyLimit("SinglePlayerMisc", 100);
-
 
 
 

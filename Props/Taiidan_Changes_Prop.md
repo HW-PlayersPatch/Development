@@ -42,9 +42,9 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
 * **Weapon turret can now turn:** `[0, 0] => [-45, 45]` (*`tai_repairgunheal.wepn`*) Now matches Kushan repair vette behavior.
 * **Removed nonsensical firing cone range:** `80 -> 0` (*`tai_repairgunheal.wepn`*)
 ### Multigun Corvettes
-*Outclassed by light vettes on all fronts, multiguns should come into the fore with the light vette nerf (below). However, even when uncontested in fighter sniping, the speed and especially agility of multiguns leaves a lot to be desired, especially considering their target unit class.*
+*Outclassed by light vettes on all fronts, multiguns should come into the fore with the light vette nerf (below). However, even when uncontested in fighter sniping, the speed and especially agility of multiguns leaves a lot to be desired, especially considering their target unit class. The main cause of unreliability for multiguns is *time spent not firing*, which is influenced by many factors - these changes aim to up the amount of time multiguns actually spend firing at the enemy.*
 * **Max speed up:** `275 => 290 (+6%)`
-* **Max rotation speed up a lot:** `97 => 170 (+75%)` Contrast to gunships: `163`. Multiguns need to turn to face their targets due to their attack script (stationary pivot vs circling)
+* **Max rotation speed up a lot:** `97 => 170 (+75%)` Contrast to gunships: `163`. Multiguns need to turn to face their targets due to their attack script (strafe + pivot vs circling)
 * **Rotation accel time down:** `1.65 => 0.65 (-61%)` Contrast to gunships: `0.6`
 * **Rotation brake time down:** `0.825 => 0.4 (-51%)`
 ### Resource Collectors
