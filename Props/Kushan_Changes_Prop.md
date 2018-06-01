@@ -181,5 +181,5 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 ### Minelayer Corvettes
 *Compared to its 'never build' HW2 counterparts, the HW1 minelayer is much cheaper, faster building and more accessible. Its stats are a little worse and it can't clear mines, but ints can easily fill this role anyway.*
 * **Build time slightly up:** `25 => 30 (+20%)`
-* **Removed nonsensical evasive stance hit to engine acceleration:** `0.8 => 1.0 (+25%)` Still a small buff over the base game
-* **Removed nonsensical evasive stance hit to thruster acceleration:** `0.8 => 1.0 (+25%)` Still a small buff over the base game
+* **Removed nonsensical evasive stance hit to engine acceleration:** `0.8 => 1.0 (+25%)`
+* **Removed nonsensical evasive stance hit to thruster acceleration:** `0.8 => 1.0 (+25%)`
