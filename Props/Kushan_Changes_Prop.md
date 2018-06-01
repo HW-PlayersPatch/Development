@@ -152,8 +152,8 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 *No need to overlap the anti-corvette role with functioning assault frigates. Still decent.*
 * **Damage multiplier vs corvettes slightly down:** 
 * (*`kus_hvcorvette1.wepn; kus_hvcorvette2.wepn`*)
- * vs `LightArmour`: `0.5 => 0.45 (-10%)`
- * vs `LightArmour_hw1`: `0.55 => 0.45 (-18%)`
+  * vs `LightArmour`: `0.5 => 0.45 (-10%)`
+  * vs `LightArmour_hw1`: `0.55 => 0.45 (-18%)`
 
 ### Minelayer Corvettes
 *Compared to its 'never build' HW2 counterparts, the HW1 minelayer is much cheaper, faster building and more accessible. Its stats are a little worse and it can't clear mines, but ints can easily fill this role anyway.*

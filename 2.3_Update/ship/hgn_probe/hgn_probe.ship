@@ -8,7 +8,7 @@ NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
 NewShipType.rearArmourDamage = getShipNum(NewShipType, "rearArmourDamage", 1.0)
 setTacticsMults(NewShipType, "ENGINEACCEL", 1.10, 0.90, 1.0)
 setTacticsMults(NewShipType, "THRUSTERACCEL", 1.10, 0.90, 1.0)
-setTacticsMults(NewShipType, "ROTATION", 0.95, 1.05, 1.0)
+setTacticsMults(NewShipType, "ROTATION", 1.05, 0.95, 1.0)
 setTacticsMults(NewShipType, "ROTATIONACCEL", 1.10, 0.90, 1.0)
 NewShipType.isTransferable=1
 NewShipType.mass=10
@@ -131,10 +131,10 @@ setEngineTrail(NewShipType,0,20,"trail_ribbon.tga",0.001,0.1,0.025,2);
 setEngineBurn(NewShipType,20,0.5,0.6,16,0.1,0.1,0.25,28);
 loadShipPatchList(NewShipType,"data:sound/sfx/ship/Hiigaran/NonMilitary/",0,"Engines/HProbeEng","");
 NewShipType.minFalloffDamageDist=25
-NewShipType.maxFalloffDamageDist=25*3
-NewShipType.maxFalloffScuttleDamageDist=25*6
+NewShipType.maxFalloffDamageDist=75
+NewShipType.maxFalloffScuttleDamageDist=150
 NewShipType.explosiveScuttleDamageOnDeath=125
-NewShipType.maxFalloffForce=15*10
+NewShipType.maxFalloffForce=150
 NewShipType.explosiveDamageOnDeath=27
 
 
