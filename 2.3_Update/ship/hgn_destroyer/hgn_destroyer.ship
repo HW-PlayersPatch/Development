@@ -179,10 +179,10 @@ loadLatchPointList(NewShipType,"SalCap","SalvagePoint1","SalvagePoint2","Salvage
 loadLatchPointList(NewShipType,"CapCap","CapturePoint0","CapturePoint1");	
 loadLatchPointList(NewShipType,"RepCap","RepairPoint0","RepairPoint1","RepairPoint2","RepairPoint3");										 
 NewShipType.minFalloffDamageDist=250
-NewShipType.maxFalloffDamageDist=250*1.5
-NewShipType.maxFalloffScuttleDamageDist=250*3
+NewShipType.maxFalloffDamageDist=375
+NewShipType.maxFalloffScuttleDamageDist=750
 NewShipType.explosiveScuttleDamageOnDeath=2688
-NewShipType.maxFalloffForce=500*10
+NewShipType.maxFalloffForce=5000
 NewShipType.explosiveDamageOnDeath=538
 NewShipType.radiusDamageEvadeMod=1.1
 NewShipType.canSurround=1
