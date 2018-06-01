@@ -10,9 +10,9 @@ setTacticsMults(NewShipType, "ENGINEACCEL", 1.10, 0.90, 1.0)
 setTacticsMults(NewShipType, "THRUSTERACCEL", 1.10, 0.90, 1.0)
 setTacticsMults(NewShipType, "ROTATION", 0.95, 1.05, 1.0)
 setTacticsMults(NewShipType, "ROTATIONACCEL", 1.10, 0.90, 1.0)
+NewShipType.defaultROE="Passive"
+NewShipType.defaultStance="Evasive"
 NewShipType.isTransferable=0
-NewShipType.defaultROE="Defensive"
-NewShipType.defaultStance="Neutral"
 NewShipType.mass=100
 NewShipType.collisionMultiplier=1
 NewShipType.thrusterMaxSpeed=155

@@ -21,7 +21,8 @@ Several buffs are included to open up these options to Hiigaran again, and also 
 * **Missile speed up:** To allow missiles to catch corvettes and collectors reliably.
 ### Defence Field Frigates
 *Already slow to build and expensive, this is one unit which should reward quick reactions. Currently defence fields struggle to keep up with the action due to low movespeeds and sloooow turning speeds. Upping these values rewards an attentive user.*
-* **Max speed up:** `177 => 210 (+18%)`
+* **Max speed up:** `177 => 210 (+19%)`
+* **Max strafe speed up:** `177 => 210 (+19%)`
 * **Max rotation speed:** `22 => 30 (36%)`
 * **Rotation accel time:** `0.75 => 0.5 (-33%)`
 ### Destroyers
