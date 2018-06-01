@@ -15,7 +15,7 @@ In addition to nerfing and adding weak points to the unstoppable macro engine, t
 * **Base HP:** `18500 => 21000 (+14%)`
 ### Minelayer Corvettes
 *A 'never used' unit, the minelayer is capable of higher DPS than any other strikecraft. However, the slow build times and inconvenience of having to research an extra vette type of dubious effectiveness means minelayers are never on the table (that, and they clash with laser vettes somewhat). Minelayers have great potential as a backstab unit, these changes are designed to make them easier to deploy during normal build cycles.*
-* **Cost down:** `800 => 600 (-25%)` Laser vettes are 650 per squadron in comparison
+* **Cost down:** `800 => 600 (-25%)` Laser vettes are `650` per squadron in comparison
 * **Build time down:** `45 => 40 (-9%)` 
 ### Destroyers
 *Straddling the line between 'never used' and 'sometimes okay?', Vaygr destroyers are certainly more viable than their Hiigaran counterparts, however they are still somewhat less desirable than their HW1 counterparts. Moreover, they are much worse in their role than HMFs (who are so spammable they represent more HP AND more DPS per unit time in a typical game) and especially laser corvettes, who are immune / highly resistant to most frigates and completely wipe them off the map in turn. Rather than compete with these other units and try to overlap their roles, these changes attempt to buff destroyers while keeping their identity unique.*
@@ -26,10 +26,17 @@ In addition to nerfing and adding weak points to the unstoppable macro engine, t
 ### Bombers
 *Same as ints*
 * **Damage multiplier vs collectors slightly up:** `0.17 => 0.3 (+76%)` (*`vgr_antishipbomblauncher.wepn`*) Same as ints, minus the rush?
-### All Probes
+### Probes
 *No reason not to.*
 * **Default stance change:** `Neutral => Evasive` Provides a small boost to maneuverability
 * **Default tactics change:** `Defensive => Passive`
+### Proximity Probes
+* **Default stance change:** `Neutral => Evasive` Provides a small boost to maneuverability
+* **Default tactics change:** `Defensive => Passive`
+### Sensor Distortion Probes
+* **Default stance change:** `Neutral => Evasive` Provides a small boost to maneuverability
+* **Default tactics change:** `Defensive => Passive`
+* **Base HP up:** `400 => 800 (+100%)`
 
 
 
@@ -39,9 +46,11 @@ In addition to nerfing and adding weak points to the unstoppable macro engine, t
 *One of the most oppressive aspects of facing a Vaygr player is attempting to keep up with their production. Vaygr have the fastest building and cheapest carriers in the game, which is a core tenet of their playstyle - however, the decision of 'carrier or not to carrier' is largely answered for the Vaygr player by the presence of a cheap, easy-access upgrade which they can use to superdrive their production even further. Since Vaygr will almost always have **more** carriers, this upgrade will naturally effect more ships. This, in tandem with its easy access, is too overbearing to deal with. (FYI, all imp. manufacturing upgrades are a 1.3x multiplier)*
 * **Cost up:** `1500 => 2000 (+33%)`
 * **Research time up:** `100 => 120 (+20%)`
+
 ### Missile Corvettes
 *Missile corvettes utterly wipe collectors off the face of the galaxy. No unit even comes close to their collector kill speed. Combined with their high survivability, missile vettes are **slightly** too good in this role.*
 * **Damage multiplier vs collectors slightly down:** `1.0 => 0.9` (*`vgr_concussionmissilelauncher.wepn`*)
+
 ### Scouts
 *Part of a larger problem in HWR, scouts are currently waypointable to provide extremely hard to kill vision for a low cost and low attention investment.*
 * **Primary sensor radius down (blue sphere in manager):** `8000 => 6500 (-18%)`
@@ -55,11 +64,11 @@ In addition to nerfing and adding weak points to the unstoppable macro engine, t
 
 *Removing EMP or changing its mechanics would be short sighted - this is a still a skill-based ability which should reward a player for correct positioning and timing, however it is simply too oppressive, especially for races trying to prevent Vaygr macro from spiralling out of control. Instead of changing EMP itself, some peripheral factors are changing, such as scout EMP shielding (so they stun themselves more easily, making EMP have an associated risk for its reward).*
 * **Cost up:** `1500 => 2000 (+33%)` Having unrivalled dominance in fighter battles should come with a price tag.
-* **Research time up:** `70 => 90 (+29%)` It should also be pre-meditated.
+* **Research time up:** `70 => 80 (+14%)` It should also be pre-meditated.
 ### Mobile Refineries
 *Losing refineries due to poor scouting/defence is currently a minor annoyance at best. Incentivising refinery snipes on smaller maps leads to less linear gameplay.*
 * **Cost up:** `800 => 1000 (+25%)`
-### Utility Armor Upgrade
-*Collectors are currently shrugging off harrassment damage with no problems - harrassment is an attention-intensive option for the harrasser, so it should be for the harrassed also. Tanky workers mean the defender has far less to worry about, and the harrasser will find their return-on-investment depressingly low. Fighters in particular trade quite poorly against even a single layer of hull defence. Vaygr in particular should be weak to economic harrass, as their core strength is overwhelming their opponent with a superior economy - opponents should be able to exploit a sloppy Vaygr player's lack of defence.*
+### Utility Armour Upgrade
+*Collectors are currently shrugging off harrassment damage with no problems - harrassment requires planning, decision making, calculation and multitasking for the harrasser, so it should demand these things from the defender too. Tanky workers mean the defender has far less to worry about (sometimes nothing at all), and the harrasser will find their return-on-investment depressingly low. Fighters in particular trade quite poorly against even a single layer of hull defence. Vaygr in should be weak to economic harrass, as their core strength is overwhelming their opponent with a superior economy - opponents should be able to exploit a sloppy Vaygr player's lack of defensive foresight.*
 * **Cost up:** `1200 => 2100 (+75%)` Equals Hiign combined: `1100` collector, `1000` refinery
 * **Research time up:** `120 => 180 (+50%)` 10s less than Hiign combined: `100` collector, `90` refinery
