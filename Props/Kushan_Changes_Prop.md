@@ -18,12 +18,12 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
   * vs `Corvette`: `0.55 => 0.627 (+14%)`
   * vs `Corvette_hw1`: `0.42 => 0.627 (+49%)`
 * **Damage multiplier vs corvette up slightly:**
-* (*`kus_assaultgun`*):
+* (*`kus_assaultgun.wepn`*):
   * vs `LightArmour`: `0.5 => 0.6 (+20%)`
   * vs `LightArmour_hw1`: `0.5 => 0.6 (+20%)`
-* (*`kus_assaultbomb`*):
+* (*`kus_assaultbomb.wepn`*):
   * vs `LightArmour`: `1.25 => 1.3 (+4%)
-  & vs `LightArmour_hw1`: `1.05 => 1.3` (+24%)
+  * vs `LightArmour_hw1`: `1.05 => 1.3` (+24%)
 * **Accuracy multiplier vs collectors up:**
 * (*`kus_assaultgun.wepn`*):
   * vs `Resource`: `0.89 => 1.0 (+6%)`
@@ -48,7 +48,7 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 * **Evasive tactics no longer reduce weapon damage:** `0.9 => 1.0 (+9%)` Reducing weapon DPS means the healing weapon's output is also reduced.
 
 ### Support Frigates
-*See the [note for the same change](https://github.com/HW-PlayersPatch/2.3/blob/master/Props/Taiidan_Changes_Prop.md#repair-corvettes) happening to Taiidan support frigates.
+*See the [note for the same change](https://github.com/HW-PlayersPatch/2.3/blob/master/Props/Taiidan_Changes_Prop.md#support-frigates) happening to Taiidan support frigates.
 * **'Damage' multiplier vs frigates up:** `1.0 => 1.5 (+50%)` (*`kus_supportgunheal.wepn`*) More like anti-damage, this is a buff to the healing factor against frigates
 * **Range for repair beam up:** `1000 => 1250 (+25%)`
 
@@ -58,7 +58,7 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 * **Max rotation speed up a lot:** `97 => 170 (+75%)` Contrast to gunships: `163`. Multiguns need to turn to face their targets due to their attack script (stationary pivot vs circling)
 * **Rotation accel time down:** `1.65 => 0.65 (-61%)` Contrast to gunships: `0.6`
 * **Rotation brake time down:** `0.825 => 0.4 (-51%)`
-* **Attack range up:** `1600 => 1800 (+13%)`
+* **Attack range up:** `1600 => 1800 (+13%)` (*`kus_multigun1.wepn; kus_multigun2.wepn`*)
 
 ### Resource Collectors
 *See the [note for the same change](https://github.com/HW-PlayersPatch/2.3/blob/master/Props/Taiidan_Changes_Prop.md#resource-collectors) happening to Taiidan collectors.*
@@ -105,13 +105,13 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 ### Defenders
 *Defenders are currently garbage; their price tag is okay, but their survivability and killing efficienty is just awful. This unit is designed to hold key objectives against fighters, but is currently a minor annoyance at best. Throw in the unit cap to ensure they're always outnumbered, add in the difficulty docking, and you realise there is no current reason to ever make this unit. These change*
 * **Max HP up:** `360 => 400 (+11%)`
-* **Projectile speed up:** `1200 => 1300 (+8%)`
 * **Unit caps raised 1.25x:**
   * `12 => 15` in `small`
   * `20 => 25` in `normal`
   * `25 => 32` in `large`
   * `30 => 38` in `huge`
   * `60 => 75` in `vast`
+* **Projectile speed up:** `1200 => 1300 (+8%)` (*`kus_defender.wepn`*)
 * **Accuracy vs fighters up:**
 * (*`kus_defender.wepn`*)
   * vs `Fighter`: `0.7 => 0.95 (+26%)
