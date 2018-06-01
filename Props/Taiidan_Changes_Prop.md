@@ -87,11 +87,6 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
 *Doing fine, but doing surprisingly low damage to collectors.*
 * **Damage multiplier vs collectors slightly up:** `0.2 => 0.3 (+50%)` (*`hw1_bomber.wepn`*)
 
-### Scouts
-*Part of a larger problem in HWR, scouts are currently waypointable to provide extremely hard to kill vision for a low cost and low attention investment.*
-* **Primary sensor radius down (blue sphere in manager):** `9000 => 6500 (-27%)`
-* **Secondary sensor radius down (works the same, but invisible):** `11000 => 8030 (-27%)` 11000 is almost as high as a probe (`12000`) - way too high.
-
 ### Cloak Generators 
 *Moving far too slowly to perform clutch carrier cloaks or to keep pace with frigates. Similar reasoning to the buffs to the field frigates. Cloak generators are also remarkably fragile.*
 * **Max speed up:** `165 => 230 (+39%)`
@@ -135,6 +130,11 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
 
 
 ## Nerfs
+
+### Scouts
+*Part of a larger problem in HWR, scouts are currently waypointable to provide extremely hard to kill vision for a low cost and low attention investment.*
+* **Primary sensor radius down (blue sphere in manager):** `9000 => 6500 (-27%)`
+* **Secondary sensor radius down (works the same, but invisible):** `11000 => 8030 (-27%)` 11000 is almost as high as a probe (`12000`) - way too high.
 
 ### Light Corvettes
 *Far too versatile. Currently an outstanding anti-fight unit, light vettes also do great work against collectors and even other corvettes. This is not identical to the Kushan nerf since the Taiidan light has two guns instead of one.*
