@@ -157,5 +157,5 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
 ### Minelayer Corvettes
 *Compared to its 'never build' HW2 counterparts, the HW1 minelayer is much cheaper, faster building and more accessible. Its stats are a little worse and it can't clear mines, but ints fill this role anyway.*
 * **Build time slightly up:** `25 => 30`
-* * **Removed nonsensical evasive stance hit to engine acceleration:** `0.8 => 1.0`
+* **Removed nonsensical evasive stance hit to engine acceleration:** `0.8 => 1.0`
 * **Removed nonsensical evasive stance hit to thruster acceleration:** `0.8 => 1.0`
