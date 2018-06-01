@@ -105,15 +105,15 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 * **Default tactics change:** `Defensive => Passive`
 
 ### Defenders
-*Defenders are currently garbage; their price tag is okay, but their survivability and killing efficienty is just awful. This unit is designed to hold key objectives against fighters, but is currently a minor annoyance at best. Throw in the unit cap to ensure they're always outnumbered, add in the difficulty docking, and you realise there is no current reason to ever make this unit. These change*
+*Defenders are currently garbage; their price tag is okay, but their survivability and killing efficienty is just awful. This unit is designed to hold key objectives against fighters, but is currently a minor annoyance at best. Throw in the unit cap to ensure they're always outnumbered, add in the difficulty docking, and you realise there is no current reason to ever make this unit. These changes aim at improving Defenders' performance against other fighters:*
 * **Max HP up:** `360 => 400 (+11%)`
-* **Projectile speed up:** `1200 => 1300 (+8%)` (*`kus_defender.wepn`*)
 * **Unit caps raised 1.25x:**
   * `12 => 15` in `small`
   * `20 => 25` in `normal`
   * `25 => 32` in `large`
   * `30 => 38` in `huge`
   * `60 => 75` in `vast`
+* **Projectile speed up:** `1200 => 1300 (+8%)` (*`kus_defender.wepn`*) To match it's Taiidan counterpart
 * **Accuracy vs fighters up:**
 * (*`kus_defender.wepn`*)
   * vs `Fighter`: `0.7 => 0.95 (+26%)
