@@ -113,7 +113,7 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
   * `25 => 32` in `large`
   * `30 => 38` in `huge`
   * `60 => 75` in `vast`
-* **Projectile speed up:** `1200 => 1300 (+8%)` (*`kus_defender.wepn`*) To match it's Taiidan counterpart
+* **Projectile speed up:** `1200 => 1300 (+8%)` (*`kus_defender.wepn`*)
 * **Accuracy vs fighters up:**
 * (*`kus_defender.wepn`*)
   * vs `Fighter`: `0.7 => 0.95 (+26%)
