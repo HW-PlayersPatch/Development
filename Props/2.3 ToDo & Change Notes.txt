@@ -32,6 +32,8 @@ Maybe Changes, Need Testing
 	Missile Corvs penetration vs hw2 fighters up a bit. Compare to hw2c tests. They only feel good vs corvs and colls, when they should be OK vs fighters too.
 Test
 	All fighters and corvettes vs collectors. Adjust penetration as needed.
+		hw2c: 20 Hiig Int vs 4 lv2 Hiig colls = 160sec
+			Target 120-130 seconds now that full upgrades are easier to get.
 		Fear: along with collector hp upgrade nerf, certain units are underperforming vs colls in general
 		Fear: ints (all, especially hw1), bombers (all), assault frigates (hw1), destroyers (all, especially hw2)
 		Fear: missile vette dps vs colls down by 10%
