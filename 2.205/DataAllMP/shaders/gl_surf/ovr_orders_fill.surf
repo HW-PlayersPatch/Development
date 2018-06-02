@@ -1,0 +1,27 @@
+protect
+	blendOps
+	depthWrite
+	depthFunc
+	cull
+	fill
+	
+// Normal lines
+layer
+	program ovr_orders_fill
+	local	float4		inMult	1	1	1	1
+	local	float4		inOfs	0	0	0	0
+	
+	blendOps srcAlpha zero srcInvAlpha srcInvAlpha
+	depthWrite 0
+	depthFunc less
+	cull none
+	fill poly
+	
+// X-ray lines (lighter)
+layer
+	program ovr_orders_fill
+	
+	local	float4		inMult	1	1	1	0.2
+	local	float4		inOfs	0	0	0	0
+	
+	depthFunc gequal

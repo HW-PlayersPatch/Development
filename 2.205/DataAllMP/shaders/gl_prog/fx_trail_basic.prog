@@ -1,0 +1,19 @@
+//debugReload 5
+
+// Construct and build the program
+add		vert_text		#version 330
+add		vert_script		fx_trail_basic.vert
+add		frag_text		#version 330
+add		frag_script		fx_trail_basic.frag
+compile
+
+// Vertex Buffer input mappings
+input	pos rgba uv0 uv1
+
+local	tex			inTexTrail		0
+
+global	depthInfo	inDepth
+
+// Matrix stack uniform mappings
+matrix	projection	inMatP
+matrix	camera		inMatV

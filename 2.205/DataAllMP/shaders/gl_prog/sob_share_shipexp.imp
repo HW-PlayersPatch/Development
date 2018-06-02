@@ -1,0 +1,15 @@
+#if gte CFG_Bloom_FX 1
+	#if gte CFG_GodRays_FX 1
+		add		frag_text		#define SOB_POST_B1R1
+	#else
+		add		frag_text		#define SOB_POST_B1R0
+	#fi
+#else
+	#if gte CFG_GodRays_FX 1
+		add		frag_text		#define SOB_POST_B0R1
+	#else
+		add		frag_text		#define SOB_POST_B0R0
+	#fi
+#fi
+
+add		frag_script		sob_share_shipexp.frag

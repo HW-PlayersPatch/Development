@@ -1,0 +1,10 @@
+add		vert_script		ovr_dots.vert
+add		frag_script		ovr_dots.frag
+compile
+
+// Vertex Buffer input mappings
+input	pos rgba
+
+// Matrix stack uniform mappings
+matrix	modelview	inMatMV
+matrix	projection	inMatP

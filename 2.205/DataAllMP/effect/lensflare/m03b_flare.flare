@@ -1,0 +1,54 @@
+-- Overview:
+-- A lensflare can be thought of as a line segment with one end at the position of the flare, 
+--  the center of the line is at the center of the screen and the other end is directly opposite the bright spot.  The flare pivots around the center of the screen.
+--  The end that is directly on the bright spot is offset 1, the center of the screen is offset 0, the opposite end is offset -1
+
+-- Format:
+-- setFadeTimes(fadeUpHi, fadeUpLo, fadeDownHi, fadeDownLo)
+--      Notes:  fadeUpHi is the number of seconds it takes the offset 1 end to appear
+--              fadeUpLo is the number of seconds it takes the offset -1 end to appear
+--              fadeDownHi is the number of seconds it takes the offset 1 end to disappear
+--              fadeDownLo is the number of seconds it takes the offset -1 end to disappear
+
+-- setWashout( colour, strength )
+--      Notes: the washout is a fullscreen effect that is strongest when the bright spot is at the center of the screen
+--              colour - is the colour of the wash, r, g, b, alpha
+--              strength - is the intensity of the wash
+
+-- addHotSpot(texture filename, offset, scale, rotation, colour)
+--		Notes:	offset of 1 is the position of the flare
+--              offset of 0 is the center of the screen
+--              offset of -1 is the position on the screen opposite the flare
+--              scale multiplies the size of the flare
+--              rotation should be a whole number
+--              colour adjusts the colour of the flare texture.  r, g, b, alpha
+
+fadetimes = { 0.31, 0.21, 0.31, 0.21 }
+washoutColour = {1,0.7,0.5,1}
+washoutStrength = 0.00
+
+hotspots =
+{
+	{
+		texture = "data:Effect/LensFlare/HW_LensFlareCircle3.tga",
+		offset = 1.0,
+		scale = 2.45,
+		rotation = .25,
+		colour = {.95,.95,.95,.26},
+	},
+	{
+		texture = "data:Effect/LensFlare/capital_Flare.tga",
+		offset = 1.0,
+		scale = .45,
+		rotation = 1,
+		colour = {.95,.95,.95,.66},
+	},
+	{
+		texture = "data:Effect/LensFlare/DanFlare2.tga",
+		offset = .85,
+		scale = .45,
+		rotation = 1,
+		colour = {.95,.95,.95,.16},
+	},
+
+}

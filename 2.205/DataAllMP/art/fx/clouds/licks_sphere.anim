@@ -1,0 +1,13 @@
+fps = 30;
+startFrame = 0;
+loopCount =0
+;
+texture = 
+{
+
+    "data:/art/fx/clouds/Massive_sphere_lick03.tga",
+    "data:/art/fx/clouds/Massive_sphere_lick03.tga",
+    "data:/art/fx/clouds/Massive_sphere_lick02.tga",
+    "data:/art/fx/clouds/Massive_sphere_lick01.tga",
+    "data:/art/fx/clouds/Massive_sphere_lick01.tga"
+}

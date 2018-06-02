@@ -1,0 +1,25 @@
+//debugReload 5
+
+add		vert_script		post_bloom_ofs.vert
+add		frag_script		post_bloom_out.frag
+compile
+
+// Vertex Buffer input mappings
+input	pos uv0 uv1
+
+local	tex			inTexColor		0
+local	tex			inTexBase		1
+
+local	vec2		inAxis		1		0
+local	vec2		inSpace		0		0
+
+local	vec3		inLumiMap	0.299	0.587	0.114		// RGB -> Lumi
+local	vec3		inLumiIn	0.7		1.1		2.0			// Thresh, Boost, Curve
+local	vec4		inLumiOut	1.0		0.75	0.4		0.0		// Mask, Curve, Scale, Desaturate
+
+global	windowInfo	inWindow
+global	timeTable	inTime
+
+// Matrix stack uniform mappings
+matrix	modelview	inMatMV
+matrix	projection	inMatP

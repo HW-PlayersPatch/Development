@@ -1,0 +1,10 @@
+fps = 30;
+startFrame = 0;
+loopCount =0
+;
+texture = 
+{
+
+    "data:/art/fx/clouds/Clouds_side_splash2_alpha.tga",
+    "data:/art/fx/clouds/Clouds_side_splash3_alpha.tga"
+}

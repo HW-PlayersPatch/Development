@@ -1,0 +1,25 @@
+protect
+	blendOps
+	depthWrite
+	depthFunc
+	cull
+	fill
+	
+local	tex			NIS_diffuse		default_white
+
+local	float4		NIS_Trigger		0.0		0.0		0.0		0.0		// Same format as global 'timeTable'
+local	float		NIS_TimeScale	0.0
+
+layer
+	program nis_galaxy_vectors
+	
+	blendOps one zero
+	depthWrite 1
+	depthFunc less
+	cull none
+	fill poly
+	
+	alias	NIS_diffuse		inTexDiff
+	alias	NIS_Trigger		inTrigger
+	alias	NIS_TimeScale	inTimeScale
+	

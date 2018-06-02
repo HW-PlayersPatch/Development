@@ -1,0 +1,37 @@
+protect
+	blendOps
+	depthWrite
+	depthFunc
+	cull
+	fill
+	
+sort scissor
+	
+local	tex		BG_matter		default_white
+local	tex		BG_mask			default_white
+local	tex		BG_warp			default_grey
+
+local	float4		BG_MoveMatter	-0.0083		0		0.025	0.025
+local	float4		BG_MoveMask		0			0		0		0
+local	float2		BG_MoveWarp		0.02		0
+
+local	float3		BG_Blends		1.0		1.0		1.0
+
+layer
+	program bg_cosmic
+	
+	blendOps srcAlpha one
+	depthWrite 0
+	depthFunc less
+	cull none
+	fill poly
+	
+	alias	BG_matter	inTexMatter
+	alias	BG_mask		inTexMask
+	alias	BG_warp		inTexWarp
+
+	alias	BG_MoveMatter	inMoveMatter
+	alias	BG_MoveMask		inMoveMask
+	alias	BG_MoveWarm		inMoveWarp
+	alias	BG_Blends		inBlends
+	

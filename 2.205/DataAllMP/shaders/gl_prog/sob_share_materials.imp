@@ -1,0 +1,24 @@
+// Core material properties for all 'ship' and related surfaces...
+local	float4		inSurfDiff		0		0.95	0		0		// 0, Fren
+
+#if def INC_THRUSTERS
+local	float4		inSurfGlow		1.0		0.25	0		0		// Power, Fren
+#else
+local	float4		inSurfGlow		1.1		0.25	0		0		// Power, Fren
+#fi
+
+local	float4		inSurfSpec		1.0		1.5		0		0		// Power, Fren
+local	float4		inSurfGloss		0.1		75		30		0		// Curve, Scale, Bias
+local	float4		inSurfRefl		0.15	0.35	0.65	0		// Power, Fren, Add Mix
+local	float4		inSurfFren		3.8		1.1		2.1				// Power, Bias, Curve
+local	float4		inSurfPaint		1.8		-115	-25		0.88	// Curve, Scale, Bias, Dim
+local	float4		inSurfPeak		0.008	0.0035	0.5		2.0		// Base, Paint, Fren, Scar
+
+// How do materials treat their diffuse source?
+#if gte PAINT_FLAT 1
+local	float4		inPaintStyle	0.0		2.0		0.0				// Curve (0.0 for flat), Darkening scale/ofs (2.0 + 0.0 for PS hardlight)
+#else gte HACK_AllIFeelIsPain 1
+local	float4		inPaintStyle	1.0		12.0	5.0
+#else
+local	float4		inPaintStyle	1.0		3.0		0.5				// Curve (0.0 for flat), Darkening scale/ofs (2.0 + 0.0 for PS hardlight)
+#fi

@@ -1,0 +1,29 @@
+protect
+	blendOps
+	depthWrite
+	depthFunc
+	cull
+	fill
+
+local	float2		BloomAxis		1	0
+local	float2		BloomSpace		0	0
+
+local	vec3		ConfigLumi	0.299	0.587	0.114		// RGB -> Lumi
+local	vec3		ConfigIn	0.7		1.1		2.0			// Thresh, Boost, Curve
+local	vec4		ConfigOut	1.0		0.75	0.4		0.0		// Mask, Curve, Scale, Desaturate
+
+layer
+	program post_bloom_out
+	
+	blendOps one zero
+	depthWrite 0
+	depthFunc always
+	cull none
+	fill polys
+
+	alias	BloomAxis	inAxis
+	alias	BloomSpace	inSpace
+	
+	alias	ConfigLumi	inLumiMap
+	alias	ConfigIn	inLumiIn
+	alias	ConfigOut	inLumiOut

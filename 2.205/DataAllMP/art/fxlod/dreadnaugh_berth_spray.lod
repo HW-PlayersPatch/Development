@@ -1,0 +1,13 @@
+lods = 
+{
+	lod0 = 
+	{
+		fx = "dreadnaugh_berth_spray",
+		distance = 2000,
+	},
+	lod1 = 
+	{
+		fx = "dreadnaugh_berth_spray_lod",
+		distance = 100000,
+	},	
+}

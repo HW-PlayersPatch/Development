@@ -1,0 +1,13 @@
+lods = 
+{
+	lod0 = 
+	{
+		fx = "dmg_capital_mushroom_spray",
+		distance = 2000,
+	},
+	lod1 = 
+	{
+		fx = "dmg_capital_mushroom_spray_lod",
+		distance = 100000,
+	},	
+}

@@ -1,0 +1,19 @@
+protect
+	blendOps
+	depthWrite
+	depthFunc
+	cull
+	fill
+	ofsPolys
+	ofsDepths
+	
+layer
+	program fx_hyperspace
+	
+	blendOps srcAlpha one
+	depthWrite 0
+	depthFunc less
+	cull none
+	fill poly
+	ofsPolys 1
+	ofsDepths -2

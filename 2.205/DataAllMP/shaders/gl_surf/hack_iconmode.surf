@@ -1,0 +1,27 @@
+protect
+	blendOps
+	depthWrite
+	depthFunc
+	cull
+	fill
+	clipPlane0
+
+local	tex			SOB_diffuse		default_white
+local	tex			SOB_glow		default_black
+local	tex			SOB_team		default_white
+local	tex			SOB_normal		default_normal
+
+layer
+	program hack_iconmode
+	
+	blendOps srcAlpha srcInvAlpha
+	depthWrite 1
+	depthFunc less
+	cull back
+	fill poly
+	clipPlane0 1
+	
+	alias	SOB_diffuse		inTexDiff
+	alias	SOB_glow		inTexGlow
+	alias	SOB_team		inTexTeam
+	alias	SOB_normal		inTexNorm

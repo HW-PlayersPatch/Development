@@ -1,0 +1,23 @@
+// Define the globals and other shared elements that programs may need
+#import named_globals.manifest
+#import mod_globals.manifest
+
+// Load Programs (before surfaces reference them...)
+#import ui_programs.manifest
+#import bg_programs.manifest
+#import sob_programs.manifest
+#import post_programs.manifest
+#import misc_programs.manifest
+#import mod_programs.manifest
+
+// Load Surfaces
+#import ui_surfaces.manifest
+#import bg_surfaces.manifest
+#import sob_surfaces.manifest
+#import post_surfaces.manifest
+#import misc_surfaces.manifest
+#import mod_surfaces.manifest
+
+// Setup Surface aliases for HOD shaders
+#import hod_alias.manifest
+#import mod_alias.manifest

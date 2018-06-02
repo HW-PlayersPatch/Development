@@ -1,0 +1,23 @@
+// Construct and build the program
+add		vert_script		ui_multistate.vert
+
+add		frag_text		#version 330
+add		frag_script		ui_multistate.frag
+compile
+
+// Vertex Buffer input mappings
+input	pos uv0 uv1
+
+// Matrix stack uniform mappings
+matrix	modelview	inMatMV
+matrix	projection	inMatP
+
+// Globals to uniform mappings
+global	tint		inTint
+
+local	tex			inTex0			0
+local	tex			inTex1			1
+local	float3		state0			0	0	0
+local	float3		state1			0	0	0
+local	float3		state2			0	0	0
+local	float3		decal			0	0	0

@@ -1,0 +1,18 @@
+protect
+	blendOps
+	depthWrite
+	depthFunc
+	cull
+	fill
+	pointSize
+
+layer
+	program ovr_dots
+	
+	blendOps srcAlpha zero srcInvAlpha srcInvAlpha
+	depthWrite 0
+	depthFunc less
+	cull none
+	fill points
+	pointSize -1.0
+

@@ -1,0 +1,36 @@
+protect
+	blendOps
+	depthWrite
+	depthFunc
+
+// Shadow lines
+layer
+	program ati_2d
+	local	float4		inMult	0	0	0	1
+	local	float4		inOfs	1	1	0	0
+	
+	blendOps srcAlpha zero srcInvAlpha srcInvAlpha
+	depthWrite 0
+	depthFunc always
+
+layer
+	program ati_2d
+	local	float4		inMult	0	0	0	1
+	local	float4		inOfs	1	-1	0	0
+	
+layer
+	program ati_2d
+	local	float4		inMult	0	0	0	1
+	local	float4		inOfs	-1	1	0	0
+
+layer
+	program ati_2d
+	local	float4		inMult	0	0	0	1
+	local	float4		inOfs	-1	-1	0	0
+	
+// Normal lines
+layer
+	program ati_2d
+	local	float4		inMult	1	1	1	1
+	local	float4		inOfs	0	0	0	0
+	

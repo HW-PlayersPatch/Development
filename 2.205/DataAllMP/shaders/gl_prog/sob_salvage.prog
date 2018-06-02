@@ -1,0 +1,26 @@
+#def SHIP_Resource
+#def SHIP_Salvage
+#import sob_share_ship.imp
+
+// Locals
+local	tex			inTexDiff		0
+local	tex			inTexGlow		1
+local	tex			inTexSpec		2
+local	tex			inTexNorm		3
+local	tex			inTexProgress	4
+local	tex			inTexEnv0		6
+local	tex			inTexEnv1		7
+local	tex			inTexShadow		8
+
+local	float4		inColEffect		0		0		0		0
+local	float2		inFadeInfo		0		0
+
+// Blend range, low progress, high progress
+local	float3		inFadeWindow	0.1		0.1		0.9
+
+// Fade Delta Mult Glow, Fade Burn Glow?
+local	float4		inGlowStyle		0.0		1.0		0		0
+
+#import sob_share_format.imp
+#import sob_share_materials.imp
+#import sob_share_globals.imp

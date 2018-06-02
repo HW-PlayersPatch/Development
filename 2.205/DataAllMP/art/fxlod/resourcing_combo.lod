@@ -1,0 +1,13 @@
+lods = 
+{
+	lod0 = 
+	{
+		fx = "resourcing_combo",
+		distance = 2000,
+	},
+	lod1 = 
+	{
+		fx = "resourcing_combo_lod",
+		distance = 100000,
+	},	
+}

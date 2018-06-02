@@ -1,0 +1,18 @@
+lods = 
+{
+	lod0 = 
+	{
+		fx = "dmg_capital_explosion_large_hull_flare_mothership",
+		distance = 2000,
+	},
+	lod1 = 
+	{
+		fx = "dmg_capital_explosion_large_hull_flare_mothership_lod2",
+		distance = 300000,
+	},	
+	lod2 = 
+	{
+		fx = "dmg_capital_explosion_large_hull_flare_mothership_lod",
+		distance = 400000,
+	},	
+}

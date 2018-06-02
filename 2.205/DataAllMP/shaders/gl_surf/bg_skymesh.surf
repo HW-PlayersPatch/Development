@@ -1,0 +1,19 @@
+protect
+	blendOps
+	depthWrite
+	depthFunc
+	cull
+	fill
+	
+local	tex		BG_diffuse		default_black
+
+layer
+	program bg_skymesh
+	
+	blendOps one zero
+	depthWrite 0
+	depthFunc always
+	cull none
+	fill poly
+	
+	alias	BG_diffuse	inTexBG

@@ -1,0 +1,19 @@
+//debugReload 5
+
+add		vert_script		post_bloom.vert
+
+add		frag_text		#version 330
+add		frag_script		post_bloom_lumi.frag
+compile
+
+// Vertex Buffer input mappings
+input	pos uv0
+
+local	tex			inTexColor		0
+
+local	vec3		inLumiMap	0.299	0.587	0.114		// RGB -> Lumi
+local	vec3		inLumiIn	0.7		1.1		2.0			// Thresh, Boost, Curve
+
+// Matrix stack uniform mappings
+matrix	modelview	inMatMV
+matrix	projection	inMatP

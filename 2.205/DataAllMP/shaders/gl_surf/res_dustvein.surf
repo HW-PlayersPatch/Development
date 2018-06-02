@@ -1,0 +1,23 @@
+protect
+	depthWrite
+	depthFunc
+	cull
+	fill
+	
+local	tex			RES_diffuse		default_white
+local	tex			RES_noise		default_white
+
+local	float2		RES_test		0		0
+
+layer
+	program res_dustvein
+	
+	depthWrite false
+	depthFunc less
+	cull none
+	fill poly
+	
+	alias	RES_diffuse		inTexFx
+	alias	RES_noise		inTexNoise
+	alias	RES_test		inTest
+	

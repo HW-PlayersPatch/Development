@@ -1,0 +1,16 @@
+//debugReload 5
+
+// Construct and build the program
+add		vert_script		fx_eng_glowbasic.vert
+add		frag_script		fx_eng_glowbasic.frag
+compile
+
+// Vertex Buffer input mappings
+input	pos norm
+
+local	float4		inColGlow		0.26	0.47	0.64	1
+
+// Matrix stack uniform mappings
+matrix	projection	inMatP
+matrix	camera		inMatV
+matrix	modelview	inMatM

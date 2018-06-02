@@ -1,0 +1,19 @@
+fps = 20;
+startFrame = 0;
+loopCount =01
+;
+texture = 
+{
+    "data:/art/fx/Bullet_Splash/Shock01.tga",
+    "data:/art/fx/Bullet_Splash/Shock02.tga",
+    "data:/art/fx/Bullet_Splash/Shock03.tga",
+    "data:/art/fx/Bullet_Splash/Shock04.tga",
+    "data:/art/fx/Bullet_Splash/Shock05.tga",
+    "data:/art/fx/Bullet_Splash/Shock06.tga",
+    "data:/art/fx/Bullet_Splash/Shock07.tga",
+    "data:/art/fx/Bullet_Splash/Shock08.tga",
+    "data:/art/fx/Bullet_Splash/Shock09.tga",
+    "data:/art/fx/Bullet_Splash/Shock10.tga",
+    "data:/art/fx/Bullet_Splash/Shock11.tga",
+   
+}

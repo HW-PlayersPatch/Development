@@ -1,0 +1,97 @@
+-- Overview:
+-- A lensflare can be thought of as a line segment with one end at the position of the flare, 
+--  the center of the line is at the center of the screen and the other end is directly opposite the bright spot.  The flare pivots around the center of the screen.
+--  The end that is directly on the bright spot is offset 1, the center of the screen is offset 0, the opposite end is offset -1
+
+-- Format:
+-- setFadeTimes(fadeUpHi, fadeUpLo, fadeDownHi, fadeDownLo)
+--      Notes:  fadeUpHi is the number of seconds it takes the offset 1 end to appear
+--              fadeUpLo is the number of seconds it takes the offset -1 end to appear
+--              fadeDownHi is the number of seconds it takes the offset 1 end to disappear
+--              fadeDownLo is the number of seconds it takes the offset -1 end to disappear
+
+-- setWashout( colour, strength )
+--      Notes: the washout is a fullscreen effect that is strongest when the bright spot is at the center of the screen
+--              colour - is the colour of the wash, r, g, b, alpha
+--              strength - is the intensity of the wash
+
+-- addHotSpot(texture filename, offset, scale, rotation, colour)
+--		Notes:	offset of 1 is the position of the flare
+--              offset of 0 is the center of the screen
+--              offset of -1 is the position on the screen opposite the flare
+--              scale multiplies the size of the flare
+--              rotation should be a whole number
+--              colour adjusts the colour of the flare texture.  r, g, b, alpha
+
+fadetimes = { 0.951, 0.21, 0.951, 0.21 }
+washoutColour = {0.9,0.82,0.321,1}
+washoutStrength = 0.155
+
+hotspots =
+{
+	{
+		texture = "data:Effect/LensFlare/twistyb.tga",
+		offset = 1.0,
+		scale = 3.4,
+		rotation = .21,
+		colour = {.486,.541,.823,.151},
+	},
+	{
+		texture = "data:Effect/LensFlare/twistyc.tga",
+		offset = 1.0,
+		scale = 3.4,
+		rotation = 0,
+		colour = {.486,.541,.823,.741},
+	},
+	{
+		texture = "data:Effect/LensFlare/cic.tga",
+		offset = 9.043,
+		scale = 3.93,
+		rotation = 1,
+		colour = {.486,.541,.823,.07},
+	},
+	{
+		texture = "data:Effect/LensFlare/cic.tga",
+		offset = 9.043,
+		scale = 3.93,
+		rotation = 1,
+		colour = {.486,.541,.823,.07},
+	},
+	{
+		texture = "data:Effect/LensFlare/bib.tga",
+		offset = 8.36,
+		scale = 3.0,
+		rotation = 1,
+		colour = {.486,.541,.823,0.07},
+	},
+	{
+		texture = "data:Effect/LensFlare/cic.tga",
+		offset = 7.03,
+		scale = 3.0,
+		rotation = 1,
+		colour = {.486,.541,.823,0.07},
+	},
+	{
+		texture = "data:Effect/LensFlare/HW_LensFlareCircle.tga",
+		offset = 1.0,
+		scale = 2.5,
+		rotation = .4,
+		colour = {.5,.5,.5,0.5},
+	},
+	{
+		texture = "data:Effect/LensFlare/HW_LensFlare06.tga",
+		offset = 2.9,
+		scale = 0.2,
+		rotation = .5,
+		colour = {1,1,1,0.032},
+	},
+	{
+		texture = "data:Effect/LensFlare/twistyc.tga",
+		offset = 2,
+		scale = 5.63,
+		rotation = 0,
+		colour = {1,0.5,0.3,0.231},
+	},
+
+}
+

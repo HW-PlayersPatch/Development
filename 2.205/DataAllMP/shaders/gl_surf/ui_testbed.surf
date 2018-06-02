@@ -1,0 +1,12 @@
+protect
+	blendOps
+	
+local	vec2		rate		0.1		0.1
+
+layer
+	program ui_testbed
+	blendOps srcAlpha zero srcInvAlpha srcInvAlpha
+
+	alias	rate		inRateB		
+	//local	vec2		inRateB		1		1
+

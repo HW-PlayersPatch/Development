@@ -1,0 +1,14 @@
+protect
+	blendOps
+	depthWrite
+	depthFunc
+
+// Normal points
+layer
+	program ati_2d
+	local	float4		inMult	1	1	1	1
+	local	float4		inOfs	0	0	0	0
+	
+	blendOps srcAlpha zero srcInvAlpha srcInvAlpha
+	depthWrite 0
+	depthFunc always

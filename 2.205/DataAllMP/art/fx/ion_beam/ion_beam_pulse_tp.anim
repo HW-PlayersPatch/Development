@@ -1,0 +1,10 @@
+fps = 30;
+startFrame = 0;
+loopCount =01;
+layout = {1,2};
+
+textureLayout = 
+{
+   { "data:ART/FX/Ion_beam/Ion_beam_pulse_TP.tga", 0, 0 },
+   { "data:ART/FX/Ion_beam/Ion_beam_pulse_TP.tga", 0, 1 },
+}

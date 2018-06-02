@@ -1,0 +1,43 @@
+fps = 15;
+startFrame = 0;
+loopCount =01;
+texture = 
+{
+    "data:/ART/FX/Super_Beam/sbeam_small_00000.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00001.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00002.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00003.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00004.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00005.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+    "data:/ART/FX/Super_Beam/sbeam_small_00006.tga"
+}

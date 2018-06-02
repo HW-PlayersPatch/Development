@@ -1,0 +1,12 @@
+mesh = 
+{
+
+    "data:art/fx/debris panels/Slv_bits_08.hod",
+    "data:art/fx/debris panels/Slv_bits_07.hod",
+    "data:art/fx/debris panels/Slv_bits_06.hod",
+    "data:art/fx/debris panels/Slv_bits_05.hod",
+    "data:art/fx/debris panels/Slv_bits_04.hod",
+    "data:art/fx/debris panels/Slv_bits_03.hod",
+    "data:art/fx/debris panels/Slv_bits_02.hod",
+    "data:art/fx/debris panels/Slv_bits_01.hod"
+}

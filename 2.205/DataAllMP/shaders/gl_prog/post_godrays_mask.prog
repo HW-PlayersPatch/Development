@@ -1,0 +1,27 @@
+//debugReload 10
+
+add		vert_script		post_godrays.vert
+
+add		frag_text		#version 330
+add		frag_script		help_noise.frag
+add		frag_script		post_godrays_mask.frag
+compile
+
+// Vertex Buffer input mappings
+input	pos uv0 uv1
+
+local	tex			inTexColor		0
+local	tex			inTexDepth		1
+
+local	vec4		inLightSrc		0.25	0.25	1.0		1.0		// X, Y, Z (0->1), Strength
+local	vec4		inMaskScale		150		250		800		0.25	// Inner, Outer Min/Max, Outer Bias
+local	vec4		inMaskMotion	0.04	0.17	5.0		1.25	// Octave 1, Octave 2, Min Curve, Max Curve
+
+global	windowInfo	inWindow
+global	depthInfo	inDepth
+global	timeTable	inTime
+global	mouseInfo	inMouse
+
+// Matrix stack uniform mappings
+matrix	modelview	inMatMV
+matrix	projection	inMatP

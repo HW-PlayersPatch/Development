@@ -1,0 +1,15 @@
+// Construct and build the program
+add		vert_script		sob_subsys.vert
+add		frag_script		sob_subsys.frag
+compile
+
+// Vertex Buffer input mappings
+input	pos
+
+// Locals
+local	float4		inColEffect		0		0		0		0
+
+// Matrix stack uniform mappings
+matrix	modelview	inMatMV
+matrix	camera		inMatC
+matrix	projection	inMatP

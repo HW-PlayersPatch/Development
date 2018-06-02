@@ -1,0 +1,9 @@
+fps = 30;
+startFrame = 0;
+loopCount =0
+;
+texture = 
+{
+    "data:/art/fx/Heavy_torpedo/fire_cell01.tga",
+    "data:/art/fx/Heavy_torpedo/fire_cell02.tga",   
+}

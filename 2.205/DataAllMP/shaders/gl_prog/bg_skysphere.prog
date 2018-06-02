@@ -1,0 +1,16 @@
+#import bg_share.imp
+add		vert_script		bg_skysphere.vert
+add		frag_script		bg_skysphere.frag
+compile
+
+// Vertex Buffer input mappings
+input	pos rgba
+
+// Matrix stack uniform mappings
+matrix	modelview	inMatMV
+matrix	projection	inMatP
+
+// Globals to uniform mappings
+global	bgSensorsFade		inFade
+global	bgAddLight			inAddLight
+global	bgBackExps			inBackExps

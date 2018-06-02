@@ -1,0 +1,13 @@
+lods = 
+{
+	lod0 = 
+	{
+		fx = "ion_dmg_ring_spray",
+		distance = 2000,
+	},
+	lod1 = 
+	{
+		fx = "ion_dmg_ring_spray_lod",
+		distance = 100000,
+	},	
+}

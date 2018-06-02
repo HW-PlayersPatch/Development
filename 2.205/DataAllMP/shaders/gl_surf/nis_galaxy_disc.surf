@@ -1,0 +1,130 @@
+protect
+	blendOps
+	depthWrite
+	depthFunc
+	ofsPolys
+	ofsDepths
+	cull
+	fill
+	
+sort alpha
+
+local	tex			NIS_disc		default_black
+local	tex			NIS_masks		default_white
+
+local	float4		NIS_Trigger		0.0		0.0		0.0		0.0		// Same format as global 'timeTable'
+local	float		NIS_TimeScale	0.0
+
+layer
+	program nis_galaxy_dark
+	
+	blendOps srcAlpha srcInvAlpha
+	depthWrite 1
+	depthFunc less
+	ofsPolys 0
+	ofsDepths 0.0 0.0
+	cull none
+	fill poly
+	
+	alias	NIS_disc		inTexDisc
+	alias	NIS_masks		inTexMasks
+	alias	NIS_Trigger		inTrigger
+	alias	NIS_TimeScale	inTimeScale
+	
+	local	float4			inMatScale		1.0		0.25	1.0		1.0
+	
+layer
+	program nis_galaxy_glow
+	
+	blendOps srcAlpha one
+	depthWrite 0
+	depthFunc lequal
+	ofsPolys 1
+	ofsDepths -2.5 -32.0
+	cull none
+	fill poly
+	
+	alias	NIS_disc		inTexDisc
+	alias	NIS_masks		inTexMasks
+	alias	NIS_Trigger		inTrigger
+	alias	NIS_TimeScale	inTimeScale
+	
+	local	float4			inMatScale		0.5		1.0		0.8		1.0
+	local	float			inTimeDelay		0.0
+	
+layer
+	program nis_galaxy_glow
+	
+	blendOps srcAlpha one
+	depthWrite 0
+	depthFunc lequal
+	ofsPolys 1
+	ofsDepths -2.5 -32.0
+	cull none
+	fill poly
+	
+	alias	NIS_disc		inTexDisc
+	alias	NIS_masks		inTexMasks
+	alias	NIS_Trigger		inTrigger
+	alias	NIS_TimeScale	inTimeScale
+	
+	local	float4			inMatScale		0.5		0.9		0.6		0.8
+	local	float			inTimeDelay		0.1
+	
+layer
+	program nis_galaxy_glow
+	
+	blendOps srcAlpha one
+	depthWrite 0
+	depthFunc lequal
+	ofsPolys 1
+	ofsDepths -2.5 -32.0
+	cull none
+	fill poly
+	
+	alias	NIS_disc		inTexDisc
+	alias	NIS_masks		inTexMasks
+	alias	NIS_Trigger		inTrigger
+	alias	NIS_TimeScale	inTimeScale
+	
+	local	float4			inMatScale		0.5		0.8		0.4		0.6
+	local	float			inTimeDelay		0.2
+	
+layer
+	program nis_galaxy_glow
+	
+	blendOps srcAlpha one
+	depthWrite 0
+	depthFunc lequal
+	ofsPolys 1
+	ofsDepths -2.5 -32.0
+	cull none
+	fill poly
+	
+	alias	NIS_disc		inTexDisc
+	alias	NIS_masks		inTexMasks
+	alias	NIS_Trigger		inTrigger
+	alias	NIS_TimeScale	inTimeScale
+	
+	local	float4			inMatScale		0.5		0.7		0.2		0.4
+	local	float			inTimeDelay		0.3
+	
+layer
+	program nis_galaxy_glow
+	
+	blendOps srcAlpha one
+	depthWrite 0
+	depthFunc lequal
+	ofsPolys 1
+	ofsDepths -2.5 -32.0
+	cull none
+	fill poly
+	
+	alias	NIS_disc		inTexDisc
+	alias	NIS_masks		inTexMasks
+	alias	NIS_Trigger		inTrigger
+	alias	NIS_TimeScale	inTimeScale
+	
+	local	float4			inMatScale		0.5		0.6		0.0		0.2
+	local	float			inTimeDelay		0.4
+	

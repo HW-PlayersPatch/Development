@@ -1,0 +1,23 @@
+protect
+	blendOps
+	depthWrite
+	depthFunc
+	cull
+	fill
+	
+local	float4		GR_Source		0.5		0.5		1.0		1.0		// X, Y, Z (0->1), Strength
+local	float4		GR_Scale		150		250		800		0.25	// Inner, Outer Min/Max, Outer Bias
+local	float4		GR_Motion		0.04	0.17	5.0		0.75	// Octave 1, Octave 2, Min Curve, Max Curve
+
+layer
+	program post_godrays_mask
+	
+	blendOps one zero
+	depthWrite 0
+	depthFunc always
+	cull none
+	fill polys
+	
+	alias	GR_Source		inLightSrc
+	alias	GR_Scale		inMaskScale
+	alias	GR_Motion		inMaskMotion

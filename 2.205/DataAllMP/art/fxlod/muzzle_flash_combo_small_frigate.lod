@@ -1,0 +1,13 @@
+lods = 
+{
+	lod0 = 
+	{
+		fx = "muzzle_flash_combo_small_frigate",
+		distance = 2000,
+	},
+	lod1 = 
+	{
+		fx = "muzzle_flash_combo_small_frigate_lod",
+		distance = 100000,
+	},	
+}

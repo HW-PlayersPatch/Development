@@ -1,0 +1,29 @@
+protect
+	blendOps
+	depthWrite
+	depthFunc
+	cull
+	fill
+
+local	tex			SOB_diffuse		default_white
+local	tex			SOB_glow		default_black
+local	tex			SOB_team		default_white
+local	tex			SOB_normal		default_normal
+
+local	float4		SOB_uieffect	0		0		0		0
+
+layer
+	program sob_matte
+	
+	blendOps srcAlpha srcInvAlpha
+	depthWrite 1
+	depthFunc less
+	cull back
+	fill poly
+	
+	alias	SOB_diffuse		inTexDiff
+	alias	SOB_glow		inTexGlow
+	alias	SOB_team		inTexTeam
+	alias	SOB_normal		inTexNorm
+
+	alias	SOB_uieffect	inColEffect

@@ -1,0 +1,18 @@
+protect
+	colorWrite
+	depthWrite
+	depthFunc
+	cull
+	fill
+	clipPlane0
+
+layer
+	program sob_opaque
+	
+	colorWrite 0 0 0 0
+	depthWrite 1
+	depthFunc less
+	cull back
+	fill poly
+	clipPlane0 1
+	

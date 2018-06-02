@@ -1,0 +1,10 @@
+mesh = 
+{
+    "data:art/fx/debris panels/Debris_Panel01.hod",
+    "data:art/fx/debris panels/Debris_Panel02.hod",
+    "data:art/fx/debris panels/Debris_Panel03.hod",    
+    "data:art/fx/debris panels/Debris_Panel04.hod",    
+    "data:art/fx/debris panels/Debris_Panel06.hod",
+    "data:art/fx/debris panels/Debris_Panel07.hod",
+
+}

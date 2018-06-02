@@ -1,0 +1,13 @@
+lods = 
+{
+	lod0 = 
+	{
+		fx = "dmg_cloud_spray_large",
+		distance = 2000,
+	},
+	lod1 = 
+	{
+		fx = "dmg_cloud_spray_large_lod",
+		distance = 100000,
+	},	
+}

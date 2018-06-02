@@ -1,0 +1,14 @@
+protect
+	blendOps
+	depthWrite
+	depthFunc
+	cull
+	fill
+
+layer
+	program fx_ring_basic
+	
+	depthWrite 0
+	depthFunc less
+	cull none
+	fill poly

@@ -1,0 +1,23 @@
+// Tell the engine to reload this every X seconds
+debugReload 5
+
+// Construct and build the program
+add		vert_text		#version 330
+add		vert_script		nis_galaxy_vectors.vert
+add		frag_text		#version 330
+add		frag_script		nis_galaxy_vectors.frag
+compile
+
+// Locals
+local	tex			inTexDiff		0
+
+input	pos norm uv0
+
+global	timeTable		inTime
+
+matrix	modelview	inMatM
+matrix	camera		inMatV
+matrix	projection	inMatP
+
+local	float4		inTrigger		0.0		0.0		0.0		0.0
+local	float		inTimeScale		0.0

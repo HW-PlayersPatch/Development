@@ -1,0 +1,33 @@
+//debugReload 5
+
+// Construct and build the program
+add		vert_text		#version 330
+add		vert_text		#define FX_SCISSOR
+#if gte CFG_DepthBias_FX 1
+add		vert_text		#define DEPTH_BIAS
+#fi
+add		vert_script		fx_mesh.vert
+add		frag_text		#version 330
+add		frag_text		#define FX_SCISSOR
+#if gte CFG_DepthBias_FX 1
+add		frag_text		#define DEPTH_BIAS
+#fi
+add		frag_script		fx_mesh.frag
+compile
+
+// Vertex Buffer input mappings
+input	pos uv0
+
+local	tex			inTexFx			0
+local	tex			inTexDepth		7
+
+local	vec4		inAlphaMode		1	1	0	0
+
+global	fxInfo		inFXInfo
+global	depthInfo	inDepth
+global	windowInfo	inWindow
+
+// Matrix stack uniform mappings
+matrix	projection	inMatP
+matrix	camera		inMatC
+matrix	modelview	inMatMV

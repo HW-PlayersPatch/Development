@@ -1,0 +1,14 @@
+The valid texture formats are:
+
+TF_RGBA32
+TF_DXT1_NOALPHA
+TF_DXT3
+TF_DXT5
+
+Other possible texture formats that are not implemented yet:
+
+TF_RGBA16_4444        
+TF_RGB24        
+TF_LUMINANCE
+TF_ALPHA
+TF_LUMINANCEALPHA

@@ -1,0 +1,27 @@
+//debugReload 5
+
+add		vert_text		#version 330
+add		frag_text		#version 330
+
+#if gte CFG_UI_FX 1
+	add		frag_text		#define BLOB_UIFX
+#fi
+
+add		vert_script		ovr_texrgb_blob.vert
+add		frag_script		ovr_texrgb_blob.frag
+compile
+
+// Vertex Buffer input mappings
+input	pos uv0
+
+local	tex			inTex0		0
+
+// Matrix stack uniform mappings
+matrix	modelview	inMatMV
+matrix	camera		inMatC
+matrix	projection	inMatP
+
+global	tint		inTint
+global	cameraInfo	inCamera
+global	timeTable	inTime
+global	windowInfo	inWindow

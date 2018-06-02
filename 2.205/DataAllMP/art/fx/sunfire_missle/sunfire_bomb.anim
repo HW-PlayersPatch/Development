@@ -1,0 +1,13 @@
+fps = 30;
+startFrame = 0;
+loopCount =10
+;
+texture = 
+{
+    "data:/ART/FX/Sunfire_missle/Sunfire_Bomb00.tga",
+    "data:/ART/FX/Sunfire_missle/Sunfire_Bomb01.tga",
+    "data:/ART/FX/Sunfire_missle/Sunfire_Bomb02.tga",
+    "data:/ART/FX/Sunfire_missle/Sunfire_Bomb03.tga",
+    "data:/ART/FX/Sunfire_missle/Sunfire_Bomb04.tga",
+    "data:/ART/FX/Sunfire_missle/Sunfire_Bomb05.tga"
+}

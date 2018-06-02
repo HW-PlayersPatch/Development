@@ -1,0 +1,20 @@
+fps = 45;
+startFrame = 0;
+loopCount =01;
+layout = { 8,2};
+
+textureLayout = 
+{
+   { "data:/ART/FX/Muzzle_Flashes/k_MUZZLE_TP.tga", 0, 0 },
+   { "data:/ART/FX/Muzzle_Flashes/k_MUZZLE_TP.tga", 0, 1 },
+   { "data:/ART/FX/Muzzle_Flashes/k_MUZZLE_TP.tga", 1, 0 },
+   { "data:/ART/FX/Muzzle_Flashes/k_MUZZLE_TP.tga", 1, 1 },
+   { "data:/ART/FX/Muzzle_Flashes/k_MUZZLE_TP.tga", 2, 0 },
+   { "data:/ART/FX/Muzzle_Flashes/k_MUZZLE_TP.tga", 2, 1 },
+   { "data:/ART/FX/Muzzle_Flashes/k_MUZZLE_TP.tga", 3, 0 },
+   { "data:/ART/FX/Muzzle_Flashes/k_MUZZLE_TP.tga", 3, 1 },
+   { "data:/ART/FX/Muzzle_Flashes/k_MUZZLE_TP.tga", 4, 0 },
+   { "data:/ART/FX/Muzzle_Flashes/k_MUZZLE_TP.tga", 4, 1 },
+   { "data:/ART/FX/Muzzle_Flashes/k_MUZZLE_TP.tga", 5, 0 },
+   { "data:/ART/FX/Muzzle_Flashes/k_MUZZLE_TP.tga", 5, 1 }
+}

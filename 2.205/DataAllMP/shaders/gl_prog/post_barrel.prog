@@ -1,0 +1,21 @@
+//debugReload 5
+
+add		vert_script		post_barrel.vert
+add		frag_script		post_barrel.frag
+compile
+
+// Vertex Buffer input mappings
+input	pos uv0 uv1
+
+local	tex			inTexScene		0
+
+						//	Center	Aspect	Coefs
+local	vec4		inLens	0.5		0.8		0.22	0.24
+
+global	windowInfo	inWindow
+global	timeTable	inTime
+global	mouseInfo	inMouse
+
+// Matrix stack uniform mappings
+matrix	modelview	inMatMV
+matrix	projection	inMatP

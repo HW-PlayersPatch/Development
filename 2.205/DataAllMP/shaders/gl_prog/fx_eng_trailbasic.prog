@@ -1,0 +1,30 @@
+debugReload 5
+
+// Construct and build the program
+add		vert_text		#version 330
+#if gte CFG_DepthBias_FX 1
+add		vert_text		#define DEPTH_BIAS
+#fi
+add		vert_script		fx_eng_trailbasic.vert
+add		frag_text		#version 330
+#if gte CFG_DepthBias_FX 1
+add		frag_text		#define DEPTH_BIAS
+#fi
+add		frag_script		fx_eng_trailbasic.frag
+compile
+
+// Vertex Buffer input mappings
+input	pos norm rgba
+
+local	tex			inTexTeam		0
+local	tex			inTexShape		1
+
+global	depthInfo	inDepth
+global	cameraInfo	inCamera
+global	windowInfo	inWindow
+
+local	float4		inTrailInfo		1	1	1	1
+
+// Matrix stack uniform mappings
+matrix	projection	inMatP
+matrix	camera		inMatV

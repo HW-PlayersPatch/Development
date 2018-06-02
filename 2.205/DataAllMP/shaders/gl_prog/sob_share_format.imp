@@ -1,0 +1,6 @@
+// Core vertex buffer mapping for all 'ship' and related surfaces...
+input	pos
+input	norm
+input	tan
+input	binorm
+input	uv0

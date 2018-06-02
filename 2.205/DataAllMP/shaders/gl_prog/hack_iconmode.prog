@@ -1,0 +1,25 @@
+//debugReload 10
+
+add		vert_script		hack_iconmode.vert
+add		frag_script		hack_iconmode.frag
+compile
+
+input	pos
+input	norm
+input	tan
+input	binorm
+input	uv0
+
+// Locals
+local	tex			inTexDiff		0
+local	tex			inTexGlow		1
+local	tex			inTexTeam		2
+local	tex			inTexNorm		3
+local	tex			inTexEnv0		6
+local	tex			inTexEnv1		7
+local	tex			inTexShadow		8
+
+// Matrix stack uniform mappings
+matrix	modelview	inMatM
+matrix	camera		inMatV
+matrix	projection	inMatP

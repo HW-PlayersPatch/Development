@@ -1,0 +1,11 @@
+protect
+	blendOps
+	depthWrite
+	depthFunc
+
+layer
+	program ovr_rgb_blob
+	
+	blendOps srcAlpha zero srcInvAlpha srcInvAlpha
+	depthWrite 0
+	depthFunc less

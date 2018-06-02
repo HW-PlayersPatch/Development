@@ -1,0 +1,13 @@
+lods = 
+{
+	lod0 = 
+	{
+		fx = "dmg_damage_steam_combo",
+		distance = 2000,
+	},
+	lod1 = 
+	{
+		fx = "dmg_damage_steam_combo",
+		distance = 100000,
+	},	
+}

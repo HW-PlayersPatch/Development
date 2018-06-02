@@ -1,0 +1,13 @@
+// Construct and build the program
+add		vert_script		fx_hyperspace.vert
+add		frag_script		fx_hyperspace.frag
+compile
+
+// Vertex Buffer input mappings
+input	pos rgba uv0
+
+local	tex			inTexHyper		0
+
+// Matrix stack uniform mappings
+matrix	projection	inMatP
+matrix	camera		inMatV

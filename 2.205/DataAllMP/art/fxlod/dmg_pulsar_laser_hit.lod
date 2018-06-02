@@ -1,0 +1,13 @@
+lods = 
+{
+	lod0 = 
+	{
+		fx = "dmg_pulsar_laser_hit",
+		distance = 2000,
+	},
+	lod1 = 
+	{
+		fx = "dmg_pulsar_laser_hit_lod",
+		distance = 100000,
+	},	
+}

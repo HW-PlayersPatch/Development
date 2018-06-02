@@ -1,0 +1,13 @@
+fps = 30;
+startFrame = 0;
+loopCount =01;
+layout = {2,2};
+
+textureLayout = 
+{
+   { "data:ART/FX/Muzzle_Flashes/Big_flash_tip_TP.tga", 0, 0 },
+   { "data:ART/FX/Muzzle_Flashes/Big_flash_tip_TP.tga", 0, 1 },
+   { "data:ART/FX/Muzzle_Flashes/Big_flash_tip_TP.tga", 1, 0 },
+   { "data:ART/FX/Muzzle_Flashes/Big_flash_tip_TP.tga", 1, 1 }
+   
+}

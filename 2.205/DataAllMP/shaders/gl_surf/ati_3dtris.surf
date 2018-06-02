@@ -1,0 +1,16 @@
+protect
+	blendOps
+	depthWrite
+	depthFunc
+	cull
+
+// Normal triangles
+layer
+	program ati_3d
+	local	float4		inMult	1	1	1	1
+	local	float4		inOfs	0	0	0	0
+	
+	blendOps srcAlpha zero srcInvAlpha srcInvAlpha
+	depthWrite 0
+	depthFunc less
+	cull none

@@ -1,0 +1,10 @@
+fps = 40;
+startFrame = 0;
+loopCount =01;
+layout = {1,2};
+
+textureLayout = 
+{
+   { "data:/ART/FX/ion_beam/ion_beam_shockwave.tga", 0, 0 },
+   { "data:/ART/FX/ion_beam/ion_beam_shockwave.tga", 0, 1 },
+}

@@ -1,0 +1,13 @@
+fps = 30;
+startFrame = 0;
+loopCount =0
+;
+texture = 
+{
+    "data:/art/fx/Debris Panels/Square_panel_small01.tga",
+    "data:/art/fx/Debris Panels/Square_panel_small02.tga",
+    "data:/art/fx/Debris Panels/Square_panel_small03.tga",
+    "data:/art/fx/Debris Panels/Square_panel_small04.tga"
+
+   
+}

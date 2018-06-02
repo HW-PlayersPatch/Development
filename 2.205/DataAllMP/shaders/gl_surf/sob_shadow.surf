@@ -1,0 +1,19 @@
+protect
+	colorWrite
+	depthWrite
+	depthFunc
+	ofsPolys
+	ofsDepths
+	cull
+	fill
+
+layer
+	program sob_shadow
+	
+	colorWrite 0 0 0 0
+	depthWrite 1
+	depthFunc less
+	ofsPolys 1
+	ofsDepths 2.75 32.0
+	cull back
+	fill poly

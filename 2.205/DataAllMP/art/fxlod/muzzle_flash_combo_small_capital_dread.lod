@@ -1,0 +1,13 @@
+lods = 
+{
+	lod0 = 
+	{
+		fx = "muzzle_flash_combo_small_capital_dread",
+		distance = 2000,
+	},
+	lod1 = 
+	{
+		fx = "muzzle_flash_combo_small_capital_dread_lod",
+		distance = 100000,
+	},	
+}

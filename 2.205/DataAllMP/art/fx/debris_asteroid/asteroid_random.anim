@@ -1,0 +1,10 @@
+fps = 30;
+startFrame = 0;
+loopCount =0
+;
+texture = 
+{
+    "data:/art/fx/Debris_asteroid/Asteroid_Pebble_0.tga",
+    "data:/art/fx/Debris_asteroid/Asteroid_Pebble_1.tga",
+    "data:/art/fx/Debris_asteroid/Asteroid_Pebble_2.tga",
+}

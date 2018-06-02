@@ -1,0 +1,13 @@
+lods = 
+{
+	lod0 = 
+	{
+		fx = "bullet_tracer_combo",
+		distance = 2000,
+	},
+	lod1 = 
+	{
+		fx = "bullet_tracer_combo_lod",
+		distance = 100000,
+	},	
+}

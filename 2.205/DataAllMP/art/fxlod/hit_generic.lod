@@ -1,0 +1,13 @@
+lods = 
+{
+	lod0 = 
+	{
+		fx = "hit_generic",
+		distance = 2000,
+	},
+	lod1 = 
+	{
+		fx = "hit_generic_lod",
+		distance = 100000,
+	},	
+}

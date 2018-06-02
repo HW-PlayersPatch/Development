@@ -1,0 +1,13 @@
+lods = 
+{
+	lod0 = 
+	{
+		fx = "dmg_wave_explosion_combo",
+		distance = 2000,
+	},
+	lod1 = 
+	{
+		fx = "dmg_wave_explosion_combo_lod",
+		distance = 100000,
+	},	
+}

@@ -1,0 +1,33 @@
+protect
+	blendOps
+	depthWrite
+	depthFunc
+	ofsPolys
+	ofsDepths
+	cull
+	fill
+	clipPlane0
+
+layer
+	program sobfx_scar
+	
+	blendOps srcAlpha srcInvAlpha
+	depthWrite 0
+	depthFunc lequal
+	ofsPolys 1
+	ofsDepths -2.5 -32.0
+	cull back
+	fill poly
+	clipPlane0 1
+
+layer
+	program sobfx_burn
+	
+	blendOps srcAlpha one
+	depthWrite 0
+	depthFunc lequal
+	ofsPolys 1
+	ofsDepths -2.5 -32.0
+	cull back
+	fill poly
+	clipPlane0 1

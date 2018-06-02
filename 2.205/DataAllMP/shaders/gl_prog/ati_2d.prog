@@ -1,0 +1,15 @@
+add		vert_script		ati_2d.vert
+add		frag_script		ati_2d.frag
+compile
+
+// Vertex Buffer input mappings
+input	pos rgba
+
+local	float4		inMult	1	1	1	1
+local	float4		inOfs	0	0	0	0
+
+// Globals to uniform mappings
+global	windowInfo		inWindow
+
+// Matrix stack uniform mappings
+matrix	projection	inMatP

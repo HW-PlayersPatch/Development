@@ -1,0 +1,13 @@
+lods = 
+{
+	lod0 = 
+	{
+		fx = "plasma_hit_spray_dread",
+		distance = 2000,
+	},
+	lod1 = 
+	{
+		fx = "plasma_hit_spray_dread_lod",
+		distance = 50000,
+	},	
+}

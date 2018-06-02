@@ -1,0 +1,13 @@
+lods = 
+{
+	lod0 = 
+	{
+		fx = "fiery_trail_death_combo",
+		distance = 2000,
+	},
+	lod1 = 
+	{
+		fx = "fiery_trail_death_combo_lod",
+		distance = 100000,
+	},	
+}

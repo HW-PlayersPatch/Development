@@ -1,0 +1,13 @@
+fps = 30;
+startFrame = 0;
+loopCount =10
+;
+texture = 
+{
+    "data:/ART/FX/Plasma_bomb/Plasma_Bomb00.tga",
+    "data:/ART/FX/Plasma_bomb/Plasma_Bomb01.tga",
+    "data:/ART/FX/Plasma_bomb/Plasma_Bomb02.tga",
+    "data:/ART/FX/Plasma_bomb/Plasma_Bomb03.tga",
+    "data:/ART/FX/Plasma_bomb/Plasma_Bomb04.tga",
+    "data:/ART/FX/Plasma_bomb/Plasma_Bomb05.tga"
+}

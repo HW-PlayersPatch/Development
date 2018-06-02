@@ -1,0 +1,72 @@
+
+fadetimes = { 0.2, 2.0, 0.5, 1.0 }
+washoutColour = {1,0.9,0.8,1}
+washoutStrength = 0.2
+
+hotspots =
+{
+	{
+		texture = "data:Effect/LensFlare/danflare0.tga",
+		offset = 1.0,
+		scale = .75,
+		rotation = 1,
+		colour = {1,1,1,.5},
+	},
+	{
+		texture = "data:Effect/LensFlare/danflare6.tga",
+		offset = 0.8,
+		scale = 1.8,
+		rotation = 1,
+		colour = {1,1,1,.3},
+	},
+	{
+		texture = "data:Effect/LensFlare/danflare3.tga",
+		offset = 0.4,
+		scale = .4,
+		rotation = 1,
+		colour = {204,198,243,.3},
+	},
+	{
+		texture = "data:Effect/LensFlare/danflare3.tga",
+		offset = .3,
+		scale = .6,
+		rotation = 3,
+		colour = { 173,33,23,.5},
+	},
+	{
+		texture = "data:Effect/LensFlare/danflare3.tga",
+		offset = .25,
+		scale = .4,
+		rotation = 2,
+		colour = { 173,33,23,.2},
+	},
+	{
+		texture = "data:Effect/LensFlare/danflare3.tga",
+		offset = .2,
+		scale = .5,
+		rotation = 1,
+		colour = { 173,33,23,.3},
+	},
+	{
+		texture = "data:Effect/LensFlare/danflare2.tga",
+		offset = -0.3,
+		scale = .8,
+		rotation = 1,
+		colour = {1,1,1,.3},
+	},
+	{
+		texture = "data:Effect/LensFlare/danflare5.tga",
+		offset = -0.5,
+		scale = .5,
+		rotation = 1,
+		colour = {1,1,1,.3},
+	},
+	{
+		texture = "data:Effect/LensFlare/danflare6.tga",
+		offset = 1.4,
+		scale = .7,
+		rotation = 1,
+		colour = {1,1,1,.3},
+	},
+}
+

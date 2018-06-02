@@ -1,0 +1,67 @@
+protect
+	blendOps
+	depthWrite
+	depthFunc
+	cull
+	fill
+
+local	tex			SOB_diffuse		default_white
+local	tex			SOB_glow		default_black
+local	tex			SOB_spec		default_black
+local	tex			SOB_progress	default_white
+local	tex			SOB_normal		default_normal
+
+local	float4		SOB_uieffect	0		0		0		0
+local	float2		SOB_fadeInfo	0		0
+
+// Blend range, low progress, high progress
+local	float3		SOB_fadeWindow	0.2		0.0		1.0
+
+// Grid - Scale UV for 0, Offset UV for 1
+local	float4		SOB_gridDiff		1.0		1.0		0.0		0.0
+local	float4		SOB_gridGlow		1.0		1.0		0.0		0.0
+local	float4		SOB_gridSpec		1.0		1.0		0.0		0.0
+local	float4		SOB_gridNorm		1.0		1.0		0.0		0.0
+
+// Fade Delta Mult Glow, Fade Burn Glow?
+local	float4		SOB_glowStyle		1.0		0.0		0		0
+
+local	float4		SOB_mulDiff0		1.0		1.0		1.0		1.0
+local	float4		SOB_mulDiff1		1.0		1.0		1.0		1.0
+local	float4		SOB_mulGlow0		1.0		1.0		1.0		1.0
+local	float4		SOB_mulGlow1		1.0		1.0		1.0		1.0
+local	float4		SOB_mulSpec0		1.0		1.0		1.0		1.0
+local	float4		SOB_mulSpec1		1.0		1.0		1.0		1.0
+
+layer
+	program sob_ore
+	
+	blendOps srcAlpha srcInvAlpha
+	depthWrite 1
+	depthFunc less
+	cull back
+	fill poly
+	
+	alias	SOB_diffuse		inTexDiff
+	alias	SOB_glow		inTexGlow
+	alias	SOB_spec		inTexSpec
+	alias	SOB_progress	inTexProgress
+	alias	SOB_normal		inTexNorm
+
+	alias	SOB_uieffect	inColEffect
+	alias	SOB_fadeInfo	inFadeInfo
+	
+	alias	SOB_fadeWindow	inFadeWindow
+	alias	SOB_vertMod		inVertMod
+	alias	SOB_gridDiff	inGridDiff
+	alias	SOB_gridGlow	inGridGlow
+	alias	SOB_gridSpec	inGridSpec
+	alias	SOB_gridNorm	inGridNorm
+	alias	SOB_glowStyle	inGlowStyle
+	
+	alias	SOB_mulDiff0	inMulDiff0
+	alias	SOB_mulDiff1	inMulDiff1
+	alias	SOB_mulGlow0	inMulGlow0
+	alias	SOB_mulGlow1	inMulGlow1
+	alias	SOB_mulSpec0	inMulSpec0
+	alias	SOB_mulSpec1	inMulSpec1

@@ -1,0 +1,15 @@
+// Construct and build the program
+add		vert_script		fx_navlights.vert
+add		frag_script		fx_navlights.frag
+compile
+
+// Vertex Buffer input mappings
+input	pos rgba uv0 misc0
+
+// Texture assignments
+local	tex			inTex			0
+
+global	windowInfo	inWindow
+
+// Matrix stack uniform mappings
+matrix	projection	inMatP

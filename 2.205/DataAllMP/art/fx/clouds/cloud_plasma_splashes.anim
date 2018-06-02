@@ -1,0 +1,10 @@
+fps = 30;
+startFrame = 0;
+loopCount =0
+;
+texture = 
+{
+    "data:/art/fx/clouds/CLOUDS_plasma_splash01.TGA",
+    "data:/art/fx/clouds/CLOUDS_plasma_splash02.TGA"
+
+}

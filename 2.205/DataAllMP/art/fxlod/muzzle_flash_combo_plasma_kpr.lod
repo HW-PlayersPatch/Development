@@ -1,0 +1,13 @@
+lods = 
+{
+	lod0 = 
+	{
+		fx = "muzzle_flash_combo_plasma_kpr",
+		distance = 2000,
+	},
+	lod1 = 
+	{
+		fx = "muzzle_flash_combo_plasma_kpr_lod",
+		distance = 100000,
+	},	
+}

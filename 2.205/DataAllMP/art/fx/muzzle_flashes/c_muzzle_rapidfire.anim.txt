@@ -1,0 +1,34 @@
+fps = 40;
+startFrame = 0;
+loopCount =01
+;
+texture = 
+{
+    "data:/ART/FX/Muzzle_Flashes/C_Muzzle_00000.tga",
+    "data:/ART/FX/Muzzle_Flashes/C_Muzzle_00001.tga",
+    "data:/ART/FX/Muzzle_Flashes/C_Muzzle_00002.tga",
+    "data:/ART/FX/Muzzle_Flashes/C_Muzzle_00003.tga",
+    "data:/ART/FX/Muzzle_Flashes/C_Muzzle_00004.tga",
+    "data:/ART/FX/Muzzle_Flashes/C_Muzzle_00005.tga",
+    "data:/ART/FX/Muzzle_Flashes/C_Muzzle_00006.tga",
+    "data:/ART/FX/Muzzle_Flashes/C_Muzzle_00007.tga",
+    "data:/ART/FX/Muzzle_Flashes/C_Muzzle_00000.tga",
+    "data:/ART/FX/Muzzle_Flashes/C_Muzzle_00001.tga",
+    "data:/ART/FX/Muzzle_Flashes/C_Muzzle_00002.tga",
+    "data:/ART/FX/Muzzle_Flashes/C_Muzzle_00003.tga",
+    "data:/ART/FX/Muzzle_Flashes/C_Muzzle_00004.tga",
+    "data:/ART/FX/Muzzle_Flashes/C_Muzzle_00005.tga",
+    "data:/ART/FX/Muzzle_Flashes/C_Muzzle_00006.tga",
+    "data:/ART/FX/Muzzle_Flashes/C_Muzzle_00007.tga",
+    "data:/ART/FX/Muzzle_Flashes/C_Muzzle_00000.tga",
+    "data:/ART/FX/Muzzle_Flashes/C_Muzzle_00001.tga",
+    "data:/ART/FX/Muzzle_Flashes/C_Muzzle_00002.tga",
+    "data:/ART/FX/Muzzle_Flashes/C_Muzzle_00003.tga",
+    "data:/ART/FX/Muzzle_Flashes/C_Muzzle_00004.tga",
+    "data:/ART/FX/Muzzle_Flashes/C_Muzzle_00005.tga",
+    "data:/ART/FX/Muzzle_Flashes/C_Muzzle_00006.tga",
+    "data:/ART/FX/Muzzle_Flashes/C_Muzzle_00007.tga",
+    "data:/ART/FX/Muzzle_Flashes/C_Muzzle_00008.tga",
+    "data:/ART/FX/Muzzle_Flashes/C_Muzzle_00009.tga",
+    "data:/ART/FX/Muzzle_Flashes/C_Muzzle_00010.tga"
+}

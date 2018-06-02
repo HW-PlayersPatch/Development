@@ -1,0 +1,39 @@
+protect
+	blendOps
+	depthWrite
+	depthFunc
+	cull
+	fill
+
+// Shadow lines
+layer
+	program ovr_orders
+	local	float4		inMult	0	0	0	1
+	local	float4		inOfs	1	1	0	0
+	
+	blendOps srcAlpha zero srcInvAlpha srcInvAlpha
+	depthWrite 0
+	depthFunc always
+	cull none
+	fill lines
+
+layer
+	program ovr_orders
+	local	float4		inMult	0	0	0	1
+	local	float4		inOfs	1	-1	0	0
+	
+layer
+	program ovr_orders
+	local	float4		inMult	0	0	0	1
+	local	float4		inOfs	-1	1	0	0
+
+layer
+	program ovr_orders
+	local	float4		inMult	0	0	0	1
+	local	float4		inOfs	-1	-1	0	0
+	
+// Normal lines
+layer
+	program ovr_orders
+	local	float4		inMult	1	1	1	1
+	local	float4		inOfs	0	0	0	0

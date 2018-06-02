@@ -1,0 +1,19 @@
+fps = 25;
+startFrame = 0;
+loopCount =05
+;
+texture = 
+{
+    "data:/ART/FX/Lance_Beam/Lance_beam00.tga",
+    "data:/ART/FX/Lance_Beam/Lance_beam01.tga",
+    "data:/ART/FX/Lance_Beam/Lance_beam02.tga",
+    "data:/ART/FX/Lance_Beam/Lance_beam03.tga",
+    "data:/ART/FX/Lance_Beam/Lance_beam04.tga",
+    "data:/ART/FX/Lance_Beam/Lance_beam05.tga",
+    "data:/ART/FX/Lance_Beam/Lance_beam04.tga",
+    "data:/ART/FX/Lance_Beam/Lance_beam03.tga",
+    "data:/ART/FX/Lance_Beam/Lance_beam02.tga",
+    "data:/ART/FX/Lance_Beam/Lance_beam01.tga",
+    "data:/ART/FX/Lance_Beam/Lance_beam00.tga",
+
+}

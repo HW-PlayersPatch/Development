@@ -1,0 +1,26 @@
+//debugReload 5
+
+add		vert_script		post_motionblur.vert
+add		frag_script		post_motionblur.frag
+compile
+
+// Vertex Buffer input mappings
+input	pos uv0 uv1
+
+local vec4		inMotionInfo		0.0		0.0		0.0		1.0
+
+global	timeTable	inTime
+global	windowInfo	inWindow
+
+local	tex			inTexColor		0
+local	tex			inTexDepth		1
+local	tex			inTexPrevD		2
+
+// Matrix stack uniform mappings
+matrix	modelview	inMatMV
+matrix	projection	inMatP
+
+matrix	camera			inMatC
+matrix	cameraproj		inMatCP
+matrix	lastcamera		inMatLC
+matrix	lastcameraproj	inMatLCP

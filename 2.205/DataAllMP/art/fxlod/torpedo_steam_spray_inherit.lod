@@ -1,0 +1,13 @@
+lods = 
+{
+	lod0 = 
+	{
+		fx = "torpedo_steam_spray_inherit",
+		distance = 2000,
+	},
+	lod1 = 
+	{
+		fx = "torpedo_steam_spray_inherit_lod",
+		distance = 100000,
+	},	
+}

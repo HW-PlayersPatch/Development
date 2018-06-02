@@ -1,0 +1,22 @@
+protect
+	depthWrite
+	depthFunc
+	cull
+	fill
+	
+local	tex			FX_diffuse		default_white
+
+// Alpha handling props: Fade start, Fade curve, Scissor Fade, 0
+local	float4		FX_alphaMode	1	1	0	0
+
+layer
+	program fx_mesh
+	
+	depthWrite false
+	depthFunc less
+	cull none
+	fill poly
+	
+	alias	FX_diffuse		inTexFx
+	
+	alias	FX_alphaMode	inAlphaMode

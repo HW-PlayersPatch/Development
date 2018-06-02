@@ -1,0 +1,13 @@
+lods = 
+{
+	lod0 = 
+	{
+		fx = "dmg_cloud_combo_small",
+		distance = 2000,
+	},
+	lod1 = 
+	{
+		fx = "dmg_cloud_combo_small_lod",
+		distance = 100000,
+	},	
+}

@@ -1,0 +1,12 @@
+fps = 60;
+startFrame = 0;
+loopCount =01;
+layout = {2,2};
+
+textureLayout = 
+{
+   { "data:ART/FX/Clouds/ripers_tp.tga", 0, 0 },
+   { "data:ART/FX/Clouds/ripers_tp.tga", 0, 1 },
+   { "data:ART/FX/Clouds/ripers_tp.tga", 1, 0 },
+   
+}

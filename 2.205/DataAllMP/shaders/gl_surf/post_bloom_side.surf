@@ -1,0 +1,17 @@
+protect
+	blendOps
+	depthWrite
+	depthFunc
+	cull
+	fill
+	
+layer
+	program post_bloom_side
+	
+	blendOps one zero
+	depthWrite 0
+	depthFunc always
+	cull none
+	fill polys
+	
+	

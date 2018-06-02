@@ -1,0 +1,27 @@
+//debugReload 5
+
+// Construct and build the program
+add		vert_script		res_nebula.vert
+add		frag_text		#version 330
+add		frag_script		res_nebulaflash.frag
+compile
+
+// Input format
+input	pos
+input	norm
+input	uv0
+
+// Locals
+local	tex			inTexDiff		0
+local	float4		inColDiff		1	1	1	1
+local	float4		inColEmis		0	0	0	0
+
+// Globals and matrices
+global	timeTable		inTime
+global	gammaScale		inGammaScale
+global	lightCore		inLightCore
+
+// Matrix stack uniform mappings
+matrix	modelview	inMatM
+matrix	camera		inMatV
+matrix	projection	inMatP

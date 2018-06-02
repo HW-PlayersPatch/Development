@@ -1,0 +1,21 @@
+// Ship shader shadow logic
+#if gte CFG_Shadow_Quality 1
+	add		vert_text		#define SOB_SHADOWS_ON
+	add		frag_text		#define SOB_SHADOWS_ON
+	
+	#if gte CFG_Shadow_Quality 2
+		add		frag_text		#define SOB_SHADOWS_HQ
+		
+		#if gte CFG_Shadow_Quality 3
+			add		vert_text		#define SOB_SHADOWS_DUAL
+			add		frag_text		#define SOB_SHADOWS_DUAL
+		#fi
+	#fi
+#fi
+
+// Ship lighting logic
+#if gte CFG_Light_Quality 1
+	add		frag_text		#define SOB_LIGHT_HQ
+#fi
+
+#import sob_share_shipexp.imp

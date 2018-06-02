@@ -1,0 +1,13 @@
+lods = 
+{
+	lod0 = 
+	{
+		fx = "resourcing_dust_spray_full",
+		distance = 2000,
+	},
+	lod1 = 
+	{
+		fx = "resourcing_dust_spray_full_lod",
+		distance = 100000,
+	},	
+}

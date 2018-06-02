@@ -1,0 +1,17 @@
+#def SHIP_Matte
+#import sob_share_ship.imp
+
+// Locals
+local	tex			inTexDiff		0
+local	tex			inTexGlow		1
+local	tex			inTexTeam		2
+local	tex			inTexNorm		3
+local	tex			inTexEnv0		6
+local	tex			inTexEnv1		7
+local	tex			inTexShadow		8
+
+local	float4		inColEffect		0		0		0		0
+
+#import sob_share_format.imp
+#import sob_share_materials.imp
+#import sob_share_globals.imp

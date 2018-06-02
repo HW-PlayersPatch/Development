@@ -1,0 +1,10 @@
+load surface post_bloom_gaus
+load surface post_bloom_lumi
+load surface post_bloom_out
+load surface post_complex
+load surface post_debug_shadows
+load surface post_godrays_mask
+load surface post_godrays_out
+load surface post_motionblur
+load surface post_uialone
+load surface post_uiscene

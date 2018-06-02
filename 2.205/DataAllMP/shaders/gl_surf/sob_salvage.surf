@@ -1,0 +1,44 @@
+protect
+	blendOps
+	depthWrite
+	depthFunc
+	cull
+	fill
+	
+deathscissor
+
+local	tex			SOB_diffuse		default_white
+local	tex			SOB_glow		default_black
+local	tex			SOB_spec		default_black
+local	tex			SOB_progress	default_white
+local	tex			SOB_normal		default_normal
+
+local	float4		SOB_uieffect	0		0		0		0
+local	float2		SOB_fadeInfo	0		0
+
+// Blend range, low progress, high progress
+local	float3		SOB_fadeWindow	0.1		0.1		0.9
+
+// Fade Delta Mult Glow, Fade Burn Glow?
+local	float4		SOB_glowStyle	0.0		1.0		0		0
+
+layer
+	program sob_salvage
+	
+	blendOps srcAlpha srcInvAlpha
+	depthWrite 1
+	depthFunc less
+	cull none
+	fill poly
+	
+	alias	SOB_diffuse		inTexDiff
+	alias	SOB_glow		inTexGlow
+	alias	SOB_spec		inTexSpec
+	alias	SOB_progress	inTexProgress
+	alias	SOB_normal		inTexNorm
+
+	alias	SOB_uieffect	inColEffect
+	alias	SOB_fadeInfo	inFadeInfo
+
+	alias	SOB_fadeWindow	inFadeWindow
+	alias	SOB_glowStyle	inGlowStyle

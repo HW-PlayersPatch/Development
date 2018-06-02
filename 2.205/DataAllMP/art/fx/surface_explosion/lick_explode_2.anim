@@ -1,0 +1,9 @@
+fps = 30;
+startFrame = 0;
+loopCount =0
+;
+texture = 
+{
+    "data:/art/fx/Surface_explosion/explosion_lick.tga",
+    "data:/art/fx/Surface_explosion/explosion_lick2.tga" 
+}

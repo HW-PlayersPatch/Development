@@ -1,0 +1,30 @@
+// Tell the engine to reload this every X seconds
+//debugReload 5
+
+// Construct and build the program
+add		vert_text		#version 330
+add		frag_text		#version 330
+
+#if gte CFG_Patch_AltHyper 1
+	add		vert_text		#define PATCH_ALTHYPER
+	add		frag_text		#define PATCH_ALTHYPER
+#fi
+
+#import sob_share_shipexp.imp
+
+add		vert_script		sobfx_burn.vert
+add		frag_script		help_noise.frag
+add		frag_script		sobfx_burn.frag
+compile
+
+// Locals
+local	tex			inTexDiff		0
+local	tex			inTexGlow		1
+local	tex			inTexSpec		2
+local	tex			inTexNorm		3
+local	tex			inTexMask		4
+
+input	pos uv0 uv1 uv2
+
+#import sob_share_materials.imp
+#import sob_share_globals.imp
