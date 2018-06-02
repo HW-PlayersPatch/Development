@@ -1,5 +1,4 @@
 
-dofilepath("data:scripts/playerspatch_util.lua")
 dofilepath("data:scripts/SCAR/SCAR_Util.lua")
 dofilepath("data:scripts/scar/restrict.lua")
 dofilepath("data:leveldata/multiplayer/lib/lib.lua")
@@ -25,7 +24,6 @@ function OnInit()
     MPRestrict()
 	nocruisers = GetGameSettingAsNumber("nocruisers")
     cpuplayers = GetGameSettingAsNumber("cpuplayers")
-    PlayersPatch_AIAttackDamage = GetGameSettingAsNumber("PlayersPatch_AIAttackDamage")
     bounties = GetGameSettingAsNumber("bounties")
     research = GetGameSettingAsNumber("research")
     ruinjections = GetGameSettingAsNumber("ruinjections")

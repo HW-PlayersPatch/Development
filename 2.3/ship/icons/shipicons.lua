@@ -1907,15 +1907,6 @@ tur_standardcorvette = {
 }
 
 
-obs_observer = {
-	LargeIcon = {
-		--pixelUVCoords = 1,
-		texture = "DATA:\\Ship\\Icons\\HW1_icon_Tai_ships.dds",
-		textureUV = { 0, 256, 512, 512},
-		stretchOnDraw = 1,
-	},
-}
-
 
 --common
 special_splitter = Default

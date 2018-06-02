@@ -2,7 +2,7 @@ StartWeaponConfig(NewWeaponType,"Fixed","SphereBurst","Vgr_SmallMissile","Normal
 AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",90,90,"");
 setPenetration(NewWeaponType,5,0,
 {Unarmoured=0.07},
-{Unarmoured_hw1=0.155},
+{Unarmoured_hw1=0.07},
 {lightarmour=0.20},
 {lightarmour_hw1=0.20},
 {PlanetKillerArmour=0},

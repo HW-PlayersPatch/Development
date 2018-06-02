@@ -13,7 +13,6 @@ base_research = {
 		Description = "",             
 		TargetName = "",
 		AIOnly = 1,	
-		DoNotGrant = 1,
 	},	
 	{ 
 		Name = "cpuplayers_aggressive", 
@@ -26,7 +25,6 @@ base_research = {
 		Description = "",             
 		TargetName = "",
 		AIOnly = 1,	
-		DoNotGrant = 1,
 	},	
 	{ 
 		Name = "cpuplayers_dynamic", 
@@ -39,7 +37,6 @@ base_research = {
 		Description = "",             
 		TargetName = "",
 		AIOnly = 1,	
-		DoNotGrant = 1,
 	},
 --AI no-rush	
 	{ 
@@ -53,7 +50,6 @@ base_research = {
 		Description = "",             
 		TargetName = "",
 		AIOnly = 1,	
-		DoNotGrant = 1,
 	},		
 	{ 
 		Name = "cpuplayers_norushtime10", 
@@ -66,7 +62,6 @@ base_research = {
 		Description = "",             
 		TargetName = "",
 		AIOnly = 1,	
-		DoNotGrant = 1,
 	},		
 	{ 
 		Name = "cpuplayers_norushtime15", 
@@ -79,7 +74,6 @@ base_research = {
 		Description = "",             
 		TargetName = "",
 		AIOnly = 1,	
-		DoNotGrant = 1,
 	},
 
 
@@ -100,7 +94,6 @@ base_research = {
 		UpgradeName =		"BUILDSPEED",
 		UpgradeValue =		1.025,
 		AIOnly = 1,	
-		DoNotGrant = 1,
 	},	
 	{ 
 		Name =			"AllShipBuildSpeedHard",
@@ -117,7 +110,7 @@ base_research = {
 		UpgradeName =		"BUILDSPEED",
 		UpgradeValue =		1.05,
 		AIOnly = 1,	
-		DoNotGrant = 1,
+
 	},	
 	{ 
 		Name =			"AllShipBuildSpeedExpert",
@@ -134,7 +127,7 @@ base_research = {
 		UpgradeName =		"BUILDSPEED",
 		UpgradeValue =		1.075,
 		AIOnly = 1,	
-		DoNotGrant = 1,
+
 	},
 --AI resource rate
 	{ 
@@ -152,7 +145,7 @@ base_research = {
 		UpgradeName =		"ResourceCollectionRate",
 		UpgradeValue =		1.04,
 		AIOnly = 1,	
-		DoNotGrant = 1,
+
 	},	
 	{ 
 		Name =			"ResourceCollectionRateExpert",
@@ -169,76 +162,41 @@ base_research = {
 		UpgradeName =		"ResourceCollectionRate",
 		UpgradeValue =		1.09,
 		AIOnly = 1,	
-		DoNotGrant = 1,
-	},
 
+	},
+	--Special		
 	{ 
-		Name =			"WeaponDamageUpgrade125",
-		RequiredResearch =	"",                       
-		RequiredSubSystems =	"",                              
+		Name =			"MissileDestroyerVolley",
+		RequiredResearch =	"",
+		RequiredSubSystems =	"",
 		Cost = 			1,
 		Time = 			1,
 		DisplayedName =		"",
-		DisplayPriority =	0,                                                    
+		DisplayPriority =	0,
 		Description =		"",
-		UpgradeType =		Modifier,
-		TargetType =		AllShips,
-	    UpgradeName =		"WeaponDamage",
-	    UpgradeValue =		1.25,
-		AIOnly = 1,
-		DoNotGrant = 1,
+		UpgradeType =		Ability,
+		TargetType =		Ship,
+		TargetName =		"Kus_MissileDestroyer",
+		UpgradeName =		"UseSpecialWeaponsInNormalAttack",
+		AIOnly = 1,	
+		
 	},
-
 	{ 
-		Name =			"WeaponDamageUpgrade150",
-		RequiredResearch =	"",                       
-		RequiredSubSystems =	"",                              
+		Name =			"HeavyCorvetteAttackBurst",
+		RequiredResearch =	"",
+		RequiredSubSystems =	"",
 		Cost = 			1,
 		Time = 			1,
 		DisplayedName =		"",
-		DisplayPriority =	0,                                                    
+		DisplayPriority =	0,
 		Description =		"",
-		UpgradeType =		Modifier,
-		TargetType =		AllShips,
-	    UpgradeName =		"WeaponDamage",
-	    UpgradeValue =		1.5,
-		AIOnly = 1,
-		DoNotGrant = 1,
-	},
-
-	{ 
-		Name =			"WeaponDamageUpgrade175",
-		RequiredResearch =	"",                       
-		RequiredSubSystems =	"",                              
-		Cost = 			1,
-		Time = 			1,
-		DisplayedName =		"",
-		DisplayPriority =	0,                                                    
-		Description =		"",
-		UpgradeType =		Modifier,
-		TargetType =		AllShips,
-	    UpgradeName =		"WeaponDamage",
-	    UpgradeValue =		1.75,
-		AIOnly = 1,
-		DoNotGrant = 1,
-	},
-
-	{ 
-		Name =			"WeaponDamageUpgrade200",
-		RequiredResearch =	"",                       
-		RequiredSubSystems =	"",                              
-		Cost = 			1,
-		Time = 			1,
-		DisplayedName =		"",
-		DisplayPriority =	0,                                                    
-		Description =		"",
-		UpgradeType =		Modifier,
-		TargetType =		AllShips,
-	    UpgradeName =		"WeaponDamage",
-	    UpgradeValue =		2.0,
-		AIOnly = 1,
-		DoNotGrant = 1,
-	},
+		UpgradeType =		Ability,
+		TargetType =		Ship,
+		TargetName =		"Kus_HeavyCorvette",
+		UpgradeName =		"UseSpecialWeaponsInNormalAttack",	
+		AIOnly = 1,	
+	
+	},	
 
 }
 

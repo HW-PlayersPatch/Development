@@ -276,7 +276,7 @@ NewMainMenu = {
 				autosize = 1,
 				
 				Text = {	
-					text = " + v2.3 Players Patch | Build 8",
+					text = " + v2.3 Players Patch",
 					font = "ButtonFont",
 					vAlign = "Top",
 					color = {119,166,191,255},

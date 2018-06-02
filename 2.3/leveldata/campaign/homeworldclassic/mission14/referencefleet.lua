@@ -61,7 +61,7 @@ Fleet =
 RUs = 3200
 
 --Load expanded options
-dofilepath("data:scripts/playerspatch_util.lua")
+dofilepath("data:scripts/SCAR/SCAR_Util.lua")
 RefMissionDifficultyScale = GetMissionDifficultyScale()
 
 multiplierForExtraShips = RefMissionDifficultyScale

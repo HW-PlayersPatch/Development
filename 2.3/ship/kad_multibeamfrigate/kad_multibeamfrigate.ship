@@ -14,7 +14,7 @@ setTacticsMults(NewShipType, "FIRERATE", 0.98, 1.02, 1.0)
 NewShipType.isTransferable=1
 NewShipTypeuseEngagementRanges=1
 NewShipType.formationSpacing=250
-NewShipType.defaultROE="Defensive"
+NewShipType.defaultROE="Offensive"
 NewShipType.defaultStance="Aggressive"
 NewShipType.mass=100
 NewShipType.collisionMultiplier=1
@@ -139,7 +139,7 @@ addAbility(NewShipType,"GuardCommand",1,3000,600);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired");
-addAbility(NewShipType,"RetireAbility",1,0);
+addAbility(NewShipType,"RetireAbility",1,1);
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Kad_IonCannon","Weapon_Gun0","Weapon_Gun0");    
 StartShipWeaponConfig(NewShipType,"Kad_IonCannon2","Weapon_Gun1","Weapon_Gun1");   

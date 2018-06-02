@@ -138,7 +138,7 @@ addAbility(NewShipType,"CustomCommand",1,"$3191",1,0,200,1,0.65,0.0,300,"data:Sh
 addCustomCode(NewShipType,"data:Ship/Kus_GravWellGenerator/Kus_GravWellGenerator.lua","","Create_Kus_GravWellGenerator","Update_Kus_GravWellGenerator","Destroy_Kus_GravWellGenerator","Kus_GravWellGenerator",1.9)
 LoadModel(NewShipType,1);
 addShield(NewShipType,"EMP",220,20);
-AddShipMultiplier(NewShipType,"WeaponAccuracy","EnemyShipsWithinRadius","Linear",0.93,0.93,3000);
+AddShipMultiplier(NewShipType,"WeaponAccuracy","EnemyShipsWithinRadius","Linear",0.93,0.93,3750);
 AddShipMultiplier(NewShipType,"WeaponAccuracy","ThisShipOnly","Linear",1.0,1.0,10500);
 NewShipType.battleScarCoverage=2
 NewShipType.sobDieTime=1

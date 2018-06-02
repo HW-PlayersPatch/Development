@@ -54,7 +54,7 @@ Campaign
 	In Homeworld 2 Mission 5, lowered the Vaygr captial ship health upgrade to be closer to hw2c. (this was unintentionally altered in the 2.0 patch)
 	In Homeworld 2, applied some Hiigaran research cost/build time changes from the 2.0, 2.1, and 2.205 patches. These changes were made in multiplayer, but were accidently missed in the campaign. The campaign research stats now better match multiplayer.
 	In Homeworld 2 Mission 13, lowered the Vaygr corvette, frigate, and captial ship health upgrades to be closer to hw2c. (these were unintentionally altered in the 2.0 patch)
-Balance
+Balance (Key Points, Finer details can be captured by Stats Tool)
 	Vaygr resource collectors ru capacity 208->200 (to balance harvesting with Hiigaran. Vaygr still starts with one extra collector to make up for their Flagship's poor harvesting.)
 	Hiigaran/Vaygr Scout sensors range down 18% (scouting is too easy in hwr)
 	Hiigaran/Vaygr Minelayer cost 800->400 (buff, hw1 are 275)
