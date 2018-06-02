@@ -2,7 +2,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$1660"
 NewShipType.sobDescription="$1661"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 18500)
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 21000)
 NewShipType.regentime=1200
 NewShipType.minRegenTime=450
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
@@ -131,7 +131,7 @@ NewShipType.launchNrOfShipsInDockFormation=1
 NewShipType.launchFormation="delta"
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
-addAbility(NewShipType,"FormHyperspaceGateCommand",1,1000,500,1000,0);
+addAbility(NewShipType,"FormHyperspaceGateCommand",1,1000,500,800,0);
 addAbility(NewShipType,"CanBeCaptured",30,0.1);
 LoadModel(NewShipType,1);
 addShield(NewShipType,"EMP",10000,20);

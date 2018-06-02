@@ -15,7 +15,7 @@ setPenetration(NewWeaponType,5,1,
 {SmallMissileArmor=0},
 {SubSystemArmour=1.4},
 {TurretArmour=0.4},
-{ResArmour=0.33});
+{ResArmour=0.5});
 setAccuracy(NewWeaponType,1,
 {Swarmer=0.01},
 {SpaceMine=0.35},

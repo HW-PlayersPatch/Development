@@ -1,8 +1,8 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$10048"
 NewShipType.sobDescription="$10049"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 25000)
-NewShipType.regentime=1500
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 30000)
+NewShipType.regentime=900
 NewShipType.minRegenTime=300
 NewShipType.sideArmourDamage=0.9
 NewShipType.rearArmourDamage=1
@@ -10,6 +10,8 @@ setTacticsMults(NewShipType, "ENGINEACCEL", 1.10, 0.90, 1.0)
 setTacticsMults(NewShipType, "THRUSTERACCEL", 1.10, 0.90, 1.0)
 setTacticsMults(NewShipType, "ROTATION", 0.95, 1.05, 1.0)
 setTacticsMults(NewShipType, "ROTATIONACCEL", 1.10, 0.90, 1.0)
+NewShipType.defaultROE="Passive"
+NewShipType.defaultStance="Evasive"
 NewShipType.isTransferable=1
 NewShipType.paradeData="dummy_parade"
 NewShipType.mass=200
@@ -79,7 +81,7 @@ NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
 NewShipType.totalValue=5
 NewShipType.buildCost=900
-NewShipType.buildTime=60
+NewShipType.buildTime=55
 NewShipType.buildPriorityOrder=20
 NewShipType.retaliationRange=4800
 NewShipType.retaliationDistanceFromGoal=160
