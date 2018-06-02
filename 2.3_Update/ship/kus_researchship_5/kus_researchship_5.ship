@@ -6,12 +6,12 @@ NewShipType.regentime=0
 NewShipType.minRegenTime=0
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
 NewShipType.rearArmourDamage = getShipNum(NewShipType, "rearArmourDamage", 1.0)
-setTacticsMults(NewShipType, "ENGINEACCEL", 1.10, 0.90, 1.0)
-setTacticsMults(NewShipType, "THRUSTERACCEL", 1.10, 0.90, 1.0)
+setTacticsMults(NewShipType, "ENGINEACCEL", 0.90, 1.10, 1.0)
+setTacticsMults(NewShipType, "THRUSTERACCEL", 0.90, 1.10, 1.0)
 setTacticsMults(NewShipType, "ROTATION", 0.95, 1.05, 1.0)
-setTacticsMults(NewShipType, "ROTATIONACCEL", 1.10, 0.90, 1.0)
-NewShipType.defaultROE="Defensive"
-NewShipType.defaultStance="Neutral"
+setTacticsMults(NewShipType, "ROTATIONACCEL", 0.90, 1.10, 1.0)
+NewShipType.defaultROE="Passive"
+NewShipType.defaultStance="Evasive"
 NewShipType.isTransferable=0
 NewShipType.mass=100
 NewShipType.aabbExpand=50

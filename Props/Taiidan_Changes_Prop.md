@@ -106,7 +106,7 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
 * **Default tactics change:** `Defensive => Passive`
 
 ### Defenders
-*Defenders are currently garbage; their price tag is okay, but their survivability and killing efficienty is just awful. This unit is designed to hold key objectives against fighters, but is currently a minor annoyance at best. Throw in the unit cap to ensure they're always outnumbered, add in the difficulty docking, and you realise there is no current reason to ever make this unit. These change*
+*Defenders are currently garbage; their price tag is okay, but their survivability and killing efficienty is just awful. This unit is designed to hold key objectives against fighters, but is currently a minor annoyance at best. Throw in the unit cap to ensure they're always outnumbered, add in the difficulty docking, and you realise there is no current reason to ever make this unit. These changes aim at making this unit a reliable fighter killer:*
 * **Max HP up:** `360 => 400 (+11%)`
 * **Unit caps raised 1.25x:**
   * `12 => 15` in `small`
@@ -127,6 +127,16 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
 * **Rotation accel time down:** `0.75 => 0.5 (-33%)`
 * **Default stance change:** `Neutral => Evasive`
 * **Default tactics change:** `Defensive => Passive`
+
+### Research Ship & all 5 Auxiliary Hubs
+* **Default stance change:** `Neutral => Evasive` Provides a small boost to maneuverability
+* **Default tactics change:** `Defensive => Passive`
+* **Reduced aggressive tactic multiplier to engine acceleration:** `1.10 => 0.90 (-18%)` This and the following multipliers were swapped up for some reason.
+* **Increased evasive tactic multiplier to engine acceleration:** `0.90 => 1.10 (+22%)`
+* **Reduced aggressive tactic multiplier to thruster acceleration:** `1.10 => 0.90 (-18%)`
+* **Increased evasive tactic multiplier to thruster acceleration:** `0.90 => 1.10 (+22%)`
+* **Reduced aggressive tactic multiplier to rotation acceleration:** `1.10 => 0.90 (-18%)`
+* **Increased evasive tactic multiplier to rotation acceleration:** `0.90 => 1.10 (+22%)`
 
 
 ## Nerfs

@@ -81,10 +81,11 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 ### Cloak Generators 
 *Moving far too slowly to perform clutch carrier cloaks or to keep pace with frigates. Similar reasoning to the buffs to the field frigates. Cloak generators are also remarkably fragile.*
 * **Max speed up:** `165 => 230 (+39%)`
+* **Max strafe speed up:** `165 => 230 (+39%)`
 * **Max rotation speed up:"** `22 => 30 (+36%)`
 * **Rotation accel time down:** `0.75 => 0.5 (-33%)`
 * **Start moving sooner when turning:** `40 => 60 (+50%)` This value (`accelerationAngle`) defines a forwards facing cone which the ships target destination must lie within *before* it will begin accelerating
-* **Default stance change:** `Neutral => Evasive`
+* **Default stance change:** `Neutral => Evasive` Provides a small boost to maneuverability
 * **Default tactics change:** `Defensive => Passive`
 * **Max HP up:** `9000 => 14000 (+55%)`
 
@@ -92,13 +93,19 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 *No reason not to.*
 * **Default stance change:** `Neutral => Evasive` Provides a small boost to maneuverability
 * **Default tactics change:** `Defensive => Passive`
+* **Reduced aggressive tactic multiplier to engine acceleration:** `1.10 => 0.90 (-18%)` This and the following multipliers were swapped up for some reason.
+* **Increased evasive tactic multiplier to engine acceleration:** `0.90 => 1.10 (+22%)`
+* **Reduced aggressive tactic multiplier to thruster acceleration:** `1.10 => 0.90 (-18%)`
+* **Increased evasive tactic multiplier to thruster acceleration:** `0.90 => 1.10 (+22%)`
+* **Reduced aggressive tactic multiplier to rotation acceleration:** `1.10 => 0.90 (-18%)`
+* **Increased evasive tactic multiplier to rotation acceleration:** `0.90 => 1.10 (+22%)`
 
 ### Proximity Detector
-* **Default stance change:** `Neutral => Evasive`
+* **Default stance change:** `Neutral => Evasive` Provides a small boost to maneuverability
 * **Default tactics change:** `Defensive => Passive`
 
 ### Defenders
-*Defenders are currently garbage; their price tag is okay, but their survivability and killing efficienty is just awful. This unit is designed to hold key objectives against fighters, but is currently a minor annoyance at best. Throw in the unit cap to ensure they're always outnumbered, add in the difficulty docking, and you realise there is no current reason to ever make this unit. These change*
+*Defenders are currently garbage; their price tag is okay, but their survivability and killing efficienty is just awful. This unit is designed to hold key objectives against fighters, but is currently a minor annoyance at best. Throw in the unit cap to ensure they're always outnumbered, add in the difficulty docking, and you realise there is no current reason to ever make this unit. These changes aim at making this unit a reliable fighter killer:*
 * **Max HP up:** `360 => 400 (+11%)`
 * **Unit caps raised 1.25x:**
   * `12 => 15` in `small`
@@ -121,11 +128,12 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
   * `30 => 45` in `huge`
   * `60 => 90` in `vast`
 * **Build time lowered slightly:** `15 => 13 (-13%)`
-* **Weapon damage range removed:** `[10, 15] => [15, 15] (effective +25%)`
-* **Damage multiplier vs collectors up slightly:** `1.1 => 1.3 (+18%)`
-* **Damage multiplier vs subsystems up:** `1.25 => 3.0 (+140%)`
+* **Weapon damage range removed:** `[10, 15] => [15, 15] (effective +25%)` (*`kus_cloakedfighter.wepn`*)
+* **Damage multiplier vs collectors up slightly:** `1.1 => 1.3 (+18%)` (*`kus_cloakedfighter.wepn`*)
+* **Damage multiplier vs subsystems up:** `1.25 => 3.0 (+140%)` (*`kus_cloakedfighter.wepn`*)
 * **Regeneration added:** `0 => 240` The only strike with inherent regeneration. Cloaked fighters will regenerate completely in 4 minutes.
 * **Max speed up slightly:** `430 => 440 (+2%)`
+* **Max strafe speed up:** `430*0.77 => 440 (+33%)`
 
 ### Drone Frigates
 *Drone frigates are widely regarded as the worst frigate in the game. Even way back when I played classic campaign I never made these things. QOL upgrades along with slightly reduced deployment time are first steps for this unit.*
@@ -133,6 +141,16 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 * **Drones never expire:** `<need cloaked>`
 * **Build time decreased a lot:** `77 => 45 (-42%)` Contrast with Hiigaran flaks: `50`, Vaygr assaults: `45`, keep in mind HW1 has no imp. manufacturing upgrade.
 * **Max speed up:** `166 => 230 (+39%)`
+
+### Research Ship & all 5 Auxiliary Hubs
+* **Default stance change:** `Neutral => Evasive` Provides a small boost to maneuverability
+* **Default tactics change:** `Defensive => Passive`
+* **Reduced aggressive tactic multiplier to engine acceleration:** `1.10 => 0.90 (-18%)` This and the following multipliers were swapped up for some reason.
+* **Increased evasive tactic multiplier to engine acceleration:** `0.90 => 1.10 (+22%)`
+* **Reduced aggressive tactic multiplier to thruster acceleration:** `1.10 => 0.90 (-18%)`
+* **Increased evasive tactic multiplier to thruster acceleration:** `0.90 => 1.10 (+22%)`
+* **Reduced aggressive tactic multiplier to rotation acceleration:** `1.10 => 0.90 (-18%)`
+* **Increased evasive tactic multiplier to rotation acceleration:** `0.90 => 1.10 (+22%)`
 
 
 ## Nerfs
@@ -157,11 +175,11 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 *No need to overlap the anti-corvette role with functioning assault frigates. Still decent.*
 * **Damage multiplier vs corvettes slightly down:** 
 * (*`kus_hvcorvette1.wepn; kus_hvcorvette2.wepn`*)
- * vs `LightArmour`: `0.5 => 0.45 (-10%)`
- * vs `LightArmour_hw1`: `0.55 => 0.45 (-18%)`
+  * vs `LightArmour`: `0.5 => 0.45 (-10%)`
+  * vs `LightArmour_hw1`: `0.55 => 0.45 (-18%)`
 
 ### Minelayer Corvettes
 *Compared to its 'never build' HW2 counterparts, the HW1 minelayer is much cheaper, faster building and more accessible. Its stats are a little worse and it can't clear mines, but ints can easily fill this role anyway.*
-* **Build time slightly up:** `25 => 30`
-* **Removed nonsensical evasive stance hit to engine acceleration:** `0.8 => 1.0`
-* **Removed nonsensical evasive stance hit to thruster acceleration:** `0.8 => 1.0`
+* **Build time slightly up:** `25 => 30 (+20%)`
+* **Removed nonsensical evasive stance hit to engine acceleration:** `0.8 => 1.0 (+25%)`
+* **Removed nonsensical evasive stance hit to thruster acceleration:** `0.8 => 1.0 (+25%)`
