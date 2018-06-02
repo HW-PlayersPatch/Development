@@ -1,9 +1,0 @@
-fps = 30;
-startFrame = 0;
-loopCount =0
-;
-texture = 
-{
-    "data:/art/fx/Heavy_torpedo/fire_embers.tga",
-    "data:/art/fx/Heavy_torpedo/fire_embers2.tga",   
-}

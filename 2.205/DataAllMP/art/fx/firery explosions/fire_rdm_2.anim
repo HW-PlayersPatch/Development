@@ -1,9 +1,0 @@
-fps = 30;
-startFrame = 0;
-loopCount =0
-;
-texture = 
-{
-    "data:/art/fx/Firery Explosions/animated_lines_orange2.tga",
-    "data:/art/fx/Firery Explosions/animated_lines_orange.tga",   
-}

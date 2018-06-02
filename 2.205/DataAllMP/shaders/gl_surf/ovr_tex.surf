@@ -1,9 +1,0 @@
-protect
-	blendOps
-	depthWrite
-
-layer
-	program ovr_tex
-	
-	blendOps srcAlpha zero srcInvAlpha srcInvAlpha
-	depthWrite 0

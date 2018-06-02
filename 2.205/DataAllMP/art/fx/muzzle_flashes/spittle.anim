@@ -1,9 +1,0 @@
-fps = 30;
-startFrame = 0;
-loopCount =01
-;
-texture = 
-{
-    "data:/ART/FX/Muzzle_Flashes/spittle.tga",
-    "data:/ART/FX/Muzzle_Flashes/spittle2.tga"
-}

@@ -1,9 +1,0 @@
-fps = 30;
-startFrame = 0;
-loopCount =0
-;
-texture = 
-{
-    "data:/ART/FX/Firery Explosions/Anime_fire_cloud01.tga",
-    "data:/ART/FX/Firery Explosions/Anime_fire_cloud02.tga",
-}

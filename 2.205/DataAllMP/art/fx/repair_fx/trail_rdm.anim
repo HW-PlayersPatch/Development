@@ -1,9 +1,0 @@
-fps = 30;
-startFrame = 0;
-loopCount =0
-;
-texture = 
-{
-    "data:/art/fx/Repair_FX/Blue_SparkTrail2.tga",
-    "data:/art/fx/Repair_FX/Blue_SparkTrail.tga",   
-}
