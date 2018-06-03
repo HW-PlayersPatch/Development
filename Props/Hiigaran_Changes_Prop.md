@@ -51,7 +51,7 @@ Several buffs are included to open up these options to Hiigaran again, and also 
 
 ### Pulsar Corvettes
 *Currently the focal point of Hiigaran play (in part due to corvettes being so amazing in general now), pulsars have too much power in too many scenarios. Distributing some of this power to torpedoes and destroyers is a healthier solution*
-* **Damage multiplier vs frigates *(Medium armour)* slightly down:** `1.5 => 1.38 (-8%)` (*`hgn_pulsar.wepn`*) Hiigaran have many options for dealing with frigates - most of them are designed for this role and are simply underpowered. Pulsars should not act as a bandaid for underperforming partners.
+* **Damage multiplier vs frigates slightly down:** `1.5 => 1.38 (-8%)` (*`hgn_pulsar.wepn`*) Hiigaran have many options for dealing with frigates - most of them are designed for this role and are simply underpowered. Pulsars should not act as a bandaid for underperforming partners.
 * **Damage multiplier vs collectors down:** `0.59 => 0.4 (-32%)` (*`hgn_pulsar.wepn`*) There is no reason for pulsars to perform this well against collectors. They are already outperforming most other vettes (except missiles) in this role whilst also outperforming most other vettes in most other roles. Generalist units are fine, but not to this extent.
 ### Scouts
 *Part of a larger problem in HWR, scouts are currently waypointable to provide extremely hard to kill vision for a low cost and low attention investment.*
@@ -65,7 +65,7 @@ Several buffs are included to open up these options to Hiigaran again, and also 
 * **Cost up:** `400 => 1000 (+150%)`
 * **Research time up:** `60 => 75 (+25%)`
 ### Resource Collectors
-*Not a torpedo. (need cloaked)*
+*Not a torpedo.*
 * **Kamikazi damage multiplier down:** `1.0 => 0.6 (-40%)`
 ### Resource Collector Armor Upgrade
 *Collectors are currently shrugging off harrassment damage with no problems - harrassment is an attention-intensive option for the harrasser, so it should be for the harrassed also. Tanky workers mean the defender has far less to worry about, and the harrasser will find their return-on-investment depressingly low. Fighters in particular trade quite poorly against even a single layer of hull defence.*
