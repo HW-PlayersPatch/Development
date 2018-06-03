@@ -46,9 +46,11 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
 * **Move speed up:** `285 => 295 (+4%)`
 
 ### Heavy Corvettes
-*Heavy vettes are currently trapped in the 'I used this once and it really sucked' tier of units. Their infastructure stats are way out of tune for what the unit actually provides. However, this unit is receiving a (small) nerf vs its vette accuracy, in tandem with these buffs. This is to solidify its role as an anti-**frigate** unit rather than a competetor with the assault frigate for its role.*
+*Heavy vettes are currently trapped in the 'I used this once and it really sucked' tier of units. Their infastructure stats are way out of tune for what the unit actually provides. However, this unit is receiving a (small) nerf vs its vette accuracy, in tandem with these buffs. This is to solidify its role as an anti-**frigate** unit rather than a competetor with the assault frigate for its role. This update aims to have a neat ladder of anti-heavy corvettes looking like so: Lasers > Heavies > Pulsars.*
 * **Move speed up:**: `245 => 290 (+18%)` This is a corvette, not a frigate
 * **Damage multiplier vs frigates up:** `0.55 => 1.0 (+81%)` (*`tai_hvcorvette1.wepn; tai_hvcorvette2.wepn`*) This causes heavies to be worth about 0.3 torpedo frigates which reflects their cost and build time.
+* **Damage multiplier vs corvettes down:** `0.225 => 0.2 (-11%)`
+* **Accuracy multiplier vs HW2 corvettes down:** `0.5 => 0.45 (-10%)`  
 
 ### Repair Corvettes
 *Not bad, however their main role (fast response repairer) is sabotaged by a lackluster speed stat. Repair vettes will often fail to move into range with a friendly vette / whatever before its already dead. In the case of vettes, they can often strafe or move away faster than the repair vette can follow. Taiidan repair vettes also have a specific issue where their repair beam is fixed forwards, this means they waste tons of time positioning themselves before they think they can shoot.*
@@ -75,6 +77,7 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
   * **Projectile speed up:** `1500 => 1900 (+26%)` Multiguns were unable to hit HW1 fighters hardly at all, but were reliable against HW2. This buff has a small effect against HW2, but a large one against HW1.
   * **Damage multiplier vs HW1 fighters up:** `1.8 => 2.1 (+17%)` To balance out multigun effectiveness against HW2 and HW1 fighters.
   * **Accuracy vs HW1 fighters up:** `0.6 => 1.0 (+67%)`
+  * **Damage multiplier vs corvettes down:** `0.1 => 0.75 (-25%)`
 
 ### Support Frigates
 *Support frigates only come into their own when in numbers above three or more healing the same target (usually a destroyer): this makes them quite undesirable as an earlygame unit due to their high build time and lackluster healing power against the units that are on the field at that stage of the game (frigates). Rather than keep this unit consigned to the lategame, this is a buff intended to make support frigates an option in the earlygame (not always outclassed by building an extra dps frigate).*

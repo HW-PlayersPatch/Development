@@ -24,6 +24,12 @@ In addition to nerfing and adding weak points to the unstoppable macro engine, t
 ### Missile Corvettes
 *Nerfed against fighters in the current version of 2.3, missile vettes currently take decades to clear HW1 fighters (in part due to their lack of close formations). This buff aims to level missile vette performance against all fighters.*
 * **Missile explosion damage up vs HW1 fighters:** `0.7 => 0.155 (+121%)`
+* **Missile explosion damage up vs HW1 corvettes:** `0.2 => 0.85 (+325%)` Losing to multiguns isn't a good look
+
+### Laser Corvettes
+*This update aims to have a neat ladder of anti-heavy corvettes looking like so: Lasers > Heavies > Pulsars. Currently, lasers are often tying with pulsars, and are always outperformed by heavies. Buffs to bring this unit out of the gutter once and for all (hopefully)*
+* **Damage multiplier vs frigates up:** `0.85 => 1.2 (+41%)`
+* **Damage multiplier vs capitals up:** `0.51 => 0.8 (+56%)`
 
 ### Assault Craft
 *Doing fine, however struggling to follow up a clear sky with good econ damage*

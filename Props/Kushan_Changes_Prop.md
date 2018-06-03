@@ -45,7 +45,9 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 *See the [note for the same change](https://github.com/HW-PlayersPatch/2.3/blob/master/Props/Taiidan_Changes_Prop.md#heavy-corvettes) happening to Taiidan heavies.*
 * **Move speed up:**: `245 => 290 (+18%)`
 * **Damage multiplier vs frigates up:** `1.1 => 1.99 (+81%)` (*`kus_hvcorvette1.wepn; kus_hvcorvette2.wepn`*) This causes heavies to be worth about 0.3 torpedo frigates which reflects their cost and build time. Kushan heavy vettes fire half the shots of their Taiidan counterparts, so their weapons are twice as powerful.
-  
+* **Damage multiplier vs corvettes down:** `0.45 => 0.4 (-11%)`
+* **Accuracy multiplier vs HW2 corvettes down:** `0.5 => 0.45 (-10%)`  
+
 ### Repair Corvettes
 *See the [note for the same change](https://github.com/HW-PlayersPatch/2.3/blob/master/Props/Taiidan_Changes_Prop.md#repair-corvettes) happening to Taiidan repair vettes (minus the changes to turret arc).*
 * **Max speed up:** `255 => 290 (+14%)`
@@ -68,6 +70,7 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
   * **Damage multiplier vs HW1 fighters up:** `1.8 => 2.1 (+17%)` To balance out multigun effectiveness against HW2 and HW1 fighters.
   * **Accuracy vs HW1 fighters up:** `0.9 => 1.0 (+9%)` (*`kus_multigun1.wepn`*)
   * **Accuracy vs HW1 fighters up:** `0.6 => 1.0 (+67%)` (*`kus_multigun2.wepn`*) Both weapons do the exact same DPS, they are merely positioned differently.
+  * **Damage multiplier vs corvettes down:** `0.1 => 0.75 (-25%)`
 
 ### Support Frigates
 *See the [note for the same change](https://github.com/HW-PlayersPatch/2.3/blob/master/Props/Taiidan_Changes_Prop.md#support-frigates) happening to Taiidan support frigates.*
