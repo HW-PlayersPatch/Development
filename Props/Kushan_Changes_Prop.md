@@ -124,7 +124,7 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 *HW1 is currently unable to follow a hard macro / fast expand strategy as they simply cannot get a second carrier out in time to make use of the extra income. This change, in combination with the collector speed buff, will hopefully open macro play as an option for HW1 as a race.*
 * **Build time down:** `210 => 165 (-21%)`
 
-## Missile Destroyers
+### Missile Destroyers
 *(need cloaked)*
 * **Now use up a supply slot for Destroyers (still have their own cap of 2)** `0 => 1`
 
