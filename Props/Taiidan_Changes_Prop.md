@@ -69,8 +69,12 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
 * **Max rotation speed up a lot:** `97 => 170 (+75%)` Contrast to gunships: `163`. Multiguns need to turn to face their targets due to their attack script (strafe + pivot vs circling)
 * **Rotation accel time down:** `1.65 => 0.65 (-61%)` Contrast to gunships: `0.6`
 * **Rotation brake time down:** `0.825 => 0.4 (-51%)`
-* **Projectile speed down:** `1700 => 1500 (-17%)` (*`tai_multigun1.wepn; tai_multigun2.wepn`*) To match Kushan counterpart 
-* **Attack range up:** `1600 => 1800 (+13%)` (*`tai_multigun1.wepn; tai_multigun2.wepn`*)
+* **Weapon changes:**
+* (*`tai_multigun1.wepn; tai_multigun2.wepn`*):
+  * **Attack range up:** `1600 => 1800 (+13%)`
+  * **Projectile speed up:** `1500 => 1900 (+26%)` Multiguns were unable to hit HW1 fighters hardly at all, but were reliable against HW2. This buff has a small effect against HW2, but a large one against HW1.
+  * **Damage multiplier vs HW1 fighters up:** `1.8 => 2.1 (+17%)` To balance out multigun effectiveness against HW2 and HW1 fighters.
+  * **Accuracy vs HW1 fighters up:** `0.6 => 1.0 (+67%)`
 
 ### Support Frigates
 *Support frigates only come into their own when in numbers above three or more healing the same target (usually a destroyer): this makes them quite undesirable as an earlygame unit due to their high build time and lackluster healing power against the units that are on the field at that stage of the game (frigates). Rather than keep this unit consigned to the lategame, this is a buff intended to make support frigates an option in the earlygame (not always outclassed by building an extra dps frigate).*

@@ -60,7 +60,14 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 * **Max rotation speed up a lot:** `97 => 170 (+75%)` Contrast to gunships: `163`. Multiguns need to turn to face their targets due to their attack script (stationary pivot vs circling)
 * **Rotation accel time down:** `1.65 => 0.65 (-61%)` Contrast to gunships: `0.6`
 * **Rotation brake time down:** `0.825 => 0.4 (-51%)`
-* **Attack range up:** `1600 => 1800 (+13%)` (*`kus_multigun1.wepn; kus_multigun2.wepn`*)
+* **Weapon changes:**
+* (*`kus_multigun1.wepn; kus_multigun2.wepn`*):
+  * **Attack range up:** `1600 => 1800 (+13%)`
+  * **Projectile speed up:** `1500 => 1900 (+26%)` Multiguns were unable to hit HW1 fighters hardly at all, but were reliable against HW2. This buff has a small effect against HW2, but a large one against HW1.
+  * **Damage multiplier vs HW2 fighters up:** `1.3 => 1.8 (+38%)` To match Taiidan multis
+  * **Damage multiplier vs HW1 fighters up:** `1.8 => 2.1 (+17%)` To balance out multigun effectiveness against HW2 and HW1 fighters.
+  * **Accuracy vs HW1 fighters up:** `0.9 => 1.0 (+9%)` (*`kus_multigun1.wepn`*)
+  * **Accuracy vs HW1 fighters up:** `0.6 => 1.0 (+67%)` (*`kus_multigun2.wepn`*) Both weapons do the exact same DPS, they are merely positioned differently.
 
 ### Support Frigates
 *See the [note for the same change](https://github.com/HW-PlayersPatch/2.3/blob/master/Props/Taiidan_Changes_Prop.md#support-frigates) happening to Taiidan support frigates.*
