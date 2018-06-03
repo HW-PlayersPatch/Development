@@ -26,7 +26,7 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
   * vs `LightArmour`: `0.5 => 0.6 (+20%)`
   * vs `LightArmour_hw1`: `0.5 => 0.6 (+20%)`
 * (*`tai_assaultbomb.wepn`*):
-  * vs `LightArmour`: `1.25 => 1.3 (+4%)
+  * vs `LightArmour`: `1.25 => 1.3 (+4%)`
   * vs `LightArmour_hw1`: `1.05 => 1.3` (+24%)
 * **Accuracy multiplier vs collectors up:**
 * (*`tai_assaultgun1.wepn; tai_assaultgun2.wepn`*):
@@ -40,8 +40,14 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
   * vs `ResArmour`: `0.2 => 1.2 (+500%)`
 * **Plasma weapon firing cone increased:** `30 => 40 (+33%)` (*`tai_assaultbomb.wepn`*)
 
+### Light Corvettes
+*Of all corvettes, this should be the one rushing and outmaveuvering. However, due to the overall sluggish engines HW1 currently have on many ships, this would-be blitz unit is outsped by supposedly heavyweight counterparts from HW2.*
+* **Strafe speed up:** `235 => 295 (+25%)` For strike, *strafe* and *move* speed are usually the same. Lights have an usually low strafe (thrust) speed compared to their move (engine) speed
+* **Move speed up:** `285 => 295 (+4%)`
+
 ### Heavy Corvettes
 *Heavy vettes are currently trapped in the 'I used this once and it really sucked' tier of units. Their infastructure stats are way out of tune for what the unit actually provides. However, this unit is receiving a (small) nerf vs its vette accuracy, in tandem with these buffs. This is to solidify its role as an anti-**frigate** unit rather than a competetor with the assault frigate for its role.*
+* **Move speed up:**: `245 => 290 (+18%)` This is a corvette, not a frigate
 * **Damage multiplier vs frigates up:** `0.55 => 1.0 (+81%)` (*`tai_hvcorvette1.wepn; tai_hvcorvette2.wepn`*) This causes heavies to be worth about 0.3 torpedo frigates which reflects their cost and build time.
 
 ### Repair Corvettes
@@ -54,27 +60,30 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
   * Horizontally: `[0, 0] => [-45, 45]`
   * Vertically: `[0, 0] => [-1, 10]`
 * **Removed nonsensical firing cone range:** `80 -> 0` (*`tai_repairgunheal.wepn`*)
-
-### Support Frigates
-*Support frigates only come into their own when in numbers above three or more healing the same target (usually a destroyer): this makes them quite undesirable as an earlygame unit due to their high build time and lackluster healing power against the units that are on the field at that stage of the game (frigates). Rather than keep this unit consigned to the lategame, this is a buff intended to make support frigates an option in the earlygame (not always outclassed by building an extra dps frigate).*
-* **'Damage' multiplier vs frigates up:** `1.0 => 1.5 (+50%)` (*`tai_supportgun1heal.wepn`*) More like anti-damage, this is a buff to the healing factor against frigates
-* **Range for repair beam up:** `1000 => 1250 (+25%)` (*`tai_supportgun1heal.wepn`*)
+* **Repair beam now plays the correct sound on firing** (*`tai_repairgunheal.wepn`*)
 
 ### Multigun Corvettes
 *Outclassed by light vettes on all fronts, multiguns should come into the fore with the light vette nerf (below). However, even when uncontested in fighter sniping, the speed and especially agility of multiguns leaves a lot to be desired, especially considering their target unit class. The main cause of unreliability for multiguns is *time spent not firing*, which is influenced by many factors - these changes aim to up the amount of time multiguns actually spend firing at the enemy, and make them a viable alternative to ints/lights*
-* **Max speed up:** `275 => 290 (+6%)`
+* **Build time down:** `25 => 23 (-8%)`
+* **Max speed up:** `275 => 305 (+11%)`
 * **Max rotation speed up a lot:** `97 => 170 (+75%)` Contrast to gunships: `163`. Multiguns need to turn to face their targets due to their attack script (strafe + pivot vs circling)
 * **Rotation accel time down:** `1.65 => 0.65 (-61%)` Contrast to gunships: `0.6`
 * **Rotation brake time down:** `0.825 => 0.4 (-51%)`
 * **Projectile speed down:** `1700 => 1500 (-17%)` (*`tai_multigun1.wepn; tai_multigun2.wepn`*) To match Kushan counterpart 
 * **Attack range up:** `1600 => 1800 (+13%)` (*`tai_multigun1.wepn; tai_multigun2.wepn`*)
 
+### Support Frigates
+*Support frigates only come into their own when in numbers above three or more healing the same target (usually a destroyer): this makes them quite undesirable as an earlygame unit due to their high build time and lackluster healing power against the units that are on the field at that stage of the game (frigates). Rather than keep this unit consigned to the lategame, this is a buff intended to make support frigates an option in the earlygame (not always outclassed by building an extra dps frigate).*
+* **'Damage' multiplier vs frigates up:** `1.0 => 1.5 (+50%)` (*`tai_supportgun1heal.wepn`*) More like anti-damage, this is a buff to the healing factor against frigates
+* **Range for repair beam up:** `1000 => 1250 (+25%)` (*`tai_supportgun1heal.wepn`*)
+
 ### Resource Collectors
-*A plethora of units from all races were buffed against collectors this update. HW1 collectors were already easier to snipe for most units due to their slow movespeed and large hitboxes. A slight buff to their HP keeps HW1 players from fielding collectors which are made of papier mache.*
-* **Max HP up:** `6000 => 7000 (+17%)`
+*HW1 resourcing is currently something tourturous. Collectors slower than carriers meant expanding or relocations were extremely difficuly and/or impossible under many circumstances, even if they **were** possible, they weren't desirable. This also makes HW1 collectors a huge liability to replace, as it could be minutes before a collector can get back to harvesting, else the HW1 player hyperspace it into position at an extra charge on top of the build cost... A mess, in essence. These changes have been tested extensively so **HW1 collection rate is the same**, however HW1 strategy is now much more flexible, and their economy is much less fragile (although still not quite as robust as HW2).*
+* **Move speed up:** `110 => 206 (+106%)`
+* **Build time down:** `50 => 45 (-10%)`
 
 ### Resource Controllers
-*Outclassed heavily by its HW2 counterpart, with just one dropoff, no hull defence, glacial movement speed / agility, and more expensive to boot, HW1 refineries need some love.*
+*Outclassed heavily by its HW2 counterpart, with just one dropoff, no hull defence, glacial movement speed / agility, and more expensive to boot, HW1 refineries also need some love.*
 * **Build time down slightly:** `60 => 55 (-8%)`
 * **Max speed up:** `100 => 150 (+50%)`
 * **Max rotation speed up:** `18 => 36 (+100%)`
@@ -84,17 +93,18 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
 * **Default tactics change:** `Defensive => Passive`
 
 ### Bombers
-*Doing fine, but doing surprisingly low damage to collectors.*
+*Fine, but doing surprisingly low damage to collectors.*
 * **Damage multiplier vs collectors slightly up:** `0.2 => 0.3 (+50%)` (*`hw1_bomber.wepn`*)
 
 ### Cloak Generators 
 *Moving far too slowly to perform clutch carrier cloaks or to keep pace with frigates. Similar reasoning to the buffs to the field frigates. Cloak generators are also remarkably fragile.*
-* **Max speed up:** `165 => 230 (+39%)`
+* **Max speed up:** `165 => 206 (+24%)`
 * **Max rotation speed up:"** `22 => 30 (+36%)`
 * **Rotation accel time down:** `0.75 => 0.5 (-33%)`
+* **Start moving sooner when turning:** `40 => 60 (+50%)` This value (`accelerationAngle`) defines a forwards facing cone which the ships target destination must lie within *before* it will begin accelerating
 * **Default stance change:** `Neutral => Evasive`
 * **Default tactics change:** `Defensive => Passive`
-* **Max HP up:** `9000 => 14000 (+55%)`
+* **Max HP up:** `9000 => 11000 (+22%)`
 
 ### Probes
 *No reason not to.*
@@ -117,8 +127,12 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
 * **Projectile speed up:** `1200 => 1300 (+8%)` (*`tai_defender.wepn`*)
 * **Accuracy vs fighters up:**
 * (*`tai_defender.wepn`*)
-  * vs `Fighter`: `0.7 => 0.95 (+26%)
+  * vs `Fighter`: `0.7 => 0.95 (+26%)`
   * vs `Fighter_hw1`: `0.7 => 0.95 (+26%)`
+  
+### Carriers
+*HW1 is currently unable to follow a hard macro / fast expand strategy as they simply cannot get a second carrier out in time to make use of the extra income. This change, in combination with the collector speed buff, will hopefully open macro play as an option for HW1 as a race. To compensate, their build price is going up (below).*
+* **Build time down:** `210 => 165 (-21%)`
 
 ### Field Frigates
 *Similar reasoning to the agility buff to [Hiigaran field frigates](https://github.com/HW-PlayersPatch/2.3/blob/master/Props/Hiigaran_Changes_Prop.md#defence-field-frigates), Taiidan field frigates are simply too slow to react accordingly to the threats they are designed to handle (light munitions).*
@@ -153,9 +167,27 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
 * (*`tai_hvcorvette1.wepn; tai_hvcorvette2.wepn`*)
  * vs `LightArmour`: `0.25 => 0.225 (-10%)`
  * vs `LightArmour_hw1`: `0.275 => 0.225 (-18%)`
+ 
+### Multigun Corvettes
+*(need cloaked)*
+* **Damage multiplier vs HW2 fighters down:** `1.8 => 1.3 (-28%)` (*`kus_multigun1.wepn; kus_multigun2.wepn`)
 
 ### Minelayer Corvettes
 *Compared to its 'never build' HW2 counterparts, the HW1 minelayer is much cheaper, faster building and more accessible. Its stats are a little worse and it can't clear mines, but ints fill this role anyway.*
 * **Build time slightly up:** `25 => 30`
 * **Removed nonsensical evasive stance hit to engine acceleration:** `0.8 => 1.0`
 * **Removed nonsensical evasive stance hit to thruster acceleration:** `0.8 => 1.0`
+
+### Missile Destroyers
+*(need cloaked)*
+* **Damage vs HW2 vettes down:** `1.25 => 1.0 (-20%)`
+* **Now use up a supply slot for Destroyers (still have their own cap of 2)** `0 => 1`
+
+### Resource Collectors
+*These are not torpedoes, despite appearances. Also a nerf to capacity balance against buffed speeds; overall 0 change to RU/s*
+* **Collision multiplier down:** `0.8 => 0.6 (-20%)`
+* **RU capacity down:** `500 => 300 (-40%)`
+
+### Carriers
+*To compensate for their reduced build times, the price of carriers is going up: they are, after all, superior to HW2 carriers on almost all fronts.*
+* **Build cost up:** `3000 => 3500 (+17%)`

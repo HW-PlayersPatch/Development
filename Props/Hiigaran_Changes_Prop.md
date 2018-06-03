@@ -20,8 +20,7 @@ Several buffs are included to open up these options to Hiigaran again, and also 
 *Currently consigned to killing collectors only, torpedo frigates are fine by the numbers: however some minimal micro from your opponent will leave you wishing you never built a frigate facility. HW2 collectors and most vettes can **outrun** torpedo missiles.*
 * **Missile speed up:** To allow missiles to catch corvettes and collectors reliably.
 ### Defence Field Frigates
-*Already slow to build and expensive, this is one unit which should reward quick reactions. Currently defence fields struggle to keep up with the action due to low movespeeds and sloooow turning speeds. Upping these values rewards an attentive user.*
-* **Max speed up:** `177 => 210 (+18%)`
+*Already slow to build and expensive, this is one unit which should reward quick reactions. Currently defence fields struggle to keep up with the action due to low agility. Upping these values rewards an attentive user.*
 * **Max rotation speed:** `22 => 30 (36%)`
 * **Rotation accel time:** `0.75 => 0.5 (-33%)`
 ### Destroyers
@@ -62,10 +61,12 @@ Several buffs are included to open up these options to Hiigaran again, and also 
 *Losing refineries due to poor scouting/defence is currently a minor annoyance at best. Incentivising refinery snipes on smaller maps leads to less linear gameplay.*
 * **Cost up:** `800 => 1000 (+25%)`
 ### Mobile Refinery Armor Upgrade
-*In the same vein as the price hike for building refineries, the cost of upgrading this unit is stunningly low. This is currently a 'why not?' upgrade.*
+*In the same vein as the price hike for building refineries, the cost of upgrading this unit is stunningly low. This is currently a 'why not?' upgrade; there is no investment being made.*
 * **Cost up:** `400 => 1000 (+150%)`
 * **Research time up:** `60 => 75 (+25%)`
+### Resource Collectors
+*Not a torpedo. (need cloaked)*
+* **Kamikazi damage multiplier down:** `1.0 => 0.6 (-40%)`
 ### Resource Collector Armor Upgrade
 *Collectors are currently shrugging off harrassment damage with no problems - harrassment is an attention-intensive option for the harrasser, so it should be for the harrassed also. Tanky workers mean the defender has far less to worry about, and the harrasser will find their return-on-investment depressingly low. Fighters in particular trade quite poorly against even a single layer of hull defence.*
-* **Cost up:** `800 => 1100 (+38%)`
-* **Research time up:** `90 => 100 (+11%)`
+* **Upgrade HP down:** `5000 => 4000 (-20%)`
