@@ -64,6 +64,9 @@ Several buffs are included to open up these options to Hiigaran again, and also 
 *In the same vein as the price hike for building refineries, the cost of upgrading this unit is stunningly low. This is currently a 'why not?' upgrade; there is no investment being made.*
 * **Cost up:** `400 => 1000 (+150%)`
 * **Research time up:** `60 => 75 (+25%)`
+### Resource Collectors
+*Not a torpedo. (need cloaked)*
+* **Kamikazi damage multiplier down:** `1.0 => 0.6 (-40%)`
 ### Resource Collector Armor Upgrade
 *Collectors are currently shrugging off harrassment damage with no problems - harrassment is an attention-intensive option for the harrasser, so it should be for the harrassed also. Tanky workers mean the defender has far less to worry about, and the harrasser will find their return-on-investment depressingly low. Fighters in particular trade quite poorly against even a single layer of hull defence.*
 * **Upgrade HP down:** `5000 => 4000`
