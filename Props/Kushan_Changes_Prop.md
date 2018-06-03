@@ -53,11 +53,6 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 * **Rotation brake time down:** `0.3 => 0.2 (-33%)`
 * **Evasive tactics no longer reduce weapon damage:** `0.9 => 1.0 (+9%)` Reducing weapon DPS means the healing weapon's output is also reduced.
 
-### Support Frigates
-*See the [note for the same change](https://github.com/HW-PlayersPatch/2.3/blob/master/Props/Taiidan_Changes_Prop.md#support-frigates) happening to Taiidan support frigates.*
-* **'Damage' multiplier vs frigates up:** `1.0 => 1.5 (+50%)` (*`kus_supportgunheal.wepn`*) More like anti-damage, this is a buff to the healing factor against frigates
-* **Range for repair beam up:** `1000 => 1250 (+25%)`
-
 ### Multigun Corvettes
 *See the [note for the same change](https://github.com/HW-PlayersPatch/2.3/blob/master/Props/Taiidan_Changes_Prop.md#multigun-corvettes) happening to Taiidan multiguns.*
 * **Build time down:** `25 => 23 (-8%)`
@@ -66,6 +61,11 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 * **Rotation accel time down:** `1.65 => 0.65 (-61%)` Contrast to gunships: `0.6`
 * **Rotation brake time down:** `0.825 => 0.4 (-51%)`
 * **Attack range up:** `1600 => 1800 (+13%)` (*`kus_multigun1.wepn; kus_multigun2.wepn`*)
+
+### Support Frigates
+*See the [note for the same change](https://github.com/HW-PlayersPatch/2.3/blob/master/Props/Taiidan_Changes_Prop.md#support-frigates) happening to Taiidan support frigates.*
+* **'Damage' multiplier vs frigates up:** `1.0 => 1.5 (+50%)` (*`kus_supportgunheal.wepn`*) More like anti-damage, this is a buff to the healing factor against frigates
+* **Range for repair beam up:** `1000 => 1250 (+25%)`
 
 ### Resource Collectors
 *See the [not for the same change](https://github.com/HW-PlayersPatch/2.3/blob/master/Props/Taiidan_Changes_Prop.md#resource-collectors) happening to Taiidan resource collectors.*
@@ -121,7 +121,7 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
   * vs `Fighter_hw1`: `0.7 => 0.95 (+26%)`
   
 ### Carriers
-*HW1 is currently unable to follow a hard macro / fast expand strategy as they simply cannot get a second carrier out in time to make use of the extra income. This change, in combination with the collector speed buff, will hopefully open macro play as an option for HW1 as a race.*
+*HW1 is currently unable to follow a hard macro / fast expand strategy as they simply cannot get a second carrier out in time to make use of the extra income. This change, in combination with the collector speed buff, will hopefully open macro play as an option for HW1 as a race. To compensate, their build price is going up (below).*
 * **Build time down:** `210 => 165 (-21%)`
 
 ### Cloaked Fighters
@@ -174,7 +174,7 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
  
 ### Multigun Corvettes
 *(need cloaked)*
-* **Damage multiplier vs HW2 fighters down:** `1.8 => 1.3 (-28%)`
+* **Damage multiplier vs HW2 fighters down:** `1.8 => 1.3 (-28%)` (*`kus_multigun1.wepn; kus_multigun2.wepn`)
 
 ### Minelayer Corvettes
 *Compared to its 'never build' HW2 counterparts, the HW1 minelayer is much cheaper, faster building and more accessible. Its stats are a little worse and it can't clear mines, but ints can easily fill this role anyway.*
