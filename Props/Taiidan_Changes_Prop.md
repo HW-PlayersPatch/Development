@@ -98,12 +98,13 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
 
 ### Cloak Generators 
 *Moving far too slowly to perform clutch carrier cloaks or to keep pace with frigates. Similar reasoning to the buffs to the field frigates. Cloak generators are also remarkably fragile.*
-* **Max speed up:** `165 => 230 (+39%)`
+* **Max speed up:** `165 => 206 (+24%)`
 * **Max rotation speed up:"** `22 => 30 (+36%)`
 * **Rotation accel time down:** `0.75 => 0.5 (-33%)`
+* **Start moving sooner when turning:** `40 => 60 (+50%)` This value (`accelerationAngle`) defines a forwards facing cone which the ships target destination must lie within *before* it will begin accelerating
 * **Default stance change:** `Neutral => Evasive`
 * **Default tactics change:** `Defensive => Passive`
-* **Max HP up:** `9000 => 14000 (+55%)`
+* **Max HP up:** `9000 => 11000 (+22%)`
 
 ### Probes
 *No reason not to.*
