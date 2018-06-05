@@ -55,6 +55,12 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 * **Rotation brake time down:** `0.3 => 0.2 (-33%)`
 * **Evasive tactics no longer reduce weapon damage:** `0.9 => 1.0 (+9%)` Reducing weapon DPS means the healing weapon's output is also reduced.
 
+### Minelayers
+*Values being shuffled, make sure to also check the nerfs. A slight buff to minelayers overall, but mostly to their ability to backstab RU operations.*
+* **Max speed up:** `246 => 270 (+10%)`
+* **HP up:** `900 => 1080 (+20%)` This counteracts the removal of `sidearmour` and `reararmour` modifiers, see nerfs section.
+* **No damage penalty in evasive:** `0.9 => 1.0 (+9%)` See nerfs section about more of these changes and why they happened.
+
 ### Multigun Corvettes
 *See the [note for the same change](https://github.com/HW-PlayersPatch/2.3/blob/master/Props/Taiidan_Changes_Prop.md#multigun-corvettes) happening to Taiidan multiguns.*
 * **Build time down:** `25 => 23 (-8%)`
@@ -187,10 +193,13 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 * **Damage multiplier vs HW2 fighters down:** `1.8 => 1.3 (-28%)` (*`kus_multigun1.wepn; kus_multigun2.wepn`)
 
 ### Minelayer Corvettes
-*Compared to its 'never build' HW2 counterparts, the HW1 minelayer is much cheaper, faster building and more accessible. Its stats are a little worse and it can't clear mines, but ints can easily fill this role anyway.*
+*Compared to its 'never build' HW2 counterparts, the HW1 minelayer is much cheaper, faster building and more accessible. Its stats are a little worse and it can't clear mines, but ints can easily fill this role anyway. Weapons no longer affected by any stance - minelayers wanted to be evasive to lay mines faster, but also aggressive for a damage boost. Easiest resolution: no damage modifiers.*
 * **Build time slightly up:** `25 => 30`
-* **Removed nonsensical evasive stance hit to engine acceleration:** `0.8 => 1.0`
-* **Removed nonsensical evasive stance hit to thruster acceleration:** `0.8 => 1.0`
+* **Directional damage modifiers removed:** These modifers multiply with incoming damage to reduce its effect
+  * **Rear:** `0.8 => 1.0 (+25%)`
+  * **Side:** `0.8 => 1.0 (+25%)`
+* **Aggressive stance damage multiplier removed:** `1.32 => 1.0 (-24%)` This value of `1.32` is the product of the `WEAPONDAMAGE` and `DAMAGEAPPLIED` modifiers which were `1.2` and `1.1` respectively.
+* **Aggressive stance mine speed multiplier removed** `1.1 => 1.0 (-9%)`
 
 ### Missile Destroyers
 *(need cloaked)*

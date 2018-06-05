@@ -64,6 +64,12 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
 * **Removed nonsensical firing cone range:** `80 -> 0` (*`tai_repairgunheal.wepn`*)
 * **Repair beam now plays the correct sound on firing** (*`tai_repairgunheal.wepn`*)
 
+### Minelayers
+*Values being shuffled, make sure to also check the nerfs. A slight buff to minelayers overall, but mostly to their ability to backstab RU operations.*
+* **Max speed up:** `246 => 270 (+10%)`
+* **HP up:** `900 => 1080 (+20%)` This counteracts the removal of `sidearmour` and `reararmour` modifiers, see nerfs section.
+* **No damage penalty in evasive:** `0.9 => 1.0 (+9%)` See nerfs section about more of these changes and why they happened.
+
 ### Multigun Corvettes
 *Outclassed by light vettes on all fronts, multiguns should come into the fore with the light vette nerf (below). However, even when uncontested in fighter sniping, the speed and especially agility of multiguns leaves a lot to be desired, especially considering their target unit class. The main cause of unreliability for multiguns is *time spent not firing*, which is influenced by many factors - these changes aim to up the amount of time multiguns actually spend firing at the enemy, and make them a viable alternative to ints/lights*
 * **Build time down:** `25 => 23 (-8%)`
@@ -182,8 +188,11 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
 ### Minelayer Corvettes
 *Compared to its 'never build' HW2 counterparts, the HW1 minelayer is much cheaper, faster building and more accessible. Its stats are a little worse and it can't clear mines, but ints fill this role anyway.*
 * **Build time slightly up:** `25 => 30`
-* **Removed nonsensical evasive stance hit to engine acceleration:** `0.8 => 1.0`
-* **Removed nonsensical evasive stance hit to thruster acceleration:** `0.8 => 1.0`
+* **Directional damage modifiers removed:** These modifers multiply with incoming damage to reduce its effect
+  * **Rear:** `0.8 => 1.0 (+25%)`
+  * **Side:** `0.8 => 1.0 (+25%)`
+* **Aggressive stance damage multiplier removed:** `1.32 => 1.0 (-24%)` This value of `1.32` is the product of the `WEAPONDAMAGE` and `DAMAGEAPPLIED` modifiers which were `1.2` and `1.1` respectively.
+* **Aggressive stance mine speed multiplier removed** `1.1 => 1.0 (-9%)`
 
 ### Missile Destroyers
 *(need cloaked)*

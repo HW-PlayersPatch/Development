@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$1510"
 NewShipType.sobDescription="$1511"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 900)
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 1080)
 NewShipType.regentime=0
 NewShipType.minRegenTime=0
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
@@ -13,12 +13,12 @@ setTacticsMults(NewShipType, "THRUSTER", 1.0, 1.0, 1.0)
 setTacticsMults(NewShipType, "THRUSTERACCEL", 1.20, 0.80, 1.0)
 setTacticsMults(NewShipType, "THRUSTERBRAKE", 1.0, 1.0, 1.0)
 setTacticsMults(NewShipType, "ROTATION", 1.0, 1.10, 1.0)
-setTacticsMults(NewShipType, "ROTATIONACCEL", 1.0, 1.10, 1.0)
+setTacticsMults(NewShipType, "ROTATIONACCEL", 1.0, 0.80, 1.0)
 setTacticsMults(NewShipType, "ROTATIONBRAKE", 1.0, 1.0, 1.0)
 setTacticsMults(NewShipType, "WEAPONACCURACY", 1.0, 1.0, 1.0)
-setTacticsMults(NewShipType, "WEAPONDAMAGE", 1.20, 1.0, 1.0)
-setTacticsMults(NewShipType, "BULLETSPEED", 1.10, 1.0, 1.0)
-setTacticsMults(NewShipType, "DAMAGEAPPLIED", 1.10, 0.90, 1.0)
+setTacticsMults(NewShipType, "WEAPONDAMAGE", 1.0, 1.0, 1.0)
+setTacticsMults(NewShipType, "BULLETSPEED", 1.0, 1.0, 1.0)
+setTacticsMults(NewShipType, "DAMAGEAPPLIED", 1.0, 1.0, 1.0)
 setTacticsMults(NewShipType, "FIRERATE", 1.0, 1.25, 1.0)
 NewShipType.isTransferable=1
 NewShipType.formationSpacing=45
@@ -27,8 +27,8 @@ NewShipType.defaultStance="Aggressive"
 NewShipType.holdSlots=1
 NewShipType.mass=15
 NewShipType.collisionMultiplier=0.48
-NewShipType.thrusterMaxSpeed=233
-NewShipType.mainEngineMaxSpeed=233
+NewShipType.thrusterMaxSpeed=270
+NewShipType.mainEngineMaxSpeed=270
 NewShipType.rotationMaxSpeed=171
 NewShipType.thrusterAccelTime=2.6
 NewShipType.thrusterBrakeTime=1

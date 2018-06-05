@@ -10,8 +10,12 @@ Several buffs are included to open up these options to Hiigaran again, and also 
 
 ### Minelayers
 *Currently in the 'never used' tier of units, minelayers are currently held back not by their stats or DPS, but their infastructure (and their own) cost and build times. Minelayers have great potential as a backstab unit, these changes are designed to make them easier to deploy during normal build cycles.*
+* **Base HP up:** `900 => 1080 (+20%)` To match changes happening to HW1 mines
 * **Cost down:** `800 => 600 (-25%)`
 * **Build time down:** `45 => 40 (-9%)`
+* **Max speed up:** `233 => 270 (+16%)`
+* **No damage penalty in evasive:** `0.9 => 1.0 (+9%)` See nerfs section about more of these changes and why they happened.
+* **Regeneration added:** `0 => 240` To compensate for changes happening to dock healing (see nerfs). Fully healed in 4 minutes.
 ### Minelayer Research
 * **Cost down:** `750 => 600 (-20%)`
 * **Research time down:** `40 => 30 (-25%)`
@@ -49,6 +53,20 @@ Several buffs are included to open up these options to Hiigaran again, and also 
 
 ## Nerfs
 
+### Strikecraft Dock Healing
+*Since the #666 fix, HW1 strike have suddenly run out of advantages to lever over their HW2 counterparts. This means an unmicroed fight will usually come out even as expected, but any decent HW2 player will be using dock micro to replenish and heal their squadrons. To tone down this advantage somewhat, the time taken to heal is going up for fighters and corvettes. Due to the mechanics of dock healing in HW, a single calculated value determines the times for all units in a class, and this value is inversely proportional to squad size. This means smaller squads have always healed slower.*
+* **Time taken for fighter recovery up:**
+  * **Scouts:** `0.86 => 10 (+1062%)`
+  * **Interceptors:** `0.5 => 6 (+1100%)` Other fighter times are balanced around ensuring Vgr AC and Hgn int both take 6s
+  * **Bombers:** `0.69 => 8.3 (1103%)`
+* **Time taken for corvette recovery up:**
+  * **Gunships and Pulsars (no upgrade):** `2.1 => 5 (+138%)`  Other vette times are balanced around ensuring Vgr missile and Hgn pulsar both take 5s base
+  * **Gunships and Pulsars (upgrade):** `3.2 => 7.5 (+134%)`
+  * **Minelayers:** `12 => 33.75 (+181%)` HP increase (below) is factored in
+### Minelayers
+*Weapons no longer affected by any stance - minelayers wanted to be evasive to lay mines faster, but also aggressive for a damage boost. Easiest resolution: no damage modifiers.*
+* **Aggressive stance damage multiplier removed:** `1.32 => 1.0 (-24%)` This value of `1.32` is the product of the `WEAPONDAMAGE` and `DAMAGEAPPLIED` modifiers which were `1.2` and `1.1` respectively.
+* **Aggressive stance mine speed multiplier removed** `1.1 => 1.0 (-9%)`
 ### Pulsar Corvettes
 *Currently the focal point of Hiigaran play (in part due to corvettes being so amazing in general now), pulsars have too much power in too many scenarios. Distributing some of this power to torpedoes and destroyers is a healthier solution*
 * **Damage multiplier vs frigates slightly down:** `1.5 => 1.38 (-8%)` (*`hgn_pulsar.wepn`*) Hiigaran have many options for dealing with frigates - most of them are designed for this role and are simply underpowered. Pulsars should not act as a bandaid for underperforming partners.
