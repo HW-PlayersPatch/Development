@@ -15,6 +15,9 @@ Features
 Definite Changes
 	Torpedo frigates cluster torp speed up to 350 to catch corvettes.
 		Likely need to re-balance vs laser vettes afterwards.
+	Hiig Destroyers
+		Make in-combat regen same as build 7.
+		Make out of combat regen noticably much better.
 	Kushan Cloaked Fighters
 		Regeneration added: 0 => 240 The only strike with inherent regeneration. Cloaked fighters will regenerate completely in 4 minutes.
 	Kushan Assault frigs always beat Tai Assault Frigs. Likely another targetbox problem, where one ship is a bigger target than the other. Try to tweak setTargetBox and layoutBound.
