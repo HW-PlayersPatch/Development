@@ -42,29 +42,7 @@ Test
 		Fear: missile vette dps vs colls down by 10%
 		I have good target times for some ships written down, things aren't where they should be for some ships right now.
 	Torps vs collectors. Keep shots to kill the same as the previous build.
-More finer details:
-	Improved compatibility for mods. (See ReadMe)
-		Created a playerspatch_util.lua file, separate from scar_util.lua
-	Expert Taiidan AI now harvests resources at the same rate as the other races. (it was 10% higher for some odd reason)
-	All Resource Collectors kamakazi damage down to prevent instantly killing other collectors (cheap hw2 collectors could even kill expensive hw1 collectors)
-	Fixed a typo with the Kushan Multi-Gun Corvette build time. It was set to 25sec instead of 22sec by accident. (2.3 mistake)
-	Hiigaran Gunship Corvette penetration vs hw2 fighters down 12% (re-did all anti fighter corvs to match december 2nd 2017 intended balance, which i somehow skrewed a bit maily with light corvs)
-	Vaygr Missile Corvette, penetration vs hw1 fighters up 110% (gives vaygr a way to kill defense fighters)
-	Kushan/Taiidan Defender penetration up 20% vs hw1 fighters, and 100% vs hw1 corvettes.
-	Taiidan Defense Fighters 
-		Added 'set-speed vs', so ships have 2x accuracy vs them when they're idle.
-		Nerfed range by 40%
-		Nerfed fire rate by 100%
-		Accuracy down from 68% to 50%
-		Increased damage vs missiles and mines by 100%
-			1 hit for small missiles
-			2 hits for torps and HMF/DD/BC.
-			3 hits for mines
-	Kushan/Taiidan Light Corvettes were over-performing, so corvette penetration vs fighters was lowered.
-	Kushan/Taiidan Light Corvette penetration vs fighters down 17% (down 25% vs hw2 fighters)
-	Kushan/Taiidan Multi-Gun Corvette penetation vs hw2 fighters down 28%
-	Taiidan Multi-Gun Corvette bullet speed down 12% (to match kushan)
-	Kushan/Taiidan Missile Destroyer damage vs hw2 corvettes down 20% (now performs similar vs hw1 and hw2 corvettes).
+
 
 
 
@@ -82,7 +60,8 @@ Campaign
 	In Homeworld 2 Mission 5, lowered the Vaygr captial ship health upgrade to be closer to hw2c. (this was unintentionally altered in the 2.0 patch)
 	In Homeworld 2, applied some Hiigaran research cost/build time changes from the 2.0, 2.1, and 2.205 patches. These changes were made in multiplayer, but were accidently missed in the campaign. The campaign research stats now better match multiplayer.
 	In Homeworld 2 Mission 13, lowered the Vaygr corvette, frigate, and captial ship health upgrades to be closer to hw2c. (these were unintentionally altered in the 2.0 patch)
-Balance (Key Points, Finer details can be captured by Stats Tool)
+
+_Balance (Key Points, Finer details can be captured by Stats Tool)_
 	Vaygr resource collectors ru capacity 208->200 (to balance harvesting with Hiigaran. Vaygr still starts with one extra collector to make up for their Flagship's poor harvesting.)
 	Hiigaran/Vaygr Scout sensors range down 18% (scouting is too easy in hwr)
 	Hiigaran/Vaygr Minelayer cost 800->400 (buff, hw1 are 275)
@@ -110,4 +89,27 @@ Balance (Key Points, Finer details can be captured by Stats Tool)
 	Kushan/Taiidan Cloak Generator armour/effective health up 20%, speed up 24% (relatively closer to hw1c).
 	Kushan/Taiidan Cloak Generator ability duration increased from 100 to 120sec (to match hw2 races, and be closer to hw1c).
 	Taiidan Expert AI now harvests resources at the same rate as the other races.
-	
+
+_Balance: More finer details_
+	Improved compatibility for mods. (See ReadMe)
+		Created a playerspatch_util.lua file, separate from scar_util.lua
+	Expert Taiidan AI now harvests resources at the same rate as the other races. (it was 10% higher for some odd reason)
+	All Resource Collectors kamakazi damage down to prevent instantly killing other collectors (cheap hw2 collectors could even kill expensive hw1 collectors)
+	Fixed a typo with the Kushan Multi-Gun Corvette build time. It was set to 25sec instead of 22sec by accident. (2.3 mistake)
+	Hiigaran Gunship Corvette penetration vs hw2 fighters down 12% (re-did all anti fighter corvs to match december 2nd 2017 intended balance, which i somehow skrewed a bit maily with light corvs)
+	Vaygr Missile Corvette, penetration vs hw1 fighters up 110% (gives vaygr a way to kill defense fighters)
+	Kushan/Taiidan Defender penetration up 20% vs hw1 fighters, and 100% vs hw1 corvettes.
+	Taiidan Defense Fighters 
+		Added 'set-speed vs', so ships have 2x accuracy vs them when they're idle.
+		Nerfed range by 40%
+		Nerfed fire rate by 100%
+		Accuracy down from 68% to 50%
+		Increased damage vs missiles and mines by 100%
+			1 hit for small missiles
+			2 hits for torps and HMF/DD/BC.
+			3 hits for mines
+	Kushan/Taiidan Light Corvettes were over-performing, so corvette penetration vs fighters was lowered.
+	Kushan/Taiidan Light Corvette penetration vs fighters down 17% (down 25% vs hw2 fighters)
+	Kushan/Taiidan Multi-Gun Corvette penetation vs hw2 fighters down 28%
+	Taiidan Multi-Gun Corvette bullet speed down 12% (to match kushan)
+	Kushan/Taiidan Missile Destroyer damage vs hw2 corvettes down 20% (now performs similar vs hw1 and hw2 corvettes).
