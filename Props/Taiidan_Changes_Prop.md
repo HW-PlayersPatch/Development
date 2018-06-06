@@ -14,27 +14,28 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
 * **Max rotation speed up:** `30 => 40 (+33%)` Assaults often cannot use their plasma bombs at all as they are constantly trying to bring this weapon to bear against circling vettes
 * **Rotation acceleration time down:** `0.7 => 0.5 (-28%)`
 * **Rotation brake time down:** `0.4 => 0.3 => (-25%)`
+* **All four hardpoints now use `tai_assaultgun1.wepn`:** For some reason, `tai_assaultgun2.wepn` has wildly incorrect aiming. Unable to track down why, so doing it like this.
 * **Accuracy multiplier vs corvettes up:** 
-* (*`tai_assaultgun1.wepn; tai_assaultgun2.wepn`*):
+* (*`tai_assaultgun1.wepn;`*):
   * vs `Corvette`: `0.8 => 0.912 (+14%)`
   * vs `Corvette_hw1`: `0.8 => 0.912 (+14%)`
 * (*`tai_assaultbomb.wepn`*):
   * vs `Corvette`: `0.55 => 0.627 (+14%)`
   * vs `Corvette_hw1`: `0.42 => 0.627 (+49%)`
 * **Damage multiplier vs corvette up slightly:**
-* (*`tai_assaultgun1.wepn; tai_assaultgun2.wepn`*):
+* (*`tai_assaultgun1.wepn`*):
   * vs `LightArmour`: `0.5 => 0.6 (+20%)`
   * vs `LightArmour_hw1`: `0.5 => 0.6 (+20%)`
 * (*`tai_assaultbomb.wepn`*):
   * vs `LightArmour`: `1.25 => 1.3 (+4%)`
   * vs `LightArmour_hw1`: `1.05 => 1.3` (+24%)
 * **Accuracy multiplier vs collectors up:**
-* (*`tai_assaultgun1.wepn; tai_assaultgun2.wepn`*):
+* (*`tai_assaultgun1.wepn`*):
   * vs `Resource`: `0.89 => 1.0 (+6%)`
 * (*`tai_assaultbomb.wepn`*):
   * vs `Resource`: `1.0 => 3.0 (+200%)` Due to how accuracy works, 100% accuracy for a weapon does not equate to 100% of shots hit.
 * **Damage multiplier vs collectors up a lot:** Assault frigates currently struggle to provide any value beyond fighting corvettes - making them decent collector killers is a natural fit for the unit, and for HW1 in general.
-* (*`tai_assaultgun1.wepn; tai_assaultgun2.wepn`*):
+* (*`tai_assaultgun1.wepn`*):
   * vs `ResArmour`: `0.6 => 1.5 (+150%)`
 * (*`tai_assaultbomb.wepn`*):
   * vs `ResArmour`: `0.2 => 1.2 (+500%)`

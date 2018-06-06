@@ -147,9 +147,9 @@ addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RetireAbility",1,1);
 LoadModel(NewShipType,1);
 StartShipHardPointConfig(NewShipType,"Weapon_Gun1","Hardpoint_Gun1","Weapon","Innate","Ship","Tai_AssaultCannon","","","","","","","",""); --facing top left
-StartShipHardPointConfig(NewShipType,"Weapon_Gun2","Hardpoint_Gun2","Weapon","Innate","Ship","Tai_AssaultCannon2","","","","","","","",""); --facing top left
+StartShipHardPointConfig(NewShipType,"Weapon_Gun2","Hardpoint_Gun2","Weapon","Innate","Ship","Tai_AssaultCannon","","","","","","","",""); --facing top left
 StartShipHardPointConfig(NewShipType,"Weapon_Gun3","Hardpoint_Gun3","Weapon","Innate","Ship","Tai_AssaultCannon","","","","","","","",""); -- facing bottom right
-StartShipHardPointConfig(NewShipType,"Weapon_Gun4","Hardpoint_Gun4","Weapon","Innate","Ship","Tai_AssaultCannon2","","","","","","","",""); -- facing bottom left
+StartShipHardPointConfig(NewShipType,"Weapon_Gun4","Hardpoint_Gun4","Weapon","Innate","Ship","Tai_AssaultCannon","","","","","","","",""); -- facing bottom left
 StartShipWeaponConfig(NewShipType,"Tai_AssaultBomb","Weapon_Gun0","Weapon_Gun0");
 StartShipWeaponConfig(NewShipType,"Tai_AssaultBomb","Weapon_Gun5","Weapon_Gun5");
 addShield(NewShipType,"EMP",310,20);
