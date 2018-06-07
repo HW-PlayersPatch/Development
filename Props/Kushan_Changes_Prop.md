@@ -10,6 +10,7 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 * **Max rotation speed up:** `30 => 40 (+33%)` Assaults often cannot use their plasma bombs at all as they are constantly trying to bring this weapon to bear against circling vettes
 * **Rotation acceleration time down:** `0.7 => 0.5 (-28%)`
 * **Rotation brake time down:** `0.4 => 0.3 => (-25%)`
+* **Side and rear damage multipliers removed:** `1.2 => 1.0 (-17%)`
 * **Accuracy multiplier vs corvettes up:** 
 * (*`kus_assaultgun.wepn`*):
   * vs `Corvette`: `0.8 => 0.912 (+14%)`
@@ -172,10 +173,15 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 
 ### Light Corvettes
 *Far too versatile. Currently an outstanding anti-fight unit, light vettes also do great work against collectors and even other corvettes. This is not identical to the Kushan nerf since the Taiidan light has two guns instead of one.*
+* **HP down:** `900 => 800 (-11%)`
 * **Damage multiplier vs fighters slightly down:**
 * (*`kus_ltcorvette.wepn`*) 
-  * vs `Unarmoured`: `1.2 => 0.96 (-20%)` 
-  * vs `Unarmoured_hw1`: `1.2 => 0.96 (-20%)`
+  * vs `Unarmoured`: `1.2 => 0.8 (-33%)` 
+  * vs `Unarmoured_hw1`: `1.2 => 0.9 (-25%)`
+* **Accuracy multiplier vs fighters down:**
+* (*`kus_ltcorvette.wepn`*) 
+  * vs `Fighter`: `0.95 => 0.9 (-5%)`
+  * vs `Fighter_hw1`: `0.95 => 0.9 (-5%)`
 * **Damage multiplier vs corvettes slightly down:**
 * (*`kus_ltcorvette.wepn`*)
   * vs `LightArmour`: `0.5 => 0.4 (-20%)` 
@@ -183,6 +189,13 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
   
 ### Heavy Corvettes
 *No need to overlap the anti-corvette role with functioning assault frigates. Still decent.*
+* (*`kus_hvcorvette1.wepn; kus_hvcorvette2.wepn`*)
+  * vs `Unarmored`: `1.0 => 0.8 (-20%)`
+  * vs `Unarmoured_hw1`: `1.0 => 0.8 (-20%)`
+* **Accuracy multiplier vs fighters down:**
+* (*`kus_hvcorvette1.wepn; kus_hvcorvette2.wepn`*)
+  * vs `Fighter`: `0.51 => 0.1 (-80%)`
+  * vs `Fighter_hw1`: `0.51 => 0.1 (-80%)`
 * **Damage multiplier vs corvettes slightly down:** 
 * (*`kus_hvcorvette1.wepn; kus_hvcorvette2.wepn`*)
  * vs `LightArmour`: `0.5 => 0.45 (-10%)`

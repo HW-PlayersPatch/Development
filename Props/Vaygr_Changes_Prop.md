@@ -96,6 +96,8 @@ In addition to nerfing and adding weak points to the unstoppable macro engine, t
   * **Accuracy multiplier vs fighters down:**
     * vs `Fighter`: `0.1 => 0.05 (-50%)`
     * vs `Fighter_hw1`: `0.1 => 0.06 (-40%)`
+  * **Damage multiplier vs HW1 corvettes up:**
+    * vs `LightArmour_hw1`: `0.55 => 0.7 (+27%)`
 
 ### Minelayers
 *Weapons no longer affected by any stance - minelayers wanted to be evasive to lay mines faster, but also aggressive for a damage boost. Easiest resolution: no damage modifiers.*

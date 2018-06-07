@@ -14,6 +14,7 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
 * **Max rotation speed up:** `30 => 40 (+33%)` Assaults often cannot use their plasma bombs at all as they are constantly trying to bring this weapon to bear against circling vettes
 * **Rotation acceleration time down:** `0.7 => 0.5 (-28%)`
 * **Rotation brake time down:** `0.4 => 0.3 => (-25%)`
+* **Side and rear damage multipliers removed:** `1.2 => 1.0 (-17%)`
 * **Weapon subsytems fixed:** Two hardpoints use the `tai_assaultcannon2.subs` subsytem which was incorrectly duplicating its model from another subsystem: `tai_frigatecannon.subs`. It now correctly duplicates from `tai_assaultcannon.subs`.
 * **Accuracy multiplier vs corvettes up:** 
 * (*`tai_assaultgun1.wepn; tai_assaultgun2.wepn`*):
@@ -155,6 +156,9 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
 * **Rotation accel time down:** `0.75 => 0.5 (-33%)`
 * **Default stance change:** `Neutral => Evasive`
 * **Default tactics change:** `Defensive => Passive`
+* **Anti fire control radius up:** `1200 => 1300 (+8%)`
+* **Anti fire control accuracy debuff stronger:** `0.95 => 0.6 (-37%)` This is a change from `-5%` accuracy to `-40%` accuracy for enemy ships.
+* **Anti fire control damage debuff stronger:** `0.95 => 0.9 (-5%)` This is a change from `-5%` damage to `-10%` damage.
 
 
 ## Nerfs
@@ -166,17 +170,30 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
 
 ### Light Corvettes
 *Far too versatile. Currently an outstanding anti-fight unit, light vettes also do great work against collectors and even other corvettes. This is not identical to the Kushan nerf since the Taiidan light has two guns instead of one.*
+* **HP down:** `900 => 800 (-11%)`
 * **Damage multiplier vs fighters slightly down:**
 * (*`tai_ltcorvette.wepn`*) 
-  * vs `Unarmoured`: `1.2 => 0.96 (-20%)` 
-  * vs `Unarmoured_hw1`: `1.2 => 0.96 (-20%)`
+  * vs `Unarmoured`: `1.2 => 0.8 (-33%)` 
+  * vs `Unarmoured_hw1`: `1.2 => 0.9 (-25%)`
+* **Accuracy multiplier vs fighters down:**
+* (*`tai_ltcorvette.wepn`*) 
+  * vs `Fighter`: `0.95 => 0.9 (-5%)`
+  * vs `Fighter_hw1`: `0.95 => 0.9 (-5%)`
 * **Damage multiplier vs corvettes slightly down:**
 * (*`tai_ltcorvette.wepn`*)
   * vs `LightArmour`: `0.5 => 0.4 (-20%)` 
   * vs `LightArmour_hw1`: `0.5 => 0.4 (-20%)`
 
 ### Heavy Corvettes
-*No need to overlap the anti-corvette role with functioning assault frigates. Still decent.*
+*No need to overlap the anti-corvette role with functioning assault frigates. Still decent. No longer worth their wight in RUs against fighters.*
+* **Damage multiplier vs fighters down:**
+* (*`tai_hvcorvette1.wepn; tai_hvcorvette2.wepn`*)
+  * vs `Unarmored`: `0.5 => 0.4 (-20%)`
+  * vs `Unarmoured_hw1`: `0.5 => 0.4 (-20%)`
+* **Accuracy multiplier vs fighters down:**
+* (*`tai_hvcorvette1.wepn; tai_hvcorvette2.wepn`*)
+  * vs `Fighter`: `0.51 => 0.1 (-80%)`
+  * vs `Fighter_hw1`: `0.51 => 0.1 (-80%)`
 * **Damage multiplier vs corvettes slightly down:** 
 * (*`tai_hvcorvette1.wepn; tai_hvcorvette2.wepn`*)
  * vs `LightArmour`: `0.25 => 0.225 (-10%)`
