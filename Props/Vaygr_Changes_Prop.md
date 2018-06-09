@@ -6,11 +6,20 @@ In addition to nerfing and adding weak points to the unstoppable macro engine, t
 
 ## Buffs
 
+### Flagship
+*Makaan has tried to make up for his lack of Hyperspace Cores with slightly faster engines. Power to him.*
+* **Max speed up:** `40 => 42 (+5%)` The meaning of life
+* **Acceleration time down:** `8 => 6 (-25%)`
+* **Max rotation speed up:** `4 => 8 (+100%)`
+* **Rotation brake time down:** `0.4 => 0.2 (-50%)`
+
 ### Hyperspace Gates
 *A 'never used' unit, the hyperspace gate struggles to offer any tangeble advantages in comparison to close production or regular jumps - not only are gates time-intensive to build (1m30s to build a pair), the cost of opening a gate isn't negligable (especially with rolling build queues in HWR, stockpiling 1000 RUs can be quite an annoyance). In addition, the gates themselves can be blocked by inhibs (simply inherent to HS), and are easily sniped.*
-* **Build time down:** `45 => 30 (-33%)`
-* **Cost to link:** `1000 => 800 (-20%)`
-* **Base HP:** `18500 => 21000 (+14%)`
+* **Build time down:** `45 => 20 (-55%)`
+* **Move speed up:** `650 => 750 (+15%)`
+* **Cost to link:** `1000 => 700 (-30%)`
+* **Base HP up:** `18500 => 20000 (+8%)`
+* **Regenerate quickly:** `1200 => 210 (-85%)`
 
 ### Minelayer Corvettes
 *A 'never used' unit, the minelayer is capable of higher DPS than any other strikecraft. However, the slow build times and inconvenience of having to research an extra vette type of dubious effectiveness means minelayers are never on the table (that, and they clash with laser vettes somewhat). Minelayers have great potential as a backstab unit, these changes are designed to make them easier to deploy during normal build cycles.*
@@ -132,8 +141,9 @@ In addition to nerfing and adding weak points to the unstoppable macro engine, t
 * **Cost up:** `800 => 1000 (+25%)`
 
 ### Resource Collectors
-*Very slightly supercharged, this change brings Vaygr collectors back in line with the other races.*
+*Very slightly supercharged, this change brings Vaygr collectors back in line with the other races. Also, not a torpedo.*
 * **RU capacity down slightly:** `208 => 200 (-4%)`
+* **Kamikazi damage multiplier down:** `1.0 => 0.6 (-40%)`
 
 ### Utility Armour Upgrade
 *Collectors are currently shrugging off harrassment damage with no problems - harrassment requires planning, decision making, calculation and multitasking for the harrasser, so it should demand these things from the defender too. Tanky workers mean the defender has far less to worry about (sometimes nothing at all), and the harrasser will find their return-on-investment depressingly low. Fighters in particular trade quite poorly against even a single layer of hull defence. Vaygr in should be weak to economic harrass, as their core strength is overwhelming their opponent with a superior economy - opponents should be able to exploit a sloppy Vaygr player's lack of defensive foresight.*

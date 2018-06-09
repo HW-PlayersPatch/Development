@@ -1,0 +1,14 @@
+_2.3 Build 8 ToDo_
+Features
+	Add a Mission AI Attack Damage adjuster
+		People want to set reinforcements to 0.5, and up the difficulty with this!
+		Try to average the expected player fleet with the actual player fleet for more consistent gameplay.
+		WeaponDamageUpgrade125
+	Play vs 200% AI in MP, do we need a 300%?
+
+
+_Balance (Key Points, Finer details can be captured by Stats Tool)_
+
+_Balance: More finer details_
+	Improved compatibility for mods. (See ReadMe)
+		Created a playerspatch_util.lua file, separate from scar_util.lua

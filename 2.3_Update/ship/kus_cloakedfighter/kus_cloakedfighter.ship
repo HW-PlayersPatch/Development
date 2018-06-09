@@ -153,7 +153,7 @@ addAbility(NewShipType,"CanAttack",1,0,1,0,0.35,1,"Fighter, Fighter_hw1, Corvett
 {ResourceLarge="Flyby_Interceptor_vs_ResourceLarge"});
 addAbility(NewShipType,"GuardCommand",1,3000,500);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
-addAbility(NewShipType,"CloakAbility",1,3,75,3500,6,25,18,1000);
+addAbility(NewShipType,"CloakAbility",1,3,75,3500,0,25,18,1000);
 addAbility(NewShipType,"RetireAbility",1,0);
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Kus_CloakedFighter","Weapon_Gun0","Weapon_Gun0");

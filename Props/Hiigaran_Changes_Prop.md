@@ -8,6 +8,12 @@ Several buffs are included to open up these options to Hiigaran again, and also 
 
 ## Buffs
 
+### Mothership
+*Givin' her all she's got. In the future.*
+* **Max speed up:** `40 => 42 (+5%)` The meaning of life
+* **Acceleration time down:** `8 => 6 (-25%)`
+* **Max rotation speed up:** `4 => 8 (+100%)`
+* **Rotation brake time down:** `0.4 => 0.2 (-50%)`
 ### Minelayers
 *Currently in the 'never used' tier of units, minelayers are currently held back not by their stats or DPS, but their infastructure (and their own) cost and build times. Minelayers have great potential as a backstab unit, these changes are designed to make them easier to deploy during normal build cycles.*
 * **Base HP up:** `900 => 1080 (+20%)` To match changes happening to HW1 mines
@@ -20,9 +26,10 @@ Several buffs are included to open up these options to Hiigaran again, and also 
 * **Cost down:** `750 => 600 (-20%)`
 * **Research time down:** `40 => 30 (-25%)`
 ### Torpedo Frigates
-* **Missile speed up:** `<need cloaked>`
-*Currently consigned to killing collectors only, torpedo frigates are fine by the numbers: however some minimal micro from your opponent will leave you wishing you never built a frigate facility. HW2 collectors and most vettes can **outrun** torpedo missiles.*
-* **Missile speed up:** To allow missiles to catch corvettes and collectors reliably.
+*Currently consigned to killing collectors only, torpedo frigates are fine by the numbers: however some minimal micro from your opponent will leave you wishing you never built a frigate facility. HW2 collectors and most vettes can **outrun** current torpedo missiles. No more!*
+* **Base cluster torpedo speed up:** `250 => 320 (+28%)` (*`hgn_clustertorpedoa.miss`*)
+* **Breakaway cluster torpedo speed up:** `250 => 420 (+68%)` (*`hgn_clustertorpedob.miss`*)
+* **Long range (anti-frigate) torpedo speed up:** `250 => 320 (+28%)` (*`hgn_longrangetorpedo.miss`*)
 ### Defence Field Frigates
 *Already slow to build and expensive, this is one unit which should reward quick reactions. Currently defence fields struggle to keep up with the action due to low agility. Upping these values rewards an attentive user.*
 * **Max rotation speed:** `22 => 30 (36%)`
@@ -32,6 +39,7 @@ Several buffs are included to open up these options to Hiigaran again, and also 
 * **Build time down:** `165 => 148 (-10%)` Still outclassed for DPS by more dedicated options, however a lowered build time allows for a faster return on investment regarding represented HP.
 * **Regeneration time down:** `1074 => 900 (-19%)` High HP with a relatively low DPS *at high range* puts destroyers in an interesting (and mostly unique) position. A group of 2 or more destroyers is able to handle frigates and other destroyers extremely effectively if kited correctly (imagine a cycle of destroyers moving forwards and backwards). Upping their regeneration allows them identify themselves in this role, and provides value to the unit without forcing them to overlap into a DPS role already occupied by so many other units.
 * **Damage multiplier vs collectors up:** `0.7 => 1.0 (+42%)` (*`hgn_kineticburstcannondestroyer.wepn`*) Destroyers are currently underperforming against collectors. Jumping a destroyer at an angle / through a gap in inhibs in order to snipe collectors is an old style which is currently never used. This is *partly* because of their other issues, however collectors (especially upgraded HW2 collectors) are shrugging off the damage coming from a super-capital ship too easily.
+* **Long range (anti-frigate) torpedo speed up:** `250 => 320 (+28%)` (*`hgn_longrangetorpedo.miss`*)
 ### Interceptors
 *Doing fine, however struggling to follow up a clear sky with good econ damage*
 * **Damage multiplier vs collectors slightly up:** `0.33 => 0.5 (+51%)` (*`hgn_kineticautogun.wepn`*) Unscouted int rushes should hurt. Being flanked should hurt.

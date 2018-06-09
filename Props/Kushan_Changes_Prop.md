@@ -2,7 +2,19 @@
 
 Kushan are sitting in the same position as [Taiidan](https://github.com/HW-PlayersPatch/2.3/blob/master/Props/Taiidan_Changes_Prop.md#taiidan), but *even worse*. This is due to severely underperforming race-specific units: updates here to cloaked fighters and drone frigates aim to bring both these units out of the 'never used' tier.
 
+## Changes
+
+### Gravwell Generators
+*Colour is key*
+* **Inner TO sphere now coloured according to this change:** The inner sphere has always denoted an accuracy debuff (`-7%`). The fighter-stunning active ability just happens to have the same radius.
+
 ## Buffs
+
+### Mothership
+*Givin' her all she's got*
+* **Acceleration time down:** `8 => 6 (-25%)`
+* **Max rotation speed up:** `4 => 8 (+100%)`
+* **Rotation bake time down:** `0.6 => 0.3 (-50%)`
 
 ### Assault Frigates
 *See the [note for the same change](https://github.com/HW-PlayersPatch/2.3/blob/master/Props/Taiidan_Changes_Prop.md#assault-frigates) happening to Taiidan assaults.*
@@ -24,7 +36,7 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
   * vs `LightArmour_hw1`: `0.5 => 0.6 (+20%)`
 * (*`kus_assaultbomb.wepn`*):
   * vs `LightArmour`: `1.25 => 1.3 (+4%)`
-  * vs `LightArmour_hw1`: `1.05 => 1.3` (+24%)
+  * vs `LightArmour_hw1`: `1.05 => 1.3 (+24%)`
 * **Accuracy multiplier vs collectors up:**
 * (*`kus_assaultgun.wepn`*):
   * vs `Resource`: `0.89 => 1.0 (+6%)`
@@ -39,12 +51,12 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 
 ### Light Corvettes
 *See the [note for the same change](https://github.com/HW-PlayersPatch/2.3/blob/master/Props/Taiidan_Changes_Prop.md#light-corvettes) happening to Taiidan lights.*
-* **Strafe speed up:** `235 => 295 (+25%)` For strike, *strafe* and *move* speed are usually the same. Lights have an usually low strafe (thrust) speed compared to their move (engine) speed
-* **Move speed up:** `285 => 295 (+4%)`
+* **Strafe speed up:** `235 => 320 (+36%)` For strike, *strafe* and *move* speed are usually the same. Lights have an usually low strafe (thrust) speed compared to their move (engine) speed
+* **Move speed up:** `285 => 320 (+12%)`
 
 ### Heavy Corvettes
 *See the [note for the same change](https://github.com/HW-PlayersPatch/2.3/blob/master/Props/Taiidan_Changes_Prop.md#heavy-corvettes) happening to Taiidan heavies.*
-* **Move speed up:**: `245 => 290 (+18%)`
+* **Move speed up:** `245 => 290 (+18%)`
 * **Damage multiplier vs frigates up:** `1.1 => 1.99 (+81%)` (*`kus_hvcorvette1.wepn; kus_hvcorvette2.wepn`*) This causes heavies to be worth about 0.3 torpedo frigates which reflects their cost and build time. Kushan heavy vettes fire half the shots of their Taiidan counterparts, so their weapons are twice as powerful.
 * **Damage multiplier vs corvettes down:** `0.45 => 0.4 (-11%)`
 * **Accuracy multiplier vs HW2 corvettes down:** `0.5 => 0.45 (-10%)`  
@@ -105,13 +117,16 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 
 ### Cloak Generators 
 *Moving far too slowly to perform clutch carrier cloaks or to keep pace with frigates. Similar reasoning to the buffs to the field frigates. Cloak generators are also remarkably fragile.*
+* **Max HP up:** `9000 => 11000 (+22%)`
 * **Max speed up:** `165 => 206 (+24%)`
 * **Max rotation speed up:"** `22 => 30 (+36%)`
 * **Rotation accel time down:** `0.75 => 0.5 (-33%)`
 * **Start moving sooner when turning:** `40 => 60 (+50%)` This value (`accelerationAngle`) defines a forwards facing cone which the ships target destination must lie within *before* it will begin accelerating
 * **Default stance change:** `Neutral => Evasive`
 * **Default tactics change:** `Defensive => Passive`
-* **Max HP up:** `9000 => 11000 (+22%)`
+* **Maximum energy up:** `3000 => 4000 (+33%)` This translates into a buff in duration: `100 => 130 (+30%)`. Don't forget that activating the cloak costs energy too: one activation costs 100 energy, making the duration `130` instead, and so on.
+* **Activation cost up:** `50 => 100 (+100%)`
+* **Cloak strength up:** `1000 => 2000 (+100%)`
 
 ### Probes
 *No reason not to.*
@@ -134,8 +149,12 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 * **Projectile speed up:** `1200 => 1300 (+8%)` (*`kus_defender.wepn`*)
 * **Accuracy vs fighters up:**
 * (*`kus_defender.wepn`*)
-  * vs `Fighter`: `0.7 => 0.95` (+26%)
-  * vs `Fighter_hw1`: `0.7 => 0.95 (+26%)`
+  * **Accuracy buffs:**
+    * vs `Fighter`: `0.7 => 0.95 (+26%)`
+    * vs `Fighter_hw1`: `0.7 => 0.95 (+26%)`
+  * **Damage multiplier buffs:**
+    * vs `Fighter`: `0.7 => 0.95 (+36%)`
+    * vs `Fighter_hw1`: `0.7 => 0.95 (+36%)`
   
 ### Carriers
 *HW1 is currently unable to follow a hard macro / fast expand strategy as they simply cannot get a second carrier out in time to make use of the extra income. This change, in combination with the collector speed buff, will hopefully open macro play as an option for HW1 as a race. To compensate, their build price is going up (below).*
@@ -155,11 +174,12 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 * **Damage multiplier vs subsystems up:** `1.25 => 3.0 (+140%)`
 * **Regeneration added:** `0 => 240` The only strike with inherent regeneration. Cloaked fighters will regenerate completely in 4 minutes.
 * **Max speed up slightly:** `430 => 440 (+2%)`
+* **Energy usage removed:** `6 => 0` Yes, this means infinite cloaking.
 
 ### Drone Frigates
 *Drone frigates are widely regarded as the worst frigate in the game. Even way back when I played classic campaign I never made these things. QOL upgrades along with slightly reduced deployment time are first steps for this unit.*
-* **Drone deployment speed decreased:** `<need cloaked>`
-* **Drones never expire:** `<need cloaked>`
+* **Drone deployment speed decreased:** `20 => 5 (-75%)`
+* **Drones never expire**
 * **Build time decreased a lot:** `77 => 45 (-42%)` Contrast with Hiigaran flaks: `50`, Vaygr assaults: `45`, keep in mind HW1 has no imp. manufacturing upgrade.
 * **Max speed up:** `166 => 230 (+39%)`
 
@@ -201,9 +221,6 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
  * vs `LightArmour`: `0.5 => 0.45 (-10%)`
  * vs `LightArmour_hw1`: `0.55 => 0.45 (-18%)`
  
-### Multigun Corvettes
-*(need cloaked)*
-* **Damage multiplier vs HW2 fighters down:** `1.8 => 1.3 (-28%)` (*`kus_multigun1.wepn; kus_multigun2.wepn`)
 
 ### Minelayer Corvettes
 *Compared to its 'never build' HW2 counterparts, the HW1 minelayer is much cheaper, faster building and more accessible. Its stats are a little worse and it can't clear mines, but ints can easily fill this role anyway. Weapons no longer affected by any stance - minelayers wanted to be evasive to lay mines faster, but also aggressive for a damage boost. Easiest resolution: no damage modifiers.*
@@ -215,9 +232,9 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 * **Aggressive stance mine speed multiplier removed** `1.1 => 1.0 (-9%)`
 
 ### Missile Destroyers
-*(need cloaked)*
+*Performance vs HW2 corvettes a little high. These changes level this closer to their performance vs HW1 vettes.*
 * **Damage vs HW2 vettes down:** `1.25 => 1.0 (-20%)`
-* **Now use up a supply slot for Destroyers (still have their own cap of 2)** `0 => 1`
+* **Now use up a supply slot for Destroyers (still have their own cap of 2)** `0 => 1`  Since MDs are the end-all unit against strikecraft, allowing two of these in addition to the six destroyers available made HW1 lategame deathballs extremely difficult to deal with.
 
 ### Resource Collectors
 *These are not torpedoes, despite appearances. Also a nerf to capacity balance against buffed speeds; overall 0 change to RU/s*

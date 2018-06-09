@@ -2,9 +2,9 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$1660"
 NewShipType.sobDescription="$1661"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 21000)
-NewShipType.regentime=1200
-NewShipType.minRegenTime=450
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 20000)
+NewShipType.regentime=210
+NewShipType.minRegenTime=210
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
 NewShipType.rearArmourDamage = getShipNum(NewShipType, "rearArmourDamage", 1.0)
 setTacticsMults(NewShipType, "ENGINEACCEL", 1.10, 0.90, 1.0)
@@ -18,8 +18,8 @@ NewShipType.paradeData="vgr_hyperspace_platform"
 NewShipType.formationSpacing=400
 NewShipType.mass=100
 NewShipType.collisionMultiplier=1
-NewShipType.mainEngineMaxSpeed = getShipNum(NewShipType, "mainEngineMaxSpeed", 650)
-NewShipType.thrusterMaxSpeed = getShipNum(NewShipType, "thrusterMaxSpeed", 650)
+NewShipType.mainEngineMaxSpeed = getShipNum(NewShipType, "mainEngineMaxSpeed", 750)
+NewShipType.thrusterMaxSpeed = getShipNum(NewShipType, "thrusterMaxSpeed", 750)
 NewShipType.rotationMaxSpeed=171
 NewShipType.thrusterAccelTime=5
 NewShipType.thrusterBrakeTime=3
