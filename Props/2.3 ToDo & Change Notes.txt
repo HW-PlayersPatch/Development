@@ -11,6 +11,7 @@ Features
 		People want to set reinforcements to 0.5, and up the difficulty with this!
 		Try to average the expected player fleet with the actual player fleet for more consistent gameplay.
 		WeaponDamageUpgrade125
+	Possible campaign option to include salvaged units in the unit cap. Maybe...
 	Play vs 200% AI in MP, do we need a 300%?
 Definite Changes
 	Torpedo frigates cluster torp speed up to 350 to catch corvettes.
@@ -33,6 +34,7 @@ Maybe Changes, Need Testing
 	Pulsars lower penetration vs frigs (Fear/Ghost were thinking 10% nerf)
 		Looks like they're just as strong in 2.1, accuracy is better than hw2c tho.
 	Missile Corvs penetration vs hw2 fighters up a bit. Compare to hw2c tests. They only feel good vs corvs and colls, when they should be OK vs fighters too.
+	Potentially make hw1 assault frigs and ion frigs 65 sec build. support to 70. May be OP though, needs testing.
 Test
 	All fighters and corvettes vs collectors. Adjust penetration as needed.
 		hw2c: 20 Hiig Int vs 4 lv2 Hiig colls = 160sec
@@ -53,6 +55,8 @@ Features & Bug Fixes
 	Lowered the maximum Mission Difficulty scale to 2 in the options menu. (If desired, its possible to set this up to 5 in your PLAYERCFG.LUA file)
 	Addressed HWR's major Cross Race Docking Bug. Hiigaran/Vaygr fighters and corvettes will no longer dock with other races. Previously, regenerated Hiigaran/Vaygr ships would be unable to launch from Kushan/Taiidan Repair Corvettes, Support Frigates, and Resource Controllers leading to really bad lag and multiple glitches.
 	Kushan Ion Cannon Frigates are now pronounced correctly as 'Cannon', previously they were being pronounced as 'Cannit'.
+	Taiidan Assault Frigates
+	Fixed a gun alignment bug on the Taiidan Assault Frigates, which caused 2 of their 4 guns to always miss small targets.
 Campaign
 	Fixed a rules of engagement bug that caused many Turanic, Kadeshi, Junkyard, and Keeper ships to sometimes stop attacking unexpectedly and behave passively.
 	In Homeworld 1, captured Turanic Ion Array Frigates and Kadeshi Multi-beam Frigates can now be retired immediately.
