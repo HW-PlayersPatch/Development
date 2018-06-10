@@ -71,6 +71,11 @@ Several buffs are included to open up these options to Hiigaran again, and also 
   * **Gunships and Pulsars (no upgrade):** `2.1 => 5 (+138%)`  Other vette times are balanced around ensuring Vgr missile and Hgn pulsar both take 5s base
   * **Gunships and Pulsars (upgrade):** `3.2 => 7.5 (+134%)`
   * **Minelayers:** `12 => 33.75 (+181%)` HP increase (below) is factored in
+### Bombers
+*Counter subystems? Sure. Counter frigates? Sure. Counter capitals? Sure. Counter corvettes? Hmm.*
+* **Damage multiplier vs corvetes down:**
+  * vs `LightArmour`: `1.0 => 0.7 (-30%)`
+  * vs `LightArmour_hw1`: `1.15 => 0.8 (-30%)`
 ### Minelayers
 *Weapons no longer affected by any stance - minelayers wanted to be evasive to lay mines faster, but also aggressive for a damage boost. Easiest resolution: no damage modifiers.*
 * **Aggressive stance damage multiplier removed:** `1.32 => 1.0 (-24%)` This value of `1.32` is the product of the `WEAPONDAMAGE` and `DAMAGEAPPLIED` modifiers which were `1.2` and `1.1` respectively.

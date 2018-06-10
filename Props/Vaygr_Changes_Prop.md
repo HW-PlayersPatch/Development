@@ -108,6 +108,12 @@ In addition to nerfing and adding weak points to the unstoppable macro engine, t
   * **Damage multiplier vs HW1 corvettes up:**
     * vs `LightArmour_hw1`: `0.55 => 0.7 (+27%)`
 
+### Bombers
+*Counter subystems? Sure. Counter frigates? Sure. Counter capitals? Sure. Counter corvettes? Hmm.*
+* **Damage multiplier vs corvetes down:**
+  * vs `LightArmour`: `1.0 => 0.7 (-30%)`
+  * vs `LightArmour_hw1`: `1.15 => 0.8 (-30%)`
+	
 ### Minelayers
 *Weapons no longer affected by any stance - minelayers wanted to be evasive to lay mines faster, but also aggressive for a damage boost. Easiest resolution: no damage modifiers.*
 * **Aggressive stance damage multiplier removed:** `1.32 => 1.0 (-24%)` This value of `1.32` is the product of the `WEAPONDAMAGE` and `DAMAGEAPPLIED` modifiers which were `1.2` and `1.1` respectively.
@@ -146,5 +152,5 @@ In addition to nerfing and adding weak points to the unstoppable macro engine, t
 * **Kamikazi damage multiplier down:** `1.0 => 0.6 (-40%)`
 
 ### Utility Armour Upgrade
-*Collectors are currently shrugging off harrassment damage with no problems - harrassment requires planning, decision making, calculation and multitasking for the harrasser, so it should demand these things from the defender too. Tanky workers mean the defender has far less to worry about (sometimes nothing at all), and the harrasser will find their return-on-investment depressingly low. Fighters in particular trade quite poorly against even a single layer of hull defence. Vaygr in should be weak to economic harrass, as their core strength is overwhelming their opponent with a superior economy - opponents should be able to exploit a sloppy Vaygr player's lack of defensive foresight.*
+*Collectors are currently shrugging off harrassment damage with no problems - harrassment requires planning, decision making, calculation and multitasking for the harrasser, so it should demand these things from the defender too. Tanky workers mean the defender has far less to worry about (sometimes nothing at all), and the harrasser will find their return-on-investment depressingly low. Fighters in particular trade quite poorly against even a single layer of hull defence. Vaygr in particular should be weak to economic harrass, as their core strength is overwhelming their opponent with a superior economy - opponents should be able to exploit a sloppy Vaygr player's lack of defensive foresight.*
 * **Upgrade HP down:** `5000 => 4000 (-20%)`
