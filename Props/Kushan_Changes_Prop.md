@@ -88,7 +88,6 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
   * **Accuracy vs fighters up:**
     * vs `Fighter`: `0.6 => 0.81 (+35%)`
     * vs `Fighter_hw1`: `0.6 => 0.9 (+50%)`
-  * **Damage multiplier vs corvettes down:** `0.1 => 0.75 (-25%)`
 
 ### Support Frigates
 *See the [note for the same change](https://github.com/HW-PlayersPatch/2.3/blob/master/Props/Taiidan_Changes_Prop.md#support-frigates) happening to Taiidan support frigates.*
@@ -239,6 +238,7 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
     * **Damage multiplier vs fighters down:**
       * vs `Unarmoured`: `1.8 => 0.8 (-55%)`
       * vs `Unarmoured_hw1`: `1.8 => 0.93 (-48%)`
+    * **Damage multiplier vs corvettes down:** `1.0 => 0.75 (-25%)`
 
 ### Missile Destroyers
 *Performance vs HW2 corvettes a little high. These changes level this closer to their performance vs HW1 vettes.*

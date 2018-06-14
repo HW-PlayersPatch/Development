@@ -138,7 +138,6 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
   * **Accuracy vs fighters up:**
     * vs `Fighter`: `0.6 => 0.81 (+35%)`
     * vs `Fighter_hw1`: `0.6 => 0.9 (+50%)`
-  * **Damage multiplier vs corvettes down:** `0.1 => 0.75 (-25%)`
 
 ### Support Frigates
 *Support frigates only come into their own when in numbers above three or more healing the same target (usually a destroyer): this makes them quite undesirable as an earlygame unit due to their high build time and lackluster healing power against the units that are on the field at that stage of the game (frigates). Rather than keep this unit consigned to the lategame, this is a buff intended to make support frigates an option in the earlygame (not always outclassed by building an extra dps frigate).*
@@ -275,6 +274,7 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
     * **Damage multiplier vs fighters down:**
       * vs `Unarmoured`: `1.8 => 0.8 (-55%)`
       * vs `Unarmoured_hw1`: `1.8 => 0.93 (-48%)`
+    * **Damage multiplier vs corvettes down:** `1.0 => 0.75 (-25%)`
 
 ### Missile Destroyers
 *Performance vs HW2 corvettes a little high. These changes level this closer to their performance vs HW1 vettes.*
