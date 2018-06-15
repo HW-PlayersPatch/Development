@@ -135,9 +135,9 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
 * (*`tai_multigun1.wepn; tai_multigun2.wepn`*):
   * **Attack range up:** `1600 => 1800 (+13%)`
   * **Projectile speed up:** `1500 => 1900 (+26%)` Multiguns were unable to hit HW1 fighters hardly at all, but were reliable against HW2. This buff has a small effect against HW2, but a large one against HW1.
-  * **Damage multiplier vs HW1 fighters up:** `1.8 => 2.1 (+17%)` To balance out multigun effectiveness against HW2 and HW1 fighters.
-  * **Accuracy vs HW1 fighters up:** `0.6 => 1.0 (+67%)`
-  * **Damage multiplier vs corvettes down:** `0.1 => 0.75 (-25%)`
+  * **Accuracy vs fighters up:**
+    * vs `Fighter`: `0.6 => 0.81 (+35%)`
+    * vs `Fighter_hw1`: `0.6 => 0.9 (+50%)`
 
 ### Support Frigates
 *Support frigates only come into their own when in numbers above three or more healing the same target (usually a destroyer): this makes them quite undesirable as an earlygame unit due to their high build time and lackluster healing power against the units that are on the field at that stage of the game (frigates). Rather than keep this unit consigned to the lategame, this is a buff intended to make support frigates an option in the earlygame (not always outclassed by building an extra dps frigate).*
@@ -255,7 +255,6 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
   * vs `LightArmour`: `0.25 => 0.225 (-10%)`
   * vs `LightArmour_hw1`: `0.275 => 0.225 (-18%)`
  
-
 ### Minelayer Corvettes
 *Compared to its 'never build' HW2 counterparts, the HW1 minelayer is much cheaper, faster building and more accessible. Its stats are a little worse and it can't clear mines, but ints fill this role anyway.*
 * **Build time slightly up:** `25 => 30`
@@ -264,6 +263,18 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
   * **Side:** `0.8 => 1.0 (+25%)`
 * **Aggressive stance damage multiplier removed:** `1.32 => 1.0 (-24%)` This value of `1.32` is the product of the `WEAPONDAMAGE` and `DAMAGEAPPLIED` modifiers which were `1.2` and `1.1` respectively.
 * **Aggressive stance mine speed multiplier removed** `1.1 => 1.0 (-9%)`
+
+### Multigun Corvettes
+*The power in these stats has mostly been routed into more relevant stats (see buffs). Multiguns have still been buffed overall.*
+* **HP down:** `1100 => 900 (-18%)`
+* **Weapon changes:**
+  * (*`tai_multigun1.wepn; tai_multigun2.wepn`*):
+    * **Damage range down:** `[8, 10] => [8, 9] (avg -5.5%)`
+    * **Time between shots up:** `2.0 => 2.5 (+25%)`
+    * **Damage multiplier vs fighters down:**
+      * vs `Unarmoured`: `1.8 => 0.8 (-55%)`
+      * vs `Unarmoured_hw1`: `1.8 => 0.93 (-48%)`
+    * **Damage multiplier vs corvettes down:** `1.0 => 0.75 (-25%)`
 
 ### Missile Destroyers
 *Performance vs HW2 corvettes a little high. These changes level this closer to their performance vs HW1 vettes.*
