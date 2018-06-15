@@ -85,11 +85,9 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 * (*`kus_multigun1.wepn; kus_multigun2.wepn`*):
   * **Attack range up:** `1600 => 1800 (+13%)`
   * **Projectile speed up:** `1500 => 1900 (+26%)` Multiguns were unable to hit HW1 fighters hardly at all, but were reliable against HW2. This buff has a small effect against HW2, but a large one against HW1.
-  * **Damage multiplier vs HW2 fighters up:** `1.3 => 1.8 (+38%)` To match Taiidan multis
-  * **Damage multiplier vs HW1 fighters up:** `1.8 => 2.1 (+17%)` To balance out multigun effectiveness against HW2 and HW1 fighters.
-  * **Accuracy vs HW1 fighters up:** `0.9 => 1.0 (+9%)` (*`kus_multigun1.wepn`*)
-  * **Accuracy vs HW1 fighters up:** `0.6 => 1.0 (+67%)` (*`kus_multigun2.wepn`*) Both weapons do the exact same DPS, they are merely positioned differently.
-  * **Damage multiplier vs corvettes down:** `0.1 => 0.75 (-25%)`
+  * **Accuracy vs fighters up:**
+    * vs `Fighter`: `0.6 => 0.81 (+35%)`
+    * vs `Fighter_hw1`: `0.6 => 0.9 (+50%)`
 
 ### Support Frigates
 *See the [note for the same change](https://github.com/HW-PlayersPatch/2.3/blob/master/Props/Taiidan_Changes_Prop.md#support-frigates) happening to Taiidan support frigates.*
@@ -190,6 +188,11 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 *Part of a larger problem in HWR, scouts are currently waypointable to provide extremely hard to kill vision for a low cost and low attention investment.*
 * **Primary sensor radius down (blue sphere in manager):** `9000 => 6500 (-27%)`
 * **Secondary sensor radius down (works the same, but invisible):** `11000 => 8030 (-27%)` 11000 is almost as high as a probe (`12000`) - way too high.
+* **Speed boost nerf:** 
+  * **Duration down:** `50s => 30s (-40%)`
+    * **Energy capacity up:** `1000 => 1200 (+20%)`
+    * **Energy usage per second up:** `20 => 40 (+100%)`
+  * **Speed multiplier down:** `1.25 => 1.2 (-4%)` resulting in a speed nerf: `613 => 588 (-4%)`
 
 ### Light Corvettes
 *Far too versatile. Currently an outstanding anti-fight unit, light vettes also do great work against collectors and even other corvettes. This is not identical to the Kushan nerf since the Taiidan light has two guns instead of one.*
@@ -220,7 +223,6 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 * (*`kus_hvcorvette1.wepn; kus_hvcorvette2.wepn`*)
  * vs `LightArmour`: `0.5 => 0.45 (-10%)`
  * vs `LightArmour_hw1`: `0.55 => 0.45 (-18%)`
- 
 
 ### Minelayer Corvettes
 *Compared to its 'never build' HW2 counterparts, the HW1 minelayer is much cheaper, faster building and more accessible. Its stats are a little worse and it can't clear mines, but ints can easily fill this role anyway. Weapons no longer affected by any stance - minelayers wanted to be evasive to lay mines faster, but also aggressive for a damage boost. Easiest resolution: no damage modifiers.*
@@ -230,6 +232,18 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
   * **Side:** `0.8 => 1.0 (+25%)`
 * **Aggressive stance damage multiplier removed:** `1.32 => 1.0 (-24%)` This value of `1.32` is the product of the `WEAPONDAMAGE` and `DAMAGEAPPLIED` modifiers which were `1.2` and `1.1` respectively.
 * **Aggressive stance mine speed multiplier removed** `1.1 => 1.0 (-9%)`
+
+### Multigun Corvettes
+*The power in these stats has mostly been routed into more relevant stats (see buffs). Multiguns have still been buffed overall.*
+* **HP down:** `1100 => 900 (-18%)`
+* **Weapon changes:**
+  * (*`tai_multigun1.wepn; tai_multigun2.wepn`*):
+    * **Damage range down:** `[8, 10] => [8, 9] (avg -5.5%)`
+    * **Time between shots up:** `2.0 => 2.5 (+25%)`
+    * **Damage multiplier vs fighters down:**
+      * vs `Unarmoured`: `1.8 => 0.8 (-55%)`
+      * vs `Unarmoured_hw1`: `1.8 => 0.93 (-48%)`
+    * **Damage multiplier vs corvettes down:** `1.0 => 0.75 (-25%)`
 
 ### Missile Destroyers
 *Performance vs HW2 corvettes a little high. These changes level this closer to their performance vs HW1 vettes.*
