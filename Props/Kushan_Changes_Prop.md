@@ -188,6 +188,11 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 *Part of a larger problem in HWR, scouts are currently waypointable to provide extremely hard to kill vision for a low cost and low attention investment.*
 * **Primary sensor radius down (blue sphere in manager):** `9000 => 6500 (-27%)`
 * **Secondary sensor radius down (works the same, but invisible):** `11000 => 8030 (-27%)` 11000 is almost as high as a probe (`12000`) - way too high.
+* **Speed boost nerf:** 
+  * **Duration down:** `50s => 30s (-40%)`
+    * **Energy capacity up:** `1000 => 1200 (+20%)`
+    * **Energy usage per second up:** `20 => 40 (+100%)`
+  * **Speed multiplier down:** `1.25 => 1.2 (-4%)` resulting in a speed nerf: `613 => 588 (-4%)`
 
 ### Light Corvettes
 *Far too versatile. Currently an outstanding anti-fight unit, light vettes also do great work against collectors and even other corvettes. This is not identical to the Kushan nerf since the Taiidan light has two guns instead of one.*
