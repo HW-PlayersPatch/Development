@@ -171,7 +171,6 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 * **Damage multiplier vs collectors up slightly:** `1.1 => 1.3 (+18%)`
 * **Damage multiplier vs subsystems up:** `1.25 => 3.0 (+140%)`
 * **Regeneration added:** `0 => 240` The only strike with inherent regeneration. Cloaked fighters will regenerate completely in 4 minutes.
-* **Max speed up slightly:** `430 => 440 (+2%)`
 * **Energy usage removed:** `6 => 0` Yes, this means infinite cloaking.
 
 ### Drone Frigates
@@ -258,3 +257,9 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 ### Carriers
 *To compensate for their reduced build times, the price of carriers is going up: they are, after all, superior to HW2 carriers on almost all fronts.*
 * **Build cost up:** `3000 => 3500 (+17%)`
+
+### Cloaked Fighters
+*This is a power unit. Making it should require time and money. This unit should also be vulnerable to thoughtless usage, so its becoming easier to chase down.*
+* **Research cost up:** `500 => 750 (+50%)`
+* **Research time up:** `100 => 130 (+30%)`
+* **Max speed down slightly:** `430 => 420 (-2%)`

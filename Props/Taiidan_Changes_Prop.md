@@ -212,7 +212,7 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
 * **Rotation accel time down:** `0.75 => 0.5 (-33%)`
 * **Default stance change:** `Neutral => Evasive`
 * **Default tactics change:** `Defensive => Passive`
-* **Anti fire control radius up:** `1200 => 2500 (+108%)`
+* **Anti fire control radius up:** `1200 => 2250 (+88%)`
 * **Accuracy debuff field stronger:** `0.95 => 0.6 (-37%)` This is a change from `-5%` accuracy to `-40%` accuracy for enemy ships.
 * **Damage debuff field stronger:** `0.95 => 0.9 (-5%)` This is a change from `-5%` damage to `-10%` damage for enemy ships.
 
@@ -294,3 +294,8 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
 ### Carriers
 *To compensate for their reduced build times, the price of carriers is going up: they are, after all, superior to HW2 carriers on almost all fronts.*
 * **Build cost up:** `3000 => 3500 (+17%)`
+
+### Field Frigates
+*This is a power unit. Making it should require time and money.*
+* **Research cost up:** `1100 => 1250 (+14%)`
+* **Research time up:** `40 => 60 (+50%)`
