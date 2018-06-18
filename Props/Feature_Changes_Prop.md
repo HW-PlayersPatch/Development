@@ -1,3 +1,5 @@
+Note: All changes are work in progress suggestions/ideas, until deemed final.
+
 # Features and Bugfixes
 
 ## New features
