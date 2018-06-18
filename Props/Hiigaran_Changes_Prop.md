@@ -1,3 +1,5 @@
+Note: All changes are work in progress suggestions/ideas, until deemed final.
+
 # Hiigaran
 
 Hiigaran are currently struggling to find diversity in their overarching playstyle.
