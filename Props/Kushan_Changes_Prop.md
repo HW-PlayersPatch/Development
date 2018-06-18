@@ -1,3 +1,5 @@
+Note: All changes are work in progress suggestions/ideas, until deemed final.
+
 # Kushan
 
 Kushan are sitting in the same position as [Taiidan](https://github.com/HW-PlayersPatch/2.3/blob/master/Props/Taiidan_Changes_Prop.md#taiidan), but *even worse*. This is due to severely underperforming race-specific units: updates here to cloaked fighters and drone frigates aim to bring both these units out of the 'never used' tier.
