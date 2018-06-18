@@ -1,3 +1,5 @@
+Note: All proposed changes are suggestions/ideas, until deemed final.
+
 # Vaygr
 
 Generally reckoned to be the best race on large maps, Vaygr gameplay is currently consigned to a linear `SCOUT -> MACRO -> BUILD -> PUSH` playstyle. In this domain they are certainly top dog, to the point where the other races stuggle to prevent the macro machine from running out of control.
