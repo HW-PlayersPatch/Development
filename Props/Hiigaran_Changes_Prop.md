@@ -1,4 +1,4 @@
-Note: All changes are work in progress suggestions/ideas, until deemed final.
+Note: All proposed changes are suggestions/ideas, until deemed final.
 
 # Hiigaran
 
