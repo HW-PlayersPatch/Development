@@ -1,25 +1,26 @@
 NewShipType = StartShipConfig()
-NewShipType.displayedName="$10030"
-NewShipType.sobDescription="$10031"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 25500)
-NewShipType.regentime=1275
-NewShipType.minRegenTime=1275
+NewShipType.displayedName="$1518"
+NewShipType.sobDescription="$1519"
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 18000)
+NewShipType.regentime=1500
+NewShipType.minRegenTime=1500
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.2)
 NewShipType.rearArmourDamage = getShipNum(NewShipType, "rearArmourDamage", 1.2)
 setTacticsMults(NewShipType, "ENGINEACCEL", 1.10, 0.90, 1.0)
 setTacticsMults(NewShipType, "THRUSTERACCEL", 1.10, 0.90, 1.0)
 setTacticsMults(NewShipType, "ROTATION", 0.95, 1.05, 1.0)
 setTacticsMults(NewShipType, "ROTATIONACCEL", 1.10, 0.90, 1.0)
+setTacticsMults(NewShipType, "FIRERATE", 0.98, 1.02, 1.0)
 NewShipType.isTransferable=1
+NewShipType.useEngagementRanges=1
 NewShipType.formationSpacing=250
-NewShipType.paradeData = "kus_dronefrigate_parade"
 NewShipType.defaultROE="Defensive"
 NewShipType.defaultStance="Neutral"
 NewShipType.mass=100
 NewShipType.collisionMultiplier=1
-NewShipType.thrusterMaxSpeed=230
-NewShipType.mainEngineMaxSpeed=230
-NewShipType.rotationMaxSpeed=25
+NewShipType.thrusterMaxSpeed=178
+NewShipType.mainEngineMaxSpeed=178
+NewShipType.rotationMaxSpeed=22
 NewShipType.thrusterAccelTime=7
 NewShipType.thrusterBrakeTime=2
 NewShipType.mainEngineAccelTime=8
@@ -30,9 +31,9 @@ NewShipType.thrusterUsage=0.5
 NewShipType.accelerationAngle=40
 NewShipType.mirrorAngle=0
 NewShipType.secondaryTurnAngle=0
-NewShipType.maxBankingAmount=20
-NewShipType.descendPitch=20
-NewShipType.goalReachEpsilon=30
+NewShipType.maxBankingAmount=10
+NewShipType.descendPitch=35
+NewShipType.goalReachEpsilon=300
 NewShipType.slideMoveRange=100
 NewShipType.controllerType="Ship"
 NewShipType.tumbleStaticX=10
@@ -45,18 +46,15 @@ NewShipType.tumbleSpecialDynamicX=2
 NewShipType.tumbleSpecialDynamicY=10
 NewShipType.tumbleSpecialDynamicZ=5
 NewShipType.relativeMoveFactor=3
-setTargetBox(NewShipType, 0, -0.3,0.53,-0.6, 0.3,-0.3,0.4)
+setTargetBox(NewShipType, 0, -0.42,-0.97,-0.76, 0.4,-0.08,0.94);
 NewShipType.useLayoutBounds=1
-NewShipType.layoutBoundX=50
-NewShipType.layoutBoundY=55
+NewShipType.layoutBoundX=80
+NewShipType.layoutBoundY=50
 NewShipType.layoutBoundZ=100
-NewShipType.layoutCenterX=0
-NewShipType.layoutCenterY=0
-NewShipType.layoutCenterZ=20
 NewShipType.dustCloudDamageTime=160
 NewShipType.nebulaDamageTime=200
 NewShipType.MinimalFamilyToFindPathAround="MotherShip"
-NewShipType.BuildFamily="Frigate_Kus"
+NewShipType.BuildFamily="Frigate_Hgn"
 NewShipType.AttackFamily="Frigate"
 NewShipType.DockFamily="Frigate"
 NewShipType.AvoidanceFamily="Frigate"
@@ -68,15 +66,15 @@ setSupplyValue(NewShipType, "Frigate", 1.0)
 setSupplyValue(NewShipType, "LayoutFrigate", 1.0)
 NewShipType.fighterValue=0
 NewShipType.corvetteValue=0
-NewShipType.frigateValue=15
+NewShipType.frigateValue=12
 NewShipType.neutralValue=0
-NewShipType.antiFighterValue=8
-NewShipType.antiCorvetteValue=2
+NewShipType.antiFighterValue=12
+NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
-NewShipType.totalValue=15
-NewShipType.buildCost=900
-NewShipType.buildTime=45
-NewShipType.buildPriorityOrder=40
+NewShipType.totalValue=12
+NewShipType.buildCost=700
+NewShipType.buildTime=50
+NewShipType.buildPriorityOrder=10
 NewShipType.retaliationRange=5500
 NewShipType.retaliationDistanceFromGoal=160
 NewShipType.visualRange=1000
@@ -96,9 +94,9 @@ NewShipType.TOGroupMergeSize=0
 NewShipType.mouseOverMinFadeSize=0.045
 NewShipType.mouseOverMaxFadeSize=0.1
 NewShipType.healthBarStyle=1
-NewShipType.nlips=0.000125
+NewShipType.nlips=0.00015
 NewShipType.nlipsRange=6000
-NewShipType.nlipsFar=0.0001
+NewShipType.nlipsFar=0.00015
 NewShipType.nlipsFarRange=10000
 NewShipType.SMRepresentation="HardDot"
 NewShipType.meshRenderLimit=14000
@@ -127,49 +125,49 @@ NewShipType.launchTimeBetweenTwoFormations=1
 NewShipType.launchTimeBeforeStart=2
 NewShipType.launchNrOfShipsInDockFormation=1
 NewShipType.launchFormation="delta"
-addAbility(NewShipType, "ShipHold", 1, 0, 0, "rallypoint", "drone,drone1,drone2,drone3", 50)
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
-addAbility(NewShipType,"HyperSpaceCommand",1,1.1,200,700,0,4);
-addAbility(NewShipType,"CanAttack",1,1,0,1,0.35,1.5,"Fighter, Fighter_hw1, Swarmer, Corvette, Corvette_hw1,,,,,, Capturer, Frigate, SmallCapitalShip, BigCapitalShip, Utility","frontal_Frigate",
-{Fighter="movetotargetandshoot_Frigate_vs_Fighters"},
-{Fighter_hw1="movetotargetandshoot_Frigate_vs_Fighters"},
-{Swarmer="movetotargetandshoot_Frigate_vs_Fighters"},
-{Corvette="movetotargetandshoot_Frigate_vs_Corvettes"},
-{Corvette_hw1="movetotargetandshoot_Frigate_vs_Corvettes"},
-{Munition="MoveToTargetAndShoot"},
+addAbility(NewShipType,"HyperSpaceCommand",0,1,200,500,0,3);
+addAbility(NewShipType,"CanAttack",1,1,0,1,0.35,1.5,"Fighter, Fighter_hw1, Corvette, Corvette_hw1, Frigate, Utility,,,, SmallCapitalShip, BigCapitalShip","frontal_frigate",
+{Fighter="MoveToTargetAndShoot_Frigate"},
+{Fighter_hw1="MoveToTargetAndShoot_Frigate"},
+{Corvette="MoveToTargetAndShoot_Frigate"},
+{Corvette_hw1="MoveToTargetAndShoot_Frigate"},
+{Munition="MoveToTargetAndShoot_Frigate"},
+{SmallCapitalShip="frontal_frigate"},
+{BigCapitalShip="frontal_frigate"},
 {SubSystem="FrontalVsSubSystem"});
 addAbility(NewShipType,"GuardCommand",1,3000,600);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
-addAbility(NewShipType,"CanBeCaptured",45,0.1,"CapCap");
+addAbility(NewShipType,"CanBeCaptured",30,0.1,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RetireAbility",1,1);
-addAbility(NewShipType,"CustomCommand",1,"Drones",1,0,9000,1.2,0.01,1000,0,"data:Ship/Kus_DroneFrigate/Kus_DroneFrigate.lua","Start_DroneFrigate","Do_DroneFrigate","Finish_DroneFrigate","Kus_DroneFrigate",0.1,2,1)
-addCustomCode(NewShipType,"data:Ship/Kus_DroneFrigate/Kus_DroneFrigate.lua","","Create_DroneFrigate","Update_DroneFrigate","Destroy_DroneFrigate","Kus_DroneFrigate",1.15)
 LoadModel(NewShipType,1);
-StartShipWeaponConfig(NewShipType,"Kus_DroneFrigate","Weapon_Gun","")
+StartShipHardPointConfig(NewShipType,"Weapon_Top","Hardpoint_Top","Weapon","Innate","Ship","Hgn_KineticBurstCannon","","","","","","","","");
+StartShipHardPointConfig(NewShipType,"Weapon_Bottom","Hardpoint_Bottom","Weapon","Innate","Ship","Hgn_KineticBurstCannon","","","","","","","","");
 addShield(NewShipType,"EMP",310,20);
 NewShipType.battleScarCoverage=2
 NewShipType.battleScarBudgetLow = 400
 NewShipType.battleScarBudgetNext = 600
 NewShipType.sobDieTime=1.9
-NewShipType.sobSpecialDieTime=2
+NewShipType.sobSpecialDieTime=1
 NewShipType.specialDeathSpeed=40
 NewShipType.chanceOfSpecialDeath=0
-NewShipType.deadSobFadeTime=1
-NewShipType.trailLinger=2
+NewShipType.deadSobFadeTime=0
+NewShipType.trailLinger=4
 setEngineBurn(NewShipType,6,1,1.5,60,1.1,0.1,0.25,120);
-setEngineGlow(NewShipType,1,1,1.02,20,300,50,1.5,{0.7, 0.55, .35, 0.25});
+setEngineGlow(NewShipType,1,1,1.02,20,300,50,1.5,{0.27, 0.47, .69, 0.25});
 loadShipPatchList(NewShipType,"data:sound/sfx/ship/Hiigaran/Frigate/",0,"Engines/HFrigateEng","",1,"Ambience/HFrigateAmb","");
 loadLatchPointList(NewShipType,"SalCap","SalvagePoint1","SalvagePoint2");
-loadLatchPointList(NewShipType,"CapCap","CapturePoint1");
-loadLatchPointList(NewShipType,"RepCap","RepairPoint1","RepairPoint2");
-NewShipType.minFalloffDamageDist=100
-NewShipType.maxFalloffDamageDist=100*2
-NewShipType.maxFalloffScuttleDamageDist=100*4
+loadLatchPointList(NewShipType,"CapCap","CapturePoint0");
+loadLatchPointList(NewShipType,"RepCap","RepairPoint0","RepairPoint1");								 
+NewShipType.minFalloffDamageDist=100 -- red
+NewShipType.maxFalloffDamageDist=100*2 -- green
+NewShipType.maxFalloffScuttleDamageDist=100*4 -- blue
 NewShipType.explosiveScuttleDamageOnDeath=0
 NewShipType.maxFalloffForce=500*10
-NewShipType.explosiveDamageOnDeath=0												 
+NewShipType.explosiveDamageOnDeath=0
+NewShipType.radiusDamageEvadeMod=1.1														 
 NewShipType.hideNormalAttackUICooldown=1
 NewShipType.canSurround=1
