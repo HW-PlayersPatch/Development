@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="Observer"
 NewShipType.sobDescription="Observer"
-NewShipType.maxhealth=1000000
+NewShipType.maxhealth=1
 NewShipType.regentime=0
 NewShipType.minRegenTime=0
 NewShipType.sideArmourDamage = 1.0
@@ -22,7 +22,7 @@ setTacticsMults(NewShipType, "DAMAGEAPPLIED", 1.0, 1.0, 1.0)
 setTacticsMults(NewShipType, "FIRERATE", 1.0, 1.0, 1.0)
 NewShipType.isTransferable=0
 NewShipType.formationSpacing=15
-NewShipType.defaultROE="Defensive"
+NewShipType.defaultROE="Passive"
 NewShipType.defaultStance="Evasive"
 NewShipType.holdSlots=2
 NewShipType.mass=10
@@ -95,9 +95,9 @@ NewShipType.buildTime=1
 NewShipType.buildPriorityOrder=50
 NewShipType.retaliationRange=1000
 NewShipType.retaliationDistanceFromGoal=160
-NewShipType.visualRange=999999
-NewShipType.prmSensorRange=999999
-NewShipType.secSensorRange=999999
+NewShipType.visualRange=1
+NewShipType.prmSensorRange=1
+NewShipType.secSensorRange=1
 NewShipType.detectionStrength=1
 NewShipType.TOIcon="Triangle"
 NewShipType.TOScale=1
