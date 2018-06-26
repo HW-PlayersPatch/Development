@@ -1,4 +1,4 @@
-StartWeaponConfig(NewWeaponType,"AnimatedTurret","InstantHit","HealBeam","Normal",0,1250,0,5,0,0,1,1,1,5,5,1,1,0,45,45,0.1,"Normal",1,0,0);
+StartWeaponConfig(NewWeaponType,"AnimatedTurret","InstantHit","HealBeam","Normal",0,1250,0,1.01,0,0,1,1,1,1,0,0,1,0,45,45,0.1,"Normal",1,0,0);
 AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",-17,-17,"");
 setPenetration(NewWeaponType,5,1,
 {PlanetKillerArmour=0},
