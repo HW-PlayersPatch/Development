@@ -148,6 +148,7 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
 * **'Damage' multiplier vs frigates up:** `1.0 => 1.5 (+50%)` (*`tai_supportgun1heal.wepn`*) More like anti-damage, this is a buff to the healing factor against frigates
 * **Range for repair beam up:** `1000 => 1250 (+25%)` (*`tai_supportgun1heal.wepn`*)
 * **Beam now fires in a continuous stream.**
+* **Changed healing gun firing cone to match the Kushan Support Frigate's one.**
 
 ### Resource Collectors
 *HW1 resourcing is currently something tourturous. Collectors slower than carriers meant expanding or relocations were extremely difficult or impossible under many circumstances, and even if they **were** possible, they weren't desirable. This also makes HW1 collectors a huge liability to replace, as it could be minutes before a collector can get back to harvesting, else the HW1 player hyperspace it into position at an extra charge on top of the build cost... A mess, in essence. These changes have been tested extensively so **HW1 collection rate is the same**, however HW1 strategy is now much more flexible, and their economy is much less fragile (although still not quite as robust as HW2).*
