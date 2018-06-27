@@ -119,6 +119,8 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
   * Vertically: `[0, 0] => [-1, 10]`
 * **Removed nonsensical firing cone range:** `80 -> 0` (*`tai_repairgunheal.wepn`*)
 * **Repair beam now plays the correct sound on firing** (*`tai_repairgunheal.wepn`*)
+* **Range for repair beam up:** `890 => 1112.5 (+25%)`
+* **Beam now fires in a continuous stream.**
 
 ### Minelayers
 *Values being shuffled, make sure to also check the nerfs. A slight buff to minelayers overall, but mostly to their ability to backstab RU operations.*
@@ -145,6 +147,7 @@ Taiidan (and Kushan even more so) are currently struggling to face up against th
 *Support frigates only come into their own when in numbers above three or more healing the same target (usually a destroyer): this makes them quite undesirable as an earlygame unit due to their high build time and lackluster healing power against the units that are on the field at that stage of the game (frigates). Rather than keep this unit consigned to the lategame, this is a buff intended to make support frigates an option in the earlygame (not always outclassed by building an extra dps frigate).*
 * **'Damage' multiplier vs frigates up:** `1.0 => 1.5 (+50%)` (*`tai_supportgun1heal.wepn`*) More like anti-damage, this is a buff to the healing factor against frigates
 * **Range for repair beam up:** `1000 => 1250 (+25%)` (*`tai_supportgun1heal.wepn`*)
+* **Beam now fires in a continuous stream.**
 
 ### Resource Collectors
 *HW1 resourcing is currently something tourturous. Collectors slower than carriers meant expanding or relocations were extremely difficult or impossible under many circumstances, and even if they **were** possible, they weren't desirable. This also makes HW1 collectors a huge liability to replace, as it could be minutes before a collector can get back to harvesting, else the HW1 player hyperspace it into position at an extra charge on top of the build cost... A mess, in essence. These changes have been tested extensively so **HW1 collection rate is the same**, however HW1 strategy is now much more flexible, and their economy is much less fragile (although still not quite as robust as HW2).*

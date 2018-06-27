@@ -69,6 +69,8 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 * **Rotation accel time down:** `0.6 => 0.3 (-50%)`
 * **Rotation brake time down:** `0.3 => 0.2 (-33%)`
 * **Evasive tactics no longer reduce weapon damage:** `0.9 => 1.0 (+9%)` Reducing weapon DPS means the healing weapon's output is also reduced.
+* **Range for repair beam up:** `890 => 1112.5 (+25%)`
+* **Beam now fires in a continuous stream.**
 
 ### Minelayers
 *Values being shuffled, make sure to also check the nerfs. A slight buff to minelayers overall, but mostly to their ability to backstab RU operations.*
@@ -95,6 +97,7 @@ Kushan are sitting in the same position as [Taiidan](https://github.com/HW-Playe
 *See the [note for the same change](https://github.com/HW-PlayersPatch/2.3/blob/master/Props/Taiidan_Changes_Prop.md#support-frigates) happening to Taiidan support frigates.*
 * **'Damage' multiplier vs frigates up:** `1.0 => 1.5 (+50%)` (*`kus_supportgunheal.wepn`*) More like anti-damage, this is a buff to the healing factor against frigates
 * **Range for repair beam up:** `1000 => 1250 (+25%)`
+* **Beam now fires in a continuous stream.**
 
 ### Resource Collectors
 *See the [not for the same change](https://github.com/HW-PlayersPatch/2.3/blob/master/Props/Taiidan_Changes_Prop.md#resource-collectors) happening to Taiidan resource collectors.*
