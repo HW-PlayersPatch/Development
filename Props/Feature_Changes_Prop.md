@@ -53,3 +53,6 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 * **Mission 05: lowered the Vaygr captial ship health upgrade to be closer to classic (this was unintentionally altered in the 2.0 patch)**
 * **Mission 13: lowered the Vaygr corvette, frigate, and captial ship health upgrades to be closer to classic (these were unintentionally altered in the 2.0 patch)**
 * **Hiigaran research costs and times closer to multiplayer values**
+
+## Removed features
+* Removed damage on death and on scuttle from all frigates: it was selectivaly punishing the use of bombers against frigates.
