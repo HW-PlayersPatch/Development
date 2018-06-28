@@ -47,6 +47,7 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 
 #### Homeworld 1 campaign bugfixes
 * **Captured Turanic Ion Arrays and Kadeshi Multibeams can now be retired immediately**
+* **Captured Turanic Standard Corvette can now be repaired by Repair Corvettes and Support Frigates**
 * **Mission 02: Turanic Missile Corvettes now capturable**
 
 #### Homeworld 2 campaign bugfixes
