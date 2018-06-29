@@ -4,8 +4,8 @@ NewShipType.sobDescription="$1639"
 NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 2500)
 NewShipType.regentime=0
 NewShipType.minRegenTime=200
-NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0) -check kus_resourcecontroller.ship for string format
-NewShipType.rearArmourDamage = getShipNum(NewShipType, "rearArmourDamage", 1.0) -check kus_resourcecontroller.ship for string format
+NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
+NewShipType.rearArmourDamage = getShipNum(NewShipType, "rearArmourDamage", 1.0)
 setTacticsMults(NewShipType, "ENGINEACCEL", 1.0, 1.0, 1.0)
 setTacticsMults(NewShipType, "THRUSTERACCEL", 1.0, 1.0, 1.0)
 setTacticsMults(NewShipType, "ROTATION", 1.0, 1.0, 1.0)
@@ -15,8 +15,8 @@ NewShipType.layoutBoundX=40
 NewShipType.layoutBoundY=40
 NewShipType.layoutBoundZ=40
 NewShipType.isTransferable=1
-NewShipType.defaultROE="Passive"
-NewShipType.defaultStance="Evasive"
+NewShipType.defaultROE="Defensive"
+NewShipType.defaultStance="Neutral"
 NewShipType.holdSlots=1
 NewShipType.mass=40
 NewShipType.collisionMultiplier=0.6
