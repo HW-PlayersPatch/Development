@@ -126,7 +126,7 @@ NewShipType.launchNrOfShipsInDockFormation=1
 NewShipType.launchFormation="n_delta"
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
-addAbility(NewShipType,"CanAttack",1,1,1,0,0.35,2.5,"Fighter, Fighter_hw1, Corvette, Corvette_hw1, Frigate, Resource, Utility,,,,, SmallCapitalShip, BigCapitalShip, Mothership","Swarmer",
+addAbility(NewShipType,"CanAttack",1,1,1,0,0.35,2.5,"Fighter_hw1, Fighter, Corvette_hw1, Corvette, Frigate, Resource, Utility,,,,, SmallCapitalShip, BigCapitalShip, Mothership","Swarmer",
 {Fighter="Swarmer"},
 {Fighter_hw1="Swarmer"},
 {Corvette="Swarmer"},
