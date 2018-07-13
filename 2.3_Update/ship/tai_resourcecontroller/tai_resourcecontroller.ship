@@ -11,7 +11,7 @@ setTacticsMults(NewShipType, "THRUSTERACCEL", 1.0, 1.0, 1.0)
 setTacticsMults(NewShipType, "ROTATION", 1.0, 1.0, 1.0)
 setTacticsMults(NewShipType, "ROTATIONACCEL", 1.0, 1.0, 1.0)
 NewShipType.isTransferable=1
-NewShipType.paradeData="dummy_parade"
+NewShipType.paradeData="tai_repairer_parade"
 NewShipType.mass=200
 NewShipType.collisionMultiplier=1
 NewShipType.thrusterMaxSpeed=165
