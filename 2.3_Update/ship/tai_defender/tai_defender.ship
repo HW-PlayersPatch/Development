@@ -146,6 +146,7 @@ addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"CanAttack",1,0,1,1,0.35,0.815,"Fighter_hw1, Fighter, Swarmer, Corvette_hw1, Corvette, Frigate, Utility, Resource,,,,SmallCapitalShip, BigCapitalShip, Mothership","frontal_Defender",
 {Fighter="frontal_Defender"},
 {Fighter_hw1="frontal_Defender"},
+{Swarmer="frontal_Defender"},
 {SubSystem="FrontalVsSubSystem"},
 {Frigate="frontal_Defender"},
 {SmallCapitalShip="frontal_Defender"},
