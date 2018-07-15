@@ -2,8 +2,8 @@ NewShipType = StartShipConfig()
 NewShipType.displayedName="$10008"
 NewShipType.sobDescription="$10009"
 NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 135)	
-NewShipType.regentime=240
-NewShipType.minRegenTime=240
+NewShipType.regentime=0
+NewShipType.minRegenTime=0
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
 NewShipType.rearArmourDamage = getShipNum(NewShipType, "rearArmourDamage", 1.0)
 setTacticsMults(NewShipType, "MAXSPEED", 0.95, 1.10, 1.0)
@@ -27,8 +27,8 @@ NewShipType.defaultStance="Aggressive"
 NewShipType.holdSlots=2
 NewShipType.mass=10
 NewShipType.collisionMultiplier=0.3
-NewShipType.thrusterMaxSpeed=420
-NewShipType.mainEngineMaxSpeed=420
+NewShipType.thrusterMaxSpeed=430*0.77
+NewShipType.mainEngineMaxSpeed=430
 NewShipType.rotationMaxSpeed=107
 NewShipType.thrusterAccelTime=2*1.15
 NewShipType.thrusterBrakeTime=1*1.1
@@ -133,6 +133,7 @@ NewShipType.dockTimeBeforeStart=0.5
 NewShipType.dockNrOfShipsInDockFormation=1
 NewShipType.dockFormation="dockline"
 NewShipType.queueFormation="n_delta"
+NewShipType.dontDockWithOtherRaceShips=1
 NewShipType.ignoreRaceWhenDocking=0
 addAbility(NewShipType,"CanLaunch");
 NewShipType.launchTimeBetweenTwoFormations=0.5
@@ -153,7 +154,7 @@ addAbility(NewShipType,"CanAttack",1,0,1,0,0.35,1,"Fighter, Fighter_hw1, Corvett
 {ResourceLarge="Flyby_Interceptor_vs_ResourceLarge"});
 addAbility(NewShipType,"GuardCommand",1,3000,500);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
-addAbility(NewShipType,"CloakAbility",1,3,75,3500,0,25,18,1000);
+addAbility(NewShipType,"CloakAbility",1,3,25,2222,0,0,222,222);
 addAbility(NewShipType,"RetireAbility",1,0);
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Kus_CloakedFighter","Weapon_Gun0","Weapon_Gun0");

@@ -139,8 +139,8 @@ NewShipType.canJoinStrikeGroup=0
 addAbility(NewShipType,"ShipHold",1,500,200,"rallypoint","Fighter, Corvette, Utility",100,
 {SuperCap="2000"},
 {Frigate="800"},
-{Fighter="36"},
-{Corvette="75"});
+{Fighter="34"},
+{Corvette="189"});
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand",1,1.1,1000,1500,0,4);
 addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1,"Fighter, Fighter_hw1, Swarmer, Corvette, Corvette_hw1, Capturer, Frigate, SmallCapitalShip, BigCapitalShip, Utility, Mothership","JustShoot");

@@ -3,8 +3,8 @@ NewShipType = StartShipConfig()
 NewShipType.displayedName="$1616"
 NewShipType.sobDescription="$1617"
 NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 900)
-NewShipType.regentime=240
-NewShipType.minRegenTime=240
+NewShipType.regentime=0
+NewShipType.minRegenTime=0
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
 NewShipType.rearArmourDamage = getShipNum(NewShipType, "rearArmourDamage", 1.0)
 setTacticsMults(NewShipType, "MAXSPEED", 0.90, 1.10, 1.0)
@@ -93,7 +93,7 @@ NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
 NewShipType.totalValue=8
 NewShipType.buildCost=400
-NewShipType.buildTime=30
+NewShipType.buildTime=45
 NewShipType.buildPriorityOrder=10
 NewShipType.retaliationRange=5500
 NewShipType.retaliationDistanceFromGoal=160
@@ -148,7 +148,7 @@ NewShipType.launchNrOfShipsInDockFormation=1
 NewShipType.launchFormation="dockline"
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
-addAbility(NewShipType,"GuardCommand",1,3000,500);
+addAbility(NewShipType,"GuardCommand",1,1000,500);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"RetireAbility",1,0);
 addAbility(NewShipType,"SensorPing",1,1,10,2.5);
@@ -164,8 +164,8 @@ addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,0.90,"Fighter, Fighter_hw1, Corv
 {Frigate="flyround_CommandVette"});
 LoadModel(NewShipType,1);
 addShield(NewShipType,"EMP",75,20);
-AddShipMultiplier(NewShipType,"WeaponAccuracy","OwnShipsWithinRadiusExcludingThisShip","Linear",1.07,1.07,4500);
-AddShipMultiplier(NewShipType,"WeaponDamage","OwnShipsWithinRadiusExcludingThisShip","Linear",1.07,1.07,4500);
+AddShipMultiplier(NewShipType,"WeaponAccuracy","OwnShipsWithinRadiusExcludingThisShip","Linear",1.07,1.07,2200);
+AddShipMultiplier(NewShipType,"WeaponDamage","OwnShipsWithinRadiusExcludingThisShip","Linear",1.07,1.07,2200);
 StartShipWeaponConfig(NewShipType,"Vgr_CommandGun","Weapon_Gun","")
 NewShipType.battleScarCoverage=1
 NewShipType.battleScarBudgetLow = 400
