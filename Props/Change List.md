@@ -80,8 +80,7 @@ Note: This list is mostly from about June 1st and needs lots of updates.
 
 ## HWR Bugs Fixes and Improvements
 - Expert Taiidan AI now harvests resources at the same rate as the other races. (it was 10% higher for some odd reason)
-- Improved compatibility for mods.
-⋅- Created a playerspatch_util.lua file, separate from scar_util.lua
+- Improved compatibility for mods. (Created a playerspatch_util.lua file, separate from scar_util.lua)
 
 
 ## Campaign
@@ -95,14 +94,14 @@ Note: This list is mostly from about June 1st and needs lots of updates.
 - Vaygr Missile Corvette, penetration vs hw1 fighters up 110% (gives vaygr a way to kill defense fighters)
 - Kushan/Taiidan Defender penetration up 20% vs hw1 fighters, and 100% vs hw1 corvettes.
 - Taiidan Defense Fighters 
-⋅- Added 'set-speed vs', so ships have 2x accuracy vs them when they're idle.
-⋅- Nerfed range by 40%
-⋅- Nerfed fire rate by 100%
-⋅- Accuracy down from 68% to 50%
-⋅- Increased damage vs missiles and mines by 100%
-⋅⋅- 1 hit for small missiles
-⋅⋅- 2 hits for torps and HMF/DD/BC.
-⋅⋅- 3 hits for mines
+  - Added 'set-speed vs', so ships have 2x accuracy vs them when they're idle.
+  - Nerfed range by 40%
+  - Nerfed fire rate by 100%
+  - Accuracy down from 68% to 50%
+  - Increased damage vs missiles and mines by 100%
+    - 1 hit for small missiles
+    - 2 hits for torps and HMF/DD/BC.
+    - 3 hits for mines
 - Kushan/Taiidan Light Corvettes were over-performing, so corvette penetration vs fighters was lowered.
 - Kushan/Taiidan Light Corvette penetration vs fighters down 17% (down 25% vs hw2 fighters)
 - Kushan/Taiidan Multi-Gun Corvette penetation vs hw2 fighters down 28%
