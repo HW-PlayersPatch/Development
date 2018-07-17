@@ -5,9 +5,11 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 
 # Build 8 Change List
 
+## Key
+- asteric = unverified change. Minus sign = verified change.
+- `Minor Change`
 
 ## ToDo
-- asteric = unverified change. Minus sign = verified change.
 - Comparison review next: Ships folder
 - After reviewing weapons, add missile/weapon changes to this list
 - Is this a build 8 change? Mission 02: Turanic Missile Corvettes now capturable
@@ -49,7 +51,7 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 * Tweaked corvette penetration vs fighters, as Light Corvettes were over-performing.
 
 #### Resource Collectors
-* 'All  kamakazi damage down to prevent instantly killing other collectors (cheap hw2 collectors could even kill expensive hw1 collectors)'
+* `All  kamakazi damage down to prevent instantly killing other collectors (cheap hw2 collectors could even kill expensive hw1 collectors)`
 
 
 ### Hiigaran and Vaygr
@@ -65,13 +67,13 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 
 
 ### Hiigaran 
-* 'Hiigaran Gunship Corvette penetration vs hw2 fighters down 12% (re-did all anti fighter corvs to match december 2nd 2017 intended balance, which i somehow skrewed a bit maily with light corvs)'
+* `Hiigaran Gunship Corvette penetration vs hw2 fighters down 12% (re-did all anti fighter corvs to match december 2nd 2017 intended balance, which i somehow skrewed a bit maily with light corvs)`
   
 
 ### Vaygr
 * Vaygr resource collectors ru capacity 208->200 (to balance harvesting with Hiigaran. Vaygr still starts with one extra collector to make up for their Flagship's poor harvesting.)
 * Vaygr Hyperspace Platform build time 45->30sec (buff)
-* 'Vaygr Missile Corvette, penetration vs hw1 fighters up 110% (gives vaygr a way to kill defense fighters)'
+* `Vaygr Missile Corvette, penetration vs hw1 fighters up 110% (gives vaygr a way to kill defense fighters)`
 
 
 ### Kushan and Taiidan
@@ -85,12 +87,12 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 * Kushan/Taiidan Resource Controller speed 100->165 (relatively closer to hw1c)
 
 * Kushan/Taiidan Scout sensors range down 27%, speed burst ability duration reduced from 50secs to 30secs, and top speed reduced 4%. (was too hard to deny hw1 scouting)
-* 'Kushan/Taiidan Defender penetration up 20% vs hw1 fighters, and 100% vs hw1 corvettes.'
+* `Kushan/Taiidan Defender penetration up 20% vs hw1 fighters, and 100% vs hw1 corvettes.`
 * Kushan Cloaked Fighter ability duration increased from 60 to 240sec, recharge 20 to 60sec (closer to hw1c).
 
 #### Taiidan Defense Fighters
 * Attack style is now closer to hw1c. Their laser weapon has been adjusted to be more consistent, and it now prioritizes mines over missiles.
-* 'Taiidan Defense Fighters'
+* `Taiidan Defense Fighters`
   - Added 'set-speed vs', so ships have 2x accuracy vs them when they're idle.
   - Nerfed range by 40%
   - Nerfed fire rate by 100%
@@ -101,13 +103,13 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
     - 3 hits for mines
 * Kushan/Taiidan Repair Corvette speed up 12% (relatively closer to hw1c)
 * Kushan/Taiidan Light Corvette speed up 4% (relatively closer to hw1c)
-* 'Kushan/Taiidan Light Corvettes were over-performing, so corvette penetration vs fighters was lowered.'
-* 'Kushan/Taiidan Light Corvette penetration vs fighters down 17% (down 25% vs hw2 fighters)'
+* `Kushan/Taiidan Light Corvettes were over-performing, so corvette penetration vs fighters was lowered.`
+* ``Kushan/Taiidan Light Corvette penetration vs fighters down 17% (down 25% vs hw2 fighters)`
 * Kushan/Taiidan Heavy Corvette speed up 18% (relatively closer to hw1c)
 * Kushan/Taiidan Multigun Corvette speed up 11% (relatively closer to hw1c)
-* 'Fixed a typo with the Kushan Multi-Gun Corvette build time. It was set to 25sec instead of 22sec by accident. (2.3 build 7? mistake)'
-* 'Kushan/Taiidan Multi-Gun Corvette penetation vs hw2 fighters down 28%'
-* 'Taiidan Multi-Gun Corvette bullet speed down 12% (to match kushan)'
+* `Fixed a typo with the Kushan Multi-Gun Corvette build time. It was set to 25sec instead of 22sec by accident. (2.3 build 7? mistake)`
+* `Kushan/Taiidan Multi-Gun Corvette penetation vs hw2 fighters down 28%`
+* `Taiidan Multi-Gun Corvette bullet speed down 12% (to match kushan)`
 
 * Kushan/Taiidan Assault Frigate accuracy vs corvettes up 13% (slight buff)
 * Kushan Drone Frigate speed up 24% (relatively closer to hw1c)
@@ -116,7 +118,7 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 * Kushan/Taiidan Carrier build time down 21%, 210 to 165 seconds (it was a huge blow to lose a carrier, since they took so long to build).
 * Kushan/Taiidan Carrier costs up 17% 3000->3500ru (to balance the build time buff, with a frigate module Hiigaran is 3800 and Vaygr is 3100).
 * Kushan/Taiidan Missile Destroyers now count againt the destroyer unit cap. Normal unit caps allow for six destroyers, two of which can be missile destroyers. (like hw1c)
-* 'Kushan/Taiidan Missile Destroyer damage vs hw2 corvettes down 20% (now performs similar vs hw1 and hw2 corvettes).'
+* `Kushan/Taiidan Missile Destroyer damage vs hw2 corvettes down 20% (now performs similar vs hw1 and hw2 corvettes).`
 * Kushan/Taiidan Cloak Generator armour/effective health up 20%, speed up 24% (relatively closer to hw1c).
 * Kushan/Taiidan Cloak Generator ability duration increased from 100 to 120sec (to match hw2 races, and be closer to hw1c).
 
