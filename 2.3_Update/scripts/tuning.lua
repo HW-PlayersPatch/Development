@@ -459,8 +459,8 @@ AutoLODInfo = {
 -- variables are the same as the names in HW2_MultipliersAndAbilitiesHowTo.doc
 MultiplierCap = {
     default = 1.5,
-    WeaponDamage = 1.15,
-    WeaponAccuracy = 1.15,
+    WeaponDamage = 1.2,
+    WeaponAccuracy = 1.2,
     CloakDetection = 4.0,
     VisualRange = 4.0,
     PrimarySensorsRange = 2.0,
