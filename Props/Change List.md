@@ -7,12 +7,11 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 ## Key
 - Minor: minor change
 - b9: change that may need to wait for build 9
-- Skip: put these on a 'maybe later' idea list.
 
 
 ## ToDo
 - After reviewing weapons, add missile/weapon changes to this list
-- Add rationale to most changes.
+- Review old props, and pull in any useful explanations/info.
 
 
 ## Gameplay and UI Options
@@ -167,7 +166,8 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 #### Gravity Wells
 - Minor: Accuracy debuff range -20% (to match GW ability range, missed change in 2.205)
 
-
+#### Sensors Array
+- Sensors range +8%
 
 
 ### Kushan
