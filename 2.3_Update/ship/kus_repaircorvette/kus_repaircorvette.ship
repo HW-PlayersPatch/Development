@@ -132,8 +132,8 @@ NewShipType.launchTimeBeforeStart=1.5
 NewShipType.launchNrOfShipsInDockFormation=1
 NewShipType.launchFormation="delta"
 addAbility(NewShipType,"ShipHold",1,0,0,"rallypoint","",70,
-{Fighter="34"},
-{Corvette="189"});
+{Fighter="36"},
+{Corvette="340"});
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"CanBeRepaired","RepCap");

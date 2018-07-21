@@ -51,6 +51,10 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Removed evasive stance bonuses from non-combat/utility ships (evasive stance re-routes power from weapons to engines, however this is not possible on non-combat ships and had no effect in the classic games)
 - Minor: Resource collectors default stance restored to normal (like v2.1, now that evasive bonuses have been removed from utility ships)
 
+#### Motherships
+- Rotation speed +100% (to aid in positioning motherships around asteriod patches)
+
+
 
 
 ### Hiigaran and Vaygr
@@ -62,7 +66,7 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
   - Minor: (cheap hw2 collectors could even kill expensive hw1 collectors)
 
 #### Scouts
-- b9: Sensors range -19% (scouting is too hard to deny in HWR)
+- Sensors range -19% (scouting was too hard to deny)
 
 #### Destroyers
 - Regeneration rate +31% (slight buff)
@@ -70,11 +74,8 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 #### Minelayer Corvettes
 - Cost 800->400 -50% (buff, hw1 are 275)
 
-#### Motherships
-- Rotation speed +100%
-
 #### Sensor Distortion Probes
-- Health 400->800 +100%
+- Health 400->800 +100% (buff)
 
 
 
@@ -82,10 +83,10 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 ### Hiigaran 
 
 #### Marine Frigates
-- Health 20k->25k +25% (buff, this ship can't be upgraded)
+- Health 20k->25k +25% (since this ship can't be upgraded)
 
 #### Defense Field Frigates
-- Health 20k->25k +25% (buff, this ship can't be upgraded)
+- Health 20k->25k +25% (since this ship can't be upgraded)
 - Rotation speed +59% (buff)
 
 
@@ -93,20 +94,18 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 
 ### Vaygr
 #### Hyperspace Platforms
-- Build Time 45->20 (buff)
-- Speed 650->600 -8% (should not be faster than a probe)
+- Build Time 45->20 (buff, these took too long to setup)
+- Speed 650->600 -8% (to match hw2c, and should not be faster than a probe)
 
 #### Minelayer Corvettes
-- Ratation speed +23% (buff)
+- Rotation speed +23% (buff)
 
 #### Command Corvettes
 - Build time 30->45 +50% (nerf)
-- Ability range -51% (nerf)
+- Attack/accuracy bonus range -51% (nerf)
 
 #### Resource Collectors
-- Resource capacity 208->200 -4% (Now matches Hiigaran to better balance harvesting. Vaygr still start with one extra collector to make up for their Flagship's long collector drop off route.)
-
-
+- Resource capacity 208->200 -4% (Now matches Hiigaran to better balance harvesting. Vaygr still start with one extra collector to make up for their Flagship's long collector drop off route. Harvesting for all four races is within 1% of each other.)
 
 
 
@@ -118,7 +117,8 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Build Time 50->45 -10%
 - Health 6000->5000 -17% (to balance vs hw2, Hiigaran/Vaygr went from 5000->4000)
 - Speed 110->206 +87% (relatively closer to hw1c)
-- Resource capacity 500->300ru -40% (Harvesting has been adjusted for the speed change. Harvesting for all four races is within 1% of each other after 20minutes of harvesting. Harvesting is also now better balanced on maps with different RU layouts.)
+- Resource capacity 500->300ru -40% (Harvesting has been adjusted for the speed change. Harvesting for all four races is within 1% of each other.)
+	- Minor: Harvesting is also now better balanced on maps with different RU layouts.
 - Kamakazi damage 80%->60% -25% (to prevent instantly killing other collectors)
 
 #### Resource Controller
@@ -127,13 +127,12 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Rotation Speed +100%
 
 #### Scouts
-- b9: Sensors range -27%
-- b9: Speed burst ability duration 50->30secs -40% (was too hard to deny scouting)
-- b9: Speed burst top speed -4%
+- Sensors range -27% (scouting was too hard to deny)
+- Speed burst ability duration 50->30secs -40% (scouting was too hard to deny)
+- Speed burst top speed -4% (scouting was too hard to deny)
 
 #### Defenders
 - Build Time 9->7sec -22% (buff)
-- b9: Removed the hidden armour bonus, and adjusted effective health to be the same as before.
 
 #### Repair Corvettes
 - Speed 255->290 +14%
@@ -149,18 +148,14 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Speed 245->290 +18%
 
 #### Minelayer Corvettes
-- Build Time: 25-30 +20% (nerf)
+- Build Time: 25->30 +20% (nerf)
 - Speed: 246->255 +4%
-- b9: Removed the hidden armour bonus, and adjusted effective health to be the same as before.
 
 #### Assault Frigates
 - Rotation speed +33%
 
 #### Missile Destroyers
 - Now count againt the destroyer unit cap like hw1c. Normal unit caps allow for six destroyers, two of which can be missile destroyers.
-
-#### Motherships
-- Rotation speed +100%
 
 #### Carriers
 - Cost 3000->3500 +17% (to balance the build time buff, with a frigate module Hiigaran is 3800 and Vaygr is 3100)
@@ -180,7 +175,6 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 ### Kushan
 
 #### Cloaked Fighters
-- b9: Build time 15->13sec -13%
 - Cloak ability now lasts indefinitely like hw1c (still un-cloaks when in combat)
 
 #### Multi-Gun Corvettes
