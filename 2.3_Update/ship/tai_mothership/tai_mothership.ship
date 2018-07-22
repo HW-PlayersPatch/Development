@@ -143,7 +143,7 @@ addAbility(NewShipType,"ShipHold",1,250,200,"rallypoint","Fighter,Corvette,Utili
 {Corvette="340"});
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand",1,1.1,1000,1500,0,4);
-addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1,"Fighter, Fighter_hw1, Corvette, Corvette_hw1, Capturer, Frigate, SmallCapitalShip, BigCapitalShip, Utility, Mothership","JustShoot");
+addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1,"Fighter_hw1, Fighter, Swarmer, Corvette_hw1, Corvette, Capturer, Frigate, SmallCapitalShip, BigCapitalShip, Utility, Mothership","JustShoot");
 addAbility(NewShipType,"CanBuildShips",1,"Fighter_Tai, Corvette_Tai, Frigate_Tai, SuperCap_Tai, Resource_Tai, NonCombat_Tai","Fighter, Corvette, Frigate, Capital, Resource, NonCombat");
 addAbility(NewShipType,"CanBeCaptured",300,0.5);
 addAbility(NewShipType,"CanBeRepaired");

@@ -130,9 +130,10 @@ NewShipType.launchFormation="delta"
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand",1,1.1,200,700,0,4);
-addAbility(NewShipType,"CanAttack",1,1,0,1,0.35,1.5,"Capturer, Frigate, Corvette, Corvette_hw1, SmallCapitalShip, BigCapitalShip, Mothership, Utility, Resource,Fighter, Fighter_hw1","frontal_frigate",
+addAbility(NewShipType,"CanAttack",1,1,0,1,0.35,1.5,"Capturer, Corvette_hw1, Corvette, Frigate, SmallCapitalShip, BigCapitalShip, Mothership, Utility, Resource, Fighter_hw1, Fighter, Swarmer","frontal_frigate",
 {Fighter="movetotargetandshoot_Frigate_vs_Fighters"},
 {Fighter_hw1="movetotargetandshoot_Frigate_vs_Fighters"},
+{Swarmer="movetotargetandshoot_Frigate_vs_Fighters"},
 {Corvette="frontal_frigate"},
 {Corvette_hw1="frontal_frigate"},
 {Munition="frontal_frigate"},

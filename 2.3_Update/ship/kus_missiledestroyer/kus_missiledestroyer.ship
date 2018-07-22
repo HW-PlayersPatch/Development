@@ -142,7 +142,7 @@ NewShipType.strikeGroupRadius=200
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand",1,2.2,400,1200,0,4);
-addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1.5,"Fighter, Fighter_hw1, Corvette, Corvette_hw1, Utility,,,,,, Frigate, SmallCapitalShip, BigCapitalShip, Mothership","Frontal",
+addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1.5,"Corvette_hw1, Corvette, Fighter_hw1, Fighter, Utility,,,,,, Frigate, SmallCapitalShip, BigCapitalShip, Mothership","Frontal",
 {Fighter="Frontal"},
 {Fighter_hw1="Frontal"},
 {Corvette="Frontal"},
