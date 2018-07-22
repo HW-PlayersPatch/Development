@@ -109,10 +109,10 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Accuracy reduction abilities are now painted orange in the tactical overlay
 
 #### Resource Collectors
-- b9:? Build Time 50->45sec -10%
+- Build Time 50->45sec -10% (to balance vs hw2)
 - Health 6000->5000 -17% (to balance vs hw2, Hiigaran/Vaygr went from 5000->4000)
-- b9:? Speed 110->206 +87% (closer to hw1c)
-- b9:? Resource capacity 500->300 -40% (Harvesting has been adjusted for the speed change. Harvesting for all four races is within 1% of each other.)
+- Speed 110->206 +87% (closer to hw1c)
+- Resource capacity 500->300 -40% (Harvesting has been adjusted for the speed change. Harvesting for all four races is within 1% of each other.)
 	- Minor: Harvesting is also now better balanced on maps with different RU layouts.
 - Kamakazi damage 80%->60% -25% (to prevent instantly killing other collectors)
 
@@ -122,14 +122,22 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Rotation Speed +100%
 
 #### Scouts
+- Build Time 10->8sec -20% (closer to hw1c)
 - Sensors range -27% (scouting was too hard to deny)
 - Speed burst ability duration 50->30secs -40% (scouting was too hard to deny)
 - Speed burst top speed -4% (scouting was too hard to deny)
+
+#### Interceptors
+- Build Time 7->9sec +29% (closer to hw1c, was funny to have interceptors build faster than scouts)
+
+#### Bombers
+- Cost 120->130 +8% (closer to hw1c)
 
 #### Defenders
 - Build Time 9->7sec -22% (closer to hw1c)
 
 #### Repair Corvettes
+- Build Time 20->16sec -20% (closer to hw1c)
 - Speed 255->320 +25% (to be able to heal the fastest corvette)
 - Rotation Speed +31%
 
@@ -147,8 +155,15 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Build Time: 25->35sec +40% (closer to hw1c, and to balance vs hw2 races at 45sec)
 - Speed: 246->255 +4% (closer to hw1c)
 
+#### Support Frigates
+- Build Time 85->65sec -24% (closer to hw1c)
+
 #### Assault Frigates
+- Build Time 68->60sec -12% (closer to hw1c)
 - Rotation Speed +33%
+
+#### Ion Frigates
+- Build Time 73->60sec -18% (closer to hw1c)
 
 #### Missile Destroyers
 - Now count againt the destroyer unit cap like hw1c. Normal unit caps allow for six destroyers, two of which can be missile destroyers.
@@ -156,6 +171,9 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 #### Carriers
 - Cost 3000->3500 +17% (with a frigate module Hiigaran is 3800 and Vaygr is 3100)
 - Build time 210->165sec -21% (it was a huge blow to lose a carrier, since they took so long to build)
+
+#### Research Ships
+- Build Time 50->45sec -10% (the first hub now builds as fast as the rest)
 
 #### Cloak Generators
 - Speed 165->206 +25% (closer to hw1c)
@@ -165,6 +183,7 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Ability range +100% (to match hw2 races)
 
 #### Gravity Wells
+- Cost 800->1000 +25% (closer to hw1c)
 - Minor: Accuracy debuff range -20% (to match GW ability range, missed change in 2.205)
 
 #### Sensors Array
@@ -180,6 +199,7 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Minor: Build Time restored to 22sec (was accidently set to 25sec in build 7)
 
 #### Drone Frigate
+- Build Time 77->70sec -9% (closer to hw1c)
 - Speed 166->206 +24% (closer to hw1c)
 - Drone ability now lasts indefinitely and drones deploy 70% faster (same as hw1c)
 
@@ -205,6 +225,7 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Fixed a gun alignment bug, which caused 2 of their 4 guns to always miss small targets.
 
 #### Field Frigates
+- Build Time 77->70sec -9% (closer to hw1c)
 - Speed 166->206 +24% (closer to hw1c)
 - Rotation Speed +40%
 - Damage/Accuracy reduction within field -5% to -7%
