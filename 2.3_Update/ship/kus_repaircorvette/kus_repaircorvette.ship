@@ -4,8 +4,8 @@ NewShipType.sobDescription="$10023"
 NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 1200)
 NewShipType.regentime=0
 NewShipType.minRegenTime=0
-NewShipType.sideArmourDamage=0.8
-NewShipType.rearArmourDamage=0.8
+NewShipType.sideArmourDamage=1.0
+NewShipType.rearArmourDamage=1.0
 setTacticsMults(NewShipType, "MAXSPEED", 0.90, 1.10, 1.0)
 setTacticsMults(NewShipType, "ENGINEACCEL", 1.10, 0.90, 1.0)
 setTacticsMults(NewShipType, "THRUSTERACCEL", 1.10, 0.90, 1.0)
@@ -79,7 +79,7 @@ NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
 NewShipType.totalValue=10
 NewShipType.buildCost=175
-NewShipType.buildTime=20
+NewShipType.buildTime=16
 NewShipType.buildPriorityOrder=60
 NewShipType.retaliationRange=5500
 NewShipType.retaliationDistanceFromGoal=160
