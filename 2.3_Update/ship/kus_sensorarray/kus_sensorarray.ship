@@ -112,10 +112,6 @@ NewShipType.selectionLimit=150000
 NewShipType.preciseSelectionLimit=5000
 NewShipType.preciseATILimit=0
 NewShipType.selectionPriority=75
-
-NewSubSystemType.type="System"
-NewSubSystemType.typeString="HyperspaceSensor"
-
 NewShipType.militaryUnit=0
 NewShipType.SMHighlightDistMin=15000
 NewShipType.SMHighlightDistMax=25000
@@ -155,9 +151,6 @@ NewShipType.deadSobFadeTime=0.1
 loadLatchPointList(NewShipType,"SalCap","SalvagePoint1","SalvagePoint2");
 loadLatchPointList(NewShipType,"CapCap","CapturePoint1");
 loadLatchPointList(NewShipType,"RepCap","RepairPoint1","RepairPoint2");
-
-loadShipPatchList(NewSubSystemType,"data:sound/sfx/ship/Hiigaran/Subsystems/",1,"HASubsystemHyperspaceArrayAmb");
-
 NewShipType.minFalloffDamageDist=100 
 NewShipType.maxFalloffDamageDist=100*2 
 NewShipType.maxFalloffScuttleDamageDist=100*4 

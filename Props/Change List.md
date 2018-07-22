@@ -68,7 +68,7 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Sensors range -19% (scouting was too hard to deny)
 
 #### Destroyers
-- Regeneration rate +31%
+- Health 85k->90k +6% (+13% over v2.1, closer to hw2c when upgraded)
 
 #### Minelayer Corvettes
 - Cost 800->400 -50% (buff, hw1 are 275)
@@ -103,7 +103,8 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 
 
 ### Kushan and Taiidan
-- Note, most hw1 changes are to be closer to hw1c, while balancing vs hw2 races.
+- Overhauled Kushan and Taiidan. These races were rushed into HWR, repeatedly band-aided, and many felt they never truely represented hw1c. All costs, build times, speeds, health, abilities, etc are now implimented with a well thought out design to properly to reflect hw1c, while being balanced against Hiigaran and Vaygr.
+	- Minor: Note, most hw1 changes are to be closer to hw1c, while balancing vs hw2 races.
 - Balanced dock repair times for corvettes (now repair 4.5 times faster to balance vs hw2)
 - Accuracy reduction abilities are now painted orange in the tactical overlay
 
