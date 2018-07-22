@@ -1,11 +1,11 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$10010"
 NewShipType.sobDescription="$10011"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 135)   
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 300)   
 NewShipType.regentime=0
 NewShipType.minRegenTime=0
-NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.2)
-NewShipType.rearArmourDamage = getShipNum(NewShipType, "rearArmourDamage", 1.2)
+NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
+NewShipType.rearArmourDamage = getShipNum(NewShipType, "rearArmourDamage", 1.0)
 setTacticsMults(NewShipType, "MAXSPEED", 0.95, 1.10, 1.0)
 setTacticsMults(NewShipType, "ENGINEACCEL", 1.20, 0.80, 1.0)
 setTacticsMults(NewShipType, "ENGINEBRAKE", 1.0, 1.0, 1.0)
@@ -20,7 +20,7 @@ setTacticsMults(NewShipType, "WEAPONDAMAGE", 1.20, 1.0, 1.0)
 setTacticsMults(NewShipType, "BULLETSPEED", 1.10, 1.0, 1.0)
 setTacticsMults(NewShipType, "DAMAGEAPPLIED", 1.10, 0.90, 1.0)
 setTacticsMults(NewShipType, "FIRERATE", 1.0, 1.25, 1.0)
-setSpeedvsAccuracyApplied(NewShipType, 100.0, 2.0, 120, 1.0, 250, 1.0, 388, 0.98, 535, 0.70)
+setSpeedvsAccuracyApplied(NewShipType, 100.0, 5.0, 120, 1.0, 250, 1.0, 388, 0.98, 535, 0.70)
 NewShipType.isTransferable=1
 NewShipType.formationSpacing=15
 NewShipType.defaultROE="Defensive"
@@ -150,7 +150,7 @@ addAbility(NewShipType,"GuardCommand",1,500,100);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"RetireAbility",1,0);
 addMagneticField(NewShipType,"MagneticField",600,100,"defenseField_generic",85,"defenseField_generic",100,"plasma_hit_spray_MagneticField","defensefield_sphere_spray_DF");
-AddShipMultiplier(NewShipType,"WeaponAccuracy","EnemyShipsWithinRadius","Linear",0.97,0.97,700);
+AddShipMultiplier(NewShipType,"WeaponAccuracy","EnemyShipsWithinRadius","Linear",0.99,0.99,700);
 addCustomCode(NewShipType,"data:ship/Tai_DefenseFighter/Tai_DefenseFighter.lua","","","updateDefenseFighter","","DefenseFighter",1.25)
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Tai_DefenseLaser","Weapon_Gun0","");

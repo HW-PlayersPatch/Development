@@ -1,11 +1,11 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$10042"
 NewShipType.sobDescription="$10043"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 280000)
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 350000)
 NewShipType.regentime=1400
 NewShipType.minRegenTime=1400
-NewShipType.sideArmourDamage=0.85
-NewShipType.rearArmourDamage=0.85
+NewShipType.sideArmourDamage=1.0
+NewShipType.rearArmourDamage=1.0
 setTacticsMults(NewShipType, "ENGINEACCEL", 1.10, 0.90, 1.0)
 setTacticsMults(NewShipType, "THRUSTERACCEL", 1.10, 0.90, 1.0)
 setTacticsMults(NewShipType, "ROTATION", 0.95, 1.05, 1.0)

@@ -103,69 +103,83 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 
 
 ### Kushan and Taiidan
-- Overhauled Kushan and Taiidan. These races were rushed into HWR, repeatedly band-aided, and many felt they never truely represented hw1c. All costs, build times, speeds, health, abilities, etc are now implimented with a well thought out design to properly to reflect hw1c, while being balanced against Hiigaran and Vaygr.
+- Overhauled Kushan and Taiidan. These races were rushed into HWR, repeatedly band-aided, and never given the deep love they deserve. All costs, build times, speeds, health, abilities, etc are now properly translated into HWR. Kushan and Taiidan now feel much more like hw1c, while being balanced against Hiigaran and Vaygr.
 	- Minor: Note, most hw1 changes are to be closer to hw1c, while balancing vs hw2 races.
+- Removed hidden armour modifiers from all ships other than frigates. Relic only applied these to frigates, however Gearbox used them sporadically.
 - Balanced dock repair times for corvettes (now repair 4.5 times faster to balance vs hw2)
 - Accuracy reduction abilities are now painted orange in the tactical overlay
+
+#### Motherships
+- Multiplayer: Health 280k->350k +25%, Armour -18% (Effective Health 322k->350k +7%)
+- Single Player: Health 210k->250k +19%, Armour -18% (effective health 247k->250k +1%)
 
 #### Resource Collectors
 - Build Time 50->45sec -10% (to balance vs hw2)
 - Health 6000->5000 -17% (to balance vs hw2, Hiigaran/Vaygr went from 5000->4000)
-- Speed 110->206 +87% (closer to hw1c)
+- Speed 110->206 +87%
 - Resource capacity 500->300 -40% (Harvesting has been adjusted for the speed change. Harvesting for all four races is within 1% of each other.)
 	- Minor: Harvesting is also now better balanced on maps with different RU layouts.
 - Kamakazi damage 80%->60% -25% (to prevent instantly killing other collectors)
 
 #### Resource Controller
-- Effective Health 27500->30000 +9% (Base Health 25k->30k +20%, ArmourDamage 0.9->1 +11%)
-- Speed 100->165 +65% (closer to hw1c)
+- Health 25k->30k +20%, Armour -11% (Effective Health 27500->30000 +9%)
+- Speed 100->165 +65%
 - Rotation Speed +100%
 
 #### Scouts
-- Build Time 10->8sec -20% (closer to hw1c)
+- Build Time 10->8sec -20%
 - Sensors range -27% (scouting was too hard to deny)
-- Speed burst ability duration 50->30secs -40% (scouting was too hard to deny)
-- Speed burst top speed -4% (scouting was too hard to deny)
+- Speed burst ability duration 50->30secs -40%
+- Speed burst top speed -4%
 
 #### Interceptors
 - Build Time 7->9sec +29% (closer to hw1c, was funny to have interceptors build faster than scouts)
 
 #### Bombers
-- Cost 120->130 +8% (closer to hw1c)
+- Cost 120->130 +8%
 
 #### Defenders
-- Build Time 9->7sec -22% (closer to hw1c)
+- Health 360->400 +11%, Armour -11% (effective health unchanged)
+- Build Time 9->7sec -22%
 
 #### Repair Corvettes
-- Build Time 20->16sec -20% (closer to hw1c)
+- Build Time 20->16sec -20%
 - Speed 255->320 +25% (to be able to heal the fastest corvette)
 - Rotation Speed +31%
+- Armour -25% (Effective Health 1440->1200 -17%)
 
 #### Light Corvettes
-- Speed 285->305 +7% (closer to hw1c)
+- Speed 285->305 +7%
 
 #### Multi-Gun Corvettes
-- Speed 275->320 +16% (closer to hw1c)
+- Speed 275->320 +16%
 - Rotation Speed +76%
 
 #### Heavy Corvettes
-- Speed 245->290 +18% (closer to hw1c)
+- Speed 245->290 +18%
+
+#### Multi-Gun Corvettes
+- Health 1100->1400 +27%
 
 #### Minelayer Corvettes
 - Build Time: 25->35sec +40% (closer to hw1c, and to balance vs hw2 races at 45sec)
-- Speed: 246->255 +4% (closer to hw1c)
+- Speed: 246->255 +4%
+- Health 900->1080 +20, Armour -25% (effective health unchanged)
 
 #### Support Frigates
-- Build Time 85->65sec -24% (closer to hw1c)
+- Build Time 85->65sec -24%
+- Health 26000->21000 -19%
 
 #### Assault Frigates
-- Build Time 68->60sec -12% (closer to hw1c)
+- Build Time 68->60sec -12%
 - Rotation Speed +33%
 
 #### Ion Frigates
-- Build Time 73->60sec -18% (closer to hw1c)
+- Build Time 73->60sec -18%
 
 #### Missile Destroyers
+- Cost 2000->2700 +35%
+- Health 65k->101k +55%
 - Now count againt the destroyer unit cap like hw1c. Normal unit caps allow for six destroyers, two of which can be missile destroyers.
 
 #### Carriers
@@ -176,14 +190,15 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Build Time 50->45sec -10% (the first hub now builds as fast as the rest)
 
 #### Cloak Generators
-- Speed 165->206 +25% (closer to hw1c)
+- Speed 165->206 +25%
 - Rotation Speed +36%
-- Effective health 7500->9000 +17% (ArmourDamage 1.2->1 -17%, closer to hw1c)
+- Armour +17% (Effective Health 7500->9000 +17%)
 - Ability duration 100->120sec +20% (to match hw2 races, and be closer to hw1c)
 - Ability range +100% (to match hw2 races)
 
 #### Gravity Wells
-- Cost 800->1000 +25% (closer to hw1c)
+- Cost 800->1000 +25%
+- Health 18k->11k -39%, Armour +17% (Effective Health 14400->11000 -24%)
 - Minor: Accuracy debuff range -20% (to match GW ability range, missed change in 2.205)
 
 #### Sensors Array
@@ -199,8 +214,9 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Minor: Build Time restored to 22sec (was accidently set to 25sec in build 7)
 
 #### Drone Frigate
-- Build Time 77->70sec -9% (closer to hw1c)
-- Speed 166->206 +24% (closer to hw1c)
+- Build Time 77->70sec -9%
+- Speed 166->206 +24%
+- Health 25500->27500 +8%
 - Drone ability now lasts indefinitely and drones deploy 70% faster (same as hw1c)
 
 
@@ -209,13 +225,13 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 ### Taiidan
 
 #### Defense Fighters
+- Health 135->300 +122%, Armour +17% (Effective Health 108->300 +178%)
 - Attack style is now closer to hw1c. Their laser weapon has been adjusted to be more consistent, and it now prioritizes mines over missiles.
-- Added an accuracy reduction within the field of -3% (similar to Field Frigates)
+- Added an accuracy reduction within the field of -1% (similar to Field Frigates)
 - Minor: 
-  - Added 'set-speed vs', so ships have 2x accuracy vs them when they're idle.
+  - Added 'set-speed vs', so ships have greater accuracy vs them when they're idle.
   - Range -40%
-  - Fire rate nerfed 100%
-  - Accuracy 68%->50% -26%
+  - Fire rate nerfed 300%
   - Damage vs missiles and mines +100%
     - 1 hit for small missiles
     - 2 hits for torps and HMF/DD/BC.
@@ -225,9 +241,11 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Fixed a gun alignment bug, which caused 2 of their 4 guns to always miss small targets.
 
 #### Field Frigates
-- Build Time 77->70sec -9% (closer to hw1c)
-- Speed 166->206 +24% (closer to hw1c)
+- Build Time 77->70sec -9%
+- Speed 166->206 +24%
 - Rotation Speed +40%
+- Health 26000->30000 +15%
+	- Minor: Armour -4%
 - Damage/Accuracy reduction within field -5% to -7%
 
 

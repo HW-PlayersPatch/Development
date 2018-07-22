@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$10036"
 NewShipType.sobDescription="$10037"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 65000)
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 101000)
 NewShipType.regentime=1850
 NewShipType.minRegenTime=1850
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
@@ -81,7 +81,7 @@ NewShipType.antiFighterValue=40
 NewShipType.antiCorvetteValue=15
 NewShipType.antiFrigateValue=25
 NewShipType.totalValue=50
-NewShipType.buildCost=2000
+NewShipType.buildCost=2700
 NewShipType.buildTime=160
 NewShipType.buildPriorityOrder=20
 NewShipType.retaliationRange=6000
