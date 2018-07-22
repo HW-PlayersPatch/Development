@@ -111,7 +111,7 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 
 #### Motherships
 - Multiplayer: Health 280k->350k +25%, Armour -18% (Effective Health 322k->350k +7%)
-- Single Player: Health 210k->250k +19%, Armour -18% (effective health 247k->250k +1%)
+- Campaign: Health 210k->250k +19%, Armour -18% (effective health 247k->250k +1%)
 
 #### Resource Collectors
 - Build Time 50->45sec -10% (to balance vs hw2)
