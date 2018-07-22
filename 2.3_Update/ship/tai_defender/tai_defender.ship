@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$10006"
 NewShipType.sobDescription="$10007"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 400)
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 360)
 NewShipType.regentime=0
 NewShipType.minRegenTime=0
 NewShipType.sideArmourDamage=0.9
@@ -91,7 +91,7 @@ NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
 NewShipType.totalValue=9
 NewShipType.buildCost=getShipNum(NewShipType, "buildCost", 120)
-NewShipType.buildTime=getShipNum(NewShipType, "buildTime", 9)
+NewShipType.buildTime=getShipNum(NewShipType, "buildTime", 7)
 NewShipType.buildPriorityOrder=20
 NewShipType.retaliationRange=5500
 NewShipType.retaliationDistanceFromGoal=160
@@ -135,6 +135,7 @@ NewShipType.dockTimeBeforeStart=0.5
 NewShipType.dockNrOfShipsInDockFormation=1
 NewShipType.dockFormation="dockline"
 NewShipType.queueFormation="n_delta"
+NewShipType.dontDockWithOtherRaceShips=1
 NewShipType.ignoreRaceWhenDocking=0
 addAbility(NewShipType,"CanLaunch");
 NewShipType.launchTimeBetweenTwoFormations=0.5

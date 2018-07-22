@@ -6,10 +6,10 @@ NewShipType.regentime=0
 NewShipType.minRegenTime=300
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.2)
 NewShipType.rearArmourDamage = getShipNum(NewShipType, "rearArmourDamage", 1.2)
-setTacticsMults(NewShipType, "ENGINEACCEL", 1.10, 0.90, 1.0)
-setTacticsMults(NewShipType, "THRUSTERACCEL", 1.10, 0.90, 1.0)
-setTacticsMults(NewShipType, "ROTATION", 0.95, 1.05, 1.0)
-setTacticsMults(NewShipType, "ROTATIONACCEL", 1.10, 0.90, 1.0)
+setTacticsMults(NewShipType, "ENGINEACCEL", 1.0, 1.0, 1.0)
+setTacticsMults(NewShipType, "THRUSTERACCEL", 1.0, 1.0, 1.0)
+setTacticsMults(NewShipType, "ROTATION", 1.0, 1.0, 1.0)
+setTacticsMults(NewShipType, "ROTATIONACCEL", 1.0, 1.0, 1.0)
 NewShipType.isTransferable=1
 NewShipType.formationSpacing=250
 NewShipType.mass=100
@@ -139,7 +139,7 @@ addCustomCode(NewShipType,"data:Ship/Tai_GravWellGenerator/Tai_GravWellGenerator
 LoadModel(NewShipType,1);
 addShield(NewShipType,"EMP",220,20);
 AddShipMultiplier(NewShipType,"WeaponAccuracy","EnemyShipsWithinRadius","Linear",0.93,0.93,3000);
-AddShipMultiplier(NewShipType,"WeaponAccuracy","ThisShipOnly","Linear",1.0,1.0,10500);
+AddShipMultiplier(NewShipType,"HyperSpaceAbortDamage","ThisShipOnly","Linear",1.0,1.0,10500);
 NewShipType.battleScarCoverage=2
 NewShipType.sobDieTime=1
 NewShipType.sobSpecialDieTime=1

@@ -95,7 +95,7 @@ NewShipType.retaliationRange=4800
 NewShipType.retaliationDistanceFromGoal=160
 NewShipType.visualRange=1500
 NewShipType.prmSensorRange=6500
-NewShipType.secSensorRange=8030
+NewShipType.secSensorRange=8000
 NewShipType.detectionStrength=1
 NewShipType.TOIcon="Triangle"
 NewShipType.TOScale=1
@@ -133,6 +133,7 @@ NewShipType.dockTimeBeforeStart=0.5
 NewShipType.dockNrOfShipsInDockFormation=1
 NewShipType.dockFormation="dockline"
 NewShipType.queueFormation="n_delta"
+NewShipType.dontDockWithOtherRaceShips=1
 NewShipType.ignoreRaceWhenDocking=0
 addAbility(NewShipType,"CanLaunch");
 NewShipType.launchTimeBetweenTwoFormations=0.5
