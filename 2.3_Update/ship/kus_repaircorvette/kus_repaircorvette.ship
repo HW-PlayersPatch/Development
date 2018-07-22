@@ -11,7 +11,7 @@ setTacticsMults(NewShipType, "ENGINEACCEL", 1.10, 0.90, 1.0)
 setTacticsMults(NewShipType, "THRUSTERACCEL", 1.10, 0.90, 1.0)
 setTacticsMults(NewShipType, "ROTATION", 0.95, 1.05, 1.0)
 setTacticsMults(NewShipType, "ROTATIONACCEL", 1.10, 0.90, 1.0)
-setTacticsMults(NewShipType, "DAMAGEAPPLIED", 1.0, 1.0, 1.0)
+setTacticsMults(NewShipType, "DAMAGEAPPLIED", 1.0, 0.90, 1.0)
 NewShipType.isTransferable=1
 NewShipType.paradeData="kus_repairer_parade"
 NewShipType.formationSpacing=45
@@ -20,9 +20,9 @@ NewShipType.defaultStance="Neutral"
 NewShipType.holdSlots=3
 NewShipType.mass=20
 NewShipType.collisionMultiplier=0.45
-NewShipType.thrusterMaxSpeed=290
-NewShipType.mainEngineMaxSpeed=290
-NewShipType.rotationMaxSpeed=130
+NewShipType.thrusterMaxSpeed=320
+NewShipType.mainEngineMaxSpeed=320
+NewShipType.rotationMaxSpeed=170
 NewShipType.thrusterAccelTime=2.0
 NewShipType.thrusterBrakeTime=1
 NewShipType.mainEngineAccelTime=2.0
@@ -124,13 +124,16 @@ NewShipType.dockNrOfShipsInDockFormation=1
 NewShipType.dockFormation="n_delta"
 NewShipType.queueFormation="n_delta"
 NewShipType.strikeGroupRadius=25
+NewShipType.dontDockWithOtherRaceShips=1
 NewShipType.ignoreRaceWhenDocking=0
 addAbility(NewShipType,"CanLaunch");
 NewShipType.launchTimeBetweenTwoFormations=0.5
 NewShipType.launchTimeBeforeStart=1.5
 NewShipType.launchNrOfShipsInDockFormation=1
 NewShipType.launchFormation="delta"
-addAbility(NewShipType,"ShipHold",1,0,0,"rallypoint","",12);
+addAbility(NewShipType,"ShipHold",1,0,0,"rallypoint","",70,
+{Fighter="36"},
+{Corvette="340"});
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"CanBeRepaired","RepCap");

@@ -139,11 +139,7 @@ NewShipType.launchTimeBeforeStart=2
 NewShipType.launchNrOfShipsInDockFormation=1
 NewShipType.launchFormation="delta"
 NewShipType.strikeGroupRadius=200
-repairTimeAssaultCraft = 6
-repairTimeMissileVette = 5
-repairValueAssaultCraft = (90 / (7 * repairTimeAssaultCraft))
-repairValueMissileVette = (480 / (4 * repairTimeMissileVette))
-addAbility(NewShipType,"ShipHold",1,40,100,"rallypoint","Fighter, Corvette,Utility",35,{Fighter=repairValueAssaultCraft},{Corvette=repairValueMissileVette});
+addAbility(NewShipType,"ShipHold",1,40,100,"rallypoint","Fighter, Corvette, Utility",35,{Fighter="2"},{Corvette="24"});
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand",0,1,600,1200,0,3);

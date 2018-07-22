@@ -17,9 +17,12 @@ dofilepath("data:leveldata/multiplayer/lib/main.lua")
 dofilepath("data:leveldata/multiplayer/lib/carriersonly.lua")
 dofilepath("data:leveldata/multiplayer/lib/nocruisers.lua")
 
-function OnInit()
+function OnStartOrLoad()
 	-- Write race list
 	SpeechRaceHelper()
+end
+
+function OnInit()
 	
     Volume_AddSphere("centre", {-11111, 11111, 11111,}, 10)
     MPRestrict()

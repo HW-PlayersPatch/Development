@@ -18,8 +18,8 @@ NewShipType.defaultROE="Defensive"
 NewShipType.defaultStance="Neutral"
 NewShipType.mass=2000
 NewShipType.collisionMultiplier=1
-NewShipType.thrusterMaxSpeed=42
-NewShipType.mainEngineMaxSpeed=42
+NewShipType.thrusterMaxSpeed=40
+NewShipType.mainEngineMaxSpeed=40
 NewShipType.rotationMaxSpeed=8
 NewShipType.thrusterAccelTime=6
 NewShipType.thrusterBrakeTime=2
@@ -135,11 +135,7 @@ NewShipType.launchTimeBeforeStart=2
 NewShipType.launchNrOfShipsInDockFormation=1
 NewShipType.launchFormation="delta"
 NewShipType.canJoinStrikeGroup=0
-repairTimeInterceptor = 6
-repairTimeGunship = 5
-repairValueInterceptor = (90 / (5 * repairTimeInterceptor))
-repairValueGunship = (480 / (3 * repairTimeGunship))
-addAbility(NewShipType,"ShipHold",1,40,100,"rallypoint","Fighter, Corvette,Utility",35,{Fighter=repairValueInterceptor},{Corvette=repairValueGunship});
+addAbility(NewShipType,"ShipHold",1,250,200,"rallypoint","Fighter, Corvette, Utility",35,{SuperCap="2000"},{Frigate="800"},{Fighter="3"},{Corvette="32"});
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand",0,1,500,1000,0,3);
 addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1,"Fighter, Fighter_hw1, Corvette, Corvette_hw1, Capturer, Frigate, SmallCapitalShip, BigCapitalShip, Utility, Mothership","JustShoot");

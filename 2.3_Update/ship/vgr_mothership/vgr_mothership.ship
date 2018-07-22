@@ -18,8 +18,8 @@ NewShipType.defaultROE="Defensive"
 NewShipType.defaultStance="Neutral"
 NewShipType.mass=2000
 NewShipType.collisionMultiplier=1
-NewShipType.thrusterMaxSpeed=42
-NewShipType.mainEngineMaxSpeed=42
+NewShipType.thrusterMaxSpeed=40
+NewShipType.mainEngineMaxSpeed=40
 NewShipType.rotationMaxSpeed=8
 NewShipType.thrusterAccelTime=6
 NewShipType.thrusterBrakeTime=2
@@ -122,11 +122,7 @@ addAbility(NewShipType,"MoveCommand",1,0);
 NewShipType.dontDockWithOtherRaceShips=1
 NewShipType.ignoreRaceWhenDocking=0
 NewShipType.canJoinStrikeGroup=0
-repairTimeAssaultCraft = 6
-repairTimeMissileVette = 5
-repairValueAssaultCraft = (90 / (7 * repairTimeAssaultCraft))
-repairValueMissileVette = (480 / (4 * repairTimeMissileVette))
-addAbility(NewShipType,"ShipHold",1,40,100,"rallypoint","Fighter, Corvette,Utility",35,{Fighter=repairValueAssaultCraft},{Corvette=repairValueMissileVette});
+addAbility(NewShipType,"ShipHold",1,250,200,"rallypoint","Fighter, Corvette, Utility",35,{Fighter="2"},{Corvette="24"});
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand",0,1,600,1200,0,3);
 addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1,"Fighter, Fighter_hw1, Corvette, Corvette_hw1, Frigate, SmallCapitalShip, BigCapitalShip, Utility","JustShoot");
