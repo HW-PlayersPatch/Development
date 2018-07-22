@@ -20,9 +20,9 @@ NewShipType.defaultStance="Neutral"
 NewShipType.holdSlots=3
 NewShipType.mass=20
 NewShipType.collisionMultiplier=0.45
-NewShipType.thrusterMaxSpeed=290
-NewShipType.mainEngineMaxSpeed=290
-NewShipType.rotationMaxSpeed=130
+NewShipType.thrusterMaxSpeed=320
+NewShipType.mainEngineMaxSpeed=320
+NewShipType.rotationMaxSpeed=170
 NewShipType.thrusterAccelTime=2.0
 NewShipType.thrusterBrakeTime=1
 NewShipType.mainEngineAccelTime=2.0
@@ -132,8 +132,8 @@ NewShipType.launchTimeBeforeStart=1.5
 NewShipType.launchNrOfShipsInDockFormation=1
 NewShipType.launchFormation="delta"
 addAbility(NewShipType,"ShipHold",1,0,0,"rallypoint","",70,
-{Fighter="34"},
-{Corvette="189"});
+{Fighter="36"},
+{Corvette="340"});
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"CanBeRepaired","RepCap");

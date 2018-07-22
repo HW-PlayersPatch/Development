@@ -7,12 +7,11 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 ## Key
 - Minor: minor change
 - b9: change that may need to wait for build 9
-- Skip: put these on a 'maybe later' idea list.
 
 
 ## ToDo
 - After reviewing weapons, add missile/weapon changes to this list
-- Add rationale to most changes.
+- Review old props, and pull in any useful explanations/info.
 
 
 ## Gameplay and UI Options
@@ -51,10 +50,14 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Removed evasive stance bonuses from non-combat/utility ships (evasive stance re-routes power from weapons to engines, however this is not possible on non-combat ships and had no effect in the classic games)
 - Minor: Resource collectors default stance restored to normal (like v2.1, now that evasive bonuses have been removed from utility ships)
 
+#### Motherships
+- Rotation speed +100% (to aid in positioning motherships around asteriod patches)
+
+
 
 
 ### Hiigaran and Vaygr
-- Balanced dock repair times for fighters and corvettes (addressed a bug that caused squadrons to dock extremely fast. hw2 ships now repair at their hw2c rate.)
+- Balanced dock repair times for fighters and corvettes (addressed a bug that caused squadrons to dock extremely fast. hw2 ships now repair closer to their hw2c rate.)
 
 #### Resource Collectors
 - Upgraded Health 5000->4000 -20% (to match hw2c)
@@ -62,16 +65,13 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
   - Minor: (cheap hw2 collectors could even kill expensive hw1 collectors)
 
 #### Scouts
-- b9: Sensors range -19% (scouting is too hard to deny in HWR)
+- Sensors range -19% (scouting was too hard to deny)
 
 #### Destroyers
-- Regeneration rate +31% (slight buff)
+- Health 85k->90k +6% (+13% over v2.1, closer to hw2c when upgraded)
 
 #### Minelayer Corvettes
 - Cost 800->400 -50% (buff, hw1 are 275)
-
-#### Motherships
-- Rotation speed +100%
 
 #### Sensor Distortion Probes
 - Health 400->800 +100%
@@ -80,121 +80,117 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 
 
 ### Hiigaran 
-
-#### Marine Frigates
-- Health 20k->25k +25% (buff, this ship can't be upgraded)
-
 #### Defense Field Frigates
-- Health 20k->25k +25% (buff, this ship can't be upgraded)
-- Rotation speed +59% (buff)
+- Health 20k->25k +25% (since this ship can't be upgraded, Taiidan Field Frigate is 26k)
+- Rotation speed +59% (to match flak frigates, and be able to better micro them)
 
 
 
 
 ### Vaygr
 #### Hyperspace Platforms
-- Build Time 45->20 (buff)
-- Speed 650->600 -8% (should not be faster than a probe)
-
-#### Minelayer Corvettes
-- Ratation speed +23% (buff)
+- Build Time 45->20sec (these took too long to setup)
+- Speed 650->600 -8% (to match hw2c as they should not be faster than a probe)
 
 #### Command Corvettes
-- Build time 30->45 +50% (nerf)
-- Ability range -51% (nerf)
+- Build time 30->45sec +50% (slows down the replenishment of these powerful units)
+- Attack/accuracy bonus range -51% (forces these ships to be on the front line so they can be countered)
 
 #### Resource Collectors
-- Resource capacity 208->200 -4% (Now matches Hiigaran to better balance harvesting. Vaygr still start with one extra collector to make up for their Flagship's long collector drop off route.)
-
-
+- Resource capacity 208->200 -4% (Now matches Hiigaran to better balance harvesting. Vaygr still start with one extra collector to make up for their Flagship's long collector drop off route. Harvesting for all four races is within 1% of each other.)
 
 
 
 
 ### Kushan and Taiidan
-- Balanced dock repair times for fighters and corvettes (Fighters repair 6% slower and corvettes repair 60% faster to balance vs hw2)
+- Overhauled Kushan and Taiidan. These races were rushed into HWR, repeatedly band-aided, and many felt they never truely represented hw1c. All costs, build times, speeds, health, abilities, etc are now implimented with a well thought out design to properly to reflect hw1c, while being balanced against Hiigaran and Vaygr.
+	- Minor: Note, most hw1 changes are to be closer to hw1c, while balancing vs hw2 races.
+- Balanced dock repair times for corvettes (now repair 4.5 times faster to balance vs hw2)
+- Accuracy reduction abilities are now painted orange in the tactical overlay
 
 #### Resource Collectors
-- Build Time 50->45 -10%
+- b9:? Build Time 50->45sec -10%
 - Health 6000->5000 -17% (to balance vs hw2, Hiigaran/Vaygr went from 5000->4000)
-- Speed 110->206 +87% (relatively closer to hw1c)
-- Resource capacity 500->300ru -40% (Harvesting has been adjusted for the speed change. Harvesting for all four races is within 1% of each other after 20minutes of harvesting. Harvesting is also now better balanced on maps with different RU layouts.)
+- b9:? Speed 110->206 +87% (closer to hw1c)
+- b9:? Resource capacity 500->300 -40% (Harvesting has been adjusted for the speed change. Harvesting for all four races is within 1% of each other.)
+	- Minor: Harvesting is also now better balanced on maps with different RU layouts.
 - Kamakazi damage 80%->60% -25% (to prevent instantly killing other collectors)
 
 #### Resource Controller
 - Effective Health 27500->30000 +9% (Base Health 25k->30k +20%, ArmourDamage 0.9->1 +11%)
-- Speed 100->165 +65%
+- Speed 100->165 +65% (closer to hw1c)
 - Rotation Speed +100%
 
 #### Scouts
-- b9: Sensors range -27%
-- b9: Speed burst ability duration 50->30secs -40% (was too hard to deny scouting)
-- b9: Speed burst top speed -4%
+- Sensors range -27% (scouting was too hard to deny)
+- Speed burst ability duration 50->30secs -40% (scouting was too hard to deny)
+- Speed burst top speed -4% (scouting was too hard to deny)
 
 #### Defenders
-- Build Time 9->7sec -22% (buff)
-- b9: Removed the hidden armour bonus, and adjusted effective health to be the same as before.
+- Build Time 9->7sec -22% (closer to hw1c)
 
 #### Repair Corvettes
-- Speed 255->290 +14%
+- Speed 255->320 +25% (to be able to heal the fastest corvette)
+- Rotation Speed +31%
 
 #### Light Corvettes
-- Speed 285->305 +7%
+- Speed 285->305 +7% (closer to hw1c)
 
 #### Multi-Gun Corvettes
-- Speed 275->320 +16%
+- Speed 275->320 +16% (closer to hw1c)
 - Rotation Speed +76%
 
 #### Heavy Corvettes
-- Speed 245->290 +18%
+- Speed 245->290 +18% (closer to hw1c)
 
 #### Minelayer Corvettes
-- Build Time: 25-30 +20% (nerf)
-- Speed: 246->255 +4%
-- b9: Removed the hidden armour bonus, and adjusted effective health to be the same as before.
+- Build Time: 25->35sec +40% (closer to hw1c, and to balance vs hw2 races at 45sec)
+- Speed: 246->255 +4% (closer to hw1c)
 
 #### Assault Frigates
-- Rotation speed +33%
+- Rotation Speed +33%
 
 #### Missile Destroyers
 - Now count againt the destroyer unit cap like hw1c. Normal unit caps allow for six destroyers, two of which can be missile destroyers.
 
-#### Motherships
-- Rotation speed +100%
-
 #### Carriers
-- Cost 3000->3500 +17% (to balance the build time buff, with a frigate module Hiigaran is 3800 and Vaygr is 3100)
-- Build time 210->165 -21% (it was a huge blow to lose a carrier, since they took so long to build)
+- Cost 3000->3500 +17% (with a frigate module Hiigaran is 3800 and Vaygr is 3100)
+- Build time 210->165sec -21% (it was a huge blow to lose a carrier, since they took so long to build)
 
 #### Cloak Generators
-- Speed 165->206 +25% (relatively closer to hw1c)
+- Speed 165->206 +25% (closer to hw1c)
 - Rotation Speed +36%
-- Effective health 7500->9000 +17% (ArmourDamage 1.2->1 -17%)
-- Ability duration 100->120sec + 20% (to match hw2 races, and be closer to hw1c)
+- Effective health 7500->9000 +17% (ArmourDamage 1.2->1 -17%, closer to hw1c)
+- Ability duration 100->120sec +20% (to match hw2 races, and be closer to hw1c)
 - Ability range +100% (to match hw2 races)
 
 #### Gravity Wells
 - Minor: Accuracy debuff range -20% (to match GW ability range, missed change in 2.205)
 
+#### Sensors Array
+- Sensors range +8%
+
 
 ### Kushan
 
 #### Cloaked Fighters
-- b9: Build time 15->13sec -13%
-- Cloak ability now lasts indefinitely like hw1c (still un-cloaks when in combat)
+- Cloak ability now lasts indefinitely (same as hw1c)
 
 #### Multi-Gun Corvettes
-- Minor: Build Time restored to 22 seconds (was accidently set to 25sec in build 7)
+- Minor: Build Time restored to 22sec (was accidently set to 25sec in build 7)
 
 #### Drone Frigate
-- Speed 166->206 +24% (relatively closer to hw1c)
-- Drone ability now lasts indefinitely and drones deploy 70% faster (like hw1c)
+- Speed 166->206 +24% (closer to hw1c)
+- Drone ability now lasts indefinitely and drones deploy 70% faster (same as hw1c)
+
+
 
 
 ### Taiidan
 
 #### Defense Fighters
 - Attack style is now closer to hw1c. Their laser weapon has been adjusted to be more consistent, and it now prioritizes mines over missiles.
+- Added an accuracy reduction within the field of -3% (similar to Field Frigates)
 - Minor: 
   - Added 'set-speed vs', so ships have 2x accuracy vs them when they're idle.
   - Range -40%
@@ -204,15 +200,14 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
     - 1 hit for small missiles
     - 2 hits for torps and HMF/DD/BC.
     - 3 hits for mines
-- Added a Accuracy reduction within the field of -7%
 	
 #### Assault Frigates
 - Fixed a gun alignment bug, which caused 2 of their 4 guns to always miss small targets.
 
 #### Field Frigates
-- Speed 166->206 +24%
+- Speed 166->206 +24% (closer to hw1c)
 - Rotation Speed +40%
-- Damage/Accuracy reduction within field -5% to -15%
+- Damage/Accuracy reduction within field -5% to -7%
 
 
 
