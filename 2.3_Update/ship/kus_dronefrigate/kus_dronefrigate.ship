@@ -131,7 +131,7 @@ addAbility(NewShipType, "ShipHold", 1, 0, 0, "rallypoint", "drone,drone1,drone2,
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand",1,1.1,200,700,0,4);
-addAbility(NewShipType,"CanAttack",1,1,0,1,0.35,1.5,"Fighter_hw1, Fighter, Swarmer, Corvette_hw1, Corvette,,,,,, Frigate, SmallCapitalShip, BigCapitalShip, Utility","frontal_Frigate",
+addAbility(NewShipType,"CanAttack",1,1,0,1,0.35,1.5,"Fighter_hw1, Fighter, Swarmer, Corvette_hw1, Corvette,,,,,, Capturer, Frigate, SmallCapitalShip, BigCapitalShip, Utility","frontal_Frigate",
 {Fighter="movetotargetandshoot_Frigate_vs_Fighters"},
 {Fighter_hw1="movetotargetandshoot_Frigate_vs_Fighters"},
 {Swarmer="movetotargetandshoot_Frigate_vs_Fighters"},
