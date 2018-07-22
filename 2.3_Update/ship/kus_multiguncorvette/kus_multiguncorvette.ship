@@ -138,9 +138,10 @@ NewShipType.launchNrOfShipsInDockFormation=1
 NewShipType.launchFormation="dockline"
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
-addAbility(NewShipType,"CanAttack",1,0,1,1,0.35,1,"Fighter, Fighter_hw1, Swarmer, Corvette, Corvette_hw1,,,,,,,, Frigate, Capturer, Utility, SmallCapitalShip, BigCapitalShip, Mothership","frontal_MultigunCorvette",
+addAbility(NewShipType,"CanAttack",1,0,1,1,0.35,1,"Fighter_hw1, Fighter, Swarmer, Corvette_hw1, Corvette,,,,,,,, Frigate, Capturer, Utility, SmallCapitalShip, BigCapitalShip, Mothership","frontal_MultigunCorvette",
 {Fighter="frontal_MultigunCorvette"},
 {Fighter_hw1="frontal_MultigunCorvette"},
+{Swarmer="frontal_MultigunCorvette"},
 {Corvette="frontal_MultigunCorvette"},
 {Corvette_hw1="frontal_MultigunCorvette"},
 {SmallCapitalShip="frontal_MultigunCorvette_vs_Cap"},

@@ -142,7 +142,7 @@ NewShipType.launchNrOfShipsInDockFormation=1
 NewShipType.launchFormation="n_delta"
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
-addAbility(NewShipType,"CanAttack",1,0,1,0,0.35,1,"Fighter, Fighter_hw1, Corvette, Corvette_hw1, Frigate, Utility, Resource,,,,SmallCapitalShip, BigCapitalShip, Mothership","FlyBy_Interceptor_vs_Frigate",
+addAbility(NewShipType,"CanAttack",1,0,1,0,0.35,1,"Fighter_hw1, Fighter, Corvette_hw1, Corvette, Frigate, Utility, Resource,,,,SmallCapitalShip, BigCapitalShip, Mothership","FlyBy_Interceptor_vs_Frigate",
 {Fighter="Fighter_vs_Fighter"},
 {Fighter_hw1="Fighter_vs_Fighter"},
 {Corvette="Fighter_vs_Corvette"},
