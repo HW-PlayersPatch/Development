@@ -4,9 +4,6 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 # Build 8 Change List
 
 
-## Key
-- Minor: minor change
-- b9: change that may need to wait for build 9
 
 
 ## ToDo
@@ -14,8 +11,12 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Review old props, and pull in any useful explanations/info.
 
 
+
+
 ## Gameplay and UI Options
 - No changes
+
+
 
 
 ## HWR Bugs Fixes and Improvements
@@ -25,6 +26,8 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Kushan Ion Cannon Frigates are now pronounced correctly as 'Cannon', previously they were being pronounced as 'Cannit'.
 - Minor: Expert Taiidan AI now harvests resources at the same rate as the other races. (it was 10% higher for some odd reason)
 - Minor: Improved compatibility for mods. (Created a playerspatch_util.lua file, separate from scar_util.lua)
+
+
 
 
 ## Campaign
@@ -41,8 +44,6 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 
 
 ## Balance
-
-
 
 
 ### All Races
@@ -67,11 +68,11 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 #### Scouts
 - Sensors range -19% (scouting was too hard to deny)
 
-#### Destroyers
-- Health 85k->90k +6% (+13% over v2.1, closer to hw2c when upgraded)
-
 #### Minelayer Corvettes
 - Cost 800->400 -50% (buff, hw1 are 275)
+
+#### Destroyers
+- Health 85k->90k +6% (+13% over v2.1, closer to hw2c when upgraded)
 
 #### Sensor Distortion Probes
 - Health 400->800 +100%
@@ -103,15 +104,12 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 
 
 ### Kushan and Taiidan
-- Overhauled Kushan and Taiidan. These races were rushed into HWR, repeatedly band-aided, and never given the deep love they deserve. All costs, build times, speeds, health, abilities, etc are now properly translated into HWR. Kushan and Taiidan now feel much more like hw1c, while being balanced against Hiigaran and Vaygr.
+- Overhauled Kushan and Taiidan. These races were rushed into HWR at release, repeatedly band-aided, and were never implimented well. All costs, build times, speeds, health, abilities, etc are now consistently translated into the HWR engine. Kushan and Taiidan now feel much more like hw1c, while still being balanced against Hiigaran and Vaygr.
 	- Minor: Note, most hw1 changes are to be closer to hw1c, while balancing vs hw2 races.
+- Note: No changes to research have been made, however plans are in the works for the next update.
 - Removed hidden armour modifiers from all ships other than frigates. Relic only applied these to frigates, however Gearbox used them sporadically.
 - Balanced dock repair times for corvettes (now repair 4.5 times faster to balance vs hw2)
 - Accuracy reduction abilities are now painted orange in the tactical overlay
-
-#### Motherships
-- Multiplayer: Health 280k->350k +25%, Armour -18% (Effective Health 322k->350k +7%)
-- Campaign: Health 210k->250k +19%, Armour -18% (effective health 247k->250k +1%)
 
 #### Resource Collectors
 - Build Time 50->45sec -10% (to balance vs hw2)
@@ -119,11 +117,12 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Speed 110->206 +87%
 - Resource capacity 500->300 -40% (Harvesting has been adjusted for the speed change. Harvesting for all four races is within 1% of each other.)
 	- Minor: Harvesting is also now better balanced on maps with different RU layouts.
+	- Minor: Note, harvesting may be tweaked in the next update as needed.
 - Kamakazi damage 80%->60% -25% (to prevent instantly killing other collectors)
 
 #### Resource Controller
 - Health 25k->30k +20%, Armour -11% (Effective Health 27500->30000 +9%)
-- Speed 100->165 +65%
+- Speed 100->190 +90%
 - Rotation Speed +100%
 
 #### Scouts
@@ -164,30 +163,57 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 #### Minelayer Corvettes
 - Build Time: 25->35sec +40% (closer to hw1c, and to balance vs hw2 races at 45sec)
 - Speed: 246->255 +4%
-- Health 900->1080 +20, Armour -25% (effective health unchanged)
+- Health: 900->1800 +100%, Armour -25% (Effective Health 1080->1800 +67%)
 
 #### Support Frigates
+- Cost 800->600 -25%
 - Build Time 85->65sec -24%
 - Health 26000->21000 -19%
 
 #### Assault Frigates
+- Cost 800->700 -13%
 - Build Time 68->60sec -12%
 - Rotation Speed +33%
+- Now prioritize attacking corvettes over frigates.
 
 #### Ion Frigates
+- Cost 900->800 -11%
 - Build Time 73->60sec -18%
 
+#### Destroyers
+- Cost 2500->2250 -10%
+- Build Time 145->125 -14%
+
 #### Missile Destroyers
-- Cost 2000->2700 +35%
+- Cost 2000->2500 +25%
+- Build Time 160->145sec -9%
 - Health 65k->101k +55%
 - Now count againt the destroyer unit cap like hw1c. Normal unit caps allow for six destroyers, two of which can be missile destroyers.
 
 #### Carriers
 - Cost 3000->3500 +17% (with a frigate module Hiigaran is 3800 and Vaygr is 3100)
 - Build time 210->165sec -21% (it was a huge blow to lose a carrier, since they took so long to build)
+- Health 105k->120k +14%
+
+#### Motherships
+- Multiplayer: Health 280k->420k +50%, Armour -18% (Effective Health 322k->420k +30%, to match an upgraded Hiigaran Mothership)
+- Campaign: Health 210k->250k +19%, Armour -18% (effective health 247k->250k +1%)
 
 #### Research Ships
 - Build Time 50->45sec -10% (the first hub now builds as fast as the rest)
+- Speed 155->175 +13%
+
+#### Proximity Sensors
+- Speed 350->450 +29%
+
+#### Sensors Array
+- Speed 155->175 +13%
+- Sensors range +8%
+
+#### Gravity Wells
+- Cost 800->1000 +25%
+- Health 18k->11k -39%, Armour +17% (Effective Health 14400->11000 -24%)
+- Minor: Accuracy debuff range -20% (to match GW ability range, missed change in 2.205)
 
 #### Cloak Generators
 - Speed 165->206 +25%
@@ -196,13 +222,7 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Ability duration 100->120sec +20% (to match hw2 races, and be closer to hw1c)
 - Ability range +100% (to match hw2 races)
 
-#### Gravity Wells
-- Cost 800->1000 +25%
-- Health 18k->11k -39%, Armour +17% (Effective Health 14400->11000 -24%)
-- Minor: Accuracy debuff range -20% (to match GW ability range, missed change in 2.205)
 
-#### Sensors Array
-- Sensors range +8%
 
 
 ### Kushan
@@ -225,6 +245,7 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 ### Taiidan
 
 #### Defense Fighters
+- Built Time 18->15sec -17%
 - Health 135->300 +122%, Armour +17% (Effective Health 108->300 +178%)
 - Attack style is now closer to hw1c. Their laser weapon has been adjusted to be more consistent, and it now prioritizes mines over missiles.
 - Added an accuracy reduction within the field of -1% (similar to Field Frigates)
