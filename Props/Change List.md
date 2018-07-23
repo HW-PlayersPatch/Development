@@ -104,7 +104,7 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 
 
 ### Kushan and Taiidan
-- Overhauled Kushan and Taiidan. These races were rushed into HWR at release, repeatedly band-aided, and were never implimented well. All costs, build times, speeds, health, abilities, etc are now consistently translated into the HWR engine. Kushan and Taiidan now feel much more like hw1c, while still being balanced against Hiigaran and Vaygr.
+- Overhauled Kushan and Taiidan. These races were rushed into HWR at release, repeatedly band-aided, and were never implimented well. All costs, build times, speeds, health, abilities, etc are now consistently translated into the HWR engine. Kushan and Taiidan now feel much more like hw1 classic, while still being balanced against Hiigaran and Vaygr.
 	- Minor: Note, most hw1 changes are to be closer to hw1c, while balancing vs hw2 races.
 - Note: No changes to research have been made, however plans are in the works for the next update.
 - Removed hidden armour modifiers from all ships other than frigates. Relic only applied these to frigates, however Gearbox used them sporadically.
@@ -112,12 +112,12 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Accuracy reduction abilities are now painted orange in the tactical overlay
 
 #### Resource Collectors
-- Build Time 50->45sec -10% (to balance vs hw2)
+- Harvesting for all four races is now within 1% of each other. Harvesting is also now better balanced on maps with different RU layouts.
+- Cost 600->500 -17%
+- Build Time 50->40sec -20%
 - Health 6000->5000 -17% (to balance vs hw2, Hiigaran/Vaygr went from 5000->4000)
 - Speed 110->206 +87%
-- Resource capacity 500->300 -40% (Harvesting has been adjusted for the speed change. Harvesting for all four races is within 1% of each other.)
-	- Minor: Harvesting is also now better balanced on maps with different RU layouts.
-	- Minor: Note, harvesting may be tweaked in the next update as needed.
+- Resource capacity 500->250 -50%
 - Kamakazi damage 80%->60% -25% (to prevent instantly killing other collectors)
 
 #### Resource Controller
