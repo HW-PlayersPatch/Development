@@ -44,7 +44,7 @@ paradeSlot("Kus_ResearchShip",			{-400, 0, -900},		 {0,0,1},	{-1,0,0},	350);
 paradeSlot("Kus_SensorArray",				{400, 0, -900},		   {0,0,1},	{1,0,0},	350);
 paradeSlot("Kus_CloakGenerator",		{-400, 0, -1300},		 {0,0,1},	{-1,0,0},	350);
 paradeSlot("Kus_GravWellGenerator",	{400, 0, -1300},		 {0,0,1},	{1,0,0},	350);
-paradeSlot("Kus_ProximitySensor",				{0, 0, -1300},		 {0,0,1},	{0,1,0},	100);
+paradeSlot("Kus_ProximitySensor",				{100, 0, -1300},		 {0,0,1},	{0,1,0},	100);
 
 
 -- Begin of new slots for some possible salvaged ships											 
