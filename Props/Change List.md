@@ -72,7 +72,7 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Cost 800->400 -50% (buff, hw1 are 275)
 
 #### Destroyers
-- Health 85k->90k +6% (+13% over v2.1, closer to hw2c when upgraded)
+- Maybe b9: Health 85k->90k +6% (+13% over v2.1, closer to hw2c when upgraded, by popular demand)
 
 #### Sensor Distortion Probes
 - Health 400->800 +100%
@@ -81,6 +81,9 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 
 
 ### Hiigaran 
+#### Gunship Corvettes
+- b9?: Minor: Damage vs hw2 fighters -12% (slightly over-performing)
+
 #### Defense Field Frigates
 - Health 20k->25k +25% (since this ship can't be upgraded, Taiidan Field Frigate is 26k)
 - Rotation speed +59% (to match flak frigates, and be able to better micro them)
@@ -93,12 +96,15 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Build Time 45->20sec (these took too long to setup)
 - Speed 650->600 -8% (to match hw2c as they should not be faster than a probe)
 
+#### Missile Corvettes
+- Maybe Skip: Damage vs hw1 fighters +110% (gives vaygr a way to kill defense fighters)
+
 #### Command Corvettes
 - Build time 30->45sec +50% (slows down the replenishment of these powerful units)
 - Attack/accuracy bonus range -51% (forces these ships to be on the front line so they can be countered)
 
 #### Resource Collectors
-- Resource capacity 208->200 -4% (Now matches Hiigaran to better balance harvesting. Vaygr still start with one extra collector to make up for their Flagship's long collector drop off route. Harvesting for all four races is within 1% of each other.)
+- Resource capacity 208->200 -4% (Now matches Hiigaran to better balance harvesting. Vaygr still start with one extra collector to make up for their Flagship's long collector drop off route. Vaygr harvesting is up ~5% from hw2c, and down ~2% from v2.1. Harvesting for all four races is within 1% of each other.)
 
 
 
@@ -268,46 +274,3 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Health 26000->30000 +15%
 	- Minor: Armour -4%
 - Damage/Accuracy reduction within field -5% to -7%
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Pending Weapon Changes
-- Tweaked corvette penetration vs fighters, as Light Corvettes were over-performing.
-
-- Minor: Hiigaran Gunship Corvette penetration vs hw2 fighters down 12% (re-did all anti fighter corvs to match december 2nd 2017 intended balance, which i somehow skrewed a bit maily with light corvs)
-- Vaygr Missile Corvette, penetration vs hw1 fighters up 110% (gives vaygr a way to kill defense fighters)
-
-- Minor: Kushan/Taiidan Defender penetration up 20% vs hw1 fighters, and 100% vs hw1 corvettes.
-- Minor: Kushan/Taiidan Light Corvettes were over-performing, so corvette penetration vs fighters was lowered.
-- Minor: Kushan/Taiidan Light Corvette penetration vs fighters down 17% (down 25% vs hw2 fighters)
-- Minor: Kushan/Taiidan Multi-Gun Corvette penetation vs hw2 fighters down 28%
-- Minor: Taiidan Multi-Gun Corvette bullet speed down 12% (to match kushan)
-- Kushan/Taiidan Assault Frigate accuracy vs corvettes up 13% (slight buff)
-- Minor: Kushan/Taiidan Missile Destroyer damage vs hw2 corvettes down 20% (now performs similar vs hw1 and hw2 corvettes).
