@@ -1,3 +1,14 @@
+--===========================================================================
+--            -Tai MotherShip Parade formation
+--===========================================================================
+
+-- format   slot-name   vector-offset    vector-heading  vector-direction of growth     size-of-growth (set to 0 if want default)
+-- offset determines offset from center of formation {+left/-right, +up/-down, +front/-back}
+-- heading determines heading, use { 0,0,1 } for forward
+-- direction of growth determines how new formations will grow out
+-- size of growth determines how spaced out additional formations are.  Set to 0 for default
+-- one slot MUST be called "misc", leftovers will get put here
+
 paradeSlot("Tai_Scout",							{-700, -50, 2000},	{0,0,1},	{-1,0,0},	70);
 paradeSlot("Tai_Interceptor",				{-700, -50, 1800},	{0,0,1},	{-1,0,0},	70);
 paradeSlot("Tai_AttackBomber",			{-700, -50, 1600},	{0,0,1},	{-1,0,0},	70);
