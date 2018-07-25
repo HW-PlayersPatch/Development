@@ -68,6 +68,9 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 #### Scouts
 - Sensors range -19% (scouting was too hard to deny)
 
+#### Bombers
+- Damage vs corvettes -30%
+
 #### Minelayer Corvettes
 - Cost 800->400 -50% (buff, hw1 are 275)
 
@@ -82,12 +85,20 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 
 ### Hiigaran 
 #### Gunship Corvettes
-- b9?: Minor: Damage vs hw2 fighters -12% (slightly over-performing)
+- b9?: Minor: Damage vs hw2 fighters -12% (were slightly over-performing)
+
+#### Pulsar Corvettes
+- Damage vs collectors -15%
+
+#### Torpedo Frigates
+- Damage vs collectors -12%
 
 #### Defense Field Frigates
 - Health 20k->25k +25% (since this ship can't be upgraded, Taiidan Field Frigate is 26k)
 - Rotation speed +59% (to match flak frigates, and be able to better micro them)
 
+#### Destroyers
+- Cannon Damage vs collectors +14%
 
 
 
@@ -95,6 +106,9 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 #### Hyperspace Platforms
 - Build Time 45->20sec (these took too long to setup)
 - Speed 650->600 -8% (to match hw2c as they should not be faster than a probe)
+
+#### Lance Fighters
+- Damage vs hw1 corvettes +27%
 
 #### Missile Corvettes
 - Maybe Skip: Damage vs hw1 fighters +110% (gives vaygr a way to kill defense fighters)
@@ -104,7 +118,7 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Attack/accuracy bonus range -51% (forces these ships to be on the front line so they can be countered)
 
 #### Resource Collectors
-- Resource capacity 208->200 -4% (Now matches Hiigaran to better balance harvesting. Vaygr still start with one extra collector to make up for their Flagship's long collector drop off route. Vaygr harvesting is up ~5% from hw2c, and down ~2% from v2.1. Harvesting for all four races is within 1% of each other.)
+- Resource capacity 208->200 -4% (Now matches Hiigaran to better balance harvesting. Vaygr still start with one extra collector to make up for their Flagship's long collector drop off route. Vaygr harvesting is up ~5% from hw2c, and down ~2% from v2.1. Harvesting for all four races is now within 1% of each other.)
 
 
 
