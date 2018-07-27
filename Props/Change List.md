@@ -23,6 +23,7 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Added an Observer mode to spectate multiplayer matches.
 - Added an AI Attack Damage adjuster to multiplayer and player vs cpu. This can be used to increase the AI's attack damage for a more challenging game.
 - Addressed HWR's major Cross Race Docking Bug. Fighters and corvettes will now only dock with ships from their own race. Previously, regenerated Hiigaran/Vaygr ships would be unable to launch from Kushan/Taiidan Repair Corvettes, Support Frigates, and Resource Controllers leading to major lag and multiple glitches.
+- Kushan/Taiidan repair units now have a continous beam like hw1c
 - Kushan Ion Cannon Frigates are now pronounced correctly as 'Cannon', previously they were being pronounced as 'Cannit'.
 - Minor: Expert Taiidan AI now harvests resources at the same rate as the other races. (it was 10% higher for some odd reason)
 - Minor: Improved compatibility for mods. (Created a playerspatch_util.lua file, separate from scar_util.lua)
@@ -108,7 +109,7 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Speed 650->600 -8% (to match hw2c as they should not be faster than a probe)
 
 #### Lance Fighters
-- Damage vs hw1 corvettes +27%
+- Damage vs hw1 corvettes +100% (were doing poorly in hw1 corvette matchups)
 
 #### Missile Corvettes
 - Maybe Skip: Damage vs hw1 fighters +110% (gives vaygr a way to kill defense fighters)
@@ -116,6 +117,9 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 #### Command Corvettes
 - Build time 30->45sec +50% (slows down the replenishment of these powerful units)
 - Attack/accuracy bonus range -51% (forces these ships to be on the front line so they can be countered)
+
+#### Assault Frigates
+- Damage vs resource collectors -40% (close to hw2c performance, gearbox accidently made these better than torps...)
 
 #### Resource Collectors
 - Resource capacity 208->200 -4% (Now matches Hiigaran to better balance harvesting. Vaygr still start with one extra collector to make up for their Flagship's long collector drop off route. Vaygr harvesting is up ~5% from hw2c, and down ~2% from v2.1. Harvesting for all four races is now within 1% of each other.)
@@ -166,6 +170,7 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Speed 255->320 +25% (to be able to heal the fastest corvette)
 - Rotation Speed +31%
 - Armour -25% (Effective Health 1440->1200 -17%)
+- Healing beam arc increased
 
 #### Light Corvettes
 - Speed 285->305 +7%
@@ -173,12 +178,10 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 #### Multi-Gun Corvettes
 - Speed 275->320 +16%
 - Rotation Speed +76%
+- Health 1100->1400 +27%
 
 #### Heavy Corvettes
 - Speed 245->290 +18%
-
-#### Multi-Gun Corvettes
-- Health 1100->1400 +27%
 
 #### Minelayer Corvettes
 - Build Time: 25->35sec +40% (closer to hw1c, and to balance vs hw2 races at 45sec)
@@ -195,6 +198,7 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Build Time 68->60sec -12%
 - Rotation Speed +33%
 - Now prioritize attacking corvettes over frigates.
+- Rebalanced weapons to be more consistent vs fighters and corvettes, by increasing accuracy and decreasing damage.
 
 #### Ion Frigates
 - Cost 900->800 -11%
@@ -208,6 +212,7 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Cost 2000->2500 +25%
 - Build Time 160->145sec -9%
 - Health 65k->101k +55%
+- Minor: Damage vs hw2 corvettes -20% (now performs similar vs hw1 and hw2 corvettes).
 - Now count againt the destroyer unit cap like hw1c. Normal unit caps allow for six destroyers, two of which can be missile destroyers.
 
 #### Carriers
