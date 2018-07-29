@@ -1,11 +1,11 @@
 StartWeaponConfig(NewWeaponType,"AnimatedTurret","InstantHit","VgrBeam_Lance","Normal",0,1410,0,0.4,0,0,2,1,0,0.4,1.2,3,1,0,260,260,0.1,"Normal",0,0,300);
 AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",60,60,"");
 setPenetration(NewWeaponType,5,0.5,
-{Unarmoured=0.2},
-{Unarmoured_hw1=0.35},
+{Unarmoured=0.3},
+{Unarmoured_hw1=0.40},
 {ResArmour=0.5},
 {LightArmour=0.55},
-{LightArmour_hw1=0.70},
+{LightArmour_hw1=1.1},
 {TurretArmour=0.6},
 {MediumArmour=0.4},
 {HeavyArmour=0.4},
@@ -18,8 +18,8 @@ setAccuracy(NewWeaponType,1,
 {Torpedo=0},
 {HeavyMissile=0},
 {SmallMissile=0},
-{Fighter=0.05},
-{Fighter_hw1=0.06},
+{Fighter=0.1},
+{Fighter_hw1=0.1},
 {Corvette_hw1=1.0},
 {munition=0.01});
 setAngles(NewWeaponType,0,-9,9,-9,9);
