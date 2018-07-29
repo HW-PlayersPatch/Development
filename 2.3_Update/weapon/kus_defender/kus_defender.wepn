@@ -2,7 +2,7 @@ StartWeaponConfig(NewWeaponType,"AnimatedTurret","Bullet","Kinetic_Small","Norma
 AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",15.0,17.0,"");
 setPenetration(NewWeaponType,5,1,
 {Unarmoured=1.0},
-{Unarmoured_hw1=1.0},
+{Unarmoured_hw1=1.2},
 {LightArmour=0.80},
 {LightArmour_hw1=1.6},
 {MediumArmour=0.80},

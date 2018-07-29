@@ -1,11 +1,11 @@
 StartWeaponConfig(NewWeaponType,"AnimatedTurret","Bullet","Kinetic_Small","Normal",1400,1600,0,0,0,0,1,1,0,0.8,0,0,1,0,40,40,0.1,"Normal",1,0,0);
 AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",17.2,17.2,"");
 setPenetration(NewWeaponType,5,1,
-{Unarmoured=0.85},
-{Unarmoured_hw1=0.95},
+{Unarmoured=1.6},
+{Unarmoured_hw1=2.0},
 {LightArmour=0.50},
 {LightArmour_hw1=0.50},
-{MediumArmour=0.80},
+{MediumArmour=0.70},
 {HeavyArmour=1.0},
 {MineArmour=0.43},
 {PlanetKillerArmour=0},
@@ -15,7 +15,7 @@ setPenetration(NewWeaponType,5,1,
 {HeavyMissileArmor=0},
 {SmallMissileArmor=0},
 {TurretArmour=0.70},
-{ResArmour=0.60});
+{ResArmour=0.50});
 setAccuracy(NewWeaponType,1,
 {Swarmer=0.95},
 {SpaceMine=0.01},
@@ -30,7 +30,7 @@ setAccuracy(NewWeaponType,1,
 {Frigate=0.60},
 {SmallCapitalShip=0.80},
 {BigCapitalShip=0.80},
-{ResourceLarge=0.90});
+{ResourceLarge=0.70});
 setAngles(NewWeaponType,0,-34,34,-34,34);
 setMiscValues(NewWeaponType,1.5,0.0);
 addAnimTurretSound(NewWeaponType,"Data:Sound/SFX/ETG/SPECIAL/SPECIAL_ABILITIES_TURRET_ON");

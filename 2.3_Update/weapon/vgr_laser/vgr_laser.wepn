@@ -2,7 +2,7 @@ StartWeaponConfig(NewWeaponType,"AnimatedTurret","Bullet","Vgr_Laser_Small","Nor
 AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",320,320,"");
 setPenetration(NewWeaponType,5,1,
 {TurretArmour=0.5},
-{ResArmour=0.24},
+{ResArmour=0.12},
 {PlanetKillerArmour=0},
 {SwarmerArmor=0.10},
 {SpaceMineArmor=1},

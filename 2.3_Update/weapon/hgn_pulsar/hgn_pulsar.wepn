@@ -5,7 +5,7 @@ setPenetration(NewWeaponType,5,1,
 {Unarmoured_hw1=0.20},
 {LightArmour=0.63},
 {LightArmour_hw1=1.10},
-{ResArmour=0.5},
+{ResArmour=0.4},
 {PlanetKillerArmour=0},
 {SwarmerArmor=0.10},
 {SpaceMineArmor=1},
@@ -31,7 +31,7 @@ setAccuracy(NewWeaponType,1,
 {Frigate=0.90},
 {SmallCapitalShip=0.60},
 {BigCapitalShip=0.60},
-{ResourceLarge=0.60});
+{ResourceLarge=0.50});
 setAngles(NewWeaponType,0,-180,180,-5,60);
 setMiscValues(NewWeaponType,4,0);
 addAnimTurretSound(NewWeaponType,"Data:Sound/SFX/ETG/SPECIAL/SPECIAL_ABILITIES_TURRET_ON");
