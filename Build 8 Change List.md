@@ -121,9 +121,21 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Balanced dock repair times for corvettes (now repair 4.5 times faster to balance vs hw2)
 - Accuracy reduction abilities are now painted orange in the tactical overlay
 - To compensate for the hw1 corvette speed buffs below, fighter, corvette, and frigate weapons were tweaked appropriately vs hw1 corvettes.
+- Harvesting for all four races is now within 1% of each other at the 10, 20, and 30 minute marks. Previously hw1 was 18% behind at 10mins, and 11% ahead at 30minutes.
+- Research costs for all four races are also now much aligned.
+ Research costs have also bee
+- To balance this change, early game research costs have gone up, and late game ship costs have gone down.
+
+_Research_
+Hiig RU: 35,300
+Hiig Time (1x res): 1585
+Vay RU: 37,700
+Vay Time (1x res): 1641
+HW1 RU: 33,500
+HW1 Time (1x res): 1321
 
 #### Resource Collectors
-- Harvesting for all four races is now within 1% of each other at the 10, 20, and 30 minute marks. Previously hw1 was behind at 10mins, and ahead at 30minutes. Harvesting is also now better balanced on maps with different RU layouts.
+- Harvesting is also now better balanced on maps with different RU layouts. 
 - Cost 600->500 -17%
 - Build Time 50->40sec -20%
 - Health 6000->5000 -17% (to balance vs hw2, Hiigaran/Vaygr went from 5000->4000)
