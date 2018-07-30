@@ -24,10 +24,11 @@ paradeSlot("Vgr_MissileCorvette", {-1572, 87, 578},	 {0,0,1}, {-1,0,0},      0);
 paradeSlot("Vgr_Probe", 	{-737, 0, -3097},	 {0,0,1}, {-1,0,0},      0);
 paradeSlot("Vgr_Probe_ECM", {-981, 0, -2674},	 {0,0,1}, {-1,0,0},      0);
 paradeSlot("Vgr_Probe_Prox", {-580, 0, -3518},	 {0,0,1}, {-1,0,0},      0);
-paradeSlot("Vgr_ResourceCollector", 	{1000, 200, -1400},	 {0,0,1}, {1,0,0},      0);
-paradeSlot("Vgr_ResourceController", {1000, 200, -1800},	 {0,0,1}, {1,0,0},      0);
+paradeSlot("Vgr_ResourceCollector", 	{1268, 350, -1397},	 {0,0,1}, {1,0,0},      0);
+paradeSlot("Vgr_ResourceController", {1007, 267, -1801},	 {0,0,1}, {1,0,0},      0);
 paradeSlot("Vgr_Scout", 	{-859, -143, 2622},	 {0,0,1}, {-1,0,0},      0);
 paradeSlot("Vgr_HyperSpace_Platform", {-1162, 183, -2233},	{0,0,1}, {-1,0,0},      0);
+
 
 -- right
 paradeSlot("Vgr_AssaultFrigate", {759, -148, 2518},	{0,0,1}, {1,0,0},       0 );
