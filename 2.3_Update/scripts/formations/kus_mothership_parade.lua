@@ -27,8 +27,8 @@ paradeSlot("Kus_IonCannonFrigate",	{-850, -500, -700},	 {0,0,1},	{-1,0,0},	300);
 paradeSlot("Kus_SupportFrigate",		{-850, -500, -1050}, {0,0,1},	{-1,0,0},	300);
 paradeSlot("Kus_DroneFrigate",			{-850, -500, -1400}, {0,0,1},	{-1,0,0},	300);
 
-paradeSlot("Kus_ResourceCollector",	{850, -500, -600},	 {0,0,1},	{1,0,0},	175);
-paradeSlot("Kus_ResourceController",{850, -500, -1000},	 {0,0,1},	{1,0,0},	400);
+paradeSlot("Kus_ResourceCollector",	{-850, -100, -500},	 {0,0,1},	{-1,0,0},	175);
+paradeSlot("Kus_ResourceController",{-850, -100, -900},	 {0,0,1},	{-1,0,0},	400);
 
 paradeSlot("Kus_Destroyer",					{1100, -500, 1500},	 {0,0,1},	{1,0,0},	600);
 paradeSlot("Kus_MissileDestroyer",	{1100, -500, 900},	 {0,0,1},	{1,0,0},	600);
@@ -40,11 +40,11 @@ paradeSlot("Kus_Carrier",		  			{0, -500, 1500},		 {0,0,1},	{0,-1,0},	700);
 -- paradeSlot("Kus_GravWellGenerator",	{400, 0, -900},			 {0,0,1},	{1,0,0},	350);
 -- paradeSlot("kus_sensorarray",				{-400, 0, -1300},		 {0,0,1},	{-1,0,0},	350);
 
-paradeSlot("Kus_ResearchShip",			{-400, 0, -900},		 {0,0,1},	{-1,0,0},	350);
-paradeSlot("Kus_SensorArray",				{400, 0, -900},		   {0,0,1},	{1,0,0},	350);
-paradeSlot("Kus_CloakGenerator",		{-400, 0, -1300},		 {0,0,1},	{-1,0,0},	350);
-paradeSlot("Kus_GravWellGenerator",	{400, 0, -1300},		 {0,0,1},	{1,0,0},	350);
-paradeSlot("Kus_ProximitySensor",				{100, 0, -1300},		 {0,0,1},	{0,1,0},	100);
+paradeSlot("Kus_ResearchShip",			{-850, 300, -900},		 {0,0,1},	{-1,0,0},	350);
+paradeSlot("Kus_SensorArray",				{850, -100, -900},		   {0,0,1},	{1,0,0},	350);
+paradeSlot("Kus_CloakGenerator",		{-850, -100, -1300},		 {0,0,1},	{-1,0,0},	300);
+paradeSlot("Kus_GravWellGenerator",	{850, -100, -1300},		 {0,0,1},	{1,0,0},	350);
+paradeSlot("Kus_ProximitySensor",				{-850, 300, -1300},		 {0,0,1},	{-1,0,0},	100);
 
 
 -- Begin of new slots for some possible salvaged ships											 
