@@ -40,6 +40,8 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 ## Balance
 
 
+
+
 ### All Races
 #### General
 - Removed evasive stance bonuses from non-combat/utility ships (evasive stance re-routes power from weapons to engines, however this is not possible on non-combat ships and had no effect in the classic games)
@@ -92,6 +94,7 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 
 
 ### Vaygr
+
 #### Hyperspace Platforms
 - Build Time 45->20sec (these took too long to setup)
 - Speed 650->600 -8% (to match hw2c as they should not be faster than a probe)
@@ -105,6 +108,7 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 
 #### Resource Collectors
 - Resource capacity 208->200 -4% (Now matches Hiigaran to better balance harvesting. Vaygr still start with one extra collector to make up for their Flagship's long collector drop off route. Vaygr harvesting is up ~5% from hw2c, and down ~2% from v2.1. Harvesting for all four races is now within 1% of each other.)
+- Improved their parade formation, so resource collectors go to the optimal side of the ship, reducing collisions.
 
 
 

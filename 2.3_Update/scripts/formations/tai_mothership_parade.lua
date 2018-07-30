@@ -27,8 +27,8 @@ paradeSlot("Tai_IonCannonFrigate",	{-700, -525, 1700},	{0,0,1},	{-1,0,0},	350);
 paradeSlot("tai_supportfrigate",		{-700, -525, 1400},	{0,0,1},	{-1,0,0},	350);
 paradeSlot("tai_fieldfrigate",			{-700, -525, 1100},	{0,0,1},	{-1,0,0},	350);
 
-paradeSlot("Tai_ResourceCollector",	{-2100, 300, -200},	{0,0,1},	{-1,0,0},	210);
-paradeSlot("Tai_ResourceController",	{-2100, 300, -600},	{0,0,1},	{-1,0,0},	455);
+paradeSlot("Tai_ResourceCollector",	{-2100, 50, -200},	{0,0,1},	{-1,0,0},	210);
+paradeSlot("Tai_ResourceController",	{-2100, 100, -600},	{0,0,1},	{-1,0,0},	455);
 
 paradeSlot("Tai_Destroyer",					{700, 150, 1700},		{0,0,1},	{1,0,0},	525);
 paradeSlot("tai_MissileDestroyer",	{700, -250, 1700},	{0,0,1},	{1,0,0},	525);
