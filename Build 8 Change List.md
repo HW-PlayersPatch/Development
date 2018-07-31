@@ -20,6 +20,7 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Kushan Ion Cannon Frigates are now pronounced correctly as 'Cannon', previously they were being pronounced as 'Cannit'.
 - Minor: Expert Taiidan AI now harvests resources at the same rate as the other races. (it was 10% higher for some odd reason)
 - Minor: Improved compatibility for mods. (Created a playerspatch_util.lua file, separate from scar_util.lua)
+- Kushan/Taiidan accuracy reduction abilities are now painted orange in the tactical overlay
 
 
 
@@ -114,28 +115,19 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 
 
 ### Kushan and Taiidan
-- Overhauled Kushan and Taiidan. These races were rushed into HWR at release, repeatedly band-aided, and were never implimented well. All costs, build times, speeds, health, abilities, etc are now consistently translated into the HWR engine. Kushan and Taiidan now feel much more like hw1 classic, while still being balanced against Hiigaran and Vaygr.
-	- Minor: Note, most hw1 changes are to be closer to hw1c, while balancing vs hw2 races.
-- Note: No changes to research have been made, however plans are in the works for the next update.
+- Overhauled Kushan and Taiidan. These races were rushed into HWR at release, repeatedly band-aided, and were never implimented well. All ship speeds, health, costs, build times, and research costs/times are now consistently translated into the HWR engine. Kushan and Taiidan now feel much more like hw1 classic, while still being balanced against Hiigaran and Vaygr.
+	- Minor: For details, see the 2.3 Players Patch - Balance Design file.
+- Harvesting for all four races is now within 1% of each other at the 10, 20, and 30 minute marks. Previously hw1 was 18% behind at 10mins, and 11% ahead at 30minutes. Ship and research cost changes take this into account.
+	- UPDATE THIS: need to run v2.1 tests on 14 colls for a reliable comparison.
 - Removed hidden armour modifiers from all ships other than frigates. Relic only applied these to frigates, however Gearbox used them sporadically.
-- Balanced dock repair times for corvettes (now repair 4.5 times faster to balance vs hw2)
-- Accuracy reduction abilities are now painted orange in the tactical overlay
-- To compensate for the hw1 corvette speed buffs below, fighter, corvette, and frigate weapons were tweaked appropriately vs hw1 corvettes.
-- Harvesting for all four races is now within 1% of each other at the 10, 20, and 30 minute marks. Previously hw1 was 18% behind at 10mins, and 11% ahead at 30minutes.
-- Research costs for all four races are also now much aligned.
- Research costs have also bee
-- To balance this change, early game research costs have gone up, and late game ship costs have gone down.
+- Minor: To compensate for the hw1 corvette speed buffs below, fighter, corvette, and frigate weapons were tweaked appropriately vs hw1 corvettes.
+- Corvette dock repair times are 4.5x faster (to balance vs hw2)
 
-_Research_
-Hiig RU: 35,300
-Hiig Time (1x res): 1585
-Vay RU: 37,700
-Vay Time (1x res): 1641
-HW1 RU: 33,500
-HW1 Time (1x res): 1321
+
+
 
 #### Resource Collectors
-- Harvesting is also now better balanced on maps with different RU layouts. 
+- Harvesting is also now better balanced on maps with different asteriod layouts. 
 - Cost 600->500 -17%
 - Build Time 50->40sec -20%
 - Health 6000->5000 -17% (to balance vs hw2, Hiigaran/Vaygr went from 5000->4000)
@@ -207,6 +199,7 @@ HW1 Time (1x res): 1321
 #### Destroyers
 - Cost 2500->2250 -10%
 - Build Time 145->125 -14%
+- Health 106k->112k +6%
 
 #### Missile Destroyers
 - Cost 2000->2500 +25%
