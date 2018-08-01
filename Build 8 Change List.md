@@ -198,13 +198,11 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 
 #### Destroyers
 - Cost 2500->2250 -10%
-- Build Time 145->125 -14%
 - Health 106k->112k +6%
 
 #### Missile Destroyers
 - Cost 2000->2500 +25%
-- Build Time 160->145sec -9%
-- Health 65k->101k +55%
+- Health 65k->106k +63%
 - Minor: Damage vs hw2 corvettes -20% (now performs similar vs hw1 and hw2 corvettes).
 - Now count againt the destroyer unit cap like hw1c. Normal unit caps allow for six destroyers, two of which can be missile destroyers.
 
