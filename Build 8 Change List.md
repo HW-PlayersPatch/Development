@@ -27,7 +27,7 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 
 ## Campaign
 - Fixed a rules of engagement bug that caused many Turanic, Kadeshi, Junkyard, and Keeper ships to sometimes stop attacking unexpectedly and behave passively.
-- In Homeworld 1, Kushan mothership health is higher to match multiplayer. This helps when the enemy ignores your fleet and tries to focus down your mothership.
+- In Homeworld 1, updated research costs and times to match multiplayer. They hadn't been updated since HWR v1.0.
 - In Homeworld 1, captured Turanic Ion Array Frigates and Kadeshi Multi-beam Frigates can now be retired immediately.
 - In Homeworld 1 Mission 2, captured Turanic Heavy Corvettes can now be repaired.
 - In Homeworld 2, applied some Hiigaran research cost/build time changes from the 2.0, 2.1, and 2.205 patches. These changes were made in multiplayer, but were accidently missed in the campaign. The campaign research stats now better match multiplayer.
