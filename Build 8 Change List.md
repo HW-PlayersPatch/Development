@@ -276,6 +276,3 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Health 26000->30000 +15%
 	- Minor: Armour -4%
 - Damage/Accuracy reduction within field -5% to -7%
-
-
-Note, too see all the modding details check out the build 7 vs build 8 comparison in the Stats Tool: 
