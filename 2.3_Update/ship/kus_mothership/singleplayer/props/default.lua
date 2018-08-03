@@ -1,7 +1,7 @@
 Number_Properties_Priority = 1.0	-- Default - on conflict higher is used...
 
 Number_Properties = {
-	maxhealth = 210000,
+	maxhealth = 250000,
 	prmSensorRange = 4000,
 	secSensorRange = 4500,
 }

@@ -1,330 +1,337 @@
 Here's the details of the balance changes in Homeworld Remastered. I've been helping Gearbox balance these patches since June 2015 with several other people here. Hope you guys like the patches!
 
-## 1.0 to 1.3 Patch Balance Changes
+
+
+
+# 1.0 to 1.3 Patch Balance Changes
 [details=Click to view]
-**1.0 to 1.3 Patch Summary -  February 25, 2015 to August 20th, 2015**
+##1.0 to 1.3 Patch Summary -  February 25, 2015 to August 20th, 2015
 There were only bug fixes and minor balance changes between the release of 1.0 and the 1.3 Patch.
 
-**All Races**
-Corvettes
+###All Races
+__Corvettes__
 Fixed the major [corvette damage bug](https://forums.gearboxsoftware.com/t/videos-details-of-the-laser-missile-corvette-damage-bugs/236237/1). This bug was causing laser and missile corvettes to deal far too much damage, and pulsar corvettes to deal a bit too much as well. These units were never properly balanced from the 1.0 to 1.3 patch.
 
 Fixed a hyperspace issue, where ships would over jump their destination and hit an inhibitor in the distance.
 
 Fixed a [special ability timer issue](https://forums.gearboxsoftware.com/t/marine-infiltrator-cloak-generator-issue/283966/1), where abilities would deplete and recharge twice as fast as they were supposed to.
 
-**Vaygr**
-Assault Craft
-Reduced the kamikaze damage 92% (to fix an exploit, and be in line with similar ships)
+###Vaygr
+__Assault Craft__
+Kamikaze damage -92% (to fix an exploit, and be in line with similar ships)
 
-Missile Corvettes and Laser Corvettes
+__Missile Corvettes and Laser Corvettes__
 Fixed a bug where they were not affected by Gravity Well Generators.
 
-**Kushan and Taiidan**
-Repair Corvettes
-Health decreased 50%
+###Kushan and Taiidan
+__Repair Corvettes__
+Health -50%
 
-Support Frigates
-Health decreased 9%
-Speed increased 17%
+__Support Frigates__
+Health -9%
+Speed +17%
 
-Destroyers
-Health increased 6%
+__Destroyers__
+Health +6%
 
-Missile Destroyers
-Health increased 6%
+__Missile Destroyers__
+Health +6%
 
-**Note:**
-In addition to the changes listed above, many weapons were tweaked a bit. But these didn't really do much to improve the balance problems in 1.0 to 1.3. After the 1.3 patch, Gearbox released several versions of the Official Gearbox Balance Mod from August to September 2015. This was later replaced by the 2.0 Patch.
+__Note:__
+In addition to the changes listed above, many weapons were tweaked a bit. But these didn't really do much to improve the balance problems in v1.0 to v1.3. After the 1.3 patch, Gearbox released several versions of the Official Gearbox Balance Mod from August to September 2015. This was later replaced by the 2.0 Patch.
 
 ## Non-Balance Changes (for all patches)
 Homeworld Remastered Collection Update Information is [here](https://gearboxsoftware.zendesk.com/hc/en-us/articles/205281840-Homeworld-Remastered-Collection-Update-Information).
 [/details]
 
-## 2.0 Patch Balance Changes
+
+
+
+# 2.0 Patch Balance Changes
 [details=Click to view]
-**2.0 Patch Summary - June 7th, 2016**
+##2.0 Patch Summary - June 7th, 2016
 Kushan and Taiidan have seen major changes to better reflect their Homeworld 1 Classic (hw1c) performance and for better balance against Hiigaran and Vaygr. Hiigaran and Vaygr are largely the same as in Homeworld 2 Classic (hw2c), but with several improvements and many tweaks for better balance vs hw1 races.
 
 Several features from hw1c have been brought back and added to all the races. Aggressive/Neutral/Evasive Stance's to boost damage or speed. Formation's have small damage/accuracy/speed modifiers for different ships. Balistic/simulation features, for example idle ships are generally a lot easier to hit than moving ships now. Useful scuttle blast damage for most ships. This all adds a lot of depth to the game.
 
-Harvesting for all races has been balanced. Hiigaran has stayed the same, Vaygr has been brought up to par (was about 5+% lower), Kushan now matches Hiig, and Taiidan has been brought up to par with Kushan.
+Harvesting for all races has been balanced. Hiigaran has stayed the same, Vaygr has been brought up to par (was about 5+% lower), Kushan is now closer Hiig, and Taiidan has been brought up to par with Kushan.
 
-## Hiigaran and Vaygr 
+
+
+
+### Hiigaran and Vaygr 
 I'll quote Scole on by far the biggest change: "Single tiered upgrades. Yes, there was a definite strategy between the original HW2 races that is lost but now there are two races without upgrades who must remain a viable play option. HW2 base stats for ships are higher than Classic and when upgraded ships usually fall close to where they would have been at the level 2 upgrade. For HW2 races this frees up Resources that can be used elsewhere. Vaygr, with their particularly expensive family-wide upgrades benefit from this."
 
 Fire Control Tower/Vaygr Command Corvette damage and accuracy boost lowered from 15% to 7%. Maximum damage/accuracy stack lowered from 40% to 20%. This was done to balance the late game vs hw1 races which don't have these.
 
 The new unit cap system counts fighters and corvettes by individual ship rather than by squad for consistency across all 4 races. This is a silent buff to ships with small squad sizes including: scouts, minelayers, and command corvettes.
 
-Hyperspace Inhibitors
-Cost 1500->1000 to balance vs hw1 races that can hyperspace from the start of the game
-
-Carrier Fighter/Corvette/Frigate Facilities
-Health up 40% to be closer to the mothership facilities health. This was to balance vs hw1 races which do not have subsystems.
-
-Capital Ship Facilities
-Health up 30% to make them stronger than fighter/corvette/frigate facilities and to balance vs hw1 races which do not have subsystems.
-
 Below I've listed anything notable that's changed more than 5%. Health/Speed changes are for fully upgraded ships. The move to single tiered upgrades caused many ship's health and speed to change by small percentages such as 1%-15%, and that's just how things shook out.
 
-Resource Collectors
-Health up 25% to balance vs hw1 collectors which start with far more health. Interceptor damage vs collectors was also increased to keep the early game hw2c balance.
+__Hyperspace Inhibitors__
+Cost 1500->1000 to balance vs hw1 races that can hyperspace from the start of the game
 
-Fighters
+__Carrier Fighter/Corvette/Frigate Facilities__
+Health +40% to be closer to the mothership facilities health. This was to balance vs hw1 races which do not have subsystems.
+
+__Capital Ship Facilities__
+Health +30% to make them stronger than fighter/corvette/frigate facilities and to balance vs hw1 races which do not have subsystems.
+
+__Resource Collectors__
+Health +25% to balance vs hw1 collectors which start with far more health. Interceptor damage vs collectors was also increased to keep the early game hw2c balance.
+
+__Fighters__
 The health of each hw2 fighter has gone up from 30 to 90, but the attack of their counters has also gone up to match. They have been balanced close to their prior performance. This was done to better balance the new features including formations and stances, and to improve battle outcome consistency. Balancing 30 hp one shot kill fighters became a fools errand with the new features.
 
-Scouts
+__Scouts__
 Cost: 350->300 was one of the final tweaks to balance vs hw1 races
 now unit capped at 18 (6 squads). Was necessary since they take up way less space in the new unit cap system.
 EMP duration 35->20 seconds. Idle ships now take way more damage, so EMP had to be adjusted.
 
-Interceptors/Assault Craft
+__Interceptors/Assault Craft__
 Cost: 500->450 was one of the final tweaks to balance vs hw1 races
 
-Bombers
+__Bombers__
 Health: up 50% more than interceptors are now, to improve survive-ability.
 Got a sizable attack buff. They should now be a better capital ship counter.
 
-Pulsar, Gunship, Missile and Laser Corvettes
-Health up 12%
+__Pulsar, Gunship, Missile and Laser Corvettes__
+Health +12%
 
-Destroyers
+__Shipyards__
+Speed +25%
+
+__Destroyers__
+Health -18%
+Health regen improved 28%
+Attack +5% vs frigates
 Reduced the size of the engine subsystems to minimize a hw2c issue where destroyers broadsiding each other would often absorb a lot of bullet damage with their engines.
 Unit cap: 7->5 (was 5 in hw2c)
 
-Battlecruisers
+__Battlecruisers__
+Health -22%
+Speed +6%
+Damage -28%
 Unit cap: 3->2
 
-Shipyards
-Speed up 25%
-
-Probes
+__Probes__
 Cost 150->70
 
-Proximity Sensors
+__Proximity Sensors__
 Cost 250->150
 
 
 
-## Hiigaran
 
-Resource Collectors
+### Hiigaran
+
+__Resource Collectors__
 Health Upgrade Costs 1200->800
 
-Resource Controllers
+__Resource Controllers__
 Health Upgrade Costs 1500->400
 
-Gun Platforms
+__Gun Platforms__
 Health Upgrade Costs 1300->700
-Health down 7%
-Speed down 20%
+Health -7%
+Speed -20%
 
-Ion Platforms
+__Ion Platforms__
 Health Upgrade Costs 1300->1200
-Health down 7%
-Speed down 20%
+Health -7%
+Speed -20%
 
-Scouts
+__Scouts__
 Generally all ship's base hull and speed increased, while fully upgraded stats stayed the same. This ship didn't have upgrades, so their base stats received a bump.
 Speed 460->512 (was 480 in hw2c)
 
-Interceptors
+__Interceptors__
 Speed Upgrades Costs are still 800, maybe the only upgrade that didn't change in price.
 
-Bombers
+__Bombers__
 Speed Upgrade Costs 800->600
 
-Gunship Corvettes
+__Gunship Corvettes__
 Attack buffed, this ship was under-powered.
 Health Upgrade Costs 1250->800
 Speed Upgrade Costs 800->400
 
-Pulsar Corvettes
+__Pulsar Corvettes__
 Attack balanced against Vaygr missile corvettes (corvettes had balance issues since release due to several bugs, and bug fixes)
 Health Upgrade Costs 1150->1200
 Speed Upgrade Costs 1050->600
 
-Minelayers
+__Minelayers__
 Health 400->900 Before they were easy to snipe since they weren't a squad of 3.
 
-Torpedo Frigates
+__Torpedo Frigates__
 Attack lowered vs fighters.
 Health Upgrade Costs 2200->1000
 Speed Upgrade Costs 1250->600
 
-Flak Frigates
+__Flak Frigates__
 Health Upgrade Costs 2200->1000
 Speed Upgrade Costs 1250->600
 
-Ion Frigates
+__Ion Frigates__
 Is now better able to shoot idle corvettes, like salvage corvettes.
 Health Upgrade Costs 2200->1000
 Speed Upgrade Costs 1250->600
 
-Marines
+__Marines__
 Fixed a hw2c oversight where every ship in the game had 100% accuracy vs marine/infiltrator frigates. Now they are treated as a regular frigates for accuracy calculations, which is a silent buff.
 Unit cap 5->6
 
-Defense Field Frigates
+__Defense Field Frigates__
 Generally all ship's base hull and speed increased, while fully upgraded stats stayed the same. This ship didn't have upgrades, so their base stats received a bump.
-Health up 11%
-Speed up 9%
+Health +11%
+Speed +9%
 Unit cap 4->2. It was 2 in hw2c, and stacking 4 DFF can be quite overpowered.
 The following changes incentivize more usage:
 Cost 1250->1000
 Build Speed 70->60 seconds
 Duration 20->32 seconds
 
-Destroyers
-Health Upgrade Costs: 2500->1500
-Speed Upgrade Costs: 2500->600
-Health down 18%
-Health regen improved 28%
-Attack up 5% vs frigates, and down 30% vs resource collectors.
-
-Battlecruisers
-Health Upgrade Costs: 5000->1500
-Speed Upgrade Costs: 2500->600
-Health down 22%
-Speed up 6%
-Attack down 28%
-
-Motherships
+__Motherships__
 Health Upgrade Costs 1250->1000
 Speed Upgrade Costs 1250->600
-Health down 33% (up 5% from hw2c)
-Speed down 7%
+Health -33% (+5% from hw2c)
+Speed -7%
 
-Carriers
+__Carriers__
 Health Upgrade Costs 1750->1000
 Speed Upgrade Costs 1500->600
-Health up 9%
+Health +9%
 
-Shipyards
+__Shipyards__
 Fixed a hw2c bug with their cloak module
 Health Upgrade Costs 2250->1000
 Speed Upgrade Costs 2000->600
-Health down 34% (now about the same as hw2c)
+Health -34% (now about the same as hw2c)
+
+__Destroyers__
+Health Upgrade Costs: 2500->1500
+Speed Upgrade Costs: 2500->600
+Attack -30% vs resource collectors.
+
+__Battlecruisers__
+Health Upgrade Costs: 5000->1500
+Speed Upgrade Costs: 2500->600
 
 
 
-## Vaygr
 
-Utility Ships
+### Vaygr
+
+__Utility Ships__
 Health Upgrade Costs 3600->1200
 
-Resource Collectors
+__Resource Collectors__
 RU load per trip 200->208
-Speed up 1.4%
+Speed +1.4%
 Now start with 7 collectors instead of 6 (Yes the Vaygr mothership is that bad at harvesting).
 
-Platforms
+__Platforms__
 Health Upgrade Costs 2600->1500
 
-Gun and Missile Platforms
-Health down 12%
-Speed down 20%
+__Gun and Missile Platforms__
+Health -12%
+Speed -20%
 
-Hyperspace Platforms
+__Hyperspace Platforms__
 Cost 750->375
-Speed up 8%
+Speed +8%
 Has a minor sensors distortion probe effect for itself only, to incentivize its use.
 
-Fighter Unit Cap
+__Fighter Unit Cap__
 In HWR Public it was 15 squads, but in hw2c it was 18 squads. Now its set to 108 individual fighters to target the hw2c balance. Build possibilities:
 4 scout squads (3 per squad) + 14 interceptor squads (7 per squad)
 16 interceptor squads (7 per squad)
 18 bomber squads (6 per squad)
 18 lance squads (5 per squad) + 3 interceptor squads (7 per squad)
 
-Fighters
+__Fighters__
 Speed Upgrade Costs 1600->1200
 
-Scouts
+__Scouts__
 Cost 350->300
-Speed down 7%
+Speed -7%
 EMP research cost 1000->1500 To balance the reduction of fighter speed upgrade costs and scout costs.
 
-Bombers
+__Bombers__
 Vaygr bomber damage has been improved to be closer to Hiig (longstanding hw2c issue)
 
-Lance Fighters
+__Lance Fighters__
 Attack buffed, was under-powered and very niche
 
-Corvettes
+__Corvettes__
 Health Upgrade Costs 2700->1600
 Speed Upgrade Costs 2400->1000
 
-Missile Corvettes
+__Missile Corvettes__
 Attack balanced against Hiigaran pulsar corvettes. (corvettes had balance issues since release due to several bugs, and bug fixes)
 
-Laser Corvettes
+__Laser Corvettes__
 Attack balanced close to hw2c performance vs frigs and capital ships. (corvettes had balance issues since release due to several bugs, and bug fixes)
 Fixed a bug where they lose DPS when corvette speed was upgraded.
 
-Minelayer Corvettes
+__Minelayer Corvettes__
 Base Health 400->900
 Upgraded Health 640->1,350
 Before they were easy to snipe since they weren't a squad of 3.
 
-Command Corvettes
+__Command Corvettes__
 Ping ability added, doesn't require any additional research
 Health increased 40% to match minelayer change
 Now flies around in battle instead of siting idle so they aren't such easy targets.
 Unit capped at 2. The new unit cap system is a silent buff to these, and too many command corvettes would have been quite unbalanced for the other races. Also now that battlecruisers are unit capped at 2, Hiigaran is unlikely to have more than 2 FCT's in a battle.
 
-Frigates
+__Frigates__
 Health Upgrade Costs 4400->2000
 Speed Upgrade Costs 2500->1200
 
-Assault Frigates
+__Assault Frigates__
 Attack buffed, this ship was under-powered
 Assault frigate research cost 650->500
-Health down 7%
+Health -7%
 
-Heavy Missile Frigates
+__Heavy Missile Frigates__
 Is now better able to shoot idle corvettes, like salvage corvettes.
-Range up 14% to prevent Hiig Ion frigates from kitting them.
+Range +14% to prevent Hiig Ion frigates from kitting them.
 
-Infiltrator Frigates
+__Infiltrator Frigates__
 Fixed a hw2c oversight where every ship in the game had 100% accuracy vs marine/infiltrator frigates. Now they are treated as a regular frigates for accuracy calculations, which is a silent buff.
 Generally all ship's base hull and speed increased, while fully upgraded stats stayed the same. However due to the above, Hiig marine frigates and Vaygr Infiltrator frigates didn't received any base speed/health changes. Since there's only one teir of upgrades now, this means the fully upgraded Vaygr infiltrator frigate is a bit lower than before:
-Speed down 7%
-Health down 12%
+Speed -7%
+Health -12%
 
-Capital Ships
+__Capital Ships__
 Health Upgrade Costs: 10,000->3,000
 Speed Upgrade Costs: 8,500->1,500
 
-Destroyers
-See above, upgrades are now 14,000ru cheaper
-Health down 18%
-Health regen improved 28%
-Attack up 5% vs frigates
+__Flagships__
+Health -35% (+9% from hw2c)
+Speed -7%
 
-Battlecruisers
-Range now matches Hiig battlecruiser to prevent kitting
-See above, upgrades are now 14,000ru cheaper
-Health down 22%
-Speed up 6%
-Damage down 28%
-
-Flagships
-Health down 35% (up 9% from hw2c)
-Speed down 7%
-
-Carriers
-Health up 29%
+__Carriers__
+Health +29%
 Cost 1700->1900
 Bombers got buffed, so we wanted to make sure fragile Vaygr carriers wouldn't go poof early game. Costs were notched up a bit since the health went up so much.
 
-Shipyards
-Health down 26% (now about the same as hw2c)
+__Shipyards__
+Health -26% (now about the same as hw2c)
+
+__Destroyers__
+See above, upgrades are now 14,000ru cheaper
+
+__Battlecruisers__
+Range now matches Hiig battlecruiser to prevent kitting
+See above, upgrades are now 14,000ru cheaper
 
 
 
-## Kushan and Taiidan
+
+### Kushan and Taiidan
 I'll quote Scole again here: "The [patch] contains edits to [hundreds of] files. The complexity of the interactions the changes have on the game would make itemizing every change lunacy so instead we will speak to some of the general changes... ...It will not and can not be an exhaustive, comprehensive list. You will have to play to really feel it out."
 
 Generally speaking, Kushan and Taiidan ships perform a lot closer to hw1c while being better balanced against Hiigaran and Vaygr. Below I've noted some of the more important changes, and provided some ship role/performance information.
@@ -333,503 +340,519 @@ Research costs/times adjusted to allow a hw1 player to choose to start at either
 
 Fighters and corvettes have received big speed buffs, to match upgraded hw2 ships.
 
-Scouts
-Cheap anti-fighter, not quite as strong as interceptors.
-
-Interceptors
-Balanced against hw2 interceptors when in formations. Tip: small formations like a Claw or X of about 5 ships, are going to perform better than lose ships not in a formation.
-
-Defenders
-Unit capped at 20
-
-Bombers
-Better at countering capital ships than before.
-No longer require plasma bomb research in multiplayer.
-
-Kushan Cloaked Fighters
-Anti-fighter, and good vs utility ships
-Unit capped at 20
-
-Taiidan Defense Fighters
-Still good at killing missiles, but not so overpowered vs Vaygr anymore.
-Unit capped at 10
-
-Repair Corvettes
-Repair is much better than before.
-No longer require any research like in hw1c.
-
-Salvage Corvettes
-Speed increased 150->255
-
-Light Corvettes
-Cheap anti fighter
-Just require corvette drive research like in hw1c.
-
-Multigun Corvettes
-Better anti-fighter
-
-Heavy Corvettes
-Anti-corvette balanced against pulsar corvettes and missile corvettes. Also pretty good vs frigates and capital ships.
-
-Minelayer Corvettes
-Health increased like hw2 minelayers were
-
-Support Frigate
-Repair is much better than before, your going to want to use these.
-
-Assault Frigates
-Anti-corvette, not very good vs fighters unless they are trapped in a gravity well. Pretty good vs frigates too.
-Health and speed changed closer to upgraded Hiig/Vaygr frigates:
-Health up 72%
-Speed up 47%
-
-Ion Frigates
-Health and speed changed closer to upgraded Hiig/Vaygr frigates:
-Health up 53%
-Speed up 27%
-Attack: balanced against Hiig ion frigates
-
-Kushan Drone Frigates
-Shreds interceptors pretty fast, pretty good vs corvettes too.
-Drone duration greatly increased.
-
-Taiidan Field Frigate
-Now equipped with a new field that's always on.
-Unit capped at 2, as 2 of these stacked stops 95+% of bullets. Like in hw1c, these don't block ions or missiles.
-
-Destroyers
-Now requires Ion Cannon research due to their Ion based weaponry, like in hw1c.
-Now requires Super Heavy Chassis (carriers and destroyers were swapped in the tech tree)
-Built Time 178->160 seconds (between hw2 destroyers with and without improved manufacturing research)
-Health up 10%
-Health regen improved 42%
-Speed up 41%
-Unit capped at 5
-Attack balanced against hw2 destroyers. 
-
-Missile Destroyers
-Good vs fighters and corvettes now
-Unit capped at 2
-
-Heavy Cruisers
-Now requires Ion Cannon research due to their Ion based weaponry, like in hw1c.
-Cost 3600->4500
-Built Time 293->250 seconds (between hw2 cruisers with and without improved manufacturing research)
-Health up 20%
-Health regen improved 20%
-Speed up 27%
-Unit capped at 2
-Balanced to be a bit weaker than hw2 battlecruisers. However these are very strong when combined with repair units.
-
-Resource Collectors
+__Resource Collectors__
 Built Time 60->50 seconds
-Health down 17%
+Health -17%
 Can now hyperspace
 
-Resource Controllers
+__Resource Controllers__
 No longer requires any research.
 Can now support 8 resource collectors, and is much closer to the performance of their hw2 equivalents.
 
-Gravity Wells
+__Scouts__
+Cheap anti-fighter, not quite as strong as interceptors.
+
+__Interceptors__
+Balanced against hw2 interceptors when in formations. Tip: small formations like a Claw or X of about 5 ships, are going to perform better than lose ships not in a formation.
+
+__Defenders__
+Unit capped at 20
+
+__Bombers__
+Better at countering capital ships than before.
+No longer require plasma bomb research in multiplayer.
+
+__Kushan Cloaked Fighters__
+Anti-fighter, and good vs utility ships
+Unit capped at 20
+
+__Taiidan Defense Fighters__
+Still good at killing missiles, but not so overpowered vs Vaygr anymore.
+Unit capped at 10
+
+__Repair Corvettes__
+Repair is much better than before.
+No longer require any research like in hw1c.
+
+__Salvage Corvettes__
+Speed increased 150->255
+
+__Light Corvettes__
+Cheap anti fighter
+Just require corvette drive research like in hw1c.
+
+__Multigun Corvettes__
+Better anti-fighter
+
+__Heavy Corvettes__
+Anti-corvette balanced against pulsar corvettes and missile corvettes. Also pretty good vs frigates and capital ships.
+
+__Minelayer Corvettes__
+Health increased like hw2 minelayers were
+
+__Support Frigate__
+Repair is much better than before, your going to want to use these.
+
+__Assault Frigates__
+Anti-corvette, not very good vs fighters unless they are trapped in a gravity well. Pretty good vs frigates too.
+Health and speed changed closer to upgraded Hiig/Vaygr frigates:
+Health +72%
+Speed +47%
+
+__Ion Frigates__
+Health and speed changed closer to upgraded Hiig/Vaygr frigates:
+Health +53%
+Speed +27%
+Attack: balanced against Hiig ion frigates
+
+__Kushan Drone Frigates__
+Shreds interceptors pretty fast, pretty good vs corvettes too.
+Drone duration greatly increased.
+
+__Taiidan Field Frigate__
+Now equipped with a new field that's always on.
+Unit capped at 2, as 2 of these stacked stops 95+% of bullets. Like in hw1c, these don't block ions or missiles.
+
+__Motherships__
+Hyperspace costs increased from 500base/1300max to 1000base/1500max. This better balances hw1's ability to hyperspace from the very start of the game.
+
+__Carriers__
+Health +37%
+No longer requires super heavy chassis research. This gives players more flexibility in choosing their next upgrade path, and provides better balance vs hw2 races.
+
+__Destroyers__
+Now requires Ion Cannon research due to their Ion based weaponry, like in hw1c.
+Now requires Super Heavy Chassis (carriers and destroyers were swapped in the tech tree)
+Built Time 178->160 seconds (between hw2 destroyers with and without improved manufacturing research)
+Health +10%
+Health regen improved 42%
+Speed +41%
+Unit capped at 5
+Attack balanced against hw2 destroyers. 
+
+__Missile Destroyers__
+Good vs fighters and corvettes now
+Unit capped at 2
+
+__Heavy Cruisers__
+Now requires Ion Cannon research due to their Ion based weaponry, like in hw1c.
+Cost 3600->4500
+Built Time 293->250 seconds (between hw2 cruisers with and without improved manufacturing research)
+Health +20%
+Health regen improved 20%
+Speed +27%
+Unit capped at 2
+Balanced to be a bit weaker than hw2 battlecruisers. However these are very strong when combined with repair units.
+
+__Gravity Wells__
 Research cost 700->500
-Health up 33%
+Health +33%
 Hyperspace inhibitor effect range increased to be closer to the hw2 hyperspace inhibitor range
 Gravity well ability range reduced to more closely match the hw1c range.
 Ability duration 90->45 seconds (Idle ships now take way more damage)
 No recharge like in hw1c, however the ability can be turned on/off at any time.
 Now always reduce enemy accuracy within their inner ring. Basically the opposite of a fire control tower for accuracy, due to the gravity distortion.
 
-Motherships
-Hyperspace costs increased from 500base/1300max to 1000base/1500max. This better balances hw1's ability to hyperspace from the very start of the game.
-
-Carriers
-Health up 37%
-No longer requires super heavy chassis research. This gives players more flexibility in choosing their next upgrade path, and provides better balance vs hw2 races.
-
 Note: For ship health I've provided the actual effective health, what's displayed in game can be off by 20% sometimes due to armor damage modifiers.
 [/details]
 
-## 2.1 Patch Balance Changes
+
+
+
+# 2.1 Patch Balance Changes
 [details=Click to view]
-**2.1 Patch Summary - June 10th, 2016**
+##2.1 Patch Summary - June 10th, 2016
 This was a minor patch, released a few days after the massive 2.0 Patch.
 
-**Hiigaran and Vaygr**
+###Hiigaran and Vaygr
 Fixed an attack style issue for battlecruisers vs frigates.
 
-**Hiigaran**
+###Hiigaran
 The following minor tweaks better balance Hiigaran upgrades against Vaygr upgrades.
 
-Gun Platforms
+__Gun Platforms__
 Health Upgrade Costs 700->800
 
-Ion Platforms
+__Ion Platforms__
 Health Upgrade Costs 1200->800
 
-Pulsar Corvettes
+__Pulsar Corvettes__
 Health Upgrade Costs 1200->1000
 
-**Kushan and Taiidan**
-Kushan Cloaked Fighters
-Research Time down 50%
+###Kushan and Taiidan
+__Research Ship__
+Health +50% (to match time to kill a homeworld 2 research module with interceptors. Note: This change only affected Kushan by mistake)
+
+__Kushan Cloaked Fighters__
+Research Time -50%
 Build Time 10->15 seconds
 
-Taiidan Defense Fighters
-Research Time down 50%
+__Taiidan Defense Fighters__
+Research Time -50%
 Build Time 12->18 seconds
-Speed up 13% (to match interceptors)
+Speed +13% (to match interceptors)
 
-Multigun Corvettes
-Research Time down 33%
+__Multigun Corvettes__
+Research Time -33%
 Build Time 25->22 seconds
 
-Heavy Corvettes
-Research Time down 45%
+__Heavy Corvettes__
+Research Time -45%
 Build Time 25->22 seconds
-
-Research Ship (Kushan only by mistake)
-Health up 50% (to match time to kill a homeworld 2 research module with interceptors)
 [/details]
 
 
-## 2.205 Patch Changes
+
+
+# 2.205 Patch Changes
 [details=Click to view]
-**2.205 Patch Summary - July 5th, 2016**
+##2.205 Patch Summary - July 5th, 2016
 Gearbox's 2.205 [Patch Preview](http://forums.gearboxsoftware.com/t/announcement-public-patch-preview/1512431/1) resolved most of the [2.1 Patch Balance Issues](https://forums.gearboxsoftware.com/t/2-1-patch-balance-issues/1512184/1). Unfortunately Gearbox ended support for HWR prior to rolling this out as a full patch. The 2.205 Patch Preview can be opted into on Steam as a beta, or downloaded as part of the 2.3 Players Patch.
 
-## Hiigaran and Vaygr 
-Gunplats
-Damage vs fighters up 100% (A typo gave them less damage than intended)
-Damage vs hw2 resource collectors down 43%
+### Hiigaran and Vaygr 
+__Gunplats__
+Damage vs fighters +100% (A typo gave them less damage than intended)
+Damage vs hw2 resource collectors -43%
 Accuracy vs frigates and capital-ships 40%->80%
 
-Interceptors/Assault Craft
-Damage vs corvettes down 31%
-Damage vs frigs and capital-ships down 60%
-Damage vs subsystems up 40%
+__Interceptors/Assault Craft__
+Damage vs corvettes -31%
+Damage vs frigs and capital-ships -60%
+Damage vs subsystems +40%
 
-Bombers
+__Bombers__
 Accuracy vs corvettes 80%->20%
-Damage vs frigates up 40%
+Damage vs frigates +40%
 
-Destroyers
+__Destroyers__
 Normal Unit Caps 5->6
-Health up 6%
+Health +6%
 
-Battlecruisers
-Health up 13%
+__Battlecruisers__
+Health +13%
 
-Platform Modules on carriers
-Health up 25%
+__Platform Modules on carriers__
+Health +25%
 
-Fighter, Corvette, and Frigate Modules on carriers
-Health down 11%
+__Fighter, Corvette, and Frigate Modules on carriers__
+Health -11%
 
-Motherships/Carriers/Shipyards/Resource Controllers
-Damage vs hw2 resource collectors down 45%
+__Motherships/Carriers/Shipyards/Resource Controllers__
+Damage vs hw2 resource collectors -45%
 
 
-## Hiigaran
-Ion Platforms
+
+
+### Hiigaran
+__Ion Platforms__
 Damage vs idle fighters/probes increased a lot
 
-Gunship Corvettes
-Damage vs fighters up 13%
+__Gunship Corvettes__
+Damage vs fighters +13%
 
-Pulsar Corvettes
+__Pulsar Corvettes__
 Damage vs fighters/probes increased 100%
 
-Torpedo Frigates
+__Torpedo Frigates__
 Damage vs hw2 resource collectors increased 30% (only helps vs upgraded hw2 collectors)
 Damage vs fighters/probes increased 100%
 
-Flak Frigates
+__Flak Frigates__
 Damage vs hw1 fighters increased 64% (results in a decent buff)
 
-Battlecruisers
-Range up 3%
+__Battlecruisers__
+Range +3%
 Fixed an issue where the hiigaran battlecruiser would sometimes sit pointed 10 degrees up or down vs a target on the same vertical level - causing the nose of the ship to block one ion turret from attacking.
 
-Motherships
+__Motherships__
 Health Upgrade Cost 1000->800
 Speed Upgrade Cost 600->400
 
-Carriers
+__Carriers__
 Health Upgrade Cost 1000->800
 Speed Upgrade Cost 600->400
 
-Shipyards
+__Shipyards__
 Build Time 85->75 seconds (was 75 in hw2c)
 Health Upgrade Cost 1000->800
 Speed Upgrade Cost 600->400
-Health Upgrade Research Time down 50%
+Health Upgrade Research Time -50%
 
 
-## Vaygr
+
+
+### Vaygr
 Re-balanced the Vaygr unit caps, to allow for fair transferring between players of different races. Interceptors/Bombers now count as 5 supply, and Missle/Laser Corvettes count now as 3 supply. Unit caps have been updated appropriately.
 
-Missile Corvettes
-Damage vs fighters down 55% (they now perform closer to hw2c)
+__Missile Corvettes__
+Damage vs fighters -55% (they now perform closer to hw2c)
 Fixed a bug where they would deal zero damage to probes
 
-Laser Corvettes
+__Laser Corvettes__
 Fixed a bug with the attack script where laser corvettes would start doing evasive maneuvers and rarely attacking. This bug fix makes laser corvettes much more effective.
 
-Assault Frigates
+__Assault Frigates__
 Cost 500->650 (was 650 in hw2c)
-Research Time up 12% (to same as hw2c)
-Damage vs Hiig/Vaygr fighters down 50% (results in a small nerf)
-Damage vs hw1 fighters up 400% (results in a decent buff)
+Research Time +12% (to same as hw2c)
+Damage vs Hiig/Vaygr fighters -50% (results in a small nerf)
+Damage vs hw1 fighters +400% (results in a decent buff)
 
-Battlecruisers
-Trinity Cannon Range up 1%
-Overall Damage vs capital-ships down 6% (with no micro, makes 1 hiigaran cruiser vs 1 vaygr cruiser consistently come out even like in hw2c. With micro, vaygr can slightly out-range hiigaran and win.)
+__Battlecruisers__
+Trinity Cannon Range +1%
+Damage vs capital-ships -6% (with no micro, makes 1 hiigaran cruiser vs 1 vaygr cruiser consistently come out even like in hw2c. With micro, vaygr can slightly out-range hiigaran and win.)
 
-Carriers
+__Carriers__
 Cost 1900->2100
 
-Capital Ship Health Upgrade
+__Capital Ship Health Upgrade__
 Cost 3000->4000 (to balance vs Hiig)
-Research Time up 5%
+Research Time +5%
 
-Capital Ship Speed Upgrade
+__Capital Ship Speed Upgrade__
 Cost 1500->2000 (to balance vs Hiig)
-Research Time up 33%
+Research Time +33%
 
-## Kushan and Taiidan
-Scouts
-Damage vs fighters down 50% (A typo gave them twice their intended damage, causing major balance issues)
-Damage vs corvettes down 31%
-Damage vs frigates and capital-ships down 50%
+### Kushan and Taiidan
+__Scouts__
+Damage vs fighters -50% (A typo gave them twice their intended damage, causing major balance issues)
+Damage vs corvettes -31%
+Damage vs frigates and capital-ships -50%
 
-Interceptors
-Damage vs corvettes down 31%
-Damage vs frigates and capital-ships down 50%
-Damage vs subsystems up 40%
+__Interceptors__
+Damage vs corvettes -31%
+Damage vs frigates and capital-ships -50%
+Damage vs subsystems +40%
 
-Bombers
+__Bombers__
 Accuracy vs corvettes 80%->20%
-Damage vs frigates up 40%
+Damage vs frigates +40%
 
-Defenders
-Speed up 53%
+__Defenders__
+Speed +53%
 
-Corvettes
+__Corvettes__
 Now move around a little more in combat.
 
-Light Corvettes
-Damage vs fighters up 20%
+__Light Corvettes__
+Damage vs fighters +20%
 
-Multi-Gun Corvettes
-Damage vs fighters up 38%
+__Multi-Gun Corvettes__
+Damage vs fighters +38%
 
-Heavy Corvettes
+__Heavy Corvettes__
 Cost 315->285
-Damage vs hw2 corvettes down 9%
+Damage vs hw2 corvettes -9%
 
-Assault Frigates
-Capital Ship Chassis Research: Research Time down 160->120 (allows hw1 to get assault frigates faster)
-Damage vs corvettes down 50%
-Damage vs hw2 resource collectors down 25%
+__Assault Frigates__
+Capital Ship Chassis Research Time down 113->85 (allows hw1 to get assault frigates faster)
+Damage vs corvettes -50%
+Damage vs hw2 resource collectors -25%
 
-Ion Frigates
-Ion Cannon Research: Research Time up 50->90 (same timing, considering the capital ship chassis research buff)
-Damage vs frigates down 24% (they still beat hw2 ion frigates with 10% health left. This was a big oversight in balance testing the 2.0 patch.)
+__Ion Frigates__
+Ion Cannon Research Time up 35->64 (same timing, considering the capital ship chassis research buff)
+Damage vs frigates -24% (they still beat hw2 ion frigates with 10% health left. This was a big oversight in balance testing the 2.0 patch.)
 
-Destroyers
+__Motherships__
+Damage vs fighters +25%
+Can now target any ship (previously couldn't target some ships)
+
+__Carriers__
+Damage vs fighters +25%
+Damage vs hw2 resource collectors -45%
+Can now target any ship (previously couldn't target some ships)
+
+__Destroyers__
 Normal Unit Caps 5->6
 Cost 1800->2500 (to balance vs hw2 destroyer ship and upgrade costs)
-Health up 7%
+Health +7%
 
-Gravity Wells
+__Gravity Wells__
 Now uses frigate armour (this is generally a health buff)
-Research Time down 50% (to allow hw1 to get hyperspace inhibitors faster)
+Research Time down 71->35 (to allow hw1 to get hyperspace inhibitors faster)
 Ability Duration 45->30 seconds
-Ability Range down 20%
+Ability Range -20%
 
-Cloak Generators
-Speed up 45%
+__Cloak Generators__
+Speed +45%
 
-Motherships
-Damage vs fighters up 25%
-Can now target any ship (previously couldn't target some ships)
-
-Carriers
-Damage vs fighters up 25%
-Damage vs hw2 resource collectors down 45%
-Can now target any ship (previously couldn't target some ships)
 
 ## Bug Fixes
 Fixed Hiigaran Mothership visual errors, mainly the badge being cut off.
 Fixed the Turanic Carrier Engine missing icon.
 [/details]
 
-## 2.3 Players Patch Changes
-[details=Click to view]
-**2.3 Players Patch Summary - March 8, 2018 Update**
-The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/homeworld-remastered-2-3-players-patch/1639142/1) resolves many balance issues and bugs from the 2.1 Patch. It includes the changes from Gearbox’s unfinished 2.205 Patch Preview, plus many additional improvements. It enhances multiplayer and singleplayer while respecting Gearbox's direction, and the feel of Relic's classics. Notably it fixes the 666 Formation Bug and is authored by the players who helped Gearbox balance Homeworld Remastered.
 
-## Gameplay and UI Options
+
+
+# 2.3 Players Patch Changes
+[details=Click to view]
+## 2.3 Players Patch Summary - March 8, 2018 Update
+The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/homeworld-remastered-2-3-players-patch/1639142/1) resolves many balance issues and bugs from the 2.1 Patch. It includes the changes from Gearbox’s unfinished 2.205 Patch Preview, plus many additional improvements. It enhances multiplayer and singleplayer while respecting Gearbox's direction, and the feel of Relic's classics. Notably it fixes the 666 Formation Bug, the Cross Race Docking Bug, and is authored by the players who helped Gearbox balance Homeworld Remastered.
+
+
+
+## Gameplay Options and Features
 Gearbox/Relic partially developed some of these options, but never implemented them in the game. By popular demand, they have now been added to HWR:
-Added a Vast unit cap option. This is double the size of Huge, and only recommended for very fast machines.
-Added a Mission Difficulty adjuster. At the start of each campaign mission, extra enemy AI reinforcement ships and RU are added based on your fleet size and RU. This dynamic scaling difficulty can now be adjusted.
-Added a Camera Pan Speed adjuster. This lets players increase the camera speed to move around maps faster with the arrow keys and edge of screen mouse pan.
-Added a Camera Max Zoom adjuster. This lets players increase the maximum distance the camera can zoom out before having to use the sensors manager.
-Added a Build/Research/Launch Panel adjuster. This lets players set and save the size of the Build/Research/Launch menus in the options. Previously these were adjustable, but their size was not saved across games.
+-Added a Vast unit cap option. This is double the size of Huge, and only recommended for very fast machines.
+-Added a Mission Difficulty adjuster. At the start of each campaign mission, extra enemy AI reinforcement ships and RU are added based on your fleet size and RU. This dynamic scaling difficulty can now be adjusted.
+-Added a Camera Pan Speed adjuster. This lets players increase the camera speed to move around maps faster with the arrow keys and edge of screen mouse pan.
+-Added a Camera Max Zoom adjuster. This lets players increase the maximum distance the camera can zoom out before having to use the sensors manager.
+-Added a Build/Research/Launch Panel adjuster. This lets players set and save the size of the Build/Research/Launch menus in the options. Previously these were adjustable, but their size was not saved across games.
+
+
 
 ## HWR Bugs Fixes and Improvements
-Fixed the build/research/launch menu scaling problem, that primarily affects 4k resolutions
-Fixed the build and research queue pause buttons, so that they no longer get disabled
-Improved the spacing in the build/research queues for better readability.
-Fixed the race specific research tabs, so that they are hidden based on the race your playing
-Fixed Hiigaran Gunship weapon sound effects (they were playing pulsar sounds)
-Fixed Taiidan Resource Controller nlips clipping (docked collectors would appear inside the controller when zoomed out)
-The 'Research Ship Complete' audio is now played after each additional Kushan/Taiidan Research Ship Hub is built.
-Kushan Research Ship's with all six hubs, now spin like they did in hw1c.
-Kushan/Taiidan corvettes now respond quickly to certain attack orders, without a long delay.
-Removed Kushan/Taiidan repair ships from military selection priority.
-Fixed Kushan and Taiidan Repair Corvette sound effects (so they no longer play gun noises while repairing)
-Fixed the major cross race docking bug on the Kushan Support Frigate.
-Fixed Kushan Destroyer ion cannon sound effects
-Fixed the player colors on the Kushan Heavy Cruiser ion turrets.
-Fixed Taiidan's Emperor voice, when playing the 'Homeworld 1 Deathmatch' game type (it was playing Vaygr's Makaan voice)
-In the Strikecraft & Support Only game mode, Kushan Drone Technology research is now disabled as intended.
-In the Strikecraft & Support Only game mode, Vaygr carrier health now matches the other races as intended.
+-Fixed the build/research/launch menu scaling problem, that primarily affects 4k resolutions
+-Fixed the build and research queue pause buttons, so that they no longer get disabled
+-Improved the spacing in the build/research queues for better readability.
+-Fixed the race specific research tabs, so that they are hidden based on the race your playing
+-Fixed Hiigaran Gunship weapon sound effects (they were playing pulsar sounds)
+-Fixed Taiidan Resource Controller nlips clipping (docked collectors would appear inside the controller when zoomed out)
+-The 'Research Ship Complete' audio is now played after each additional Kushan/Taiidan Research Ship Hub is built.
+-Kushan Research Ship's with all six hubs, now spin like they did in hw1c.
+-Kushan/Taiidan corvettes now respond quickly to certain attack orders, without a long delay.
+-Removed Kushan/Taiidan repair ships from military selection priority.
+-Fixed Kushan and Taiidan Repair Corvette sound effects (so they no longer play gun noises while repairing)
+-Fixed Kushan Destroyer ion cannon sound effects
+-Fixed the player colors on the Kushan Heavy Cruiser ion turrets.
+-Fixed Taiidan's Emperor voice, when playing the 'Homeworld 1 Deathmatch' game type (it was playing Vaygr's Makaan voice)
+-In the Strikecraft & Support Only game mode, Kushan Drone Technology research is now disabled as intended.
+-In the Strikecraft & Support Only game mode, Vaygr carrier health now matches the other races as intended.
+-Reduced the amount of small low-RU debris for destroyers and cruisers. This improves the game's performance in long games.
 More details on HWR's bugs can be found here: https://forums.gearboxsoftware.com/t/hwr-bugs-solutions/1639765/1
 
+
+
+## Campaign Improvements
+__Homeworld 1__
+-Updated the parade formations to better handle salvaged ships.
+-Fixed the turanic missile corvette's missile burn effects.
+-Increased turanic ion array frigate speed to be relatively similar to hw1c.
+-Properly balanced kushan ships vs swarmers to better reflect hw1c gameplay. Corrected swarmer behavior so they dock correctly, and don't stop attacking unexpectedly.
+__Mission 3__
+Increased the cryo tray health to be closer to hw1c gameplay. (Gearbox increased the health on most Kushan/Taiidan ships to balance vs Hiigaran/Vaygr upgrades, but forgot some campaign only ships).
+__Mission 4__
+The objective is now complete as soon as the carrier is killed, rather than after the explosion animation finishes (to prevent a timing error).
+__Mission 7__
+The enemy AI reinforcements now work properly based on your starting fleet value.
+Fixed an issue where the multi-gun corvette research sometimes doesn't get enabled. 
+__Mission 8__
+Increased kadesh multi-beam frigate health and speed to be relatively similar to hw1c.
+Lowered the accuracy of the kadesh mothership ion cannons vs moving fighters and corvettes.
+Kadesh ships now properly defend the final area like in hw1c.
+__Mission 10__
+Fixed the camera location at the start of the mission.
+
+__Homeworld 2__
+__Mission 2__
+The mothership's engine speed now matches the audio cues and hw2c.
+The transport ships' speed now increases after events as they did hw2c. 
+Increased Captain Soban's weapon damage to match hw2c.
+
+
+
 ## Balance
-The bulk of the balance changes are from Gearbox's 2.205 Patch Preview, as described above. Additional changes are listed below.
+Many of the balance changes are from Gearbox's 2.205 Patch Preview, as described above. Additional changes are listed below.
 
-## All Races
-Fixed the major [666 Formation Targeting Bug](https://forums.gearboxsoftware.com/t/666-formation-targeting-bug/1541832/1) - Formations and squadrons now perform as they were intended to!
 
-With the 666 bug resolved, all fighters went through a very thorough balance testing process. Tweaks were made as needed to align them with intended balance that Gearbox and the balance testers had crafted.
 
-Reduced the amount of small low-RU debris for destroyers and cruisers. This improves the game's performance in long games.
+### All Races
+-Fixed the major [666 Formation Targeting Bug](https://forums.gearboxsoftware.com/t/666-formation-targeting-bug/1541832/1) - Formations and squadrons now perform as they were intended to!
+-With the 666 bug resolved, all fighters and corvettes went through a very thorough balance testing process. Tweaks were made as needed to align them with intended balance that Gearbox and the balance testers had crafted.
+-Hyperspace exit damage lowered from 25% to 10%, when running into a hyperspace inhibitor
+-High Unit Caps adjusted so cruisers are capped at 3, rather than 4.
+-Lowered death/scuttle blast range on carriers and battle cruisers (so fighters and corvettes can better survive capital ship battles)
+-Kamikaze damage adjusted on some units to close potential exploits, and resolve typos.
 
-Hyperspace exit damage lowered from 25% to 10%, when running into a hyperspace inhibitor
+__Probes__
+Cost 70->100 +43% (half way between hw1c and hw2c)
+Health 800->400 -50% (its now half way between hw1c and hw2c, as some ships were taking too long just to kill a probe.)
 
-Probe cost 70->100 (half way between hw1c and hw2c)
-All probe health down 50% (its now half way between hw1c and hw2c, as some ships were taking too long just to kill a probe.)
 
-High Unit Caps: Cruisers 4->3
 
-## Hiigaran and Vaygr 
-Resource Collectors
-Kamikaze damage up 500% (a typo gave them much less damage than intended)
-Default stance is now Evasive (Evasive stance provides slightly faster harvesting)
+### Hiigaran and Vaygr 
+__Gun Platforms__
+Speed 100->125 +25% (to match hw2c)
 
-Gun Platforms, Ion Platforms, Missile Platforms
-Speed up 25% (to match hw2c)
+__Ion Platforms, Missile Platforms__
+Speed 100->125 +25% (to match hw2c)
+Damage -16% (same as hw2c)
 
-Carriers and Battle Cruisers
-Death/scuttle blast range down some (so fighters and corvettes can better survive capital ship battles)
 
-## Hiigaran
-Ion Platforms
-Damage down 17% (same as hw2c)
 
-Bombers
+
+### Hiigaran
+__Bombers__
 Speed Upgrade Costs 600->400 (to balance vs Vaygr)
 Hiigaran bombers now check their line of fire like the other races do, to avoid friendly fire incidents
 
-Gunship Corvettes
-Kamikaze damage down 20%
+__Pulsar Corvettes__
+Damage vs hw2 corvettes -33% (to balance vs Vaygr)
 
-Pulsar Corvettes
-Damage vs hw2 corvettes down 33% (to balance vs Vaygr)
+__Defense Field Frigates__
+Cost 1000->1250 +25% (to match hw2c)
+Build Time 60->70 +17% (to match hw2c)
 
-Defense Field Frigates
-Cost 1000->1250 (to match hw2c)
-Build Time 60->70 (to match hw2c)
-
-Shipyards
+__Shipyards__
 Addressed a gun alignment bug. They were shooting to the side of their targets, and rarely landing hits vs small targets like probes, fighters, and corvettes.
 
-## Vaygr
-Platforms
+
+
+### Vaygr
+__Platforms__
 Health Upgrade Costs 1500->1600 (to balance vs Hiigaran)
 
-Missile Platforms
-Damage down 15% (same as hw2c)
-
-Scouts
+__Scouts__
 Addressed a gun alignment bug. They were shooting to the side of their targets, and rarely landing hits vs small targets like probes and fighters.
 
-Corvettes
+__Corvettes__
 Health Upgrade Costs 1600->1800 (to balance vs Hiigaran)
 
-Missile Corvettes
-Kamikaze damage down 40% (to close a potential exploit)
-
-Laser Corvettes
-Kamikaze damage down 14% (to close a potential exploit)
+__Laser Corvettes__
 Laser Corvettes were the only corvettes negatively impacted by the 666 Bug. They are now performing as intended: the best anti-frigate and anti-capital ship corvette in the game.
 
-Heavy Missile Frigates
-Range down 6% (closer to hw2c)
+__Heavy Missile Frigates__
+Range -6% (closer to hw2c)
 
-## Kushan and Taiidan
-Resource Collectors
-Kamikaze damage up 400% (a typo gave them much less damage than intended)
-Default stance is now Evasive
 
-Research Ship
-Speed up 55%
-Taiidan Health up 50% to match Kushan Health (to fix a mistake from the 2.1 patch)
 
-Scouts
+### Kushan and Taiidan
+-Corvettes now move around their targets a lot more in combat (similar to hw1c)
+
+__Research Ship__
+Speed 100->155 +55%
+Taiidan Health 30k->45k +50% (to match Kushan Health and fix a mistake from the 2.1 patch)
+
+__Scouts__
 Kushan and Taiidan Scouts are now balanced, previously Kushan would always win. (Not intended)
 
-Interceptors
+__Interceptors__
 Kushan and Taiidan Interceptors are now balanced, previously Taiidan would always win. (Not intended)
 
-Corvettes
-Now move around their targets a lot more in combat (similar to hw1c)
+__Multi-Gun Corvettes__
+Research time 28->18sec -36%
+Cost 300->235 -22% (general buff, and to balance vs Hiigaran/Vaygr)
 
-Multi-Gun Corvettes
-Cost 300->235
-Research time down 36%
-(general buffs, and to balance vs Hiigaran/Vaygr)
-
-Heavy Corvettes
-No longer prioritize attacking fighters (since they aren't very good vs fighters)
+__Heavy Corvettes__
+Research time 21->14sec -33%
+Cost 285->240 -16% (general buff, and to balance vs Hiigaran/Vaygr)
+Build time 22->20 -9%
 Kushan and Taiidan Heavy Corvettes are now balanced, previously Taiidan would always win. (Not intended)
-Cost 285->240
-Build time down 9%
-Research time down 33%
-(general buffs, and to balance vs Hiigaran/Vaygr)
+No longer prioritize attacking fighters (since they aren't very good vs fighters)
 
-Destroyers
-Build Time 160->145 seconds (to balance vs Hiigaran/Vaygr)
+__Destroyers__
+Build Time 160->145 -9% seconds (to balance vs Hiigaran/Vaygr)
 
-Missile Destroyers
-Damage vs hw1 corvettes down 40% (now performs similar vs hw1 and hw2 corvettes)
-Speed up 12% (relatively similar to hw1c)
+__Missile Destroyers__
+Damage vs hw1 corvettes -40% (now performs similar vs hw1 and hw2 corvettes)
+Speed 130->145 +12% (relatively similar to hw1c)
 
-Sensors Array
-Speed up 72% (relatively similar to hw1c)
+__Sensors Array__
+Speed 90->155 +72% (relatively similar to hw1c)
 
-Gravity Well Generators
+__Gravity Well Generators__
 Can now be repaired (like in hw1c)
 
-Cloak Generators
-Ability range up 100%
-
-## Campaign Missions
-In Homeworld 1, updated the parade formations to better handle salvaged ships.
-In Homeworld 1 mission 2 & 4, fixed the turanic missile corvette's missile burn effects.
-In Homeworld 1 mission 3, increased the cryo tray health to be closer to hw1c gameplay. (Gearbox increased the health on most Kushan/Taiidan ships to balance vs Hiigaran/Vaygr upgrades, but forgot some campaign only ships).
-In Homeworld 1 mission 4, increased turanic ion array frigate speed to be relatively similar to hw1c.
-In Homeworld 1 mission 4, the objective is now complete as soon as the carrier is killed, rather than after the explosion animation finishes (to prevent a timing error).
-In Homeworld 1 mission 7 & 8, properly balanced kushan ships vs swarmers to better reflect hw1c gameplay. Corrected swarmer behavior so they dock correctly, and don't stop attacking unexpectedly.
-In Homeworld 1 mission 7, the enemy AI reinforcements now work properly based on your starting fleet value.
-In Homeworld 1 mission 7, fixed an issue where the multi-gun corvette research sometimes doesn't get enabled. 
-In Homeworld 1 mission 8, increased kadesh multi-beam frigate health and speed to be relatively similar to hw1c.
-In Homeworld 1 mission 8, lowered the accuracy of the kadesh mothership ion cannons vs moving fighters and corvettes.
-In Homeworld 1 mission 8, kadesh ships now properly defend the final area like in hw1c.
-In Homeworld 1 mission 10, fixed the camera location at the start of the mission.
-In Homeworld 2 mission 2, the mothership's engine speed now matches the audio cues and hw2c.
-In Homeworld 2 mission 2, the transport ships' speed now increases after events as they did hw2c. 
-In Homeworld 2 mission 2, increased Captain Soban's weapon damage to match hw2c.
+__Cloak Generators__
+Ability range +100%
 [/details]
