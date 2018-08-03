@@ -28,9 +28,8 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 __Homeworld 1__
 -Fixed a rules of engagement bug that caused many Turanic, Kadeshi, and Junkyard ships to sometimes stop attacking unexpectedly and behave passively.
 -Updated research costs to match multiplayer, and research times to 1.5x slower than multiplayer (the campaign research is slower paced). These hadn't been updated since HWR v1.0. Mission resources were also adjusted to support the changes.
+-Captured Turanic Standard Corvettes can now be repaired.
 -Captured Turanic Ion Array Frigates and Kadeshi Multi-beam Frigates can now be retired immediately.
-__Mission 2__
-Captured Turanic Heavy Corvettes can now be repaired.
 
 __Homeworld 2__
 -Fixed a rules of engagement bug that caused Keeper ships to sometimes stop attacking unexpectedly and behave passively.
