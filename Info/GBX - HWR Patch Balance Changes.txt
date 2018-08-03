@@ -723,31 +723,31 @@ More details on HWR's bugs can be found here: https://forums.gearboxsoftware.com
 
 
 
-## Campaign Improvements
+## Campaign
 __Homeworld 1__
 -Updated the parade formations to better handle salvaged ships.
 -Fixed the turanic missile corvette's missile burn effects.
 -Increased turanic ion array frigate speed to be relatively similar to hw1c.
 -Properly balanced kushan ships vs swarmers to better reflect hw1c gameplay. Corrected swarmer behavior so they dock correctly, and don't stop attacking unexpectedly.
 __Mission 3__
-Increased the cryo tray health to be closer to hw1c gameplay. (Gearbox increased the health on most Kushan/Taiidan ships to balance vs Hiigaran/Vaygr upgrades, but forgot some campaign only ships).
+-Increased the cryo tray health to be closer to hw1c gameplay. (Gearbox increased the health on most Kushan/Taiidan ships to balance vs Hiigaran/Vaygr upgrades, but forgot some campaign only ships).
 __Mission 4__
-The objective is now complete as soon as the carrier is killed, rather than after the explosion animation finishes (to prevent a timing error).
+-The objective is now complete as soon as the carrier is killed, rather than after the explosion animation finishes (to prevent a timing error).
 __Mission 7__
-The enemy AI reinforcements now work properly based on your starting fleet value.
-Fixed an issue where the multi-gun corvette research sometimes doesn't get enabled. 
+-The enemy AI reinforcements now work properly based on your starting fleet value.
+-Fixed an issue where the multi-gun corvette research sometimes doesn't get enabled. 
 __Mission 8__
-Increased kadesh multi-beam frigate health and speed to be relatively similar to hw1c.
-Lowered the accuracy of the kadesh mothership ion cannons vs moving fighters and corvettes.
-Kadesh ships now properly defend the final area like in hw1c.
+-Increased kadesh multi-beam frigate health and speed to be relatively similar to hw1c.
+-Lowered the accuracy of the kadesh mothership ion cannons vs moving fighters and corvettes.
+-Kadesh ships now properly defend the final area like in hw1c.
 __Mission 10__
-Fixed the camera location at the start of the mission.
+-Fixed the camera location at the start of the mission.
 
 __Homeworld 2__
 __Mission 2__
-The mothership's engine speed now matches the audio cues and hw2c.
-The transport ships' speed now increases after events as they did hw2c. 
-Increased Captain Soban's weapon damage to match hw2c.
+-The mothership's engine speed now matches the audio cues and hw2c.
+-The transport ships' speed now increases after events as they did hw2c. 
+-Increased Captain Soban's weapon damage to match hw2c.
 
 
 

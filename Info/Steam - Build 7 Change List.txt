@@ -1,45 +1,50 @@
-The full change list is here: https://steamcommunity.com/linkfilter/?url=http://forums.gearboxsoftware.com/t/homeworld-remastered-patch-balance-changes/1501771/1
+[h1]Full Change List[/h1]
 
-[b]Build 7[/b]
+See here: https://steamcommunity.com/linkfilter/?url=http://forums.gearboxsoftware.com/t/homeworld-remastered-patch-balance-changes/1501771/1
 
-[b]Gameplay and UI Options[/b]
+[h1]Build 7[/h1]
+
+[b]Gameplay Options and Features[/b]
 Gearbox/Relic partially developed some of these options, but never implemented them in the game. By popular demand, they have now been added to HWR:
-Added a Mission Difficulty adjuster. At the start of each campaign mission, extra enemy AI reinforcement ships and RU are added based on your fleet size and RU. This dynamic scaling difficulty can now be adjusted.
-Added a Camera Pan Speed adjuster. This lets players increase the camera speed to move around maps faster with the arrow keys and edge of screen mouse pan.
-Added a Camera Max Zoom adjuster. This lets players increase the maximum distance the camera can zoom out before having to use the sensors manager.
-Added a Build/Research/Launch Panel adjuster. This lets players set and save the size of the Build/Research/Launch menus in the options. Previously these were adjustable, but their size was not saved across games.
+-Added a Mission Difficulty adjuster. At the start of each campaign mission, extra enemy AI reinforcement ships and RU are added based on your fleet size and RU. This dynamic scaling difficulty can now be adjusted.
+-Added a Camera Pan Speed adjuster. This lets players increase the camera speed to move around maps faster with the arrow keys and edge of screen mouse pan.
+-Added a Camera Max Zoom adjuster. This lets players increase the maximum distance the camera can zoom out before having to use the sensors manager.
+-Added a Build/Research/Launch Panel adjuster. This lets players set and save the size of the Build/Research/Launch menus in the options. Previously these were adjustable, but their size was not saved across games.
 
 [b]HWR Bugs Fixes and Improvements[/b]
-Improved the spacing in the build/research queues for better readability.
-The 'Research Ship Complete' audio is now played after each additional Kushan/Taiidan Research Ship Hub is built.
-Kushan Research Ship's with all six hubs, now spin like they did in hw1c.
-Kushan/Taiidan corvettes now respond quickly to certain attack orders, without a long delay.
-Removed Kushan/Taiidan repair ships from military selection priority.
-Fixed the major cross race docking bug on the Kushan Support Frigate.
-Fixed the player colors on the Kushan Heavy Cruiser ion turrets.
-In the Strikecraft & Support Only game mode, Kushan Drone Technology research is now disabled as intended.
-In the Strikecraft & Support Only game mode, Vaygr carrier health now matches the other races as intended.
+-Improved the spacing in the build/research queues for better readability.
+-The 'Research Ship Complete' audio is now played after each additional Kushan/Taiidan Research Ship Hub is built.
+-Kushan Research Ship's with all six hubs, now spin like they did in hw1c.
+-Kushan/Taiidan corvettes now respond quickly to certain attack orders, without a long delay.
+-Removed Kushan/Taiidan repair ships from military selection priority.
+-Fixed the player colors on the Kushan Heavy Cruiser ion turrets.
+-In the Strikecraft & Support Only game mode, Kushan Drone Technology research is now disabled as intended.
+-In the Strikecraft & Support Only game mode, Vaygr carrier health now matches the other races as intended.
 
 [b]Balance[/b]
-Hyperspace exit damage lowered from 25% to 10%, when running into a hyperspace inhibitor
-Probe cost 70->100 (half way between hw1c and hw2c).
-Addressed the gun alignment on the Hiigaran Shipyard and Vaygr Scout. They were shooting to the side of their targets, and rarely landing hits vs small targets like probes and fighters.
-Hiigaran Ion Cannon Platform damage down 17% (same as hw2c).
-Vaygr Heavy Missile Platform damage down 15% (same as hw2c).
-Kushan/Taiidan Multi-Gun Corvette cost 300->235. Research time down 36%. (general buff, and to balance vs hw2 corvettes)
-Kushan/Taiidan Heavy Corvette cost 285->240. Build time down 9%. Research time down 33%. (general buff, and to balance vs hw2 corvettes)
-Kushan/Taiidan Missile Destroyer damage vs hw1 corvettes down 40% (now performs similar vs hw1 and hw2 corvettes).
-Kushan/Taiidan Missile Destroyer speed up 12%. (relatively closer to hw1c)
+-Hyperspace exit damage lowered from 25% to 10%, when running into a hyperspace inhibitor
+-Probe cost 70->100 +43% (half way between hw1c and hw2c)
+-Addressed the gun alignment on the Hiigaran Shipyard and Vaygr Scout. They were shooting to the side of their targets, and rarely landing hits vs small targets like probes and fighters.
+-Hiigaran Ion Cannon Platform/Vaygr Heavy Missile Platform damage down 16% (same as hw2c)
+-Kushan/Taiidan Multi-Gun Corvette Research Time 28->18sec -36%, Cost 300->235 -22% (general buff, and to balance vs hw2 corvettes)
+-Kushan/Taiidan Heavy Corvette Research time 21->14sec -33%, Cost 285->240 -16%, Build time 22->20 -9% (general buff, and to balance vs hw2 corvettes)
+-Kushan/Taiidan Missile Destroyer damage vs hw1 corvettes down 40% (now performs similar vs hw1 and hw2 corvettes)
+-Kushan/Taiidan Missile Destroyer Speed 130->145 +12% (relatively closer to hw1c)
 
-[b]Campaign Missions[/b]
-In Homeworld 1, updated the parade formations to better handle salvaged ships.
-In Homeworld 1 mission 2 & 4, fixed the turanic missile corvette's missile burn effects.
-In Homeworld 1 mission 3, increased the cryo tray health further (to be closer to hw1c gameplay).
-In Homeworld 1 mission 4, increased turanic ion array frigate speed to be relatively similar to hw1c.
-In Homeworld 1 mission 7 & 8, properly balanced kushan ships vs swarmers to better reflect hw1c gameplay. Corrected swarmer behavior so they dock correctly, and don't stop attacking unexpectedly.
-In Homeworld 1 mission 7, the enemy AI reinforcements now work properly based on your starting fleet value.
-In Homeworld 1 mission 7, fixed an issue where the multi-gun corvette research sometimes doesn't get enabled. 
-In Homeworld 1 mission 8, increased kadesh multi-beam frigate health and speed to be relatively similar to hw1c.
-In Homeworld 1 mission 8, lowered the accuracy of the kadesh mothership ion cannons vs moving fighters and corvettes.
-In Homeworld 1 mission 8, kadesh ships now properly defend the final area like in hw1c.
-In Homeworld 1 mission 10, fixed the camera location at the start of the mission.
+[b]Campaign[/b]
+__Homeworld 1__
+-Updated the parade formations to better handle salvaged ships.
+-Fixed the turanic missile corvette's missile burn effects.
+-Increased turanic ion array frigate speed to be relatively similar to hw1c.
+-Properly balanced kushan ships vs swarmers to better reflect hw1c gameplay. Corrected swarmer behavior so they dock correctly, and don't stop attacking unexpectedly.
+__Mission 3__
+-Increased the cryo tray health to be closer to hw1c gameplay. (Gearbox increased the health on most Kushan/Taiidan ships to balance vs Hiigaran/Vaygr upgrades, but forgot some campaign only ships).
+__Mission 7__
+-The enemy AI reinforcements now work properly based on your starting fleet value.
+-Fixed an issue where the multi-gun corvette research sometimes doesn't get enabled. 
+__Mission 8__
+-Increased kadesh multi-beam frigate health and speed to be relatively similar to hw1c.
+-Lowered the accuracy of the kadesh mothership ion cannons vs moving fighters and corvettes.
+-Kadesh ships now properly defend the final area like in hw1c.
+__Mission 10__
+-Fixed the camera location at the start of the mission.

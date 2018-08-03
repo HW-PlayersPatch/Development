@@ -118,12 +118,12 @@ __Resource Collectors__
 
 ### Kushan and Taiidan
 -Overhauled Kushan and Taiidan. These races were rushed into HWR at release, repeatedly band-aided, and were never implimented well. All ship speeds, health, costs, build times, and research costs/times are now consistently translated into the HWR engine, with a robust design methodology. Kushan and Taiidan now feel much more like hw1 classic, while still being balanced against Hiigaran and Vaygr.
+-Most changes below are to make ships relatively similar to hw1c, while some are for balance vs hw2 races. Combat effectiveness is barely changing from build 7, as most changes affect infrastructure.
 -Harvesting for all four races is now within 1% of each other at the 10, 20, and 30 minute marks. Previously hw1 was behind hw2 at 10mins, and ahead at 30minutes.
 -Generally research costs have gone up, while research times have come down. This improves balance vs hw2 upgrade costs, while allowing hw1 to tech up faster to every ship, eliminating some pain points.
 -Race specific unit abilities now perform closer to hw1c, details are below.
 -Removed hidden armour modifiers from all ships other than frigates. Relic only applied these to frigates, however Gearbox used them sporadically on hw1 units, details are below.
 ---To compensate for the hw1 corvette speed buffs below, fighter, corvette, and frigate weapons were tweaked appropriately vs hw1 corvettes.
-Most changes below are to make ships relatively similar to hw1c, while some are for balance vs hw2 races.
 
 __Resource Collectors__
 -Cost 600->500 -17%
@@ -288,7 +288,4 @@ __Cloak Generators__
 -Armour +17% (Effective Health 7500->9000 +17%)
 -Ability duration 100->120sec +20% (to match hw2 races, and be closer to hw1c)
 -Ability range +100% (to match hw2 races)
-
-
-
 
