@@ -89,7 +89,7 @@ NewShipType.antiFighterValue=0
 NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=9
 NewShipType.totalValue=8
-NewShipType.buildCost=120
+NewShipType.buildCost=130
 NewShipType.buildTime=10
 NewShipType.buildPriorityOrder=30
 NewShipType.retaliationRange=5500
@@ -134,6 +134,7 @@ NewShipType.dockTimeBeforeStart=0.5
 NewShipType.dockNrOfShipsInDockFormation=1
 NewShipType.dockFormation="dockline"
 NewShipType.queueFormation="n_delta"
+NewShipType.dontDockWithOtherRaceShips=1
 NewShipType.ignoreRaceWhenDocking=0
 addAbility(NewShipType,"CanLaunch");
 NewShipType.launchTimeBetweenTwoFormations=0.5
@@ -142,7 +143,7 @@ NewShipType.launchNrOfShipsInDockFormation=1
 NewShipType.launchFormation="n_delta"
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
-addAbility(NewShipType,"CanAttack",1,0,1,0,0.35,1,"Capturer, Frigate, SmallCapitalShip, BigCapitalShip, Corvette, Corvette_hw1, Fighter, Fighter_hw1, Swarmer, Utility","Bomber_vs_Frigate",
+addAbility(NewShipType,"CanAttack",1,0,1,0,0.35,1,"Capturer, Frigate, SmallCapitalShip, BigCapitalShip, Corvette_hw1, Corvette, Fighter_hw1, Fighter, Swarmer, Utility","Bomber_vs_Frigate",
 {Fighter="Bomber_vs_Fighter"},
 {Fighter_hw1="Bomber_vs_Fighter"},
 {Swarmer="Bomber_vs_Fighter"},

@@ -89,7 +89,7 @@ NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=1
 NewShipType.totalValue=8
 NewShipType.buildCost=100
-NewShipType.buildTime=7
+NewShipType.buildTime=9
 NewShipType.buildPriorityOrder=20
 NewShipType.retaliationRange=5500
 NewShipType.retaliationDistanceFromGoal=160
@@ -133,6 +133,7 @@ NewShipType.dockTimeBeforeStart=0.5
 NewShipType.dockNrOfShipsInDockFormation=1
 NewShipType.dockFormation="dockline"
 NewShipType.queueFormation="n_delta"
+NewShipType.dontDockWithOtherRaceShips=1
 NewShipType.ignoreRaceWhenDocking=0
 addAbility(NewShipType,"CanLaunch");
 NewShipType.launchTimeBetweenTwoFormations=0.5
@@ -141,9 +142,10 @@ NewShipType.launchNrOfShipsInDockFormation=1
 NewShipType.launchFormation="n_delta"
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
-addAbility(NewShipType,"CanAttack",1,0,1,0,0.35,1,"Fighter, Fighter_hw1, Corvette, Corvette_hw1, Frigate, Utility, Resource,,,, SmallCapitalShip, BigCapitalShip, Mothership","Fighter_vs_Frigate",
+addAbility(NewShipType,"CanAttack",1,0,1,0,0.35,1,"Fighter_hw1, Fighter, Swarmer, Corvette_hw1, Corvette, Frigate, Utility, Resource,,,, SmallCapitalShip, BigCapitalShip, Mothership","Fighter_vs_Frigate",
 {Fighter="HW1Fighter_vs_HW2Fighter"},
 {Fighter_hw1="HW1Fighter_vs_Fighter"},
+{Swarmer="HW1Fighter_vs_Fighter"},
 {Corvette="Fighter_vs_Corvette"},
 {Corvette_hw1="Fighter_vs_Corvette"},
 {Frigate="Fighter_vs_Frigate"},

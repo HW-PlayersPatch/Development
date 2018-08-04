@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$10040"
 NewShipType.sobDescription="$10041"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 105000)
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 120000)
 NewShipType.regentime=2000
 NewShipType.minRegenTime=2000
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
@@ -82,8 +82,8 @@ NewShipType.antiFighterValue=5
 NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
 NewShipType.totalValue=15
-NewShipType.buildCost=3000
-NewShipType.buildTime=210
+NewShipType.buildCost=3500
+NewShipType.buildTime=165
 NewShipType.buildPriorityOrder=40
 NewShipType.retaliationRange=6500
 NewShipType.retaliationDistanceFromGoal=160
@@ -140,13 +140,13 @@ NewShipType.launchTimeBeforeStart=2
 NewShipType.launchNrOfShipsInDockFormation=1
 NewShipType.launchFormation="delta"
 NewShipType.strikeGroupRadius=350
-addAbility(NewShipType,"ShipHold",1,71,100,"rallypoint","Fighter, Corvette, Utility",200,
+addAbility(NewShipType,"ShipHold",1,71,100,"rallypoint","Fighter, Corvette, Utility",100,
 {Fighter="36"},
-{Corvette="75"});
+{Corvette="340"});
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand",1,1.1,400,1100,0,4);
-addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1,"Fighter, Fighter_hw1, Swarmer, Corvette, Corvette_hw1, Frigate,  SmallCapitalShip, BigCapitalShip, Utility","JustShoot");
+addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1,"Fighter_hw1, Fighter, Swarmer, Corvette_hw1, Corvette, Frigate, SmallCapitalShip, BigCapitalShip, Utility","JustShoot");
 addAbility(NewShipType,"GuardCommand",1,3000,1000);
 addAbility(NewShipType,"CanBuildShips",1,"Fighter_Kus, Corvette_Kus, Frigate_Kus, Resource_Kus, NonCombat_Kus","Fighter, Corvette, Frigate, Resource, NonCombat");
 addAbility(NewShipType,"CanBeCaptured",160,0.1,"CapCap");

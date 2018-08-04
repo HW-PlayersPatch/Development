@@ -127,7 +127,7 @@ NewShipType.launchNrOfShipsInDockFormation = 1
 NewShipType.launchFormation = "dockline"
 NewShipType.canJoinStrikeGroup=0
 addAbility(NewShipType, "ParadeCommand", 1)
-addAbility(NewShipType, "CanAttack", 1, 1, 1, 0, 0.35, 1, "Fighter, Fighter_hw1, Swarmer, Corvette, Corvette_hw1, Frigate, Utility, SmallCapitalShip, BigCapitalShip, Mothership", "justshootKusDrone")
+addAbility(NewShipType, "CanAttack", 1, 1, 1, 0, 0.35, 1, "Fighter_hw1, Fighter, Swarmer, Corvette_hw1, Corvette, Frigate, Utility, SmallCapitalShip, BigCapitalShip, Mothership", "justshootKusDrone")
 addCustomCode(NewShipType,"data:Ship/Kus_Drone0/Kus_Drone0.lua","","","Update_Drone0","","Kus_Drone0",60)
 LoadModel(NewShipType, 1)
 StartShipWeaponConfig(NewShipType,"kus_drone","Weapon_Gun0","fire")

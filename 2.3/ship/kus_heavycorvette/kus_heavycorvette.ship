@@ -27,8 +27,8 @@ NewShipType.defaultStance="Aggressive"
 NewShipType.holdSlots=3
 NewShipType.mass=15
 NewShipType.collisionMultiplier=0.3
-NewShipType.thrusterMaxSpeed=245
-NewShipType.mainEngineMaxSpeed=245
+NewShipType.thrusterMaxSpeed=290
+NewShipType.mainEngineMaxSpeed=290
 NewShipType.rotationMaxSpeed=105*0.92
 NewShipType.thrusterAccelTime=4*1.075
 NewShipType.thrusterBrakeTime=1*1.075
@@ -129,6 +129,7 @@ NewShipType.dockNrOfShipsInDockFormation=1
 NewShipType.dockFormation="dockline"
 NewShipType.queueFormation="dockline"
 NewShipType.strikeGroupRadius=25
+NewShipType.dontDockWithOtherRaceShips=1
 NewShipType.ignoreRaceWhenDocking=0
 addAbility(NewShipType,"CanLaunch");
 NewShipType.launchTimeBetweenTwoFormations=0.5
@@ -137,7 +138,7 @@ NewShipType.launchNrOfShipsInDockFormation=1
 NewShipType.launchFormation="dockline"
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
-addAbility(NewShipType,"CanAttack",1,0,1,1,0.35,1,"Corvette, Corvette_hw1, Frigate, SmallCapitalShip, BigCapitalShip, Resource, Utility,,,,,,, Fighter, Fighter_hw1, Swarmer, Mothership","frontal_HeavyCorvette",
+addAbility(NewShipType,"CanAttack",1,0,1,1,0.35,1,"Corvette_hw1, Corvette, Frigate, SmallCapitalShip, BigCapitalShip, Resource, Utility,,,,,,, Fighter_hw1, Fighter, Swarmer, Mothership","frontal_HeavyCorvette",
 {Fighter="frontal_HeavyCorvette_vs_Fighters"},
 {Fighter_hw1="frontal_HeavyCorvette_vs_Fighters"},
 {Swarmer="frontal_HeavyCorvette_vs_Fighters"},

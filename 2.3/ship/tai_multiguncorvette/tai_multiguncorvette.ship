@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$10016"
 NewShipType.sobDescription="$10017"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 1100)
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 1400)
 NewShipType.regentime=0
 NewShipType.minRegenTime=0
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
@@ -27,15 +27,15 @@ NewShipType.defaultStance="Aggressive"
 NewShipType.holdSlots=3
 NewShipType.mass=15
 NewShipType.collisionMultiplier=0.3
-NewShipType.thrusterMaxSpeed=275
-NewShipType.mainEngineMaxSpeed=275
-NewShipType.rotationMaxSpeed=105*0.92
+NewShipType.thrusterMaxSpeed=320
+NewShipType.mainEngineMaxSpeed=320
+NewShipType.rotationMaxSpeed=170
 NewShipType.thrusterAccelTime=2*1.075
 NewShipType.thrusterBrakeTime=1*1.075
 NewShipType.mainEngineAccelTime=2*1.275
 NewShipType.mainEngineBrakeTime=1*1.275
-NewShipType.rotationAccelTime=0.6*2.75
-NewShipType.rotationBrakeTime=0.3*2.75
+NewShipType.rotationAccelTime=0.65
+NewShipType.rotationBrakeTime=0.4
 NewShipType.thrusterUsage=1
 NewShipType.accelerationAngle=170
 NewShipType.mirrorAngle=30
@@ -129,6 +129,7 @@ NewShipType.dockNrOfShipsInDockFormation=1
 NewShipType.dockFormation="dockline"
 NewShipType.queueFormation="dockline"
 NewShipType.strikeGroupRadius=25
+NewShipType.dontDockWithOtherRaceShips=1
 NewShipType.ignoreRaceWhenDocking=0
 addAbility(NewShipType,"CanLaunch");
 NewShipType.launchTimeBetweenTwoFormations=0.5
@@ -137,9 +138,10 @@ NewShipType.launchNrOfShipsInDockFormation=1
 NewShipType.launchFormation="dockline"
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
-addAbility(NewShipType,"CanAttack",1,0,1,1,0.35,1,"Fighter, Fighter_hw1, Corvette, Corvette_hw1,,,,,,,, Frigate, Capturer, Utility, SmallCapitalShip, BigCapitalShip, Mothership","frontal_MultigunCorvette",
+addAbility(NewShipType,"CanAttack",1,0,1,1,0.35,1,"Fighter_hw1, Fighter, Swarmer, Corvette_hw1, Corvette,,,,,,,, Frigate, Capturer, Utility, SmallCapitalShip, BigCapitalShip, Mothership","frontal_MultigunCorvette",
 {Fighter="frontal_MultigunCorvette"},
 {Fighter_hw1="frontal_MultigunCorvette"},
+{Swarmer="frontal_MultigunCorvette"},
 {Corvette="frontal_MultigunCorvette"},
 {Corvette_hw1="frontal_MultigunCorvette"},
 {SmallCapitalShip="frontal_MultigunCorvette_vs_Cap"},

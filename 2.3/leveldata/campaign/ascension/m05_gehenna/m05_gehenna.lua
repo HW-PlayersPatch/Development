@@ -4,6 +4,7 @@
 --
 ----------------------------------------------------------------------------------
 -- import library files
+dofilepath("data:scripts/playerspatch_util.lua")
 dofilepath("data:scripts/SCAR/SCAR_Util.lua")
 dofilepath("data:scripts/scar/restrict.lua")
 
@@ -398,7 +399,7 @@ function Rule_GetReactiveFleetRatio()
 	print ("Player fleet size = "..PlayerFleetSize)
 
 	--Load expanded options
-	--dofilepath("data:scripts/SCAR/SCAR_Util.lua")
+	--dofilepath("data:scripts/playerspatch_util.lua")
 	RefMissionDifficultyScale = GetMissionDifficultyScale()
 
 	ReactiveFleetRatio = ((PlayerFleetSize / ReactiveFleetSize) * RefMissionDifficultyScale)  --Multiplied with difficulty value

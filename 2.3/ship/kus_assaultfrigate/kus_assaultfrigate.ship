@@ -19,13 +19,13 @@ NewShipType.mass=100
 NewShipType.collisionMultiplier=1
 NewShipType.thrusterMaxSpeed=206
 NewShipType.mainEngineMaxSpeed=206
-NewShipType.rotationMaxSpeed=30
+NewShipType.rotationMaxSpeed=40
 NewShipType.thrusterAccelTime=7
 NewShipType.thrusterBrakeTime=2
 NewShipType.mainEngineAccelTime=8
 NewShipType.mainEngineBrakeTime=2
-NewShipType.rotationAccelTime=0.7
-NewShipType.rotationBrakeTime=0.4
+NewShipType.rotationAccelTime=0.5
+NewShipType.rotationBrakeTime=0.3
 NewShipType.thrusterUsage=0.5
 NewShipType.accelerationAngle=40
 NewShipType.mirrorAngle=0
@@ -74,8 +74,8 @@ NewShipType.antiFighterValue=0
 NewShipType.antiCorvetteValue=12
 NewShipType.antiFrigateValue=15
 NewShipType.totalValue=12
-NewShipType.buildCost=800
-NewShipType.buildTime=68
+NewShipType.buildCost=700
+NewShipType.buildTime=60
 NewShipType.buildPriorityOrder=10
 NewShipType.retaliationRange=5500
 NewShipType.retaliationDistanceFromGoal=160
@@ -130,7 +130,7 @@ NewShipType.launchFormation="delta"
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand",1,1.1,200,700,0,4);
-addAbility(NewShipType,"CanAttack",1,1,0,1,0.35,1.5,"Capturer, Frigate, Corvette, Corvette_hw1, SmallCapitalShip, BigCapitalShip, Mothership, Utility, Resource,Fighter, Fighter_hw1, Swarmer","frontal_frigate",
+addAbility(NewShipType,"CanAttack",1,1,0,1,0.35,1.5,"Capturer, Corvette_hw1, Corvette, Frigate, SmallCapitalShip, BigCapitalShip, Mothership, Utility, Resource, Fighter_hw1, Fighter, Swarmer","frontal_frigate",
 {Fighter="movetotargetandshoot_Frigate_vs_Fighters"},
 {Fighter_hw1="movetotargetandshoot_Frigate_vs_Fighters"},
 {Swarmer="movetotargetandshoot_Frigate_vs_Fighters"},

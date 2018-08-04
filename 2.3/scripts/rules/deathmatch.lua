@@ -45,7 +45,7 @@ GameSetupOptions =
         name = "resstart",
         locName = "$3205",
         tooltip = "$3232",
-        default = 0,
+        default = 1,
         visible = 1,
         choices =
         {
@@ -71,7 +71,7 @@ GameSetupOptions =
         name = "startlocation",
         locName = "$3225",
         tooltip = "$3237",
-        default = 0,
+        default = 1,
         visible = 1,
         choices =
         {
@@ -91,6 +91,21 @@ GameSetupOptions =
             "$3201",  "2",
             "$3160",  "3",
             "$2986",  "4",
+        },
+    },
+    {
+        name = "PlayersPatch_AIAttackDamage",
+        locName = "AI Attack Damage",
+        tooltip = "SET AI PLAYER ATTACK DAMAGE",
+        default = 0,
+        visible = 1,
+        choices =
+        {
+            "100%",  "1",
+            "125%",  "2",
+            "150%",  "3",
+            "175%",  "4",
+            "200%",  "5",
         },
     },
     {

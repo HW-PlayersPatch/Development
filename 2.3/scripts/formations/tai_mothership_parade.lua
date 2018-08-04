@@ -1,3 +1,14 @@
+--===========================================================================
+--            -Tai MotherShip Parade formation
+--===========================================================================
+
+-- format   slot-name   vector-offset    vector-heading  vector-direction of growth     size-of-growth (set to 0 if want default)
+-- offset determines offset from center of formation {+left/-right, +up/-down, +front/-back}
+-- heading determines heading, use { 0,0,1 } for forward
+-- direction of growth determines how new formations will grow out
+-- size of growth determines how spaced out additional formations are.  Set to 0 for default
+-- one slot MUST be called "misc", leftovers will get put here
+
 paradeSlot("Tai_Scout",							{-700, -50, 2000},	{0,0,1},	{-1,0,0},	70);
 paradeSlot("Tai_Interceptor",				{-700, -50, 1800},	{0,0,1},	{-1,0,0},	70);
 paradeSlot("Tai_AttackBomber",			{-700, -50, 1600},	{0,0,1},	{-1,0,0},	70);
@@ -16,8 +27,8 @@ paradeSlot("Tai_IonCannonFrigate",	{-700, -525, 1700},	{0,0,1},	{-1,0,0},	350);
 paradeSlot("tai_supportfrigate",		{-700, -525, 1400},	{0,0,1},	{-1,0,0},	350);
 paradeSlot("tai_fieldfrigate",			{-700, -525, 1100},	{0,0,1},	{-1,0,0},	350);
 
-paradeSlot("Tai_ResourceCollector",	{-2100, -300, -200},{0,0,1},	{-1,0,0},	210);
-paradeSlot("Tai_ResourceController",{-2100, -350, -600},{0,0,1},	{-1,0,0},	455);
+paradeSlot("Tai_ResourceCollector",	{-2100, 50, -200},	{0,0,1},	{-1,0,0},	210);
+paradeSlot("Tai_ResourceController",	{-2100, 100, -600},	{0,0,1},	{-1,0,0},	455);
 
 paradeSlot("Tai_Destroyer",					{700, 150, 1700},		{0,0,1},	{1,0,0},	525);
 paradeSlot("tai_MissileDestroyer",	{700, -250, 1700},	{0,0,1},	{1,0,0},	525);

@@ -4,8 +4,8 @@ NewShipType.sobDescription="$10023"
 NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 1200)
 NewShipType.regentime=0
 NewShipType.minRegenTime=0
-NewShipType.sideArmourDamage=0.8
-NewShipType.rearArmourDamage=0.8
+NewShipType.sideArmourDamage=1.0
+NewShipType.rearArmourDamage=1.0
 setTacticsMults(NewShipType, "MAXSPEED", 0.90, 1.10, 1.0)
 setTacticsMults(NewShipType, "ENGINEACCEL", 1.10, 0.90, 1.0)
 setTacticsMults(NewShipType, "THRUSTERACCEL", 1.10, 0.90, 1.0)
@@ -20,15 +20,15 @@ NewShipType.defaultStance="Neutral"
 NewShipType.holdSlots=3
 NewShipType.mass=20
 NewShipType.collisionMultiplier=0.45
-NewShipType.thrusterMaxSpeed=255
-NewShipType.mainEngineMaxSpeed=255
-NewShipType.rotationMaxSpeed=130
+NewShipType.thrusterMaxSpeed=320
+NewShipType.mainEngineMaxSpeed=320
+NewShipType.rotationMaxSpeed=170
 NewShipType.thrusterAccelTime=2.0
 NewShipType.thrusterBrakeTime=1
 NewShipType.mainEngineAccelTime=2.0
 NewShipType.mainEngineBrakeTime=1
-NewShipType.rotationAccelTime=0.6
-NewShipType.rotationBrakeTime=0.3
+NewShipType.rotationAccelTime=0.3
+NewShipType.rotationBrakeTime=0.2
 NewShipType.thrusterUsage=0.5
 NewShipType.accelerationAngle=170
 NewShipType.mirrorAngle=30
@@ -79,7 +79,7 @@ NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
 NewShipType.totalValue=10
 NewShipType.buildCost=175
-NewShipType.buildTime=20
+NewShipType.buildTime=16
 NewShipType.buildPriorityOrder=60
 NewShipType.retaliationRange=5500
 NewShipType.retaliationDistanceFromGoal=160
@@ -124,6 +124,7 @@ NewShipType.dockNrOfShipsInDockFormation=1
 NewShipType.dockFormation="n_delta"
 NewShipType.queueFormation="n_delta"
 NewShipType.strikeGroupRadius=25
+NewShipType.dontDockWithOtherRaceShips=1
 NewShipType.ignoreRaceWhenDocking=0
 addAbility(NewShipType,"CanLaunch");
 NewShipType.launchTimeBetweenTwoFormations=0.5
@@ -131,12 +132,15 @@ NewShipType.launchTimeBeforeStart=1.5
 NewShipType.launchNrOfShipsInDockFormation=1
 NewShipType.launchFormation="n_delta"
 addAbility(NewShipType,"CanBeRepaired","RepCap");
-addAbility(NewShipType,"ShipHold",1,0,0,"rallypoint","",12);
+addAbility(NewShipType,"ShipHold",1,0,0,"rallypoint","",70,
+{Fighter="36"},
+{Corvette="340"});
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
-addAbility(NewShipType,"CanAttack",1,3,1,1,0.35,1,"Fighter, Fighter_hw1, Corvette, Corvette_hw1, Frigate, Capturer, Utility, SmallCapitalShip, BigCapitalShip","frontal_LightCorvette",
+addAbility(NewShipType,"CanAttack",1,3,1,1,0.35,1,"Fighter_hw1, Fighter, Swarmer, Corvette_hw1, Corvette, Capturer, Frigate, Utility, SmallCapitalShip, BigCapitalShip","frontal_LightCorvette",
 {Fighter="frontal_LightCorvette"},
 {Fighter_hw1="frontal_LightCorvette"},
+{Swarmer="frontal_LightCorvette"},
 {Frigate="frontal_LightCorvette"},
 {Corvette="frontal_LightCorvette"},
 {Corvette_hw1="frontal_LightCorvette"},
@@ -146,12 +150,12 @@ addAbility(NewShipType,"CanAttack",1,3,1,1,0.35,1,"Fighter, Fighter_hw1, Corvett
 {SubSystem="FrontalVsSubSystem_Corvette"});
 addAbility(NewShipType,"GuardCommand",1,3000,300);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
-addAbility(NewShipType,"RepairCommand",1,750,1,1,"Frontal_RepairCorvette",
+addAbility(NewShipType,"RepairCommand",1,250,1,1,"Frontal_RepairCorvette",
 {Flagship=2.0},
 {SuperCap=2.0}, 
 {BattleCruiser=2.0}, 
 {Carrier=1.5},  
-{Frigate=1.8},
+{Frigate=1.5},
 {Corvette=1.5},
 {EndRepairRates=0},
 {Corvette="Frontal_RepairCorvette"},

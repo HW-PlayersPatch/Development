@@ -1,11 +1,11 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$10006"
 NewShipType.sobDescription="$10007"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 360)
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 400)
 NewShipType.regentime=0
 NewShipType.minRegenTime=0
-NewShipType.sideArmourDamage=0.9
-NewShipType.rearArmourDamage=0.9
+NewShipType.sideArmourDamage=1.0
+NewShipType.rearArmourDamage=1.0
 setTacticsMults(NewShipType, "MAXSPEED", 0.95, 1.10, 1.0)
 setTacticsMults(NewShipType, "ENGINEACCEL", 1.20, 0.80, 1.0)
 setTacticsMults(NewShipType, "ENGINEBRAKE", 1.0, 1.0, 1.0)
@@ -91,7 +91,7 @@ NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
 NewShipType.totalValue=9
 NewShipType.buildCost=getShipNum(NewShipType, "buildCost", 120)
-NewShipType.buildTime=getShipNum(NewShipType, "buildTime", 9)
+NewShipType.buildTime=getShipNum(NewShipType, "buildTime", 7)
 NewShipType.buildPriorityOrder=20
 NewShipType.retaliationRange=5500
 NewShipType.retaliationDistanceFromGoal=160
@@ -135,6 +135,7 @@ NewShipType.dockTimeBeforeStart=0.5
 NewShipType.dockNrOfShipsInDockFormation=1
 NewShipType.dockFormation="dockline"
 NewShipType.queueFormation="n_delta"
+NewShipType.dontDockWithOtherRaceShips=1
 NewShipType.ignoreRaceWhenDocking=0
 addAbility(NewShipType,"CanLaunch");
 NewShipType.launchTimeBetweenTwoFormations=0.5
@@ -143,9 +144,10 @@ NewShipType.launchNrOfShipsInDockFormation=1
 NewShipType.launchFormation="n_delta"
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
-addAbility(NewShipType,"CanAttack",1,0,1,1,0.35,0.815,"Fighter, Fighter_hw1, Corvette, Corvette_hw1, Frigate, Utility, Resource,,,,SmallCapitalShip, BigCapitalShip, Mothership","frontal_Defender",
+addAbility(NewShipType,"CanAttack",1,0,1,1,0.35,0.815,"Fighter_hw1, Fighter, Swarmer, Corvette_hw1, Corvette, Frigate, Utility, Resource,,,,SmallCapitalShip, BigCapitalShip, Mothership","frontal_Defender",
 {Fighter="frontal_Defender"},
 {Fighter_hw1="frontal_Defender"},
+{Swarmer="frontal_Defender"},
 {SubSystem="FrontalVsSubSystem"},
 {Frigate="frontal_Defender"},
 {SmallCapitalShip="frontal_Defender"},

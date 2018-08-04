@@ -12,7 +12,7 @@ setAccuracy(NewWeaponType,1,
 {HeavyMissile=0},
 {SmallMissile=0},
 {Fighter=0.10},
-{Fighter_hw1=0.10},
+{Fighter_hw1=0.90},
 {Corvette=0.15},
 {Corvette_hw1=0.30},
 {munition=0.05});

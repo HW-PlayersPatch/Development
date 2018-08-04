@@ -272,6 +272,7 @@ base_research = {
 		TargetName = "Vgr_fleet", 
 		Icon = Icon_Hyperspace, 
 		ShortDisplayedName = "10% Hyperspace Exit Damage", 
+		DoNotGrant = 1,
 	},
 	
 }

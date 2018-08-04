@@ -3,7 +3,7 @@ AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",130,130,"");
 setPenetration(NewWeaponType,15,0.5,
 {Unarmoured=0.24*2.4},
 {Unarmoured_hw1=0.24*2.4},
-{LightArmour=1.25},
+{LightArmour=1.0},
 {LightArmour_hw1=1.5},
 {MediumArmour=0.98},
 {HeavyArmour=1.25},
@@ -25,5 +25,4 @@ setAccuracy(NewWeaponType,1,
 {Corvette_hw1=1.0},
 {munition=0});
 setAngles(NewWeaponType,155,0,0,0,0);
-
 setFireMultFactor(NewWeaponType, 1.0);
