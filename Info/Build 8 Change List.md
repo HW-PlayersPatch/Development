@@ -116,25 +116,26 @@ __Resource Collectors__
 
 
 ### Kushan and Taiidan
--Overhauled Kushan and Taiidan. These races were rushed into HWR at release, repeatedly band-aided, and were never implimented well. All ship speeds, health, costs, build times, and research costs/times are now consistently translated into the HWR engine, with a robust design methodology. Kushan and Taiidan now feel much more like hw1 classic, while still being balanced against Hiigaran and Vaygr.
--Most changes below are to make ships relatively similar to hw1c, while some are for balance vs hw2 races. Combat effectiveness is barely changing from build 7, as most changes affect infrastructure.
--Harvesting for all four races is now within 1% of each other at the 10, 20, and 30 minute marks. Previously hw1 was behind hw2 at 10mins, and ahead at 30minutes.
+-Overhauled Kushan and Taiidan. These races were rushed into HWR at release, and repeatedly band-aided over the previous patches. All ship speeds, health, costs, build times, and research costs/times are now consistently translated into the HWR engine, with a robust design methodology. Kushan and Taiidan now feel much more like hw1 classic, while still being balanced against Hiigaran and Vaygr. For details on the design, see here.
+---------add link
+-Harvesting for all four races is now within 1% of each other at the 10, 20, and 30 minute marks. Previously hw1 was behind hw2 at 10mins, and ahead at 30minutes (this was not tested well enough back in 2015). Harvesting is also now better balanced on maps with different asteriod layouts.
 -Generally research costs have gone up, while research times have come down. This improves balance vs hw2 upgrade costs, while allowing hw1 to tech up faster to every ship, eliminating some pain points.
 -Race specific unit abilities now perform closer to hw1c, details are below.
--Removed hidden armour modifiers from all ships other than frigates. Relic only applied these to frigates, however Gearbox used them sporadically on hw1 units, details are below.
+-Adjusted base health to remove hidden armour modifiers from all ships other than frigates. Relic only applied armour modifiers to frigates, however Gearbox used them sporadically on hw1 units. The ship health values listed below are the actual effective health.
+-Most changes below are to make ships relatively similar to hw1c, while some are for balance vs hw2 races. Combat effectiveness is barely changing from build 7, as most changes affect infrastructure.
 ---To compensate for the hw1 corvette speed buffs below, fighter, corvette, and frigate weapons were tweaked appropriately vs hw1 corvettes.
 
 __Resource Collectors__
 -Cost 600->500 -17%
 -Build Time 50->40sec -20%
--Health 6000->5000 -17% (to balance vs hw2, Hiigaran/Vaygr went from 5000->4000)
 -Speed 110->206 +87% (to match assault frigates speed like hw1c)
+-Health 6000->5000 -17%
 -Resource capacity 500->250 -50%
--Harvesting is also now better balanced on maps with different asteriod layouts.
 ---Kamakazi damage 80%->60% -25% (to prevent instantly killing other collectors)
 
 __Resource Controller__
--Health 25k->30k +20%, Armour -11% (Effective Health 27500->30000 +9%)
+-Health 27500->30000 +9%
+---Base Health 25k->30k +20%, Armour -11%
 -Speed 100->190 +90%
 ---Rotation Speed +100%
 
@@ -153,7 +154,7 @@ __Bombers__
 
 __Defenders__
 -Defender Sub-Systems Research Cost 400->1000, Time 64->53sec
--Health 360->400 +11%, Armour -11% (effective health unchanged)
+---Base Health 360->400 +11%, Armour -11% (effective health unchanged)
 -Build Time 9->7sec -22%
 
 __Kushan Cloaked Fighters__
@@ -163,7 +164,8 @@ __Kushan Cloaked Fighters__
 __Taiidan Defense Fighters__
 -Defense Fighter Research Cost 500->1100
 -Built Time 18->15sec -17%
--Health 135->300 +122%, Armour +17% (Effective Health 108->300 +178%)
+-Health 108->300 +178%
+---Base Health 135->300 +122%, Armour +17%
 -Attack style is now closer to hw1c. Their laser weapon has been adjusted to be more consistent, and it now prioritizes mines over missiles.
 -Added an accuracy reduction within the field of -1% (similar to Field Frigates)
 
@@ -171,7 +173,8 @@ __Repair Corvettes__
 -Build Time 20->16sec -20%
 -Speed 255->320 +25% (to be able to heal the fastest corvette)
 ---Rotation Speed +31%
--Armour -25% (Effective Health 1440->1200 -17%)
+-Health 1440->1200 -17%
+---Armour -25%
 --Healing beam arc increased
 
 __Light Corvettes__
@@ -197,7 +200,8 @@ __Minelayer Corvettes__
 -Minelaying Tech Research Cost 700->1200, Time 49->71sec
 -Build Time: 25->35sec +40% (closer to hw1c, and to balance vs hw2 races at 45sec)
 -Speed: 246->255 +4%
--Health: 900->1800 +100%, Armour -25% (Effective Health 1080->1800 +67%)
+-Health 1080->1800 +67%
+---Base Health: 900->1800 +100%, Armour -25%
 
 __Support Frigates__
 -Capital Ship Drive Research Cost 800->1300, Time 71->53sec
@@ -259,8 +263,10 @@ __Heavy Cruisers__
 -Heavy Gun Research Cost 5500->9000
 
 __Motherships__
--Multiplayer: Health 280k->420k +50%, Armour -18% (Effective Health 322k->420k +30%, to match an upgraded Hiigaran Mothership)
--Campaign: Health 210k->250k +19%, Armour -18% (effective health 247k->250k +1%)
+-Multiplayer: Health 322k->420k +30% (to match an upgraded Hiigaran Mothership)
+---Base Health 280k->420k +50%, Armour -18% 
+-Campaign: Health 247k->250k +1%
+---Base Health 210k->250k +19%, Armour -18%
 
 __Research Ships__
 -Build Time 50->45sec -10% (the first hub now builds as fast as the rest)
@@ -278,13 +284,15 @@ __Sensors Array__
 __Gravity Wells__
 -Gravity Generator Research Time 35->71sec (same as v2.1)
 -Cost 800->1000 +25%
--Health 18k->11k -39%, Armour +17% (Effective Health 14400->11000 -24%)
+-Health 14400->11000 -24%
+---Base Health 18k->11k -39%, Armour +17%
 ---Accuracy debuff range -20% (to match GW ability range, missed change in 2.205)
 
 __Cloak Generators__
 -Speed 165->206 +25%
 ---Rotation Speed +36%
--Armour +17% (Effective Health 7500->9000 +17%)
+-Health 7500->9000 +17%
+---Armour +17%
 -Ability duration 100->120sec +20% (to match hw2 races, and be closer to hw1c)
 -Ability range +100% (to match hw2 races)
 

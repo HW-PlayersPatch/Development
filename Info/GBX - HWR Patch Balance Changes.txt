@@ -28,8 +28,8 @@ __Repair Corvettes__
 Health -50%
 
 __Support Frigates__
-Health -9%
 Speed +17%
+Health -9%
 
 __Destroyers__
 Health +6%
@@ -109,8 +109,8 @@ Reduced the size of the engine subsystems to minimize a hw2c issue where destroy
 Unit cap: 7->5 (was 5 in hw2c)
 
 __Battlecruisers__
-Health -22%
 Speed +6%
+Health -22%
 Damage -28%
 Unit cap: 3->2
 
@@ -133,50 +133,50 @@ Health Upgrade Costs 1500->400
 
 __Gun Platforms__
 Health Upgrade Costs 1300->700
-Health -7%
 Speed -20%
+Health -7%
 
 __Ion Platforms__
 Health Upgrade Costs 1300->1200
-Health -7%
 Speed -20%
+Health -7%
 
 __Scouts__
 Generally all ship's base hull and speed increased, while fully upgraded stats stayed the same. This ship didn't have upgrades, so their base stats received a bump.
 Speed 460->512 (was 480 in hw2c)
 
 __Interceptors__
-Speed Upgrades Costs are still 800, maybe the only upgrade that didn't change in price.
+Speed Upgrades Costs are still 800 (maybe the only upgrade that didn't change in price)
 
 __Bombers__
 Speed Upgrade Costs 800->600
 
 __Gunship Corvettes__
-Attack buffed, this ship was under-powered.
-Health Upgrade Costs 1250->800
 Speed Upgrade Costs 800->400
+Health Upgrade Costs 1250->800
+Attack buffed, this ship was under-powered.
 
 __Pulsar Corvettes__
-Attack balanced against Vaygr missile corvettes (corvettes had balance issues since release due to several bugs, and bug fixes)
-Health Upgrade Costs 1150->1200
 Speed Upgrade Costs 1050->600
+Health Upgrade Costs 1150->1200
+Attack balanced against Vaygr missile corvettes (corvettes had balance issues since release due to several bugs, and bug fixes)
 
 __Minelayers__
 Health 400->900 Before they were easy to snipe since they weren't a squad of 3.
 
 __Torpedo Frigates__
-Attack lowered vs fighters.
-Health Upgrade Costs 2200->1000
 Speed Upgrade Costs 1250->600
+Health Upgrade Costs 2200->1000
+Attack lowered vs fighters.
 
 __Flak Frigates__
-Health Upgrade Costs 2200->1000
 Speed Upgrade Costs 1250->600
+Health Upgrade Costs 2200->1000
 
 __Ion Frigates__
-Is now better able to shoot idle corvettes, like salvage corvettes.
-Health Upgrade Costs 2200->1000
 Speed Upgrade Costs 1250->600
+Health Upgrade Costs 2200->1000
+Is now better able to shoot idle corvettes, like salvage corvettes.
 
 __Marines__
 Fixed a hw2c oversight where every ship in the game had 100% accuracy vs marine/infiltrator frigates. Now they are treated as a regular frigates for accuracy calculations, which is a silent buff.
@@ -184,39 +184,39 @@ Unit cap 5->6
 
 __Defense Field Frigates__
 Generally all ship's base hull and speed increased, while fully upgraded stats stayed the same. This ship didn't have upgrades, so their base stats received a bump.
-Health +11%
 Speed +9%
+Health +11%
 Unit cap 4->2. It was 2 in hw2c, and stacking 4 DFF can be quite overpowered.
 The following changes incentivize more usage:
 Cost 1250->1000
 Build Speed 70->60 seconds
-Duration 20->32 seconds
+Ability Duration 20->32 seconds
 
 __Motherships__
-Health Upgrade Costs 1250->1000
 Speed Upgrade Costs 1250->600
-Health -33% (+5% from hw2c)
+Health Upgrade Costs 1250->1000
 Speed -7%
+Health -33% (+5% from hw2c)
 
 __Carriers__
-Health Upgrade Costs 1750->1000
 Speed Upgrade Costs 1500->600
+Health Upgrade Costs 1750->1000
 Health +9%
 
 __Shipyards__
-Fixed a hw2c bug with their cloak module
-Health Upgrade Costs 2250->1000
 Speed Upgrade Costs 2000->600
+Health Upgrade Costs 2250->1000
 Health -34% (now about the same as hw2c)
+Fixed a hw2c bug with their cloak module
 
 __Destroyers__
-Health Upgrade Costs: 2500->1500
 Speed Upgrade Costs: 2500->600
+Health Upgrade Costs: 2500->1500
 Attack -30% vs resource collectors.
 
 __Battlecruisers__
-Health Upgrade Costs: 5000->1500
 Speed Upgrade Costs: 2500->600
+Health Upgrade Costs: 5000->1500
 
 
 
@@ -235,12 +235,12 @@ __Platforms__
 Health Upgrade Costs 2600->1500
 
 __Gun and Missile Platforms__
-Health -12%
 Speed -20%
+Health -12%
 
 __Hyperspace Platforms__
-Cost 750->375
 Speed +8%
+Cost 750->375
 Has a minor sensors distortion probe effect for itself only, to incentivize its use.
 
 __Fighter Unit Cap__
@@ -265,8 +265,8 @@ __Lance Fighters__
 Attack buffed, was under-powered and very niche
 
 __Corvettes__
-Health Upgrade Costs 2700->1600
 Speed Upgrade Costs 2400->1000
+Health Upgrade Costs 2700->1600
 
 __Missile Corvettes__
 Attack balanced against Hiigaran pulsar corvettes. (corvettes had balance issues since release due to several bugs, and bug fixes)
@@ -287,13 +287,13 @@ Now flies around in battle instead of siting idle so they aren't such easy targe
 Unit capped at 2. The new unit cap system is a silent buff to these, and too many command corvettes would have been quite unbalanced for the other races. Also now that battlecruisers are unit capped at 2, Hiigaran is unlikely to have more than 2 FCT's in a battle.
 
 __Frigates__
-Health Upgrade Costs 4400->2000
 Speed Upgrade Costs 2500->1200
+Health Upgrade Costs 4400->2000
 
 __Assault Frigates__
-Attack buffed, this ship was under-powered
 Assault frigate research cost 650->500
 Health -7%
+Attack buffed, this ship was under-powered
 
 __Heavy Missile Frigates__
 Is now better able to shoot idle corvettes, like salvage corvettes.
@@ -306,16 +306,16 @@ Speed -7%
 Health -12%
 
 __Capital Ships__
-Health Upgrade Costs: 10,000->3,000
 Speed Upgrade Costs: 8,500->1,500
+Health Upgrade Costs: 10,000->3,000
 
 __Flagships__
-Health -35% (+9% from hw2c)
 Speed -7%
+Health -35% (+9% from hw2c)
 
 __Carriers__
-Health +29%
 Cost 1700->1900
+Health +29%
 Bombers got buffed, so we wanted to make sure fragile Vaygr carriers wouldn't go poof early game. Costs were notched up a bit since the health went up so much.
 
 __Shipyards__
@@ -396,13 +396,13 @@ Repair is much better than before, your going to want to use these.
 __Assault Frigates__
 Anti-corvette, not very good vs fighters unless they are trapped in a gravity well. Pretty good vs frigates too.
 Health and speed changed closer to upgraded Hiig/Vaygr frigates:
-Health +72%
 Speed +47%
+Health +72%
 
 __Ion Frigates__
 Health and speed changed closer to upgraded Hiig/Vaygr frigates:
-Health +53%
 Speed +27%
+Health +53%
 Attack: balanced against Hiig ion frigates
 
 __Kushan Drone Frigates__
@@ -424,9 +424,9 @@ __Destroyers__
 Now requires Ion Cannon research due to their Ion based weaponry, like in hw1c.
 Now requires Super Heavy Chassis (carriers and destroyers were swapped in the tech tree)
 Built Time 178->160 seconds (between hw2 destroyers with and without improved manufacturing research)
+Speed +41%
 Health +10%
 Health regen improved 42%
-Speed +41%
 Unit capped at 5
 Attack balanced against hw2 destroyers. 
 
@@ -438,9 +438,9 @@ __Heavy Cruisers__
 Now requires Ion Cannon research due to their Ion based weaponry, like in hw1c.
 Cost 3600->4500
 Built Time 293->250 seconds (between hw2 cruisers with and without improved manufacturing research)
+Speed +27%
 Health +20%
 Health regen improved 20%
-Speed +27%
 Unit capped at 2
 Balanced to be a bit weaker than hw2 battlecruisers. However these are very strong when combined with repair units.
 
@@ -525,8 +525,8 @@ Accuracy vs corvettes 80%->20%
 Damage vs frigates +40%
 
 __Destroyers__
-Normal Unit Caps 5->6
 Health +6%
+Normal Unit Caps 5->6
 
 __Battlecruisers__
 Health +13%
@@ -565,17 +565,17 @@ Range +3%
 Fixed an issue where the hiigaran battlecruiser would sometimes sit pointed 10 degrees up or down vs a target on the same vertical level - causing the nose of the ship to block one ion turret from attacking.
 
 __Motherships__
-Health Upgrade Cost 1000->800
 Speed Upgrade Cost 600->400
+Health Upgrade Cost 1000->800
 
 __Carriers__
-Health Upgrade Cost 1000->800
 Speed Upgrade Cost 600->400
+Health Upgrade Cost 1000->800
 
 __Shipyards__
 Build Time 85->75 seconds (was 75 in hw2c)
-Health Upgrade Cost 1000->800
 Speed Upgrade Cost 600->400
+Health Upgrade Cost 1000->800
 Health Upgrade Research Time -50%
 
 
@@ -662,9 +662,9 @@ Damage vs hw2 resource collectors -45%
 Can now target any ship (previously couldn't target some ships)
 
 __Destroyers__
-Normal Unit Caps 5->6
 Cost 1800->2500 (to balance vs hw2 destroyer ship and upgrade costs)
 Health +7%
+Normal Unit Caps 5->6
 
 __Gravity Wells__
 Now uses frigate armour (this is generally a health buff)
@@ -719,6 +719,8 @@ Gearbox/Relic partially developed some of these options, but never implemented t
 -In the Strikecraft & Support Only game mode, Kushan Drone Technology research is now disabled as intended.
 -In the Strikecraft & Support Only game mode, Vaygr carrier health now matches the other races as intended.
 -Reduced the amount of small low-RU debris for destroyers and cruisers. This improves the game's performance in long games.
+-Fixed the Turanic Carrier Engine missing icon. (v2.205 fix)
+-Fixed Hiigaran Mothership visual errors, mainly the badge being cut off. (v2.205 fix)
 More details on HWR's bugs can be found here: https://forums.gearboxsoftware.com/t/hwr-bugs-solutions/1639765/1
 
 
