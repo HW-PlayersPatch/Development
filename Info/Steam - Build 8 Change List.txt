@@ -236,6 +236,7 @@ Cloak Generators:
 
 # Build 8 Minor Details
 -These are additional minor details, not included in the change list.
+-For even more details, check out the Stats Tool.
 
 ## Gameplay Options and Features
 -N/A
