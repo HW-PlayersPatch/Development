@@ -11,16 +11,17 @@ See here: https://steamcommunity.com/linkfilter/?url=http://forums.gearboxsoftwa
 -Addressed the major Cross Race Docking Bug. Fighters and corvettes will now only dock with ships from their own race. Previously, regenerated Hiigaran/Vaygr ships would be unable to launch from Kushan/Taiidan Repair Corvettes, Support Frigates, and Resource Controllers leading to major game lag and multiple glitches.
 -Kushan/Taiidan repair units now have a continous beam like hw1c
 -Kushan Ion Cannon Frigates are now pronounced correctly as 'Cannon', previously they were being pronounced as 'Cannit'.
+-Improved parade formations for resource collectors, to reduce collisions with the motherships.
+-Expert Taiidan AI now harvests resources at the same rate as the other races. (it was 10% higher by mistake)
 -Kushan/Taiidan accuracy reduction abilities are now painted orange in the tactical overlay
 
 [b]Campaign Improvements[/b]
-__Homeworld 1__
+Homeworld 1:
 -Fixed a rules of engagement bug that caused many Turanic, Kadeshi, and Junkyard ships to sometimes stop attacking unexpectedly and behave passively.
 -Updated research costs to match multiplayer, and research times to 1.5x slower than multiplayer (the campaign research is slower paced). These hadn't been updated since HWR v1.0. Mission resources were also adjusted to support the changes.
 -Captured Turanic Standard Corvettes can now be repaired.
 -Captured Turanic Ion Array Frigates and Kadeshi Multi-beam Frigates can now be retired immediately.
-
-__Homeworld 2__
+Homeworld 2:
 -Fixed a rules of engagement bug that caused Keeper ships to sometimes stop attacking unexpectedly and behave passively.
 -Applied some research cost/build time changes from the 2.0, 2.1, and 2.205 patches. These changes were made in multiplayer, but were accidently missed in the campaign. The campaign research stats now better match multiplayer.
 -The base health of Vaygr missile platforms, destroyers, cruisers, and flagships have been slightly tweaked to align with multiplayer as they did in hw2c.
@@ -31,11 +32,10 @@ Lowered the Vaygr corvette, frigate, and captial ship health upgrades to be clos
 
 [b]Balance[/b]
 -Balanced dock repair times for fighters and corvettes (addressed a bug that caused squadrons to dock extremely fast. hw2 ships now repair slower, closer to their hw2c rate. hw1 corvettes repair 4.5x faster than before, to balance vs hw2.)
--Harvesting for all four races is now within 1% of each other at the 10, 20, and 30 minute marks. Previously hw1 was behind hw2 at 10mins, and ahead at 30minutes. Harvesting is also now better balanced on maps with different asteriod layouts.
 -Removed evasive stance bonuses from non-combat/utility ships (evasive stance re-routes power from weapons to engines, however this is not possible on non-combat ships and had no effect in hw1c)
--Improved parade formations for resource collectors, to reduce collisions with the motherships.
--Tweaked ship damage vs resourcing units, to be closer to the classics.
 -Tweaked rotational speeds on some units, for example to aid in positioning motherships around asteriod patches.
+-Tweaked ship damage vs resourcing units, to be closer to the classics.
+-Thousands of ship vs ship tests have been performed with Gearbox's developer balance testing tools, to fine tune combat performance.
 
 ### Hiigaran and Vaygr
 __Resource Collectors__
@@ -49,10 +49,15 @@ __Destroyers__
 -Health 85k->90k +6% (+13% over v2.1, closer to hw2c when upgraded by popular demand)
 
 ### Hiigaran
+__Pulsar Corvettes__
+-Damage vs frigates -10%
+
 __Defense Field Frigates__
 -Health 20k->25k +25% (since this ship can't be upgraded, Taiidan Field Frigate is 30k)
 
 ### Vaygr
+__Resource Collectors__
+-Resource capacity 208->200 -4% (Now matches Hiigaran to better balance harvesting. Vaygr still start with one extra collector to make up for their Flagship's long collector drop off route. Harvesting for all four races is now within 1% of each other.)
 __Hyperspace Platforms__
 -Build Time 45->20sec (these took too long to setup)
 -Speed 650->600 -8% (to match hw2c as they should not be faster than a probe)
@@ -60,13 +65,15 @@ __Missile Corvettes__
 -Damage vs hw1 fighters +110% (now performs similarly vs hw1 and hw2 fighters)
 __Command Corvettes__
 -Build time 30->45sec +50% (slows down the replenishment of these powerful units)
+-Attack/accuracy bonus range -51% (forces these ships to be on the front line so they can be countered)
 
 ### Kushan and Taiidan
--Overhauled Kushan and Taiidan. These races were rushed into HWR at release, and repeatedly band-aided over the previous patches. All ship speeds, health, costs, build times, and research costs/times are now consistently translated into the HWR engine, with a robust design methodology. Kushan and Taiidan now feel much more like hw1 classic, while still being balanced against Hiigaran and Vaygr.
+-Overhauled Kushan and Taiidan. These races were rushed into HWR at release, and repeatedly band-aided over the previous patches. All ship speeds, health, costs, build times, and research costs/times are now consistently translated into the HWR engine, with a robust design methodology. Kushan and Taiidan now feel much more like hw1 classic, while being better balanced against Hiigaran and Vaygr.
+-Harvesting for all four races is now within 1% of each other at the 10, 20, and 30 minute marks. Previously hw1 was behind hw2 at 10mins, and ahead at 30minutes. Harvesting is also now better balanced on maps with different asteriod layouts.
 -Generally research costs have gone up, while research times have come down. This improves balance vs hw2 upgrade costs, while allowing hw1 to tech up faster, eliminating some pain points.
 -Adjusted base health to remove hidden armour modifiers from all ships other than frigates. Relic only applied armour modifiers to frigates, however Gearbox used them sporadically on hw1 units. The ship health values listed below are the actual effective health.
 -Race specific unit abilities now perform closer to hw1c, details are below.
--Most changes below are to make ships relatively similar to hw1c, while some are for balance vs hw2 races. Combat effectiveness is barely changing from build 7, as most changes affect infrastructure.
+-Many changes below are to make ships relatively similar to hw1c, while also providing for better infrastructure balance vs hw2 races.
 __Resource Collectors__
 -Cost 600->500 -17%
 -Build Time 50->40sec -20%
@@ -76,6 +83,9 @@ __Resource Collectors__
 __Resource Controller__
 -Health 27500->30000 +9%
 -Speed 100->190 +90%
+__Research Ships__
+-Build Time 50->45sec -10% (the first hub now builds as fast as the rest)
+-Speed 155->175 +13%
 __Scouts__
 -Build Time 10->8sec -20%
 -Sensors range -9% (scouting was too hard to deny)
@@ -97,7 +107,9 @@ __Taiidan Defense Fighters__
 -Built Time 18->15sec -17%
 -Health 108->300 +178%
 -Attack style is now closer to hw1c. Their laser weapon has been adjusted to be more consistent, and it now prioritizes mines over missiles.
--Added a minor accuracy reduction within the field (similar to Field Frigates)
+-Added an accuracy reduction within the field of -1% (similar to Field Frigates, but a smaller effect)
+__Corvettes__
+-To compensate for the hw1 corvette speed buffs below, fighter, corvette, and frigate weapons were tweaked appropriately vs hw1 corvettes.
 __Repair Corvettes__
 -Build Time 20->16sec -20%
 -Speed 255->320 +25% (to be able to heal the fastest corvette)
@@ -118,8 +130,8 @@ __Multi-Gun Corvettes__
 -Health 1100->1400 +27%
 __Minelayer Corvettes__
 -Minelaying Tech Research Cost 700->1200, Time 49->71sec
--Build Time: 25->35sec +40% (closer to hw1c, and to balance vs hw2 races at 45sec)
--Speed: 246->255 +4%
+-Build Time 25->35sec +40%
+-Speed 246->255 +4%
 -Health 1080->1800 +67%
 -Damage bonus in aggressive stance 1.32->1.1 -17%
 __Support Frigates__
@@ -150,6 +162,8 @@ __Taiidan Field Frigates__
 -Build Time 77->70sec -9%
 -Speed 166->206 +24%
 -Health 26000->30000 +15%
+__Motherships__
+-Multiplayer Only: Health 322k->420k +30% (to match an upgraded Hiigaran Mothership)
 __Carriers__
 -Super Capital Ship Drive Research Cost 1300->1700, Time 71->35sec
 -Cost 3000->3500 +17% (with a frigate module Hiigaran is 3800 and Vaygr is 3100)
@@ -163,15 +177,10 @@ __Missile Destroyers__
 -Guided Missile Research Cost 1400->3500, Time 42->71sec
 -Cost 2000->2500 +25%
 -Health 65k->106k +63%
+-Damage vs hw2 corvettes -20% (now performs similar vs hw1 and hw2 corvettes).
 -Now count againt the destroyer unit cap like hw1c. Normal unit caps allow for six destroyers, two of which can be missile destroyers.
 __Heavy Cruisers__
 -Heavy Gun Research Cost 5500->9000
-__Motherships__
--Multiplayer: Health 322k->420k +30% (to match an upgraded Hiigaran Mothership)
--Campaign: Health 247k->250k +1%
-__Research Ships__
--Build Time 50->45sec -10% (the first hub now builds as fast as the rest)
--Speed 155->175 +13%
 __Proximity Sensors__
 -Proximity Sensor Research Cost 250->500
 -Speed 350->450 +29%
@@ -186,5 +195,5 @@ __Gravity Wells__
 __Cloak Generators__
 -Speed 165->206 +25%
 -Health 7500->9000 +17%
--Ability duration 100->120sec +20% (to match hw2 races, and be closer to hw1c)
--Ability range +100% (to match hw2 races)
+-Ability duration 100->120sec +20%
+
