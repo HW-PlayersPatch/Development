@@ -178,9 +178,9 @@ function SelectivlyPlaceCrate()
 						SobGroup_SpawnNewShipInSobGroup(-1, "Meg_Crate_HW1Container", "Crate", "CrateSpawnGroup" .. playerIndex, "CrateDetectVolume" .. playerIndex)
 						--post a quick message (did not occur in HW1, an audio que would be nice too)
 						Subtitle_Message_Handler("$14780", 2, "data:sound\\speech\\allships\\emperor\\STATUS_NEWCRATE_1", playerIndex)
-						ping_c = Ping_AddSobGroup("", "circleandarrows", "CrateSpawnGroup"..playerIndex)	
-						Ping_LabelVisible(ping_c,1)
-						Ping_AddDescription(ping_c, 0, "$14781")   --Contents unknown
+						CRATES_PingIDs[playerIndex + 1] = Ping_AddSobGroup("", "circleandarrows", "CrateSpawnGroup"..playerIndex)	
+						Ping_LabelVisible(CRATES_PingIDs[playerIndex + 1],1)
+						Ping_AddDescription(CRATES_PingIDs[playerIndex + 1], 0, "$14781")   --Contents unknown
 						--there's one more crate, now
 						CRATES_NumberCrates = CRATES_NumberCrates + 1
 						--record the time the crate was spawned
@@ -215,7 +215,7 @@ function ChooseCrateRewardShip(iPlayer)
 		
 		crate_Ships = nil
 		
-		dofilepath(PlayerRace_GetString(playerIndex, "path_crate_ships", ""))
+		dofilepath(PlayerRace_GetString(iPlayer, "path_crate_ships", ""))
 		
 		if (crate_Ships ~= nil) then
 			--for every class in the list of ships...
@@ -335,8 +335,8 @@ function CheckCratesRule()
 										--kill the crate
 										SobGroup_Despawn("CrateSpawnGroup" .. playerIndex)
 										SobGroup_Clear("CrateSpawnGroup" .. playerIndex)
-										Ping_LabelVisible(ping_c,0)
-										Ping_Remove(ping_c)
+										Ping_LabelVisible(CRATES_PingIDs[playerIndex + 1],0)
+										Ping_Remove(CRATES_PingIDs[playerIndex + 1])
 										--kill the volume
 										Volume_Delete("CrateDetectVolume" .. playerIndex)
 										--there's one less crate, now
@@ -360,8 +360,8 @@ function CheckCratesRule()
 																--kill the crate
 																SobGroup_Despawn("CrateSpawnGroup" .. playerIndex)
 																SobGroup_Clear("CrateSpawnGroup" .. playerIndex)
-																Ping_LabelVisible(ping_c,0)
-																Ping_Remove(ping_c)
+																Ping_LabelVisible(CRATES_PingIDs[playerIndex + 1],0)
+																Ping_Remove(CRATES_PingIDs[playerIndex + 1])
 																--kill the volume
 																Volume_Delete("CrateDetectVolume" .. playerIndex)
 																--there's one less crate, now
