@@ -83,4 +83,4 @@ crate_Ships =
 						{prob = 1.00, item = "Kus_CloakGenerator", name = "$10052"},									
 				},
 		},
-},
+}

@@ -85,4 +85,4 @@ crate_Ships =
 						{prob = 1.00, item = "Hgn_Probe", name = "$1546"},
 				},
 		},
-},
+}

@@ -215,7 +215,7 @@ function ChooseCrateRewardShip(iPlayer)
 		
 		crate_Ships = nil
 		
-		dofilepath(PlayerRace_GetString(playerIndex, "path_crate_ships", ""))
+		dofilepath(PlayerRace_GetString(iPlayer, "path_crate_ships", ""))
 		
 		if (crate_Ships ~= nil) then
 			--for every class in the list of ships...
