@@ -130,6 +130,7 @@ NewShipType.selectionPriority=75
 NewShipType.militaryUnit=0
 addAbility(NewShipType,"MoveCommand",1,0);
 NewShipType.queueFormation="n_delta"
+NewShipType.dontDockWithOtherRaceShips=1
 NewShipType.ignoreRaceWhenDocking=0
 addAbility(NewShipType,"CanLaunch");
 NewShipType.launchTimeBetweenTwoFormations=0.5

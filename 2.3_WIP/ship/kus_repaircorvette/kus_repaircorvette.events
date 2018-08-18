@@ -121,6 +121,16 @@ effects =
             { "sound", "EXPLOSION/MEDIUM/ETG_EXPLODE_MEDIUM_FIREY" },
             { "fx_scale", "entity" },
         },
+        wpn1 =
+        {
+            { "anim", "Weapon_Gun0" },
+            { "animtime", "0" },
+            { "marker", "Weapon_Gun0_Muzzle" },
+            { "fx", "muzzle_flash_combo_small_frigate" },
+            { "sound", "WEAPON/FIGHTER/FIRE/WEAPON_FIGHTER_KINETIC_AUTOGUN_SHELL" },
+	    { "fx_scale", "0.75" },
+            { "fx_nlips", "on" },
+        },
 				repairing1 =
         {
             { "anim", "Repairing" },

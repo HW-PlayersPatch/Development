@@ -81,7 +81,7 @@ NewShipType.totalValue=10
 NewShipType.buildCost=175
 NewShipType.buildTime=16
 NewShipType.buildPriorityOrder=60
-NewShipType.retaliationRange=5500
+NewShipType.retaliationRange=4800
 NewShipType.retaliationDistanceFromGoal=160
 NewShipType.visualRange=1000
 NewShipType.prmSensorRange=4000
@@ -124,7 +124,7 @@ NewShipType.dockNrOfShipsInDockFormation=1
 NewShipType.dockFormation="n_delta"
 NewShipType.queueFormation="n_delta"
 NewShipType.strikeGroupRadius=25
-NewShipType.dontDockWithOtherRaceShips=1
+NewShipType.dontDockWithOtherRaceShips = getShipNum(NewShipType, "dontDockWithOtherRaceShips", 1)
 NewShipType.ignoreRaceWhenDocking=0
 addAbility(NewShipType,"CanLaunch");
 NewShipType.launchTimeBetweenTwoFormations=0.5
@@ -168,7 +168,7 @@ addAbility(NewShipType,"RetireAbility",1,0);
 --addCustomCode(NewShipType,"data:Ship/Kus_RepairCorvette/Kus_RepairCorvette.lua","","Create_Kus_RepairCorvette","Update_Kus_RepairCorvette","Destroy_Kus_RepairCorvette","Kus_RepairCorvette",15)
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Kus_RepairGun","Weapon_Gun0","Weapon_Gun0");
-StartShipWeaponConfig(NewShipType,"Kus_RepairGunHeal","Weapon_Gun0","Weapon_Gun0");
+StartShipWeaponConfig(NewShipType,"Kus_RepairGunHeal","Weapon_Rep0","Weapon_Rep0");
 addShield(NewShipType,"EMP",75,20);
 NewShipType.battleScarCoverage=1
 NewShipType.sobDieTime=2
