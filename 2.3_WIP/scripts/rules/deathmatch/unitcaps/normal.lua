@@ -1,5 +1,12 @@
 supplyLimit("Fighter", 70);
 
+print("YEA BOI")
+if (Player_GetRace(0) == 1) then
+    print("HIIIIIIIG")
+else
+    print("not hgn")
+end
+
 supplyLimit("Scout", 18);
 supplyLimit("Interceptor", 70);
 supplyLimit("Bomber", 70);
@@ -28,9 +35,9 @@ supplyLimit("CaptureFrigate",6);
 -- Kushan FamilySupplyOverride Frigate 24
 -- Taiidan FamilySupplyOverride Frigate 24		
 --
-supplyLimit("Capital", 13);
+supplyLimit("Capital", 12);
 
-supplyLimit("Destroyer", 6);
+supplyLimit("Destroyer", 5);
 supplyLimit("MissileDestroyer", 2);
 supplyLimit("Carrier", 4);
 supplyLimit("Battlecruiser",2);

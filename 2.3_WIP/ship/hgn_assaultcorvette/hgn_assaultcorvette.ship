@@ -32,7 +32,9 @@ NewShipType.holdSlots=3
 NewShipType.mass=15
 NewShipType.collisionMultiplier=0.8
 NewShipType.thrusterMaxSpeed=232*0.9
-NewShipType.mainEngineMaxSpeed=232
+
+NewShipType.mainEngineMaxSpeed=254
+
 NewShipType.rotationMaxSpeed=172*0.95
 NewShipType.thrusterAccelTime=2*1.075
 NewShipType.thrusterBrakeTime=1*1.075
@@ -181,3 +183,5 @@ NewShipType.hideNormalAttackUICooldown=1
 NewShipType.agileFlight=1
 NewShipType.homingDistance=2000
 NewShipType.homingDelay=0.5
+
+addCustomCode(NewShipType, "data:ship/hgn_assaultcorvette/hgn_assaultcorvette.lua", "", "", "Update_Hgn_Assault_Corvette", "", "hgn_assaultcorvette", 0.5);

@@ -199,8 +199,8 @@ GameSetupOptions =
     },
 	    {
         name = "nocruisers",
-        locName = "Allow building of Cruisers",
-        tooltip = "Enable or Disable the building of Battle and Heavy Cruisers",
+        locName = "$3139",
+        tooltip = "$3140",
         default = 0,
         visible = 1,
         choices =

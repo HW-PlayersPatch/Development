@@ -14,8 +14,8 @@ setTacticsMults(NewShipType, "ROTATIONACCEL", 1.0, 1.0, 1.0)
 NewShipType.isTransferable=1
 NewShipType.mass=10
 NewShipType.collisionMultiplier=1
-NewShipType.thrusterMaxSpeed=600
-NewShipType.mainEngineMaxSpeed=600
+NewShipType.thrusterMaxSpeed=500
+NewShipType.mainEngineMaxSpeed=500
 NewShipType.rotationMaxSpeed=171
 NewShipType.thrusterAccelTime=2
 NewShipType.thrusterBrakeTime=1
@@ -70,7 +70,7 @@ NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
 NewShipType.totalValue=0
 NewShipType.buildCost=150
-NewShipType.buildTime=15
+NewShipType.buildTime=20
 NewShipType.buildPriorityOrder=20
 NewShipType.retaliationRange=12000
 NewShipType.retaliationDistanceFromGoal=800
@@ -78,7 +78,7 @@ NewShipType.visualRange=9000
 NewShipType.prmSensorRange=9000
 NewShipType.secSensorRange=9000
 NewShipType.detectionStrength=4
-NewShipType.TOIcon="InvertedPentagon"
+NewShipType.TOIcon="Pentagon"
 NewShipType.TOScale=1
 NewShipType.TODistanceFade0=7000
 NewShipType.TODistanceDisappear0=5000
@@ -108,6 +108,7 @@ NewShipType.preciseATILimit=0
 NewShipType.selectionPriority=75
 NewShipType.militaryUnit=0
 addAbility(NewShipType,"MoveCommand",1,1);
+addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 NewShipType.dontDockWithOtherRaceShips=0
 NewShipType.ignoreRaceWhenDocking=0
 addAbility(NewShipType,"CanLaunch");

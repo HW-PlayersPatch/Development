@@ -76,28 +76,15 @@ function raceHelper()
 		dofilepath("player:racelist.lua")
 	end
 
-	if (Race_ID[currentRace] == "Vaygr") then
+	if (Race_ID[currentRace] == "Vaygr" or Race_ID[currentRace] == "Vaygr_2X") then
 		return NameMakaan
-	elseif (Race_ID[currentRace] == "Taiidan") then
+	elseif (Race_ID[currentRace] == "Taiidan" or Race_ID[currentRace] == "Taiidan_2X") then
 		return NameEmperor
 	else
 		return NameFleetCommand
 	end
 end
 
--- Race IDs
-Race_ID =
-{
-	"Hiigaran",
-	"Vaygr",
-	"Keeper",
-	"Bentusi",
-	"Kushan",
-	"Taiidan",
-	"Turanic Raiders",
-	"Kadeshi",
-	"P3",
-}
 bRaceID = nil
 
 -- Race IDs (old)
@@ -843,126 +830,129 @@ sscMap["MotherShip"].MS_PRODUCTION_CAPSHIPADVANCED = "STATUS_AdvancedCapitalShip
 --STATUS_AdvancedCapitalShipFacilityConstructedFromShipyard_1
 --STATUS_SensorsArrayConstructedFromBattlecruiser_1
 stdCMap = {}
-stdCMap["Hgn_Scout"] = "STATUS_ScoutConstructed_1"
-stdCMap["Hgn_Interceptor"] = "STATUS_InterceptorConstructed_1"
-stdCMap["Hgn_AttackBomber"] = "STATUS_BomberConstructed_1"
-stdCMap["Hgn_AttackBomberElite"] = "STATUS_BomberConstructed_1"
-stdCMap["Hgn_AssaultCorvette"] = "STATUS_AssaultCorvetteConstructed_1"
-stdCMap["Hgn_AssaultCorvetteElite"] = "STATUS_AssaultCorvetteConstructed_1"
-stdCMap["Hgn_PulsarCorvette"] = "STATUS_PulsarCorvetteConstructed_1"
-stdCMap["Hgn_MinelayerCorvette"] = "STATUS_MinelayerCorvetteConstructed_1"
-stdCMap["Hgn_AssaultFrigate"] = "STATUS_AssaultFrigateConstructed_1"
-stdCMap["Hgn_TorpedoFrigate"] = "STATUS_TorpedoFrigateConstructed_1"
-stdCMap["Hgn_TorpedoFrigateElite"] = "STATUS_TorpedoFrigateConstructed_1"
-stdCMap["Hgn_IonCannonFrigate"] = "STATUS_IonBeamFrigateConstructed"
-stdCMap["Hgn_SupportFrigate"] = "STATUS_SupportFrigateConstructed_1"
-stdCMap["Hgn_MarineFrigate"] = "STATUS_MarineFrigateConstructed_1"
-stdCMap["Hgn_DefenseFieldFrigate"] = "STATUS_DefenseFieldFrigateConstructed_1"
-stdCMap["Hgn_Destroyer"] = "STATUS_DestroyerConstructed_1"
-stdCMap["Hgn_Carrier"] = "STATUS_CarrierConstructed_1"
-stdCMap["Hgn_Battlecruiser"] = "STATUS_BattlecruiserConstructed_1"
-stdCMap["Kpr_Mover"] = "STATUS_MoverConstructed_1"
-stdCMap["Hgn_Shipyard"] = "STATUS_ShipyardConstructed_1"
-stdCMap["Hgn_GunTurret"] = "STATUS_GunTurretConstructed_1"
-stdCMap["Hgn_IonTurret"] = "STATUS_IonBeamPlatformConstructed"
-stdCMap["Hgn_ResourceCollector"] = "STATUS_ResourceCollectorConstructed_1"
-stdCMap["Hgn_ResourceController"] = "STATUS_ResourceControllerConstructed_1"
-stdCMap["Hgn_Probe"] = "STATUS_ProbeConstructed_1"
-stdCMap["Hgn_ECMProbe"] = "STATUS_SensorsDistortionProbeConstructed_1"
-stdCMap["Hgn_ProximitySensor"] = "STATUS_ProximitySensorConstructed_1"
+stdCMap["HGN_SCOUT"] = "STATUS_ScoutConstructed_1"
+stdCMap["HGN_INTERCEPTOR"] = "STATUS_InterceptorConstructed_1"
+stdCMap["HGN_ATTACKBOMBER"] = "STATUS_BomberConstructed_1"
+stdCMap["HGN_ATTACKBOMBERELITE"] = "STATUS_BomberConstructed_1"
+stdCMap["HGN_ASSAULTCORVETTE"] = "STATUS_AssaultCorvetteConstructed_1"
+stdCMap["HGN_ASSAULTCORVETTEELITE"] = "STATUS_AssaultCorvetteConstructed_1"
+stdCMap["HGN_PULSARCORVETTE"] = "STATUS_PulsarCorvetteConstructed_1"
+stdCMap["HGN_MINELAYERCORVETTE"] = "STATUS_MinelayerCorvetteConstructed_1"
+stdCMap["HGN_ASSAULTFRIGATE"] = "STATUS_AssaultFrigateConstructed_1"
+stdCMap["HGN_TORPEDOFRIGATE"] = "STATUS_TorpedoFrigateConstructed_1"
+stdCMap["HGN_TORPEDOFRIGATEELITE"] = "STATUS_TorpedoFrigateConstructed_1"
+stdCMap["HGN_IONCANNONFRIGATE"] = "STATUS_IonBeamFrigateConstructed"
+stdCMap["HGN_SUPPORTFRIGATE"] = "STATUS_SupportFrigateConstructed_1"
+stdCMap["HGN_MARINEFRIGATE"] = "STATUS_MarineFrigateConstructed_1"
+stdCMap["HGN_DEFENSEFIELDFRIGATE"] = "STATUS_DefenseFieldFrigateConstructed_1"
+stdCMap["HGN_DESTROYER"] = "STATUS_DestroyerConstructed_1"
+stdCMap["HGN_CARRIER"] = "STATUS_CarrierConstructed_1"
+stdCMap["HGN_BATTLECRUISER"] = "STATUS_BattlecruiserConstructed_1"
+stdCMap["KPR_MOVER"] = "STATUS_MoverConstructed_1"
+stdCMap["HGN_SHIPYARD"] = "STATUS_ShipyardConstructed_1"
+stdCMap["HGN_GUNTURRET"] = "STATUS_GunTurretConstructed_1"
+stdCMap["HGN_IONTURRET"] = "STATUS_IonBeamPlatformConstructed"
+stdCMap["HGN_RESOURCECOLLECTOR"] = "STATUS_ResourceCollectorConstructed_1"
+stdCMap["HGN_RESOURCECONTROLLER"] = "STATUS_ResourceControllerConstructed_1"
+stdCMap["HGN_PROBE"] = "STATUS_ProbeConstructed_1"
+stdCMap["HGN_ECMPROBE"] = "STATUS_SensorsDistortionProbeConstructed_1"
+stdCMap["HGN_PROXIMITYSENSOR"] = "STATUS_ProximitySensorConstructed_1"
 
 -- Makaan stuff
-stdCMap["Vgr_Scout"] = "STATUS_VScoutConstructed_1"
-stdCMap["Vgr_Interceptor"] = "STATUS_VAssaultCraftConstructed_1"
-stdCMap["Vgr_Crusader"] = "STATUS_VCrusaderConstructed_1"
-stdCMap["Vgr_LanceFighter"] = "STATUS_VLanceFighterConstructed_1"
-stdCMap["Vgr_Bomber"] = "STATUS_VBomberConstructed_1"
-stdCMap["Vgr_LaserCorvette"] = "STATUS_VLaserCorvetteConstructed_1"
-stdCMap["Vgr_MissileCorvette"] = "STATUS_VMissileCorvetteConstructed_1"
-stdCMap["Vgr_MinelayerCorvette"] = "STATUS_VMinelayerCorvetteConstructed_1"
-stdCMap["Vgr_CommandCorvette"] = "STATUS_VCommandCorvetteConstructed_1"
-stdCMap["Vgr_AssaultFrigate"] = "STATUS_VAssaultFrigateConstructed_1"
-stdCMap["Vgr_InfiltratorFrigate"] = "STATUS_VInfiltratorFrigateConstructed_1"
-stdCMap["Vgr_HeavyMissileFrigate"] = "STATUS_VHvyMissilFrigateConstructed_1"
-stdCMap["Vgr_TransportFrigate"] = "STATUS_VTransportFrigateConstructed_1"
-stdCMap["Vgr_ShipYard"] = "STATUS_VShipyardConstructed_1"
-stdCMap["Vgr_Carrier"] = "STATUS_VCarrierConstructed_1"
-stdCMap["Vgr_Battlecruiser"] = "STATUS_VBattleCruiserConstructed_1"
-stdCMap["Vgr_Destroyer"] = "STATUS_VDestroyerConstructed_1"
-stdCMap["Vgr_ResourceCollector"] = "STATUS_VResourceCollectorConstructed_1"
-stdCMap["Vgr_ResourceController"] = "STATUS_VResourceControllerConstructed_1"
-stdCMap["Vgr_Probe"] = "STATUS_VProbeConstructed_1"
-stdCMap["Vgr_Probe_ECM"] = "STATUS_VSensorDistortionProbeConstructed_1"
-stdCMap["Vgr_Probe_Prox"] = "STATUS_VProxProbeConstructed_1"
-stdCMap["Vgr_HyperSpace_Platform"] = "STATUS_VHyperspacePlatformConstructed_1"
+stdCMap["VGR_SCOUT"] = "STATUS_VScoutConstructed_1"
+stdCMap["VGR_INTERCEPTOR"] = "STATUS_VAssaultCraftConstructed_1"
+stdCMap["VGR_CRUSADER"] = "STATUS_VCrusaderConstructed_1"
+stdCMap["VGR_LANCEFIGHTER"] = "STATUS_VLanceFighterConstructed_1"
+stdCMap["VGR_BOMBER"] = "STATUS_VBomberConstructed_1"
+stdCMap["VGR_LASERCORVETTE"] = "STATUS_VLaserCorvetteConstructed_1"
+stdCMap["VGR_MISSILECORVETTE"] = "STATUS_VMissileCorvetteConstructed_1"
+stdCMap["VGR_MINELAYERCORVETTE"] = "STATUS_VMinelayerCorvetteConstructed_1"
+stdCMap["VGR_COMMANDCORVETTE"] = "STATUS_VCommandCorvetteConstructed_1"
+stdCMap["VGR_ASSAULTFRIGATE"] = "STATUS_VAssaultFrigateConstructed_1"
+stdCMap["VGR_INFILTRATORFRIGATE"] = "STATUS_VInfiltratorFrigateConstructed_1"
+stdCMap["VGR_HEAVYMISSILEFRIGATE"] = "STATUS_VHvyMissilFrigateConstructed_1"
+stdCMap["VGR_TRANSPORTFRIGATE"] = "STATUS_VTransportFrigateConstructed_1"
+stdCMap["VGR_SHIPYARD"] = "STATUS_VShipyardConstructed_1"
+stdCMap["VGR_CARRIER"] = "STATUS_VCarrierConstructed_1"
+stdCMap["VGR_BATTLECRUISER"] = "STATUS_VBattleCruiserConstructed_1"
+stdCMap["VGR_DESTROYER"] = "STATUS_VDestroyerConstructed_1"
+stdCMap["VGR_RESOURCECOLLECTOR"] = "STATUS_VResourceCollectorConstructed_1"
+stdCMap["VGR_RESOURCECONTROLLER"] = "STATUS_VResourceControllerConstructed_1"
+stdCMap["VGR_PROBE"] = "STATUS_VProbeConstructed_1"
+stdCMap["VGR_PROBE_ECM"] = "STATUS_VSensorDistortionProbeConstructed_1"
+stdCMap["VGR_PROBE_PROX"] = "STATUS_VProxProbeConstructed_1"
+stdCMap["VGR_HYPERSPACE_PLATFORM"] = "STATUS_VHyperspacePlatformConstructed_1"
+-- New production complete VO for Vaygr platforms
+stdCMap["VGR_WEAPONPLATFORM_GUN"] = "STATUS_VGunPlatformConstructed_1"
+stdCMap["VGR_WEAPONPLATFORM_MISSILE"] = "STATUS_VMissilePlatformConstructed_1"
 
 -- Kushan stuff
-stdCMap["Kus_Scout"] = "STATUS_ScoutConstructed"
-stdCMap["Kus_Interceptor"] = "STATUS_InterceptorConstructed"
-stdCMap["Kus_AttackBomber"] = "STATUS_AttackBomberConstructed_1"
-stdCMap["Kus_Defender"] = "STATUS_DefenderConstructed_1"
-stdCMap["Kus_CloakedFighter"] = "STATUS_CloakedFighterConstructed_1"
-stdCMap["Kus_LightCorvette"] = "STATUS_LightCorvetteConstructed_1"
-stdCMap["Kus_HeavyCorvette"] = "STATUS_HeavyCorvetteConstructed_1"
-stdCMap["Kus_MultiGunCorvette"] = "STATUS_MultiGunCorvetteConstructed_1"
-stdCMap["Kus_MinelayerCorvette"] = "STATUS_MinelayerCorvetteConstructed_1"
-stdCMap["Kus_RepairCorvette"] = "STATUS_RepairCorvetteConstructed_1"
-stdCMap["Kus_SalvageCorvette"] = "STATUS_SalvageCorvetteConstructed_1"
-stdCMap["Kus_SupportFrigate"] = "STATUS_SupportFrigateConstructed_1"
-stdCMap["Kus_AssaultFrigate"] = "STATUS_AssaultFrigateConstructed"
-stdCMap["Kus_IonCannonFrigate"] = "STATUS_IonBeamFrigateConstructed"
-stdCMap["Kus_DroneFrigate"] = "STATUS_DroneFrigateConstructed_1"
-stdCMap["Kus_Destroyer"] = "STATUS_DestroyerConstructed_1"
-stdCMap["Kus_MissileDestroyer"] = "STATUS_MissileDestroyerConstructed_1"
-stdCMap["Kus_Carrier"] = "STATUS_CarrierConstructed_1"
-stdCMap["Kus_HeavyCruiser"] = "STATUS_HeavyCruiserConstructed_1"
-stdCMap["Kus_ResourceCollector"] = "STATUS_ResourceCollectorConstructed_1"
-stdCMap["Kus_ResourceController"] = "STATUS_ResourceControllerConstructed"
-stdCMap["Kus_ResearchShip"] = "STATUS_ResearchShipConstructed_1"
-stdCMap["Kus_ResearchShip_1"] = "STATUS_ResearchShipConstructed_1"
-stdCMap["Kus_ResearchShip_2"] = "STATUS_ResearchShipConstructed_1"
-stdCMap["Kus_ResearchShip_3"] = "STATUS_ResearchShipConstructed_1"
-stdCMap["Kus_ResearchShip_4"] = "STATUS_ResearchShipConstructed_1"
-stdCMap["Kus_ResearchShip_5"] = "STATUS_ResearchShipConstructed_1"
-stdCMap["Kus_Probe"] = "STATUS_ProbeConstructed_1"
-stdCMap["Kus_ProximitySensor"] = "STATUS_ProximitySensorConstructed_1"
-stdCMap["Kus_CloakGenerator"] = "STATUS_CloakGeneratorConstructed_1"
-stdCMap["Kus_GravWellGenerator"] = "STATUS_GravWellGeneratorConstructed_1"
-stdCMap["Kus_SensorArray"] = "STATUS_SensorsArrayConstructed_1"
+stdCMap["KUS_SCOUT"] = "STATUS_ScoutConstructed"
+stdCMap["KUS_INTERCEPTOR"] = "STATUS_InterceptorConstructed"
+stdCMap["KUS_ATTACKBOMBER"] = "STATUS_AttackBomberConstructed_1"
+stdCMap["KUS_DEFENDER"] = "STATUS_DefenderConstructed_1"
+stdCMap["KUS_CLOAKEDFIGHTER"] = "STATUS_CloakedFighterConstructed_1"
+stdCMap["KUS_LIGHTCORVETTE"] = "STATUS_LightCorvetteConstructed_1"
+stdCMap["KUS_HEAVYCORVETTE"] = "STATUS_HeavyCorvetteConstructed_1"
+stdCMap["KUS_MULTIGUNCORVETTE"] = "STATUS_MultiGunCorvetteConstructed_1"
+stdCMap["KUS_MINELAYERCORVETTE"] = "STATUS_MinelayerCorvetteConstructed_1"
+stdCMap["KUS_REPAIRCORVETTE"] = "STATUS_RepairCorvetteConstructed_1"
+stdCMap["KUS_SALVAGECORVETTE"] = "STATUS_SalvageCorvetteConstructed_1"
+stdCMap["KUS_SUPPORTFRIGATE"] = "STATUS_SupportFrigateConstructed_1"
+stdCMap["KUS_ASSAULTFRIGATE"] = "STATUS_AssaultFrigateConstructed"
+stdCMap["KUS_IONCANNONFRIGATE"] = "STATUS_IonBeamFrigateConstructed"
+stdCMap["KUS_DRONEFRIGATE"] = "STATUS_DroneFrigateConstructed_1"
+stdCMap["KUS_DESTROYER"] = "STATUS_DestroyerConstructed_1"
+stdCMap["KUS_MISSILEDESTROYER"] = "STATUS_MissileDestroyerConstructed_1"
+stdCMap["KUS_CARRIER"] = "STATUS_CarrierConstructed_1"
+stdCMap["KUS_HEAVYCRUISER"] = "STATUS_HeavyCruiserConstructed_1"
+stdCMap["KUS_RESOURCECOLLECTOR"] = "STATUS_ResourceCollectorConstructed_1"
+stdCMap["KUS_RESOURCECONTROLLER"] = "STATUS_ResourceControllerConstructed"
+stdCMap["KUS_RESEARCHSHIP"] = "STATUS_ResearchShipConstructed_1"
+stdCMap["KUS_RESEARCHSHIP_1"] = "STATUS_ResearchShipConstructed_1"
+stdCMap["KUS_RESEARCHSHIP_2"] = "STATUS_ResearchShipConstructed_1"
+stdCMap["KUS_RESEARCHSHIP_3"] = "STATUS_ResearchShipConstructed_1"
+stdCMap["KUS_RESEARCHSHIP_4"] = "STATUS_ResearchShipConstructed_1"
+stdCMap["KUS_RESEARCHSHIP_5"] = "STATUS_ResearchShipConstructed_1"
+stdCMap["KUS_PROBE"] = "STATUS_ProbeConstructed_1"
+stdCMap["KUS_PROXIMITYSENSOR"] = "STATUS_ProximitySensorConstructed_1"
+stdCMap["KUS_CLOAKGENERATOR"] = "STATUS_CloakGeneratorConstructed_1"
+stdCMap["KUS_GRAVWELLGENERATOR"] = "STATUS_GravWellGeneratorConstructed_1"
+stdCMap["KUS_SENSORARRAY"] = "STATUS_SensorsArrayConstructed_1"
 
 -- Taiidan stuff
-stdCMap["Tai_Scout"] = "STATUS_ScoutConstructed"
-stdCMap["Tai_Interceptor"] = "STATUS_InterceptorConstructed"
-stdCMap["Tai_AttackBomber"] = "STATUS_AttackBomberConstructed"
-stdCMap["Tai_Defender"] = "STATUS_DefenderConstructed"
-stdCMap["Tai_DefenseFighter"] = "STATUS_DefenseFighterConstructed"
-stdCMap["Tai_LightCorvette"] = "STATUS_LightCorvetteConstructed"
-stdCMap["Tai_HeavyCorvette"] = "STATUS_HeavyCorvetteConstructed"
-stdCMap["Tai_MultiGunCorvette"] = "STATUS_MultiGunCorvetteConstructed"
-stdCMap["Tai_MinelayerCorvette"] = "STATUS_MinelayerCorvetteConstructed_1"
-stdCMap["Tai_RepairCorvette"] = "STATUS_RepairCorvetteConstructed"
-stdCMap["Tai_SalvageCorvette"] = "STATUS_SalvageCorvetteConstructed"
-stdCMap["Tai_SupportFrigate"] = "STATUS_SupportFrigateConstructed"
-stdCMap["Tai_AssaultFrigate"] = "STATUS_AssaultFrigateConstructed"
-stdCMap["Tai_IonCannonFrigate"] = "STATUS_IonCannonFrigateConstructed"
-stdCMap["Tai_FieldFrigate"] = "STATUS_FieldFrigateConstructed"
-stdCMap["Tai_Destroyer"] = "STATUS_DestroyerConstructed_1"
-stdCMap["Tai_MissileDestroyer"] = "STATUS_MissileDestroyerConstructed"
-stdCMap["Tai_Carrier"] = "STATUS_CarrierConstructed_1"
-stdCMap["Tai_HeavyCruiser"] = "STATUS_HeavyCruiserConstructed"
-stdCMap["Tai_ResourceCollector"] = "STATUS_ResourceCollectorConstructed_1"
-stdCMap["Tai_ResourceController"] = "STATUS_ResourceControllerConstructed"
-stdCMap["Tai_ResearchShip"] = "STATUS_ResearchShipConstructed"
-stdCMap["Tai_ResearchShip_1"] = "STATUS_ResearchShipConstructed"
-stdCMap["Tai_ResearchShip_2"] = "STATUS_ResearchShipConstructed"
-stdCMap["Tai_ResearchShip_3"] = "STATUS_ResearchShipConstructed"
-stdCMap["Tai_ResearchShip_4"] = "STATUS_ResearchShipConstructed"
-stdCMap["Tai_ResearchShip_5"] = "STATUS_ResearchShipConstructed"
-stdCMap["Tai_Probe"] = "STATUS_ProbeConstructed_1"
-stdCMap["Tai_ProximitySensor"] = "STATUS_ProxProbeConstructed_1"
-stdCMap["Tai_CloakGenerator"] = "STATUS_CloakGeneratorConstructed"
-stdCMap["Tai_GravWellGenerator"] = "STATUS_GravWellGeneratorConstructed"
-stdCMap["Tai_SensorArray"] = "STATUS_SensorsArrayConstructed"
+stdCMap["TAI_SCOUT"] = "STATUS_ScoutConstructed"
+stdCMap["TAI_INTERCEPTOR"] = "STATUS_InterceptorConstructed"
+stdCMap["TAI_ATTACKBOMBER"] = "STATUS_AttackBomberConstructed"
+stdCMap["TAI_DEFENDER"] = "STATUS_DefenderConstructed"
+stdCMap["TAI_DEFENSEFIGHTER"] = "STATUS_DefenseFighterConstructed"
+stdCMap["TAI_LIGHTCORVETTE"] = "STATUS_LightCorvetteConstructed"
+stdCMap["TAI_HEAVYCORVETTE"] = "STATUS_HeavyCorvetteConstructed"
+stdCMap["TAI_MULTIGUNCORVETTE"] = "STATUS_MultiGunCorvetteConstructed"
+stdCMap["TAI_MINELAYERCORVETTE"] = "STATUS_MinelayerCorvetteConstructed_1"
+stdCMap["TAI_REPAIRCORVETTE"] = "STATUS_RepairCorvetteConstructed"
+stdCMap["TAI_SALVAGECORVETTE"] = "STATUS_SalvageCorvetteConstructed"
+stdCMap["TAI_SUPPORTFRIGATE"] = "STATUS_SupportFrigateConstructed"
+stdCMap["TAI_ASSAULTFRIGATE"] = "STATUS_AssaultFrigateConstructed"
+stdCMap["TAI_IONCANNONFRIGATE"] = "STATUS_IonCannonFrigateConstructed"
+stdCMap["TAI_FIELDFRIGATE"] = "STATUS_FieldFrigateConstructed"
+stdCMap["TAI_DESTROYER"] = "STATUS_DestroyerConstructed_1"
+stdCMap["TAI_MISSILEDESTROYER"] = "STATUS_MissileDestroyerConstructed"
+stdCMap["TAI_CARRIER"] = "STATUS_CarrierConstructed_1"
+stdCMap["TAI_HEAVYCRUISER"] = "STATUS_HeavyCruiserConstructed"
+stdCMap["TAI_RESOURCECOLLECTOR"] = "STATUS_ResourceCollectorConstructed_1"
+stdCMap["TAI_RESOURCECONTROLLER"] = "STATUS_ResourceControllerConstructed"
+stdCMap["TAI_RESEARCHSHIP"] = "STATUS_ResearchShipConstructed"
+stdCMap["TAI_RESEARCHSHIP_1"] = "STATUS_ResearchShipConstructed"
+stdCMap["TAI_RESEARCHSHIP_2"] = "STATUS_ResearchShipConstructed"
+stdCMap["TAI_RESEARCHSHIP_3"] = "STATUS_ResearchShipConstructed"
+stdCMap["TAI_RESEARCHSHIP_4"] = "STATUS_ResearchShipConstructed"
+stdCMap["TAI_RESEARCHSHIP_5"] = "STATUS_ResearchShipConstructed"
+stdCMap["TAI_PROBE"] = "STATUS_ProbeConstructed_1"
+stdCMap["TAI_PROXIMITYSENSOR"] = "STATUS_ProxProbeConstructed_1"
+stdCMap["TAI_CLOAKGENERATOR"] = "STATUS_CloakGeneratorConstructed"
+stdCMap["TAI_GRAVWELLGENERATOR"] = "STATUS_GravWellGeneratorConstructed"
+stdCMap["TAI_SENSORARRAY"] = "STATUS_SensorsArrayConstructed"
 
 BUILD_Std = 1
 BUILD_Subsystem = 2
@@ -1011,11 +1001,11 @@ function CommandConstructionComplete(buildingShip, builtItem, buildType)
 		
 		
 	elseif (buildType==BUILD_Std) then
-
+		
+		builtItem = strupper(builtItem)
 		if (stdCMap[""..builtItem] ~= nil) then
 			playSpeechActor(stdCMap[""..builtItem], raceHelper(), 0, Frequency_Command)
 		end
-	
 	end
 end
 

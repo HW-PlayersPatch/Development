@@ -4,8 +4,8 @@ setPenetration(NewWeaponType,5,0.5,
 {Unarmoured=0.3},
 {Unarmoured_hw1=0.40},
 {ResArmour=0.5},
-{LightArmour=0.55},
-{LightArmour_hw1=1.1},
+{LightArmour=1.0},
+{LightArmour_hw1=1.45},
 {TurretArmour=0.6},
 {MediumArmour=0.4},
 {HeavyArmour=0.4},
@@ -25,8 +25,8 @@ setAccuracy(NewWeaponType,1,
 setAngles(NewWeaponType,0,-9,9,-9,9);
 setFrustratedTimers(NewWeaponType, 0.0, 10.0);
 setDamageFalloff(NewWeaponType, 0.10/1410.0, 0.1);
-setAccuracyFalloff(NewWeaponType, 0.10/1410.0, 0.1);
-setBallistics(NewWeaponType,1,0.0);
+--setAccuracyFalloff(NewWeaponType, 0.10/1410.0, 0.1);
+setBallistics(NewWeaponType,0,0.0);
 setFireMultFactor(NewWeaponType, 1.0);
 setRangeBoost(NewWeaponType, 1.0);
 setRangeByStance(NewWeaponType, 1.0, 1.0, 1.0);

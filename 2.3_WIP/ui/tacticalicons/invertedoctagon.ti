@@ -1,0 +1,17 @@
+name = "InvertedOctagon"
+displayName = "Utility Corvette"
+mesh =
+{
+    colour = {0,0,0,0},
+    lineWeight = 1,
+    renderFlags = {"scaleX", "scaleY"},
+    LODs = {1, "UI\\TacticalIcons\\Meshes\\InvertedOctagon.hod"}
+}
+
+mouseOverMesh =
+{
+    colour = {0,0,0,0},
+    lineWeight = 2,
+    renderFlags = {"scaleX", "scaleY"},
+    LODs = {1, "UI\\TacticalIcons\\Meshes\\InvertedOctagon_2x.hod"}
+}

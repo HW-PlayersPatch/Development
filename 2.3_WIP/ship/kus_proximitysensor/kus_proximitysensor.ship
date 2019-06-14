@@ -69,7 +69,7 @@ NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
 NewShipType.totalValue=0
 NewShipType.buildCost=150
-NewShipType.buildTime=15
+NewShipType.buildTime=20
 NewShipType.buildPriorityOrder=20
 NewShipType.retaliationRange=12000
 NewShipType.retaliationDistanceFromGoal=800
@@ -78,7 +78,7 @@ NewShipType.visualRange = holdRange
 NewShipType.prmSensorRange = holdRange
 NewShipType.secSensorRange = holdRange
 NewShipType.detectionStrength=4
-NewShipType.TOIcon="InvertedPentagon"
+NewShipType.TOIcon="Pentagon"
 NewShipType.TOScale=1
 NewShipType.TODistanceFade0=7000
 NewShipType.TODistanceDisappear0=5000
@@ -109,6 +109,7 @@ NewShipType.selectionPriority=75
 NewShipType.militaryUnit=0
 addAbility(NewShipType,"MoveCommand",1,0);
 addAbility(NewShipType,"CanDock",1,0);
+addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 NewShipType.dockTimeBetweenTwoFormations=1
 NewShipType.dockTimeBeforeStart=2
 NewShipType.dockNrOfShipsInDockFormation=1

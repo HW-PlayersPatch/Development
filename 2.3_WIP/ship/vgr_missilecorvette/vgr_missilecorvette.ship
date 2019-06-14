@@ -2,7 +2,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$1612"
 NewShipType.sobDescription="$1613"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 480)
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 510)
 NewShipType.regentime=0
 NewShipType.minRegenTime=0
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
@@ -183,3 +183,5 @@ NewShipType.radiusDamageEvadeMod=1.1
 NewShipType.agileFlight=1
 NewShipType.homingDistance=2000
 NewShipType.homingDelay=0.5
+
+addCustomCode(NewShipType, "data:ship/vgr_missilecorvette/vgr_missilecorvette.lua", "", "", "Update_Vgr_Missile_Corvette", "", "vgr_missilecorvette", 0.5);

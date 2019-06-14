@@ -180,3 +180,5 @@ NewShipType.radiusDamageEvadeMod=1.1
 NewShipType.agileFlight=1
 NewShipType.homingDistance=2000
 NewShipType.homingDelay=0.5
+
+addCustomCode(NewShipType, "data:ship/hgn_pulsarcorvette/hgn_pulsarcorvette.lua", "", "", "Update_Hgn_Pulsar_Corvette", "", "hgn_pulsarcorvette", 0.5);

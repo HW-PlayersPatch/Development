@@ -77,7 +77,7 @@ NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
 NewShipType.totalValue=8
 NewShipType.buildCost=600
-NewShipType.buildTime=65
+NewShipType.buildTime=60
 NewShipType.buildPriorityOrder=30
 NewShipType.retaliationRange=4800
 NewShipType.retaliationDistanceFromGoal=160
@@ -164,6 +164,9 @@ addAbility(NewShipType,"RepairCommand",1,440,1,1,"Frontal_SupportFrigate",
 {Mothership="frontal_RepairFrigate_Mothership"});
 addAbility(NewShipType,"RetireAbility",1,1);
 NewShipType.noCombatGrouping=1
+-- fix to salvage vette scuttle bug
+addCustomCode(NewShipType,"data:scripts/playerspatch_patches.lua","","","Update_NoSalvageScuttle","","tai_supportfrigate",4)
+-- fix to salvage vette scuttle bug
 LoadModel(NewShipType,1);
 StartShipHardPointConfig(NewShipType,"Weapon_Gun1","Hardpoint_Gun1","Weapon","Innate","Ship","Tai_FrigateCannon","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Weapon_Gun2","Hardpoint_Gun2","Weapon","Innate","Ship","Tai_FrigateCannon2","","","","","","","","");
@@ -187,8 +190,8 @@ loadLatchPointList(NewShipType,"RepCap","RepairPoint1","RepairPoint2");
 NewShipType.minFalloffDamageDist=100
 NewShipType.maxFalloffDamageDist=100*2
 NewShipType.maxFalloffScuttleDamageDist=100*4
-NewShipType.explosiveScuttleDamageOnDeath=1125
+NewShipType.explosiveScuttleDamageOnDeath=130
 NewShipType.maxFalloffForce=500*10
-NewShipType.explosiveDamageOnDeath=225													 
+NewShipType.explosiveDamageOnDeath=50												 
 NewShipType.hideNormalAttackUICooldown=1
 NewShipType.canSurround=1

@@ -17,8 +17,8 @@ NewShipType.defaultROE="Defensive"
 NewShipType.defaultStance="Neutral"
 NewShipType.mass=100
 NewShipType.collisionMultiplier=1
-NewShipType.thrusterMaxSpeed=206
-NewShipType.mainEngineMaxSpeed=206
+NewShipType.thrusterMaxSpeed=230
+NewShipType.mainEngineMaxSpeed=230
 NewShipType.rotationMaxSpeed=25
 NewShipType.thrusterAccelTime=7
 NewShipType.thrusterBrakeTime=2
@@ -74,8 +74,8 @@ NewShipType.antiFighterValue=8
 NewShipType.antiCorvetteValue=2
 NewShipType.antiFrigateValue=0
 NewShipType.totalValue=15
-NewShipType.buildCost=900
-NewShipType.buildTime=70
+NewShipType.buildCost=700
+NewShipType.buildTime=50
 NewShipType.buildPriorityOrder=40
 NewShipType.retaliationRange=5500
 NewShipType.retaliationDistanceFromGoal=160
@@ -132,11 +132,11 @@ addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand",1,1.1,200,700,0,4);
 addAbility(NewShipType,"CanAttack",1,1,0,1,0.35,1.5,"Fighter_hw1, Fighter, Swarmer, Corvette_hw1, Corvette,,,,,, Capturer, Frigate, SmallCapitalShip, BigCapitalShip, Utility","frontal_Frigate",
-{Fighter="movetotargetandshoot_Frigate_vs_Fighters"},
-{Fighter_hw1="movetotargetandshoot_Frigate_vs_Fighters"},
-{Swarmer="movetotargetandshoot_Frigate_vs_Fighters"},
-{Corvette="movetotargetandshoot_Frigate_vs_Corvettes"},
-{Corvette_hw1="movetotargetandshoot_Frigate_vs_Corvettes"},
+{Fighter="MoveToTargetAndShoot_Frigate"},
+{Fighter_hw1="MoveToTargetAndShoot_Frigate"},
+{Swarmer="movetotargetandshoot_Frigate"},
+{Corvette="MoveToTargetAndShoot_Frigate"},
+{Corvette_hw1="MoveToTargetAndShoot_Frigate"},
 {Munition="MoveToTargetAndShoot"},
 {SubSystem="FrontalVsSubSystem"});
 addAbility(NewShipType,"GuardCommand",1,3000,600);
@@ -168,8 +168,8 @@ loadLatchPointList(NewShipType,"RepCap","RepairPoint1","RepairPoint2");
 NewShipType.minFalloffDamageDist=100
 NewShipType.maxFalloffDamageDist=100*2
 NewShipType.maxFalloffScuttleDamageDist=100*4
-NewShipType.explosiveScuttleDamageOnDeath=956
+NewShipType.explosiveScuttleDamageOnDeath=139
 NewShipType.maxFalloffForce=500*10
-NewShipType.explosiveDamageOnDeath=191												 
+NewShipType.explosiveDamageOnDeath=50												 
 NewShipType.hideNormalAttackUICooldown=1
 NewShipType.canSurround=1

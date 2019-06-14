@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$1606"
 NewShipType.sobDescription="$1607"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 90)
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 110)
 NewShipType.regentime=0
 NewShipType.minRegenTime=0
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
@@ -30,8 +30,8 @@ NewShipType.defaultStance="Aggressive"
 NewShipType.holdSlots=2
 NewShipType.mass=10
 NewShipType.collisionMultiplier=1
-NewShipType.thrusterMaxSpeed=279*0.77
-NewShipType.mainEngineMaxSpeed=279
+NewShipType.thrusterMaxSpeed=314 * 0.77
+NewShipType.mainEngineMaxSpeed=314
 NewShipType.rotationMaxSpeed=105
 NewShipType.thrusterAccelTime=3
 NewShipType.thrusterBrakeTime=1
@@ -104,7 +104,7 @@ NewShipType.visualRange=1000
 NewShipType.prmSensorRange=3000
 NewShipType.secSensorRange=4000
 NewShipType.detectionStrength=1
-NewShipType.TOIcon="Triangle"
+NewShipType.TOIcon="TriangleDown"
 NewShipType.TOScale=1
 NewShipType.TODistanceFade0=7000
 NewShipType.TODistanceDisappear0=5000
@@ -187,3 +187,5 @@ NewShipType.agileFlight=1
 NewShipType.homingDistance=2000
 NewShipType.homingDelay=0.5
 NewShipType.canSurround=0
+
+addCustomCode(NewShipType, "data:ship/vgr_lancefighter/vgr_lancefighter.lua", "", "", "Update_Vgr_Lance_Fighter", "", "vgr_lancefighter", 0.5);

@@ -1,7 +1,7 @@
-NewShipType = StartShipConfig()
+   NewShipType = StartShipConfig()
 NewShipType.displayedName="$10048"
 NewShipType.sobDescription="$10049"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 30000)
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 27500)
 NewShipType.regentime=1500
 NewShipType.minRegenTime=300
 NewShipType.sideArmourDamage=1
@@ -149,6 +149,9 @@ addAbility(NewShipType,"RetireAbility",1,1);
 --AddShipMultiplier(NewShipType, "ResourceDropOffRate", "OwnShipsWithinRadius", "Linear", 1.075, 1.075, 2000)
 ----AddShipMultiplier(NewShipType, "ResourceCapacity", "OwnShipsWithinRadius", "Linear", 1.075, 1.075, 2000)
 --AddShipMultiplier(NewShipType, "ResourceCollectionRate", "OwnShipsWithinRadius", "Linear", 1.075, 1.075, 2000)
+-- fix to salvage vette scuttle bug
+addCustomCode(NewShipType,"data:scripts/playerspatch_patches.lua","","","Update_NoSalvageScuttle","","kus_resourcecontroller",4)
+-- fix to salvage vette scuttle bug
 LoadModel(NewShipType,1);
 addShield(NewShipType,"EMP",220,20);
 NewShipType.battleScarCoverage=3

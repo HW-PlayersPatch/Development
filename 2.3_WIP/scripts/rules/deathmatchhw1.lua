@@ -1,5 +1,5 @@
 GUID = { 110,91,157,190,18,23,250,78,144,20,41,246,181,128,214,12 }
-GameRulesName = "Homeworld 1 Deathmatch v2.3" --$4805
+GameRulesName = "Homeworld 1 RM - " .. "v2.4 Players Patch"
 Description = "$4806"
 SaveGameVersion = 1.0
 SinglePlayer = 0
@@ -9,7 +9,7 @@ ExtFilter = "rules_dm,rules_hw1,rules_dm_hw1"
 Race_Paths = "Deathmatch,DeathmatchHW1,Extras"
 
 Level_Pass_Tags = "dm_hw1"
-Race_Pass_Tags = "race_dm_hw1,race_random_all"
+Race_Pass_Tags = "race_dm_hw1,race_random_all,race_dm_2x_hw1"
 
 GameSetupOptions =
 {
@@ -199,8 +199,8 @@ GameSetupOptions =
     },
 	    {
         name = "nocruisers",
-        locName = "Allow building of Cruisers",
-        tooltip = "Enable or Disable the building of Battle and Heavy Cruisers",
+        locName = "$3139",
+        tooltip = "$3140",
         default = 0,
         visible = 1,
         choices =
@@ -209,7 +209,20 @@ GameSetupOptions =
 	"$3222",  "1",
         },
     },
-
+	-- 2.4
+		{
+        name = "nominelayers",
+        locName = "Disable Minelayers",
+        tooltip = "DISABLE THE PRODUCTION OF MINELAYERS",
+        default = 0,
+        visible = 1,
+        choices =
+        {
+            "No", "0",
+			"Yes", "1",
+        },
+    },
+	-- 2.4
 		{
         name = "norushtime",
         locName = "$3000",

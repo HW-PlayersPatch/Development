@@ -1,5 +1,5 @@
 StartWeaponConfig(NewWeaponType,"Fixed","SphereBurst","Vgr_SmallMissile","Normal",0,0,32,2,0,0,7,0,0,0,0,0,0,0,0,0,0.1,"Normal",1,0,0);
-AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",109,109,"");
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",15,15,"");
 setPenetration(NewWeaponType,15,1,
 {unarmoured=0.12*3.1},
 {unarmoured_hw1=0.12*3.1},

@@ -71,19 +71,19 @@ NewShipType.antiFighterValue=0
 NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
 NewShipType.totalValue=0
-NewShipType.buildCost=700
-NewShipType.buildTime=70
+NewShipType.buildCost=500
+NewShipType.buildTime=60
 NewShipType.buildPriorityOrder=70
 NewShipType.retaliationRange=6000
 NewShipType.retaliationDistanceFromGoal=160
 NewShipType.visualRange=5000
-NewShipType.prmSensorRange=13000
+NewShipType.prmSensorRange=12000
 NewShipType.secSensorRange = getShipNum(NewShipType, "secSensorRange", 17000)
 if (getShipNum(NewShipType, "canPing", 1) > 0) then
 addAbility(NewShipType,"SensorPing",1,1,10,2.5);
 end
 NewShipType.detectionStrength=1
-NewShipType.TOIcon="Diamond"
+NewShipType.TOIcon="WideInvertedPentagon"
 NewShipType.TOScale=1
 NewShipType.TODistanceFade0=11000
 NewShipType.TODistanceDisappear0=9000

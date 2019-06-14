@@ -2293,6 +2293,12 @@ Icon_Subsystem_Fake = {
 		stretchOnDraw = 0,
 	},
 }
+
+HW1_FighterTell = Icon_Subsystem_Fighter
+HW1_CorvetteTell = Icon_Subsystem_Corvette
+HW1_FrigateTell = Icon_Subsystem_Frigate
+HW1_CapitalTell = Icon_Subsystem_CapShip
+
 HW1_ResearchModule = Icon_Subsystem_Research
 HW1_CloakGenerator = Icon_Subsystem_Fake
 

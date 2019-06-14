@@ -142,7 +142,7 @@ NewShipType.strikeGroupRadius=200
 addAbility(NewShipType,"ShipHold",1,40,100,"rallypoint","Fighter, Corvette, Utility",35,{Fighter="2"},{Corvette="24"});
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
-addAbility(NewShipType,"HyperSpaceCommand",0,1,600,1200,0,3);
+addAbility(NewShipType,"HyperSpaceCommand",0,1,400,800,0,3);
 addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1,"Fighter, Fighter_hw1, Corvette, Corvette_hw1, Frigate, SmallCapitalShip, BigCapitalShip, Utility","JustShoot");
 addAbility(NewShipType,"GuardCommand",1,3000,1000);
 addAbility(NewShipType,"CanBuildShips",1,"Fighter_Vgr, Corvette_Vgr, Utility_Vgr, Frigate_Vgr, SubSystem_Vgr, Platform_Vgr, Shipyard_Vgr, Probe_Vgr","Utility, Fighter, Corvette, Frigate, Platform, SubSystemModule, SubSystemSensors, Capital");
@@ -151,7 +151,7 @@ addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"CloakAbility",0,2,2000,4000,3,100,1,1000);
 addAbility(NewShipType,"RetireAbility",1,1);
-addAbility(NewShipType,"HyperspaceInhibitorAbility",0,12000);
+addAbility(NewShipType,"HyperspaceInhibitorAbility",0,10500);
 addCustomCode(NewShipType,"data:Ship/Vgr_Carrier/Vgr_Carrier.lua","","Create_Vgr_Carrier","Update_Vgr_Carrier","","Vgr_Carrier",4)
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun2","Weapon_1HullDefense","");

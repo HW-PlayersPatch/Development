@@ -152,9 +152,9 @@ addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"CloakAbility",0,2,2000,4000,3,100,1,1000);
 addAbility(NewShipType,"RetireAbility",1,1);
-addAbility(NewShipType,"HyperspaceInhibitorAbility",0,12000);
+addAbility(NewShipType,"HyperspaceInhibitorAbility",0,10500);
 NewShipType.noCombatGrouping=1
-addCustomCode(NewShipType,"data:Ship/Hgn_Carrier/Hgn_Carrier.lua","","Create_Hgn_Carrier","Update_Hgn_Carrier","","Hgn_Carrier",4)
+addCustomCode(NewShipType,"data:Ship/Hgn_Carrier/Hgn_Carrier.lua","","Create_Hgn_Carrier","Update_Hgn_Carrier","Destroy_Hgn_Carrier","Hgn_Carrier",4)
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun2","Weapon_HullDefense1","Weapon_HullDefense1");
 StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun2","Weapon_HullDefense2","Weapon_HullDefense2");
@@ -201,3 +201,5 @@ NewShipType.explosiveDamageOnDeath=275
 NewShipType.radiusDamageEvadeMod=1.1													 
 NewShipType.hideNormalAttackUICooldown=1
 NewShipType.canSurround=1
+
+NewShipType.alternativeHyperspaceTime = 6

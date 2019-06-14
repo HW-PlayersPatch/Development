@@ -218,7 +218,7 @@ RepairInfo = {
 	-- when a repair ship is latched to a target it will wait this many seconds after the repairs are finished before unlatching
 	timeToWaitAfterLastDamageBeforeUnlatching				= 5.0,
 	-- when ships are trying to repair the target is slowed down to this amount of it's max speed
-	slowDownFactor                                          = 0.65,
+	slowDownFactor                                          = 0.95,
 }
 
 EngineTrailInfo = {
@@ -459,8 +459,8 @@ AutoLODInfo = {
 -- variables are the same as the names in HW2_MultipliersAndAbilitiesHowTo.doc
 MultiplierCap = {
     default = 1.5,
-    WeaponDamage = 1.2,
-    WeaponAccuracy = 1.2,
+    WeaponDamage = 1.3,
+    WeaponAccuracy = 1.3,
     CloakDetection = 4.0,
     VisualRange = 4.0,
     PrimarySensorsRange = 2.0,

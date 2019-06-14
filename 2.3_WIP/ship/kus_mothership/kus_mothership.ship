@@ -144,7 +144,7 @@ addAbility(NewShipType,"ShipHold",1,500,200,"rallypoint","Fighter, Corvette, Uti
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand",1,1.1,1000,1500,0,4);
 addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1,"Fighter_hw1, Fighter, Swarmer, Corvette_hw1, Corvette, Capturer, Frigate, SmallCapitalShip, BigCapitalShip, Utility, Mothership","JustShoot");
-addAbility(NewShipType,"CanBuildShips",1,"Fighter_Kus, Corvette_Kus, Frigate_Kus, SuperCap_Kus, Resource_Kus, NonCombat_Kus, SubSystem_Kus","Fighter, Corvette, Frigate, Capital, Resource, NonCombat");
+addAbility(NewShipType,"CanBuildShips",1,"Fighter_Kus, Corvette_Kus, Frigate_Kus, SuperCap_Kus, Resource_Kus, NonCombat_Kus","Fighter, Corvette, Frigate, Capital, Resource, NonCombat");
 addAbility(NewShipType,"CanBeCaptured",300,0.5);
 addAbility(NewShipType,"CanBeRepaired");
 addCustomCode(NewShipType,"data:Ship/Kus_Mothership/Kus_Mothership.lua","Load_Kus_Mothership","Create_Kus_Mothership","Update_Kus_Mothership","Destroy_Kus_Mothership","Kus_Mothership",4)
@@ -159,6 +159,12 @@ StartShipWeaponConfig(NewShipType,"HW1_MothershipGun","Weapon_HullDefense11","")
 StartShipWeaponConfig(NewShipType,"HW1_MothershipGun","Weapon_HullDefense12","");
 StartShipHardPointConfig(NewShipType,"Engine","Hardpoint_Engine","System","Innate","Damageable","Kus_MothershipEngine","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Resource","Hardpoint_Resource","System","Innate","Damageable","Kus_MothershipResource","","","","","","","","");
+
+StartShipHardPointConfig(NewShipType,"Fighter Tell","Hardpoint_Resource","System","Production","Indestructible","","hw1_fightertell","","","","","","","");
+StartShipHardPointConfig(NewShipType,"Corvette Tell","Hardpoint_Resource","System","Production","Indestructible","","hw1_corvettetell","","","","","","","");
+StartShipHardPointConfig(NewShipType,"Frigate Tell","Hardpoint_Resource","System","Production","Indestructible","","hw1_frigatetell","","","","","","","");
+StartShipHardPointConfig(NewShipType,"CapShip Tell","Hardpoint_Resource","System","Production","Indestructible","","hw1_capitaltell","","","","","","","");
+
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg03",1, 0.34,0,0,0, 0,0,0,50,0,0,0,200,0,0,0,50,0,0,0,50);
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg02",1, 0.13,0,0,0, 30,-20,200,25,300,150,85,50,0,0,0,85,0,0,0,50);
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg04",1, 0.12,0,0,0, 50,40,-150,50,65,25,5,25,0,0,0,95,0,0,0,50);
