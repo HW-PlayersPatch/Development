@@ -93,8 +93,6 @@ function timer_updating()
 				-- 2.4
 				Rule_AddInterval("Observers_Init",0.0)
 				-- 2.4
-
-				Rule_AddInterval("Stats_Capture", 5);
 						
 				if research == 0 then
 						Rule_AddInterval("research_init",timer_interval)
