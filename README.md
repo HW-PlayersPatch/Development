@@ -1,1 +1,1 @@
-This is the GitHub repository for development of the Players Patch.
+Development repository for the Players Patch
