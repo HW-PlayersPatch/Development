@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$10036"
 NewShipType.sobDescription="$10037"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 106000)
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 75000)
 NewShipType.regentime=1850
 NewShipType.minRegenTime=1850
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
@@ -90,7 +90,7 @@ NewShipType.visualRange=1000
 NewShipType.prmSensorRange=6500
 NewShipType.secSensorRange=7500
 NewShipType.detectionStrength=1
-NewShipType.TOIcon="Parallelogram"
+NewShipType.TOIcon="InvertedParallelogram"
 NewShipType.TOScale=1
 NewShipType.TODistanceFade0=11000
 NewShipType.TODistanceDisappear0=9000
@@ -169,7 +169,7 @@ StartShipWeaponConfig(NewShipType,"Kus_DestroyerLauncherVolley","Weapon_GunV0","
 StartShipWeaponConfig(NewShipType,"Kus_DestroyerLauncherVolley","Weapon_GunV1","Weapon_Gun1v");
 StartShipWeaponConfig(NewShipType,"Kus_DestroyerLauncherVolley","Weapon_GunV2","Weapon_Gun2v");
 StartShipWeaponConfig(NewShipType,"Kus_DestroyerLauncherVolley","Weapon_GunV3","Weapon_Gun3v");
-addShield(NewShipType,"EMP",1000,20);
+addShield(NewShipType,"EMP",700,20);
 StartShipHardPointConfig(NewShipType,"Engine","Hardpoint_Engine","System","Innate","Damageable","Kus_MissileDestroyerEngine","","","","","","","","");
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg03",1, 0.45,0,0,0, 0,0,0,50,0,0,0,200,0,0,0,50,0,0,0,50);
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg04",1, 0.2,0,0,0, 50,40,-150,50,65,25,5,25,0,0,0,95,0,0,0,50);

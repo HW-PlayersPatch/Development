@@ -141,6 +141,9 @@ addMagneticField(NewShipType,"MagneticField",1000,100,"defenseField_generic",15,
 addAbility(NewShipType,"DefenseFieldShieldAbility",0,1200,0,0);
 AddShipMultiplier(NewShipType,"WeaponDamage","EnemyShipsWithinRadius","Linear",0.93,0.93,1200);
 AddShipMultiplier(NewShipType,"WeaponAccuracy","EnemyShipsWithinRadius","Linear",0.93,0.93,1200);
+-- fix to salvage vette scuttle bug
+addCustomCode(NewShipType,"data:scripts/playerspatch_patches.lua","","","Update_NoSalvageScuttle","","tai_fieldfrigate",4)
+-- fix to salvage vette scuttle bug
 LoadModel(NewShipType,1);
 addShield(NewShipType,"EMP",10000,20);
 AddShipAbility(NewShipType,"DefenseField",1,"ThisShipOnly",0);
@@ -162,9 +165,9 @@ loadLatchPointList(NewShipType,"RepCap","RepairPoint1","RepairPoint2");
 NewShipType.minFalloffDamageDist=100
 NewShipType.maxFalloffDamageDist=100*2
 NewShipType.maxFalloffScuttleDamageDist=100*4
-NewShipType.explosiveScuttleDamageOnDeath=956
+NewShipType.explosiveScuttleDamageOnDeath=130
 NewShipType.maxFalloffForce=500*10
-NewShipType.explosiveDamageOnDeath=191														 
+NewShipType.explosiveDamageOnDeath=50													 
 NewShipType.hideNormalAttackUICooldown=1
 NewShipType.strikeGroupSpeed=5000
 NewShipType.canSurround=1

@@ -52,6 +52,26 @@ function GetMissionDifficultyScale()
 	return MissionDifficultyScale
 end
 
+function GetDefaultToSetting()
+	DefaultToSetting = GetOptionValueUI("PlayersPatch_DefaultToSetting")
+
+	if DefaultToSetting < 1 or DefaultToSetting > 4 then
+		DefaultToSetting = 2
+	end
+
+	return DefaultToSetting
+end
+
+function GetProductionTimeInfoSetting()
+	ProductionTimeSetting = GetOptionValueUI("PlayersPatch_ProductionTimeSetting")
+
+	if ProductionTimeSetting < 1 or ProductionTimeSetting > 4 then
+		ProductionTimeSetting = 4
+	end
+
+	return ProductionTimeSetting
+end
+
 function GetOptionValueUI(OptionName)
 
 	--Load expanded options

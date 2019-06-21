@@ -1,5 +1,5 @@
 function Start_Tai_Scout(CustomGroup, playerIndex, shipID)  
-	SobGroup_SetMaxSpeedMultiplier(CustomGroup, 1.25)		
+	SobGroup_SetMaxSpeedMultiplier(CustomGroup, 1.1)		
 end
 
 function Do_Tai_Scout(CustomGroup, playerIndex, shipID)		

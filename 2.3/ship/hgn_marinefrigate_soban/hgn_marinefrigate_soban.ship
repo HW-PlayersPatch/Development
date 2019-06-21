@@ -155,3 +155,5 @@ NewShipType.trailLinger=4
 setEngineBurn(NewShipType,6,1,1.5,60,1.01,0.1,0.25,120);
 setEngineGlow(NewShipType,1,1,1.02,20,300,50,1.5,{0.27, 0.47, .69, 0.25});
 loadShipPatchList(NewShipType,"data:sound/sfx/ship/Hiigaran/Frigate/",0,"Engines/HFrigateEng","",1,"Ambience/HFrigateAmb","");
+
+NewShipType.alternativeHyperspaceTime = 6

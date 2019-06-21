@@ -1,0 +1,17 @@
+name = "TriangleUp"
+displayName = "Miscellaneous Fighter"
+mesh =
+{
+    colour = {0,0,0,0},
+    lineWeight = 1,
+    renderFlags = {"scaleX", "scaleY"},
+    LODs = {1, "UI\\TacticalIcons\\Meshes\\TriangleUp.hod"}
+}
+
+mouseOverMesh =
+{
+    colour = {0,0,0,0},
+    lineWeight = 2,
+    renderFlags = {"scaleX", "scaleY"},
+    LODs = {1, "UI\\TacticalIcons\\Meshes\\TriangleUp_2x.hod"}
+}

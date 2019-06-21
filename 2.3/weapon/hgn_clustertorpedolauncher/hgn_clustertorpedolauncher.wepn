@@ -2,7 +2,7 @@ StartWeaponConfig(NewWeaponType,"Fixed","Missile","Hgn_ClusterTorpedoA","Special
 AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",380,380,"");
 setPenetration(NewWeaponType,5,0.5,
 {LightArmour=0.8},
-{LightArmour_hw1=0.8},
+{LightArmour_hw1=0.8 * 0.5},
 {ResArmour=0.6},
 {PlanetKillerArmour=0},
 {SwarmerArmor=0.10},

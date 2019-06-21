@@ -13,8 +13,8 @@ setTacticsMults(NewShipType, "ROTATIONACCEL", 1.0, 1.0, 1.0)
 NewShipType.isTransferable=1
 NewShipType.mass=10
 NewShipType.collisionMultiplier=0.125
-NewShipType.thrusterMaxSpeed=600
-NewShipType.mainEngineMaxSpeed=600
+NewShipType.thrusterMaxSpeed=500
+NewShipType.mainEngineMaxSpeed=500
 NewShipType.rotationMaxSpeed=171
 NewShipType.thrusterAccelTime=2
 NewShipType.thrusterBrakeTime=1
@@ -63,13 +63,13 @@ NewShipType.antiFighterValue=0
 NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
 NewShipType.totalValue=0
-NewShipType.buildCost=100
+NewShipType.buildCost=120
 NewShipType.buildTime=15
 NewShipType.buildPriorityOrder=20
 NewShipType.retaliationRange=4800
 NewShipType.retaliationDistanceFromGoal=160
-NewShipType.visualRange = getShipNum(NewShipType, "visualRange", 5000)
-holdRange = getShipNum(NewShipType, "miscSensorRange", 12000)
+NewShipType.visualRange = getShipNum(NewShipType, "visualRange", 2000)
+holdRange = getShipNum(NewShipType, "miscSensorRange", 10000)
 NewShipType.prmSensorRange = holdRange
 NewShipType.secSensorRange = holdRange
 NewShipType.detectionStrength=1
@@ -112,6 +112,7 @@ NewShipType.launchNrOfShipsInDockFormation=1
 NewShipType.launchFormation="delta"
 NewShipType.canJoinStrikeGroup=0
 addAbility(NewShipType,"ParadeCommand",1);
+addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 LoadModel(NewShipType,1);
 NewShipType.battleScarCoverage=0
 NewShipType.sobDieTime=1

@@ -1,5 +1,5 @@
-StartWeaponConfig(NewWeaponType,"AnimatedTurret","Bullet","Kinetic_Small","Normal",2200,2950,0,0,0,0,1,1,1,5,0,0,1,0,60,60,0.1,"Normal",1,0,0);
-AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",40,40,"");
+StartWeaponConfig(NewWeaponType,"AnimatedTurret","Bullet","Kinetic_Small","Normal",2300,2950,0,0,0,0,1,1,1,5,0,0,1,0,60,60,0.1,"Normal",1,0,0);
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",60,60,"");
 setPenetration(NewWeaponType,5,1,
 {Unarmoured=1.0},
 {Unarmoured_hw1=1.10},
@@ -21,7 +21,7 @@ setAccuracy(NewWeaponType,1,
 {HeavyMissile=0},
 {SmallMissile=0},
 {Fighter=0.85},
-{Fighter_hw1=0.85},
+{Fighter_hw1=0.95},
 {Corvette=0.75},
 {Corvette_hw1=0.80},
 {munition=0.02},

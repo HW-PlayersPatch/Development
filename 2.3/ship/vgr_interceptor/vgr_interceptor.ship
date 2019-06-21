@@ -189,3 +189,5 @@ NewShipType.agileFlight=1
 NewShipType.homingDistance=2000
 NewShipType.homingDelay=0.5
 NewShipType.canSurround=0
+
+addCustomCode(NewShipType, "data:ship/vgr_interceptor/vgr_interceptor.lua", "", "", "Update_Vgr_Interceptor", "", "vgr_interceptor", 0.5);

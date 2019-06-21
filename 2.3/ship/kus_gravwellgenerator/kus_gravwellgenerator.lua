@@ -137,7 +137,8 @@ function Create_Kus_GravWellGenerator(CustomGroup, playerIndex, shipID)
 	SobGroup_CreateIfNotExist("gravitywellgenerators_temp_ai")
 end
 
-function Update_Kus_GravWellGenerator(CustomGroup, playerIndex, shipID)	
+function Update_Kus_GravWellGenerator(CustomGroup, playerIndex, shipID)
+	SobGroup_AbilityActivate(CustomGroup, AB_Scuttle, 1 - SobGroup_IsDoingAbility(CustomGroup, AB_Dock))
 	if Player_GetLevelOfDifficulty(playerIndex) > 0 and Player_GetNumberOfSquadronsOfTypeAwakeOrSleeping(-1, "Special_Splitter" ) == 1 then
 		local playerIndex_ai = 0
 		local alliedships = 0

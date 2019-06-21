@@ -187,3 +187,5 @@ NewShipType.agileFlight=1
 NewShipType.homingDistance=2000
 NewShipType.homingDelay=0.5
 NewShipType.canSurround=0
+
+addCustomCode(NewShipType, "data:ship/hgn_interceptor/hgn_interceptor.lua", "", "", "Update_Hgn_Interceptor", "", "hgn_interceptor", 0.5);

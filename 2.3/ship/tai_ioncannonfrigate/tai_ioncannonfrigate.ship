@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$10026"
 NewShipType.sobDescription="$10027"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth",26000)
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 26000)
 NewShipType.regentime=2500
 NewShipType.minRegenTime=2500
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.2)
@@ -74,7 +74,7 @@ NewShipType.antiFighterValue=0
 NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=12
 NewShipType.totalValue=12
-NewShipType.buildCost=800
+NewShipType.buildCost=750
 NewShipType.buildTime=60
 NewShipType.buildPriorityOrder=20
 NewShipType.retaliationRange=5500
@@ -145,6 +145,9 @@ addAbility(NewShipType,"CanBeCaptured",45,0.1,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RetireAbility",1,1);
+-- fix to salvage vette scuttle bug
+addCustomCode(NewShipType,"data:scripts/playerspatch_patches.lua","","","Update_NoSalvageScuttle","","tai_ioncannonfrigate",4)
+-- fix to salvage vette scuttle bug
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Tai_IonCannon","Weapon_Gun0","Weapon_Gun0");
 addShield(NewShipType,"EMP",310,20);
@@ -166,8 +169,8 @@ loadLatchPointList(NewShipType,"RepCap","RepairPoint1","RepairPoint2");
 NewShipType.minFalloffDamageDist=100
 NewShipType.maxFalloffDamageDist=100*2
 NewShipType.maxFalloffScuttleDamageDist=100*4
-NewShipType.explosiveScuttleDamageOnDeath=975
+NewShipType.explosiveScuttleDamageOnDeath=130
 NewShipType.maxFalloffForce=500*10
-NewShipType.explosiveDamageOnDeath=195	
+NewShipType.explosiveDamageOnDeath=50	
 NewShipType.radiusDamageEvadeMod=1.1													 
 NewShipType.canSurround=1

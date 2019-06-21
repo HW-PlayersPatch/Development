@@ -2,8 +2,8 @@ NewShipType = StartShipConfig()
 NewShipType.displayedName="$1530"
 NewShipType.sobDescription="$1531"
 NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 90000)
-NewShipType.regentime=1074
-NewShipType.minRegenTime=1074
+NewShipType.regentime=750
+NewShipType.minRegenTime=750
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
 NewShipType.rearArmourDamage = getShipNum(NewShipType, "rearArmourDamage", 1.2)
 setTacticsMults(NewShipType, "ENGINEACCEL", 1.10, 0.90, 1.0)
@@ -18,13 +18,13 @@ NewShipType.mass=500
 NewShipType.collisionMultiplier=1
 NewShipType.thrusterMaxSpeed=120
 NewShipType.mainEngineMaxSpeed=120
-NewShipType.rotationMaxSpeed=9
-NewShipType.thrusterAccelTime=6
+NewShipType.rotationMaxSpeed=18
+NewShipType.thrusterAccelTime=3
 NewShipType.thrusterBrakeTime=2
-NewShipType.mainEngineAccelTime=6
+NewShipType.mainEngineAccelTime=3
 NewShipType.mainEngineBrakeTime=2
-NewShipType.rotationAccelTime=0.5
-NewShipType.rotationBrakeTime=0.3
+NewShipType.rotationAccelTime=0.4
+NewShipType.rotationBrakeTime=0.2
 NewShipType.thrusterUsage=1
 NewShipType.accelerationAngle=30
 NewShipType.mirrorAngle=0
@@ -148,6 +148,9 @@ addAbility(NewShipType,"CanBeCaptured",90,0.5,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RetireAbility",1,1);
+-- fix to salvage vette scuttle bug
+addCustomCode(NewShipType,"data:scripts/playerspatch_patches.lua","","","Update_NoSalvageScuttle","","Hgn_Destroyer",4)
+-- fix to salvage vette scuttle bug
 LoadModel(NewShipType,1);
 StartShipHardPointConfig(NewShipType,"Weapon_TurretTop","Hardpoint_TurretTop","Weapon","Innate","Ship","Hgn_KineticBurstCannonDestroyer","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Weapon_TurretFront","Hardpoint_TurretFront","Weapon","Innate","Ship","Hgn_KineticBurstCannonDestroyer","","","","","","","","");
@@ -158,7 +161,7 @@ StartShipWeaponConfig(NewShipType,"Hgn_DestroyerTorpedoLauncher","Weapon_Torpedo
 --StartShipWeaponConfig(NewShipType,"Hgn_KineticBurstCannonDestroyer","Weapon_TurretBottom","Weapon_TurretBottom");
 --StartShipWeaponConfig(NewShipType,"Hgn_KineticBurstCannonDestroyer","Weapon_TurretFront","Weapon_TurretFront");
 --StartShipWeaponConfig(NewShipType,"Hgn_KineticBurstCannonDestroyer","Weapon_TurretBack","Weapon_TurretBack");
-addShield(NewShipType,"EMP",1000,20);
+addShield(NewShipType,"EMP",850,20);
 StartShipHardPointConfig(NewShipType,"Engine","Hardpoint_Engine","System","Innate","Damageable","Hgn_Des_Engine","","","","","","","","");
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg03",1, 0.45,0,0,0, 0,0,0,50,0,0,0,200,0,0,0,50,0,0,0,50);
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg04",1, 0.2,0,0,0, 50,40,-150,50,65,25,5,25,0,0,0,95,0,0,0,50);
@@ -186,3 +189,5 @@ NewShipType.maxFalloffForce=500*10
 NewShipType.explosiveDamageOnDeath=538
 NewShipType.radiusDamageEvadeMod=1.1
 NewShipType.canSurround=1
+
+NewShipType.alternativeHyperspaceTime = 6

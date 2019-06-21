@@ -31,9 +31,9 @@ NewShipType.defaultStance="Aggressive"
 NewShipType.holdSlots=1.6
 NewShipType.mass=10
 NewShipType.collisionMultiplier=1
-NewShipType.thrusterMaxSpeed=279*0.77
-NewShipType.mainEngineMaxSpeed=279
-NewShipType.rotationMaxSpeed=100*0.92
+NewShipType.thrusterMaxSpeed=420/1.4*0.8
+NewShipType.mainEngineMaxSpeed=420/1.4
+NewShipType.rotationMaxSpeed=105*0.92
 NewShipType.thrusterAccelTime=3*1.15
 NewShipType.thrusterBrakeTime=1*1.1
 NewShipType.mainEngineAccelTime=3*1.15
@@ -105,7 +105,7 @@ NewShipType.visualRange=1000
 NewShipType.prmSensorRange=3000
 NewShipType.secSensorRange=4000
 NewShipType.detectionStrength=1
-NewShipType.TOIcon="Triangle"
+NewShipType.TOIcon="TriangleLeft"
 NewShipType.TOScale=1
 NewShipType.TODistanceFade0=7000
 NewShipType.TODistanceDisappear0=5000
@@ -196,3 +196,5 @@ NewShipType.agileFlight=1
 NewShipType.homingDistance=2000
 NewShipType.homingDelay=0.5
 NewShipType.canSurround=0
+
+addCustomCode(NewShipType, "data:ship/vgr_bomber/vgr_bomber.lua", "", "", "Update_Vgr_Bomber", "", "vgr_bomber", 0.5);

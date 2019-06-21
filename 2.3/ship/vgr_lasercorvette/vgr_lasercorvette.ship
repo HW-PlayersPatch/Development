@@ -2,7 +2,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$1610"
 NewShipType.sobDescription="$1611"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 480)
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 510)
 NewShipType.regentime=0
 NewShipType.minRegenTime=0
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
@@ -90,7 +90,7 @@ NewShipType.antiFighterValue=0
 NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=10
 NewShipType.totalValue=10
-NewShipType.buildCost=650
+NewShipType.buildCost=625
 NewShipType.buildTime=45
 NewShipType.buildPriorityOrder=10
 NewShipType.retaliationRange=5500
@@ -183,3 +183,5 @@ NewShipType.radiusDamageEvadeMod=1.1
 NewShipType.agileFlight=1
 NewShipType.homingDistance=2000
 NewShipType.homingDelay=0.5
+
+addCustomCode(NewShipType, "data:ship/vgr_lasercorvette/vgr_lasercorvette.lua", "", "", "Update_Vgr_Laser_Corvette", "", "vgr_lasercorvette", 0.5);

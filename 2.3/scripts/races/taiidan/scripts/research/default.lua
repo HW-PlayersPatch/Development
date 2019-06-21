@@ -5,8 +5,8 @@ base_research = {
 		Name =			"ProximitySensor",
 		RequiredResearch =	"",
 		RequiredSubSystems =	"Research",
-		Cost = 			500,
-		Time = 			40,
+		Cost = 			600,
+		Time = 			45,
 		DisplayedName =		"$11552",
 		ShortDisplayedName =	"$11552",
 		DisplayPriority =		51,
@@ -19,7 +19,7 @@ base_research = {
 		RequiredResearch =	"ProximitySensor",
 		RequiredSubSystems =	"Research",
 		Cost = 			500,
-		Time = 			80,
+		Time = 			30,
 		DisplayedName =		"$11554",
 		ShortDisplayedName =	"$11554",
 		DisplayPriority =		52,
@@ -45,7 +45,7 @@ base_research = {
 		RequiredResearch =	"CapitalShipDrive",
 		RequiredSubSystems =	"Research",
 		Cost = 			500,
-		Time = 			100,
+		Time = 			30,
 		DisplayedName =		"$11558",
 		ShortDisplayedName =	"$11558",
 		DisplayPriority =		54,
@@ -72,6 +72,25 @@ base_research = {
 		ShortDisplayedName = "10% Hyperspace Exit Damage", 
 		DoNotGrant = 1,
 	},
+
+	{
+		Name = "HyperspaceDamageReductionUpgrade", 
+		RequiredResearch = "", 
+		RequiredSubSystems = "", 
+		Cost = 0, 
+		Time = 0, 
+		DisplayedName = "Hyperspace Damage Reduction", 
+		DisplayPriority = 950, 
+		Description = "Enhances the fleet's hyperspace drive systems, reducing the hyperspace damage caused by gravity wells. Ships Only Take 10% damage when forced out of hyperspace.", 
+		UpgradeType = Modifier, 
+		TargetType = AllShips, 
+		UpgradeName = "HyperSpaceAbortDamage", 
+		UpgradeValue = 0.0, 
+		TargetName = "Tai_HeavyCruiser", 
+		Icon = Icon_Hyperspace, 
+		ShortDisplayedName = "10% Hyperspace Exit Damage", 
+		DoNotGrant = 1,
+	},
 	
 }
 
@@ -82,4 +101,4 @@ for i,e in base_research do
 end
 
 
-base_research = nil 
+base_research = nil

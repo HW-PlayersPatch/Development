@@ -146,7 +146,7 @@ addAbility(NewShipType,"CanBeCaptured",300,0.1,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"CloakAbility",0,2,2000,4000,3,100,1,1000);
-addAbility(NewShipType,"HyperspaceInhibitorAbility",0,12000);
+addAbility(NewShipType,"HyperspaceInhibitorAbility",0,10500);
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGunSide","Weapon_HullDefense1","Weapon_HullDefense1");
 StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGunSide","Weapon_HullDefense2","Weapon_HullDefense2");
@@ -207,3 +207,5 @@ NewShipType.explosiveDamageOnDeath=564
 NewShipType.hideNormalAttackUICooldown=1
 NewShipType.canSurround=1
 NewShipType.canRetireSubSystems=1
+
+NewShipType.alternativeHyperspaceTime = 6

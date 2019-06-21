@@ -16,8 +16,8 @@ NewShipType.defaultROE="Defensive"
 NewShipType.defaultStance="Neutral"
 NewShipType.mass=100
 NewShipType.collisionMultiplier=1
-NewShipType.thrusterMaxSpeed=177
-NewShipType.mainEngineMaxSpeed=177
+NewShipType.thrusterMaxSpeed=250
+NewShipType.mainEngineMaxSpeed=250
 NewShipType.rotationMaxSpeed=35
 NewShipType.thrusterAccelTime=7
 NewShipType.thrusterBrakeTime=2
@@ -75,8 +75,8 @@ NewShipType.antiFighterValue=0
 NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=5
 NewShipType.totalValue=10
-NewShipType.buildCost=1250
-NewShipType.buildTime=70
+NewShipType.buildCost=1000
+NewShipType.buildTime=55
 NewShipType.buildPriorityOrder=25
 NewShipType.retaliationRange=5500
 NewShipType.retaliationDistanceFromGoal=160
@@ -142,9 +142,12 @@ addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RetireAbility",1,1);
 addAbility(NewShipType,"DefenseFieldAbility",1,0,1200,200,200,0.7,0.6,0,"defensefield_sphere_spray");
 addAbility(NewShipType,"DefenseFieldShieldAbility",0,1200,0,0);
+-- fix to salvage vette scuttle bug
+addCustomCode(NewShipType,"data:scripts/playerspatch_patches.lua","","","Update_NoSalvageScuttle","","Hgn_DefenseFieldFrigate",4)
+-- fix to salvage vette scuttle bug
 LoadModel(NewShipType,1);
 StartShipHardPointConfig(NewShipType,"Weapon_Top","Hardpoint_Top","Weapon","Innate","Ship","Hgn_VulcanKineticTurretHeavy","","","","","","","","");
-addShield(NewShipType,"EMP",10000,20);
+addShield(NewShipType,"EMP",70,20);
 AddShipAbility(NewShipType,"DefenseField",1,"ThisShipOnly",0);
 NewShipType.battleScarCoverage=2
 NewShipType.battleScarBudgetLow = 400
@@ -164,10 +167,12 @@ loadLatchPointList(NewShipType,"RepCap","RepairPoint0","RepairPoint1");
 NewShipType.minFalloffDamageDist=100
 NewShipType.maxFalloffDamageDist=100*2
 NewShipType.maxFalloffScuttleDamageDist=100*4
-NewShipType.explosiveScuttleDamageOnDeath=1050
+NewShipType.explosiveScuttleDamageOnDeath=130
 NewShipType.maxFalloffForce=500*10
-NewShipType.explosiveDamageOnDeath=210
+NewShipType.explosiveDamageOnDeath=50
 NewShipType.radiusDamageEvadeMod=1.1													 
 NewShipType.hideNormalAttackUICooldown=1	
 NewShipType.strikeGroupSpeed=5000
 NewShipType.canSurround=1
+
+NewShipType.alternativeHyperspaceTime = 6

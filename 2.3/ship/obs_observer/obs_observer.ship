@@ -27,8 +27,8 @@ NewShipType.defaultStance="Evasive"
 NewShipType.holdSlots=2
 NewShipType.mass=10
 NewShipType.collisionMultiplier=1
-NewShipType.thrusterMaxSpeed=1000
-NewShipType.mainEngineMaxSpeed=1000
+NewShipType.thrusterMaxSpeed=2000
+NewShipType.mainEngineMaxSpeed=2000
 NewShipType.rotationMaxSpeed=100
 NewShipType.thrusterAccelTime=2
 NewShipType.thrusterBrakeTime=1
@@ -62,7 +62,7 @@ NewShipType.swayOffsetRandomZ=10
 NewShipType.swayBobbingFactor=0.05
 NewShipType.swayRotateFactor=0.1
 NewShipType.dustCloudDamageTime=160
-NewShipType.nebulaDamageTime=30
+NewShipType.nebulaDamageTime=3000000
 NewShipType.MinimalFamilyToFindPathAround="SuperCap"
 NewShipType.mirrorAboveManeuver="ImmelMann_speedy, OneEightyDegRightTurn, OneEightyDegLeftTurn, ImmelMann_speedy, ImmelMann_speedy, ImmelMann_speedy"
 NewShipType.mirrorBelowManeuver="Split_S_speedy, OneEightyDegRightTurn, OneEightyDegLeftTurn, Split_S_speedy, Split_S_speedy, Split_S_speedy"
@@ -79,7 +79,6 @@ NewShipType.AutoFormationFamily="Fighter"
 NewShipType.CollisionFamily="Small"
 NewShipType.ArmourFamily=getShipStr(NewShipType, "ArmourFamily", "Unarmoured_hw1")
 setSupplyValue(NewShipType, "Fighter", 1.0)
-setSupplyValue(NewShipType, "DefenseFighters", 1.0)
 setSupplyValue(NewShipType, "LayoutFighter", 1.0)
 NewShipType.CombatFamily="Fighter_Special"
 NewShipType.fighterValue=0
@@ -95,9 +94,9 @@ NewShipType.buildTime=1
 NewShipType.buildPriorityOrder=50
 NewShipType.retaliationRange=1000
 NewShipType.retaliationDistanceFromGoal=160
-NewShipType.visualRange=10000
-NewShipType.prmSensorRange=10000
-NewShipType.secSensorRange=10000
+NewShipType.visualRange=0
+NewShipType.prmSensorRange=0
+NewShipType.secSensorRange=0
 NewShipType.detectionStrength=1
 NewShipType.TOIcon="Triangle"
 NewShipType.TOScale=1
@@ -116,7 +115,7 @@ NewShipType.nlips=0.0005
 NewShipType.nlipsRange=6000
 NewShipType.nlipsFar=0.0003
 NewShipType.nlipsFarRange=10000
-NewShipType.SMRepresentation="FOWDot"
+NewShipType.SMRepresentation="HardDot"
 NewShipType.meshRenderLimit=11000
 NewShipType.dotRenderLimit=10
 NewShipType.visibleInSecondary=1
@@ -138,8 +137,9 @@ NewShipType.launchTimeBeforeStart=1.5
 NewShipType.launchNrOfShipsInDockFormation=1
 NewShipType.launchFormation="n_delta"
 addAbility(NewShipType,"WaypointMove");
+addAbility(NewShipType,"HyperspaceCommand", 1, 0, 0, 0, 0, 0);
 addAbility(NewShipType,"CanBuildShips",1,"","");
---addAbility(NewShipType,"CloakAbility",1,999,75,3000,1,50,18,1500);
+--addAbility(NewShipType,"CloakAbility",1,999,0,3000,1,0,18,0);
 LoadModel(NewShipType,1);
 addShield(NewShipType,"EMP",9999,20);
 NewShipType.battleScarCoverage=0
@@ -164,3 +164,4 @@ NewShipType.homingDistance=2000
 NewShipType.homingDelay=0.5
 NewShipType.strikeGroupSpeed=5000
 NewShipType.canSurround=0
+NewShipType.alternativeHyperspaceTime=0.1

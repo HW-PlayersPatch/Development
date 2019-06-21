@@ -71,7 +71,7 @@ NewShipType.antiFighterValue=0
 NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
 NewShipType.totalValue=0
-NewShipType.buildCost=800
+NewShipType.buildCost=1000
 NewShipType.buildTime=60
 NewShipType.buildPriorityOrder=50
 NewShipType.retaliationRange=5500
@@ -80,7 +80,7 @@ NewShipType.visualRange=1000
 NewShipType.prmSensorRange=5000
 NewShipType.secSensorRange=6000
 NewShipType.detectionStrength=1
-NewShipType.TOIcon="Diamond"
+NewShipType.TOIcon="Circle"
 NewShipType.TOScale=1
 NewShipType.TODistanceFade0=9000
 NewShipType.TODistanceDisappear0=7000
@@ -162,3 +162,4 @@ NewShipType.explosiveDamageOnDeath=135
 NewShipType.radiusDamageEvadeMod=1.1													 
 NewShipType.hideNormalAttackUICooldown=1
 
+AddShipAbility(NewShipType, "Hyperspace", 0, "EnemyShipsWithinRadius", 10500)

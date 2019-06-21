@@ -15,7 +15,7 @@ setPenetration(NewWeaponType,5,1,
 {TurretArmour=3.0});
 setAccuracy(NewWeaponType,1,
 {Fighter=0.17},
-{Fighter_hw1=0.17},
+{Fighter_hw1=0.34},
 {Corvette=0.25},
 {Corvette_hw1=0.25},
 {Frigate=1.0},

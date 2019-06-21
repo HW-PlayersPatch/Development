@@ -2,7 +2,6 @@ dofilepath("data:ui/newui/Styles/HWRM_Style/HWRMDefines.lua")
 dofilepath("data:ui/newui/Styles/HWRM_Style/ControlConstructors.lua")
 
 --Load expanded options
---dofilepath("data:ui/PlayersPatch_UI_Util.lua") --already loaded in scope by ot_gameplay.lua
 RefBuildResearchLaunchPanelsScale = GetBuildResearchLaunchPanelsScale()
 
 -- Resets the additional slider positions
@@ -18,7 +17,7 @@ FE_UISPACER = {
 }
 
 ------- Custom Commands
-FE_UI_HUDSCALE				=	Option_LabeledSlider("UIHUDSCALE",				"$4983",	"lblHudScale",					"$4985",	"m_sbarHUDScale",					"$4985", 1, 1, 0.5, 2.5, [[UI_AnchorSetScale('Taskbar_RB_Scale', %spos, 1);]])
+FE_UI_HUDSCALE				=	Option_LabeledSlider("UIHUDSCALE",				"$4983",	"lblHudScale",					"$4985",	"m_sbarHUDScale",					"$4985", 1, -10, 0.5, 2.5, [[UI_AnchorSetScale('Taskbar_RB_Scale', %spos, 1);]])
 
 FE_UI_SELECTION_HUDSCALE	=	Option_LabeledSlider("UI_SELECTION_HUDSCALE",	"$4980",	"lblSelectionHudScale",			"$4980",	"m_sbarSelectionHUDScale",			"$4980", 1, 1, 0.5, 2.5, [[UI_AnchorSetScale('Taskbar_Selection_Scale', %spos, 1);]])
 FE_UI_COMMAND_HUDSCALE		=	Option_LabeledSlider("UI_COMMAND_HUDSCALE",		"$4978",	"lblCommandHudScale",			"$4978",	"m_sbarCommandHUDScale",			"$4978", 1, 1, 0.5, 2.5, [[UI_AnchorSetScale('Taskbar_Cmd_Scale', %spos, 1);]])
@@ -35,6 +34,8 @@ FE_UI_BRL_HUDSCALE				=	Option_LabeledSlider("UI_BRL_HUDSCALE",	"Build, Research
 FE_UI_SHOWTIMER		=	NewCheckBoxButton("m_showtimer",		"$4991",	"$4991", nil,  nil, 1 )
 FE_UI_NOTIFICATIONS	=	NewCheckBoxButton("m_notifications",	"$3075",	"$3076", nil,  nil, 1 )
 
+dropDownSpacing = -4
+sliderSpacing = -1
 
 FE_UI_CURSORSKIN = { 
 	type = "Frame",
@@ -44,8 +45,8 @@ FE_UI_CURSORSKIN = {
 	
 	Layout = {									
 		size_WH = {w = 1, h = 1, wr = "par", hr = "px",},
-		pad_LT = { l = 4, t = 4, lr = "px", tr = "px" },
-		pad_RB = { r = 4, b = 4, rr = "px", br = "px" },
+		pad_LT = { l = 4, t = dropDownSpacing, lr = "px", tr = "px" },
+		pad_RB = { r = 4, b = dropDownSpacing, rr = "px", br = "px" },
 	},
 	
 	autosize = 1,
@@ -105,8 +106,8 @@ FE_UI_ATISKIN = {
 	
 	Layout = {									
 		size_WH = {w = 1, h = 1, wr = "par", hr = "px",},
-		pad_LT = { l = 4, t = 4, lr = "px", tr = "px" },
-		pad_RB = { r = 4, b = 4, rr = "px", br = "px" },
+		pad_LT = { l = 4, t = dropDownSpacing, lr = "px", tr = "px" },
+		pad_RB = { r = 4, b = dropDownSpacing, rr = "px", br = "px" },
 	},
 	
 	autosize = 1,
@@ -158,6 +159,212 @@ FE_UI_ATISKIN = {
 	},
 }
 
+FE_UI_DEFAULTTO = {
+	type = "Frame",
+
+	visible = 1,
+	ignored = 1,
+	
+	Layout = {									
+		size_WH = {w = 1, h = 1, wr = "par", hr = "px",},
+		pad_LT = { l = 4, t = dropDownSpacing, lr = "px", tr = "px" },
+		pad_RB = { r = 4, b = dropDownSpacing, rr = "px", br = "px" },
+	},
+	
+	autosize = 1,
+	
+	helpTipTextLabel = "m_lblHelpText",
+	arrangetype = "horiz",
+	;
+	
+	{
+		type = "TextLabel",
+		
+		Layout = {	
+			pos_XY = { x = 1.0, y = .5, xr = "px", yr = "par" },		
+			size_WH = {	w = .45, h = DROPDOWN_HEIGHT, wr = "par", hr = "scr"},	
+			pivot_XY = { 0, 0.5 },	
+		},
+
+		Text = {
+			textStyle = "RM_GenericLabelLarge_TextStyle",
+			text = "Default Tactical Overlay Setting", 
+		},
+		autosize=1,
+		helpTip = "You must restart the game for this to take affect",
+	},
+	{
+		type = "DropDownListBox",	
+		name = "defaultToSetting",
+		selected = GetDefaultToSetting() - 1,
+		
+		Layout = {		
+			size_WH = {w = .5, h = DROPDOWN_HEIGHT, wr = "par", hr = "scr",},
+			pos_XY = { x = 1.0, y = .5, xr = "px", yr = "par" },		
+			pivot_XY = { 0, 0.5 },	
+		
+			--size_WH = {	w = 330/800, h = DROPDOWN_HEIGHT, wr = "scr", hr = "scr" },	
+		},
+		
+		ListBox = {
+			type = "ListBox",
+			width = 400,
+			backgroundColor = {0,0,0,255},
+			listBoxStyle = "FEListBoxStyle_Bordered",
+			;
+			-- 1
+			{
+				type = "TextListBoxItem",
+				buttonStyle = "FEListBoxItemButtonStyle",
+				resizeToListBox = 1,
+				Text = {
+					textStyle = "FEListBoxItemTextStyle",
+					text = "Low",
+				},
+				onMouseClicked = "UI_AnchorSetScale('PlayersPatch_DefaultToSetting', 1.0, 1)";
+			},
+			-- 2
+			{
+				type = "TextListBoxItem",
+				buttonStyle = "FEListBoxItemButtonStyle",
+				resizeToListBox = 1,
+				Text = {
+					textStyle = "FEListBoxItemTextStyle",
+					text = "Normal",
+				},	
+				onMouseClicked = "UI_AnchorSetScale('PlayersPatch_DefaultToSetting', 2.0, 1)";
+			},
+			-- 3
+			{
+				type = "TextListBoxItem",
+				buttonStyle = "FEListBoxItemButtonStyle",
+				resizeToListBox = 1,
+				Text = {
+					textStyle = "FEListBoxItemTextStyle",
+					text = "High",
+				},	
+				onMouseClicked = "UI_AnchorSetScale('PlayersPatch_DefaultToSetting', 3.0, 1)";
+			},
+			-- 4
+			{
+				type = "TextListBoxItem",
+				buttonStyle = "FEListBoxItemButtonStyle",
+				resizeToListBox = 1,
+				Text = {
+					textStyle = "FEListBoxItemTextStyle",
+					text = "Maximum",
+				},	
+				onMouseClicked = "UI_AnchorSetScale('PlayersPatch_DefaultToSetting', 4.0, 1)";
+			},
+		},
+		helpTipTextLabel = "helpTip",
+		helpTip = "Set the default tactical overlay setting",
+	},
+}
+
+FE_UI_SHOWTIME = {
+	type = "Frame",
+
+	visible = 1,
+	ignored = 1,
+	
+	Layout = {									
+		size_WH = {w = 1, h = 1, wr = "par", hr = "px",},
+		pad_LT = { l = 4, t = dropDownSpacing, lr = "px", tr = "px" },
+		pad_RB = { r = 4, b = dropDownSpacing, rr = "px", br = "px" },
+	},
+	
+	autosize = 1,
+	
+	helpTipTextLabel = "m_lblHelpText",
+	arrangetype = "horiz",
+	;
+	
+	{
+		type = "TextLabel",
+		
+		Layout = {	
+			pos_XY = { x = 1.0, y = .5, xr = "px", yr = "par" },		
+			size_WH = {	w = .45, h = DROPDOWN_HEIGHT, wr = "par", hr = "scr"},	
+			pivot_XY = { 0, 0.5 },	
+		},
+
+		Text = {
+			textStyle = "RM_GenericLabelLarge_TextStyle",
+			text = "Show Base Production Time", 
+		},
+		autosize=1,
+		helpTip = "Shows the base build/research time - must restart the game to take affect",
+	},
+	{
+		type = "DropDownListBox",	
+		name = "defaultToSetting",
+		selected = GetProductionTimeInfoSetting() - 1,
+		
+		Layout = {		
+			size_WH = {w = .5, h = DROPDOWN_HEIGHT, wr = "par", hr = "scr",},
+			pos_XY = { x = 1.0, y = .5, xr = "px", yr = "par" },		
+			pivot_XY = { 0, 0.5 },	
+		
+			--size_WH = {	w = 330/800, h = DROPDOWN_HEIGHT, wr = "scr", hr = "scr" },	
+		},
+		
+		ListBox = {
+			type = "ListBox",
+			width = 400,
+			backgroundColor = {0,0,0,255},
+			listBoxStyle = "FEListBoxStyle_Bordered",
+			;
+			-- 1
+			{
+				type = "TextListBoxItem",
+				buttonStyle = "FEListBoxItemButtonStyle",
+				resizeToListBox = 1,
+				Text = {
+					textStyle = "FEListBoxItemTextStyle",
+					text = "Off",
+				},
+				onMouseClicked = "UI_AnchorSetScale('PlayersPatch_ProductionTimeSetting', 1.0, 1)";
+			},
+			-- 2
+			{
+				type = "TextListBoxItem",
+				buttonStyle = "FEListBoxItemButtonStyle",
+				resizeToListBox = 1,
+				Text = {
+					textStyle = "FEListBoxItemTextStyle",
+					text = "Build Only",
+				},	
+				onMouseClicked = "UI_AnchorSetScale('PlayersPatch_ProductionTimeSetting', 2.0, 1)";
+			},
+			-- 3
+			{
+				type = "TextListBoxItem",
+				buttonStyle = "FEListBoxItemButtonStyle",
+				resizeToListBox = 1,
+				Text = {
+					textStyle = "FEListBoxItemTextStyle",
+					text = "Research Only",
+				},	
+				onMouseClicked = "UI_AnchorSetScale('PlayersPatch_ProductionTimeSetting', 3.0, 1)";
+			},
+			-- 4
+			{
+				type = "TextListBoxItem",
+				buttonStyle = "FEListBoxItemButtonStyle",
+				resizeToListBox = 1,
+				Text = {
+					textStyle = "FEListBoxItemTextStyle",
+					text = "Build & Research",
+				},	
+				onMouseClicked = "UI_AnchorSetScale('PlayersPatch_ProductionTimeSetting', 4.0, 1)";
+			},
+		},
+		helpTipTextLabel = "helpTip",
+		helpTip = "Set the default tactical overlay setting",
+	},
+}
+
 --------------------------------------------------
 FE_UIOPTION_TAB = {
 	type = "TabPage",
@@ -189,6 +396,8 @@ FE_UIOPTION_TAB = {
 		
 		FE_UI_CURSORSKIN,
 		FE_UI_ATISKIN,
+		FE_UI_DEFAULTTO,
+		FE_UI_SHOWTIME,
 
 		{
 			type = "TextLabel",
@@ -233,5 +442,11 @@ FE_UIOPTION_TAB = {
 }
 
 --sets position for the additional sliders
-FE_UIOPTION_TAB[1][9][2][1].Text.text = RefBuildResearchLaunchPanelsScale --default text in the label
-FE_UIOPTION_TAB[1][9][2][2].scrollPosition = RefBuildResearchLaunchPanelsScale --default position for the scrollbar button
+FE_UIOPTION_TAB[1][11][2][1].Text.text = RefBuildResearchLaunchPanelsScale --default text in the label
+FE_UIOPTION_TAB[1][11][2][2].scrollPosition = RefBuildResearchLaunchPanelsScale --default position for the scrollbar button
+
+-- Reduce spacing between sliders
+for i=6,11 do
+	FE_UIOPTION_TAB[1][i].Layout.pad_LT.t = -4
+	FE_UIOPTION_TAB[1][i].Layout.size_WH.h = FE_UIOPTION_TAB[1][i].Layout.size_WH.h * 0.8
+end

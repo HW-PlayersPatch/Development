@@ -906,7 +906,7 @@ NewBuildMenu = {
 					name = "lblShipName",
 					autosize = 1,
 					Layout = {			
-						size_WH = {	w = .7, h = STD_LABEL_HEIGHT, wr = "par", hr = "scr" },						
+						size_WH = {	w = 0.2, h = STD_LABEL_HEIGHT, wr = "par", hr = "scr" },						
 					},
 					ignored = 1,		
 					giveParentMouseInput = 1,
@@ -926,7 +926,7 @@ NewBuildMenu = {
 					visible = 0,
 					autosize = 1,
 					Layout = {			
-						size_WH = {	w = .7, h = STD_LABEL_HEIGHT, wr = "par", hr = "scr" },						
+						size_WH = {	w = 1.0, h = STD_LABEL_HEIGHT, wr = "par", hr = "scr" },						
 					},
 					ignored = 1,			
 					giveParentMouseInput = 1,
@@ -1177,7 +1177,7 @@ NewBuildMenu = {
 					--position = {8, 3},
 					--size = {48, 24},
 					Layout = {	
-						max_WH = {	w = .5, h = 1, wr = "par", hr = "par"},	
+						max_WH = {	w = .3, h = 1, wr = "par", hr = "par"},	
 						size_WH = {	h = 1,hr = "par"},	
 						pos_XY = { x = 1.0, y = 0.5, xr = "px", yr = "par" },	
 						pivot_XY = { 0.0, 0.5 },
@@ -1191,7 +1191,7 @@ NewBuildMenu = {
 					type = "Frame",
 					name = "TextStack",
 					Layout = {	
-						min_WH = {	w = .5, h = 1, wr = "par", hr = "par"},				
+						min_WH = {	w = .7, h = 1, wr = "par", hr = "par"},				
 						--margin_LT = { l = 0.0, t = 8.0, lr = "px", tr = "px" },
 						--margin_RB = { r = 4.0/800, b = 0.0, rr = "scr_min", br = "px" },		
 						pos_XY = { x = 1.0, xr = "par" },		
