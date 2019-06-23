@@ -465,5 +465,4 @@ LobbyScreen = {
 	--size = {380,469},
 	--GetChatTable(414,69, 380,469),
 	GetChatTable(12, 252, 776, 285),
-	UI_DisplayBuild(),
 }

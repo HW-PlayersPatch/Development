@@ -136,5 +136,4 @@ ConnectionType = {
 
 		},
 	},
-	UI_DisplayBuild(),
 } 

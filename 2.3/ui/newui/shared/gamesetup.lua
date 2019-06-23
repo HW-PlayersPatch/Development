@@ -580,5 +580,4 @@ GameSetup = {
 	
 	OPTIONTOCLONE,
 	LISTBOXITEMTOCLONE,
-	UI_DisplayBuild(),
 }

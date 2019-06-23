@@ -18,12 +18,6 @@ dofilepath("data:leveldata/multiplayer/lib/main.lua")
 dofilepath("data:leveldata/multiplayer/lib/carriersonly.lua")
 dofilepath("data:leveldata/multiplayer/lib/nocruisers.lua")
 
--- 2.4
-dofilepath("data:leveldata/multiplayer/lib/nominelayers.lua")
-dofilepath("data:leveldata/multiplayer/lib/noplatforms.lua")
-dofilepath("data:leveldata/multiplayer/lib/dualcommand.lua")
--- 2.4
-
 function OnStartOrLoad()
 	-- Write race list
 	SpeechRaceHelper()
@@ -91,16 +85,6 @@ function timer_updating()
 				if nocruisers == 1 then
 						Rule_AddInterval("nocruisers_init",timer_interval)
 				end			
-				
-				-- 2.4
-				if nominelayers == 1 then
-					Rule_AddInterval("nominelayers_init",1.0)
-				end	
-				if noplatforms == 1 then
-					Rule_AddInterval("noplatforms_init",1.0)
-				end	
-				Rule_AddInterval("Observers_Init",0.0)
-				-- 2.4
 				
 				if research == 0 then
 						Rule_AddInterval("research_init",timer_interval)

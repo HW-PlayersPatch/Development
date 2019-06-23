@@ -1,5 +1,5 @@
 GUID = { 110,91,157,190,18,23,250,78,144,20,41,246,181,128,214,12 }
-GameRulesName = "Homeworld RM - " .. "v2.3 Players Patch"
+GameRulesName = "Homeworld RM Players Patch" -- $4803 Homeworld Remastered
 Description = "$4804"
 SaveGameVersion = 1.0
 SinglePlayer = 0
@@ -9,7 +9,7 @@ ExtFilter = "rules_dm"
 Race_Paths = "Deathmatch,Extras"
 
 Level_Pass_Tags = "dm"
-Race_Pass_Tags = "race_dm,race_random,race_dm_2x"
+Race_Pass_Tags = "race_dm,race_random"
 
 GameSetupOptions =
 {
@@ -221,32 +221,6 @@ GameSetupOptions =
 	"$3221",  "1",
         },
     },
-		-- 2.4
-		{
-        name = "nominelayers",
-        locName = "Disable Minelayers",
-        tooltip = "DISABLE THE PRODUCTION OF MINELAYERS",
-        default = 0,
-        visible = 1,
-        choices =
-        {
-            "No", "0",
-			"Yes", "1",
-        },
-    },
-		{
-        name = "noplatforms",
-        locName = "Disable Platforms",
-        tooltip = "DISABLE THE PRODUCTION OF PLATFORMS",
-        default = 0,
-        visible = 1,
-        choices =
-        {
-            "No", "0",
-			"Yes", "1",
-        },
-    },
-	-- 2.4
 		{
         name = "norushtime",
         locName = "$3000",

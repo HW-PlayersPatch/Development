@@ -1,3 +1,4 @@
+
 dofilepath("data:scripts/playerspatch_util.lua")
 dofilepath("data:scripts/playerspatch_patches.lua")
 dofilepath("data:scripts/SCAR/SCAR_Util.lua")
@@ -17,8 +18,6 @@ dofilepath("data:leveldata/multiplayer/lib/main.lua")
 dofilepath("data:leveldata/multiplayer/lib/carriersonly.lua")
 dofilepath("data:leveldata/multiplayer/lib/nocruisers.lua")
 dofilepath("data:leveldata/multiplayer/lib/strikecraftgamemode.lua")
-dofilepath("data:leveldata/multiplayer/lib/observer.lua")
-dofilepath("data:leveldata/multiplayer/lib/stats_capture.lua")
 
 function OnStartOrLoad()
 	-- Write race list
@@ -89,10 +88,6 @@ function timer_updating()
 				if strikecraftgamemode == 1 then
 						Rule_AddInterval("strikecraftgamemode_init",timer_interval)
 				end	
-						
-				-- 2.4
-				Rule_AddInterval("Observers_Init",0.0)
-				-- 2.4
 						
 				if research == 0 then
 						Rule_AddInterval("research_init",timer_interval)

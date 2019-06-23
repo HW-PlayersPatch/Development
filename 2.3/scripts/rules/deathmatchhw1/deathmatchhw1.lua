@@ -77,6 +77,7 @@ function timer_updating()
 				if nocruisers == 1 then
 						Rule_AddInterval("nocruisers_init",timer_interval)
 				end							
+				
 				if research == 0 then
 						Rule_AddInterval("research_init",timer_interval)
 				end				

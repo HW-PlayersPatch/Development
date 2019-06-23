@@ -27,8 +27,8 @@ NewShipType.defaultStance="Evasive"
 NewShipType.holdSlots=2
 NewShipType.mass=10
 NewShipType.collisionMultiplier=1
-NewShipType.thrusterMaxSpeed=2000
-NewShipType.mainEngineMaxSpeed=2000
+NewShipType.thrusterMaxSpeed=1000
+NewShipType.mainEngineMaxSpeed=1000
 NewShipType.rotationMaxSpeed=100
 NewShipType.thrusterAccelTime=2
 NewShipType.thrusterBrakeTime=1
@@ -62,7 +62,7 @@ NewShipType.swayOffsetRandomZ=10
 NewShipType.swayBobbingFactor=0.05
 NewShipType.swayRotateFactor=0.1
 NewShipType.dustCloudDamageTime=160
-NewShipType.nebulaDamageTime=3000000
+NewShipType.nebulaDamageTime=1000000
 NewShipType.MinimalFamilyToFindPathAround="SuperCap"
 NewShipType.mirrorAboveManeuver="ImmelMann_speedy, OneEightyDegRightTurn, OneEightyDegLeftTurn, ImmelMann_speedy, ImmelMann_speedy, ImmelMann_speedy"
 NewShipType.mirrorBelowManeuver="Split_S_speedy, OneEightyDegRightTurn, OneEightyDegLeftTurn, Split_S_speedy, Split_S_speedy, Split_S_speedy"
@@ -79,6 +79,7 @@ NewShipType.AutoFormationFamily="Fighter"
 NewShipType.CollisionFamily="Small"
 NewShipType.ArmourFamily=getShipStr(NewShipType, "ArmourFamily", "Unarmoured_hw1")
 setSupplyValue(NewShipType, "Fighter", 1.0)
+setSupplyValue(NewShipType, "DefenseFighters", 1.0)
 setSupplyValue(NewShipType, "LayoutFighter", 1.0)
 NewShipType.CombatFamily="Fighter_Special"
 NewShipType.fighterValue=0
@@ -165,3 +166,5 @@ NewShipType.homingDelay=0.5
 NewShipType.strikeGroupSpeed=5000
 NewShipType.canSurround=0
 NewShipType.alternativeHyperspaceTime=0.1
+
+addCustomCode(NewShipType,"data:Ship/obs_observer/obs_observer.lua","","Create_obs_observer","Update_obs_observer","","obs_observer",4)

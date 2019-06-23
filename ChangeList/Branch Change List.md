@@ -6,7 +6,7 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 
 
 ## Gameplay Options and Features
--
+- Observers now start with 0 ru. When prompted to continue watching, click yes to observe.
 
 
 
