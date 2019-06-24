@@ -38,7 +38,7 @@ function Update_Tai_Carrier(CustomGroup, playerIndex, shipID)
 		end
 	end
 
-	PlayersPatch_BuildNecessaryProductionTells(CustomGroup, playerIndex)
+	PlayersPatch_BuildNecessaryProductionTells(CustomGroup, playerIndex, "CC")
 end
 
 function Destroy_Tai_Carrier(CustomGroup, playerIndex, shipID)	  

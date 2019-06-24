@@ -37,5 +37,4 @@ NewSubSystemType.ArmourFamily="SubSystemArmour"
 AddSubSystemAbility(NewSubSystemType,"HyperspaceInhibitor",1,"ThisShipOnly",0);
 loadShipPatchList(NewSubSystemType,"data:sound/sfx/ship/Vaygr/Subsystems/"
                              ,1,"VGR_HYPERSPACEINHIBITOR_INHIBIT");
-
-AddSubSystemAbility(NewShipType, "Hyperspace", 0, "EnemyShipsWithinRadius", 10500)
+AddSubSystemAbility(NewShipType, "Hyperspace", 0, "EnemyShipsWithinRadius", 10500);

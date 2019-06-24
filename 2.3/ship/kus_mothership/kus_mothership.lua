@@ -52,7 +52,7 @@ function Update_Kus_Mothership(CustomGroup, playerIndex, shipID)
 		SobGroup_AbilityActivate(CustomGroup, AB_Dock, 1)	
 	end
 
-	PlayersPatch_BuildNecessaryProductionTells(CustomGroup, playerIndex)
+	PlayersPatch_BuildNecessaryProductionTells(CustomGroup, playerIndex, "MS")
 end
 
 function Destroy_Kus_Mothership(CustomGroup, playerIndex, shipID)	

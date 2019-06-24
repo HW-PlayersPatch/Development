@@ -36,7 +36,7 @@ function Update_Tai_Mothership(CustomGroup, playerIndex, shipID)
 		end
 	end
 
-	PlayersPatch_BuildNecessaryProductionTells(CustomGroup, playerIndex)
+	PlayersPatch_BuildNecessaryProductionTells(CustomGroup, playerIndex, "MS")
 end
 
 function Destroy_Tai_Mothership(CustomGroup, playerIndex, shipID)	

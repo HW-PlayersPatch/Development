@@ -39,5 +39,4 @@ NewSubSystemType.sobDieTime=1
 AddSubSystemAbility(NewSubSystemType,"HyperspaceInhibitor",1,"ThisShipOnly",0);
 loadShipPatchList(NewSubSystemType,"data:sound/sfx/ship/Hiigaran/Subsystems/"
                              ,1,"HASubsystemHyperspaceInhibitAmb");
-
-AddSubSystemAbility(NewShipType, "Hyperspace", 0, "EnemyShipsWithinRadius", 10500)
+AddSubSystemAbility(NewShipType, "Hyperspace", 0, "EnemyShipsWithinRadius", 10500);

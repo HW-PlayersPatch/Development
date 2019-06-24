@@ -28,7 +28,7 @@ NewSubSystemType.costToBuild=1
 NewSubSystemType.timeToBuild=1
 NewSubSystemType.isResearch=0
 NewSubSystemType.visible=0
-LoadHODFile(NewSubSystemType,1);
+LoadSharedModel(NewSubSystemType,"Hw1_Production_Fighter");
 NewSubSystemType.BuildFamily="SubSystem_Kus"
 NewSubSystemType.AttackFamily="UnAttackable"
 NewSubSystemType.DockFamily="CantDock"

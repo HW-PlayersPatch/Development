@@ -163,12 +163,9 @@ StartShipWeaponConfig(NewShipType,"HW1_MothershipGun","Weapon_Gun3","Weapon_Gun3
 addShield(NewShipType,"EMP",10000,20);
 StartShipHardPointConfig(NewShipType,"Engine","Hardpoint_Engine","System","Innate","Damageable","Kus_CarrierEngine","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Resource","Hardpoint_Resource","System","Innate","Damageable","Kus_CarrierResource","","","","","","","","");
-
-StartShipHardPointConfig(NewShipType,"Fighter Tell","Hardpoint_Resource","System","Production","Indestructible","","hw1_fightertell","","","","","","","");
-StartShipHardPointConfig(NewShipType,"Corvette Tell","Hardpoint_Resource","System","Production","Indestructible","","hw1_corvettetell","","","","","","","");
-StartShipHardPointConfig(NewShipType,"Frigate Tell","Hardpoint_Resource","System","Production","Indestructible","","hw1_frigatetell","","","","","","","");
-StartShipHardPointConfig(NewShipType,"CapShip Tell","Hardpoint_Resource","System","Production","Indestructible","","hw1_capitaltell","","","","","","","");
-
+StartShipHardPointConfig(NewShipType,"Fighter Production","Hardpoint_Resource","System","Production","Indestructible","","hw1_production_fighter","","","","","","","");
+StartShipHardPointConfig(NewShipType,"Corvette Production","Hardpoint_Resource","System","Production","Indestructible","","hw1_production_corvette","","","","","","","");
+StartShipHardPointConfig(NewShipType,"Frigate Production","Hardpoint_Resource","System","Production","Indestructible","","hw1_production_frigate","","","","","","","");
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg03",1, 0.40,0,0,0, 0,0,0,50,0,0,0,200,0,0,0,50,0,0,0,50);
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg02",1, 0.19,0,0,0, 30,-20,200,25,300,150,85,50,0,0,0,85,0,0,0,50);
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg04",1, 0.13,0,0,0, 50,40,-150,50,65,25,5,25,0,0,0,95,0,0,0,50);

@@ -28,19 +28,21 @@ function PlayersPatch_UnderAttackReissueDock(group)
 	end
 end
 
--- tech exposure (2.4) [Fear]
--- called infrequently, don't care about not running this code if its redundant
-function PlayersPatch_BuildNecessaryProductionTells(CustomGroup, playerIndex)
+-- Display hw1 production subsystems
+-- !!! improve performance here, this is called like every second redundantly
+function PlayersPatch_BuildNecessaryProductionTells(CustomGroup, playerIndex, shipType)
 	if Player_HasResearch(playerIndex, "FighterChassis") == 1 or Player_HasResearch(playerIndex, "DefenderSubSystems") == 1 then -- int/bomber tech, defender tech
 		SobGroup_CreateSubSystem(CustomGroup, "FighterProduction")
 	end
-	if Player_HasResearch(playerIndex, "CorvetteDrive") == 1 then -- light vettes
+	if Player_HasResearch(playerIndex, "CorvetteDrive") == 1 then -- light vette tech
 		SobGroup_CreateSubSystem(CustomGroup, "CorvetteProduction")
 	end
-	if Player_HasResearch(playerIndex, "CapitalShipDrive") == 1 then -- supp frigates
+	if Player_HasResearch(playerIndex, "CapitalShipDrive") == 1 then -- supp frigate tech
 		SobGroup_CreateSubSystem(CustomGroup, "FrigateProduction")
 	end
-	if Player_HasResearch(playerIndex, "SuperCapitalShipDrive") == 1 then -- carriers
-		SobGroup_CreateSubSystem(CustomGroup, "CapShipProduction")
+	if Player_HasResearch(playerIndex, "SuperCapitalShipDrive") == 1 then -- carrier tech
+		if shipType == "MS" then -- only add capship to mothership
+			SobGroup_CreateSubSystem(CustomGroup, "CapShipProduction")
+		end
 	end
 end

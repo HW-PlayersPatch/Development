@@ -2294,10 +2294,10 @@ Icon_Subsystem_Fake = {
 	},
 }
 
-HW1_FighterTell = Icon_Subsystem_Fighter
-HW1_CorvetteTell = Icon_Subsystem_Corvette
-HW1_FrigateTell = Icon_Subsystem_Frigate
-HW1_CapitalTell = Icon_Subsystem_CapShip
+HW1_Production_Fighter = Icon_Subsystem_Fighter
+HW1_Production_Corvette = Icon_Subsystem_Corvette
+HW1_Production_Frigate = Icon_Subsystem_Frigate
+HW1_Production_Capital = Icon_Subsystem_CapShip
 
 HW1_ResearchModule = Icon_Subsystem_Research
 HW1_CloakGenerator = Icon_Subsystem_Fake
