@@ -1,6 +1,5 @@
 
-dofilepath("data:scripts/playerspatch_util.lua")
-dofilepath("data:scripts/playerspatch_patches.lua")
+dofilepath("data:scripts/playerspatch_rules_util.lua")
 dofilepath("data:scripts/SCAR/SCAR_Util.lua")
 dofilepath("data:scripts/scar/restrict.lua")
 dofilepath("data:leveldata/multiplayer/lib/lib.lua")
@@ -29,12 +28,6 @@ function OnInit()
     MPRestrict()
 	nocruisers = GetGameSettingAsNumber("nocruisers")
     cpuplayers = GetGameSettingAsNumber("cpuplayers")
-	
-	-- 2.4
-	nominelayers = GetGameSettingAsNumber("nominelayers")
-	noplatforms = GetGameSettingAsNumber("noplatforms")
-	-- 2.4
-	
     PlayersPatch_AIAttackDamage = GetGameSettingAsNumber("PlayersPatch_AIAttackDamage")
     bounties = GetGameSettingAsNumber("bounties")
     research = GetGameSettingAsNumber("research")
@@ -85,7 +78,6 @@ function timer_updating()
 				if nocruisers == 1 then
 						Rule_AddInterval("nocruisers_init",timer_interval)
 				end			
-				
 				if research == 0 then
 						Rule_AddInterval("research_init",timer_interval)
 				end				

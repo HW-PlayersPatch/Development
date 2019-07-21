@@ -1,3 +1,5 @@
+dofilepath("data:scripts/playerspatch_ships_util.lua")
+
 function Load_Tai_Carrier(playerIndex)    
 	SobGroup_CreateIfNotExist("tai_carrier"..playerIndex)
 	SobGroup_CreateIfNotExist("tai_production"..playerIndex)	
@@ -16,7 +18,6 @@ function Create_Tai_Carrier(CustomGroup, playerIndex, shipID)
 end
 
 function Update_Tai_Carrier(CustomGroup, playerIndex, shipID)
-	SobGroup_AbilityActivate(CustomGroup, AB_Scuttle, 1 - SobGroup_IsDoingAbility(CustomGroup, AB_Dock))
 	SobGroup_CreateIfNotExist("tai_carrier"..playerIndex)
 	SobGroup_CreateIfNotExist("tai_production"..playerIndex)
 	SobGroup_SobGroupAdd("tai_carrier"..playerIndex, CustomGroup)
@@ -38,7 +39,9 @@ function Update_Tai_Carrier(CustomGroup, playerIndex, shipID)
 		end
 	end
 
-	PlayersPatch_BuildNecessaryProductionTells(CustomGroup, playerIndex, "CC")
+	NoSalvageScuttle(CustomGroup, playerIndex, shipID)
+
+	ShowProductionSubsystems(CustomGroup, playerIndex, "CC")
 end
 
 function Destroy_Tai_Carrier(CustomGroup, playerIndex, shipID)	  

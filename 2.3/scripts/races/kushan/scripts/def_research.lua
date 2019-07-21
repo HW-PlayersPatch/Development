@@ -15,3 +15,4 @@ res_index = 1
 
 doscanpath("data:Scripts/Races/Kushan/Scripts/Research", "*.lua")
 doscanpath("data:scripts", "applyresearchtimes.lua")
+

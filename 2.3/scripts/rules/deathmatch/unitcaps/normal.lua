@@ -1,12 +1,5 @@
 supplyLimit("Fighter", 70);
 
-print("YEA BOI")
-if (Player_GetRace(0) == 1) then
-    print("HIIIIIIIG")
-else
-    print("not hgn")
-end
-
 supplyLimit("Scout", 18);
 supplyLimit("Interceptor", 70);
 supplyLimit("Bomber", 70);

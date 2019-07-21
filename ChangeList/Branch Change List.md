@@ -21,6 +21,8 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Don't include in list, but gave more space for longer names in the build menu!
 - Super minor/prolly don't mention: Improved text spacing in the build/research menues.
 - The score screen building and research total now treats ru spent on subsystems the same as ru spent on research.
+- HW1 cruisers no longer take hyperspace damage. (test to make sure this works!)
+- When a docking squadron is under attack, they sometimes glitch and stop. This issues another dock order to dock with the closest ship.
 
 ## Campaign Improvements
 -

@@ -146,9 +146,7 @@ addAbility(NewShipType,"CanBeCaptured",30,0.1,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RetireAbility",1,1);
--- fix to salvage vette scuttle bug
-addCustomCode(NewShipType,"data:scripts/playerspatch_patches.lua","","","Update_NoSalvageScuttle","","Hgn_IonCannonFrigate",4)
--- fix to salvage vette scuttle bug
+addCustomCode(NewShipType,"data:ship/Hgn_IonCannonFrigate/Hgn_IonCannonFrigate.lua","","","Update_Hgn_IonCannonFrigate","","Hgn_IonCannonFrigate",4)
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Hgn_IonCannon","Weapon_Top","Fire");
 addShield(NewShipType,"EMP",310,20);

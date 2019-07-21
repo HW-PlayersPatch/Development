@@ -1,16 +1,24 @@
 --Expanded option functions
 --If you plan to change or add functions for another mod, please use "YourModName_" rather than "PlayersPatch_" to prevent conflicts in people's "Profile\PLAYERCFG.LUA".
 
-function GetBuildResearchLaunchPanelsSCR()
-	--convert scale to SCR screen ratio (from 0.5-1.5 scale, to 0.1-0.3 SCR)
-	--and enlarge slightly (Default of 1 scale, default of .22 SCR)
-	BuildResearchLaunchPanelsSCR = (GetBuildResearchLaunchPanelsScale() / 5) + 0.02
+function GetTacticalOverlaySetting()
+	TacticalOverlaySetting = GetOptionValueUI("PlayersPatch_TacticalOverlaySetting")
 
-	if BuildResearchLaunchPanelsSCR > 0.3 then
-		BuildResearchLaunchPanelsSCR = 0.3
-	end	
-	
-	return BuildResearchLaunchPanelsSCR
+	if TacticalOverlaySetting < 1 or TacticalOverlaySetting > 4 then
+		TacticalOverlaySetting = 2
+	end
+
+	return TacticalOverlaySetting
+end
+
+function GetProductionTimeSetting()
+	ProductionTimeSetting = GetOptionValueUI("PlayersPatch_ProductionTimeSetting")
+
+	if ProductionTimeSetting < 1 or ProductionTimeSetting > 4 then
+		ProductionTimeSetting = 1
+	end
+
+	return ProductionTimeSetting
 end
 
 function GetBuildResearchLaunchPanelsScale()
@@ -21,6 +29,18 @@ function GetBuildResearchLaunchPanelsScale()
 	end
 
 	return BuildResearchLaunchPanelsScale
+end
+
+function GetBuildResearchLaunchPanelsSCR()
+	--convert scale to SCR screen ratio (from 0.5-1.5 scale, to 0.1-0.3 SCR)
+	--and enlarge slightly (Default of 1 scale, default of .22 SCR)
+	BuildResearchLaunchPanelsSCR = (GetBuildResearchLaunchPanelsScale() / 5) + 0.02
+
+	if BuildResearchLaunchPanelsSCR > 0.3 then
+		BuildResearchLaunchPanelsSCR = 0.3
+	end	
+	
+	return BuildResearchLaunchPanelsSCR
 end
 
 function GetCameraPanSpeedScale()
@@ -51,26 +71,6 @@ function GetMissionDifficultyScale()
 	end
 
 	return MissionDifficultyScale
-end
-
-function GetTacticalOverlaySetting()
-	TacticalOverlaySetting = GetOptionValueUI("PlayersPatch_TacticalOverlaySetting")
-
-	if TacticalOverlaySetting < 1 or TacticalOverlaySetting > 4 then
-		TacticalOverlaySetting = 2
-	end
-
-	return TacticalOverlaySetting
-end
-
-function GetProductionTimeSetting()
-	ProductionTimeSetting = GetOptionValueUI("PlayersPatch_ProductionTimeSetting")
-
-	if ProductionTimeSetting < 1 or ProductionTimeSetting > 4 then
-		ProductionTimeSetting = 1
-	end
-
-	return ProductionTimeSetting
 end
 
 function GetOptionValueUI(OptionName)

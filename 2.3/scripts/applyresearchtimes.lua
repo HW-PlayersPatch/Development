@@ -1,6 +1,6 @@
 -- Add the research times to each research option
 doscanpath("data:ui", "playerspatch_ui_util.lua")
-if GetProductionTimeInfoSetting() == 3 or GetProductionTimeInfoSetting() == 4 then
+if GetProductionTimeSetting() == 3 or GetProductionTimeSetting() == 4 then
 	doscanpath("data:scripts", "localization.lua")
 	for i,e in research do
 		upVal = ""

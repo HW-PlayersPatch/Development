@@ -1,3 +1,5 @@
+dofilepath("data:scripts/playerspatch_ships_util.lua")
+
 function Load_Kus_Carrier(playerIndex)
 	SobGroup_CreateIfNotExist("kus_carrier"..playerIndex)
 	SobGroup_CreateIfNotExist("kus_production"..playerIndex)
@@ -16,7 +18,6 @@ function Create_Kus_Carrier(CustomGroup, playerIndex, shipID)
 end
 
 function Update_Kus_Carrier(CustomGroup, playerIndex, shipID)
-	SobGroup_AbilityActivate(CustomGroup, AB_Scuttle, 1 - SobGroup_IsDoingAbility(CustomGroup, AB_Dock))
 	SobGroup_CreateIfNotExist("kus_carrier"..playerIndex)
 	SobGroup_CreateIfNotExist("kus_production"..playerIndex)
 	SobGroup_SobGroupAdd("kus_carrier"..playerIndex, CustomGroup)
@@ -38,7 +39,9 @@ function Update_Kus_Carrier(CustomGroup, playerIndex, shipID)
 		end
 	end
 
-	PlayersPatch_BuildNecessaryProductionTells(CustomGroup, playerIndex, "CC")
+	NoSalvageScuttle(CustomGroup, playerIndex, shipID)
+
+	ShowProductionSubsystems(CustomGroup, playerIndex, "CC")
 end
 
 function Destroy_Kus_Carrier(CustomGroup, playerIndex, shipID)	

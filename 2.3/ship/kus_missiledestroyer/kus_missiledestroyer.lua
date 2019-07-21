@@ -26,7 +26,6 @@ function Create_Kus_MissileDestroyer(CustomGroup, playerIndex, shipID)
 end
 
 function Update_Kus_MissileDestroyer(CustomGroup, playerIndex, shipID)
-	SobGroup_AbilityActivate(CustomGroup, AB_Scuttle, 1 - SobGroup_IsDoingAbility(CustomGroup, AB_Dock))
 	if SobGroup_IsDoingAbility(CustomGroup, AB_SpecialAttack) == 1 then
 	  Decrease_Kus_MissileDestroyer_HPHealth(CustomGroup,"MissileBay",0.2)
 	  if SobGroup_GetHardPointHealth(CustomGroup, "MissileBay") <= 0.2 then
@@ -44,6 +43,8 @@ function Update_Kus_MissileDestroyer(CustomGroup, playerIndex, shipID)
 			end	
 		end	 
 	end		
+	
+	NoSalvageScuttle(CustomGroup, playerIndex, shipID)
 end
 
 function Destroy_Kus_MissileDestroyer(CustomGroup, playerIndex, shipID)	

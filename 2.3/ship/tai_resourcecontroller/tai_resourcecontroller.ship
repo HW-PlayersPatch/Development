@@ -148,9 +148,7 @@ addAbility(NewShipType,"RetireAbility",1,1);
 --AddShipMultiplier(NewShipType, "ResourceDropOffRate", "OwnShipsWithinRadius", "Linear", 1.075, 1.075, 2000)
 ----AddShipMultiplier(NewShipType, "ResourceCapacity", "OwnShipsWithinRadius", "Linear", 1.075, 1.075, 2000)
 --AddShipMultiplier(NewShipType, "ResourceCollectionRate", "OwnShipsWithinRadius", "Linear", 1.075, 1.075, 2000)
--- fix to salvage vette scuttle bug
-addCustomCode(NewShipType,"data:scripts/playerspatch_patches.lua","","","Update_NoSalvageScuttle","","tai_resourcecontroller",4)
--- fix to salvage vette scuttle bug
+addCustomCode(NewShipType,"data:ship/Tai_ResourceController/Tai_ResourceController.lua","","","Update_Tai_ResourceController","","Tai_ResourceController",4)
 LoadModel(NewShipType,1);
 addShield(NewShipType,"EMP",220,20);
 NewShipType.battleScarCoverage=3

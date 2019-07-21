@@ -81,14 +81,14 @@ base_research = {
 		Time = 0, 
 		DisplayedName = "Hyperspace Damage Reduction", 
 		DisplayPriority = 950, 
-		Description = "Enhances the fleet's hyperspace drive systems, reducing the hyperspace damage caused by gravity wells. Ships Only Take 10% damage when forced out of hyperspace.", 
+		Description = "Enhances the fleet's hyperspace drive systems, reducing the hyperspace damage caused by gravity wells. Ships Only Take 0% damage when forced out of hyperspace.", 
 		UpgradeType = Modifier, 
 		TargetType = AllShips, 
 		UpgradeName = "HyperSpaceAbortDamage", 
 		UpgradeValue = 0.0, 
 		TargetName = "Tai_HeavyCruiser", 
 		Icon = Icon_Hyperspace, 
-		ShortDisplayedName = "10% Hyperspace Exit Damage", 
+		ShortDisplayedName = "0% Hyperspace Exit Damage", 
 		DoNotGrant = 1,
 	},
 	
@@ -101,4 +101,4 @@ for i,e in base_research do
 end
 
 
-base_research = nil
+base_research = nil 

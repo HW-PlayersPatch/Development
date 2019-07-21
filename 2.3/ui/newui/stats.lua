@@ -196,7 +196,7 @@ Stats = {
 				helpTip = "$4521",
 				position = 0,
 				stat = "TotalRUHarvested",
-				fstring = "%d",
+				fstring = "%d RU",
 			},
 			{
 				name = "statRUSpent",
@@ -205,7 +205,7 @@ Stats = {
 				helpTip = "$4523",
 				position = 1,
 				stat = "TotalRUSpent",
-				fstring = "%d",
+				fstring = "%d RU",
 			},
 			{
 				name = "statResourceCollectors",
@@ -276,7 +276,7 @@ Stats = {
 				title = "$4536",--RU SPENT ON RESEARCH
 				helpTip = "$4537",
 				position = 3,				
-				fstring = "%d",
+				fstring = "%d RU",
 				stat = "ResearchCost",
 			},
 			{
@@ -314,7 +314,7 @@ Stats = {
 				title = "$4542",--TRIBUTE RECEIVED
 				helpTip = "$4543",
 				position = 0,				
-				fstring = "%d",
+				fstring = "%d RU",
 				stat = "TributeReceived",
 			},
 			{
@@ -323,7 +323,7 @@ Stats = {
 				title = "$4544",--TRIBUTE DONTATED
 				helpTip = "$4545",
 				position = 1,				
-				fstring = "%d",
+				fstring = "%d RU",
 				stat = "TributeDonated",
 			},
 			{

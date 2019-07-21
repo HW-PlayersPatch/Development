@@ -1,6 +1,6 @@
 -- Add the build times to each build option
 doscanpath("data:ui", "playerspatch_ui_util.lua")
-if GetProductionTimeInfoSetting() == 2 or GetProductionTimeInfoSetting() == 4 then
+if GetProductionTimeSetting() == 2 or GetProductionTimeSetting() == 4 then
 	doscanpath("data:scripts", "buildtimes.lua")
 	doscanpath("data:scripts", "localization.lua")
 	for i,e in build do

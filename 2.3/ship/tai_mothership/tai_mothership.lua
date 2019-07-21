@@ -1,3 +1,5 @@
+dofilepath("data:scripts/playerspatch_ships_util.lua")
+
 function Load_Tai_Mothership(playerIndex)	
 	SobGroup_CreateIfNotExist("tai_mothership"..playerIndex)
 	SobGroup_CreateIfNotExist("tai_production"..playerIndex)	
@@ -36,7 +38,7 @@ function Update_Tai_Mothership(CustomGroup, playerIndex, shipID)
 		end
 	end
 
-	PlayersPatch_BuildNecessaryProductionTells(CustomGroup, playerIndex, "MS")
+	ShowProductionSubsystems(CustomGroup, playerIndex, "MS")
 end
 
 function Destroy_Tai_Mothership(CustomGroup, playerIndex, shipID)	

@@ -1,6 +1,5 @@
 
-dofilepath("data:scripts/playerspatch_util.lua")
-dofilepath("data:scripts/playerspatch_patches.lua")
+dofilepath("data:scripts/playerspatch_rules_util.lua")
 dofilepath("data:scripts/SCAR/SCAR_Util.lua")
 dofilepath("data:scripts/scar/restrict.lua")
 dofilepath("data:leveldata/multiplayer/lib/lib.lua")

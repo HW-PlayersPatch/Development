@@ -156,7 +156,6 @@ addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"CloakAbility",0,2,2000,4000,3,100,1,1000); 
 addAbility(NewShipType,"RetireAbility",1,1);
 addAbility(NewShipType,"HyperspaceInhibitorAbility",0,10500);
-addCustomCode(NewShipType,"data:scripts/playerspatch_patches.lua","","","Update_NoSalvageScuttleHyperspaceInhibitor","","Hgn_BattleCruiser",1)
 LoadModel(NewShipType,1);
 StartShipHardPointConfig(NewShipType,"Weapon IonBeam 1","Hardpoint_IonBeam1","Weapon","Innate","Damageable","Hgn_BattleCruiserIonBeamTurret","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Weapon IonBeam 2","Hardpoint_IonBeam2","Weapon","Innate","Damageable","Hgn_BattleCruiserIonBeamTurret","","","","","","","","");
