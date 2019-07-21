@@ -906,7 +906,7 @@ NewBuildMenu = {
 					name = "lblShipName",
 					autosize = 1,
 					Layout = {			
-						size_WH = {	w = 0.2, h = STD_LABEL_HEIGHT, wr = "par", hr = "scr" },						
+						size_WH = {	w = .7, h = STD_LABEL_HEIGHT, wr = "par", hr = "scr" },						
 					},
 					ignored = 1,		
 					giveParentMouseInput = 1,
@@ -926,7 +926,7 @@ NewBuildMenu = {
 					visible = 0,
 					autosize = 1,
 					Layout = {			
-						size_WH = {	w = 1.0, h = STD_LABEL_HEIGHT, wr = "par", hr = "scr" },						
+						size_WH = {	w = .7, h = STD_LABEL_HEIGHT, wr = "par", hr = "scr" },						
 					},
 					ignored = 1,			
 					giveParentMouseInput = 1,

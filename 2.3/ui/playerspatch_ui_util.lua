@@ -1,4 +1,5 @@
 --Expanded option functions
+--If you plan to change or add functions for another mod, please use "YourModName_" rather than "PlayersPatch_" to prevent conflicts in people's "Profile\PLAYERCFG.LUA".
 
 function GetBuildResearchLaunchPanelsSCR()
 	--convert scale to SCR screen ratio (from 0.5-1.5 scale, to 0.1-0.3 SCR)
@@ -52,21 +53,21 @@ function GetMissionDifficultyScale()
 	return MissionDifficultyScale
 end
 
-function GetDefaultToSetting()
-	DefaultToSetting = GetOptionValueUI("PlayersPatch_DefaultToSetting")
+function GetTacticalOverlaySetting()
+	TacticalOverlaySetting = GetOptionValueUI("PlayersPatch_TacticalOverlaySetting")
 
-	if DefaultToSetting < 1 or DefaultToSetting > 4 then
-		DefaultToSetting = 2
+	if TacticalOverlaySetting < 1 or TacticalOverlaySetting > 4 then
+		TacticalOverlaySetting = 2
 	end
 
-	return DefaultToSetting
+	return TacticalOverlaySetting
 end
 
-function GetProductionTimeInfoSetting()
+function GetProductionTimeSetting()
 	ProductionTimeSetting = GetOptionValueUI("PlayersPatch_ProductionTimeSetting")
 
 	if ProductionTimeSetting < 1 or ProductionTimeSetting > 4 then
-		ProductionTimeSetting = 4
+		ProductionTimeSetting = 1
 	end
 
 	return ProductionTimeSetting

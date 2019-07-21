@@ -288,13 +288,6 @@ NewResearchMenu = {
 		{"Taiidan", "Capital","Tai_Destroyer"},
 		{"Taiidan", "Flagship","Tai_Mothership"},
 		{"Taiidan", "NonCombat","Tai_ResearchShip"},
-		{"Vaygr_2X", "Fighter","Vgr_LanceFighter"},
-		{"Vaygr_2X", "Corvette","Vgr_MinelayerCorvette"},
-		{"Vaygr_2X", "Frigate","Vgr_InfiltratorFrigate"},
-		{"Vaygr_2X", "Capital","Vgr_ShipYard"},
-		{"Vaygr_2X", "Flagship","Vgr_Mothership"},
-		{"Vaygr_2X", "Utility","Vgr_Probe_ECM"},
-		{"Vaygr_2X", "Platform","Vgr_HyperSpace_Platform"},
 	},
 	;
 

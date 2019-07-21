@@ -55,13 +55,13 @@ Anchor_Options = {
 		saveOptions = "scale",
 	},
 	{
-		anchorName = "PlayersPatch_DefaultToSetting",
+		anchorName = "PlayersPatch_TacticalOverlaySetting",
 		defScale = 2.0,
 		saveOptions = "scale",
 	},
 	{
 		anchorName = "PlayersPatch_ProductionTimeSetting",
-		defScale = 4.0,
+		defScale = 1.0,
 		saveOptions = "scale",
 	},
 	

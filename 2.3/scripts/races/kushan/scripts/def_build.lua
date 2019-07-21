@@ -2,7 +2,7 @@ Ship = 0
 SubSystem = 1
 build =
 {
---Production Tells---------------
+--Production Subsystems---------------
 	{ 
 		Type = 					SubSystem, 
 		ThingToBuild = 			"hw1_production_fighter",

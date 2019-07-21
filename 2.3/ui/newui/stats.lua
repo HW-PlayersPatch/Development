@@ -6,10 +6,10 @@ dofilepath("data:ui/newui/Styles/HWRM_Style/ControlConstructors.lua")
 -- stat multipliers (tweakables)
 -----------------------------------------------------------------------------
 -- Combat total = (ShipbuiltRU) + (ShipsCapturedRU) + (ShipsDestroyedRU) - (ShipslostRU)
-smShipBuiltRU = 0.0 -- Ships built shouldn't be included in combat total
+smShipBuiltRU = 1.0
 smShipsCapturedRU = 1.0
 smShipsDestroyedRU = 1.0
-smShipsLostRU = 0.0 -- If this isn't 0 people will get 0 combat scores if they lose more than they kill
+smShipsLostRU = 1.0
 
 -- Resource total = (ResourcesHarvested) + (ResourcesSpent) + (CollectorsBuiltRU) + (RefineriesRU)
 smResourcesHarvestedRU = 0.5
@@ -28,7 +28,7 @@ smTributeReceivedRU = 0.25
 smDeathTimeLoserSec = 2.245 	-- just to make the numbers not so obvious
 smDeathTimeWinnerSec = 4.879
 
--- Custom loaded chunk to procedurally create stats tabs
+-- Custom loaded chunk to procedureally create stats tabs
 -- stat hookups are in Statistics.cpp in
 	
 	
@@ -169,7 +169,7 @@ Stats = {
 			--   helpTip = "$4517",
 			--	fstring = "%d",
 			--	stat = "BestShip",
-			--	position = 4,
+			--	position = 0,
 			--},
 			{
 				name = "statCombatTotal",
@@ -196,7 +196,7 @@ Stats = {
 				helpTip = "$4521",
 				position = 0,
 				stat = "TotalRUHarvested",
-				fstring = "%d RU",
+				fstring = "%d",
 			},
 			{
 				name = "statRUSpent",
@@ -205,7 +205,7 @@ Stats = {
 				helpTip = "$4523",
 				position = 1,
 				stat = "TotalRUSpent",
-				fstring = "%d RU",
+				fstring = "%d",
 			},
 			{
 				name = "statResourceCollectors",
@@ -276,7 +276,7 @@ Stats = {
 				title = "$4536",--RU SPENT ON RESEARCH
 				helpTip = "$4537",
 				position = 3,				
-				fstring = "%d RU",
+				fstring = "%d",
 				stat = "ResearchCost",
 			},
 			{
@@ -314,7 +314,7 @@ Stats = {
 				title = "$4542",--TRIBUTE RECEIVED
 				helpTip = "$4543",
 				position = 0,				
-				fstring = "%d RU",
+				fstring = "%d",
 				stat = "TributeReceived",
 			},
 			{
@@ -323,7 +323,7 @@ Stats = {
 				title = "$4544",--TRIBUTE DONTATED
 				helpTip = "$4545",
 				position = 1,				
-				fstring = "%d RU",
+				fstring = "%d",
 				stat = "TributeDonated",
 			},
 			{
