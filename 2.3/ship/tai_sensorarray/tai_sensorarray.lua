@@ -1,4 +1,4 @@
-function Update_Tai_SensorArray(CustomGroup, playerIndex, shipID)
+function Update_Tai_SensorArray(CustomGroup, playerIndex, shipID)	
 	if Player_GetLevelOfDifficulty(playerIndex) > 0 and Player_GetNumberOfSquadronsOfTypeAwakeOrSleeping(-1, "Special_Splitter" ) == 1 then	
 		if SobGroup_Empty("tai_mothership"..playerIndex) == 0 then 	
 			SobGroup_ParadeSobGroup(CustomGroup, "tai_mothership"..playerIndex, 0)	

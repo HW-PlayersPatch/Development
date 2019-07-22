@@ -1,7 +1,6 @@
 -- Ships utility functions
 
 -- Show hw1 production subsystems
--- !!! improve performance here, subsystems are recreated multiple times a second. These should be called once after research is granted instead.
 function ShowProductionSubsystems(CustomGroup, playerIndex, shipType)
 	if Player_HasResearch(playerIndex, "FighterChassis") == 1 or Player_HasResearch(playerIndex, "DefenderSubSystems") == 1 then -- int/bomber tech, defender tech
 		SobGroup_CreateSubSystem(CustomGroup, "FighterProduction")

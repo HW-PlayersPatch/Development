@@ -167,6 +167,10 @@ StartShipWeaponConfig(NewShipType,"Hgn_PulsarSide","Weapon_pulsar","Weapon_pulsa
 StartShipWeaponConfig(NewShipType,"Hgn_PulsarSide","Weapon_pulsar2","Weapon_pulsar2");
 StartShipWeaponConfig(NewShipType,"Hgn_PulsarSide","Weapon_pulsar3","Weapon_pulsar3");
 StartShipWeaponConfig(NewShipType,"Hgn_PulsarSide","Weapon_pulsar4","Weapon_pulsar4");
+--StartShipWeaponConfig(NewShipType,"Hgn_BattleCruiserKineticBurstCannon","Weapon_TurretTop","Weapon_TurretTop");
+--StartShipWeaponConfig(NewShipType,"Hgn_BattleCruiserKineticBurstCannon","Weapon_TurretTop2","Weapon_TurretTop2");
+--StartShipWeaponConfig(NewShipType,"Hgn_BattleCruiserKineticBurstCannonLeftSide","Weapon_TurretTop3","Weapon_TurretTop3");
+--StartShipWeaponConfig(NewShipType,"Hgn_BattleCruiserKineticBurstCannonRightSide","Weapon_TurretTop4","Weapon_TurretTop4");
 addShield(NewShipType,"EMP",10000,20);
 StartShipHardPointConfig(NewShipType,"Engine","Hardpoint_Engine","System","Innate","Damageable","Hgn_BattleCruiserEngine","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Generic 1","HardpointGeneric1","System","Generic","Destroyable","","Hgn_C_Module_Hyperspace","Hgn_C_Module_CloakGenerator","Hgn_C_Module_HyperspaceInhibitor","Hgn_C_Module_FireControl","","","","");
@@ -198,5 +202,3 @@ NewShipType.maxFalloffForce=500*10
 NewShipType.explosiveDamageOnDeath=745
 NewShipType.radiusDamageEvadeMod=1.1													 
 NewShipType.canSurround=1
-
-NewShipType.alternativeHyperspaceTime = 6

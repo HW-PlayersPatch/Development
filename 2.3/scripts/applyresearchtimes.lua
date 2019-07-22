@@ -6,23 +6,16 @@ if GetProductionTimeSetting() == 3 or GetProductionTimeSetting() == 4 then
 		upVal = ""
 		if e.UpgradeValue then
 			pc = e.UpgradeValue * 100 - 100
-			upVal = " ("
+			upVal = " \n<b>Value:</b> "
 			if pc > 0 then
 				upVal = upVal .. "+"
 			end
-			upVal = upVal .. pc .. "%)"
+			upVal = upVal .. pc .. "%"
 		end
 		
-		locLong = localization[e.DisplayedName]
+		locLong = localization[e.Description]
 		if locLong then
-			research[i].DisplayedName = locLong .. "  <c=888>" .. e.Time .. "s" .. upVal
-		end
-		
-		if e.ShortDisplayedName then
-			locShort = localization[e.ShortDisplayedName]
-			if locShort then
-				research[i].ShortDisplayedName = locShort .. "  <c=888>" .. e.Time .. "s" .. upVal
-			end
+			research[i].Description = locLong .. "  \n\n<b>Base Time:</b> " .. e.Time .. "s" .. upVal
 		end
 	end
 end

@@ -207,5 +207,3 @@ NewShipType.explosiveDamageOnDeath=564
 NewShipType.hideNormalAttackUICooldown=1
 NewShipType.canSurround=1
 NewShipType.canRetireSubSystems=1
-
-NewShipType.alternativeHyperspaceTime = 6

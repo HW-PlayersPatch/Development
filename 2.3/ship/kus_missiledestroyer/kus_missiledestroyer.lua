@@ -25,7 +25,7 @@ function Create_Kus_MissileDestroyer(CustomGroup, playerIndex, shipID)
 	--end	
 end
 
-function Update_Kus_MissileDestroyer(CustomGroup, playerIndex, shipID)
+function Update_Kus_MissileDestroyer(CustomGroup, playerIndex, shipID)	
 	if SobGroup_IsDoingAbility(CustomGroup, AB_SpecialAttack) == 1 then
 	  Decrease_Kus_MissileDestroyer_HPHealth(CustomGroup,"MissileBay",0.2)
 	  if SobGroup_GetHardPointHealth(CustomGroup, "MissileBay") <= 0.2 then

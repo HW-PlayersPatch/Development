@@ -161,6 +161,7 @@ addAbility(NewShipType,"CustomCommand",1,"Speed Burst",1,0,1200,200,4,1,0,"data:
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Tai_Scout","Weapon_Gun0","Weapon_Gun0");
 StartShipWeaponConfig(NewShipType,"Tai_Scout","Weapon_Gun1","Weapon_Gun1");
+addShield(NewShipType,"EMP",15,20);
 NewShipType.battleScarCoverage=0
 NewShipType.sobDieTime=2
 NewShipType.sobSpecialDieTime=2

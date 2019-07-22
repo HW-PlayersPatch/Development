@@ -35,7 +35,7 @@ Number_Properties = {
 	
 	persona_group_scale = 3,
 	
-	cfg_hyperspace_effect_time = 9.5,
+	cfg_hyperspace_effect_time = 0.1,
 	cfg_buildable_subsystems = 0.0,
 	
 	ai_demand_reset_value = 3.0,

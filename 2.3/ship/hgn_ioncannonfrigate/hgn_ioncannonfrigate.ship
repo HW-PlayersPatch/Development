@@ -172,5 +172,3 @@ NewShipType.maxFalloffForce=500*10
 NewShipType.explosiveDamageOnDeath=50
 NewShipType.radiusDamageEvadeMod=1.1														 
 NewShipType.canSurround=1
-
-NewShipType.alternativeHyperspaceTime = 6

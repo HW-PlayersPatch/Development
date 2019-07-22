@@ -11,8 +11,8 @@ function Create_Tai_Carrier(CustomGroup, playerIndex, shipID)
 	
 	if Player_GetNumberOfSquadronsOfTypeAwakeOrSleeping(playerIndex, "tai_mothership") == 0 then
 		if playerIndex == Universe_CurrentPlayer() then
-			UI_SetElementVisible("NewResearchMenu", "Platform", 0)
-			UI_SetElementVisible("NewResearchMenu", "Utility", 0)
+			UI_SetElementVisible("NewResearchMenu", "Platform", 0);
+			UI_SetElementVisible("NewResearchMenu", "Utility", 0);
 		end
 	end
 end
@@ -45,5 +45,5 @@ function Update_Tai_Carrier(CustomGroup, playerIndex, shipID)
 end
 
 function Destroy_Tai_Carrier(CustomGroup, playerIndex, shipID)	  
-	
+	--SobGroup_Clear("tai_carrier"..playerIndex)	
 end

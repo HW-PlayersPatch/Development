@@ -147,7 +147,7 @@ addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1,"Fighter_hw1, Fighter, Swarmer
 addAbility(NewShipType,"CanBuildShips",1,"Fighter_Kus, Corvette_Kus, Frigate_Kus, SuperCap_Kus, Resource_Kus, NonCombat_Kus","Fighter, Corvette, Frigate, Capital, Resource, NonCombat");
 addAbility(NewShipType,"CanBeCaptured",300,0.5);
 addAbility(NewShipType,"CanBeRepaired");
-addCustomCode(NewShipType,"data:Ship/Kus_Mothership/Kus_Mothership.lua","Load_Kus_Mothership","Create_Kus_Mothership","Update_Kus_Mothership","Destroy_Kus_Mothership","Kus_Mothership",4)
+addCustomCode(NewShipType,"data:Ship/Kus_Mothership/Kus_Mothership.lua","Load_Kus_Mothership","Create_Kus_Mothership","Update_Kus_Mothership","Destroy_Kus_Mothership","Kus_Mothership",2)
 LoadModel(NewShipType,1);
 --StartShipHardPointConfig(NewShipType,"Production 1","Hardpoint_Engine","System","Innate","Damageable","Vgr_C_Production_Frigate","","","","","");
 addShield(NewShipType,"EMP",10000,20);

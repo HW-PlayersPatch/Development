@@ -141,6 +141,7 @@ addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperspaceCommand", 1, 0, 0, 0, 0, 0);
 addAbility(NewShipType,"CanBuildShips",1,"","");
 --addAbility(NewShipType,"CloakAbility",1,999,0,3000,1,0,18,0);
+addCustomCode(NewShipType,"data:Ship/Obs_Observer/Obs_Observer.lua","","Create_Obs_Observer","Update_Obs_Observer","","Obs_Observer",4)
 LoadModel(NewShipType,1);
 addShield(NewShipType,"EMP",9999,20);
 NewShipType.battleScarCoverage=0
@@ -165,6 +166,3 @@ NewShipType.homingDistance=2000
 NewShipType.homingDelay=0.5
 NewShipType.strikeGroupSpeed=5000
 NewShipType.canSurround=0
-NewShipType.alternativeHyperspaceTime=0.1
-
-addCustomCode(NewShipType,"data:Ship/obs_observer/obs_observer.lua","","Create_obs_observer","Update_obs_observer","","obs_observer",4)
