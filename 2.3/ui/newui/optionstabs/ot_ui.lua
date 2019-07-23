@@ -307,7 +307,7 @@ FE_UI_SHOWTIME = {
 		},
 		
 		helpTipTextLabel = "helpTip",
-		helpTip = "Shows the base build/research production times. Default is None. Must relaunch Homeworld to take effect.",
+		helpTip = "Shows the base build/research production times in English only. Default is None. Must relaunch Homeworld to take effect.",
 		
 		ListBox = {
 			type = "ListBox",

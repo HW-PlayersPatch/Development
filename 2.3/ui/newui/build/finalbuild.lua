@@ -104,8 +104,8 @@ NewBuildMenu = {
 			name = "BuildMenuMainInnerFrame",
 
 			Layout = {
-				pad_LT  = { l = BUILDPANEL_PAD_HORIZ, t = BUILDPANEL_PAD_VERT, lr = "scr_min", tr = "scr" },
-				pad_RB  = { r = BUILDPANEL_PAD_HORIZ, b = BUILDPANEL_PAD_VERT, rr = "scr_min", br = "scr" },
+				pad_LT  = { l = BUILDPANEL_PAD_HORIZ, t = BUILDPANEL_PAD_VERT/3, lr = "scr_min", tr = "scr" },
+				pad_RB  = { r = BUILDPANEL_PAD_HORIZ, b = BUILDPANEL_PAD_VERT/3, rr = "scr_min", br = "scr" },
 				size_WH = {	w = 1, h = 1, wr = "par", hr = "par" },						
 			},
 			--borderWidth = 1,
@@ -148,7 +148,7 @@ NewBuildMenu = {
 				name = "ShipsThatBuildFrame",		
 
 				Layout = {	
-					max_WH = {	w= 1.0, h = .5,  wr="par", hr = "par_min" },	
+					max_WH = {	w= 1.0, h = .4,  wr="par", hr = "par_min" },	
 					min_WH = {	w = 1.0, h = .1, wr = "par", hr = "par" },
 				},
 

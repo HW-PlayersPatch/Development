@@ -1,5 +1,5 @@
 GUID = { 110,91,157,190,18,23,250,78,144,20,41,246,181,128,214,12 }
-GameRulesName = "Homeworld 2 RM Players Patch" --$4807
+GameRulesName = "Homeworld 2 RM Players Patch" --$4807 Homeworld 2 Deathmatch
 Description = "$4808"
 SaveGameVersion = 1.0
 SinglePlayer = 0

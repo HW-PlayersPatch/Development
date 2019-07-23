@@ -27,6 +27,7 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 - Reduced the kushan probe death explosion to a reasonable size (need to test)
 - Tweaked the advanced research module icon to differentiate it better from the regular research module icon.
 - Fixed the salvage scuttle exploit.
+- Trebic's Grav Fix (So ships are no longer locked down after it moves away).
 
 
 ## Campaign Improvements

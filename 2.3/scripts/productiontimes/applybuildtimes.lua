@@ -1,8 +1,19 @@
 -- Add the build times to each build option
 doscanpath("data:ui", "playerspatch_ui_util.lua")
 if GetProductionTimeSetting() == 2 or GetProductionTimeSetting() == 4 then
-	doscanpath("data:scripts", "buildtimes.lua")
-	doscanpath("data:scripts", "localization.lua")
+	doscanpath("data:Scripts/Productiontimes", "buildtimes.lua")
+	doscanpath("data:Scripts/Productiontimes", "LocaleEnglish.lua")
+	
+	--Locale check does not seem to be possible
+	--LocaleCheck = "$4804"
+	--if (LocaleCheck == "SHADOWS") then
+	--	doscanpath("data:Scripts/Productiontimes", "LocaleEnglish.lua")
+	--elseif  (LocaleCheck == "ТЕНИ") then
+	--	-- doscanpath("data:Scripts/Productiontimes", "LocaleRussian.lua")
+	--else
+	--	doscanpath("data:Scripts/Productiontimes", "LocaleEnglish.lua")
+	--end
+	
 	for i,e in build do
 		if e.Description and e.ThingToBuild then
 			loc = localization[e.Description]

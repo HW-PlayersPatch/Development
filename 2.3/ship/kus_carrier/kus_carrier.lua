@@ -23,6 +23,7 @@ function Update_Kus_Carrier(CustomGroup, playerIndex, shipID)
 	SobGroup_SobGroupAdd("kus_carrier"..playerIndex, CustomGroup)
 	SobGroup_SobGroupAdd("kus_production"..playerIndex, CustomGroup)
 	
+	--preventing to have 2 research ship
 	for i = 0,5,1 do
 		res_ship_name = "kus_researchship"
 		if i > 0 then res_ship_name = res_ship_name.."_"..i end
@@ -45,5 +46,5 @@ function Update_Kus_Carrier(CustomGroup, playerIndex, shipID)
 end
 
 function Destroy_Kus_Carrier(CustomGroup, playerIndex, shipID)	
-	--SobGroup_Clear("kus_carrier"..playerIndex)	
+	
 end

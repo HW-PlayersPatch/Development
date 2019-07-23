@@ -439,5 +439,5 @@ build =
 	},	
 }
 
-doscanpath("data:scripts", "applybuildtimes.lua")
+doscanpath("data:Scripts/Productiontimes", "applybuildtimes.lua")
 
