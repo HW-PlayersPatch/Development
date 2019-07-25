@@ -15,19 +15,19 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 
 ## HWR Bugs Fixes and Improvements
 - Whenever someone sends a private message, everyone in the lobby hears the sound even when they are not the recipient. Removed the sound, as the chat window already visually flashes for the recipient.
-- ‘Platform Complete’ audio is now played for Vaygr Gun Platforms and Missile Platforms
--- Note: these sounds aren't localized.
+- ‘Platform Complete’ audio is now played for Vaygr Gun Platforms and Missile Platforms (they were missing)
+-- Note: these sounds aren't localized, same goes for the prior sound fixes.
 - Fixed the hyperspace in inhibitor exploit.
-- Don't include in list, but gave more space for longer names in the build menu!
-- Super minor/prolly don't mention: Improved text spacing in the build/research menues.
 - The score screen building and research total now treats ru spent on subsystems the same as ru spent on research.
-- HW1 cruisers no longer take hyperspace damage. (test to make sure this works!)
+- HW1 cruisers no longer take hyperspace damage.
 - When a docking squadron is under attack, they sometimes glitch and stop. This issues another dock order to dock with the closest ship.
-- Prevented HW1 players from building two research ships at once in 2x carriers only mode.
-- Reduced the kushan probe death explosion to a reasonable size (need to test)
-- Tweaked the advanced research module icon to differentiate it better from the regular research module icon.
+- Prevented HW1 players from building two research ships at once on separate carriers.
+- Reduced the kushan probe death explosion to a reasonable size
+- Tweaked the advanced research module icon to differentiate it more from the regular research module icon.
 - Fixed the salvage scuttle exploit.
 - Trebic's Grav Fix (So ships are no longer locked down after it moves away).
+- Hiig Marine, Vay Infil frigs, and all minelayer corvettes are no longer included in the military selection.
+- Don't mention: Improved text spacing in the build/research menues.
 
 
 ## Campaign Improvements
@@ -37,7 +37,7 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 
 
 ## Balance
--
+- Resource collectors now take 50% less damage when something kamakazi's into them.. This allows colls to do more kami damage than they did in 2.3 b9, while preventing 1 coll from killing 1 other coll via kami.
 
 
 

@@ -411,7 +411,7 @@ CollisionInfo = {
 	kamikazeArmourFamilyDamageMultiplier = {
 		{
 			"ResArmour",
-			0.21,
+			0.10,
 		},
 		{
 			"MediumArmour",

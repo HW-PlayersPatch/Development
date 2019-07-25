@@ -122,7 +122,7 @@ NewShipType.minimumZoomFactor=0.75
 NewShipType.selectionLimit=150000
 NewShipType.preciseATILimit=0
 NewShipType.selectionPriority=75
-NewShipType.militaryUnit=1
+NewShipType.militaryUnit=0
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"MoveCommand",1,0);
 addAbility(NewShipType,"CanDock",1,1);

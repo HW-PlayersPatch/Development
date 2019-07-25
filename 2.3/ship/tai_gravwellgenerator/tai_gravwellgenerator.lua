@@ -11,7 +11,7 @@ GravityWellGeneratorShipList =
 }
 
 GravityWellGeneratorSalvageList = "kus_salvagecorvette, tai_salvagecorvette"
-GravityWellDistance = 3750
+GravityWellDistance = 3000
 
 function Start_Tai_GravWellGenerator(CustomGroup,playerIndex,shipID)
   FX_StartEvent(CustomGroup, "gravwellon_sfx"..random(1,6))
@@ -119,6 +119,8 @@ end
 
 
 function Create_Tai_GravWellGenerator(CustomGroup,playerIndex,shipID)
+  SobGroup_CreateIfNotExist("GravWell_"..shipID)
+  SobGroup_CreateIfNotExist("GravWell_Affected"..shipID)
   SobGroup_CreateIfNotExist("GravWell_Temp0")
   SobGroup_CreateIfNotExist("GravWell_Temp1")
 end
@@ -177,14 +179,11 @@ function Update_Tai_GravWellGenerator(CustomGroup,playerIndex,shipID)
 end
 
 function Destroy_Tai_GravWellGenerator(CustomGroup,playerIndex,shipID)
-  SobGroup_AbilityActivate(CustomGroup, AB_Hyperspace, 1)
-
   SobGroup_SetSpeed("GravWell_Affected"..shipID, 1)
   SobGroup_AbilityActivate("GravWell_Affected"..shipID, AB_Targeting, 1)
   SobGroup_AbilityActivate("GravWell_Affected"..shipID, AB_Attack, 1)
   SobGroup_AbilityActivate("GravWell_Affected"..shipID, AB_Move, 1)
   SobGroup_ClearTumble("GravWell_Affected"..shipID)
-
   SobGroup_Clear("GravWell_Affected"..shipID)
   SobGroup_Clear("GravWell_"..shipID)
 end
