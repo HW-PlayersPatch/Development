@@ -277,7 +277,7 @@ NewMainMenu = {
 				autosize = 1,
 				
 				Text = {	
-					text = " + Players Patch | build " .. BuildNumber,
+					text = " + 2.3 Players Patch | build " .. BuildNumber,
 					font = "ButtonFont",
 					vAlign = "Top",
 					color = {119,166,191,255},

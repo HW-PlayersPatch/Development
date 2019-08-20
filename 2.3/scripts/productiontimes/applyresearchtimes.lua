@@ -1,7 +1,19 @@
 -- Add the research times to each research option
 doscanpath("data:ui", "playerspatch_ui_util.lua")
-if GetProductionTimeSetting() == 3 or GetProductionTimeSetting() == 4 then
-	doscanpath("data:Scripts/Productiontimes", "LocaleEnglish.lua")
+if GetProductionTimeSetting() == 2 then
+
+	--Check locale
+	if GetProductionTimeSetting() == 2 then --English
+		doscanpath("data:Scripts/Productiontimes", "LocaleEnglish.lua")
+	--elseif GetProductionTimeSetting() == 3 then --French
+	--	doscanpath("data:Scripts/Productiontimes", "LocaleFrench.lua")
+
+	--	Italian
+	--	German
+	--	Spanish
+	--	Russian
+	end
+
 	for i,e in research do
 		upVal = ""
 		if e.UpgradeValue then

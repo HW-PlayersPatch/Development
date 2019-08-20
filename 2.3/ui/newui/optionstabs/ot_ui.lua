@@ -289,7 +289,7 @@ FE_UI_SHOWTIME = {
 
 		Text = {
 			textStyle = "RM_GenericLabelLarge_TextStyle",
-			text = "Show Base Production Time", 
+			text = "Show Base Production Times", 
 		},
 		autosize=1,
 	},
@@ -307,7 +307,7 @@ FE_UI_SHOWTIME = {
 		},
 		
 		helpTipTextLabel = "helpTip",
-		helpTip = "Shows the base build/research production times in English only. Default is None. Must relaunch Homeworld to take effect.",
+		helpTip = "Shows the base build/research production times. Default is No. Must relaunch Homeworld to take effect.",
 		
 		ListBox = {
 			type = "ListBox",
@@ -322,7 +322,7 @@ FE_UI_SHOWTIME = {
 				resizeToListBox = 1,
 				Text = {
 					textStyle = "FEListBoxItemTextStyle",
-					text = "None",
+					text = "$3183", --No
 				},
 				onMouseClicked = "UI_AnchorSetScale('PlayersPatch_ProductionTimeSetting', 1.0, 1)";
 			},
@@ -333,31 +333,9 @@ FE_UI_SHOWTIME = {
 				resizeToListBox = 1,
 				Text = {
 					textStyle = "FEListBoxItemTextStyle",
-					text = "Build Only",
+					text = "In English",
 				},	
 				onMouseClicked = "UI_AnchorSetScale('PlayersPatch_ProductionTimeSetting', 2.0, 1)";
-			},
-			-- 3
-			{
-				type = "TextListBoxItem",
-				buttonStyle = "FEListBoxItemButtonStyle",
-				resizeToListBox = 1,
-				Text = {
-					textStyle = "FEListBoxItemTextStyle",
-					text = "Research Only",
-				},	
-				onMouseClicked = "UI_AnchorSetScale('PlayersPatch_ProductionTimeSetting', 3.0, 1)";
-			},
-			-- 4
-			{
-				type = "TextListBoxItem",
-				buttonStyle = "FEListBoxItemButtonStyle",
-				resizeToListBox = 1,
-				Text = {
-					textStyle = "FEListBoxItemTextStyle",
-					text = "Build and Research",
-				},	
-				onMouseClicked = "UI_AnchorSetScale('PlayersPatch_ProductionTimeSetting', 4.0, 1)";
 			},
 		},
 	},

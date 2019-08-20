@@ -2,7 +2,6 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 
 
 # Build 10 Change List
-- Dropped "2.3" from the Players Patch name.
 
 
 ## Gameplay Options and Features
@@ -36,8 +35,10 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 
 
 
-## Balance
-- Resource collectors now take 50% less damage when something kamakazi's into them.. This allows colls to do more kami damage than they did in 2.3 b9, while preventing 1 coll from killing 1 other coll via kami.
+## Balance Changes Since 2.3
+- Resource Collectors do double the damage (+108% more damage) when kamikazing. Resource Collector's kamikazi armour doubled (+52% more armour). This allows collectors to do more kamikazi damage to other ships, while still preventing 1 collector from killing another collector via kamakazi. 
+-- With 2.3 b9 coll health values, 1 collector can now kill a gravity well via kamakazi just like in hw1c (to counter you just damage the collector so it does less kami damage). With 2.4 coll heath values, the GW survives with low health.
+
 
 
 

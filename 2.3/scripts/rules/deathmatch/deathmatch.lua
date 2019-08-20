@@ -97,7 +97,7 @@ function timer_updating()
 				if norushtime > 0 then
 						Rule_AddInterval("norushtime_updating",timer_interval*2)
 				end	
-				Rule_AddInterval("mainrule_updating",timer_interval*3)
+				Rule_AddInterval("mainrule_updating",timer_interval*2)
 		elseif timer_timing == 2 then
 				if relics > 0 then				
 						relics_init()	
