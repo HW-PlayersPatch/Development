@@ -1,4 +1,4 @@
-StartWeaponConfig(NewWeaponType,"AnimatedTurret","InstantHit","IonBeam","Normal",0,5300*0.9,0,5,2,0,20,0,1,7,0,0,1,1,29,29,0.1,"Normal",1,0,1000);
+StartWeaponConfig(NewWeaponType,"AnimatedTurret","InstantHit","IonBeam","Normal",0,4800,0,5,2,0,20,0,1,7,0,0,1,1,29,29,0.1,"Normal",1,0,1000);
 AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",4800,4800,"");
 AddWeaponResult(NewWeaponType,"Hit","Push","Target",-72,-72,"");
 setPenetration(NewWeaponType,50,1,
