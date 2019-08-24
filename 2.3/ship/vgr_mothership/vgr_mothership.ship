@@ -124,7 +124,7 @@ NewShipType.ignoreRaceWhenDocking=0
 NewShipType.canJoinStrikeGroup=0
 addAbility(NewShipType,"ShipHold",1,250,200,"rallypoint","Fighter, Corvette, Utility",35,{Fighter="2"},{Corvette="24"});
 addAbility(NewShipType,"WaypointMove");
-addAbility(NewShipType,"HyperSpaceCommand",0,1,500,1000,0,3);
+addAbility(NewShipType,"HyperSpaceCommand",0,1,600,1200,0,3);
 addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1,"Fighter, Fighter_hw1, Corvette, Corvette_hw1, Frigate, SmallCapitalShip, BigCapitalShip, Utility","JustShoot");
 addAbility(NewShipType,"CanBuildShips",1,"Fighter_Vgr, Corvette_Vgr, Frigate_Vgr, SuperCap_Vgr, Flagship_Vgr, Utility_Vgr, SubSystem_Vgr, SubSystemLarge_Vgr, Platform_Vgr, Shipyard_Vgr, Probe_Vgr","Utility, Fighter, Corvette, Frigate, Platform, Capital, SubSystemModule, SubSystemSensors");
 addAbility(NewShipType,"CanBeCaptured",300,0.1);

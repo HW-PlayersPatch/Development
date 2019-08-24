@@ -14,7 +14,7 @@ UI_AnchorSetScale('PlayersPatch_BuildResearchLaunchPanelsScale', RefBuildResearc
 	-- SPACER
 FE_UISPACER = {
 	type = "Frame",
-	size = {600, 13},
+	size = {600, 4},
 }
 
 ------- Custom Commands
@@ -44,8 +44,8 @@ FE_UI_CURSORSKIN = {
 	
 	Layout = {									
 		size_WH = {w = 1, h = 1, wr = "par", hr = "px",},
-		pad_LT = { l = 4, t = -2, lr = "px", tr = "px" },
-		pad_RB = { r = 4, b = -2, rr = "px", br = "px" },
+		pad_LT = { l = 4, t = 0, lr = "px", tr = "px" },
+		pad_RB = { r = 4, b = -3, rr = "px", br = "px" },
 	},
 	
 	autosize = 1,
@@ -105,8 +105,8 @@ FE_UI_ATISKIN = {
 	
 	Layout = {									
 		size_WH = {w = 1, h = 1, wr = "par", hr = "px",},
-		pad_LT = { l = 4, t = -2, lr = "px", tr = "px" },
-		pad_RB = { r = 4, b = -2, rr = "px", br = "px" },
+		pad_LT = { l = 4, t = 0, lr = "px", tr = "px" },
+		pad_RB = { r = 4, b = -3, rr = "px", br = "px" },
 	},
 	
 	autosize = 1,
@@ -165,8 +165,8 @@ FE_UI_TACTICAL = {
 	
 	Layout = {									
 		size_WH = {w = 1, h = 1, wr = "par", hr = "px",},
-		pad_LT = { l = 4, t = -2, lr = "px", tr = "px" },
-		pad_RB = { r = 4, b = -2, rr = "px", br = "px" },
+		pad_LT = { l = 4, t = 0, lr = "px", tr = "px" },
+		pad_RB = { r = 4, b = -3, rr = "px", br = "px" },
 	},
 	
 	autosize = 1,
@@ -260,7 +260,7 @@ FE_UI_TACTICAL = {
 	},
 }
 
-FE_UI_SHOWTIME = {
+FE_UI_SHOWPRODTIME = {
 	type = "Frame",
 
 	visible = 1,
@@ -268,8 +268,8 @@ FE_UI_SHOWTIME = {
 	
 	Layout = {									
 		size_WH = {w = 1, h = 1, wr = "par", hr = "px",},
-		pad_LT = { l = 4, t = -2, lr = "px", tr = "px" },
-		pad_RB = { r = 4, b = -2, rr = "px", br = "px" },
+		pad_LT = { l = 4, t = 0, lr = "px", tr = "px" },
+		pad_RB = { r = 4, b = -3, rr = "px", br = "px" },
 	},
 	
 	autosize = 1,
@@ -364,8 +364,10 @@ FE_UIOPTION_TAB = {
 								
 		},
 
-		arrangeSep = {	x=0, y=4/600, xr="px", yr="scr",},	
+		--arrangeSep = {	x=0, y=4/600, xr="px", yr="scr",},	
 		autoarrange = 1,
+		autoarrangeSpace = 2,
+		autoarrangeWidth = 612,
 		;
 						
 		-- OPTION FRAMES
@@ -373,7 +375,9 @@ FE_UIOPTION_TAB = {
 		FE_UI_CURSORSKIN,
 		FE_UI_ATISKIN,
 		FE_UI_TACTICAL,
-		FE_UI_SHOWTIME,
+		FE_UI_SHOWPRODTIME,
+
+		FE_UISPACER,
 
 		{
 			type = "TextLabel",
@@ -410,10 +414,10 @@ FE_UIOPTION_TAB = {
 		FE_UI_NOTIFICATIONS,
 
 		-- SPACER
-		{
-			type = "Frame",
-			size = {600, 13},
-		},
+		--{
+		--	type = "Frame",
+		--	size = {600, 13},
+		--},
 	},
 }
 
