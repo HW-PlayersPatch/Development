@@ -1,5 +1,6 @@
---Expanded option functions
---If you plan to change or add functions for another mod, please use "YourModName_" rather than "PlayersPatch_" to prevent conflicts in people's "Profile\PLAYERCFG.LUA".
+--Expanded option functions.
+--If you plan to change or add settings for another mod, please use "YourModName_" rather than "PlayersPatch_" to prevent conflicts in people's "Profile\PLAYERCFG.LUA".
+--Instructions are here: https://forums.gearboxsoftware.com/t/ui-in-game-screeen-slider-with-link-to-function/1528075/21
 
 function GetTacticalOverlaySetting()
 	TacticalOverlaySetting = GetOptionValueUI("PlayersPatch_TacticalOverlaySetting")
@@ -43,6 +44,16 @@ function GetCameraPanSpeedScale()
 	return CameraPanSpeedScale
 end
 
+function GetCameraRotationSpeedScale()
+	CameraRotationSpeedScale = GetOptionValueUI("PlayersPatch_CameraRotationSpeedScale")
+
+	if CameraRotationSpeedScale < 1 or CameraRotationSpeedScale > 2 then
+		CameraRotationSpeedScale = 1.0
+	end
+
+	return CameraRotationSpeedScale
+end
+
 function GetCameraMaxZoomScale()
 	CameraMaxZoomScale = GetOptionValueUI("PlayersPatch_CameraMaxZoomScale")
 
@@ -64,6 +75,9 @@ function GetMissionDifficultyScale()
 end
 
 function GetOptionValueUI(OptionName)
+
+	--Clear any previous results
+	OptionValue = nil
 
 	--Load expanded options
 	dofilepath("PLAYER:PLAYERCFG.lua")

@@ -7,10 +7,10 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 ## Gameplay Options and Features
 - Observers now start with 0 ru. When prompted to continue watching, click yes to observe.
 - In the carrier only gamemode, all races now start with the same number of carriers.
+- Added a Camera Rotation Speed Scale option
 - Added an extra tactical overlay level that keeps feedback lines and circles on all the time when desired.
 - Added an option to change the default tactical overlay level.
 - Added an option to show base build/research production times. (now that its in the info pop-up, remove option and leave it on all the time.)
-
 
 ## HWR Bugs Fixes and Improvements
 - Whenever someone sends a private message, everyone in the lobby hears the sound even when they are not the recipient. Removed the sound, as the chat window already visually flashes for the recipient.
