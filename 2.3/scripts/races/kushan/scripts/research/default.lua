@@ -62,7 +62,7 @@ base_research = {
 		Time = 0, 
 		DisplayedName = "Hyperspace Damage Reduction", 
 		DisplayPriority = 950, 
-		Description = "Enhances the fleet's hyperspace drive systems, reducing the hyperspace damage caused by gravity wells. Ships Only Take 10% damage when forced out of hyperspace.", 
+		Description = "Enhances the fleet's hyperspace drive systems, reducing the hyperspace damage caused by gravity wells. Ships only take 10% damage when forced out of hyperspace.", 
 		UpgradeType = Modifier, 
 		TargetType = AllShips, 
 		UpgradeName = "HyperSpaceAbortDamage", 
@@ -73,6 +73,25 @@ base_research = {
 		DoNotGrant = 1,
 	},
 	
+	{
+		Name = "HyperspaceDamageReductionUpgradeHC", 
+		RequiredResearch = "", 
+		RequiredSubSystems = "", 
+		Cost = 0, 
+		Time = 0, 
+		DisplayedName = "Hyperspace Damage Reduction", 
+		DisplayPriority = 951, 
+		Description = "Enhances the fleet's hyperspace drive systems, reducing the hyperspace damage caused by gravity wells. Heavy Cruisers only take 0% damage when forced out of hyperspace.", 
+		UpgradeType = Modifier, 
+		TargetType = Ship, 
+		UpgradeName = "HyperSpaceAbortDamage", 
+		UpgradeValue = 0.0, 
+		TargetName = "Kus_HeavyCruiser", 
+		Icon = Icon_Hyperspace, 
+		ShortDisplayedName = "0% HC Hyperspace Exit Damage", 
+		DoNotGrant = 1,
+	},
+
 }
 
 -- Add these items to the research tree!

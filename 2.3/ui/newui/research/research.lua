@@ -66,7 +66,7 @@ local Button = {
 		Layout = {	
 			size_WH = {	w = 1, h = 1, wr = "par", hr = "px" },			
 			pad_LT  = { l = LISTBOX_ITEM_PAD_HORIZ, t = 0, lr = "scr", tr = "scr" },
-			pad_RB  = { r = LISTBOX_ITEM_PAD_HORIZ*2, b = 0, rr = "scr", br = "scr" },	
+			pad_RB  = { r = LISTBOX_ITEM_PAD_HORIZ, b = 0, rr = "scr", br = "scr" },	
 		},
 		arrangetype = "horiz",
 		--autosize=1,
@@ -153,7 +153,7 @@ local Button = {
 				--position = {13,0},
 				autosize=1,
 				Layout = {	
-					size_WH = {	w = .7, h = STD_LABEL_HEIGHT, wr = "par", hr = "scr" },	
+					size_WH = {	w = 0.825, h = STD_LABEL_HEIGHT, wr = "par", hr = "scr" },	
 					--pos_XY = {	y=.5, yr="par",},	
 					--pivot_XY = { 0,  .5 },	
 					--size_WH = {	w = 1, h = STD_LABEL_HEIGHT/2, wr = "par", hr = "scr" },			
@@ -187,7 +187,7 @@ local Button = {
 				--	pad_LT  = { l = LISTBOX_ITEM_PAD_HORIZ, t = LISTBOX_ITEM_PAD_VERT, lr = "scr", tr = "scr" },
 					--pad_RB  = { r = LISTBOX_ITEM_PAD_HORIZ, b = 0, rr = "scr", br = "scr" },	
 				--	Flags = { canArrange = 0,hasVolume=0 },	
-					size_WH = {w = .25, h = STD_LABEL_HEIGHT, wr = "par", hr = "scr",},
+					size_WH = {w = .175, h = STD_LABEL_HEIGHT, wr = "par", hr = "scr",},
 					pos_XY = { x = 1.0, xr = "par" },		
 					pivot_XY = { 1,  0 },		
 				},

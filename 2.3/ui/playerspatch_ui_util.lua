@@ -1,4 +1,25 @@
 --Expanded option functions
+--If you plan to change or add functions for another mod, please use "YourModName_" rather than "PlayersPatch_" to prevent conflicts in people's "Profile\PLAYERCFG.LUA".
+
+function GetTacticalOverlaySetting()
+	TacticalOverlaySetting = GetOptionValueUI("PlayersPatch_TacticalOverlaySetting")
+
+	if TacticalOverlaySetting < 1 or TacticalOverlaySetting > 4 then
+		TacticalOverlaySetting = 2
+	end
+
+	return TacticalOverlaySetting
+end
+
+function GetBuildResearchLaunchPanelsScale()
+	BuildResearchLaunchPanelsScale = GetOptionValueUI("PlayersPatch_BuildResearchLaunchPanelsScale")
+
+	if BuildResearchLaunchPanelsScale < 0.5 or BuildResearchLaunchPanelsScale > 1.5 then
+		BuildResearchLaunchPanelsScale = 1.0
+	end
+
+	return BuildResearchLaunchPanelsScale
+end
 
 function GetBuildResearchLaunchPanelsSCR()
 	--convert scale to SCR screen ratio (from 0.5-1.5 scale, to 0.1-0.3 SCR)
@@ -10,16 +31,6 @@ function GetBuildResearchLaunchPanelsSCR()
 	end	
 	
 	return BuildResearchLaunchPanelsSCR
-end
-
-function GetBuildResearchLaunchPanelsScale()
-	BuildResearchLaunchPanelsScale = GetOptionValueUI("PlayersPatch_BuildResearchLaunchPanelsScale")
-
-	if BuildResearchLaunchPanelsScale < 0.5 or BuildResearchLaunchPanelsScale > 1.5 then
-		BuildResearchLaunchPanelsScale = 1.0
-	end
-
-	return BuildResearchLaunchPanelsScale
 end
 
 function GetCameraPanSpeedScale()

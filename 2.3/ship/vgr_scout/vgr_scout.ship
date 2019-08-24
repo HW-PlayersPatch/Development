@@ -163,6 +163,7 @@ addAbility(NewShipType,"GuardCommand",1,3000,500);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"SpecialAttack",0,"EMP");
 addAbility(NewShipType,"RetireAbility",1,0);
+addCustomCode(NewShipType, "data:ship/Vgr_Scout/Vgr_Scout.lua", "", "", "Update_Vgr_Scout", "", "Vgr_Scout", 1)
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Vgr_Peashooter","Weapon_Autogun","Weapon_Autogun");
 StartShipWeaponConfig(NewShipType,"Vgr_SmallEMP","Weapon_Autogun","Weapon_EMP");

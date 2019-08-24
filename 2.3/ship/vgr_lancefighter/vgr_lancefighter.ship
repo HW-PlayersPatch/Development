@@ -164,6 +164,7 @@ addAbility(NewShipType,"CanAttack",1,2,1,0,0.35,1,"Corvette, Corvette_hw1, Resou
 addAbility(NewShipType,"GuardCommand",1,3000,500);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"RetireAbility",1,0);
+addCustomCode(NewShipType, "data:ship/Vgr_LanceFighter/Vgr_LanceFighter.lua", "", "", "Update_Vgr_Lance_Fighter", "", "Vgr_LanceFighter", 1)
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Vgr_LightPlasmaLance","Weapon_BigGun","Weapon_BigGun");
 addShield(NewShipType,"EMP",75,20);

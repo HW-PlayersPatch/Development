@@ -62,7 +62,7 @@ NewShipType.swayOffsetRandomZ=10
 NewShipType.swayBobbingFactor=0.05
 NewShipType.swayRotateFactor=0.1
 NewShipType.dustCloudDamageTime=160
-NewShipType.nebulaDamageTime=30
+NewShipType.nebulaDamageTime=1000000
 NewShipType.MinimalFamilyToFindPathAround="SuperCap"
 NewShipType.mirrorAboveManeuver="ImmelMann_speedy, OneEightyDegRightTurn, OneEightyDegLeftTurn, ImmelMann_speedy, ImmelMann_speedy, ImmelMann_speedy"
 NewShipType.mirrorBelowManeuver="Split_S_speedy, OneEightyDegRightTurn, OneEightyDegLeftTurn, Split_S_speedy, Split_S_speedy, Split_S_speedy"
@@ -95,9 +95,9 @@ NewShipType.buildTime=1
 NewShipType.buildPriorityOrder=50
 NewShipType.retaliationRange=1000
 NewShipType.retaliationDistanceFromGoal=160
-NewShipType.visualRange=10000
-NewShipType.prmSensorRange=10000
-NewShipType.secSensorRange=10000
+NewShipType.visualRange=0
+NewShipType.prmSensorRange=0
+NewShipType.secSensorRange=0
 NewShipType.detectionStrength=1
 NewShipType.TOIcon="Triangle"
 NewShipType.TOScale=1
@@ -116,7 +116,7 @@ NewShipType.nlips=0.0005
 NewShipType.nlipsRange=6000
 NewShipType.nlipsFar=0.0003
 NewShipType.nlipsFarRange=10000
-NewShipType.SMRepresentation="FOWDot"
+NewShipType.SMRepresentation="HardDot"
 NewShipType.meshRenderLimit=11000
 NewShipType.dotRenderLimit=10
 NewShipType.visibleInSecondary=1
@@ -138,8 +138,10 @@ NewShipType.launchTimeBeforeStart=1.5
 NewShipType.launchNrOfShipsInDockFormation=1
 NewShipType.launchFormation="n_delta"
 addAbility(NewShipType,"WaypointMove");
+addAbility(NewShipType,"HyperspaceCommand", 1, 0, 0, 0, 0, 0);
 addAbility(NewShipType,"CanBuildShips",1,"","");
---addAbility(NewShipType,"CloakAbility",1,999,75,3000,1,50,18,1500);
+--addAbility(NewShipType,"CloakAbility",1,999,0,3000,1,0,18,0);
+addCustomCode(NewShipType,"data:Ship/Obs_Observer/Obs_Observer.lua","","Create_Obs_Observer","Update_Obs_Observer","","Obs_Observer",4)
 LoadModel(NewShipType,1);
 addShield(NewShipType,"EMP",9999,20);
 NewShipType.battleScarCoverage=0

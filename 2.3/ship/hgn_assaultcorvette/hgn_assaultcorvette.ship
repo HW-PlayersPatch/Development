@@ -154,6 +154,7 @@ addAbility(NewShipType,"CanAttack",1,1,1,0,0.35,1.5,"Fighter, Fighter_hw1, Corve
 addAbility(NewShipType,"GuardCommand",1,3000,500);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"RetireAbility",1,0);
+addCustomCode(NewShipType, "data:ship/Hgn_AssaultCorvette/Hgn_AssaultCorvette.lua", "", "", "Update_Hgn_Assault_Corvette", "", "Hgn_AssaultCorvette", 1)
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Hgn_VulcanKineticTurret","Weapon_TurretTop","Fire_Top");
 StartShipWeaponConfig(NewShipType,"Hgn_VulcanKineticTurret","Weapon_TurretBottom","Fire_Bottom");

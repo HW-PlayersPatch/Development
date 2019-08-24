@@ -148,6 +148,7 @@ addAbility(NewShipType,"CanBeCaptured",90,0.5,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RetireAbility",1,1);
+addCustomCode(NewShipType,"data:ship/Hgn_Destroyer/Hgn_Destroyer.lua","","","Update_Hgn_Destroyer","","Hgn_Destroyer",4)
 LoadModel(NewShipType,1);
 StartShipHardPointConfig(NewShipType,"Weapon_TurretTop","Hardpoint_TurretTop","Weapon","Innate","Ship","Hgn_KineticBurstCannonDestroyer","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Weapon_TurretFront","Hardpoint_TurretFront","Weapon","Innate","Ship","Hgn_KineticBurstCannonDestroyer","","","","","","","","");

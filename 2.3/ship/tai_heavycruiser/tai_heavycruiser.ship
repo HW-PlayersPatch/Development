@@ -155,6 +155,7 @@ addAbility(NewShipType,"CanBeCaptured",160,0.1,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RetireAbility",1,1);
+addCustomCode(NewShipType,"data:ship/Tai_HeavyCruiser/Tai_HeavyCruiser.lua","","","Update_Tai_HeavyCruiser","","Tai_HeavyCruiser",4)
 LoadModel(NewShipType,1);
 StartShipHardPointConfig(NewShipType,"Weapon_Gun0","Hardpoint_Gun0","Weapon","Innate","Ship","Tai_CruiserGun1","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Weapon_Gun1","Hardpoint_Gun1","Weapon","Innate","Ship","Tai_CruiserGun2","","","","","","","","");

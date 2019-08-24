@@ -162,6 +162,7 @@ addAbility(NewShipType,"CanAttack",1,2,1,0,0.35,2.5,"Fighter, Fighter_hw1, Corve
 addAbility(NewShipType,"GuardCommand",1,3000,500);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"RetireAbility",1,0); 
+addCustomCode(NewShipType, "data:ship/Hgn_Interceptor/Hgn_Interceptor.lua", "", "", "Update_Hgn_Interceptor", "", "Hgn_Interceptor", 1)
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Hgn_KineticAutoGun","Weapon_FrontGun","Fire");
 addShield(NewShipType,"EMP",75,20);

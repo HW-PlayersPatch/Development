@@ -162,6 +162,7 @@ addAbility(NewShipType,"CanAttack",1,3,1,0,0.35,1,"Capturer, Frigate, SmallCapit
 addAbility(NewShipType,"GuardCommand",1,3000,500);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"RetireAbility",1,0);
+addCustomCode(NewShipType, "data:ship/Hgn_AttackBomber/Hgn_AttackBomber.lua", "", "", "Update_Hgn_AttackBomber", "", "Hgn_AttackBomber", 1)
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Hgn_BombLauncher","Weapon_L","Weapon_L");
 StartShipWeaponConfig(NewShipType,"Hgn_BombLauncher","Weapon_R","Weapon_R");

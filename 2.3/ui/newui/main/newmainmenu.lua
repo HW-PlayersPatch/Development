@@ -3,6 +3,7 @@ dofilepath("data:ui/newui/Styles/HWRM_Style/ControlConstructors.lua")
 dofilepath("data:ui/newui/Examples/ExampleIncludes.lua")
 dofilepath("data:ui/newui/Background/logo.lua")
 dofilepath("data:ui/newui/Main/ExButtons.lua")
+dofilepath("data:buildnumber.lua")
 
 
 OptionsButton = [[
@@ -276,7 +277,7 @@ NewMainMenu = {
 				autosize = 1,
 				
 				Text = {	
-					text = " + v2.3 Players Patch | build 10",
+					text = " + 2.3 Players Patch | build " .. BuildNumber,
 					font = "ButtonFont",
 					vAlign = "Top",
 					color = {119,166,191,255},

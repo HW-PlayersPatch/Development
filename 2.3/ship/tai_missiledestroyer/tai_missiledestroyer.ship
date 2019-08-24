@@ -158,6 +158,7 @@ addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RetireAbility",1,1);
 addAbility(NewShipType, "SpecialAttack", 1, "MissileVolley")
 NewShipType.noCombatGrouping=1
+addCustomCode(NewShipType,"data:ship/Tai_MissileDestroyer/Tai_MissileDestroyer.lua","","","Update_Tai_MissileDestroyer","","Tai_MissileDestroyer",4)
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Tai_DestroyerLauncher","Weapon_Gun0","Weapon_Gun0");
 StartShipWeaponConfig(NewShipType,"Tai_DestroyerLauncher","Weapon_Gun1","Weapon_Gun1");

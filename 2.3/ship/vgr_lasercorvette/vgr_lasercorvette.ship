@@ -159,6 +159,7 @@ addAbility(NewShipType,"CanAttack",1,2,1,0,0.35,0.95,"Capturer, Frigate, SmallCa
 addAbility(NewShipType,"GuardCommand",1,3000,500);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"RetireAbility",1,0);
+addCustomCode(NewShipType, "data:ship/Vgr_LaserCorvette/Vgr_LaserCorvette.lua", "", "", "Update_Vgr_Laser_Corvette", "", "Vgr_LaserCorvette", 1)
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Vgr_Laser","Weapon_Laser","Fire_L");
 addShield(NewShipType,"EMP",75,20);

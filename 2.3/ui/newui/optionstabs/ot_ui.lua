@@ -14,7 +14,7 @@ UI_AnchorSetScale('PlayersPatch_BuildResearchLaunchPanelsScale', RefBuildResearc
 	-- SPACER
 FE_UISPACER = {
 	type = "Frame",
-	size = {600, 13},
+	size = {600, 4},
 }
 
 ------- Custom Commands
@@ -44,8 +44,8 @@ FE_UI_CURSORSKIN = {
 	
 	Layout = {									
 		size_WH = {w = 1, h = 1, wr = "par", hr = "px",},
-		pad_LT = { l = 4, t = 4, lr = "px", tr = "px" },
-		pad_RB = { r = 4, b = 4, rr = "px", br = "px" },
+		pad_LT = { l = 4, t = 0, lr = "px", tr = "px" },
+		pad_RB = { r = 4, b = -3, rr = "px", br = "px" },
 	},
 	
 	autosize = 1,
@@ -105,8 +105,8 @@ FE_UI_ATISKIN = {
 	
 	Layout = {									
 		size_WH = {w = 1, h = 1, wr = "par", hr = "px",},
-		pad_LT = { l = 4, t = 4, lr = "px", tr = "px" },
-		pad_RB = { r = 4, b = 4, rr = "px", br = "px" },
+		pad_LT = { l = 4, t = 0, lr = "px", tr = "px" },
+		pad_RB = { r = 4, b = -3, rr = "px", br = "px" },
 	},
 	
 	autosize = 1,
@@ -129,7 +129,6 @@ FE_UI_ATISKIN = {
 			text = "$4102", 
 		},
 		autosize=1,
-		helpTip = "$4103", -- ,
 	},
 													
 	{
@@ -158,6 +157,109 @@ FE_UI_ATISKIN = {
 	},
 }
 
+FE_UI_TACTICAL = {
+	type = "Frame",
+
+	visible = 1,
+	ignored = 1,
+	
+	Layout = {									
+		size_WH = {w = 1, h = 1, wr = "par", hr = "px",},
+		pad_LT = { l = 4, t = 0, lr = "px", tr = "px" },
+		pad_RB = { r = 4, b = -3, rr = "px", br = "px" },
+	},
+	
+	autosize = 1,
+	
+	helpTipTextLabel = "m_lblHelpText",
+	arrangetype = "horiz",
+	;
+	
+	{
+		type = "TextLabel",
+		
+		Layout = {	
+			pos_XY = { x = 1.0, y = .5, xr = "px", yr = "par" },		
+			size_WH = {	w = .45, h = DROPDOWN_HEIGHT, wr = "par", hr = "scr"},	
+			pivot_XY = { 0, 0.5 },	
+		},
+
+		Text = {
+			textStyle = "RM_GenericLabelLarge_TextStyle",
+			text = "Default Tactical Overlay", 
+		},
+		autosize=1,
+	},
+	{
+		type = "DropDownListBox",	
+		name = "m_tactical",
+		selected = GetTacticalOverlaySetting() - 1,
+		
+		Layout = {		
+			size_WH = {w = .5, h = DROPDOWN_HEIGHT, wr = "par", hr = "scr",},
+			pos_XY = { x = 1.0, y = .5, xr = "px", yr = "par" },		
+			pivot_XY = { 0, 0.5 },	
+		
+			--size_WH = {	w = 330/800, h = DROPDOWN_HEIGHT, wr = "scr", hr = "scr" },	
+		},
+		
+		helpTipTextLabel = "helpTip",
+		helpTip = "Change the default Tactical Overlay. Default is Medium. Must relaunch Homeworld to take effect.",
+
+		ListBox = {
+			type = "ListBox",
+			width = 400,
+			listBoxStyle = "FEListBoxStyle_Bordered",
+			backgroundColor = {0,0,0,255},
+			;
+			-- 1
+			{
+				type = "TextListBoxItem",
+				buttonStyle = "FEListBoxItemButtonStyle",
+				resizeToListBox = 1,
+				Text = {
+					textStyle = "FEListBoxItemTextStyle",
+					text = "Low",
+				},
+				onMouseClicked = "UI_AnchorSetScale('PlayersPatch_TacticalOverlaySetting', 1.0, 1)";
+			},
+			-- 2
+			{
+				type = "TextListBoxItem",
+				buttonStyle = "FEListBoxItemButtonStyle",
+				resizeToListBox = 1,
+				Text = {
+					textStyle = "FEListBoxItemTextStyle",
+					text = "Medium",
+				},	
+				onMouseClicked = "UI_AnchorSetScale('PlayersPatch_TacticalOverlaySetting', 2.0, 1)";
+			},
+			-- 3
+			{
+				type = "TextListBoxItem",
+				buttonStyle = "FEListBoxItemButtonStyle",
+				resizeToListBox = 1,
+				Text = {
+					textStyle = "FEListBoxItemTextStyle",
+					text = "High",
+				},	
+				onMouseClicked = "UI_AnchorSetScale('PlayersPatch_TacticalOverlaySetting', 3.0, 1)";
+			},
+			-- 4
+			{
+				type = "TextListBoxItem",
+				buttonStyle = "FEListBoxItemButtonStyle",
+				resizeToListBox = 1,
+				Text = {
+					textStyle = "FEListBoxItemTextStyle",
+					text = "Max",
+				},	
+				onMouseClicked = "UI_AnchorSetScale('PlayersPatch_TacticalOverlaySetting', 4.0, 1)";
+			},
+		},
+	},
+}
+
 --------------------------------------------------
 FE_UIOPTION_TAB = {
 	type = "TabPage",
@@ -181,14 +283,19 @@ FE_UIOPTION_TAB = {
 								
 		},
 
-		arrangeSep = {	x=0, y=4/600, xr="px", yr="scr",},	
+		--arrangeSep = {	x=0, y=4/600, xr="px", yr="scr",},	
 		autoarrange = 1,
+		autoarrangeSpace = 2,
+		autoarrangeWidth = 612,
 		;
 						
 		-- OPTION FRAMES
 		
 		FE_UI_CURSORSKIN,
 		FE_UI_ATISKIN,
+		FE_UI_TACTICAL,
+
+		OPTION_GAMEPLAY_UISPACER,
 
 		{
 			type = "TextLabel",
@@ -220,18 +327,18 @@ FE_UIOPTION_TAB = {
 		-- Additional Sliders
 		FE_UI_BRL_HUDSCALE,
 
-		--FE_UISPACER,
+		FE_UISPACER,
 		FE_UI_SHOWTIMER,
 		FE_UI_NOTIFICATIONS,
 
 		-- SPACER
-		{
-			type = "Frame",
-			size = {600, 13},
-		},
+		--{
+		--	type = "Frame",
+		--	size = {600, 13},
+		--},
 	},
 }
 
 --sets position for the additional sliders
-FE_UIOPTION_TAB[1][9][2][1].Text.text = RefBuildResearchLaunchPanelsScale --default text in the label
-FE_UIOPTION_TAB[1][9][2][2].scrollPosition = RefBuildResearchLaunchPanelsScale --default position for the scrollbar button
+FE_UIOPTION_TAB[1][10][2][1].Text.text = RefBuildResearchLaunchPanelsScale --default text in the label
+FE_UIOPTION_TAB[1][10][2][2].scrollPosition = RefBuildResearchLaunchPanelsScale --default position for the scrollbar button

@@ -1,5 +1,5 @@
 GUID = { 110,91,157,190,18,23,250,78,144,20,41,246,181,128,214,12 }
-GameRulesName = "Homeworld 1 Deathmatch v2.3" --$4805
+GameRulesName = "Homeworld 1 RM 2.3 Players Patch" --$4805 Homeworld 1 Deathmatch
 Description = "$4806"
 SaveGameVersion = 1.0
 SinglePlayer = 0
@@ -199,8 +199,8 @@ GameSetupOptions =
     },
 	    {
         name = "nocruisers",
-        locName = "Allow building of Cruisers",
-        tooltip = "Enable or Disable the building of Battle and Heavy Cruisers",
+        locName = "$3139",
+        tooltip = "$3140",
         default = 0,
         visible = 1,
         choices =

@@ -138,6 +138,9 @@ addAbility(NewShipType,"GuardCommand",1,3000,500);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"RetireAbility",1,0);
 addAbility(NewShipType,"CanBeRepaired","RepCap");
+addAbility(NewShipType,"CanAttack",1,0,2,0,0.35,1,"Fighter_hw1, Fighter, Corvette_hw1, Corvette, Frigate, Utility, Resource, SmallCapitalShip, BigCapitalShip, Mothership","kamikaze",
+{SubSystem="kamikaze"},
+{ResourceLarge="kamikaze"});
 NewShipType.noCombatGrouping=1
 LoadModel(NewShipType,1);
 addShield(NewShipType,"EMP",75,20);

@@ -104,8 +104,8 @@ NewBuildMenu = {
 			name = "BuildMenuMainInnerFrame",
 
 			Layout = {
-				pad_LT  = { l = BUILDPANEL_PAD_HORIZ, t = BUILDPANEL_PAD_VERT, lr = "scr_min", tr = "scr" },
-				pad_RB  = { r = BUILDPANEL_PAD_HORIZ, b = BUILDPANEL_PAD_VERT, rr = "scr_min", br = "scr" },
+				pad_LT  = { l = BUILDPANEL_PAD_HORIZ, t = BUILDPANEL_PAD_VERT/3, lr = "scr_min", tr = "scr" },
+				pad_RB  = { r = BUILDPANEL_PAD_HORIZ, b = BUILDPANEL_PAD_VERT/3, rr = "scr_min", br = "scr" },
 				size_WH = {	w = 1, h = 1, wr = "par", hr = "par" },						
 			},
 			--borderWidth = 1,
@@ -148,7 +148,7 @@ NewBuildMenu = {
 				name = "ShipsThatBuildFrame",		
 
 				Layout = {	
-					max_WH = {	w= 1.0, h = .5,  wr="par", hr = "par_min" },	
+					max_WH = {	w= 1.0, h = .4,  wr="par", hr = "par_min" },	
 					min_WH = {	w = 1.0, h = .1, wr = "par", hr = "par" },
 				},
 
@@ -1177,7 +1177,7 @@ NewBuildMenu = {
 					--position = {8, 3},
 					--size = {48, 24},
 					Layout = {	
-						max_WH = {	w = .5, h = 1, wr = "par", hr = "par"},	
+						max_WH = {	w = .3, h = 1, wr = "par", hr = "par"},	
 						size_WH = {	h = 1,hr = "par"},	
 						pos_XY = { x = 1.0, y = 0.5, xr = "px", yr = "par" },	
 						pivot_XY = { 0.0, 0.5 },
@@ -1191,7 +1191,7 @@ NewBuildMenu = {
 					type = "Frame",
 					name = "TextStack",
 					Layout = {	
-						min_WH = {	w = .5, h = 1, wr = "par", hr = "par"},				
+						min_WH = {	w = .7, h = 1, wr = "par", hr = "par"},				
 						--margin_LT = { l = 0.0, t = 8.0, lr = "px", tr = "px" },
 						--margin_RB = { r = 4.0/800, b = 0.0, rr = "scr_min", br = "px" },		
 						pos_XY = { x = 1.0, xr = "par" },		
