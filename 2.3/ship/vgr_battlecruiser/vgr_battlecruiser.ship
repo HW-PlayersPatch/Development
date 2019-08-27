@@ -4,8 +4,8 @@ NewShipType.sobDescription="$1633"
 NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 160000)
 NewShipType.regentime=2000
 NewShipType.minRegenTime=2000
-NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.2)
-NewShipType.rearArmourDamage = getShipNum(NewShipType, "rearArmourDamage", 1.2)
+NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
+NewShipType.rearArmourDamage = getShipNum(NewShipType, "rearArmourDamage", 1.0)
 setTacticsMults(NewShipType, "ENGINEACCEL", 1.10, 0.90, 1.0)
 setTacticsMults(NewShipType, "THRUSTERACCEL", 1.10, 0.90, 1.0)
 setTacticsMults(NewShipType, "ROTATION", 0.95, 1.05, 1.0)

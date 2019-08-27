@@ -179,9 +179,9 @@ NewShipType.trailLinger=2
 setEngineBurn(NewShipType,12,0.2,0.5,420,1.02,0.1,0.25,480);
 setEngineGlow(NewShipType,1,1,1.02,20,1000,50,1.5,{0.92, 0.21, .09, 0.18});
 loadShipPatchList(NewShipType,"data:sound/sfx/ship/",0,"Vaygr/MegaShip/Engines/VShipYardEng","",1,"Vaygr/MegaShip/Ambience/VMotherShipAmb","",3,"Megaliths/RandomEmit/HANGAR_EMITTERS","marker13");
-NewShipType.minFalloffDamageDist=1550
-NewShipType.maxFalloffDamageDist=1550*1.5
-NewShipType.maxFalloffScuttleDamageDist=1550*3
+NewShipType.minFalloffDamageDist=1000
+NewShipType.maxFalloffDamageDist=1000*1.5
+NewShipType.maxFalloffScuttleDamageDist=1000*3
 NewShipType.explosiveScuttleDamageOnDeath=3302*3
 NewShipType.maxFalloffForce=500*10
 NewShipType.explosiveDamageOnDeath=660*3														 
