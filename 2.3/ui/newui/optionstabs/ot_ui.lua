@@ -372,11 +372,12 @@ FE_UIOPTION_TAB = {
 						
 		-- OPTION FRAMES
 		
-		FE_UI_CURSORSKIN,
+		FE_UI_CURSORSKIN, --#1 in list
 		FE_UI_ATISKIN,
 		FE_UI_TACTICAL,
 		FE_UI_SHOWPRODTIME,
 
+		--OPTION_GAMEPLAY_UISPACER,
 		FE_UISPACER,
 
 		{
@@ -407,7 +408,7 @@ FE_UIOPTION_TAB = {
 		--FE_UI_RESOURCE_HUDSCALE,
 		
 		-- Additional Sliders
-		FE_UI_BRL_HUDSCALE,
+		FE_UI_BRL_HUDSCALE, --#12 in list
 
 		--FE_UISPACER,
 		FE_UI_SHOWTIMER,
@@ -421,12 +422,6 @@ FE_UIOPTION_TAB = {
 	},
 }
 
---sets position for the additional sliders
-FE_UIOPTION_TAB[1][11][2][1].Text.text = RefBuildResearchLaunchPanelsScale --default text in the label
-FE_UIOPTION_TAB[1][11][2][2].scrollPosition = RefBuildResearchLaunchPanelsScale --default position for the scrollbar button
-
--- Reduce spacing between sliders
-for i=6,11 do
-	FE_UIOPTION_TAB[1][i].Layout.size_WH.h = DROPDOWN_HEIGHT/1.65
-	FE_UIOPTION_TAB[1][i].Layout.pad_LT.t = -1
-end
+--Sets the initial value/position for the additional sliders. The number in the second brack must be it's location in the list.
+FE_UIOPTION_TAB[1][12][2][1].Text.text = RefBuildResearchLaunchPanelsScale --initial value in the label
+FE_UIOPTION_TAB[1][12][2][2].scrollPosition = RefBuildResearchLaunchPanelsScale --initial position for the scrollbar

@@ -1,7 +1,8 @@
--- Singleplayer campaign utility functions. (Note, this file is also loaded via scar_util.lua)
+--Singleplayer campaign utility functions. (Note, this file is also loaded via scar_util.lua)
 
---Expanded option functions
---If you plan to change or add functions for another mod, please use "YourModName_" rather than "PlayersPatch_" to prevent conflicts in people's "Profile\PLAYERCFG.LUA".
+--Expanded option functions.
+--If you plan to change or add settings for another mod, please use "YourModName_" rather than "PlayersPatch_" to prevent conflicts in people's "Profile\PLAYERCFG.LUA".
+--Instructions are here: https://forums.gearboxsoftware.com/t/ui-in-game-screeen-slider-with-link-to-function/1528075/21
 
 function GetMissionDifficultyScale()
 	MissionDifficultyScale = GetOptionValue("PlayersPatch_MissionDifficultyScale")
@@ -14,6 +15,9 @@ function GetMissionDifficultyScale()
 end
 
 function GetOptionValue(OptionName)
+
+	--Clear any previous results
+	OptionValue = nil
 
 	--Load expanded options
 	dofilepath("PLAYER:PLAYERCFG.lua")

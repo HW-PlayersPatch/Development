@@ -267,7 +267,7 @@ Stats = {
 				title = "$4534",--% RESEARCH
 				helpTip = "$4535",
 				position = 2,				
-				fstring = "%d\%",
+				fstring = "%d %%",
 				stat = "ResearchPercent",
 			},
 			{

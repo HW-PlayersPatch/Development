@@ -5,7 +5,7 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 
 
 ## Gameplay Options and Features
-
+- Production Times
 
 
 ## HWR Bugs Fixes and Improvements
