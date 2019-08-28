@@ -25,8 +25,8 @@ NewSubSystemType.typeString="CorvetteProduction"
 NewSubSystemType.collateralDamage=100
 NewSubSystemType.inactiveTimeAfterDamage=10
 NewSubSystemType.activateHealthPercentage=0.1
-NewSubSystemType.costToBuild=850
-NewSubSystemType.timeToBuild=65
+NewSubSystemType.costToBuild=725
+NewSubSystemType.timeToBuild=60
 NewSubSystemType.isResearch=0
 NewSubSystemType.visible=1
 LoadHODFile(NewSubSystemType,1);

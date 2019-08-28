@@ -16,8 +16,8 @@ NewShipType.defaultROE="Defensive"
 NewShipType.defaultStance="Neutral"
 NewShipType.mass=100
 NewShipType.collisionMultiplier=1
-NewShipType.thrusterMaxSpeed=250
-NewShipType.mainEngineMaxSpeed=250
+NewShipType.thrusterMaxSpeed=220
+NewShipType.mainEngineMaxSpeed=220
 NewShipType.rotationMaxSpeed=35
 NewShipType.thrusterAccelTime=7
 NewShipType.thrusterBrakeTime=2
@@ -145,7 +145,7 @@ addAbility(NewShipType,"DefenseFieldShieldAbility",0,1200,0,0);
 addCustomCode(NewShipType,"data:ship/Hgn_DefenseFieldFrigate/Hgn_DefenseFieldFrigate.lua","","","Update_Hgn_DefenseFieldFrigate","","Hgn_DefenseFieldFrigate",4)
 LoadModel(NewShipType,1);
 StartShipHardPointConfig(NewShipType,"Weapon_Top","Hardpoint_Top","Weapon","Innate","Ship","Hgn_VulcanKineticTurretHeavy","","","","","","","","");
-addShield(NewShipType,"EMP",70,20);
+addShield(NewShipType,"EMP",310,20);
 AddShipAbility(NewShipType,"DefenseField",1,"ThisShipOnly",0);
 NewShipType.battleScarCoverage=2
 NewShipType.battleScarBudgetLow = 400

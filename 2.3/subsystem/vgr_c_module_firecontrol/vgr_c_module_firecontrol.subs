@@ -36,5 +36,5 @@ NewSubSystemType.DockFamily="CantDock"
 NewSubSystemType.DisplayFamily="SubSystemModule"
 NewSubSystemType.ArmourFamily="SubSystemArmour"
 NewSubSystemType.sobDieTime=1
-AddSubSystemMultiplier(NewSubSystemType,"WeaponAccuracy","OwnShipsWithinRadius","Linear",1.10,1.10,4500);
-AddSubSystemMultiplier(NewSubSystemType,"WeaponDamage","OwnShipsWithinRadius","Linear",1.10,1.10,4500);
+AddSubSystemMultiplier(NewSubSystemType,"WeaponAccuracy","OwnShipsWithinRadius","Linear",1.07,1.07,4500);
+AddSubSystemMultiplier(NewSubSystemType,"WeaponDamage","OwnShipsWithinRadius","Linear",1.07,1.07,4500);

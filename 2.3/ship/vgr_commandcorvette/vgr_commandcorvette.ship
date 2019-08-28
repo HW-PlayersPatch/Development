@@ -2,7 +2,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$1616"
 NewShipType.sobDescription="$1617"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 1275)
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 1000)
 NewShipType.regentime=0
 NewShipType.minRegenTime=0
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
@@ -25,8 +25,8 @@ NewShipType.defaultStance="Neutral"
 NewShipType.holdSlots=1
 NewShipType.mass=15
 NewShipType.collisionMultiplier=0.4
-NewShipType.thrusterMaxSpeed=231*0.9
-NewShipType.mainEngineMaxSpeed=231
+NewShipType.thrusterMaxSpeed=230
+NewShipType.mainEngineMaxSpeed=230
 NewShipType.rotationMaxSpeed=131
 NewShipType.thrusterAccelTime=1
 NewShipType.thrusterBrakeTime=1
@@ -164,8 +164,8 @@ addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,0.90,"Fighter, Fighter_hw1, Corv
 {Frigate="flyround_CommandVette"});
 LoadModel(NewShipType,1);
 addShield(NewShipType,"EMP",75,20);
-AddShipMultiplier(NewShipType,"WeaponAccuracy","OwnShipsWithinRadiusExcludingThisShip","None",1.10,1.10,3000);
-AddShipMultiplier(NewShipType,"WeaponDamage","OwnShipsWithinRadiusExcludingThisShip","None",1.10,1.10,3000);
+AddShipMultiplier(NewShipType,"WeaponAccuracy","OwnShipsWithinRadiusExcludingThisShip","Linear",1.07,1.07,2200);
+AddShipMultiplier(NewShipType,"WeaponDamage","OwnShipsWithinRadiusExcludingThisShip","Linear",1.07,1.07,2200);
 StartShipWeaponConfig(NewShipType,"Vgr_CommandGun","Weapon_Gun","")
 NewShipType.battleScarCoverage=1
 NewShipType.battleScarBudgetLow = 400

@@ -17,8 +17,8 @@ NewShipType.defaultROE="Defensive"
 NewShipType.defaultStance="Neutral"
 NewShipType.mass=10
 NewShipType.collisionMultiplier=1
-NewShipType.thrusterMaxSpeed=800
-NewShipType.mainEngineMaxSpeed=800
+NewShipType.thrusterMaxSpeed=600
+NewShipType.mainEngineMaxSpeed=600
 NewShipType.rotationMaxSpeed=171
 NewShipType.thrusterAccelTime=2
 NewShipType.thrusterBrakeTime=1
@@ -125,7 +125,7 @@ NewShipType.canJoinStrikeGroup=0
 addAbility(NewShipType,"ParadeCommand",1);
 LoadModel(NewShipType,1);
 addShield(NewShipType,"EMP",50,20);
-AddShipMultiplier(NewShipType,"SensorDistortion","OwnShipsWithinRadius","Linear",0.3,0.3,8000);
+AddShipMultiplier(NewShipType,"SensorDistortion","OwnShipsWithinRadius","Linear",0.5,0.5,8000);
 NewShipType.battleScarCoverage=0
 NewShipType.sobDieTime=1
 NewShipType.sobSpecialDieTime=1

@@ -198,9 +198,9 @@ loadShipPatchList(NewShipType,"data:sound/sfx/ship/",0,"Hiigaran/Megaship/Engine
 loadLatchPointList(NewShipType,"SalCap","SalvagePoint1","SalvagePoint2","SalvagePoint3","SalvagePoint4","SalvagePoint5","SalvagePoint6","SalvagePoint7","SalvagePoint8");	
 loadLatchPointList(NewShipType,"CapCap","CapturePoint1","CapturePoint2","CapturePoint3","CapturePoint4","CapturePoint5");
 loadLatchPointList(NewShipType,"RepCap","RepairPoint0","RepairPoint1","RepairPoint2","RepairPoint3","RepairPoint4","RepairPoint5","RepairPoint6");														 
-NewShipType.minFalloffDamageDist=600
-NewShipType.maxFalloffDamageDist=600*1.5
-NewShipType.maxFalloffScuttleDamageDist=600*3
+NewShipType.minFalloffDamageDist=800
+NewShipType.maxFalloffDamageDist=800*1.5
+NewShipType.maxFalloffScuttleDamageDist=800*3
 NewShipType.explosiveScuttleDamageOnDeath=2820
 NewShipType.maxFalloffForce=500*10
 NewShipType.explosiveDamageOnDeath=564		

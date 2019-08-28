@@ -159,7 +159,7 @@ StartShipWeaponConfig(NewShipType,"Hgn_DestroyerTorpedoLauncher","Weapon_Torpedo
 --StartShipWeaponConfig(NewShipType,"Hgn_KineticBurstCannonDestroyer","Weapon_TurretBottom","Weapon_TurretBottom");
 --StartShipWeaponConfig(NewShipType,"Hgn_KineticBurstCannonDestroyer","Weapon_TurretFront","Weapon_TurretFront");
 --StartShipWeaponConfig(NewShipType,"Hgn_KineticBurstCannonDestroyer","Weapon_TurretBack","Weapon_TurretBack");
-addShield(NewShipType,"EMP",850,20);
+addShield(NewShipType,"EMP",1000,20);
 StartShipHardPointConfig(NewShipType,"Engine","Hardpoint_Engine","System","Innate","Damageable","Hgn_Des_Engine","","","","","","","","");
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg03",1, 0.45,0,0,0, 0,0,0,50,0,0,0,200,0,0,0,50,0,0,0,50);
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg04",1, 0.2,0,0,0, 50,40,-150,50,65,25,5,25,0,0,0,95,0,0,0,50);

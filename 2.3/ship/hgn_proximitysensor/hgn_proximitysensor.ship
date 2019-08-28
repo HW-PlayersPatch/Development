@@ -14,8 +14,8 @@ setTacticsMults(NewShipType, "ROTATIONACCEL", 1.0, 1.0, 1.0)
 NewShipType.isTransferable=1
 NewShipType.mass=10
 NewShipType.collisionMultiplier=1
-NewShipType.thrusterMaxSpeed=500
-NewShipType.mainEngineMaxSpeed=500
+NewShipType.thrusterMaxSpeed=600
+NewShipType.mainEngineMaxSpeed=600
 NewShipType.rotationMaxSpeed=171
 NewShipType.thrusterAccelTime=2
 NewShipType.thrusterBrakeTime=1
