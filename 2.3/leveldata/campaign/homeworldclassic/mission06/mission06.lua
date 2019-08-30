@@ -125,20 +125,20 @@ strCurLanguage = 1  --Naive treatement of localization language.;
 
 LSTRING_Savegame = {  -- multilingual strings
 	"06 - Diamond Shoals",
-	"06 - Récifs de Diamant",
+	"06 - Rï¿½cifs de Diamant",
 	"06 - Diamantengrund",
-	"06 - Montañas de diamantes",
+	"06 - Montaï¿½as de diamantes",
 	"06 - I diamanti", }
 LSTRING_LocationCard = {  -- multilingual strings
 	"DIAMOND SHOALS",
 	"RECIFS DE DIAMANT",
 	"DIAMANTENGRUND",
-	"MONTAÑAS DE DIAMANTES",
+	"MONTAï¿½AS DE DIAMANTES",
 	"I DIAMANTI", }
 LSTRING_FIProtectTASKBAR = {  -- multilingual strings
 	"Protect the Mothership",
-	"Protection du Vaisseau Mère.",
-	"Das Mutterschiff schützen.",
+	"Protection du Vaisseau Mï¿½re.",
+	"Das Mutterschiff schï¿½tzen.",
 	"Proteger la Nave nodriza",
 	"Proteggi l'Astronave Madre", }
 LSTRING_TraderIntro = {  -- multilingual strings
@@ -1047,7 +1047,7 @@ end
 function Init_Mission06_Traders_Trading(TeamName)
 	--FSM: FSM_Mission06_Traders
 	--TeamName = Traders
-	KAS_SetTradeCost("DroneTechnology", 500)    --kasfSetBaseTechnologyCost("DDDFDFGFTech", 500)
+	KAS_SetTradeCost("DroneTechnology", 1100)    --kasfSetBaseTechnologyCost("DDDFDFGFTech", 500)
 	KAS_AllowToPurchase("DroneTechnology")    --kasfAllowPlayerToPurchase("DDDFDFGFTech")
 	KAS_SetTradeString(0, "$61303")    --kasfSetTraderDialog(0, LSTRING_TraderIntro[strCurLanguage])
 	KAS_SetTradeString(1, "$61303")    --kasfSetTraderDialog(1, LSTRING_TraderIntro[strCurLanguage])
