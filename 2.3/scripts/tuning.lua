@@ -414,12 +414,32 @@ CollisionInfo = {
 			0.21,
 		},
 		{
+			"Unarmoured",
+			0.2,
+		},
+		{
+			"Unarmoured_hw1",
+			0.2,
+		},
+		{
+			"LightArmour",
+			0.2,
+		},
+		{
+			"LightArmour_hw1",
+			0.2,
+		},
+		{
 			"MediumArmour",
 			0.28,
 		},
 		{
 			"HeavyArmour",
 			0.25,
+		},
+		{
+			"TurretArmour",
+			1.0,
 		},
 	},
 }
