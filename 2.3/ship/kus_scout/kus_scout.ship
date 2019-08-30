@@ -88,12 +88,12 @@ NewShipType.antiFighterValue=0
 NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
 NewShipType.totalValue=1
-NewShipType.buildCost=150
+NewShipType.buildCost=100
 NewShipType.buildTime=10
 NewShipType.buildPriorityOrder=10
 NewShipType.retaliationRange=4800
 NewShipType.retaliationDistanceFromGoal=160
-NewShipType.visualRange=3000
+NewShipType.visualRange=1500
 NewShipType.prmSensorRange = getShipNum(NewShipType, "prmSensorRange", 6000)
 NewShipType.secSensorRange = getShipNum(NewShipType, "secSensorRange", 7500)
 NewShipType.detectionStrength=1
@@ -161,7 +161,7 @@ addAbility(NewShipType,"CustomCommand",1,"Speed Burst",1,0,1200,200,4,1,0,"data:
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Kus_Scout","Weapon_Gun0","Weapon_Gun0");
 StartShipWeaponConfig(NewShipType,"Kus_Scout","Weapon_Gun1","Weapon_Gun1");
-addShield(NewShipType,"EMP",15,20);
+addShield(NewShipType,"EMP",30,20);
 NewShipType.battleScarCoverage=0
 NewShipType.sobDieTime=2
 NewShipType.sobSpecialDieTime=2

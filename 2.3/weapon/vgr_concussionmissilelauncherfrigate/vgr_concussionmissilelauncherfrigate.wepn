@@ -1,4 +1,4 @@
-StartWeaponConfig(NewWeaponType,"Fixed","Missile","Vgr_SmallFrigateMissile","Normal",40,2800,0,0,0,2,1,0,0,10.0,0,0,0,0,0,0,0.1,"Normal",0,0,0);
+StartWeaponConfig(NewWeaponType,"Fixed","Missile","Vgr_SmallFrigateMissile","Normal",40,2800,0,0,0,2,1,0,0,8.1,0,0,0,0,0,0,0.1,"Normal",0,0,0);
 AddWeaponResult(NewWeaponType,"Hit","SpawnWeaponFire","Target",0,0,"Vgr_FrigateMissileBurst");
 AddWeaponResult(NewWeaponType,"Miss","SpawnWeaponFire","Target",0,0,"Vgr_FrigateMissileBurst");
 setPenetration(NewWeaponType,5,1,

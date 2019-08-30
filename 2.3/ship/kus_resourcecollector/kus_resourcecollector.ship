@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$10046"
 NewShipType.sobDescription="$10047"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 4000)
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 5000)
 NewShipType.regentime=0
 NewShipType.minRegenTime=0
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
@@ -145,7 +145,7 @@ addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"SalvageCommand",1, 200);
 addAbility(NewShipType,"GuardCommand",1,3000,500);
 if (getShipNum(NewShipType, "resCanHyper", 1) > 0) then
-addAbility(NewShipType,"HyperSpaceCommand",1,1.1,450,800,0,4);
+addAbility(NewShipType,"HyperSpaceCommand",1,1.1,350,700,0,4);
 end
 addAbility(NewShipType,"Harvest",1,250,10,400);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
