@@ -28,7 +28,7 @@ setAccuracy(NewWeaponType,1,
 {Corvette_hw1=0.82},
 {munition=0.13},
 {Frigate=0.80},
-{Resource=1.00},
+{Resource=1.0},
 {SmallCapitalShip=0.90},
 {BigCapitalShip=0.80},
 {ResourceLarge=0.60});
