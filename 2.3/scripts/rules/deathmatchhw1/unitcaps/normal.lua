@@ -28,11 +28,11 @@ supplyLimit("CaptureFrigate",6);
 -- Kushan FamilySupplyOverride Frigate 24
 -- Taiidan FamilySupplyOverride Frigate 24		
 --
-supplyLimit("Capital", 12);
+supplyLimit("Capital", 11);
 
 supplyLimit("Destroyer", 5);
 supplyLimit("MissileDestroyer", 2);
-supplyLimit("Carrier", 4);
+supplyLimit("Carrier", 3);
 supplyLimit("Battlecruiser",2);
 supplyLimit("HeavyCruiser",2);
 supplyLimit("Shipyard", 1);

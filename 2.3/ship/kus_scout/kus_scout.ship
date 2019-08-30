@@ -6,7 +6,7 @@ NewShipType.regentime=0
 NewShipType.minRegenTime=0
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
 NewShipType.rearArmourDamage = getShipNum(NewShipType, "rearArmourDamage", 1.0)
-setTacticsMults(NewShipType, "MAXSPEED", 1.0, 1.0, 1.0)
+setTacticsMults(NewShipType, "MAXSPEED", 1.0, 1.05, 1.0)
 setTacticsMults(NewShipType, "ENGINEACCEL", 1.20, 0.80, 1.0)
 setTacticsMults(NewShipType, "ENGINEBRAKE", 1.0, 1.0, 1.0)
 setTacticsMults(NewShipType, "THRUSTER", 1.0, 1.0, 1.0)
@@ -28,8 +28,8 @@ NewShipType.defaultStance="Aggressive"
 NewShipType.holdSlots=2
 NewShipType.mass=7
 NewShipType.collisionMultiplier=0.35
-NewShipType.thrusterMaxSpeed=465
-NewShipType.mainEngineMaxSpeed=465
+NewShipType.thrusterMaxSpeed=460
+NewShipType.mainEngineMaxSpeed=460
 NewShipType.rotationMaxSpeed=125
 NewShipType.thrusterAccelTime=2.3
 NewShipType.thrusterBrakeTime=1.1

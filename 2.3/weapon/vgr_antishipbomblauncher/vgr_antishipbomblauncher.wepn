@@ -29,7 +29,7 @@ setAccuracy(NewWeaponType,1,
 {SmallCapitalShip=0.80},
 {BigCapitalShip=0.80},
 {ResourceLarge=0.6});
-setAngles(NewWeaponType,0,-9,9,-9,9);
+setAngles(NewWeaponType,0,-10,10,-10,10);
 setFrustratedTimers(NewWeaponType, 0.0, 10.0);
 setMiscValues(NewWeaponType,3,0.5);
 setMissProperties(NewWeaponType, 0.02, 0.04, 0.20, 0.30, 0.50, 0.50);

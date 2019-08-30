@@ -25,11 +25,11 @@ supplyLimit("Frigate", 70);
 supplyLimit("DefenseFieldFrigate",8);
 supplyLimit("CaptureFrigate",20);
 --
-supplyLimit("Capital", 54);
+supplyLimit("Capital", 49);
 
-supplyLimit("Destroyer", 22);
+supplyLimit("Destroyer", 28);
 supplyLimit("MissileDestroyer", 12);	
-supplyLimit("Carrier", 10);
+supplyLimit("Carrier", 8);
 supplyLimit("Battlecruiser",12);
 supplyLimit("HeavyCruiser",12);
 supplyLimit("Shipyard", 1);

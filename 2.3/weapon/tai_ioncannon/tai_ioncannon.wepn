@@ -28,5 +28,5 @@ setAccuracy(NewWeaponType,1,
 {Frigate=1.0,},
 {SubSystem=1.0,},
 {munition=0.01});
-setAngles(NewWeaponType,6,0,0,0,0);
+setAngles(NewWeaponType,12,0,0,0,0);
 setFireMultFactor(NewWeaponType, 1.0);
