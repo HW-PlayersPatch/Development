@@ -13,7 +13,7 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 
 
 ## Campaign Improvements
--
+-Research times are 50% longer in SP than MP.
 
 
 
