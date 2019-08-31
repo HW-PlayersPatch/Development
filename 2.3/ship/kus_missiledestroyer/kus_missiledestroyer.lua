@@ -1,3 +1,3 @@
-function Update_Tai_MissileDestroyer(CustomGroup, playerIndex, shipID)
+function Update_Kus_MissileDestroyer(CustomGroup, playerIndex, shipID)
     NoSalvageScuttle(CustomGroup, playerIndex, shipID)
 end

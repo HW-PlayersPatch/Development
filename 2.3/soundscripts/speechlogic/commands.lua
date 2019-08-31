@@ -76,9 +76,9 @@ function raceHelper()
 		dofilepath("player:racelist.lua")
 	end
 
-	if (Race_ID[currentRace] == "Vaygr") then
+	if (Race_ID[currentRace] == "Vaygr" or Race_ID[currentRace] == "2x_Vaygr") then
 		return NameMakaan
-	elseif (Race_ID[currentRace] == "Taiidan") then
+	elseif (Race_ID[currentRace] == "Taiidan" or Race_ID[currentRace] == "2x_Taiidan") then
 		return NameEmperor
 	else
 		return NameFleetCommand

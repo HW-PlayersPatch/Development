@@ -5,13 +5,6 @@ if GetProductionTimeSetting() == 2 then
 	--Check locale
 	if GetProductionTimeSetting() == 2 then --English
 		doscanpath("data:Scripts/Productiontimes", "LocaleEnglish.lua")
-	--elseif GetProductionTimeSetting() == 3 then --French
-	--	doscanpath("data:Scripts/Productiontimes", "LocaleFrench.lua")
-
-	--	Italian
-	--	German
-	--	Spanish
-	--	Russian
 	end
 
 	for i,e in research do

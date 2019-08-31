@@ -116,6 +116,7 @@ NewShipType.selectionPriority=75
 NewShipType.militaryUnit=0
 NewShipType.blobName="$1575"
 NewShipType.blobNamePriority=100
+NewShipType.alternativeHyperspaceTime = 9.5
 NewShipType.alternativeHyperspaceA="/etg/special/SPECIAL_ABILITIES_HYPERSPACE_IN_MS"
 NewShipType.SMHighlightDistMin=20000
 NewShipType.SMHighlightDistMax=30000
