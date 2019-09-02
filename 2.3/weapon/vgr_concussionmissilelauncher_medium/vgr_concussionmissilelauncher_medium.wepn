@@ -1,4 +1,4 @@
-StartWeaponConfig(NewWeaponType,"Fixed","Missile","Vgr_AntiFighterMissile","Normal",40,2000*1.1,0,0,0,2,1,0,0,7.0,0,0,1,0,0,0,0.1,"Normal",0,0,0);
+StartWeaponConfig(NewWeaponType,"Fixed","Missile","Vgr_AntiFighterMissile","Normal",40,2000*1.1,0,0,0,2,1,0,1,7.0,0,0,1,0,0,0,0.1,"Normal",0,0,0);
 AddWeaponResult(NewWeaponType,"Hit","SpawnWeaponFire","Target",0,0,"Vgr_MediumMissileBurst");
 AddWeaponResult(NewWeaponType,"Miss","SpawnWeaponFire","Target",0,0,"Vgr_MediumMissileBurst");
 AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",95,95,"");

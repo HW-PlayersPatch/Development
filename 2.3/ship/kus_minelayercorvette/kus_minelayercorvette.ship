@@ -27,8 +27,8 @@ NewShipType.defaultStance="Aggressive"
 NewShipType.holdSlots=1
 NewShipType.mass=15
 NewShipType.collisionMultiplier=0.3
-NewShipType.thrusterMaxSpeed=255
-NewShipType.mainEngineMaxSpeed=255
+NewShipType.thrusterMaxSpeed=280
+NewShipType.mainEngineMaxSpeed=280
 NewShipType.rotationMaxSpeed=130
 NewShipType.thrusterAccelTime=2.6
 NewShipType.thrusterBrakeTime=1
@@ -85,7 +85,7 @@ NewShipType.antiFighterValue=0
 NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
 NewShipType.totalValue=10
-NewShipType.buildCost=275
+NewShipType.buildCost=325
 NewShipType.buildTime=35
 NewShipType.buildPriorityOrder=40
 NewShipType.retaliationRange=5500
@@ -122,7 +122,7 @@ NewShipType.minimumZoomFactor=0.75
 NewShipType.selectionLimit=150000
 NewShipType.preciseATILimit=0
 NewShipType.selectionPriority=75
-NewShipType.militaryUnit=1
+NewShipType.militaryUnit=0
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"MoveCommand",1,0);
 addAbility(NewShipType,"CanDock",1,1);
@@ -157,7 +157,7 @@ addAbility(NewShipType,"RetireAbility",1,0);
 addAbility(NewShipType,"MinelayerAbility",1,3.5);
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Kus_MineLayer","Weapon_Gun0","Weapon_Mine");
-addShield(NewShipType,"EMP",75,20);
+addShield(NewShipType,"EMP",45,20);
 NewShipType.battleScarCoverage=1
 NewShipType.sobDieTime=2
 NewShipType.sobSpecialDieTime=1

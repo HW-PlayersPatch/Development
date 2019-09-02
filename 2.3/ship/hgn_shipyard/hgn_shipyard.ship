@@ -146,7 +146,7 @@ addAbility(NewShipType,"CanBeCaptured",300,0.1,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"CloakAbility",0,2,2000,4000,3,100,1,1000);
-addAbility(NewShipType,"HyperspaceInhibitorAbility",0,12000);
+addAbility(NewShipType,"HyperspaceInhibitorAbility",0,10500);
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGunSide","Weapon_HullDefense1","Weapon_HullDefense1");
 StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGunSide","Weapon_HullDefense2","Weapon_HullDefense2");
@@ -198,9 +198,9 @@ loadShipPatchList(NewShipType,"data:sound/sfx/ship/",0,"Hiigaran/Megaship/Engine
 loadLatchPointList(NewShipType,"SalCap","SalvagePoint1","SalvagePoint2","SalvagePoint3","SalvagePoint4","SalvagePoint5","SalvagePoint6","SalvagePoint7","SalvagePoint8");	
 loadLatchPointList(NewShipType,"CapCap","CapturePoint1","CapturePoint2","CapturePoint3","CapturePoint4","CapturePoint5");
 loadLatchPointList(NewShipType,"RepCap","RepairPoint0","RepairPoint1","RepairPoint2","RepairPoint3","RepairPoint4","RepairPoint5","RepairPoint6");														 
-NewShipType.minFalloffDamageDist=1075
-NewShipType.maxFalloffDamageDist=1075*1.5
-NewShipType.maxFalloffScuttleDamageDist=1075*3
+NewShipType.minFalloffDamageDist=800
+NewShipType.maxFalloffDamageDist=800*1.5
+NewShipType.maxFalloffScuttleDamageDist=800*3
 NewShipType.explosiveScuttleDamageOnDeath=2820
 NewShipType.maxFalloffForce=500*10
 NewShipType.explosiveDamageOnDeath=564		

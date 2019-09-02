@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$1614"
 NewShipType.sobDescription="$1615"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 900)
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 1000)
 NewShipType.regentime=0
 NewShipType.minRegenTime=0
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
@@ -124,7 +124,7 @@ NewShipType.minimumZoomFactor=0.74
 NewShipType.selectionLimit=150000
 NewShipType.preciseATILimit=0
 NewShipType.selectionPriority=75
-NewShipType.militaryUnit=1
+NewShipType.militaryUnit=0
 addAbility(NewShipType,"MoveCommand",1,0);
 addAbility(NewShipType,"CanDock",1,1);
 NewShipType.dockTimeBetweenTwoFormations=0.5

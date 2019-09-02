@@ -1,3 +1,5 @@
+dofilepath("data:scripts/playerspatch_ships_util.lua")
+
 function Create_Vgr_Mothership(CustomGroup, playerIndex, shipID) 	
 	if playerIndex == Universe_CurrentPlayer() then
 		UI_SetElementVisible("NewResearchMenu", "NonCombat", 0);

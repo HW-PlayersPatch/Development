@@ -70,7 +70,7 @@ NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
 NewShipType.totalValue=0
 NewShipType.buildCost=150
-NewShipType.buildTime=15
+NewShipType.buildTime=20
 NewShipType.buildPriorityOrder=20
 NewShipType.retaliationRange=12000
 NewShipType.retaliationDistanceFromGoal=800
@@ -108,6 +108,7 @@ NewShipType.preciseATILimit=0
 NewShipType.selectionPriority=75
 NewShipType.militaryUnit=0
 addAbility(NewShipType,"MoveCommand",1,1);
+addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 NewShipType.dontDockWithOtherRaceShips=0
 NewShipType.ignoreRaceWhenDocking=0
 addAbility(NewShipType,"CanLaunch");

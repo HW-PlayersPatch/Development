@@ -24,14 +24,14 @@ Data =
 -- once in range and facing the target we will slide around maintaining heading until we are more 
 -- then this multiplied by our range from the target, then we will fly normally to catch up
 
-        slideDistanceMultiplier = 1.5,
+        slideDistanceMultiplier = 1.1,
 
 	tooSlowSpeed		= 3.0,
 	tooFastMultiplier	= 1.4,
 	facingAngle		= 0,
 		
 	-- when facing faster targets we will start moving after they have been out of range for this long
-	tooLongOutOfRange		= 8.0,
+	tooLongOutOfRange		= 2.0,
 		
 -- when doing a move attack we will break off if after we get further than this multipled by our max weapon range from the target.
 	moveAttackMaxDistanceMultiplier = 1.2,

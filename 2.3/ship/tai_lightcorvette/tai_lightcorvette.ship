@@ -82,8 +82,8 @@ NewShipType.antiFighterValue=10
 NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
 NewShipType.totalValue=10
-NewShipType.buildCost=225
-NewShipType.buildTime=18
+NewShipType.buildCost=215
+NewShipType.buildTime=17
 NewShipType.buildPriorityOrder=10
 NewShipType.retaliationRange=5500
 NewShipType.retaliationDistanceFromGoal=160
@@ -155,7 +155,7 @@ addAbility(NewShipType,"RetireAbility",1,0);
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Tai_LtCorvette","Weapon_Gun0","Weapon_Gun0");
 StartShipWeaponConfig(NewShipType,"Tai_LtCorvette","Weapon_Gun1","Weapon_Gun1");
-addShield(NewShipType,"EMP",75,20);
+addShield(NewShipType,"EMP",45,20);
 NewShipType.battleScarCoverage=1
 NewShipType.sobDieTime=2
 NewShipType.sobSpecialDieTime=1

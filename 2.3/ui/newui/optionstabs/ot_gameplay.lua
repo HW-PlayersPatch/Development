@@ -1,12 +1,14 @@
 --Load expanded options
 dofilepath("data:ui/PlayersPatch_UI_Util.lua")
 RefCameraPanSpeedScale = GetCameraPanSpeedScale()
+RefCameraRotationSpeedScale = GetCameraRotationSpeedScale()
 RefCameraMaxZoomScale = GetCameraMaxZoomScale()
 RefMissionDifficultyScale = GetMissionDifficultyScale()
 
 -- Resets the additional slider positions
 -- This properly handles the Options>Change Sliders>Cancel>Options>Accept scenario
 UI_AnchorSetScale('PlayersPatch_CameraPanSpeedScale', RefCameraPanSpeedScale, 1);
+UI_AnchorSetScale('PlayersPatch_CameraRotationSpeedScale', RefCameraRotationSpeedScale, 1);
 UI_AnchorSetScale('PlayersPatch_CameraMaxZoomScale', RefCameraMaxZoomScale, 1);
 UI_AnchorSetScale('PlayersPatch_MissionDifficultyScale', RefMissionDifficultyScale, 1);
 
@@ -33,11 +35,13 @@ OPTION_GAMEPLAY_UISPACER = {
 
 
 OPTION_GAMEPLAY_ORDERFEEDBACK		= Option_LabeledSlider("SFXVOLUME",				"$5114",	"lblOrderFeedback",		"$5243",	"m_sbarOrderFeedback",		"$5244")
-OPTION_GAMEPLAY_DOTSCALE			= Option_LabeledSlider("DOTSCALE",				"$5475",	"lblDotScale",			"$5475",	"m_sbarDotScale",			"$5476", 1, 1, .1, 3, [[if (SetTacticalDotScale) then SetTacticalDotScale(%spos) end]])
+OPTION_GAMEPLAY_DOTSCALE			= Option_LabeledSlider("DOTSCALE",				"$5475",	"lblDotScale",			"$5475",	"m_sbarDotScale",			"$5476", 1, 1, .1, 3, [[if (SetTacticalDotScale) then SetTacticalDotScale(%spos) end]]) --This had a bug that's been fixed
 
 
 ------- Additional Sliders
 OPTION_GAMEPLAY_CAMERAPANSPEED = Option_LabeledSlider("CAMERAPANSPEED", "CAMERA PAN SPEED SCALE", "lblCameraPanSpeed", "CAMERA PAN SPEED SCALE", "m_sbarCameraPanSpeed", "ADJUST CAMERA PAN SPEED SCALE. DEFAULT IS 1. MUST RELAUNCH HOMEWORLD TO TAKE EFFECT.", 1, 1, 1.0, 2.0, [[UI_AnchorSetScale('PlayersPatch_CameraPanSpeedScale', %spos, 1);]])
+
+OPTION_GAMEPLAY_CAMERAROTATIONSPEED = Option_LabeledSlider("CAMERAROTATIONSPEED", "CAMERA ROTATION SPEED SCALE", "lblCameraRotationSpeed", "CAMERA ROTATION SPEED SCALE", "m_sbarCameraRotationSpeed", "ADJUST CAMERA ROTATION SPEED SCALE. DEFAULT IS 1. MUST RELAUNCH HOMEWORLD TO TAKE EFFECT.", 1, 1, 1.0, 2.0, [[UI_AnchorSetScale('PlayersPatch_CameraRotationSpeedScale', %spos, 1);]])
 
 OPTION_GAMEPLAY_CAMERAMAXZOOM = Option_LabeledSlider("CAMERAMAXZOOM", "CAMERA MAX ZOOM SCALE", "lblCameraMaxZoom", "CAMERA MAX ZOOM SCALE", "m_sbarCameraMaxZoom", "ADJUST CAMERA MAX ZOOM SCALE. DEFAULT IS 1. MUST RELAUNCH HOMEWORLD TO TAKE EFFECT.", 1, 1, 1.0, 2.0, [[UI_AnchorSetScale('PlayersPatch_CameraMaxZoomScale', %spos, 1);]])
 
@@ -90,7 +94,7 @@ FE_GAMEPLAYOPTION_TAB = {
 						
 		-- OPTION FRAMES
 						
-		OPTION_GAMEPLAY_ORDERFEEDBACK,
+		OPTION_GAMEPLAY_ORDERFEEDBACK, --#1 in list
 		OPTION_GAMEPLAY_DOTSCALE,
 		
 		--OPTION_GAMEPLAY_UISPACER,
@@ -99,8 +103,9 @@ FE_GAMEPLAYOPTION_TAB = {
 		
 		-- Additional Sliders
 		OPTION_GAMEPLAY_CAMERAPANSPEED,
+		OPTION_GAMEPLAY_CAMERAROTATIONSPEED,
 		OPTION_GAMEPLAY_CAMERAMAXZOOM,
-		OPTION_GAMEPLAY_DIFFICULTY,
+		OPTION_GAMEPLAY_DIFFICULTY, --#6 in list
 						
 		OPTION_GAMEPLAY_UISPACER,
 						
@@ -115,10 +120,12 @@ FE_GAMEPLAYOPTION_TAB = {
 	},
 }
 
---sets position for the additional sliders
-FE_GAMEPLAYOPTION_TAB[1][3][2][1].Text.text = RefCameraPanSpeedScale --default text in the label
-FE_GAMEPLAYOPTION_TAB[1][3][2][2].scrollPosition = RefCameraPanSpeedScale --default position for the scrollbar button
-FE_GAMEPLAYOPTION_TAB[1][4][2][1].Text.text = RefCameraMaxZoomScale --default text in the label
-FE_GAMEPLAYOPTION_TAB[1][4][2][2].scrollPosition = RefCameraMaxZoomScale --default position for the scrollbar button
-FE_GAMEPLAYOPTION_TAB[1][5][2][1].Text.text = RefMissionDifficultyScale --default text in the label
-FE_GAMEPLAYOPTION_TAB[1][5][2][2].scrollPosition = RefMissionDifficultyScale --default position for the scrollbar button
+--Sets the initial value/position for the additional sliders. The number in the second bracket must be it's location in the list.
+FE_GAMEPLAYOPTION_TAB[1][3][2][1].Text.text = RefCameraPanSpeedScale --initial value in the label
+FE_GAMEPLAYOPTION_TAB[1][3][2][2].scrollPosition = RefCameraPanSpeedScale --initial position for the scrollbar
+FE_GAMEPLAYOPTION_TAB[1][4][2][1].Text.text = RefCameraRotationSpeedScale --initial value in the label
+FE_GAMEPLAYOPTION_TAB[1][4][2][2].scrollPosition = RefCameraRotationSpeedScale --initial position for the scrollbar
+FE_GAMEPLAYOPTION_TAB[1][5][2][1].Text.text = RefCameraMaxZoomScale --initial value in the label
+FE_GAMEPLAYOPTION_TAB[1][5][2][2].scrollPosition = RefCameraMaxZoomScale --initial position for the scrollbar
+FE_GAMEPLAYOPTION_TAB[1][6][2][1].Text.text = RefMissionDifficultyScale --initial value in the label
+FE_GAMEPLAYOPTION_TAB[1][6][2][2].scrollPosition = RefMissionDifficultyScale --initial position for the scrollbar

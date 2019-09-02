@@ -2,7 +2,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$1610"
 NewShipType.sobDescription="$1611"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 480)
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 510)
 NewShipType.regentime=0
 NewShipType.minRegenTime=0
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
@@ -90,7 +90,7 @@ NewShipType.antiFighterValue=0
 NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=10
 NewShipType.totalValue=10
-NewShipType.buildCost=650
+NewShipType.buildCost=625
 NewShipType.buildTime=45
 NewShipType.buildPriorityOrder=10
 NewShipType.retaliationRange=5500
@@ -159,6 +159,7 @@ addAbility(NewShipType,"CanAttack",1,2,1,0,0.35,0.95,"Capturer, Frigate, SmallCa
 addAbility(NewShipType,"GuardCommand",1,3000,500);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"RetireAbility",1,0);
+addCustomCode(NewShipType, "data:ship/Vgr_LaserCorvette/Vgr_LaserCorvette.lua", "", "", "Update_Vgr_Laser_Corvette", "", "Vgr_LaserCorvette", 1)
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Vgr_Laser","Weapon_Laser","Fire_L");
 addShield(NewShipType,"EMP",75,20);

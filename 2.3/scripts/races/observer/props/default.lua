@@ -4,7 +4,7 @@ Number_Properties_Priority = 1.0
 
 Number_Properties = {
 	cfg_race_is_playable = 1.0,
-	cfg_race_index_sort = 10.0,
+	cfg_race_index_sort = 13,
 	cfg_race_select_weight = 0.0,
 	cfg_race_is_random = 0.0,
 
@@ -35,7 +35,7 @@ Number_Properties = {
 	
 	persona_group_scale = 3,
 	
-	cfg_hyperspace_effect_time = 9.5,
+	cfg_hyperspace_effect_time = 0.1,
 	cfg_buildable_subsystems = 0.0,
 	
 	ai_demand_reset_value = 3.0,

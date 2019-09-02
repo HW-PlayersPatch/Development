@@ -130,7 +130,7 @@ addAbility(NewShipType,"CanBuildShips",1,"Fighter_Vgr, Corvette_Vgr, Frigate_Vgr
 addAbility(NewShipType,"CanBeCaptured",300,0.1);
 addAbility(NewShipType,"CanBeRepaired");
 addAbility(NewShipType,"CloakAbility",0,2,2000,4000,3,100,1,1000);
-addAbility(NewShipType,"HyperspaceInhibitorAbility",0,12000);
+addAbility(NewShipType,"HyperspaceInhibitorAbility",0,10500);
 addCustomCode(NewShipType,"data:Ship/Vgr_Mothership/Vgr_Mothership.lua","","Create_Vgr_Mothership","Update_Vgr_Mothership","","Vgr_Mothership",4)
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun","Weapon_HullDefense1","");
@@ -179,9 +179,9 @@ NewShipType.trailLinger=2
 setEngineBurn(NewShipType,12,0.2,0.5,420,1.02,0.1,0.25,480);
 setEngineGlow(NewShipType,1,1,1.02,20,1000,50,1.5,{0.92, 0.21, .09, 0.18});
 loadShipPatchList(NewShipType,"data:sound/sfx/ship/",0,"Vaygr/MegaShip/Engines/VShipYardEng","",1,"Vaygr/MegaShip/Ambience/VMotherShipAmb","",3,"Megaliths/RandomEmit/HANGAR_EMITTERS","marker13");
-NewShipType.minFalloffDamageDist=1550
-NewShipType.maxFalloffDamageDist=1550*1.5
-NewShipType.maxFalloffScuttleDamageDist=1550*3
+NewShipType.minFalloffDamageDist=1000
+NewShipType.maxFalloffDamageDist=1000*1.5
+NewShipType.maxFalloffScuttleDamageDist=1000*3
 NewShipType.explosiveScuttleDamageOnDeath=3302*3
 NewShipType.maxFalloffForce=500*10
 NewShipType.explosiveDamageOnDeath=660*3														 

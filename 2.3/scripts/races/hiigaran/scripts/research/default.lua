@@ -75,7 +75,7 @@ base_research = {
 		RequiredResearch =		"",
 		RequiredSubSystems =	"AdvancedResearch",
 		Cost = 					500,
-		Time = 					45,
+		Time = 					30,
 		DisplayedName =			"$7509",
 		DisplayPriority =		4,
 		Description =			"$7510",
@@ -85,11 +85,11 @@ base_research = {
 	},
 	
 	{
-		Name =					"SensDisProbe",
+		Name =					"SensDisProbe", --ProximitySensor
 		RequiredResearch =		"",
 		RequiredSubSystems =	"Research",
 		Cost = 					500,
-		Time = 					35,
+		Time = 					45,
 		DisplayedName =			"$7650",
 		DisplayPriority =		5,
 		Description =			"$7651",

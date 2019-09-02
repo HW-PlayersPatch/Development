@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$10036"
 NewShipType.sobDescription="$10037"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 106000)
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 75000)
 NewShipType.regentime=1850
 NewShipType.minRegenTime=1850
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
@@ -158,6 +158,7 @@ addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RetireAbility",1,1);
 addAbility(NewShipType, "SpecialAttack", 1, "MissileVolley")
 NewShipType.noCombatGrouping=1
+addCustomCode(NewShipType,"data:ship/Tai_MissileDestroyer/Tai_MissileDestroyer.lua","","","Update_Tai_MissileDestroyer","","Tai_MissileDestroyer",4)
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Tai_DestroyerLauncher","Weapon_Gun0","Weapon_Gun0");
 StartShipWeaponConfig(NewShipType,"Tai_DestroyerLauncher","Weapon_Gun1","Weapon_Gun1");

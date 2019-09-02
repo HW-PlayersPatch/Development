@@ -169,7 +169,7 @@ addAbility(NewShipType,"RetireAbility",1,0);
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Tai_RepairGun","Weapon_Gun0","Weapon_Gun0");
 StartShipWeaponConfig(NewShipType,"Tai_RepairGunHeal","Weapon_Rep0","Weapon_Rep0");
-addShield(NewShipType,"EMP",75,20);
+addShield(NewShipType,"EMP",45,20);
 NewShipType.battleScarCoverage=1
 NewShipType.sobDieTime=2
 NewShipType.sobSpecialDieTime=1

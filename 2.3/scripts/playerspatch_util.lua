@@ -1,19 +1,9 @@
+--Singleplayer campaign utility functions. (Note, this file is also loaded via scar_util.lua)
 
+--Expanded option functions.
+--If you plan to change or add settings for another mod, please use "YourModName_" rather than "PlayersPatch_" to prevent conflicts in people's "Profile\PLAYERCFG.LUA".
+--Instructions are here: https://forums.gearboxsoftware.com/t/ui-in-game-screeen-slider-with-link-to-function/1528075/21
 
-function SpeechRaceHelper()
-	-- Write race list
-	if (writeto("racelist.lua")) then
-		local RaceCount = Race_GetCount()
-		write("Race_ID = \n{\n")
-		for i = 1,RaceCount-1 do
-			write("\t\""..Race_GetName(i).."\",\n")
-		end
-		write("}")
-		writeto()	
-	end
-end
-
---Expanded option functions
 function GetMissionDifficultyScale()
 	MissionDifficultyScale = GetOptionValue("PlayersPatch_MissionDifficultyScale")
 
@@ -25,6 +15,9 @@ function GetMissionDifficultyScale()
 end
 
 function GetOptionValue(OptionName)
+
+	--Clear any previous results
+	OptionValue = nil
 
 	--Load expanded options
 	dofilepath("PLAYER:PLAYERCFG.lua")

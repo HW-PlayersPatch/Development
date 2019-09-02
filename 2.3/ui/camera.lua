@@ -9,6 +9,7 @@
 --Load expanded options
 dofilepath("data:ui/PlayersPatch_UI_Util.lua")
 RefCameraPanSpeedScale = GetCameraPanSpeedScale()
+RefCameraRotationSpeedScale = GetCameraRotationSpeedScale()
 RefCameraMaxZoomScale = GetCameraMaxZoomScale()
 
 -- from Camera.cpp
@@ -41,7 +42,7 @@ cameraFloatDistanceFactor			= 0.005 -- the camera float distance factor
 cameraZoomFactor					= 2.15				-- This value affects the MOUSEWHEEL zoom rate
 cameraZoomDecel						= 0.4				-- This value affects the MOUSEWHEEL zoom rate deceleration
 cameraDragZoomScalar				= 3.0              	-- This value affects the Left-Right Drag zoom rate
-cameraDragRotateScalar				= 120.0          	-- This value affects the Right Drag camera rotate rate
+cameraDragRotateScalar				= (120.0 * RefCameraRotationSpeedScale) -- This value affects the Right Drag camera rotate rate
 
 cameraMouseWheelTrackingTimeSteps	= 240				-- This value affects the MOUSEWHEEL zoom rate
 cameraMouseWheelEvalThreshold		= 0.001				-- The threshold at which the mousewheel zoom stops evaluating

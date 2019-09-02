@@ -155,6 +155,7 @@ addAbility(NewShipType,"CanAttack",1,1,1,0,0.35,1.5,"Corvette, Corvette_hw1, Fri
 addAbility(NewShipType,"GuardCommand",1,3000,500);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"RetireAbility",1,0);
+addCustomCode(NewShipType, "data:ship/Hgn_PulsarCorvette/Hgn_PulsarCorvette.lua", "", "", "Update_Hgn_Pulsar_Corvette", "", "Hgn_PulsarCorvette", 1)
 LoadModel(NewShipType,1);
 StartShipHardPointConfig(NewShipType,"Weapon_Pulsar","Hardpoint_Pulsar","Weapon","Innate","Ship","Hgn_Pulsar","","","","","","","","");
 addShield(NewShipType,"EMP",75,20);

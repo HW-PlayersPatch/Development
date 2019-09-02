@@ -88,8 +88,8 @@ NewShipType.antiFighterValue=6
 NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
 NewShipType.totalValue=6
-NewShipType.buildCost=130
-NewShipType.buildTime=15
+NewShipType.buildCost=120
+NewShipType.buildTime=10
 NewShipType.buildPriorityOrder=50
 NewShipType.retaliationRange=5500
 NewShipType.retaliationDistanceFromGoal=160
@@ -156,10 +156,11 @@ addAbility(NewShipType,"GuardCommand",1,3000,500);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"CloakAbility",1,3,25,2222,0,0,222,222);
 addAbility(NewShipType,"RetireAbility",1,0);
+addCustomCode(NewShipType, "data:ship/Kus_CloakedFighter/Kus_CloakedFighter.lua", "", "", "Update_Kus_CloakedFighter", "Destroy_Kus_CloakedFighter", "Kus_CloakedFighter", 1)
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Kus_CloakedFighter","Weapon_Gun0","Weapon_Gun0");
 StartShipWeaponConfig(NewShipType,"Kus_CloakedFighter","Weapon_Gun1","Weapon_Gun1");
-addShield(NewShipType,"EMP",75,20);
+addShield(NewShipType,"EMP",30,20);
 NewShipType.battleScarCoverage=0
 NewShipType.sobDieTime=2
 NewShipType.sobSpecialDieTime=2

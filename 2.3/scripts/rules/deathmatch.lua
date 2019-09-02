@@ -1,5 +1,5 @@
 GUID = { 110,91,157,190,18,23,250,78,144,20,41,246,181,128,214,12 }
-GameRulesName = "Homeworld Remastered v2.3" -- $4803 Homeworld Remastered
+GameRulesName = "Homeworld RM 2.3 Players Patch" -- $4803 Homeworld Remastered
 Description = "$4804"
 SaveGameVersion = 1.0
 SinglePlayer = 0
@@ -9,7 +9,7 @@ ExtFilter = "rules_dm"
 Race_Paths = "Deathmatch,Extras"
 
 Level_Pass_Tags = "dm"
-Race_Pass_Tags = "race_dm,race_random"
+Race_Pass_Tags = "race_dm,race_random,2x_race_dm"
 
 GameSetupOptions =
 {

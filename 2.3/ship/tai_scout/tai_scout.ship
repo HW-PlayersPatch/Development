@@ -6,7 +6,7 @@ NewShipType.regentime=0
 NewShipType.minRegenTime=0
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
 NewShipType.rearArmourDamage = getShipNum(NewShipType, "rearArmourDamage", 1.0)
-setTacticsMults(NewShipType, "MAXSPEED", 1.0, 1.10, 1.0)
+setTacticsMults(NewShipType, "MAXSPEED", 1.0, 1.05, 1.0)
 setTacticsMults(NewShipType, "ENGINEACCEL", 1.20, 0.80, 1.0)
 setTacticsMults(NewShipType, "ENGINEBRAKE", 1.0, 1.0, 1.0)
 setTacticsMults(NewShipType, "THRUSTER", 1.0, 1.0, 1.0)
@@ -28,8 +28,8 @@ NewShipType.defaultStance="Aggressive"
 NewShipType.holdSlots=2
 NewShipType.mass=7
 NewShipType.collisionMultiplier=0.35
-NewShipType.thrusterMaxSpeed=350*1.4
-NewShipType.mainEngineMaxSpeed=350*1.4
+NewShipType.thrusterMaxSpeed=460
+NewShipType.mainEngineMaxSpeed=460
 NewShipType.rotationMaxSpeed=125
 NewShipType.thrusterAccelTime=2.3
 NewShipType.thrusterBrakeTime=1.1
@@ -88,14 +88,14 @@ NewShipType.antiFighterValue=0
 NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
 NewShipType.totalValue=1
-NewShipType.buildCost=70
-NewShipType.buildTime=8
+NewShipType.buildCost=100
+NewShipType.buildTime=10
 NewShipType.buildPriorityOrder=10
 NewShipType.retaliationRange=4800
 NewShipType.retaliationDistanceFromGoal=160
 NewShipType.visualRange=1500
-NewShipType.prmSensorRange = getShipNum(NewShipType, "prmSensorRange", 8000)
-NewShipType.secSensorRange = getShipNum(NewShipType, "secSensorRange", 10000)
+NewShipType.prmSensorRange = getShipNum(NewShipType, "prmSensorRange", 6000)
+NewShipType.secSensorRange = getShipNum(NewShipType, "secSensorRange", 7500)
 NewShipType.detectionStrength=1
 NewShipType.TOIcon="Triangle"
 NewShipType.TOScale=1
@@ -161,6 +161,7 @@ addAbility(NewShipType,"CustomCommand",1,"Speed Burst",1,0,1200,200,4,1,0,"data:
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Tai_Scout","Weapon_Gun0","Weapon_Gun0");
 StartShipWeaponConfig(NewShipType,"Tai_Scout","Weapon_Gun1","Weapon_Gun1");
+addShield(NewShipType,"EMP",30,20);
 NewShipType.battleScarCoverage=0
 NewShipType.sobDieTime=2
 NewShipType.sobSpecialDieTime=2

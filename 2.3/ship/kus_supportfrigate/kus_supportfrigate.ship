@@ -76,8 +76,8 @@ NewShipType.antiFighterValue=0
 NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
 NewShipType.totalValue=8
-NewShipType.buildCost=600
-NewShipType.buildTime=65
+NewShipType.buildCost=700
+NewShipType.buildTime=60
 NewShipType.buildPriorityOrder=30
 NewShipType.retaliationRange=4800
 NewShipType.retaliationDistanceFromGoal=160
@@ -154,7 +154,7 @@ addAbility(NewShipType,"RepairCommand",1,440,1,1,"Frontal_SupportFrigate",
 {SuperCap=2.0}, 
 {BattleCruiser=2.0}, 
 {Carrier=1.5}, 
-{Frigate=1.5},
+{Frigate=2.0},
 {Corvette=1.5},
 {EndRepairRates=0},
 {Corvette="Frontal_RepairFrigate_Frigate"},
@@ -164,6 +164,7 @@ addAbility(NewShipType,"RepairCommand",1,440,1,1,"Frontal_SupportFrigate",
 {BigCapitalShip="Frontal_RepairFrigate_BigCap"},
 {Mothership="frontal_RepairFrigate_Mothership"});
 addAbility(NewShipType,"RetireAbility",1,1);
+addCustomCode(NewShipType,"data:ship/Kus_SupportFrigate/Kus_SupportFrigate.lua","","","Update_Kus_SupportFrigate","","Kus_SupportFrigate",4)
 LoadModel(NewShipType,1);
 StartShipHardPointConfig(NewShipType,"Weapon_Gun0","Hardpoint_Gun0","Weapon","Innate","Ship","Kus_SupportGun","","","","","","","","");
 StartShipWeaponConfig(NewShipType,"Kus_SupportGunHeal","Weapon_Rep0","Weapon_Rep0");
@@ -186,8 +187,8 @@ loadLatchPointList(NewShipType,"RepCap","RepairPoint1","RepairPoint2");
 NewShipType.minFalloffDamageDist=100
 NewShipType.maxFalloffDamageDist=100*2
 NewShipType.maxFalloffScuttleDamageDist=100*4
-NewShipType.explosiveScuttleDamageOnDeath=1125
+NewShipType.explosiveScuttleDamageOnDeath=130
 NewShipType.maxFalloffForce=500*10
-NewShipType.explosiveDamageOnDeath=225												 
+NewShipType.explosiveDamageOnDeath=50											 
 NewShipType.hideNormalAttackUICooldown=1
 NewShipType.canSurround=1

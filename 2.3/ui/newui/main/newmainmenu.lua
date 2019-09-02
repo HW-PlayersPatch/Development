@@ -3,6 +3,7 @@ dofilepath("data:ui/newui/Styles/HWRM_Style/ControlConstructors.lua")
 dofilepath("data:ui/newui/Examples/ExampleIncludes.lua")
 dofilepath("data:ui/newui/Background/logo.lua")
 dofilepath("data:ui/newui/Main/ExButtons.lua")
+dofilepath("data:playerspatch_buildnumber.lua") 
 
 
 OptionsButton = [[
@@ -262,7 +263,7 @@ NewMainMenu = {
 				},
 			},
 			
-			-- Version number2
+			-- Patch name and build number
 			{
 				type = "TextLabel",
 				name = "lblVersion2",
@@ -276,7 +277,7 @@ NewMainMenu = {
 				autosize = 1,
 				
 				Text = {	
-					text = " + v2.3 Players Patch | build 10",
+					text = PlayersPatchBuildNumber, --Pulled from playerspatch_buildnumber.lua
 					font = "ButtonFont",
 					vAlign = "Top",
 					color = {119,166,191,255},

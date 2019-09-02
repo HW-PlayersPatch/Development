@@ -1,5 +1,5 @@
 
-dofilepath("data:scripts/playerspatch_util.lua")
+dofilepath("data:scripts/playerspatch_rules_util.lua")
 dofilepath("data:scripts/SCAR/SCAR_Util.lua")
 dofilepath("data:scripts/scar/restrict.lua")
 dofilepath("data:leveldata/multiplayer/lib/lib.lua")
@@ -16,6 +16,7 @@ dofilepath("data:leveldata/multiplayer/lib/dev.lua")
 dofilepath("data:leveldata/multiplayer/lib/main.lua")
 dofilepath("data:leveldata/multiplayer/lib/carriersonly.lua")
 dofilepath("data:leveldata/multiplayer/lib/nocruisers.lua")
+dofilepath("data:leveldata/multiplayer/lib/dualcommand.lua")
 
 function OnStartOrLoad()
 	-- Write race list
@@ -74,6 +75,7 @@ function timer_updating()
 				--Rule_AddInterval("UI_updating",0.5)
 				Rule_AddInterval("cpuplayers_updating",0.1)	
 				--Rule_AddInterval("balancing_updating",0.25) --dev. to remove		
+				Rule_AddInterval("DualCommand_Init",0.0)
 				
 				if nocruisers == 1 then
 						Rule_AddInterval("nocruisers_init",timer_interval)

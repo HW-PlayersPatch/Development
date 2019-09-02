@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$10004"
 NewShipType.sobDescription="$10005"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 135)	
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 125)	
 NewShipType.regentime=0
 NewShipType.minRegenTime=0
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
@@ -28,8 +28,8 @@ NewShipType.defaultStance="Aggressive"
 NewShipType.holdSlots=2
 NewShipType.mass=10
 NewShipType.collisionMultiplier=1
-NewShipType.thrusterMaxSpeed=390
-NewShipType.mainEngineMaxSpeed=390
+NewShipType.thrusterMaxSpeed=420
+NewShipType.mainEngineMaxSpeed=420
 NewShipType.rotationMaxSpeed=105*0.92
 NewShipType.thrusterAccelTime=3*1.15
 NewShipType.thrusterBrakeTime=1*1.1
@@ -161,7 +161,7 @@ addAbility(NewShipType,"RetireAbility",1,0);
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"HW1_Bomber","Weapon_Gun0","Weapon_Gun0");
 StartShipWeaponConfig(NewShipType,"HW1_Bomber","Weapon_Gun1","Weapon_Gun1");
-addShield(NewShipType,"EMP",75,20);
+addShield(NewShipType,"EMP",30,20);
 NewShipType.battleScarCoverage=0
 NewShipType.sobDieTime=2
 NewShipType.sobSpecialDieTime=2

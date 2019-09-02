@@ -72,14 +72,14 @@ NewShipType.antiFighterValue=0
 NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
 NewShipType.totalValue=0
-NewShipType.buildCost=600
-NewShipType.buildTime=30
+NewShipType.buildCost=500
+NewShipType.buildTime=25
 NewShipType.buildPriorityOrder=20
 NewShipType.retaliationRange=4000
 NewShipType.retaliationDistanceFromGoal=800
-NewShipType.visualRange=5000
-NewShipType.prmSensorRange=16000
-NewShipType.secSensorRange=16000
+NewShipType.visualRange=4000
+NewShipType.prmSensorRange=14000
+NewShipType.secSensorRange=14000
 NewShipType.detectionStrength=1
 NewShipType.TOIcon="InvertedPentagon"
 NewShipType.TOScale=1
@@ -113,6 +113,7 @@ NewShipType.preciseATILimit=0
 NewShipType.selectionPriority=75
 NewShipType.militaryUnit=0
 addAbility(NewShipType,"MoveCommand",1,1);
+addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 NewShipType.dontDockWithOtherRaceShips=0
 NewShipType.ignoreRaceWhenDocking=0
 addAbility(NewShipType,"CanLaunch");
@@ -124,7 +125,7 @@ NewShipType.canJoinStrikeGroup=0
 addAbility(NewShipType,"ParadeCommand",1);
 LoadModel(NewShipType,1);
 addShield(NewShipType,"EMP",50,20);
-AddShipMultiplier(NewShipType,"SensorDistortion","OwnShipsWithinRadius","Linear",0.6,0.6,6000);
+AddShipMultiplier(NewShipType,"SensorDistortion","OwnShipsWithinRadius","Linear",0.6,0.6,8000);
 NewShipType.battleScarCoverage=0
 NewShipType.sobDieTime=1
 NewShipType.sobSpecialDieTime=1

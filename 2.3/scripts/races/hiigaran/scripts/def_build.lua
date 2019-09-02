@@ -20,7 +20,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"Hgn_C_Production_Fighter",
+		ThingToBuild = 			"hgn_c_production_fighter",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		0,
@@ -30,7 +30,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"Hgn_MS_Production_Fighter",
+		ThingToBuild = 			"hgn_ms_production_fighter",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		0,
@@ -40,7 +40,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"Hgn_C_Production_Corvette",
+		ThingToBuild = 			"hgn_c_production_corvette",
 		RequiredResearch =		"",
 		RequiredFleetSubSystems =	"Research",
 		DisplayPriority =		0,
@@ -50,7 +50,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"Hgn_MS_Production_Corvette",
+		ThingToBuild = 			"hgn_ms_production_corvette",
 		RequiredResearch =		"",
 		RequiredFleetSubSystems =	"Research",
 		DisplayPriority =		0,
@@ -61,7 +61,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"Hgn_C_Production_Frigate",
+		ThingToBuild = 			"hgn_c_production_frigate",
 		RequiredResearch =		"",
 		RequiredFleetSubSystems =	"Research",
 		DisplayPriority =		0,
@@ -72,7 +72,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"Hgn_MS_Production_Frigate",
+		ThingToBuild = 			"hgn_ms_production_frigate",
 		RequiredResearch =		"",
 		RequiredFleetSubSystems =	"Research",
 		DisplayPriority =		0,
@@ -82,7 +82,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"Hgn_MS_Production_CapShip",
+		ThingToBuild = 			"hgn_ms_production_capship",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		0,
@@ -92,7 +92,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"Hgn_SY_Production_CapShip",
+		ThingToBuild = 			"hgn_sy_production_capship",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		0,
@@ -108,7 +108,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"Hgn_C_Module_PlatformControl",
+		ThingToBuild = 			"hgn_c_module_platformcontrol",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		10,
@@ -118,7 +118,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"Hgn_MS_Module_PlatformControl",
+		ThingToBuild = 			"hgn_ms_module_platformcontrol",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		20,
@@ -128,7 +128,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"Hgn_C_Module_Research",
+		ThingToBuild = 			"hgn_c_module_research",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		0,
@@ -138,7 +138,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"Hgn_MS_Module_Research",
+		ThingToBuild = 			"hgn_ms_module_research",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		0,
@@ -147,7 +147,7 @@ build =
 	},
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"Hgn_C_Module_ResearchAdvanced",
+		ThingToBuild = 			"hgn_c_module_researchadvanced",
 		RequiredResearch =		"",
 		RequiredFleetSubSystems =	"Research",
 		DisplayPriority =		10,
@@ -156,7 +156,7 @@ build =
 	},	
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"Hgn_MS_Module_ResearchAdvanced",
+		ThingToBuild = 			"hgn_ms_module_researchadvanced",
 		RequiredResearch =		"",
 		RequiredFleetSubSystems =	"Research",
 		DisplayPriority =		10,
@@ -165,7 +165,7 @@ build =
 	},
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"Hgn_C_Module_Hyperspace",
+		ThingToBuild = 			"hgn_c_module_hyperspace",
 		RequiredResearch =		"",
 		RequiredFleetSubSystems =	"Research",
 		DisplayPriority =		30,
@@ -175,7 +175,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"Hgn_MS_Module_Hyperspace",
+		ThingToBuild = 			"hgn_ms_module_hyperspace",
 		RequiredResearch =		"",
 		RequiredFleetSubSystems =	"Research",
 		DisplayPriority =		30,
@@ -185,7 +185,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"Hgn_C_Module_HyperspaceInhibitor",
+		ThingToBuild = 			"hgn_c_module_hyperspaceinhibitor",
 		RequiredResearch =		"",
 		RequiredFleetSubSystems =	"Research",
 		DisplayPriority =		40,
@@ -195,7 +195,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"Hgn_MS_Module_HyperspaceInhibitor",
+		ThingToBuild = 			"hgn_ms_module_hyperspaceinhibitor",
 		RequiredResearch =		"",
 		RequiredFleetSubSystems =	"Research",
 		DisplayPriority =		40,
@@ -205,7 +205,7 @@ build =
 
 	{ 
 		Type =					SubSystem, 
-		ThingToBuild =			"Hgn_C_Module_CloakGenerator",
+		ThingToBuild =			"hgn_c_module_cloakgenerator",
 		RequiredResearch =		"",
 		RequiredFleetSubSystems =	"Research",
 		DisplayPriority =		50,
@@ -216,7 +216,7 @@ build =
 
 	{ 
 		Type =					SubSystem, 
-		ThingToBuild =			"Hgn_MS_Module_CloakGenerator",
+		ThingToBuild =			"hgn_ms_module_cloakgenerator",
 		RequiredResearch =		"",
 		RequiredFleetSubSystems =	"Research",
 		DisplayPriority =		50,
@@ -226,7 +226,7 @@ build =
 
 	{ 
 		Type =					SubSystem, 
-		ThingToBuild =			"Hgn_C_Module_FireControl",
+		ThingToBuild =			"hgn_c_module_firecontrol",
 		RequiredResearch =		"",
 		RequiredFleetSubSystems =	"AdvancedResearch",
 		DisplayPriority =		60,
@@ -236,7 +236,7 @@ build =
 
 	{ 
 		Type =					SubSystem, 
-		ThingToBuild =			"Hgn_MS_Module_FireControl",
+		ThingToBuild =			"hgn_ms_module_firecontrol",
 		RequiredResearch =		"",
 		RequiredFleetSubSystems =	"AdvancedResearch",
 		DisplayPriority =		60,
@@ -246,7 +246,7 @@ build =
 
 --	{ 
 --		Type =					SubSystem, 
---		ThingToBuild =			"Hgn_C_Module_BuildSpeed",
+--		ThingToBuild =			"hgn_c_module_buildspeed",
 --		RequiredResearch =		"",
 --		RequiredFleetSubSystems =	"AdvancedResearch",
 --		DisplayPriority =		153,
@@ -256,7 +256,7 @@ build =
 
 --	{ 
 --		Type =					SubSystem, 
---		ThingToBuild =			"Hgn_MS_Module_BuildSpeed",
+--		ThingToBuild =			"hgn_ms_module_buildspeed",
 --		RequiredResearch =		"",
 --		RequiredFleetSubSystems =	"AdvancedResearch",
 --		DisplayPriority =		154,
@@ -269,7 +269,7 @@ build =
 
 	{ 
 		Type =					SubSystem, 
-		ThingToBuild =			"Hgn_C_Sensors_DetectHyperspace",
+		ThingToBuild =			"hgn_c_sensors_detecthyperspace",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		150,
@@ -279,7 +279,7 @@ build =
 
 	{ 
 		Type =					SubSystem, 
-		ThingToBuild =			"Hgn_MS_Sensors_DetectHyperspace",
+		ThingToBuild =			"hgn_ms_sensors_detecthyperspace",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		150,
@@ -289,7 +289,7 @@ build =
 
 	{ 
 		Type =					SubSystem, 
-		ThingToBuild =			"Hgn_C_Sensors_AdvancedArray",
+		ThingToBuild =			"hgn_c_sensors_advancedarray",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		151,
@@ -299,7 +299,7 @@ build =
 
 	{ 
 		Type =					SubSystem, 
-		ThingToBuild =			"Hgn_MS_Sensors_AdvancedArray",
+		ThingToBuild =			"hgn_ms_sensors_advancedarray",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		151,
@@ -309,7 +309,7 @@ build =
 
 	{ 
 		Type =					SubSystem, 
-		ThingToBuild =			"Hgn_C_Sensors_DetectCloaked",
+		ThingToBuild =			"hgn_c_sensors_detectcloaked",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		152,
@@ -320,7 +320,7 @@ build =
 
 	{ 
 		Type =					SubSystem, 
-		ThingToBuild =			"Hgn_MS_Sensors_DetectCloaked",
+		ThingToBuild =			"hgn_ms_sensors_detectcloaked",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		152,
@@ -348,7 +348,7 @@ build =
 	
   	{ 
   		Type =					SubSystem, 
-  		ThingToBuild =			"Hgn_MS_Production_CorvetteMover",
+  		ThingToBuild =			"hgn_ms_production_corvettemover",
   		RequiredResearch =		"",
   		RequiredShipSubSystems =	"CorvetteProduction",
   		DisplayPriority =		10,
@@ -364,7 +364,7 @@ build =
 
 	{ 
 		Type =					Ship, 
-		ThingToBuild =			"Hgn_Scout",
+		ThingToBuild =			"hgn_scout",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		10,
@@ -374,7 +374,7 @@ build =
 
 	{ 
 		Type =					Ship, 
-		ThingToBuild =			"Hgn_Interceptor",
+		ThingToBuild =			"hgn_interceptor",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"FighterProduction",
 		DisplayPriority =		20,
@@ -384,7 +384,7 @@ build =
 
 	{ 
 		Type =					Ship, 
-		ThingToBuild =			"Hgn_AttackBomber",
+		ThingToBuild =			"hgn_attackbomber",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"FighterProduction",
 		DisplayPriority =		30,
@@ -396,7 +396,7 @@ build =
 
 	{ 
 		Type =					Ship, 
-		ThingToBuild =			"Hgn_AssaultCorvette",
+		ThingToBuild =			"hgn_assaultcorvette",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"CorvetteProduction",
 		DisplayPriority =		50,
@@ -406,7 +406,7 @@ build =
 
 	{ 
 		Type =					Ship, 
-		ThingToBuild =			"Hgn_PulsarCorvette",
+		ThingToBuild =			"hgn_pulsarcorvette",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"CorvetteProduction",
 		DisplayPriority =		51,
@@ -416,7 +416,7 @@ build =
 
 	{ 
 		Type =					Ship, 
-		ThingToBuild =			"Hgn_MinelayerCorvette",
+		ThingToBuild =			"hgn_minelayercorvette",
 		RequiredResearch =		"GraviticAttractionMines",
 		RequiredShipSubSystems =	"CorvetteProduction",
 		DisplayPriority =		52,
@@ -428,7 +428,7 @@ build =
 
 --	{ 
 --		Type =					Ship, 
---		ThingToBuild =			"Hgn_SupportFrigate",
+--		ThingToBuild =			"hgn_supportfrigate",
 --		RequiredResearch =		"",
 --		RequiredShipSubSystems =	"FrigateProduction",
 --		DisplayPriority =		60,
@@ -438,7 +438,7 @@ build =
 
 	{ 
 		Type =					Ship, 
-		ThingToBuild =			"Hgn_AssaultFrigate",
+		ThingToBuild =			"hgn_assaultfrigate",
 		RequiredResearch =		"InstaAdvancedFrigateTech",
 		RequiredShipSubSystems =	"FrigateProduction",
 		DisplayPriority =		60,
@@ -448,7 +448,7 @@ build =
 	
 	{ 
 		Type =					Ship, 
-		ThingToBuild =			"Hgn_TorpedoFrigate",
+		ThingToBuild =			"hgn_torpedofrigate",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"FrigateProduction",
 		DisplayPriority =		65,
@@ -458,7 +458,7 @@ build =
 	
 	{ 
 		Type =					Ship, 
-		ThingToBuild =			"Hgn_IonCannonFrigate",
+		ThingToBuild =			"hgn_ioncannonfrigate",
 		RequiredResearch =		"InstaAdvancedFrigateTech",
 		RequiredShipSubSystems =	"FrigateProduction",
 		DisplayPriority =		70,
@@ -468,7 +468,7 @@ build =
 	
 	{ 
 		Type =					Ship, 
-		ThingToBuild =			"Hgn_MarineFrigate",
+		ThingToBuild =			"hgn_marinefrigate",
 		RequiredResearch =		"InstaAdvancedFrigateTech",
 		RequiredShipSubSystems =	"FrigateProduction",
 		DisplayPriority =		75,
@@ -478,7 +478,7 @@ build =
 
 	{ 
 		Type =					Ship, 
-		ThingToBuild =			"Hgn_DefenseFieldFrigate",
+		ThingToBuild =			"hgn_defensefieldfrigate",
 		RequiredResearch =		"DefenseFieldFrigateShield",
 		RequiredShipSubSystems =	"FrigateProduction",
 		DisplayPriority =		80,
@@ -490,7 +490,7 @@ build =
 
 	{ 
 		Type =					Ship, 
-		ThingToBuild =			"Hgn_Carrier",
+		ThingToBuild =			"hgn_carrier",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"CapShipProduction",
 		DisplayPriority =		110,
@@ -500,7 +500,7 @@ build =
 
 	{ 
 		Type =					Ship, 
-		ThingToBuild =			"Hgn_Destroyer",
+		ThingToBuild =			"hgn_destroyer",
 		RequiredResearch =		"DestroyerTech",
 		RequiredShipSubSystems =	"CapShipProduction",
 		DisplayPriority =		116,
@@ -510,7 +510,7 @@ build =
 
 	{ 
 		Type =					Ship, 
-		ThingToBuild =			"Hgn_Shipyard",
+		ThingToBuild =			"hgn_shipyard",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"Hyperspace",
 		DisplayPriority =		117,
@@ -520,7 +520,7 @@ build =
 
 	{ 
 		Type =					Ship, 
-		ThingToBuild =			"Hgn_Battlecruiser",
+		ThingToBuild =			"hgn_battlecruiser",
 		RequiredResearch =		"BattlecruiserIonWeapons",
 		RequiredShipSubSystems =	"CapShipProduction",
 		DisplayPriority =		118,
@@ -533,7 +533,7 @@ build =
 
 	{ 
 		Type =					Ship, 
-		ThingToBuild =			"Hgn_GunTurret",
+		ThingToBuild =			"hgn_gunturret",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"PlatformProduction",
 		DisplayPriority =		141,
@@ -543,7 +543,7 @@ build =
 
 	{ 
 		Type =					Ship, 
-		ThingToBuild =			"Hgn_IonTurret",
+		ThingToBuild =			"hgn_ionturret",
 		RequiredResearch =		"PlatformIonWeapons",
 		RequiredShipSubSystems =	"PlatformProduction",
 		DisplayPriority =		142,
@@ -556,7 +556,7 @@ build =
 
 	{ 
 		Type =					Ship, 
-		ThingToBuild =			"Hgn_ResourceCollector",
+		ThingToBuild =			"hgn_resourcecollector",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		120,
@@ -566,7 +566,7 @@ build =
 
 	{ 
 		Type =					Ship, 
-		ThingToBuild =			"Hgn_ResourceController",
+		ThingToBuild =			"hgn_resourcecontroller",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		130,
@@ -576,7 +576,7 @@ build =
 
 	{ 
 		Type =					Ship, 
-		ThingToBuild =			"Hgn_Probe",
+		ThingToBuild =			"hgn_probe",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		140,
@@ -586,7 +586,7 @@ build =
 
 	{ 
 		Type =					Ship, 
-		ThingToBuild =			"Hgn_ProximitySensor",
+		ThingToBuild =			"hgn_proximitysensor",
 		RequiredResearch =		"SensDisProbe",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		150,
@@ -596,7 +596,7 @@ build =
 
 	{ 
 		Type =					Ship, 
-		ThingToBuild =			"Hgn_ECMProbe",
+		ThingToBuild =			"hgn_ecmprobe",
 		RequiredResearch =		"ECMProbe",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		160,
@@ -609,7 +609,7 @@ build =
 -- TEMP - All other ships here, for single player game ----------------
 	{ 
 		Type =					Ship, 
-		ThingToBuild =			"Hgn_Shipyard_SPG",
+		ThingToBuild =			"hgn_shipyard_spg",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"CapShipProduction",
 		DisplayPriority =		117,
@@ -618,3 +618,4 @@ build =
 	},
 }
 
+doscanpath("data:Scripts/Productiontimes", "applybuildtimes.lua")

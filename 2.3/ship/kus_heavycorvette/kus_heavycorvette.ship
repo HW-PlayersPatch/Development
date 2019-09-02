@@ -82,8 +82,8 @@ NewShipType.antiFighterValue=6
 NewShipType.antiCorvetteValue=7
 NewShipType.antiFrigateValue=15
 NewShipType.totalValue=13
-NewShipType.buildCost=240
-NewShipType.buildTime=20
+NewShipType.buildCost=230
+NewShipType.buildTime=19
 NewShipType.buildPriorityOrder=20
 NewShipType.retaliationRange=5500
 NewShipType.retaliationDistanceFromGoal=160
@@ -157,7 +157,7 @@ addAbility(NewShipType, "SpecialAttack", 1, "BurstAttack")
 LoadModel(NewShipType,1);
 StartShipHardPointConfig(NewShipType,"Weapon_Gun0","Hardpoint_Gun0","Weapon","Innate","Ship","Kus_HvCorvette1","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Weapon_Gun1","Hardpoint_Gun1","Weapon","Innate","Ship","Kus_HvCorvette2","","","","","","","","");
-addShield(NewShipType,"EMP",75,20);
+addShield(NewShipType,"EMP",45,20);
 NewShipType.battleScarCoverage=1
 NewShipType.sobDieTime=2
 NewShipType.sobSpecialDieTime=1
