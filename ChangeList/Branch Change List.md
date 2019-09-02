@@ -1,11 +1,9 @@
 Note: All proposed changes are suggestions/ideas, until deemed final.
 
-
-# Build 10 Change List
-
+# Build 11 Branch Change List
 
 ## Gameplay Options and Features
-- Production Times
+
 
 
 ## HWR Bugs Fixes and Improvements
@@ -13,40 +11,25 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 
 
 ## Campaign Improvements
--Research times are 50% longer in SP than MP.
 
 
 
-
-## Balance Changes Since 2.3 b9
-- A Ton
+## Balance Changes - All Races
 
 
 
-
-### All Races
--
-__Ship__
--
+## Hiigaran
 
 
 
-
-### Hiigaran and Vaygr
-
+## Vaygr
 
 
 
-### Hiigaran
+## Kushan
 
 
 
+## Taiidan
 
-### Vaygr
-
-
-
-
-### Kushan and Taiidan
-- 
 
