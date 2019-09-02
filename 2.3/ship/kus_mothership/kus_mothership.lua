@@ -1,3 +1,5 @@
+dofilepath("data:scripts/playerspatch_ships_util.lua")
+
 function Load_Kus_Mothership(playerIndex)	
 	SobGroup_CreateIfNotExist("kus_mothership"..playerIndex)
 	SobGroup_CreateIfNotExist("kus_production"..playerIndex)
@@ -52,7 +54,7 @@ function Update_Kus_Mothership(CustomGroup, playerIndex, shipID)
 		SobGroup_AbilityActivate(CustomGroup, AB_Dock, 1)	
 	end
 
-	PlayersPatch_BuildNecessaryProductionTells(CustomGroup, playerIndex)
+	ShowProductionSubsystems(CustomGroup, playerIndex, "MS")
 end
 
 function Destroy_Kus_Mothership(CustomGroup, playerIndex, shipID)	

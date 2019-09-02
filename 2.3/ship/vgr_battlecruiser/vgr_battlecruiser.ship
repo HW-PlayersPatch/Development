@@ -1,11 +1,11 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$1632"
 NewShipType.sobDescription="$1633"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 160000)
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 192000)
 NewShipType.regentime=2000
 NewShipType.minRegenTime=2000
-NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.2)
-NewShipType.rearArmourDamage = getShipNum(NewShipType, "rearArmourDamage", 1.2)
+NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
+NewShipType.rearArmourDamage = getShipNum(NewShipType, "rearArmourDamage", 1.0)
 setTacticsMults(NewShipType, "ENGINEACCEL", 1.10, 0.90, 1.0)
 setTacticsMults(NewShipType, "THRUSTERACCEL", 1.10, 0.90, 1.0)
 setTacticsMults(NewShipType, "ROTATION", 0.95, 1.05, 1.0)
@@ -17,8 +17,8 @@ NewShipType.defaultStance="Neutral"
 NewShipType.paradeData="vgr_carrier_parade"
 NewShipType.mass=1000
 NewShipType.collisionMultiplier=1
-NewShipType.thrusterMaxSpeed=79*1.1
-NewShipType.mainEngineMaxSpeed=79*1.1
+NewShipType.thrusterMaxSpeed=79
+NewShipType.mainEngineMaxSpeed=79
 NewShipType.rotationMaxSpeed=6
 NewShipType.thrusterAccelTime=6
 NewShipType.thrusterBrakeTime=2
@@ -159,9 +159,6 @@ addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"CloakAbility",0,2,2000,4000,3,100,1,1000);
 addAbility(NewShipType,"RetireAbility",1,1);
 addAbility(NewShipType,"HyperspaceInhibitorAbility",0,10500);
--- fix to salvage vette scuttle bug
-addCustomCode(NewShipType,"data:scripts/playerspatch_patches.lua","","","Update_NoSalvageScuttle","","vgr_battlecruiser",4)
--- fix to salvage vette scuttle bug
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Vgr_BCForwardWeapon","Weapon_BCUberPulse","Weapon_BCUberPulse");
 StartShipWeaponConfig(NewShipType,"Vgr_HullDefenseGun","Weapon_HullD1","Fire_Missile");

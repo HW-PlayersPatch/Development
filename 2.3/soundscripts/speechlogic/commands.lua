@@ -76,18 +76,29 @@ function raceHelper()
 		dofilepath("player:racelist.lua")
 	end
 
-	if (Race_ID[currentRace] == "Vaygr" or Race_ID[currentRace] == "Vaygr_2X") then
+	if (Race_ID[currentRace] == "Vaygr" or Race_ID[currentRace] == "2x_Vaygr") then
 		return NameMakaan
-	elseif (Race_ID[currentRace] == "Taiidan" or Race_ID[currentRace] == "Taiidan_2X") then
+	elseif (Race_ID[currentRace] == "Taiidan" or Race_ID[currentRace] == "2x_Taiidan") then
 		return NameEmperor
 	else
 		return NameFleetCommand
 	end
 end
 
+-- Race IDs (Default reference with no restrictions, like in SP)
+Race_ID =
+{
+	"Hiigaran",
+	"Vaygr",
+	"Keeper",
+	"Bentusi",
+	"Kushan",
+	"Taiidan",
+	"Turanic Raiders",
+	"Kadeshi",
+	"P3",
+}
 bRaceID = nil
-
--- Race IDs (old)
 Hiigaran = 1
 Vaygr = 2
 Taiidan = 6
@@ -882,7 +893,6 @@ stdCMap["VGR_PROBE"] = "STATUS_VProbeConstructed_1"
 stdCMap["VGR_PROBE_ECM"] = "STATUS_VSensorDistortionProbeConstructed_1"
 stdCMap["VGR_PROBE_PROX"] = "STATUS_VProxProbeConstructed_1"
 stdCMap["VGR_HYPERSPACE_PLATFORM"] = "STATUS_VHyperspacePlatformConstructed_1"
--- New production complete VO for Vaygr platforms
 stdCMap["VGR_WEAPONPLATFORM_GUN"] = "STATUS_VGunPlatformConstructed_1"
 stdCMap["VGR_WEAPONPLATFORM_MISSILE"] = "STATUS_VMissilePlatformConstructed_1"
 
@@ -1006,6 +1016,7 @@ function CommandConstructionComplete(buildingShip, builtItem, buildType)
 		if (stdCMap[""..builtItem] ~= nil) then
 			playSpeechActor(stdCMap[""..builtItem], raceHelper(), 0, Frequency_Command)
 		end
+	
 	end
 end
 

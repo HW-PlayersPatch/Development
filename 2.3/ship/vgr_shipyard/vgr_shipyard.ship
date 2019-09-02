@@ -73,8 +73,8 @@ NewShipType.antiFighterValue=5
 NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
 NewShipType.totalValue=20
-NewShipType.buildCost=3750
-NewShipType.buildTime=80
+NewShipType.buildCost=4000
+NewShipType.buildTime=85
 NewShipType.buildPriorityOrder=20
 NewShipType.retaliationRange=6500
 NewShipType.retaliationDistanceFromGoal=160
@@ -188,9 +188,9 @@ loadShipPatchList(NewShipType,"data:sound/sfx/ship/",0,"Vaygr/MegaShip/Engines/V
 loadLatchPointList(NewShipType,"SalCap","SalvagePoint1","SalvagePoint2","SalvagePoint3","SalvagePoint4","SalvagePoint5","SalvagePoint6","SalvagePoint7");	
 loadLatchPointList(NewShipType,"CapCap","CapturePoint0","CapturePoint1","CapturePoint2","CapturePoint3","CapturePoint4");
 loadLatchPointList(NewShipType,"RepCap","RepairPoint0","RepairPoint1","RepairPoint2","RepairPoint3","RepairPoint4","RepairPoint5","RepairPoint6");
-NewShipType.minFalloffDamageDist=1075
-NewShipType.maxFalloffDamageDist=1075*1.5
-NewShipType.maxFalloffScuttleDamageDist=1075*3
+NewShipType.minFalloffDamageDist=800
+NewShipType.maxFalloffDamageDist=800*1.5
+NewShipType.maxFalloffScuttleDamageDist=800*3
 NewShipType.explosiveScuttleDamageOnDeath=2820
 NewShipType.maxFalloffForce=500*10
 NewShipType.explosiveDamageOnDeath=564		

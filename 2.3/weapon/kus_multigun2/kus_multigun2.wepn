@@ -1,4 +1,4 @@
-StartWeaponConfig(NewWeaponType,"AnimatedTurret","Bullet","Kinetic_Mass_Corvette","Normal",1700,2000,0,0,0,0,1,1,1,2.0,0.0,0.0,1,1,75,75,0.1,"Normal",1,0,0);
+StartWeaponConfig(NewWeaponType,"AnimatedTurret","Bullet","Kinetic_Mass_Corvette","Normal",1700,2000,0,0,0,0,1,1,1,2.0,0.0,0.0,1,0,75,75,0.1,"Normal",1,0,0);
 AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",12,12,"");
 setPenetration(NewWeaponType,5,1,
 {Unarmoured=0.8},
@@ -30,7 +30,7 @@ setAccuracy(NewWeaponType,1,
 {SmallCapitalShip=0.50},
 {BigCapitalShip=0.50},
 {ResourceLarge=0.60});
-setAngles(NewWeaponType,5,-155,45,-10,50);
+setAngles(NewWeaponType,5,-45,155,-10,33);
 addAnimTurretSound(NewWeaponType,"Data:Sound/SFX/ETG/SPECIAL/SPECIAL_ABILITIES_TURRET_ON");
 setMissProperties(NewWeaponType, 0.02, 0.04, 0.30, 0.50, 0.55, 0.55);
 setLifetimeMult(NewWeaponType, 1.65);

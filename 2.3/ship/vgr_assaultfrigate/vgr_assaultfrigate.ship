@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$1618"
 NewShipType.sobDescription="$1619"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 17500)
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 18000)
 NewShipType.regentime=1800
 NewShipType.minRegenTime=1800
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.2)
@@ -17,8 +17,8 @@ NewShipType.defaultStance="Neutral"
 NewShipType.formationSpacing=250
 NewShipType.mass=100
 NewShipType.collisionMultiplier=1
-NewShipType.thrusterMaxSpeed=195
-NewShipType.mainEngineMaxSpeed=195
+NewShipType.thrusterMaxSpeed=176
+NewShipType.mainEngineMaxSpeed=176
 NewShipType.rotationMaxSpeed=25
 NewShipType.thrusterAccelTime=7
 NewShipType.thrusterBrakeTime=2
@@ -147,9 +147,7 @@ addAbility(NewShipType,"CanBeCaptured",45,0.1,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RetireAbility",1,1);
--- fix to salvage vette scuttle bug
-addCustomCode(NewShipType,"data:scripts/playerspatch_patches.lua","","","Update_NoSalvageScuttle","","vgr_assaultfrigate",4)
--- fix to salvage vette scuttle bug
+addCustomCode(NewShipType,"data:ship/Vgr_AssaultFrigate/Vgr_AssaultFrigate.lua","","","Update_Vgr_AssaultFrigate","","Vgr_AssaultFrigate",4)
 LoadModel(NewShipType,1);
 StartShipHardPointConfig(NewShipType,"Weapon_Bottom","Hardpoint_Bottom","Weapon","Innate","Ship","Vgr_FlechetteCannonAssaultFrigateBottom","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Weapon_Left","Hardpoint_Left","Weapon","Innate","Ship","Vgr_FlechetteCannonAssaultFrigateLeft","","","","","","","","");
@@ -177,7 +175,7 @@ loadLatchPointList(NewShipType,"CapCap","CapturePoint0");
 loadLatchPointList(NewShipType,"RepCap","RepairPoint0","RepairPoint1");		
 NewShipType.minFalloffDamageDist=130
 NewShipType.maxFalloffDamageDist=130*2
-NewShipType.maxFalloffScuttleDamageDist=130*2
+NewShipType.maxFalloffScuttleDamageDist=130*4
 NewShipType.explosiveScuttleDamageOnDeath=130
 NewShipType.maxFalloffForce=500*10
 NewShipType.explosiveDamageOnDeath=50

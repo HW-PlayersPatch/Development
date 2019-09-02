@@ -131,10 +131,9 @@ function Create_DroneFrigate(CustomGroup, playerIndex, shipID)
 end
 
 function Update_DroneFrigate(CustomGroup, playerIndex, shipID)
-	SobGroup_AbilityActivate(CustomGroup, AB_Scuttle, 1 - SobGroup_IsDoingAbility(CustomGroup, AB_Dock))
+    NoSalvageScuttle(CustomGroup, playerIndex, shipID)
 
-	-- unsure what this is for, seems to force drone activation if enemy ships are nearby
-	-- although i have no idea what the GetLevelOfDifficulty function does in MP ~ fear
+	-- forces AI cpu drone activation if enemy ships are nearby
 	if Player_GetLevelOfDifficulty(playerIndex) > 0 then
 		local playerIndex_ai = 0		
 		local enemyships = 0

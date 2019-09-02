@@ -19,7 +19,6 @@ build =
 		Type = 					SubSystem, 
 		ThingToBuild = 			"vgr_c_production_fighter",
 		RequiredResearch =		"",
-
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		0,
 		DisplayedName =			"$7100",
@@ -521,7 +520,7 @@ build =
 		Description =			"$7169" 
 	},
 
-	{
+	{ 
 		Type = 					Ship, 
 		ThingToBuild = 			"vgr_probe_prox",
 		RequiredResearch =		"ProbeProxSensor",
@@ -553,4 +552,5 @@ build =
 	},
 }
 
-doscanpath("data:scripts", "applybuildtimes.lua")
+doscanpath("data:Scripts/Productiontimes", "applybuildtimes.lua")
+

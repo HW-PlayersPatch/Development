@@ -1,3 +1,3 @@
-function Update_Vgr_Missile_Corvette(CustomGroup, playerIndex, shipID)
-    PlayersPatch_UnderAttackReissueDock(CustomGroup)
+function Update_Vgr_Laser_Corvette(CustomGroup, playerIndex, shipID)
+    UnderAttackReissueDock(CustomGroup)
 end

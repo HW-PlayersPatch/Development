@@ -90,7 +90,7 @@ NewShipType.visualRange=1000
 NewShipType.prmSensorRange=6500
 NewShipType.secSensorRange=7500
 NewShipType.detectionStrength=1
-NewShipType.TOIcon="InvertedParallelogram"
+NewShipType.TOIcon="Parallelogram"
 NewShipType.TOScale=1
 NewShipType.TODistanceFade0=11000
 NewShipType.TODistanceDisappear0=9000
@@ -159,6 +159,7 @@ addAbility(NewShipType,"RetireAbility",1,1);
 addAbility(NewShipType, "SpecialAttack", 1, "MissileVolley")
 --addAbility(NewShipType,"CustomCommand",1,"Missile Volley",1,0,1000,0,6,3,0,"data:Ship/Kus_MissileDestroyer/Kus_MissileDestroyer.lua","Start_Kus_MissileDestroyer","Do_Kus_MissileDestroyer","Finish_Kus_MissileDestroyer","Kus_MissileDestroyer",2,4,1)
 --addCustomCode(NewShipType,"data:Ship/Kus_MissileDestroyer/Kus_MissileDestroyer.lua","","Create_Kus_MissileDestroyer","Update_Kus_MissileDestroyer","Destroy_Kus_MissileDestroyer","Kus_MissileDestroyer",2)
+addCustomCode(NewShipType,"data:ship/Kus_MissileDestroyer/Kus_MissileDestroyer.lua","","","Update_Kus_MissileDestroyer","","Kus_MissileDestroyer",4)
 LoadModel(NewShipType,1);
 --StartShipHardPointConfig(NewShipType,"MissileBay","Hardpoint_MissileBay","System","Innate","Damageable","HW1_MissileBay","","","","","","","","");
 StartShipWeaponConfig(NewShipType,"Kus_DestroyerLauncher","Weapon_Gun0","Weapon_Gun0");
@@ -169,7 +170,7 @@ StartShipWeaponConfig(NewShipType,"Kus_DestroyerLauncherVolley","Weapon_GunV0","
 StartShipWeaponConfig(NewShipType,"Kus_DestroyerLauncherVolley","Weapon_GunV1","Weapon_Gun1v");
 StartShipWeaponConfig(NewShipType,"Kus_DestroyerLauncherVolley","Weapon_GunV2","Weapon_Gun2v");
 StartShipWeaponConfig(NewShipType,"Kus_DestroyerLauncherVolley","Weapon_GunV3","Weapon_Gun3v");
-addShield(NewShipType,"EMP",700,20);
+addShield(NewShipType,"EMP",1000,20);
 StartShipHardPointConfig(NewShipType,"Engine","Hardpoint_Engine","System","Innate","Damageable","Kus_MissileDestroyerEngine","","","","","","","","");
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg03",1, 0.45,0,0,0, 0,0,0,50,0,0,0,200,0,0,0,50,0,0,0,50);
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg04",1, 0.2,0,0,0, 50,40,-150,50,65,25,5,25,0,0,0,95,0,0,0,50);

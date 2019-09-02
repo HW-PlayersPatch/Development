@@ -147,9 +147,7 @@ addAbility(NewShipType,"CanBeCaptured",30,0.1,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RetireAbility",1,1);
--- fix to salvage vette scuttle bug
-addCustomCode(NewShipType,"data:scripts/playerspatch_patches.lua","","","Update_NoSalvageScuttle","","Hgn_TorpedoFrigate",4)
--- fix to salvage vette scuttle bug
+addCustomCode(NewShipType,"data:ship/Hgn_TorpedoFrigate/Hgn_TorpedoFrigate.lua","","","Update_Hgn_TorpedoFrigate","","Hgn_TorpedoFrigate",4)
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Hgn_TorpedoLauncher","weapon_Torpedo","");
 StartShipWeaponConfig(NewShipType,"Hgn_BigTorpedoLauncher","weapon_Torpedo","");
@@ -172,10 +170,8 @@ loadLatchPointList(NewShipType,"RepCap","RepairPoint0","RepairPoint1");
 NewShipType.minFalloffDamageDist=100
 NewShipType.maxFalloffDamageDist=100*2
 NewShipType.maxFalloffScuttleDamageDist=100*4
-NewShipType.explosiveScuttleDamageOnDeath=735
+NewShipType.explosiveScuttleDamageOnDeath=130
 NewShipType.maxFalloffForce=500*10
-NewShipType.explosiveDamageOnDeath=147	
+NewShipType.explosiveDamageOnDeath=50	
 NewShipType.radiusDamageEvadeMod=1.1													 
 NewShipType.canSurround=1
-
-NewShipType.alternativeHyperspaceTime = 6

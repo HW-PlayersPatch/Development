@@ -59,7 +59,8 @@ stage = {
 	}
 }
 
-i = GetDefaultToSetting()
+i = GetTacticalOverlaySetting()
+
 function incI()
 	i = i + 1
 	if i > 4 then i = 1 end
@@ -69,7 +70,4 @@ stage0 = stage[i]; incI()
 stage1 = stage[i]; incI()
 stage2 = stage[i]; incI()
 stage3 = stage[i]; incI()
---stage0 = stage[1]
---stage1 = stage[2]
---stage2 = stage[3]
---stage3 = stage[4]
+

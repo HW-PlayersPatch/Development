@@ -17,8 +17,8 @@ NewShipType.defaultROE="Defensive"
 NewShipType.defaultStance="Neutral"
 NewShipType.mass=10
 NewShipType.collisionMultiplier=1
-NewShipType.thrusterMaxSpeed=800
-NewShipType.mainEngineMaxSpeed=800
+NewShipType.thrusterMaxSpeed=600
+NewShipType.mainEngineMaxSpeed=600
 NewShipType.rotationMaxSpeed=171
 NewShipType.thrusterAccelTime=2
 NewShipType.thrusterBrakeTime=1
@@ -81,7 +81,7 @@ NewShipType.visualRange=4000
 NewShipType.prmSensorRange=14000
 NewShipType.secSensorRange=14000
 NewShipType.detectionStrength=1
-NewShipType.TOIcon="InvertedRectangle"
+NewShipType.TOIcon="InvertedPentagon"
 NewShipType.TOScale=1
 NewShipType.TODistanceFade0=7000
 NewShipType.TODistanceDisappear0=5000
@@ -125,7 +125,7 @@ NewShipType.canJoinStrikeGroup=0
 addAbility(NewShipType,"ParadeCommand",1);
 LoadModel(NewShipType,1);
 addShield(NewShipType,"EMP",50,20);
-AddShipMultiplier(NewShipType,"SensorDistortion","OwnShipsWithinRadius","Linear",0.3,0.3,8000);
+AddShipMultiplier(NewShipType,"SensorDistortion","OwnShipsWithinRadius","Linear",0.6,0.6,8000);
 NewShipType.battleScarCoverage=0
 NewShipType.sobDieTime=1
 NewShipType.sobSpecialDieTime=1

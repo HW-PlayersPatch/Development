@@ -414,12 +414,32 @@ CollisionInfo = {
 			0.21,
 		},
 		{
+			"Unarmoured",
+			0.2,
+		},
+		{
+			"Unarmoured_hw1",
+			0.2,
+		},
+		{
+			"LightArmour",
+			0.2,
+		},
+		{
+			"LightArmour_hw1",
+			0.2,
+		},
+		{
 			"MediumArmour",
 			0.28,
 		},
 		{
 			"HeavyArmour",
 			0.25,
+		},
+		{
+			"TurretArmour",
+			1.0,
 		},
 	},
 }
@@ -459,8 +479,8 @@ AutoLODInfo = {
 -- variables are the same as the names in HW2_MultipliersAndAbilitiesHowTo.doc
 MultiplierCap = {
     default = 1.5,
-    WeaponDamage = 1.3,
-    WeaponAccuracy = 1.3,
+    WeaponDamage = 1.2,
+    WeaponAccuracy = 1.2,
     CloakDetection = 4.0,
     VisualRange = 4.0,
     PrimarySensorsRange = 2.0,

@@ -2,7 +2,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$1612"
 NewShipType.sobDescription="$1613"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 510)
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 480)
 NewShipType.regentime=0
 NewShipType.minRegenTime=0
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
@@ -158,6 +158,7 @@ addAbility(NewShipType,"CanAttack",1,2,1,0,0.35,0.95,"Corvette, Corvette_hw1, Fi
 addAbility(NewShipType,"GuardCommand",1,3000,500);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"RetireAbility",1,0);
+addCustomCode(NewShipType, "data:ship/Vgr_MissileCorvette/Vgr_MissileCorvette.lua", "", "", "Update_Vgr_Missile_Corvette", "", "Vgr_MissileCorvette", 1)
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Vgr_ConcussionMissileLauncher","Weapon_MissileVette","Fire_Missile");
 StartShipWeaponConfig(NewShipType,"Vgr_ConcussionMissileLauncher_Medium","Weapon_MissileVetteAlt","Fire_MissileAlt");
@@ -183,5 +184,3 @@ NewShipType.radiusDamageEvadeMod=1.1
 NewShipType.agileFlight=1
 NewShipType.homingDistance=2000
 NewShipType.homingDelay=0.5
-
-addCustomCode(NewShipType, "data:ship/vgr_missilecorvette/vgr_missilecorvette.lua", "", "", "Update_Vgr_Missile_Corvette", "", "vgr_missilecorvette", 0.5);

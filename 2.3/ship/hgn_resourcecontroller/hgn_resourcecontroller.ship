@@ -84,7 +84,7 @@ NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
 NewShipType.totalValue=5
 NewShipType.buildCost=800
-NewShipType.buildTime=40
+NewShipType.buildTime=45
 NewShipType.buildPriorityOrder=20
 NewShipType.retaliationRange=4800
 NewShipType.retaliationDistanceFromGoal=160
@@ -148,9 +148,7 @@ addAbility(NewShipType,"CanBeCaptured",30,0.1,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RetireAbility",1,1);
--- fix to salvage vette scuttle bug
-addCustomCode(NewShipType,"data:scripts/playerspatch_patches.lua","","","Update_NoSalvageScuttle","","Hgn_ResourceController",4)
--- fix to salvage vette scuttle bug
+addCustomCode(NewShipType,"data:ship/Hgn_ResourceController/Hgn_ResourceController.lua","","","Update_Hgn_ResourceController","","Hgn_ResourceController",4)
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Hw2_MobGun","Weapon_HullDefense1","Weapon_HullDefense1");
 StartShipWeaponConfig(NewShipType,"Hw2_MobGun","Weapon_HullDefense3","Weapon_HullDefense3");
@@ -180,5 +178,3 @@ NewShipType.explosiveDamageOnDeath=27
 NewShipType.radiusDamageEvadeMod=1.1													 
 NewShipType.hideNormalAttackUICooldown=1
 NewShipType.canSurround=1
-
-NewShipType.alternativeHyperspaceTime = 6

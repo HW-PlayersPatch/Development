@@ -1,3 +1,5 @@
+-- Currently configured for 1 call per second. Heals when it hasn't been damaged in the last 12 seconds.
+
 -- variables here are stored globally and are accessable via this script regardless of invokation time
 -- as such we need a persistant dictionary to identify which CF info we want to work with
 combat_ticks_length = 12
@@ -8,8 +10,7 @@ function log_new_cf(shipID)
     local new_cf = {
         combat_ticks_queue = {},
         current_HP = nil,
-        last_checked_HP = nil,
-        ticks_since_last_fx = 0
+        last_checked_HP = nil
     }
     for i = 1, combat_ticks_length do
         new_cf.combat_ticks_queue[i] = 0
@@ -71,14 +72,7 @@ function Update_Kus_CloakedFighter(CustomGroup, playerIndex, shipID)
         end
 
         if regen_enabled == 1 then
-            -- glow effect every 4 calls (0.5 call rate => 2s)
-            this_cf.ticks_since_last_fx = this_cf.ticks_since_last_fx + 1
-            if this_cf.ticks_since_last_fx == 4 then
-                FX_PlayEffect("KUS_CF_HEAL", CustomGroup, 2.5)
-                this_cf.ticks_since_last_fx = 0
-            end
-
-            SobGroup_SetHealth(CustomGroup, this_cf.current_HP + 0.004)
+            SobGroup_SetHealth(CustomGroup, this_cf.current_HP + 0.008)
         end
     end
 

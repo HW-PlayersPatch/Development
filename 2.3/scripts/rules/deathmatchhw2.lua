@@ -1,5 +1,5 @@
 GUID = { 110,91,157,190,18,23,250,78,144,20,41,246,181,128,214,12 }
-GameRulesName = "Homeworld 2 Deathmatch v2.3" --$4807
+GameRulesName = "Homeworld 2 RM 2.3 Players Patch" --$4807 Homeworld 2 Deathmatch
 Description = "$4808"
 SaveGameVersion = 1.0
 SinglePlayer = 0
@@ -9,7 +9,7 @@ ExtFilter = "rules_dm,rules_hw2,rules_dm_hw2"
 Race_Paths = "Deathmatch,DeathmatchHW2,Extras"
 
 Level_Pass_Tags = "dm_hw2"
-Race_Pass_Tags = "race_dm_hw2,race_random_all"
+Race_Pass_Tags = "race_dm_hw2,race_random_all,2x_race_dm_hw2"
 
 GameSetupOptions =
 {

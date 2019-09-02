@@ -1,5 +1,5 @@
-dofilepath("data:scripts/playerspatch_util.lua")
-dofilepath("data:scripts/playerspatch_patches.lua")
+
+dofilepath("data:scripts/playerspatch_rules_util.lua")
 dofilepath("data:scripts/SCAR/SCAR_Util.lua")
 dofilepath("data:scripts/scar/restrict.lua")
 dofilepath("data:leveldata/multiplayer/lib/lib.lua")
@@ -16,6 +16,7 @@ dofilepath("data:leveldata/multiplayer/lib/dev.lua")
 dofilepath("data:leveldata/multiplayer/lib/main.lua")
 dofilepath("data:leveldata/multiplayer/lib/carriersonly.lua")
 dofilepath("data:leveldata/multiplayer/lib/nocruisers.lua")
+dofilepath("data:leveldata/multiplayer/lib/dualcommand.lua")
 
 function OnStartOrLoad()
 	-- Write race list
@@ -27,33 +28,33 @@ function OnInit()
     Volume_AddSphere("centre", {-11111, 11111, 11111,}, 10)
     MPRestrict()
 	nocruisers = GetGameSettingAsNumber("nocruisers")
-    cpuplayers = GetGameSettingAsNumber("cpuplayers")	
+    cpuplayers = GetGameSettingAsNumber("cpuplayers")
     PlayersPatch_AIAttackDamage = GetGameSettingAsNumber("PlayersPatch_AIAttackDamage")
     bounties = GetGameSettingAsNumber("bounties")
     research = GetGameSettingAsNumber("research")
     ruinjections = GetGameSettingAsNumber("ruinjections")
     challenges = GetGameSettingAsNumber("challenges")
-	relics = GetGameSettingAsNumber("relics")
+		relics = GetGameSettingAsNumber("relics")
     crates = GetGameSettingAsNumber("crates")
-	carriersonly = GetGameSettingAsNumber("carriersonly")
-	norushtime = GetGameSettingAsNumber("norushtime")
-	if carriersonly == 0 then
-		SetStartFleetSuffix("") 	 		
-	elseif carriersonly == 1 then
-		SetStartFleetSuffix("carriersonly") 	
-		Rule_AddInterval("carriersonly_init",2)
-	end
-	UI_SetElementEnabled("NewTaskbar", "btnObjectives", 0)
-	UI_SetElementEnabled("NewTaskbar", "btnRecall", 0)
-	UI_SetElementEnabled("NewTaskbar", "btnBuild", 0)
-	UI_SetElementEnabled("NewTaskbar", "btnResearch", 0)
-	UI_SetElementEnabled("NewTaskbar", "btnLaunch", 0)
+		carriersonly = GetGameSettingAsNumber("carriersonly")
+		norushtime = GetGameSettingAsNumber("norushtime")
+		if carriersonly == 0 then
+			  SetStartFleetSuffix("") 	 		
+	  elseif carriersonly == 1 then
+		    SetStartFleetSuffix("carriersonly") 	
+				Rule_AddInterval("carriersonly_init",2)
+	  end
+		UI_SetElementEnabled("NewTaskbar", "btnObjectives", 0)
+		UI_SetElementEnabled("NewTaskbar", "btnRecall", 0)
+		UI_SetElementEnabled("NewTaskbar", "btnBuild", 0)
+		UI_SetElementEnabled("NewTaskbar", "btnResearch", 0)
+		UI_SetElementEnabled("NewTaskbar", "btnLaunch", 0)
 
-	if norushtime > 0 then
-		UI_TimerStop("NewTaskbar", "GameTimer")	
-	end
+		if norushtime > 0 then
+			UI_TimerStop("NewTaskbar", "GameTimer")	
+		end
 
-	Rule_AddInterval("timer_updating",1.02)	--timed with doai	
+		Rule_AddInterval("timer_updating",1.02)	--timed with doai	
 end
 
 timer_timing = 1
@@ -74,9 +75,11 @@ function timer_updating()
 				--Rule_AddInterval("UI_updating",0.5)
 				Rule_AddInterval("cpuplayers_updating",0.1)	
 				--Rule_AddInterval("balancing_updating",0.25) --dev. to remove				
+				Rule_AddInterval("DualCommand_Init",0.0)
+
 				if nocruisers == 1 then
 						Rule_AddInterval("nocruisers_init",timer_interval)
-				end							
+				end					
 				if research == 0 then
 						Rule_AddInterval("research_init",timer_interval)
 				end				

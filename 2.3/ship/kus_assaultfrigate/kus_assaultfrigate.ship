@@ -146,9 +146,7 @@ addAbility(NewShipType,"CanBeCaptured",45,0.1,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RetireAbility",1,1);
--- fix to salvage vette scuttle bug
-addCustomCode(NewShipType,"data:scripts/playerspatch_patches.lua","","","Update_NoSalvageScuttle","","kus_assaultfrigate",4)
--- fix to salvage vette scuttle bug
+addCustomCode(NewShipType,"data:ship/Kus_AssaultFrigate/Kus_AssaultFrigate.lua","","","Update_Kus_AssaultFrigate","","Kus_AssaultFrigate",4)
 LoadModel(NewShipType,1);
 StartShipHardPointConfig(NewShipType,"Weapon_Gun0","Hardpoint_Gun0","Weapon","Innate","Ship","Kus_AssaultGun","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Weapon_Gun1","Hardpoint_Gun1","Weapon","Innate","Ship","Kus_AssaultGun","","","","","","","","");

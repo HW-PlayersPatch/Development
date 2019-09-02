@@ -6,7 +6,7 @@ NewShipType.regentime=0
 NewShipType.minRegenTime=0
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
 NewShipType.rearArmourDamage = getShipNum(NewShipType, "rearArmourDamage", 1.0)
-setTacticsMults(NewShipType, "MAXSPEED", 1.0, 1.0, 1.0)
+setTacticsMults(NewShipType, "MAXSPEED", 1.0, 1.05, 1.0)
 setTacticsMults(NewShipType, "ENGINEACCEL", 1.20, 0.80, 1.0)
 setTacticsMults(NewShipType, "ENGINEBRAKE", 1.0, 1.0, 1.0)
 setTacticsMults(NewShipType, "THRUSTER", 1.0, 1.0, 1.0)
@@ -97,7 +97,7 @@ NewShipType.buildTime=20
 NewShipType.buildPriorityOrder=10
 NewShipType.retaliationRange=4800
 NewShipType.retaliationDistanceFromGoal=160
-NewShipType.visualRange=4000
+NewShipType.visualRange=1500
 NewShipType.prmSensorRange=7000
 NewShipType.secSensorRange=8500
 NewShipType.detectionStrength=1
@@ -163,6 +163,7 @@ addAbility(NewShipType,"GuardCommand",1,3000,500);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"SpecialAttack",0,"EMP");
 addAbility(NewShipType,"RetireAbility",1,0);
+addCustomCode(NewShipType, "data:ship/Vgr_Scout/Vgr_Scout.lua", "", "", "Update_Vgr_Scout", "", "Vgr_Scout", 1)
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Vgr_Peashooter","Weapon_Autogun","Weapon_Autogun");
 StartShipWeaponConfig(NewShipType,"Vgr_SmallEMP","Weapon_Autogun","Weapon_EMP");
@@ -189,5 +190,3 @@ NewShipType.homingDistance=2000
 NewShipType.homingDelay=0.5
 NewShipType.strikeGroupSpeed=5000
 NewShipType.canSurround=0
-
-addCustomCode(NewShipType, "data:ship/vgr_scout/vgr_scout.lua", "", "", "Update_Vgr_Scout", "", "vgr_scout", 0.5);

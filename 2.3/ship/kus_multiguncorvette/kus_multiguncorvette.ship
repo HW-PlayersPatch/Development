@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$10016"
 NewShipType.sobDescription="$10017"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 1300)
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 1400)
 NewShipType.regentime=0
 NewShipType.minRegenTime=0
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
@@ -158,7 +158,7 @@ StartShipHardPointConfig(NewShipType,"Weapon_Gun2","Hardpoint_Gun2","Weapon","In
 StartShipHardPointConfig(NewShipType,"Weapon_Gun3","Hardpoint_Gun3","Weapon","Innate","Ship","Kus_MultiGun2","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Weapon_Gun4","Hardpoint_Gun4","Weapon","Innate","Ship","Kus_MultiGun1","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Weapon_Gun5","Hardpoint_Gun5","Weapon","Innate","Ship","Kus_MultiGun1","","","","","","","","");
-addShield(NewShipType,"EMP",75,20);
+addShield(NewShipType,"EMP",45,20);
 NewShipType.battleScarCoverage=1
 NewShipType.sobDieTime=2
 NewShipType.sobSpecialDieTime=1

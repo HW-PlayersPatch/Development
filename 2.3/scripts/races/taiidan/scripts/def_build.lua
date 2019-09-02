@@ -2,10 +2,10 @@ Ship = 0
 SubSystem = 1
 build =
 {
-	--Research Tells---------------
+--Production Subsystems---------------
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"hw1_fightertell",
+		ThingToBuild = 			"hw1_production_fighter",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		0,
@@ -14,7 +14,7 @@ build =
 	},
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"hw1_corvettetell",
+		ThingToBuild = 			"hw1_production_corvette",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		0,
@@ -23,7 +23,7 @@ build =
 	},
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"hw1_frigatetell",
+		ThingToBuild = 			"hw1_production_frigate",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		0,
@@ -32,7 +32,7 @@ build =
 	},
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"hw1_capitaltell",
+		ThingToBuild = 			"hw1_production_capital",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		0,
@@ -335,4 +335,5 @@ build =
 	},	
 }
 
-doscanpath("data:scripts", "applybuildtimes.lua")
+doscanpath("data:Scripts/Productiontimes", "applybuildtimes.lua")
+

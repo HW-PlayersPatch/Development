@@ -149,9 +149,7 @@ addAbility(NewShipType,"CanBeCaptured",45,0.5,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RetireAbility",1,1);
--- fix to salvage vette scuttle bug
-addCustomCode(NewShipType,"data:scripts/playerspatch_patches.lua","","","Update_NoSalvageScuttle","","Hgn_MarineFrigate",4)
--- fix to salvage vette scuttle bug
+addCustomCode(NewShipType,"data:ship/Hgn_MarineFrigate/Hgn_MarineFrigate.lua","","","Update_Hgn_MarineFrigate","","Hgn_MarineFrigate",4)
 LoadModel(NewShipType,1);
 StartShipHardPointConfig(NewShipType,"Weapon_Top","Hardpoint_Top","Weapon","Innate","Ship","Hgn_VulcanKineticTurretHeavy","","","","","","","","");
 --StartShipWeaponConfig(NewShipType,"Hgn_VulcanKineticTurretHeavy","Weapon_Top","Weapon_Top");
@@ -179,5 +177,3 @@ NewShipType.maxFalloffForce=500*10
 NewShipType.explosiveDamageOnDeath=50													 
 NewShipType.hideNormalAttackUICooldown=1
 NewShipType.canSurround=1
-
-NewShipType.alternativeHyperspaceTime = 6
