@@ -175,40 +175,40 @@ strCurLanguage = 1  --Naive treatement of localization language.;
 
 LSTRING_LocationCard = {  -- multilingual strings
 	"Great Wastelands",
-	"Macro-dï¿½serts",
-	"Groï¿½e Einï¿½de",
-	"Grandes pï¿½ramos",
+	"Macro-déserts",
+	"Große Einöde",
+	"Grandes páramos",
 	"Le lande desolate", }
 LSTRING_PrimaryObjective01 = {  -- multilingual strings
 	"Begin collection of resources.",
-	"Dï¿½marrage collecte des ressources.",
+	"Démarrage collecte des ressources.",
 	"Mit der Sammlung von Rohstoffen beginnen.",
-	"Comenzar recolecciï¿½n de recursos.",
+	"Comenzar recolección de recursos.",
 	"Inizia la raccolta delle risorse.", }
 LSTRING_PrimaryObjective02 = {  -- multilingual strings
 	"Destroy all Turanic Raider ships",
-	"Destruction totalitï¿½ des Vaisseaux du Maraudeur Turanique",
-	"Alle Schiffe der turanischen Freibeuter sind zu zerstï¿½ren.",
-	"Destruir todas las naves de asalto turï¿½nicas",
+	"Destruction totalité des Vaisseaux du Maraudeur Turanique",
+	"Alle Schiffe der turanischen Freibeuter sind zu zerstören.",
+	"Destruir todas las naves de asalto turánicas",
 	"Distruggi tutte le astronavi Raider dei Turanic", }
 LSTRING_SecondaryObjective01 = {  -- multilingual strings
 	"Build and Deploy Resource Controller",
-	"Construction et mise en place du Contrï¿½leur des Ressources",
-	"Rohstoffï¿½berwachungsschiff bauen und einsetzen.",
+	"Construction et mise en place du Contrôleur des Ressources",
+	"Rohstoffüberwachungsschiff bauen und einsetzen.",
 	"Construir y desarrollar controlador de recursos",
 	"Costruisci e posiziona un Controllore di Risorse.", }
 LSTRING_FISetupCollection = {  -- multilingual strings
 	"Set up a collection operation.",
-	"Mise en oeuvre opï¿½ration de collecte.",
+	"Mise en oeuvre opération de collecte.",
 	"Sammelaktion einleiten.",
-	"Establecer operaciï¿½n de recolecciï¿½n.",
+	"Establecer operación de recolección.",
 	"Prepara un'operazione di raccolta.", }
 LSTRING_FIResourceControllerTip = {  -- multilingual strings
 	"Move your resource controller as close to heavy resource areas as possible.  This will reduce your resource collectors dropoff time and increase your resource collection efficiency.",
-	"Approchez le plus possible votre Contrï¿½leur des Ressources des gisements importants de ressources. Ceci rï¿½duira la durï¿½e de dï¿½chargement pour le Collecteur de Ressources et amï¿½liorera l'efficacitï¿½ de la collecte.",
-	"Bringen Sie Ihr Rohstoffï¿½berwachungsschiff so dicht wie mï¿½glich an ergiebige Rohstoffbereiche heran. Das verringert die Transportzeit der Rohstoffernteschiffe und erhï¿½ht die Effizienz der Rohstoffernte.",
-	"Acerca el controlador de recursos a las zonas con abundancia de recursos tanto como puedas. Esto reduce el tiempo de descarga de los recolectores de recursos y aumenta la eficacia de la recolecciï¿½n.",
-	"Sposta il Collettore di Risorse il piï¿½ vicino possibile alle zone piï¿½ ricche di risorse. In questo modo, ridurrai al minimo i tempi morti della raccolta, ottimizzandone la produzione.", }
+	"Approchez le plus possible votre Contrôleur des Ressources des gisements importants de ressources. Ceci réduira la durée de déchargement pour le Collecteur de Ressources et améliorera l'efficacité de la collecte.",
+	"Bringen Sie Ihr Rohstoffüberwachungsschiff so dicht wie möglich an ergiebige Rohstoffbereiche heran. Das verringert die Transportzeit der Rohstoffernteschiffe und erhöht die Effizienz der Rohstoffernte.",
+	"Acerca el controlador de recursos a las zonas con abundancia de recursos tanto como puedas. Esto reduce el tiempo de descarga de los recolectores de recursos y aumenta la eficacia de la recolección.",
+	"Sposta il Collettore di Risorse il più vicino possibile alle zone più ricche di risorse. In questo modo, ridurrai al minimo i tempi morti della raccolta, ottimizzandone la produzione.", }
 LSTRING_TraderIntro = {  -- multilingual strings
 	"Welcome.",
 	"Bienvenue.",
@@ -223,28 +223,28 @@ LSTRING_TraderPurchaseMade = {  -- multilingual strings
 	"Grazie. Speriamo che il tuo acquisto ti torni utile.", }
 LSTRING_Savegame = {  -- multilingual strings
 	"04 - Great Wastelands",
-	"04 - Macro-dï¿½serts",
-	"04 - Groï¿½e Einï¿½de",
-	"04 - Grandes pï¿½ramos",
+	"04 - Macro-déserts",
+	"04 - Große Einöde",
+	"04 - Grandes páramos",
 	"04 - Le lande desolate", }
 LSTRING_Objective1 = {  -- multilingual strings
 	"Protect The Fleet",
 	"Protection de la Flotte",
-	"Die Flotte schï¿½tzen.",
+	"Die Flotte schützen.",
 	"Proteger la flota",
 	"Progetta la flotta", }
 LSTRING_GoodBusiness = {  -- multilingual strings
 	"When you have collected enough resources we have a piece of technology that we would be willing to sell you.",
-	"Nous possï¿½dons une avancï¿½e technologique que nous serions prï¿½ts ï¿½ vous vendre lorsque vous aurez rï¿½uni assez de ressources.",
-	"Wenn ihr genï¿½gend Rohstoffe gesammelt habt, haben wir eine Technologie, die wir euch verkaufen wï¿½rden",
-	"Cuando hayas recolectado suficientes recursos, tenemos cierta tecnologï¿½a que estamos dispuestos a venderte.",
-	"Quando avrai raccolto risorse sufficienti, vieni da noi: abbiamo qualcosa che crediamo ti potrï¿½ tornare davvero utile.", }
+	"Nous possédons une avancée technologique que nous serions prêts à vous vendre lorsque vous aurez réuni assez de ressources.",
+	"Wenn ihr genügend Rohstoffe gesammelt habt, haben wir eine Technologie, die wir euch verkaufen würden",
+	"Cuando hayas recolectado suficientes recursos, tenemos cierta tecnología que estamos dispuestos a venderte.",
+	"Quando avrai raccolto risorse sufficienti, vieni da noi: abbiamo qualcosa che crediamo ti potrà tornare davvero utile.", }
 LSTRING_IonFrigs = {  -- multilingual strings
 	"Several Turanic Raider capital ships have just hyperspaced in close to the Mothership.  They pose by far the greatest threat yet faced.  Protecting the Mothership is the highest priority.",
-	"Plusieurs Unitï¿½s lourdes du Maraudeur Turanique viennent de sortir de l'hyperespace prï¿½s du Vaisseau Mï¿½re. C'est de loin la menace la plus sï¿½rieuse qui se soit prï¿½sentï¿½e jusqu'ï¿½ prï¿½sent. Prioritï¿½ absolue : Protection du Vaisseau Mï¿½re.",
-	"Mehrere Schlachtschiffe der turanischen Freibeuter sind gerade in der Nï¿½he des Mutterschiffs aus dem Hyperraum gekommen. Sie stellen mit Abstand die grï¿½ï¿½te Gefahr dar, der wir uns je gegenï¿½ber sahen. Der Schutz des Mutterschiffs hat oberste Prioritï¿½t.",
-	"Varias Naves capital turï¿½nicas de asalto acaban de salir del hiperespacio cerca de la Nave nodriza. Representan el mayor peligro al que nos hemos enfrentado. Nuestra prioridad es la de proteger a la Nave nodriza.",
-	"Molte navi Incursori dei Turanic sono appena emerse dall'Iperspazio e si stanno dirigendo verso l'Astronave Madre. Siamo di fronte a una minaccia senza precedenti, ï¿½ assolutamente necessario difendere l'Astronave Madre.", }
+	"Plusieurs Unités lourdes du Maraudeur Turanique viennent de sortir de l'hyperespace près du Vaisseau Mère. C'est de loin la menace la plus sérieuse qui se soit présentée jusqu'à présent. Priorité absolue : Protection du Vaisseau Mère.",
+	"Mehrere Schlachtschiffe der turanischen Freibeuter sind gerade in der Nähe des Mutterschiffs aus dem Hyperraum gekommen. Sie stellen mit Abstand die größte Gefahr dar, der wir uns je gegenüber sahen. Der Schutz des Mutterschiffs hat oberste Priorität.",
+	"Varias Naves capital turánicas de asalto acaban de salir del hiperespacio cerca de la Nave nodriza. Representan el mayor peligro al que nos hemos enfrentado. Nuestra prioridad es la de proteger a la Nave nodriza.",
+	"Molte navi Incursori dei Turanic sono appena emerse dall'Iperspazio e si stanno dirigendo verso l'Astronave Madre. Siamo di fronte a una minaccia senza precedenti, è assolutamente necessario difendere l'Astronave Madre.", }
 LSTRING_TBHyperspace = {  -- multilingual strings
 	"                HYPERSPACE",
 	"                HYPERESPACE",
@@ -254,8 +254,8 @@ LSTRING_TBHyperspace = {  -- multilingual strings
 LSTRING_FIGoGetThem = {  -- multilingual strings
 	"Destroy Retreating Turanic Raider Carrier",
 	"Destruction du transporteur fuyard du Maraudeur Turanique",
-	"Trï¿½gerschiffe der zurï¿½ckweichenden turanischen Freibeuter zerstï¿½ren.",
-	"Destruir el portanaves de asalto turï¿½nico que se retira",
+	"Trägerschiffe der zurückweichenden turanischen Freibeuter zerstören.",
+	"Destruir el portanaves de asalto turánico que se retira",
 	"Distruggi l'astronave Porta-Incursori dei Turanic in ritirata.", }
 
 --

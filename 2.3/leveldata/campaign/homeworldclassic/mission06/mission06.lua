@@ -125,20 +125,20 @@ strCurLanguage = 1  --Naive treatement of localization language.;
 
 LSTRING_Savegame = {  -- multilingual strings
 	"06 - Diamond Shoals",
-	"06 - Rï¿½cifs de Diamant",
+	"06 - Récifs de Diamant",
 	"06 - Diamantengrund",
-	"06 - Montaï¿½as de diamantes",
+	"06 - Montañas de diamantes",
 	"06 - I diamanti", }
 LSTRING_LocationCard = {  -- multilingual strings
 	"DIAMOND SHOALS",
 	"RECIFS DE DIAMANT",
 	"DIAMANTENGRUND",
-	"MONTAï¿½AS DE DIAMANTES",
+	"MONTAÑAS DE DIAMANTES",
 	"I DIAMANTI", }
 LSTRING_FIProtectTASKBAR = {  -- multilingual strings
 	"Protect the Mothership",
-	"Protection du Vaisseau Mï¿½re.",
-	"Das Mutterschiff schï¿½tzen.",
+	"Protection du Vaisseau Mère.",
+	"Das Mutterschiff schützen.",
 	"Proteger la Nave nodriza",
 	"Proteggi l'Astronave Madre", }
 LSTRING_TraderIntro = {  -- multilingual strings
