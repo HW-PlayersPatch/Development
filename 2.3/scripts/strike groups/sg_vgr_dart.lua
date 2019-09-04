@@ -323,6 +323,7 @@ SupplyLimits =
 {
 	LayoutFighter = 10,
 	LayoutCorvette = 9,
+	SalvageCorvette = 0,
 	LayoutFrigate = 4,
 	LayoutDestroyer = 2,
 	LayoutBattleCruiser = 1,
