@@ -116,6 +116,7 @@ NewShipType.preciseSelectionLimit=15000
 NewShipType.preciseATILimit=0
 NewShipType.selectionPriority=75
 NewShipType.militaryUnit=0
+NewShipType.alternativeHyperspaceTime = 9.5
 NewShipType.blobName="$1576"
 NewShipType.blobNamePriority=75
 NewShipType.SMHighlightDistMin=30000
