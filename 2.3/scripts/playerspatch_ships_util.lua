@@ -37,3 +37,7 @@ function UnderAttackReissueDock(group)
 		end
 	end
 end
+
+function GetDistanceBetweenPoints(pointA, pointB)
+	return floor(sqrt((pointA[1] - pointB[1]) * (pointA[1] - pointB[1]) + (pointA[2] - pointB[2]) * (pointA[2] - pointB[2]) + (pointA[3] - pointB[3]) * (pointA[3] - pointB[3])))
+end
