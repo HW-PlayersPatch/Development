@@ -142,7 +142,8 @@ NewShipType.launchFormation="delta"
 NewShipType.strikeGroupRadius=350
 addAbility(NewShipType,"ShipHold",1,60,100,"rallypoint","Fighter, Corvette, Utility",100,
 {Fighter="36"},
-{Corvette="340"});
+{Corvette="340"},
+{Utility="175"});
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand",1,1.1,400,1100,0,4);
