@@ -23,7 +23,7 @@ Icon = {
 ExtFilter = "sgf_gbx,sgf_hwrm"
 Tags = "sgf_common"
 
-StanceGrouping = "Batch"
+StanceGrouping = "Shape"
 StanceGroupingAg = "Shape"
 StanceGroupingEv = "Subs"
  

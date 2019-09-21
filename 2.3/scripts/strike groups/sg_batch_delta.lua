@@ -11,7 +11,7 @@ BatchRestrict = 1
 
 LayoutMode = "Nodes"
 
-StanceGrouping = "Batch"
+StanceGrouping = "Shape"
 StanceGroupingAg = "Shape"
 StanceGroupingEv = "Subs"
 
