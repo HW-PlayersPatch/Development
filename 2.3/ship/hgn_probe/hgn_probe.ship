@@ -109,6 +109,7 @@ NewShipType.preciseSelectionLimit=2000
 NewShipType.preciseATILimit=5000
 NewShipType.selectionPriority=75
 NewShipType.militaryUnit=0
+NewShipType.alternativeHyperspaceTime = 7
 addAbility(NewShipType,"MoveCommand",1,1);
 NewShipType.ignoreRaceWhenDocking=0
 addAbility(NewShipType,"CanLaunch");
