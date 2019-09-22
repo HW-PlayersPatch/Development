@@ -1,7 +1,7 @@
 Name = "tortoise"
 Order = -1.0		-- Means invisible to UI
 
-StanceGrouping = "Batch"
+StanceGrouping = "Shape"
 StanceGroupingAg = "Shape"
 StanceGroupingEv = "Subs"
 
