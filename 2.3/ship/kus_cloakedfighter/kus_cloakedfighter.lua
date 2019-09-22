@@ -1,8 +1,8 @@
--- Currently configured for 1 call per second. Heals when it hasn't been damaged in the last 12 seconds.
+-- Currently configured for 1 call per second. Heals when it hasn't been damaged in the last x seconds (combat_ticks_length).
 
 -- variables here are stored globally and are accessable via this script regardless of invokation time
 -- as such we need a persistant dictionary to identify which CF info we want to work with
-combat_ticks_length = 12
+combat_ticks_length = 15
 global_cloakedfighters = {}
 
 -- init a new entry
@@ -29,22 +29,12 @@ function fetch_info(shipID)
 end
 
 -- main loop
--- We store the unit's combat status as the last entry of an N-length queue,
--- and every update (every r seconds), this value is moved down the queue.
--- If the entire queue contains a non-combat status (0), the ship will begin regerating
--- at an accelerated pace.
+-- We store the unit's combat status as the last entry of an N-length queue, and every update (every r seconds), 
+-- this value is moved down the queue.
+-- If the entire queue contains a non-combat status (0), the ship will begin regerating at an accelerated pace.
 -- The time taken for a unit to begin regenerating is therefore N * r.
--- 
--- This is done to ensure granularity - consider the case where we check a descrete time-block
--- for combat. If we check every 5 seconds, then a unit which took damage 4.9 seconds ago
--- and a unit which took damage 0.1 seconds ago will both fail that check and must wait
--- an additional 5 seconds, resulting in an unfair wait time
--- To mitigate this, we could reduce the timeframe. However this obviously has a huge drawback in
--- that there is no way to control a reasonable time after taking damage in which to start healing.
---
--- However we can combine the granularity of the rapid-checking and the controllable nature of
--- long-checking by rapidly checking into a queue (granularity), but requiring a totally clean
--- queue for regeneration to kick in (controllability).
+-- We combine the granularity of the rapid-checking and the controllable nature of long-checking by rapidly 
+-- checking into a queue (granularity), but requiring a totally clean queue for regeneration to kick in (controllability).
 function Update_Kus_CloakedFighter(CustomGroup, playerIndex, shipID)
 
     local this_cf = fetch_info(shipID)
@@ -72,7 +62,13 @@ function Update_Kus_CloakedFighter(CustomGroup, playerIndex, shipID)
         end
 
         if regen_enabled == 1 then
-            SobGroup_SetHealth(CustomGroup, this_cf.current_HP + 0.008)
+            if (SobGroup_UnderAttack(CustomGroup) == 0) then -- not under attack
+                if (SobGroup_IsDocked(CustomGroup) == 0) then -- not docked
+                    if (SobGroup_GetActualSpeed(CustomGroup) < 1) then -- stopped
+                        SobGroup_SetHealth(CustomGroup, this_cf.current_HP + 0.016) -- fully heals in about 60 seconds with 1 call per second
+                    end
+                end
+            end
         end
     end
 

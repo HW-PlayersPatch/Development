@@ -12,7 +12,7 @@ setPenetration(NewWeaponType,5,1,
 {TorpedoArmor=0},
 {HeavyMissileArmor=0},
 {SmallMissileArmor=0},
-{SubSystemArmour=2.3},
+{SubSystemArmour=2.0},
 {TurretArmour=0.85},
 {MediumArmour=1.6},
 {HeavyArmour=1.5});
@@ -27,9 +27,9 @@ setAccuracy(NewWeaponType,1,
 {Corvette=0.20},
 {Corvette_hw1=0.225},
 {munition=0.01},
-{Frigate=0.80},
+{Frigate=0.60},
 {SmallCapitalShip=0.88},
-{BigCapitalShip=1.0},
+{BigCapitalShip=0.88},
 {ResourceLarge=0.9});
 setAngles(NewWeaponType,0,-15,15,-15,15);
 setFrustratedTimers(NewWeaponType, 0.0, 10.0);

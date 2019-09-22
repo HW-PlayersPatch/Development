@@ -1,8 +1,8 @@
 StartWeaponConfig(NewWeaponType,"Gimble","Bullet","HDefense","Normal",2200,2200,0,0,0,0,1,1,0,0.3,2,2,0,0,0,0,0.1,"Normal",0,0,0);
 AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",5,7,"");
 setPenetration(NewWeaponType,5,1,
-{Unarmoured=1.0},
-{Unarmoured_hw1=1.0},
+{Unarmoured=1.0*3},
+{Unarmoured_hw1=1.0*3},
 {LightArmour=1.0},
 {LightArmour_hw1=1.0},
 {PlanetKillerArmour=0},

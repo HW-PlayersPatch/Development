@@ -1,4 +1,4 @@
-StartWeaponConfig(NewWeaponType,"Gimble","Bullet","Dread_Bomb","Normal",1750*2.0,3200,0,0,0,0,1,1,1,6.0,0,0,1,0,0,0,0.1,"Normal",0,0,0);
+StartWeaponConfig(NewWeaponType,"Gimble","Bullet","Dread_Bomb","Normal",1750,3200,0,0,0,0,1,1,1,6.0,0,0,0,0,0,0,0.1,"Normal",0,0,0);
 AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",200,275,"");
 setPenetration(NewWeaponType,5,1,
 {Unarmoured=0.13},

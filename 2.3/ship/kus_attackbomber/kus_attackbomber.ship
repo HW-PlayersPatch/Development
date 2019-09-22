@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$10004"
 NewShipType.sobDescription="$10005"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 125)	
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 135)	
 NewShipType.regentime=0
 NewShipType.minRegenTime=0
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)

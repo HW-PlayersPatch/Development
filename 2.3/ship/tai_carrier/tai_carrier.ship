@@ -157,10 +157,10 @@ addAbility(NewShipType,"RetireAbility",1,1);
 NewShipType.noCombatGrouping=1
 addCustomCode(NewShipType,"data:Ship/Tai_Carrier/Tai_Carrier.lua","Load_Tai_Carrier","Create_Tai_Carrier","Update_Tai_Carrier","","Tai_Carrier",2)
 LoadModel(NewShipType,1);
-StartShipWeaponConfig(NewShipType,"HW1_MothershipGun","Weapon_Gun0","Weapon_Gun0");
-StartShipWeaponConfig(NewShipType,"HW1_MothershipGun","Weapon_Gun1","Weapon_Gun1");
-StartShipWeaponConfig(NewShipType,"HW1_MothershipGun","Weapon_Gun2","Weapon_Gun2");
-StartShipWeaponConfig(NewShipType,"HW1_MothershipGun","Weapon_Gun3","Weapon_Gun3");
+StartShipWeaponConfig(NewShipType,"HW1_MothershipGun2","Weapon_Gun0","Weapon_Gun0");
+StartShipWeaponConfig(NewShipType,"HW1_MothershipGun2","Weapon_Gun1","Weapon_Gun1");
+StartShipWeaponConfig(NewShipType,"HW1_MothershipGun2","Weapon_Gun2","Weapon_Gun2");
+StartShipWeaponConfig(NewShipType,"HW1_MothershipGun2","Weapon_Gun3","Weapon_Gun3");
 addShield(NewShipType,"EMP",10000,20);
 StartShipHardPointConfig(NewShipType,"Engine","Hardpoint_Engine","System","Innate","Damageable","Tai_CarrierEngine","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Resource","Hardpoint_Resource","System","Innate","Damageable","Tai_CarrierResource","","","","","","","","");
