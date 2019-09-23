@@ -8,7 +8,7 @@ Number_Properties = {
 	cfg_race_select_weight = 0.0,
 	cfg_race_is_random = 0.0,
 	
-	cfg_hyperspace_effect_time = 6.0,
+	cfg_hyperspace_effect_time = 7.0,
 	cfg_buildable_subsystems = 1.0,
 	cfg_advanced_research = 1.0,
 	cfg_bc_can_upgrade = 1.0,
