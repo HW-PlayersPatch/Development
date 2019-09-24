@@ -40,7 +40,8 @@ effects =
                 { "animtime", "0", }, 
                 { "marker", "Root", }, 
                 { "fx", "death_generic_fighter" },
-								{ "fx_scale", "1.35" }, 
+                { "sound", "EXPLOSION/tiny/ETG_EXPLODE_TINY_PLASMA" },
+                { "fx_scale", "1.35" }, 
             },
         event2 = 
             { 
