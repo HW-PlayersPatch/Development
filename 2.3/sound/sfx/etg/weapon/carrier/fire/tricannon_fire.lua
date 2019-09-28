@@ -2,13 +2,11 @@
 
 version = 4
 
-volume = 0.600000
-frequency = -1
-maxPolyphony = 8
+volume = 0.900000
 envelope = {
   {
     distance = 0.000000,
-    volume = 0.440000,
+    volume = 0.370000,
     reverb = 0.000000,
     duration = 0,
     equalizer = {
@@ -23,8 +21,8 @@ envelope = {
     }
   },
   {
-    distance = 966.666687,
-    volume = 0.335000,
+    distance = 800.000000,
+    volume = 0.355000,
     reverb = 0.000000,
     duration = 0,
     equalizer = {
@@ -39,8 +37,8 @@ envelope = {
     }
   },
   {
-    distance = 2833.333252,
-    volume = 0.125000,
+    distance = 1716.666626,
+    volume = 0.305000,
     reverb = 0.000000,
     duration = 0,
     equalizer = {
@@ -55,8 +53,8 @@ envelope = {
     }
   },
   {
-    distance = 4000.000000,
-    volume = 0.10000,
+    distance = 3383.333252,
+    volume = 0.165000,
     reverb = 0.000000,
     duration = 0,
     equalizer = {
@@ -64,14 +62,14 @@ envelope = {
               1.000000,
               1.000000,
               1.000000,
-              0.870000,
-              0.760000,
-              0.790000,
-              0.740000,
+              0.660000,
+              0.610000,
+              0.620000,
+              0.650000,
     }
   },
   {
-    distance = 6583.333496,
+    distance = 4800.000000,
     volume = 0.000000,
     reverb = 0.000000,
     duration = 0,
@@ -80,18 +78,12 @@ envelope = {
               1.000000,
               1.000000,
               1.000000,
-              0.250000,
-              0.170000,
-              0.000000,
+              0.660000,
+              0.320000,
+              0.010000,
               0.000000,
     }
   },
 }
-container = 1
-playlist = 0
-randContainer = 1
-loopingPlaylist = 0
-silenceBreak = 0.000000
-silenceRandom = 0.000000
-randSampContainer = 1
+randSampContainer = 0
 
