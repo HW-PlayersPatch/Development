@@ -122,6 +122,7 @@ NewShipType.preciseSelectionLimit=7500
 NewShipType.preciseATILimit=0
 NewShipType.selectionPriority=75
 NewShipType.militaryUnit=0
+NewShipType.alternativeHyperspaceTime = 9.5
 NewShipType.SMHighlightDistMin=20000
 NewShipType.SMHighlightDistMax=25000
 addAbility(NewShipType,"MoveCommand",1,0);
@@ -140,7 +141,7 @@ NewShipType.launchTimeBeforeStart=2
 NewShipType.launchNrOfShipsInDockFormation=1
 NewShipType.launchFormation="delta"
 NewShipType.strikeGroupRadius=150
-addAbility(NewShipType,"ShipHold",1,40,100,"rallypoint","Fighter, Corvette,Utility",35,{Fighter="3"},{Corvette="32"});
+addAbility(NewShipType,"ShipHold",1,40,100,"rallypoint","Fighter, Corvette,Utility",35,{Fighter="3"},{Corvette="32"},{Utility="88"});
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand",0,1,400,800,0,3);

@@ -1,5 +1,30 @@
 KUS_DRONEFRIGATE_DRONE_COUNT = 14
 KUS_DRONEFRIGATE_WEAPON_RANGE = 2660
+KUS_DRONE_PARADE_POSITIONS = {
+	{210, 0, 0+10},
+	{-210, 0, 0+10},
+	{0, 210, 0+10},
+	{0, -210, 0+10},
+	{0, 0, 210+10},
+	{0, 0, -210+10},
+	{120, 120, 120+10},
+	{-120, 120, 120+10},
+	{120, -120, 120+10},
+	{-120, -120, 120+10},
+	{120, 120, -120+10},
+	{-120, 120, -120+10},
+	{120, -120, -120+10},
+	{-120, -120, -120+10},
+	{1050, -525, 700}
+}
+
+function Drone_GetParadePosition(frigate_position, drone_index)
+	local parade_position = {}
+	for i, v in frigate_position do
+		parade_position[i] = v + KUS_DRONE_PARADE_POSITIONS[drone_index + 1][i]
+	end
+	return parade_position
+end
 
 function SobGroup_AnyBeingCaptured(group)
 	local group_being_captured = group .. "_being_captured"
@@ -179,8 +204,11 @@ function Update_DroneFrigate(CustomGroup, playerIndex, shipID)
 				end
 
 				if (SobGroup_AnyAreAttacking(this_drone) == 1) then -- this check is seperate so the frigate can (uniquely) do move commands while shooting
-					if (SobGroup_GetDistanceToSobGroup(this_drone, CustomGroup) > 300) then
-						SobGroup_MoveToPoint(SobGroup_GetPlayerOwner(this_drone), this_drone, SobGroup_GetPosition(CustomGroup)) -- move close to frigate
+					local this_drone_position = SobGroup_GetPosition(this_drone)
+					local parade_position = Drone_GetParadePosition(SobGroup_GetPosition(CustomGroup), k)
+					local too_far = random(50, 250)
+					if (GetDistanceBetweenPoints(parade_position, this_drone_position) > too_far) then
+						SobGroup_MoveToPoint(SobGroup_GetPlayerOwner(this_drone), this_drone, parade_position) -- move close to parade position
 					end
 				else
 					SobGroup_ParadeSobGroup(this_drone, CustomGroup, 0) -- reform parade around frigate

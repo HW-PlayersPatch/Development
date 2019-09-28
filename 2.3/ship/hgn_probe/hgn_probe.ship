@@ -68,14 +68,14 @@ NewShipType.antiFighterValue=0
 NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
 NewShipType.totalValue=0
-NewShipType.buildCost=120
+NewShipType.buildCost=150
 NewShipType.buildTime=15
 NewShipType.buildPriorityOrder=20
 NewShipType.retaliationRange=4800
 NewShipType.retaliationDistanceFromGoal=160
 NewShipType.visualRange=4000
-NewShipType.prmSensorRange=10000
-NewShipType.secSensorRange=10000
+NewShipType.prmSensorRange=10500
+NewShipType.secSensorRange=10500
 NewShipType.detectionStrength=1
 NewShipType.TOIcon="InvertedPentagon"
 NewShipType.TOScale=1
@@ -109,6 +109,7 @@ NewShipType.preciseSelectionLimit=2000
 NewShipType.preciseATILimit=5000
 NewShipType.selectionPriority=75
 NewShipType.militaryUnit=0
+NewShipType.alternativeHyperspaceTime = 7
 addAbility(NewShipType,"MoveCommand",1,1);
 NewShipType.ignoreRaceWhenDocking=0
 addAbility(NewShipType,"CanLaunch");

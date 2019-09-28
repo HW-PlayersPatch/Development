@@ -1,4 +1,4 @@
--- Rules utility functions
+-- Speech utility functions
 
 -- Used to resolve the race speech bug
 function SpeechRaceHelper()

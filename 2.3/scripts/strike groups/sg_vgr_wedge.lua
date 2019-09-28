@@ -24,7 +24,7 @@ Icon = {
 ExtFilter = "sgf_gbx,sgf_hwrm"
 Tags = "sgf_vgr"
 
-StanceGrouping = "Batch"
+StanceGrouping = "Shape"
 StanceGroupingAg = "Shape"
 StanceGroupingEv = "Subs"
 DeathDamage = 0.85
@@ -216,6 +216,7 @@ SupplyLimits =
 {
 	LayoutFighter = 14,
 	LayoutCorvette = 12,
+	SalvageCorvette = 0,
 	LayoutFrigate = 10,
 	LayoutDestroyer = 1,
 	LayoutBattleCruiser = 1,

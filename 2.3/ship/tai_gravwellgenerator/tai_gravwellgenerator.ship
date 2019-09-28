@@ -134,8 +134,8 @@ addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RetireAbility",1,1);
 addAbility(NewShipType,"HyperspaceInhibitorAbility",1,10500)
-addAbility(NewShipType,"CustomCommand",1,"$3191",1,0,166,1,0.65,0.0,300,"data:Ship/Tai_GravWellGenerator/Tai_GravWellGenerator.lua","Start_Tai_GravWellGenerator","Do_Tai_GravWellGenerator","Finish_Tai_GravWellGenerator","Tai_GravWellGenerator",1.9,1,1,1,1)
-addCustomCode(NewShipType,"data:Ship/Tai_GravWellGenerator/Tai_GravWellGenerator.lua","","Create_Tai_GravWellGenerator","Update_Tai_GravWellGenerator","Destroy_Tai_GravWellGenerator","Tai_GravWellGenerator",1.9)
+addAbility(NewShipType,"CustomCommand",1,"$3191",1,0,166,1,0.65,0.0,300,"data:Ship/Tai_GravWellGenerator/Tai_GravWellGenerator.lua","Start_Tai_GravWellGenerator","Do_Tai_GravWellGenerator","Finish_Tai_GravWellGenerator","Tai_GravWellGenerator",1.0,1,1,1,1)
+addCustomCode(NewShipType,"data:Ship/Tai_GravWellGenerator/Tai_GravWellGenerator.lua","","Create_Tai_GravWellGenerator","Update_Tai_GravWellGenerator","Destroy_Tai_GravWellGenerator","Tai_GravWellGenerator",1.0)
 LoadModel(NewShipType,1);
 addShield(NewShipType,"EMP",220,20);
 AddShipAbility(NewShipType, "Hyperspace", 0, "EnemyShipsWithinRadius", 10500)

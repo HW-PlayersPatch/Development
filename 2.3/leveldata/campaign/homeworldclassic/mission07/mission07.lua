@@ -21,6 +21,7 @@
 --kasfSoundEvent
 
 
+dofilepath("data:scripts/playerspatch_speech_util.lua")
 dofilepath("data:scripts/SCAR/SCAR_Util.lua")             --stock HW2 scripting utilities
 dofilepath("data:scripts/SCAR/KASUtil.lua")               --HW1->HW2 scripting utilities
 dofilepath("data:scripts/SCAR/SinglePlayerFlow.lua")      --Emulation of HW1 singleplayer functionality
@@ -169,92 +170,92 @@ strCurLanguage = 1  --Naive treatement of localization language.;
 LSTRING_LCLocationCard = {  -- multilingual strings
 	"THE GARDENS OF KADESH",
 	"JARDINS DE KADESH",
-	"DIE GÄRTEN VON KADESH",
+	"DIE Gï¿½RTEN VON KADESH",
 	"LOS JARDINES DE KADESH",
 	"I GIARDINI DI KADESH", }
 LSTRING_FINebulaRich = {  -- multilingual strings
 	"The Nebula is incredibly rich in energy and resources.  Energy levels are so high that our sensors are having trouble compensating.\n\nBegin harvesting the nebula while we address this problem.",
-	"La Nébuleuse est incroyablement riche en énergie et en ressources. Il y a de tels niveaux d'énergie que nos détecteurs peinent à compenser.\n\nCommencez la collecte dans la nébuleuse pendant que nous nous penchons sur ce problème.",
-	"Der Nebel ist unglaublich reich an Energie und Rohstoffen. Die Energie-Level sind so hoch, dass unsere Sensoren Probleme haben, dies zu kompensieren.\n\nBeginnen Sie mit der Rohstoffernte im Nebel, während wir uns um dieses Problem kümmern.",
-	"La nebulosa es muy rica en energía y recursos. Los niveles de energía son tan altos que nuestros sensores no pueden compensarlos.\n\nEmpieza a recolectar en la nebulosa mientras buscamos solución a este problema.",
-	"Questa nebulosa è ricchissima di energia e risorse; i livelli energetici sono così alti che i nostri sensori non riescono a calcolarli.\n\nComincia la raccolta delle risorse, mentre tentiamo di risolvere questo problema.", }
+	"La Nï¿½buleuse est incroyablement riche en ï¿½nergie et en ressources. Il y a de tels niveaux d'ï¿½nergie que nos dï¿½tecteurs peinent ï¿½ compenser.\n\nCommencez la collecte dans la nï¿½buleuse pendant que nous nous penchons sur ce problï¿½me.",
+	"Der Nebel ist unglaublich reich an Energie und Rohstoffen. Die Energie-Level sind so hoch, dass unsere Sensoren Probleme haben, dies zu kompensieren.\n\nBeginnen Sie mit der Rohstoffernte im Nebel, wï¿½hrend wir uns um dieses Problem kï¿½mmern.",
+	"La nebulosa es muy rica en energï¿½a y recursos. Los niveles de energï¿½a son tan altos que nuestros sensores no pueden compensarlos.\n\nEmpieza a recolectar en la nebulosa mientras buscamos soluciï¿½n a este problema.",
+	"Questa nebulosa ï¿½ ricchissima di energia e risorse; i livelli energetici sono cosï¿½ alti che i nostri sensori non riescono a calcolarli.\n\nComincia la raccolta delle risorse, mentre tentiamo di risolvere questo problema.", }
 LSTRING_FIUnknownContacts = {  -- multilingual strings
 	"There is a contact closing with the Mothership.  Sensors instability in this region makes it difficult to identify.",
-	"Contact établi avec véhicule près du Vaisseau Mère, mais l'instabilité des détecteurs dans cette région rend son identification difficile.",
-	"Ein Kontakt nähert sich dem Mutterschiff. Die Sensor-Instabilität in dieser Region macht eine Identifikation sehr schwierig.",
-	"Se está cerrando un contacto con la Nave nodriza. La inestabilidad de los sensores en esta zona dificulta la identificación de ese contacto.",
-	"C'è un contatto in avvicinamento all'Astronave Madre. Purtroppo, i sensori sono fuori scala e non riescono a identificarlo.", }
+	"Contact ï¿½tabli avec vï¿½hicule prï¿½s du Vaisseau Mï¿½re, mais l'instabilitï¿½ des dï¿½tecteurs dans cette rï¿½gion rend son identification difficile.",
+	"Ein Kontakt nï¿½hert sich dem Mutterschiff. Die Sensor-Instabilitï¿½t in dieser Region macht eine Identifikation sehr schwierig.",
+	"Se estï¿½ cerrando un contacto con la Nave nodriza. La inestabilidad de los sensores en esta zona dificulta la identificaciï¿½n de ese contacto.",
+	"C'ï¿½ un contatto in avvicinamento all'Astronave Madre. Purtroppo, i sensori sono fuori scala e non riescono a identificarlo.", }
 LSTRING_FIPreparingAmbassador = {  -- multilingual strings
 	"Prepare the Ambassador.",
-	"Préparation de l'Ambassadeur.",
+	"Prï¿½paration de l'Ambassadeur.",
 	"Botschafter bereitmachen.",
 	"Preparad al embajador.",
 	"Prepara l'Ambassador.", }
 LSTRING_FIDefendMothership = {  -- multilingual strings
 	"Delay the attacking ships while Fleet Command charges the hyperdrive module.  We should have the range to jump clear of the nebula.",
-	"Retardez les vaisseaux agresseurs pendant que l'Amirauté charge le module d'hyperpropulsion. La portée devrait être suffisante pour nous faire bondir hors de la nébuleuse.",
-	"Halten Sie die angreifenden Schiffe zurück, während das Flottenkommando das Hypersprung-Modul auflädt. Unsere Reichweite sollte so groß sein, dass wir aus dem Nebel herausspringen.",
-	"Distrae a las naves atacantes mientras el mando de la flota carga el módulo de hiperpropulsión. Deberemos tener el alcance necesario para salir de la nebulosa.",
+	"Retardez les vaisseaux agresseurs pendant que l'Amirautï¿½ charge le module d'hyperpropulsion. La portï¿½e devrait ï¿½tre suffisante pour nous faire bondir hors de la nï¿½buleuse.",
+	"Halten Sie die angreifenden Schiffe zurï¿½ck, wï¿½hrend das Flottenkommando das Hypersprung-Modul auflï¿½dt. Unsere Reichweite sollte so groï¿½ sein, dass wir aus dem Nebel herausspringen.",
+	"Distrae a las naves atacantes mientras el mando de la flota carga el mï¿½dulo de hiperpropulsiï¿½n. Deberemos tener el alcance necesario para salir de la nebulosa.",
 	"Trattieni le navi nemiche mentre il Comando della Flotta carica il modulo dell'iperguida. Dovremmo essere in grado di allontanarci dalla nebulosa.", }
 LSTRING_FCHyperModuleCharging1 = {  -- multilingual strings
 	"Hyperspace module at 35%, ready in 8 minutes.",
-	"Module hyperspatial à 35%, prêt dans 8 minutes.",
+	"Module hyperspatial ï¿½ 35%, prï¿½t dans 8 minutes.",
 	"Hypersprung-Modul bei 35%. Bereit in 8 Minuten.",
-	"Módulo hiperespacial al 35%, preparado en 8 minutos.",
+	"Mï¿½dulo hiperespacial al 35%, preparado en 8 minutos.",
 	"Modulo dell'Iperspazio al 35%, pronto in 8 minuti.", }
 LSTRING_FCHyperModuleCharging2 = {  -- multilingual strings
 	"Hyperspace module at 90%, ready in 1 minute.",
-	"Module hyperspatial à 90%, prêt dans 1 minute.",
+	"Module hyperspatial ï¿½ 90%, prï¿½t dans 1 minute.",
 	"Hypersprung-Modul bei 90%. Bereit in 1 Minute.",
-	"Módulo hiperespacial al 90%, preparado en 1 minuto.",
+	"Mï¿½dulo hiperespacial al 90%, preparado en 1 minuto.",
 	"Modulo dell'Iperspazio al 90%, pronto in 1 minuto.", }
 LSTRING_FCLetsGetOutOfHere = {  -- multilingual strings
 	"Hyperspace module fully charged.  Get us out of this place.",
 	"Activation  maximale du module hyperspatial. Sortez-nous vite d'ici.",
 	"Hypersprung-Modul voll aufgeladen. Nichts wie raus hier!",
-	"Módulo hiperespacial completamente cargado. Vámonos de este sitio.",
+	"Mï¿½dulo hiperespacial completamente cargado. Vï¿½monos de este sitio.",
 	"Modulo dell'Iperspazio pronto. Andiamocene da qui.", }
 LSTRING_FIEngage = {  -- multilingual strings
 	"Yes, co-ordinates set.  Engage hyperdrive!",
-	"Oui, le cap est déterminé. Enclenchez l'hyperpropulsion!",
+	"Oui, le cap est dï¿½terminï¿½. Enclenchez l'hyperpropulsion!",
 	"Ja, Koordinaten sind eingestellt. Hypersprung-Aggregat einschalten!",
-	"Sí, coordenadas establecidas. Activar hiperpropulsión.",
+	"Sï¿½, coordenadas establecidas. Activar hiperpropulsiï¿½n.",
 	"Coordinate impostate: attiva l'iperguida!", }
 LSTRING_FCHyperdriveFail = {  -- multilingual strings
 	"Hyperdrive jump failed!  The Quantum waveform collapsed before the ship could enter hyperspace.",
-	"Le bond par hyperpropulsion a échoué ! Il y a eu effondrement de l'amplitude quantique avant même que le vaisseau puisse atteindre l'hyperespace.  ",
+	"Le bond par hyperpropulsion a ï¿½chouï¿½ ! Il y a eu effondrement de l'amplitude quantique avant mï¿½me que le vaisseau puisse atteindre l'hyperespace.  ",
 	"Hyperraum-Sprung fehlgeschlagen! Die Quanten-Wellenform brach zusammen, bevor das Schiff in den Hyperraum eintreten konnte.",
-	"Ha fallado la hiperpropulsión. La forma de onda cuántica ha colapsado antes de que la nave pudiera entrar en el hiperespacio.",
-	"Salto nell'Iperspazio fallito! La forma d'onda Quantum è collassata prima che la nave potesse entrare nell'Iperspazio.", }
+	"Ha fallado la hiperpropulsiï¿½n. La forma de onda cuï¿½ntica ha colapsado antes de que la nave pudiera entrar en el hiperespacio.",
+	"Salto nell'Iperspazio fallito! La forma d'onda Quantum ï¿½ collassata prima che la nave potesse entrare nell'Iperspazio.", }
 LSTRING_FIContinueProtecting = {  -- multilingual strings
 	"Analyzing malfunction.  Continue to protect the Mothership until the problem is solved.",
-	"Analyse de la défaillance. Protection du Vaisseau Mère jusqu'à résolution du problème.",
-	"Fehlfunktion wird analysiert. Schützen Sie weiterhin das Mutterschiff, bis das Problem gelöst ist.",
+	"Analyse de la dï¿½faillance. Protection du Vaisseau Mï¿½re jusqu'ï¿½ rï¿½solution du problï¿½me.",
+	"Fehlfunktion wird analysiert. Schï¿½tzen Sie weiterhin das Mutterschiff, bis das Problem gelï¿½st ist.",
 	"Analizando fallo de funcionamiento. Sigue protegiendo la Nave nodriza hasta que se resuelva el problema.",
 	"Stiamo analizzando il malfunzionamento: continua a proteggere l'Astronave Madre fino a quando non avremo trovato una soluzione.", }
 LSTRING_FINewResearch = {  -- multilingual strings
 	"We have never had to combat so many fighter craft before.  Our Research division has determined that it can design a new type of Corvette specially suited to combat multiple fighters.  Begin Research as soon as possible.",
-	"Jamais n'avons nous dû affronter autant de chasseurs. Notre Service de recherche a établi la faisabilité d'un nouveau type de Corvette adapté au combat contre de multiples chasseurs.  Lancez cette recherche dès que possible.",
-	"Wir mussten uns noch nie so vielen Jägern gleichzeitig stellen. Unsere Forschungsabteilung hat festgestellt, dass sie einen neuen Korvettentyp entwickeln kann, der speziell für den Kampf gegen mehrere Jäger ausgelegt ist. Beginnen Sie so schnell wie möglich mit den Forschungsarbeiten.",
-	"Nunca habíamos tenido que enfrentarnos a tantos cazas juntos. Nuestra división de investigación ha determinado que puede diseñar un nuevo tipo de corbeta concebida especialmente para combatir a varios cazas. La investigación debe comenzar cuanto antes.",
-	"Non abbiamo mai dovuto combattere con così tanti caccia prima d'ora. I nostri ricercatori pensano di poter creare un nuovo tipo di Corvetta, dedicata al combattimento contro nemici multipli. Comincia le ricerche il prima possibile.", }
+	"Jamais n'avons nous dï¿½ affronter autant de chasseurs. Notre Service de recherche a ï¿½tabli la faisabilitï¿½ d'un nouveau type de Corvette adaptï¿½ au combat contre de multiples chasseurs.  Lancez cette recherche dï¿½s que possible.",
+	"Wir mussten uns noch nie so vielen Jï¿½gern gleichzeitig stellen. Unsere Forschungsabteilung hat festgestellt, dass sie einen neuen Korvettentyp entwickeln kann, der speziell fï¿½r den Kampf gegen mehrere Jï¿½ger ausgelegt ist. Beginnen Sie so schnell wie mï¿½glich mit den Forschungsarbeiten.",
+	"Nunca habï¿½amos tenido que enfrentarnos a tantos cazas juntos. Nuestra divisiï¿½n de investigaciï¿½n ha determinado que puede diseï¿½ar un nuevo tipo de corbeta concebida especialmente para combatir a varios cazas. La investigaciï¿½n debe comenzar cuanto antes.",
+	"Non abbiamo mai dovuto combattere con cosï¿½ tanti caccia prima d'ora. I nostri ricercatori pensano di poter creare un nuovo tipo di Corvetta, dedicata al combattimento contro nemici multipli. Comincia le ricerche il prima possibile.", }
 LSTRING_FIProtectResources = {  -- multilingual strings
 	"Enemy forces are concentrating on our Resource Collectors.  Allocate combat vessels to protect them.",
-	"Les forces ennemies se concentrent sur nos Collecteurs de Ressources.  Affectez des unités de combat à leur protection.",
-	"Feindliche Kräfte konzentrieren sich auf unsere Rohstoffernteschiffe. Setzen Sie Kampfschiffe zu ihrem Schutz ein.",
-	"Las fuerzas enemigas se concentran en nuestros recolectores de recursos. Asigna naves de combate a su protección.",
+	"Les forces ennemies se concentrent sur nos Collecteurs de Ressources.  Affectez des unitï¿½s de combat ï¿½ leur protection.",
+	"Feindliche Krï¿½fte konzentrieren sich auf unsere Rohstoffernteschiffe. Setzen Sie Kampfschiffe zu ihrem Schutz ein.",
+	"Las fuerzas enemigas se concentran en nuestros recolectores de recursos. Asigna naves de combate a su protecciï¿½n.",
 	"Le forze nemiche si stanno concentrando intorno ai nostri Collettori di Ricerca: disponi le forze in modo da proteggerli.", }
 LSTRING_FCHyperspaceBack = {  -- multilingual strings
 	"The Hyperdrive is back on-line.",
-	"L'hyperpropulsion est de nouveau opérationnelle.",
+	"L'hyperpropulsion est de nouveau opï¿½rationnelle.",
 	"Das Hypersprung-Aggregat ist wieder online.",
-	"Ya funciona la hiperpropulsión.",
-	"L'Iperguida è di nuovo operativa.", }
+	"Ya funciona la hiperpropulsiï¿½n.",
+	"L'Iperguida ï¿½ di nuovo operativa.", }
 LSTRING_FIJumpAway = {  -- multilingual strings
 	"Let's put these fanatics behind us.",
 	"Semons ces fanatiques.",
 	"Nichts wie weg von diesen Irren.",
-	"Alejémonos de esos fanáticos.",
+	"Alejï¿½monos de esos fanï¿½ticos.",
 	"Lasciamoci alle spalle questi pazzi.", }
 LSTRING_TBHyperspace = {  -- multilingual strings
 	"                HYPERSPACE",
@@ -264,26 +265,26 @@ LSTRING_TBHyperspace = {  -- multilingual strings
 	"				IPERSPAZIO", }
 LSTRING_OBDefendFleet = {  -- multilingual strings
 	"Defend Fleet",
-	"Défendre la Flotte",
-	"Flotte schützen.",
+	"Dï¿½fendre la Flotte",
+	"Flotte schï¿½tzen.",
 	"Defiende la flota",
 	"Difendi la flotta", }
 LSTRING_OBHarvestNebula = {  -- multilingual strings
 	"Harvest Nebula",
-	"Collecter des ressources au sein de la Nébuleuse",
+	"Collecter des ressources au sein de la Nï¿½buleuse",
 	"Rohstoffe in Nebelwolke ernten.",
 	"Recolecta nebulosas",
 	"Raccogli le risorse nella nebulosa", }
 LSTRING_OBProtect = {  -- multilingual strings
 	"Protect Resourcers",
-	"Protéger les collecteurs de ressources",
-	"Rohstoffschiffe schützen.",
+	"Protï¿½ger les collecteurs de ressources",
+	"Rohstoffschiffe schï¿½tzen.",
 	"Protege los recursos",
 	"Proteggi le risorse", }
 LSTRING_LevelSave = {  -- multilingual strings
 	"07 - The Gardens of Kadesh",
 	"07 - Jardins de Kadesh",
-	"07 – Die Gärten von Kadesh",
+	"07 ï¿½ Die Gï¿½rten von Kadesh",
 	"07 - Los jardines de Kadesh",
 	"07 - I giardini di Kadesh", }
 
@@ -3206,6 +3207,9 @@ end
 function OnStartOrLoad()
     print("OnStartOrLoad issued")
 
+	-- Write race list
+	SpeechRaceHelper()
+	
     --Mission-global GrowSelections/SobGroups
     KASSobGroup_Create("GrowSelection_AdvSwarmers")
     KASSobGroup_Create("GrowSelection_Armed")

@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$1526"
 NewShipType.sobDescription="$1527"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 25000)
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 22000)
 NewShipType.regentime=1100
 NewShipType.minRegenTime=1100
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.2)
@@ -76,7 +76,7 @@ NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=5
 NewShipType.totalValue=10
 NewShipType.buildCost=1000
-NewShipType.buildTime=55
+NewShipType.buildTime=60
 NewShipType.buildPriorityOrder=25
 NewShipType.retaliationRange=5500
 NewShipType.retaliationDistanceFromGoal=160
@@ -115,6 +115,7 @@ NewShipType.selectionLimit=150000
 NewShipType.preciseATILimit=0
 NewShipType.selectionPriority=75
 NewShipType.militaryUnit=1
+NewShipType.alternativeHyperspaceTime = 7
 addAbility(NewShipType,"MoveCommand",1,0);
 addAbility(NewShipType,"CanDock",1,0);
 NewShipType.dockTimeBetweenTwoFormations=1

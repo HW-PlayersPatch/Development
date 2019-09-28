@@ -1,12 +1,12 @@
 StartWeaponConfig(NewWeaponType,"Fixed","Missile","Kus_MissileVolley","Special Attack",675,4000,0,0,0,0,1,1,1,50,0,0,1,0,0,0,0.1,"Normal",1,0,0);
 AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",260,260,"");
 setPenetration(NewWeaponType,25,0.5,
-{Unarmoured=0.75},
-{Unarmoured_hw1=0.75},
+{Unarmoured=0.24*3},
+{Unarmoured_hw1=0.24*3},
 {LightArmour=0.82},
 {LightArmour_hw1=1.5},
 {MediumArmour=2.0},
-{HeavyArmour=3.0},
+{HeavyArmour=2.0},
 {TurretArmour=0.32},
 {MineArmour=1.0},
 {ResArmour=0.32},

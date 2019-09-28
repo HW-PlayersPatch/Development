@@ -116,6 +116,7 @@ NewShipType.preciseSelectionLimit=15000
 NewShipType.preciseATILimit=0
 NewShipType.selectionPriority=75
 NewShipType.militaryUnit=0
+NewShipType.alternativeHyperspaceTime = 9.5
 NewShipType.blobName="$1576"
 NewShipType.blobNamePriority=75
 NewShipType.SMHighlightDistMin=30000
@@ -135,7 +136,7 @@ NewShipType.launchTimeBeforeStart=2
 NewShipType.launchNrOfShipsInDockFormation=1
 NewShipType.launchFormation="delta"
 NewShipType.canJoinStrikeGroup=0
-addAbility(NewShipType,"ShipHold",1,40,100,"rallypoint","Fighter, Corvette, Utility",35,{SuperCap="2000"},{Frigate="800"},{Fighter="3"},{Corvette="32"});
+addAbility(NewShipType,"ShipHold",1,40,100,"rallypoint","Fighter, Corvette, Utility",35,{SuperCap="2000"},{Frigate="800"},{Fighter="3"},{Corvette="32"},{Utility="88"});
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand",0,3,1000,2000,0,3);

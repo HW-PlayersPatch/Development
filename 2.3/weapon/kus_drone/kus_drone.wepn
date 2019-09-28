@@ -1,13 +1,14 @@
-StartWeaponConfig(NewWeaponType,"AnimatedTurret","Bullet","HW1Kinetic_Small","Normal",2500,3000,0,0,0,0,1,1,1,0.2,1,0.2,1,0,260,260,0.1,"Normal",1,0,0)
-AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",10,10,"")
+StartWeaponConfig(NewWeaponType,"AnimatedTurret","Bullet","HW1Kinetic_Small","Normal",2100,2660,0,0,0,0,1,1,0,1.0,1,0.2,1,0,125,125,0.1,"Normal",1,0,0)
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",50,50,"")
 setPenetration(NewWeaponType,5,1,
-{unarmoured=0.25},
-{unarmoured_hw1=0.2},
-{LightArmour=0.1},
-{LightArmour_hw1=0.1},
+{unarmoured=0.15},
+{unarmoured_hw1=0.15},
+{LightArmour=0.07},
+{LightArmour_hw1=0.07},
 {MediumArmour=0.20},
 {HeavyArmour=0.25},
-{ResArmour=0.3},
+{TurretArmour=0.2},
+{ResArmour=0.25},
 {PlanetKillerArmour=0},
 {TorpedoArmor=0},
 {HeavyMissileArmor=0},
@@ -20,20 +21,20 @@ setAccuracy(NewWeaponType,1,
 {Torpedo=0},
 {HeavyMissile=0},
 {SmallMissile=0},
-{Fighter=0.425},
-{Fighter_hw1=0.425},
-{Corvette=0.5},
-{Corvette_hw1=0.5},
+{Fighter=0.90},
+{Fighter_hw1=0.90},
+{Corvette=0.75},
+{Corvette_hw1=0.87},
 {munition=0.02},
-{Frigate=0.95},
-{SmallCapitalShip=1.0},
-{BigCapitalShip=1.0},
-{ResourceLarge=0.85});
+{Frigate=0.9},
+{SmallCapitalShip=0.9},
+{BigCapitalShip=0.9},
+{ResourceLarge=0.78});
 setAngles(NewWeaponType,1,-179,179,-89,89);
 setMissProperties(NewWeaponType, 0.02, 0.04, 0.20, 0.30, 0.55, 0.55);
 setLifetimeMult(NewWeaponType, 1.77);
 setDamageFalloff(NewWeaponType, 0.15/2660.0, 0.1);
 setAccuracyFalloff(NewWeaponType, 0.15/2660.0, 0.1);
 setSpeedvsAccuracyAgainst(NewWeaponType, 1, 50.0, 1.5, 200, 1.1, 300, 1.0, 487, 1.1, 535, 1.5);
-setBallistics(NewWeaponType,1,0.0);
+setBallistics(NewWeaponType,0,0.0);
 setFireMultFactor(NewWeaponType, 1.0);

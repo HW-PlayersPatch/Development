@@ -1,8 +1,8 @@
-StartWeaponConfig(NewWeaponType,"Fixed","Missile","Kus_Missile","Normal",350,4000,0,0,0,0,1,1,1,2.75,0,0,1,1,0,0,0.1,"Normal",1,0,0);
+StartWeaponConfig(NewWeaponType,"Fixed","Missile","Kus_Missile","Normal",350,4000,0,0,0,0,1,1,1,2.75,0,0,1,0,0,0,0.1,"Normal",1,0,0);
 AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",130,130,"");
 setPenetration(NewWeaponType,15,0.5,
-{Unarmoured=0.3},
-{Unarmoured_hw1=0.3},
+{Unarmoured=0.24*2.4},
+{Unarmoured_hw1=0.24*2.4},
 {LightArmour=1.0 * 0.8},
 {LightArmour_hw1=1.5 * 0.8},
 {MediumArmour=0.98},

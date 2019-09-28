@@ -32,7 +32,7 @@ NewShipType.holdSlots=3
 NewShipType.mass=15
 NewShipType.collisionMultiplier=0.8
 NewShipType.thrusterMaxSpeed=232*0.9
-NewShipType.mainEngineMaxSpeed=254
+NewShipType.mainEngineMaxSpeed=232
 NewShipType.rotationMaxSpeed=172*0.95
 NewShipType.thrusterAccelTime=2*1.075
 NewShipType.thrusterBrakeTime=1*1.075
@@ -125,6 +125,7 @@ NewShipType.selectionLimit=150000
 NewShipType.preciseATILimit=0
 NewShipType.selectionPriority=75
 NewShipType.militaryUnit=1
+NewShipType.alternativeHyperspaceTime = 7
 addAbility(NewShipType,"MoveCommand",1,0);
 addAbility(NewShipType,"CanDock",1,1);
 NewShipType.dockTimeBetweenTwoFormations=0.5

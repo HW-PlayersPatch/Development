@@ -26,8 +26,8 @@ setAccuracy(NewWeaponType,1,
 {Corvette_hw1=0.225},
 {munition=0.05},
 {Frigate=0.70},
-{SmallCapitalShip=0.80},
-{BigCapitalShip=0.80},
+{SmallCapitalShip=0.84},
+{BigCapitalShip=0.84},
 {ResourceLarge=0.6});
 setAngles(NewWeaponType,0,-10,10,-10,10);
 setFrustratedTimers(NewWeaponType, 0.0, 10.0);

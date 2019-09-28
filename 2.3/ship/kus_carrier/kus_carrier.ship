@@ -142,7 +142,8 @@ NewShipType.launchFormation="delta"
 NewShipType.strikeGroupRadius=350
 addAbility(NewShipType,"ShipHold",1,71,100,"rallypoint","Fighter, Corvette, Utility",100,
 {Fighter="36"},
-{Corvette="340"});
+{Corvette="340"},
+{Utility="175"});
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand",1,1.1,400,1100,0,4);
@@ -156,10 +157,10 @@ addAbility(NewShipType,"RetireAbility",1,1);
 NewShipType.noCombatGrouping=1
 addCustomCode(NewShipType,"data:Ship/Kus_Carrier/Kus_Carrier.lua","Load_Kus_Carrier","Create_Kus_Carrier","Update_Kus_Carrier","","Kus_Carrier",2)
 LoadModel(NewShipType,1);
-StartShipWeaponConfig(NewShipType,"HW1_MothershipGun","Weapon_Gun0","Weapon_Gun0");
-StartShipWeaponConfig(NewShipType,"HW1_MothershipGun","Weapon_Gun1","Weapon_Gun1");
-StartShipWeaponConfig(NewShipType,"HW1_MothershipGun","Weapon_Gun2","Weapon_Gun2");
-StartShipWeaponConfig(NewShipType,"HW1_MothershipGun","Weapon_Gun3","Weapon_Gun3");
+StartShipWeaponConfig(NewShipType,"HW1_MothershipGun2","Weapon_Gun0","Weapon_Gun0");
+StartShipWeaponConfig(NewShipType,"HW1_MothershipGun2","Weapon_Gun1","Weapon_Gun1");
+StartShipWeaponConfig(NewShipType,"HW1_MothershipGun2","Weapon_Gun2","Weapon_Gun2");
+StartShipWeaponConfig(NewShipType,"HW1_MothershipGun2","Weapon_Gun3","Weapon_Gun3");
 addShield(NewShipType,"EMP",10000,20);
 StartShipHardPointConfig(NewShipType,"Engine","Hardpoint_Engine","System","Innate","Damageable","Kus_CarrierEngine","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Resource","Hardpoint_Resource","System","Innate","Damageable","Kus_CarrierResource","","","","","","","","");

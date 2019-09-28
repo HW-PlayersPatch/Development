@@ -115,6 +115,7 @@ NewShipType.preciseSelectionLimit=5000
 NewShipType.preciseATILimit=0
 NewShipType.selectionPriority=75
 NewShipType.militaryUnit=1
+NewShipType.alternativeHyperspaceTime = 7
 NewShipType.SMHighlightDistMin=15000
 NewShipType.SMHighlightDistMax=25000
 addAbility(NewShipType,"MoveCommand",1,0);

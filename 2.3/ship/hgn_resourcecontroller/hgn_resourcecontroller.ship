@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$1534"
 NewShipType.sobDescription="$1535"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 16000)
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 18000)
 NewShipType.regentime=850
 NewShipType.minRegenTime=850
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
@@ -123,6 +123,7 @@ NewShipType.selectionLimit=150000
 NewShipType.preciseATILimit=0
 NewShipType.selectionPriority=75
 NewShipType.militaryUnit=0
+NewShipType.alternativeHyperspaceTime = 7
 addAbility(NewShipType,"MoveCommand",1,0);
 addAbility(NewShipType,"CanDock",1,0);
 NewShipType.dockTimeBetweenTwoFormations=1
@@ -137,7 +138,7 @@ NewShipType.launchTimeBetweenTwoFormations=1
 NewShipType.launchTimeBeforeStart=2
 NewShipType.launchNrOfShipsInDockFormation=1
 NewShipType.launchFormation="delta"
-addAbility(NewShipType,"ShipHold",1,40,0,"rallypoint","",35);
+addAbility(NewShipType,"ShipHold",1,40,0,"rallypoint","",35,{Utility="88"});
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand",0,1,300,500,0,3);

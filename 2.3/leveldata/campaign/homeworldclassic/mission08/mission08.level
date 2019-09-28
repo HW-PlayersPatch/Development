@@ -2040,7 +2040,7 @@ player[1] = {
      id = 1,
      name = "Pirates2",
      resources = 5000,
-     raceName = "Vaygr",
+     raceName = "Kadeshi",
      startPos = 0,
 }
 
@@ -2056,7 +2056,7 @@ player[3] = {
      id = 3,
      name = "Taiidan",
      resources = 5000,
-     raceName = "Vaygr",
+     raceName = "Kadeshi",
      startPos = 0,
 }
 

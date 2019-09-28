@@ -140,7 +140,8 @@ addAbility(NewShipType,"ShipHold",1,250,200,"rallypoint","Fighter,Corvette,Utili
 {SuperCap="2000"},
 {Frigate="800"},
 {Fighter="36"},
-{Corvette="340"});
+{Corvette="340"},
+{Utility="175"});
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand",1,1.1,1000,1500,0,4);
 addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1,"Fighter_hw1, Fighter, Swarmer, Corvette_hw1, Corvette, Capturer, Frigate, SmallCapitalShip, BigCapitalShip, Utility, Mothership","JustShoot");

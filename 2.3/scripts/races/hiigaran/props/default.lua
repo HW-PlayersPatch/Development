@@ -4,11 +4,11 @@ Number_Properties_Priority = 1.0
 
 Number_Properties = {
 	cfg_race_is_playable = 1.0,
-	cfg_race_index_sort = 1.0,
+	cfg_race_index_sort = 4.0,
 	cfg_race_select_weight = 1.001,
 	cfg_race_is_random = 0.0,
 	
-	cfg_hyperspace_effect_time = 6.0,
+	cfg_hyperspace_effect_time = 9.5,
 	cfg_buildable_subsystems = 1.0,
 	cfg_advanced_research = 1.0,
 	cfg_bc_can_upgrade = 1.0,

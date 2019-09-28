@@ -23,7 +23,7 @@ Icon = {
 ExtFilter = "sgf_gbx,sgf_hwrm"
 Tags = "sgf_common"
 
-StanceGrouping = "Batch"
+StanceGrouping = "Shape"
 StanceGroupingAg = "Shape"
 StanceGroupingEv = "Subs"
  
@@ -267,6 +267,7 @@ SupplyLimits =
 {
 	LayoutFighter = 21,
 	LayoutCorvette = 21,
+	SalvageCorvette = 0,
 	LayoutFrigate = 11,
 	LayoutDestroyer = 5,
 	LayoutBattleCruiser = 1,
