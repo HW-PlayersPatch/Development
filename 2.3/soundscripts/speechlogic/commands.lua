@@ -85,18 +85,26 @@ function raceHelper()
 	end
 end
 
--- Race IDs (Default reference with no restrictions, like in SP)
+-- Race IDs (Default reference table with no race restrictions, as a back-up incase race.lua is not present in the profiles folder.)
 Race_ID =
 {
+	"Random",
+	"RandomHW2",
+	"RandomHW1",
 	"Hiigaran",
 	"Vaygr",
-	"Keeper",
-	"Bentusi",
 	"Kushan",
 	"Taiidan",
+	"Keeper",
+	"Bentusi",
 	"Turanic Raiders",
 	"Kadeshi",
 	"P3",
+	"Observer",
+	"2x_Hiigaran",
+	"2x_Vaygr",
+	"2x_Kushan",
+	"2x_Taiidan",
 }
 bRaceID = nil
 Hiigaran = 1

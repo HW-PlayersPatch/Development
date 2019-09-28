@@ -23,6 +23,7 @@
 --kasfSoundEvent
 
 
+dofilepath("data:scripts/playerspatch_speech_util.lua")
 dofilepath("data:scripts/SCAR/SCAR_Util.lua")             --stock HW2 scripting utilities
 dofilepath("data:scripts/SCAR/KASUtil.lua")               --HW1->HW2 scripting utilities
 dofilepath("data:scripts/SCAR/SinglePlayerFlow.lua")      --Emulation of HW1 singleplayer functionality
@@ -105,31 +106,31 @@ strCurLanguage = 1  --Naive treatement of localization language.;
 LSTRING_Savegame = {  -- multilingual strings
 	"10 - Super Nova Station",
 	"10 - Station Super Nova",
-	"10 – Supernova-Station",
-	"10 - Estación Supernova",
+	"10 ï¿½ Supernova-Station",
+	"10 - Estaciï¿½n Supernova",
 	"10 - La stazione Super Nova", }
 LSTRING_LocationCard = {  -- multilingual strings
 	"Super Nova Research Station",
 	"Station de Recherche Super Nova",
 	"Supernova-Forschungsstation",
-	"Estación de investigación Supernova",
+	"Estaciï¿½n de investigaciï¿½n Supernova",
 	"Stazione di ricerca Super Nova", }
 LSTRING_Objective1 = {  -- multilingual strings
 	"Destroy Research Outpost",
 	"Station de Recherche Super Nova",
-	"Supernova-Forschungsstation zerstören",
-	"Destruir puesto de investigación",
+	"Supernova-Forschungsstation zerstï¿½ren",
+	"Destruir puesto de investigaciï¿½n",
 	"Distruggi l'avamposto di ricerca", }
 LSTRING_Objective2 = {  -- multilingual strings
 	"Destroy all defense forces",
-	"Destruction totalité des forces defensives ",
-	"Alle Verteidigungsstreitkräfte eliminieren.",
+	"Destruction totalitï¿½ des forces defensives ",
+	"Alle Verteidigungsstreitkrï¿½fte eliminieren.",
 	"Destruir todas las fuerzas defensivas",
 	"Distruggi tutte le forze di difesa", }
 LSTRING_Objective3 = {  -- multilingual strings
 	"Destroy Enemy Carrier",
 	"Destruction transporteur ennemi",
-	"Gegnerisches Trägerschiff zerstören.",
+	"Gegnerisches Trï¿½gerschiff zerstï¿½ren.",
 	"Destruir portanaves enemigo",
 	"Distruggi il Trasporto nemico", }
 LSTRING_Hyperspace = {  -- multilingual strings
@@ -3760,6 +3761,9 @@ end
 function OnStartOrLoad()
     print("OnStartOrLoad issued")
 
+	-- Write race list
+	SpeechRaceHelper()
+	
     --Mission-global GrowSelections/SobGroups
     KASSobGroup_Create("GrowSelection_All")
     KASSobGroup_Create("GrowSelection_AllShips")

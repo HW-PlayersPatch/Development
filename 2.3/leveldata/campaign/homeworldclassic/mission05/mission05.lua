@@ -22,6 +22,7 @@
 --kasfTutSetTextDisplayBoxToSubtitleRegion
 
 
+dofilepath("data:scripts/playerspatch_speech_util.lua")
 dofilepath("data:scripts/SCAR/SCAR_Util.lua")             --stock HW2 scripting utilities
 dofilepath("data:scripts/SCAR/KASUtil.lua")               --HW1->HW2 scripting utilities
 dofilepath("data:scripts/SCAR/SinglePlayerFlow.lua")      --Emulation of HW1 singleplayer functionality
@@ -228,37 +229,37 @@ strCurLanguage = 1  --Naive treatement of localization language.;
 
 LSTRING_Savegame = {  -- multilingual strings
 	"05 - Great Wastelands",
-	"05 - Macro-déserts",
-	"05 - Große Einöde",
-	"05 - Grandes páramos",
+	"05 - Macro-dï¿½serts",
+	"05 - Groï¿½e Einï¿½de",
+	"05 - Grandes pï¿½ramos",
 	"05 - Le lande desolate", }
 LSTRING_LocationCard = {  -- multilingual strings
 	"GREAT WASTELANDS",
 	"MACRO-DESERTS",
-	"GROSSE EINÖDE",
-	"GRANDES PÁRAMOS",
+	"GROSSE EINï¿½DE",
+	"GRANDES Pï¿½RAMOS",
 	"LE LANDE DESOLATE", }
 LSTRING_FISendProbeTASKBAR = {  -- multilingual strings
 	"Investigate the asteroid belt",
-	"Sondez la ceinture d'astéroïdes",
-	"Den Asteroidengürtel untersuchen.",
-	"Investigar el cinturón de asteroides",
+	"Sondez la ceinture d'astï¿½roï¿½des",
+	"Den Asteroidengï¿½rtel untersuchen.",
+	"Investigar el cinturï¿½n de asteroides",
 	"Indaga nella fascia asteroidale", }
 LSTRING_FIEradicateTASKBAR = {  -- multilingual strings
 	"Eradicate all enemy ships",
-	"Elimination totalité vaisseaux ennemis",
-	"Alle feindlichen Schiffe auslöschen.",
+	"Elimination totalitï¿½ vaisseaux ennemis",
+	"Alle feindlichen Schiffe auslï¿½schen.",
 	"Erradicar todas las naves enemigas",
 	"Distruggi tutti i vascelli nemici", }
 LSTRING_FIDestroyResTASKBAR = {  -- multilingual strings
 	"Destroy Enemy Resource Collector",
 	"Destruction Collecteur de Ressources Ennemi.",
-	"Rohstoffschiffe des Feindes zerstören.",
+	"Rohstoffschiffe des Feindes zerstï¿½ren.",
 	"Destruir recolector de recursos enemigo",
 	"Distruggi i Collettori di Risorse nemici", }
 LSTRING_FITeachDefendersTASKBAR = {  -- multilingual strings
 	"Research Defender sub-systems",
-	"Recherche sur les sous-systèmes de défense",
+	"Recherche sur les sous-systï¿½mes de dï¿½fense",
 	"Abwehrkreuzer-Subsysteme erforschen.",
 	"Investigar subsistemas de defensa",
 	"Ricerca i sotto-sistemi del Difensore", }
@@ -6587,6 +6588,9 @@ end
 function OnStartOrLoad()
     print("OnStartOrLoad issued")
 
+	-- Write race list
+	SpeechRaceHelper()
+	
     --Mission-global GrowSelections/SobGroups
     KASSobGroup_Create("GrowSelection_ACT3CarFound")
     KASSobGroup_Create("GrowSelection_ACT3DesFound")

@@ -21,6 +21,7 @@
 --kasfSoundEvent
 
 
+dofilepath("data:scripts/playerspatch_speech_util.lua")
 dofilepath("data:scripts/SCAR/SCAR_Util.lua")             --stock HW2 scripting utilities
 dofilepath("data:scripts/SCAR/KASUtil.lua")               --HW1->HW2 scripting utilities
 dofilepath("data:scripts/SCAR/SinglePlayerFlow.lua")      --Emulation of HW1 singleplayer functionality
@@ -144,56 +145,56 @@ LSTRING_LCLocationCard = {  -- multilingual strings
 	"LA CATTEDRALE DI KADESH", }
 LSTRING_FCImLost = {  -- multilingual strings
 	"Something's wrong.  We've been pulled out of hyperspace.  We're still inside the nebula.",
-	"C'est pas normal. On s'est fait attirer hors de l'hyperespace. Nous sommes toujours à l'intérieur de la nébuleuse.",
+	"C'est pas normal. On s'est fait attirer hors de l'hyperespace. Nous sommes toujours ï¿½ l'intï¿½rieur de la nï¿½buleuse.",
 	"Irgendetwas stimmt nicht. Wir wurden aus dem Hyperraum herausgesogen. Und wir befinden uns noch immer innerhalb des Nebels.",
-	"Algo marcha mal. Hemos salido del hiperespacio. Todavía estamos en la nebulosa.",
-	"C'è qualcosa che non va... Siamo usciti dall'Iperspazio, ma siamo ancora all'interno della nebulosa.", }
+	"Algo marcha mal. Hemos salido del hiperespacio. Todavï¿½a estamos en la nebulosa.",
+	"C'ï¿½ qualcosa che non va... Siamo usciti dall'Iperspazio, ma siamo ancora all'interno della nebulosa.", }
 LSTRING_FIIndeed = {  -- multilingual strings
 	"It's a trap!  Sensors detect hyperspace inhibitors in a triangular formation.  Even one can keep us from entering hyperspace.  All of them must be destroyed. \n\nThe nebula is still scrambling our sensors but it looks like we have incoming hostiles.",
-	"C'est un piège ! C'est en formation triangulaire que les détecteurs sont sensibles aux inhibiteurs d'hyperespace, alors qu'un seul pourrait nous en fermer l'accès. Il faut tous les détruire. \n\nLa nébuleuse continue de brouiller nos détecteurs mais des unités hostiles semblent se diriger vers nous.",
-	"Das ist eine Falle! Die Sensoren zeigen Hyperraum-Inhibitoren in einer Dreiecksformation an. Schon einer alleine kann uns daran hindern, den Hyperraum zu erreichen. Sie müssen alle vernichtet werden, ausnahmslos. \n\nDer Nebel bringt unsere Sensoren noch immer durcheinander, aber trotzdem sieht es so aus, als würden sich feindliche Schiffe nähern.",
-	"¡Es una trampa!  Los sensores detectan inhibidores de hiperespacio en formación triangular. Uno solo podría impedirnos entrar en el hiperespacio. Es necesario destruirlos todos. \n\nLa nebulosa sigue provocando interferencias, pero parece que se acercan más naves enemigas.",
-	"Siamo caduti in trappola! I sensori rivelano degli inibitori iperspaziali disposti a triangolo: ognuno di essi ci può impedire di compiere il balzo. Devi distruggerli tutti.\n\nLa nebulosa disturba ancora i nostri strumenti, ma sembra che siano in arrivo delle forze nemiche.", }
+	"C'est un piï¿½ge ! C'est en formation triangulaire que les dï¿½tecteurs sont sensibles aux inhibiteurs d'hyperespace, alors qu'un seul pourrait nous en fermer l'accï¿½s. Il faut tous les dï¿½truire. \n\nLa nï¿½buleuse continue de brouiller nos dï¿½tecteurs mais des unitï¿½s hostiles semblent se diriger vers nous.",
+	"Das ist eine Falle! Die Sensoren zeigen Hyperraum-Inhibitoren in einer Dreiecksformation an. Schon einer alleine kann uns daran hindern, den Hyperraum zu erreichen. Sie mï¿½ssen alle vernichtet werden, ausnahmslos. \n\nDer Nebel bringt unsere Sensoren noch immer durcheinander, aber trotzdem sieht es so aus, als wï¿½rden sich feindliche Schiffe nï¿½hern.",
+	"ï¿½Es una trampa!  Los sensores detectan inhibidores de hiperespacio en formaciï¿½n triangular. Uno solo podrï¿½a impedirnos entrar en el hiperespacio. Es necesario destruirlos todos. \n\nLa nebulosa sigue provocando interferencias, pero parece que se acercan mï¿½s naves enemigas.",
+	"Siamo caduti in trappola! I sensori rivelano degli inibitori iperspaziali disposti a triangolo: ognuno di essi ci puï¿½ impedire di compiere il balzo. Devi distruggerli tutti.\n\nLa nebulosa disturba ancora i nostri strumenti, ma sembra che siano in arrivo delle forze nemiche.", }
 LSTRING_P2LastChance = {  -- multilingual strings
 	"Again we offer you the chance to join us and live here in peace.",
-	"Nous renouvelons notre offre : joignez-vous à nous et vivez ici en paix.",
-	"Und noch einmal bieten wir euch die Gelegenheit, euch bei uns einzufügen und hier in Frieden zu leben.",
-	"Volvemos a brindaros la oportunidad de uniros a nosotros y vivir aquí en paz.",
-	"Vi offriamo ancora una volta la possibilità di unirvi a noi e di vivere qui, in pace.", }
+	"Nous renouvelons notre offre : joignez-vous ï¿½ nous et vivez ici en paix.",
+	"Und noch einmal bieten wir euch die Gelegenheit, euch bei uns einzufï¿½gen und hier in Frieden zu leben.",
+	"Volvemos a brindaros la oportunidad de uniros a nosotros y vivir aquï¿½ en paz.",
+	"Vi offriamo ancora una volta la possibilitï¿½ di unirvi a noi e di vivere qui, in pace.", }
 LSTRING_FCWereTheSame = {  -- multilingual strings
 	"Our future lies elsewhere, but we already have something in common.  The hyperdrive technology we use is identical to yours.  Our ancestors left it in a wreckage on our planet.  We're on a mission to find our Homeworld.",
-	"Notre avenir est ailleurs, mais nous partageons désormais quelque chose : notre technologie d'hyperpropulsion est identique à la vôtre. Nos ancêtres nous l'avaient laissée dans une épave sur notre planète. Nous avons pour mission de retrouver Homeworld.",
-	"Unsere Zukunft liegt an anderer Stelle, aber wir haben bereits etwas gemeinsam. Die von uns verwendete Hypersprung-Technologie ist mit der eurigen identisch. Unsere Vorfahren ließen sie in einem Wrack auf unserem Planeten zurück. Wir befinden uns auf einer Mission, der Suche nach unserer Heimatwelt.",
-	"Nuestro futuro está en otro lugar, pero ya tenemos algo en común. La tecnología de hiperpropulsión que utilizamos es igual que la vuestra. Nuestros antepasados la dejaron cuando se vieron obligados a quedarse en nuestro planeta. Nuestra misión consiste en encontrar nuestro planeta de origen.",
-	"Il nostro futuro è altrove, ma abbiamo qualcosa in comune: la tecnologia dell'Iperspazio è identica alla vostra. I nostri antenati precipitarono sul nostro pianeta: noi siamo in missione per trovare il mondo natale.", }
+	"Notre avenir est ailleurs, mais nous partageons dï¿½sormais quelque chose : notre technologie d'hyperpropulsion est identique ï¿½ la vï¿½tre. Nos ancï¿½tres nous l'avaient laissï¿½e dans une ï¿½pave sur notre planï¿½te. Nous avons pour mission de retrouver Homeworld.",
+	"Unsere Zukunft liegt an anderer Stelle, aber wir haben bereits etwas gemeinsam. Die von uns verwendete Hypersprung-Technologie ist mit der eurigen identisch. Unsere Vorfahren lieï¿½en sie in einem Wrack auf unserem Planeten zurï¿½ck. Wir befinden uns auf einer Mission, der Suche nach unserer Heimatwelt.",
+	"Nuestro futuro estï¿½ en otro lugar, pero ya tenemos algo en comï¿½n. La tecnologï¿½a de hiperpropulsiï¿½n que utilizamos es igual que la vuestra. Nuestros antepasados la dejaron cuando se vieron obligados a quedarse en nuestro planeta. Nuestra misiï¿½n consiste en encontrar nuestro planeta de origen.",
+	"Il nostro futuro ï¿½ altrove, ma abbiamo qualcosa in comune: la tecnologia dell'Iperspazio ï¿½ identica alla vostra. I nostri antenati precipitarono sul nostro pianeta: noi siamo in missione per trovare il mondo natale.", }
 LSTRING_P2YoullFail = {  -- multilingual strings
 	"You will fail.  The evil that drove us here will find and destroy you.  From you they will know of us and come here.  This cannot come to pass.",
-	"Ce sera un échec. La force maléfique qui nous a conduits ici vous pourchassera et vous anéantira. Vous leur apprendrez notre présence et ils viendront ici. Il faut absolument empêcher cela.",
-	"Ihr werdet versagen. Das Böse, das uns hierher trieb, wird euch aufspüren und vernichten. Über euch werden sie von uns erfahren und hierher kommen. Das darf nicht geschehen.",
-	"Fracasaréis. La fuerza maligna que nos ha traído aquí os buscará y os destruirá. Conocerán nuestra existencia por vosotros y vendrán aquí. No podemos permitir que eso ocurra.",
-	"Non ci riuscirete. Il male che ci ha costretti qui vi troverà e da voi risalirà a noi. Non possiamo permettere che ciò accada.", }
+	"Ce sera un ï¿½chec. La force malï¿½fique qui nous a conduits ici vous pourchassera et vous anï¿½antira. Vous leur apprendrez notre prï¿½sence et ils viendront ici. Il faut absolument empï¿½cher cela.",
+	"Ihr werdet versagen. Das Bï¿½se, das uns hierher trieb, wird euch aufspï¿½ren und vernichten. ï¿½ber euch werden sie von uns erfahren und hierher kommen. Das darf nicht geschehen.",
+	"Fracasarï¿½is. La fuerza maligna que nos ha traï¿½do aquï¿½ os buscarï¿½ y os destruirï¿½. Conocerï¿½n nuestra existencia por vosotros y vendrï¿½n aquï¿½. No podemos permitir que eso ocurra.",
+	"Non ci riuscirete. Il male che ci ha costretti qui vi troverï¿½ e da voi risalirï¿½ a noi. Non possiamo permettere che ciï¿½ accada.", }
 LSTRING_FIAttackBegun = {  -- multilingual strings
 	"We have enemy units closing on multiple attack vectors.  Engage and destroy hostiles.",
-	"Des unités ennemies approchent sur de multiples vecteurs d'attaque. Affrontez ces unités hostiles et détruisez-les.",
-	"Feindliche Einheiten kommen auf mehreren Angriffsvektoren näher. Sie sind anzugreifen und zu vernichten.",
+	"Des unitï¿½s ennemies approchent sur de multiples vecteurs d'attaque. Affrontez ces unitï¿½s hostiles et dï¿½truisez-les.",
+	"Feindliche Einheiten kommen auf mehreren Angriffsvektoren nï¿½her. Sie sind anzugreifen und zu vernichten.",
 	"Tenemos unidades enemigas en varios vectores de ataque. Hay que atraerlas y destruirlas.",
-	"Abbiamo unità nemiche in avvicinamento da vettori multipli. Intercettale e abbattile.", }
+	"Abbiamo unitï¿½ nemiche in avvicinamento da vettori multipli. Intercettale e abbattile.", }
 LSTRING_FINewResearchR1 = {  -- multilingual strings
 	"Research Division reports it is now equipped for Drone technology.  We advise commencing research immediately.",
-	"Le Service de recherche annonce qu'il s'est équipé pour la technologie des Drones. Nous recommandons le début immédiat des travaux de recherche.",
-	"Die Forschungsabteilung meldet, dass sie jetzt für die Erforschung der Drohnen-Technologie bereit ist. Wir empfehlen, mit den Forschungsarbeiten umgehend zu beginnen.",
-	"La división de investigación comunica que está lista para desarrollar las naves teledirigidas. Recomendamos dar comienzo a la investigación de inmediato.",
-	"La divisione ricerche segnala che è possibile iniziare lo studio dei Droni: ti suggeriamo di impartire immediatamente l'ordine.", }
+	"Le Service de recherche annonce qu'il s'est ï¿½quipï¿½ pour la technologie des Drones. Nous recommandons le dï¿½but immï¿½diat des travaux de recherche.",
+	"Die Forschungsabteilung meldet, dass sie jetzt fï¿½r die Erforschung der Drohnen-Technologie bereit ist. Wir empfehlen, mit den Forschungsarbeiten umgehend zu beginnen.",
+	"La divisiï¿½n de investigaciï¿½n comunica que estï¿½ lista para desarrollar las naves teledirigidas. Recomendamos dar comienzo a la investigaciï¿½n de inmediato.",
+	"La divisione ricerche segnala che ï¿½ possibile iniziare lo studio dei Droni: ti suggeriamo di impartire immediatamente l'ordine.", }
 LSTRING_FINewResearchR2 = {  -- multilingual strings
 	"Research Division reports it is now equipped for Defense Field technology.  We advise commencing research immediately.",
-	"Le Service de recherche annonce qu'il s'est équipé pour la technologie des Boucliers. Nous recommandons le début immédiat des travaux de recherche.",
-	"Die Forschungsabteilung meldet, dass sie jetzt für die Erforschung der Abwehrschirm-Technologie bereit ist. Wir empfehlen, mit den Forschungsarbeiten umgehend zu beginnen.",
-	"La división de investigación comunica que está lista para desarrollar el campo de defensa. Recomendamos dar comienzo a la investigación de inmediato.",
-	"La divisione ricerche segnala che è possibile iniziare lo studio dello Scudo Difensivo: ti suggeriamo di impartire immediatamente l'ordine.", }
+	"Le Service de recherche annonce qu'il s'est ï¿½quipï¿½ pour la technologie des Boucliers. Nous recommandons le dï¿½but immï¿½diat des travaux de recherche.",
+	"Die Forschungsabteilung meldet, dass sie jetzt fï¿½r die Erforschung der Abwehrschirm-Technologie bereit ist. Wir empfehlen, mit den Forschungsarbeiten umgehend zu beginnen.",
+	"La divisiï¿½n de investigaciï¿½n comunica que estï¿½ lista para desarrollar el campo de defensa. Recomendamos dar comienzo a la investigaciï¿½n de inmediato.",
+	"La divisione ricerche segnala che ï¿½ possibile iniziare lo studio dello Scudo Difensivo: ti suggeriamo di impartire immediatamente l'ordine.", }
 LSTRING_FIEnemyGoingHere = {  -- multilingual strings
 	"Enemy vessels retreating to this point.  This reading has been consistent despite sensor interference.  It has a friendly signature but none of our ships are in that area.",
-	"La retraite des vaisseaux ennemis converge vers ce point, une indication répétée des instruments malgré les interférences qui affectent les détecteurs.C'est en domaine allié mais aucun de nos vaisseaux n'est dans le secteur.",
-	"Feindliche Schiffe ziehen sich zu diesem Punkt zurück. Dieser Wert ist trotz der Sensor-Störungen konstant geblieben. Die Signatur könnte von einem unsrer eigenen Schiffe stammen, aber zur Zeit befindet sich keines unserer Schiffe in diesem Gebiet.",
+	"La retraite des vaisseaux ennemis converge vers ce point, une indication rï¿½pï¿½tï¿½e des instruments malgrï¿½ les interfï¿½rences qui affectent les dï¿½tecteurs.C'est en domaine alliï¿½ mais aucun de nos vaisseaux n'est dans le secteur.",
+	"Feindliche Schiffe ziehen sich zu diesem Punkt zurï¿½ck. Dieser Wert ist trotz der Sensor-Stï¿½rungen konstant geblieben. Die Signatur kï¿½nnte von einem unsrer eigenen Schiffe stammen, aber zur Zeit befindet sich keines unserer Schiffe in diesem Gebiet.",
 	"Las naves enemigas se retiran a este punto. La lectura es constante a pesar de las interferencias. Por su frecuencia, no parece una nave enemiga, pero no tenemos naves en esa zona.",
 	"I vascelli nemici si stanno ritirando verso questa posizione, dove abbiamo rilevato qualcosa (nonostante le interferenze). Il segnale risulta amico, ma non ci sono nostre astronavi in quella zona.", }
 LSTRING_FCJustLikeKharToba = {  -- multilingual strings
@@ -204,44 +205,44 @@ LSTRING_FCJustLikeKharToba = {  -- multilingual strings
 	"Sembra proprio la Khar-Toba.", }
 LSTRING_FIYeahYoureRight = {  -- multilingual strings
 	"Metallurgy and structural composition are an identical match to the Khar-Toba wreckage on Kharak.",
-	"La composition métallique et l'organisation structurelle sont identiques à celles de l'épave du Khar-Toba sur Kharak.",
+	"La composition mï¿½tallique et l'organisation structurelle sont identiques ï¿½ celles de l'ï¿½pave du Khar-Toba sur Kharak.",
 	"Metallurgie- und Struktur-Zusammensetzung ist identisch mit der des Wracks der Khar-Toba auf Kharak.",
-	"La composición metalúrgica y la estructura son idénticas a las de las ruinas de Khar-Toba, en Kharak.",
+	"La composiciï¿½n metalï¿½rgica y la estructura son idï¿½nticas a las de las ruinas de Khar-Toba, en Kharak.",
 	"La struttura e i metalli corrispondono perfettamente al relitto della Khar-Toba su Kharak.", }
 LSTRING_FCTheyreUs = {  -- multilingual strings
 	"We are brothers.",
-	"Nous sommes frères.",
-	"Wir sind Brüder.",
+	"Nous sommes frï¿½res.",
+	"Wir sind Brï¿½der.",
 	"Somos hermanos.",
 	"Siamo fratelli.", }
 LSTRING_FIWeCanLeave = {  -- multilingual strings
 	"The inhibitor field has ceased.  Hyperspace module back on-line.",
-	"Le champ inhibiteur s'est désactivé. Le module hyperspatial est opérationnel.",
+	"Le champ inhibiteur s'est dï¿½sactivï¿½. Le module hyperspatial est opï¿½rationnel.",
 	"Das Inhibitionsfeld besteht nicht mehr. Das Hypersprung-Modul ist wieder online.",
-	"Se ha disipado el campo inhibidor. Ya funciona el módulo hiperespacial.",
+	"Se ha disipado el campo inhibidor. Ya funciona el mï¿½dulo hiperespacial.",
 	"Campo inibitore disattivato, il modulo dell'Iperspazio ha ripreso a funzionare.", }
 LSTRING_OBDestroyInhibitors = {  -- multilingual strings
 	"Destroy Hyperspace Inhibitors",
-	"Détruire les inhibiteurs d'hyperespace",
-	"Zerstöre Hyperraum-Inhibitore",
+	"Dï¿½truire les inhibiteurs d'hyperespace",
+	"Zerstï¿½re Hyperraum-Inhibitore",
 	"Proteger la Nave nodriza",
 	"Proteggi l'Astronave Madre", }
 LSTRING_OBDestroyAttackers = {  -- multilingual strings
 	"Destroy the Attackers",
-	"Détruire les assaillants",
-	"Zerstöre die Angreifer",
+	"Dï¿½truire les assaillants",
+	"Zerstï¿½re die Angreifer",
 	"Destruye a los atacantes",
 	"Distruggi gli attaccanti", }
 LSTRING_ObjectiveMain = {  -- multilingual strings
 	"Protect the Mothership",
-	"Protection du Vaisseau Mère.",
-	"Das Mutterschiff schützen.",
+	"Protection du Vaisseau Mï¿½re.",
+	"Das Mutterschiff schï¿½tzen.",
 	"Proteger la Nave nodriza",
 	"Proteggi l'Astronave Madre", }
 LSTRING_Objective2 = {  -- multilingual strings
 	"Destroy Swarmer Mothership",
-	"Anéantir Vaisseau Mère essaimeur.",
-	"Das Schwärmer-Mutterschiff zerstören.",
+	"Anï¿½antir Vaisseau Mï¿½re essaimeur.",
+	"Das Schwï¿½rmer-Mutterschiff zerstï¿½ren.",
 	"Destruir Nave nodriza de colmena",
 	"Distruggi la Nave Madre Swarmer", }
 LSTRING_TBHyperspace = {  -- multilingual strings
@@ -252,8 +253,8 @@ LSTRING_TBHyperspace = {  -- multilingual strings
 	"				IPERSPAZIO", }
 LSTRING_LevelSave = {  -- multilingual strings
 	"08 - The Cathedral of Kadesh",
-	"08 - Cathédrale de Kadesh",
-	"08 – Die Kathedrale von Kadesh",
+	"08 - Cathï¿½drale de Kadesh",
+	"08 ï¿½ Die Kathedrale von Kadesh",
 	"08 - La catedral de Kadesh",
 	"08 - La cattedrale di Kadesh", }
 
@@ -3692,6 +3693,9 @@ end
 function OnStartOrLoad()
     print("OnStartOrLoad issued")
 
+	-- Write race list
+	SpeechRaceHelper()
+	
     --Mission-global GrowSelections/SobGroups
     KASSobGroup_Create("GrowSelection_Attackers")
     KASSobGroup_Create("GrowSelection_Coll")

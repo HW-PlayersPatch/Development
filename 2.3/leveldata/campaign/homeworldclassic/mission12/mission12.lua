@@ -21,6 +21,7 @@
 --kasfSoundEvent
 
 
+dofilepath("data:scripts/playerspatch_speech_util.lua")
 dofilepath("data:scripts/SCAR/SCAR_Util.lua")             --stock HW2 scripting utilities
 dofilepath("data:scripts/SCAR/KASUtil.lua")               --HW1->HW2 scripting utilities
 dofilepath("data:scripts/SCAR/SinglePlayerFlow.lua")      --Emulation of HW1 singleplayer functionality
@@ -260,20 +261,20 @@ LSTRING_LocationCard = {  -- multilingual strings
 	"IL CUORE DELLA GALASSIA", }
 LSTRING_FICaughtInFieldTASKBAR = {  -- multilingual strings
 	"Destroy source of gravity field",
-	"Destruction de la source du champ de gravité",
+	"Destruction de la source du champ de gravitï¿½",
 	"Quelle des Gravitationsfeldes vernichten.",
 	"Destruir la fuente del campo gravitatorio",
 	"Distruggi la fonte del campo gravitazionale", }
 LSTRING_FIUnderAttackTASKBAR = {  -- multilingual strings
 	"Protect the Fleet",
 	"Protection de la Flotte",
-	"Die Flotte schützen.",
+	"Die Flotte schï¿½tzen.",
 	"Proteger la flota",
 	"Progetta la flotta", }
 LSTRING_FIHelpDefectorTASKBAR = {  -- multilingual strings
 	"Protect the Defector",
 	"Protection du Transfuge",
-	"Den Überläufer schützen.",
+	"Den ï¿½berlï¿½ufer schï¿½tzen.",
 	"Proteger el deflector",
 	"Proteggi il Defector", }
 LSTRING_Hyperspace = {  -- multilingual strings
@@ -9265,6 +9266,9 @@ end
 function OnStartOrLoad()
     print("OnStartOrLoad issued")
 
+	-- Write race list
+	SpeechRaceHelper()
+	
     --Mission-global GrowSelections/SobGroups
     KASSobGroup_Create("GrowSelection_AllShipsInWorld")
     KASSobGroup_Create("GrowSelection_AttackingChaseTeam")

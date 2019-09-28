@@ -18,6 +18,7 @@
 --  for run-time scoping of symbols (variables, timers, etc.)
 
 
+dofilepath("data:scripts/playerspatch_speech_util.lua")
 dofilepath("data:scripts/SCAR/SCAR_Util.lua")             --stock HW2 scripting utilities
 dofilepath("data:scripts/SCAR/KASUtil.lua")               --HW1->HW2 scripting utilities
 dofilepath("data:scripts/SCAR/SinglePlayerFlow.lua")      --Emulation of HW1 singleplayer functionality
@@ -91,20 +92,20 @@ strCurLanguage = 1  --Naive treatement of localization language.;
 
 LSTRING_Location = {  -- multilingual strings
 	"CHAPEL PERILOUS",
-	"Chapelle des Périls",
+	"Chapelle des Pï¿½rils",
 	"Gefahr im Verzug",
 	"CAPILLA DEL PELIGRO",
 	"CHAPEL PERILOUS", }
 LSTRING_LevelName = {  -- multilingual strings
 	"15 - Chapel Perilous",
-	"15 - Chapelle des Périls",
+	"15 - Chapelle des Pï¿½rils",
 	"15 - Gefahr im Verzug",
 	"15 - Capilla del peligro",
 	"15 - Chapel Perilous", }
 LSTRING_Objective1 = {  -- multilingual strings
 	"Destroy the object",
 	"Destruction de l'objet",
-	"Das Objekt zerstören.",
+	"Das Objekt zerstï¿½ren.",
 	"Destruir el objeto",
 	"Distruggi l'oggetto", }
 LSTRING_Hyperspace = {  -- multilingual strings
@@ -1074,6 +1075,9 @@ end
 function OnStartOrLoad()
     print("OnStartOrLoad issued")
 
+	-- Write race list
+	SpeechRaceHelper()
+	
     --Mission-global GrowSelections/SobGroups
     KASSobGroup_Create("GrowSelection_EnemyMShip")
     KASSobGroup_Create("GrowSelection_Evaluate")

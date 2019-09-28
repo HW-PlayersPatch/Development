@@ -21,6 +21,7 @@
 --kasfSoundEvent
 
 
+dofilepath("data:scripts/playerspatch_speech_util.lua")
 dofilepath("data:scripts/SCAR/SCAR_Util.lua")             --stock HW2 scripting utilities
 dofilepath("data:scripts/SCAR/KASUtil.lua")               --HW1->HW2 scripting utilities
 dofilepath("data:scripts/SCAR/SinglePlayerFlow.lua")      --Emulation of HW1 singleplayer functionality
@@ -140,37 +141,37 @@ LSTRING_Savegame = {  -- multilingual strings
 LSTRING_LocationCard = {  -- multilingual strings
 	"Deep Space - Sea of Lost Souls",
 	"Espace infini - La Mer des Ames Perdues",
-	"Tiefer Weltraum – Meer der verlorenen Seelen",
+	"Tiefer Weltraum ï¿½ Meer der verlorenen Seelen",
 	"Espacio profundo - Mar de las almas perdidas",
 	"Spazio profondo - Il mare delle anime perdute", }
 LSTRING_FleetIntelIntro = {  -- multilingual strings
 	"Sensors detect a vessel here.  It doesn't match any of the profiles we have encountered.  Send in a team to investigate.",
-	"Les instruments détectent un vaisseau à ces coordonnées. Aucune correspondance avec les profils rencontrés auparavant. Envoyez une équipe d'investigation.",
+	"Les instruments dï¿½tectent un vaisseau ï¿½ ces coordonnï¿½es. Aucune correspondance avec les profils rencontrï¿½s auparavant. Envoyez une ï¿½quipe d'investigation.",
 	"Die Sensoren haben hier ein Schiff entdeckt. Keines der uns bekannten Profile ist darauf anwendbar. Schicken Sie ein Team aus, um es zu untersuchen.",
-	"Los sensores detectan una nave. No encaja con ninguno de los perfiles conocidos. Envíen un equipo de investigación.",
+	"Los sensores detectan una nave. No encaja con ninguno de los perfiles conocidos. Envï¿½en un equipo de investigaciï¿½n.",
 	"I sensori rilevano una nave, di origine sconosciuta. Invia una squadra per investigare.", }
 LSTRING_Objective1 = {  -- multilingual strings
 	"Investigate Anomaly",
 	"Analyse de l'anomalie.",
 	"Anomalie untersuchen.",
-	"Investigar anomalía",
+	"Investigar anomalï¿½a",
 	"Investiga l'anomalia", }
 LSTRING_Objective2 = {  -- multilingual strings
 	"Destroy Alien Vessel",
 	"Destruction vaisseau inconnu.",
-	"Unbekanntes Schiff zerstören.",
+	"Unbekanntes Schiff zerstï¿½ren.",
 	"Destruir nave desconocida",
 	"Distruggi l'astronave sconosciuta", }
 LSTRING_Objective3 = {  -- multilingual strings
 	"Salvage the Unknown Vessel",
-	"Récupération vaisseau inconnu.",
+	"Rï¿½cupï¿½ration vaisseau inconnu.",
 	"Untersuchen Sie das Geisterschiff.",
 	"Salvar la nave desconocida",
 	"Salva l'astronave sconosciuta", }
 LSTRING_TraderIntro = {  -- multilingual strings
 	"Welcome, traveller.  We have something you may be interested in.",
-	"Bienvenue, voyageur. On a quelque chose qui pourrait t'intéresser.",
-	"Willkommen, Reisender. Wir haben etwas, das euch interessieren könnte.",
+	"Bienvenue, voyageur. On a quelque chose qui pourrait t'intï¿½resser.",
+	"Willkommen, Reisender. Wir haben etwas, das euch interessieren kï¿½nnte.",
 	"Bienvenido, viajero. Tenemos algo que puede interesarte.",
 	"Benvenuto, viaggiatore. Abbiamo qualcosa che potrebbe interessarti.", }
 LSTRING_TraderPurchaseMade = {  -- multilingual strings
@@ -2167,6 +2168,9 @@ end
 function OnStartOrLoad()
     print("OnStartOrLoad issued")
 
+	-- Write race list
+	SpeechRaceHelper()
+	
     --Mission-global GrowSelections/SobGroups
     KASSobGroup_Create("GrowSelection_BadShips")
     KASSobGroup_Create("GrowSelection_CouldbUsurped")
