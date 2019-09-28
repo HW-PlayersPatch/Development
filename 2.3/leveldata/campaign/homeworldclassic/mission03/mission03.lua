@@ -1076,6 +1076,9 @@ function Init_Mission03_ImNotHere_GotTheBastard(TeamName)
 	Subtitle_ForceEventNotEnded()    --kasfIntelEventNotEnded()
 	KAS_SubtitleAddOnce(Actor_HW1_FleetIntel, "$60436", 3)    --kasfSpeechEvent((436 + 4096 + 268435456), 0)
 	KASTimer_Start(LBX[TeamName], 10)
+	SobGroup_InactiveWhenCaptured("ImNotDeadYet", 0)
+    SobGroup_InactiveWhenCaptured("EnemyFrig01", 0)
+    SobGroup_InactiveWhenCaptured("EnemyFrig02", 0)
 	
 end
 
