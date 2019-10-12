@@ -258,7 +258,7 @@ NewMainMenu = {
 				Text = {	
 					text = "$1221",
 					font = "ButtonFont",
-					vAlign = "Top",
+					vAlign = "Middle",
 					color = {119,166,191,255},
 				},
 			},
@@ -279,7 +279,7 @@ NewMainMenu = {
 				Text = {	
 					text = PlayersPatchBuildNumber, --Pulled from playerspatch_buildnumber.lua
 					font = "ButtonFont",
-					vAlign = "Top",
+					vAlign = "Middle",
 					color = {119,166,191,255},
 				},
 			},
