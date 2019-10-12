@@ -248,9 +248,9 @@ NewMainMenu = {
 				name = "lblVersion",
 				
 				Layout = {
-					pos_XY = { x = 0.0, y = 0.0, xr = "px", yr = "px" },
-					size_WH = { w = 0.0, h = 0.0, wr = "px", hr = "px" },
-					pivot_XY = { 0.0, 0.0 },
+					pos_XY = { x = 0.0, y = 0.0, xr = "px", yr = "par" },
+					size_WH = { w = 0.0, h = DROPDOWN_HEIGHT, wr = "px", hr = "scr" },
+					pivot_XY = { 0.0, 0.075 },
 				},
 				
 				autosize = 1,
@@ -269,8 +269,8 @@ NewMainMenu = {
 				name = "lblVersion2",
 				
 				Layout = {
-					pos_XY = { x = 0.0, y = 0.0, xr = "px", yr = "px" },
-					size_WH = { w = 0.0, h = 0.0, wr = "px", hr = "px" },
+					pos_XY = { x = 0.0, y = 0.0, xr = "px", yr = "par" },
+					size_WH = { w = 0.0, h = DROPDOWN_HEIGHT, wr = "px", hr = "scr" },
 					pivot_XY = { 0.0, 0.0 },
 				},
 				
