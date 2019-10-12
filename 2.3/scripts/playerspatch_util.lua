@@ -22,14 +22,16 @@ function GetOptionValue(OptionName)
 	--Load expanded options
 	dofilepath("PLAYER:PLAYERCFG.lua")
 
-	for i = 1,999 do --loop through up to 999 options
-		if Options.UIOptions[i] ~= nil then --option exists
-			if Options.UIOptions[i].anchor == OptionName then
-				OptionValue = Options.UIOptions[i].scale
-				break --obtained only needed option, exit loop
+	if (Options) then --PLAYERCFG file exists
+		for i = 1,999 do --loop through up to 999 options
+			if Options.UIOptions[i] ~= nil then --option exists
+				if Options.UIOptions[i].anchor == OptionName then
+					OptionValue = Options.UIOptions[i].scale
+					break --obtained only needed option, exit loop
+				end
+			else
+				break --end of options, exit loop
 			end
-		else
-			break --end of options, exit loop
 		end
 	end
 
