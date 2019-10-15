@@ -1,4 +1,4 @@
-StartWeaponConfig(NewWeaponType,"Gimble","InstantHit","Kus_IonBeam","Normal",0,4500,0,4,1,0,20,0,1,10,0,0,0,0,35,20,0.1,"Normal",0,0,0);
+StartWeaponConfig(NewWeaponType,"Gimble","InstantHit","Kus_IonBeam","Normal",0,4500,0,1,0,0,20,0,1,0.1,0,0,0,0,35,20,0.1,"Normal",0,0,0);
 AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",4500,4500,"");
 AddWeaponResult(NewWeaponType,"Hit","Push","Target",-25,-25,"");
 setPenetration(NewWeaponType,30,1,
