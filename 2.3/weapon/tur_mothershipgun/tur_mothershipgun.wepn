@@ -15,10 +15,10 @@ setAccuracy(NewWeaponType,1,
 {Torpedo=0},
 {HeavyMissile=0},
 {SmallMissile=0},
-{Fighter=0.12},
-{Fighter_hw1=0.12},
-{Corvette=0.32},
-{Corvette_hw1=0.32},
+{Fighter=0.4},
+{Fighter_hw1=0.4},
+{Corvette=0.7},
+{Corvette_hw1=0.7},
 {munition=0.2});
 setAngles(NewWeaponType,120,0,0,0,0);
 

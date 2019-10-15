@@ -2,7 +2,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$10072"
 NewShipType.sobDescription="$10073"
-NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth",26000)
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth",21500)
 NewShipType.regentime=0
 NewShipType.minRegenTime=0
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.2)
@@ -19,7 +19,7 @@ NewShipType.defaultStance="Aggressive"
 NewShipType.formationSpacing=250
 NewShipType.mass=100
 NewShipType.collisionMultiplier=1
-NewShipType.thrusterMaxSpeed=125
+NewShipType.thrusterMaxSpeed=135
 NewShipType.mainEngineMaxSpeed=135
 NewShipType.rotationMaxSpeed=40
 NewShipType.thrusterAccelTime=7
