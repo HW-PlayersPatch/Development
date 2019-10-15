@@ -2,7 +2,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$10084"
 NewShipType.sobDescription="$10085"
-NewShipType.maxhealth=7000
+NewShipType.maxhealth=12135
 NewShipType.regentime=0
 NewShipType.minRegenTime=0
 NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
@@ -13,8 +13,8 @@ NewShipType.paradeData="kad_fuelpod_parade"
 
 NewShipType.mass=100
 NewShipType.collisionMultiplier=1
-NewShipType.thrusterMaxSpeed=95
-NewShipType.mainEngineMaxSpeed=95
+NewShipType.thrusterMaxSpeed=140
+NewShipType.mainEngineMaxSpeed=140
 NewShipType.rotationMaxSpeed=50
 NewShipType.thrusterAccelTime=7
 NewShipType.thrusterBrakeTime=2
