@@ -1,3 +1,5 @@
+dofilepath('data:scripts/playerspatch_ships_persistence.lua')
+
 KUS_DRONEFRIGATE_DRONE_COUNT = 14
 KUS_DRONEFRIGATE_WEAPON_RANGE = 2660
 KUS_DRONE_PARADE_POSITIONS = {
@@ -189,7 +191,7 @@ function Update_DroneFrigate(CustomGroup, playerIndex, shipID)
 				end
 				if (SobGroup_AnyAreAttacking(this_drone) == 1) then -- this check is seperate so the frigate can (uniquely) do move commands while shooting
 					local parade_position = Drone_GetParadePosition(SobGroup_GetPosition(CustomGroup), k)
-					if (DF_MEM.get(shipID).GetTick() % 2 == 0) then -- every 5th script call (2.3s)
+					if (mod(DF_MEM.get(shipID).GetTick(), 2) == 0) then -- every 5th script call (2.3s)
 						SobGroup_MoveToPoint(SobGroup_GetPlayerOwner(this_drone), this_drone, parade_position) -- move close to parade position
 					end
 				else
