@@ -27,13 +27,11 @@ MemGroup = {
 	-- In addition, the entity will also host the attributes defined
 	-- in custom_attributes.
 	_new = function(group_name, custom_attribs)
-		return {
+		local new_group = {
 			_entities = {},
+			_group_name = group_name,
 			_custom_attribs = custom_attribs,
-			get = function (entityID)
-				return MemGroup._groups[group_name]._entities[entityID]
-			end,
-			set = function (this, entityID, entity)
+			set = function (entityID, entity)
 				MemGroup._groups[group_name].entites[entityID] = entity
 				local e = MemGroup._groups[group_name].entites[entityID]
 				if (e._tick == nil) then
@@ -58,6 +56,9 @@ MemGroup = {
 				MemGroup._groups[group_name]._entites[entityID] = nil
 			end
 		}
+		function new_group:get(entityID)
+			return self._entites[entityID]
+		end
 	end,
 	-- Create
 	-- 1: group_name: string
