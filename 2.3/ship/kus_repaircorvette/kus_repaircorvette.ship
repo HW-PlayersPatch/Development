@@ -81,7 +81,7 @@ NewShipType.totalValue=10
 NewShipType.buildCost=175
 NewShipType.buildTime=16
 NewShipType.buildPriorityOrder=60
-NewShipType.retaliationRange=4800
+NewShipType.retaliationRange=3600
 NewShipType.retaliationDistanceFromGoal=160
 NewShipType.visualRange=1000
 NewShipType.prmSensorRange=4000
@@ -152,9 +152,9 @@ addAbility(NewShipType,"GuardCommand",1,3000,300);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"RepairCommand",1,250,1,1,"Frontal_RepairCorvette",
 {Flagship=2.0},
-{SuperCap=2.0}, 
-{BattleCruiser=2.0}, 
-{Carrier=1.5}, 
+{SuperCap=2.0},
+{BattleCruiser=2.0},
+{Carrier=1.5},
 {Frigate=1.5},
 {Corvette=1.5},
 {EndRepairRates=0},
@@ -186,7 +186,7 @@ NewShipType.maxFalloffScuttleDamageDist=25*4
 NewShipType.explosiveScuttleDamageOnDeath=90
 NewShipType.maxFalloffForce=25*10
 NewShipType.explosiveDamageOnDeath=18
-NewShipType.radiusDamageEvadeMod=1.1													 
+NewShipType.radiusDamageEvadeMod=1.1
 NewShipType.hideNormalAttackUICooldown=1
 NewShipType.agileFlight=1
 NewShipType.homingDistance=2000

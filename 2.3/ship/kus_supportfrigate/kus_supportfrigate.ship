@@ -79,7 +79,7 @@ NewShipType.totalValue=8
 NewShipType.buildCost=600
 NewShipType.buildTime=65
 NewShipType.buildPriorityOrder=30
-NewShipType.retaliationRange=4800
+NewShipType.retaliationRange=3600
 NewShipType.retaliationDistanceFromGoal=160
 NewShipType.visualRange=1000
 NewShipType.prmSensorRange=5000
@@ -151,9 +151,9 @@ addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RepairCommand",1,440,1,1,"Frontal_SupportFrigate",
 {Flagship=2.0},
-{SuperCap=2.0}, 
-{BattleCruiser=2.0}, 
-{Carrier=1.5}, 
+{SuperCap=2.0},
+{BattleCruiser=2.0},
+{Carrier=1.5},
 {Frigate=2.0},
 {Corvette=1.5},
 {EndRepairRates=0},
@@ -189,6 +189,6 @@ NewShipType.maxFalloffDamageDist=100*2
 NewShipType.maxFalloffScuttleDamageDist=100*4
 NewShipType.explosiveScuttleDamageOnDeath=130
 NewShipType.maxFalloffForce=500*10
-NewShipType.explosiveDamageOnDeath=50											 
+NewShipType.explosiveDamageOnDeath=50
 NewShipType.hideNormalAttackUICooldown=1
 NewShipType.canSurround=1
