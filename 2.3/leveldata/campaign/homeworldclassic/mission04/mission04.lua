@@ -651,10 +651,10 @@ function Init_Mission04_Traders_TimeToTrade(TeamName)
 	KAS_EnableTradeGUI()    --kasfEnableTraderGUI()
 	if (Player_GetRU(0) < 601) then     --kasfRUsGet(0)
 	
-	KAS_SetTradeCost("PlasmaBombLauncher", 600)    --kasfSetBaseTechnologyCost("PlasmaWeapons", 300)
+	KAS_SetTradeCost("PlasmaBombLauncher", 250)    --kasfSetBaseTechnologyCost("PlasmaWeapons", 300)
 	elseif (Player_GetRU(0) > 600) then     --kasfRUsGet(0)
 	
-	KAS_SetTradeCost("PlasmaBombLauncher", 1000)    --kasfSetBaseTechnologyCost("PlasmaWeapons", 500)
+	KAS_SetTradeCost("PlasmaBombLauncher", 400)    --kasfSetBaseTechnologyCost("PlasmaWeapons", 500)
 	end 
 	KAS_AllowToPurchase("PlasmaBombLauncher")    --kasfAllowPlayerToPurchase("PlasmaWeapons")
 	KAS_SetTradeString(0, "$61206")    --kasfSetTraderDialog(0, LSTRING_TraderIntro[strCurLanguage])
