@@ -71,13 +71,13 @@ setSupplyValue(NewShipType, "Corvette", 1.0)
 setSupplyValue(NewShipType, "LayoutCorvette", 1.0)
 NewShipType.AttackPriorityMultiplier=0.95
 NewShipType.fighterValue=0
-NewShipType.corvetteValue=10
+NewShipType.corvetteValue=3.33
 NewShipType.frigateValue=0
 NewShipType.neutralValue=0
 NewShipType.antiFighterValue=0
 NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
-NewShipType.totalValue=10
+NewShipType.totalValue=3.33
 NewShipType.buildCost=175
 NewShipType.buildTime=16
 NewShipType.buildPriorityOrder=60

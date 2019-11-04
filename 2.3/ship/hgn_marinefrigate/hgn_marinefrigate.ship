@@ -70,12 +70,12 @@ setSupplyValue(NewShipType, "LayoutFrigate", 1.0)
 NewShipType.AttackPriorityMultiplier=0.95
 NewShipType.fighterValue=0
 NewShipType.corvetteValue=0
-NewShipType.frigateValue=10
+NewShipType.frigateValue=12
 NewShipType.neutralValue=0
 NewShipType.antiFighterValue=0
 NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=5
-NewShipType.totalValue=10
+NewShipType.totalValue=12
 NewShipType.buildCost=700
 NewShipType.buildTime=50
 NewShipType.buildPriorityOrder=30

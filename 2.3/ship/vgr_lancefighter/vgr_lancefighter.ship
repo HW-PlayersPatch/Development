@@ -87,14 +87,14 @@ setSupplyValue(NewShipType, "Fighter", 5.0)
 setSupplyValue(NewShipType, "LanceFighter", 5.0)
 setSupplyValue(NewShipType, "LayoutFighter", 5.0)
 NewShipType.CombatFamily="Fighter_Lance"
-NewShipType.fighterValue=8
+NewShipType.fighterValue=1.6
 NewShipType.corvetteValue=0
 NewShipType.frigateValue=0
 NewShipType.neutralValue=0
 NewShipType.antiFighterValue=0
-NewShipType.antiCorvetteValue=8
+NewShipType.antiCorvetteValue=1.6
 NewShipType.antiFrigateValue=0
-NewShipType.totalValue=8
+NewShipType.totalValue=1.6
 NewShipType.buildCost=500
 NewShipType.buildTime=35
 NewShipType.buildPriorityOrder=30

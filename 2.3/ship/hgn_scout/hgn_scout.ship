@@ -84,14 +84,14 @@ setSupplyValue(NewShipType, "Fighter", 3.0)
 setSupplyValue(NewShipType, "Scout", 3.0)
 setSupplyValue(NewShipType, "LayoutFighter", 3.0)
 NewShipType.CombatFamily="Fighter_EMPScout"
-NewShipType.fighterValue=1
+NewShipType.fighterValue=0.33
 NewShipType.corvetteValue=0
 NewShipType.frigateValue=0
 NewShipType.neutralValue=0
 NewShipType.antiFighterValue=0
 NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
-NewShipType.totalValue=1
+NewShipType.totalValue=0.33
 NewShipType.buildCost=300
 NewShipType.buildTime=20
 NewShipType.buildPriorityOrder=10

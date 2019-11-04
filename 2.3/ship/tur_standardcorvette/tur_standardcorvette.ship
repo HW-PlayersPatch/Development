@@ -79,12 +79,13 @@ setSupplyValue(NewShipType, "Corvette", 1.0)
 setSupplyValue(NewShipType, "LayoutCorvette", 1.0)
 NewShipType.CombatFamily="Corvette_TuranicStandard"
 NewShipType.fighterValue=0
-NewShipType.corvetteValue=15
+NewShipType.corvetteValue=5
 NewShipType.frigateValue=0
 NewShipType.neutralValue=0
-NewShipType.antiFighterValue=15
+NewShipType.antiFighterValue=5
 NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
+NewShipType.totalValue=5
 NewShipType.buildCost=250
 NewShipType.buildTime=15
 NewShipType.buildPriorityOrder=20
