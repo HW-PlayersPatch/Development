@@ -75,13 +75,13 @@ NewShipType.ArmourFamily=getShipStr(NewShipType, "ArmourFamily", "LightArmour_hw
 setSupplyValue(NewShipType, "Corvette", 1.0)
 setSupplyValue(NewShipType, "LayoutCorvette", 1.0)
 NewShipType.fighterValue=0
-NewShipType.corvetteValue=10
+NewShipType.corvetteValue=3.33
 NewShipType.frigateValue=0
 NewShipType.neutralValue=0
-NewShipType.antiFighterValue=10
-NewShipType.antiCorvetteValue=0
+NewShipType.antiFighterValue=3.33
+NewShipType.antiCorvetteValue=2
 NewShipType.antiFrigateValue=0
-NewShipType.totalValue=10
+NewShipType.totalValue=3.33
 NewShipType.buildCost=215
 NewShipType.buildTime=17
 NewShipType.buildPriorityOrder=10

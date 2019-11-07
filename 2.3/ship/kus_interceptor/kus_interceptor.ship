@@ -80,14 +80,14 @@ NewShipType.ArmourFamily=getShipStr(NewShipType, "ArmourFamily", "Unarmoured_hw1
 setSupplyValue(NewShipType, "Fighter", 1.0)
 setSupplyValue(NewShipType, "Interceptor", 1.0)
 setSupplyValue(NewShipType, "LayoutFighter", 1.0)
-NewShipType.fighterValue=8
+NewShipType.fighterValue=1.6
 NewShipType.corvetteValue=0
 NewShipType.frigateValue=0
 NewShipType.neutralValue=0
-NewShipType.antiFighterValue=8
+NewShipType.antiFighterValue=1.6
 NewShipType.antiCorvetteValue=0
-NewShipType.antiFrigateValue=1
-NewShipType.totalValue=8
+NewShipType.antiFrigateValue=0.2
+NewShipType.totalValue=1.6
 NewShipType.buildCost=100
 NewShipType.buildTime=9
 NewShipType.buildPriorityOrder=20

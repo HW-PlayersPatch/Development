@@ -79,14 +79,14 @@ NewShipType.CollisionFamily="Small"
 NewShipType.ArmourFamily=getShipStr(NewShipType, "ArmourFamily", "Unarmoured")
 setSupplyValue(NewShipType, "Fighter", 1.0)
 setSupplyValue(NewShipType, "LayoutFighter", 1.0)
-NewShipType.fighterValue=10
+NewShipType.fighterValue=2
 NewShipType.corvetteValue=0
 NewShipType.frigateValue=0
 NewShipType.neutralValue=0
 NewShipType.antiFighterValue=0
 NewShipType.antiCorvetteValue=0
-NewShipType.antiFrigateValue=15
-NewShipType.totalValue=10
+NewShipType.antiFrigateValue=3
+NewShipType.totalValue=2
 NewShipType.buildCost=575
 NewShipType.buildTime=40
 NewShipType.buildPriorityOrder=30
