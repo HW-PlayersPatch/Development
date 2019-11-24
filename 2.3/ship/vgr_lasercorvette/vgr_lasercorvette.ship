@@ -162,7 +162,7 @@ addAbility(NewShipType,"RetireAbility",1,0);
 addCustomCode(NewShipType, "data:ship/Vgr_LaserCorvette/Vgr_LaserCorvette.lua", "", "", "Update_Vgr_Laser_Corvette", "", "Vgr_LaserCorvette", 1)
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Vgr_Laser","Weapon_Laser","Fire_L");
-addShield(NewShipType,"EMP",75,20);
+addShield(NewShipType,"EMP",110,20);
 NewShipType.battleScarCoverage=1
 NewShipType.battleScarBudgetLow = 400
 NewShipType.battleScarBudgetNext = 600

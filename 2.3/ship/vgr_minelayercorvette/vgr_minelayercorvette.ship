@@ -158,7 +158,7 @@ LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Vgr_MineLayer","Weapon_Mine","");
 StartShipWeaponConfig(NewShipType,"Vgr_MinelayerCannon","Weapon_ClearMine","Weapon_ClearMine");
 StartShipWeaponConfig(NewShipType,"Vgr_MineSweeperBurstCannon","Weapon_ClearMine","Weapon_ClearMine");
-addShield(NewShipType,"EMP",75,20);
+addShield(NewShipType,"EMP",110,20);
 NewShipType.battleScarCoverage=1
 NewShipType.battleScarBudgetLow = 400
 NewShipType.battleScarBudgetNext = 600

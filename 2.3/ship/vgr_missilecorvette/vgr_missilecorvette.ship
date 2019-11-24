@@ -162,7 +162,7 @@ addCustomCode(NewShipType, "data:ship/Vgr_MissileCorvette/Vgr_MissileCorvette.lu
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Vgr_ConcussionMissileLauncher","Weapon_MissileVette","Fire_Missile");
 StartShipWeaponConfig(NewShipType,"Vgr_ConcussionMissileLauncher_Medium","Weapon_MissileVetteAlt","Fire_MissileAlt");
-addShield(NewShipType,"EMP",75,20);
+addShield(NewShipType,"EMP",110,20);
 NewShipType.battleScarCoverage=1
 NewShipType.battleScarBudgetLow = 400
 NewShipType.battleScarBudgetNext = 600
