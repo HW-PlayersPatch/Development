@@ -143,7 +143,7 @@ addAbility(NewShipType,"CanAttack",1,0,2,0,0.35,1,"Fighter_hw1, Fighter, Corvett
 {ResourceLarge="kamikaze"});
 NewShipType.noCombatGrouping=1
 LoadModel(NewShipType,1);
-addShield(NewShipType,"EMP",45,20);
+addShield(NewShipType,"EMP",65,20);
 NewShipType.battleScarCoverage=1
 NewShipType.sobDieTime=2
 NewShipType.sobSpecialDieTime=1

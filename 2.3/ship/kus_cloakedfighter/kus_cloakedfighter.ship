@@ -160,7 +160,7 @@ addCustomCode(NewShipType, "data:ship/Kus_CloakedFighter/Kus_CloakedFighter.lua"
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Kus_CloakedFighter","Weapon_Gun0","Weapon_Gun0");
 StartShipWeaponConfig(NewShipType,"Kus_CloakedFighter","Weapon_Gun1","Weapon_Gun1");
-addShield(NewShipType,"EMP",30,20);
+addShield(NewShipType,"EMP",65,20);
 NewShipType.battleScarCoverage=0
 NewShipType.sobDieTime=2
 NewShipType.sobSpecialDieTime=2

@@ -175,7 +175,7 @@ StartShipWeaponConfig(NewShipType,"Vgr_AntiShipBombLauncher","Weapon_L","Weapon_
 StartShipWeaponConfig(NewShipType,"Vgr_AntiShipBombLauncher","Weapon_R","Weapon_R");
 StartShipWeaponConfig(NewShipType,"Vgr_AntiSubSystemBombLauncher","Weapon_L","Weapon_L");
 StartShipWeaponConfig(NewShipType,"Vgr_AntiSubSystemBombLauncher","Weapon_R","Weapon_R");
-addShield(NewShipType,"EMP",75,20);
+addShield(NewShipType,"EMP",110,20);
 NewShipType.battleScarCoverage=0
 NewShipType.sobDieTime=2
 NewShipType.sobSpecialDieTime=2

@@ -159,7 +159,7 @@ addAbility(NewShipType,"MinelayerAbility",1,3.5);
 LoadModel(NewShipType,1);
 StartShipHardPointConfig(NewShipType,"Weapon_TurretBottom","Hardpoint_TurretBottom","Weapon","Innate","Ship","Hgn_MinelayerKineticTurret","","","","","","","","");
 StartShipWeaponConfig(NewShipType,"Hgn_MineLayer","Weapon_Mine","");
-addShield(NewShipType,"EMP",75,20);
+addShield(NewShipType,"EMP",110,20);
 NewShipType.battleScarCoverage=1
 NewShipType.battleScarBudgetLow = 400
 NewShipType.battleScarBudgetNext = 600

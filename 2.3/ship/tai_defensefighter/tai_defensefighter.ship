@@ -154,7 +154,7 @@ AddShipMultiplier(NewShipType,"WeaponAccuracy","EnemyShipsWithinRadius","Linear"
 addCustomCode(NewShipType,"data:ship/Tai_DefenseFighter/Tai_DefenseFighter.lua","","","updateDefenseFighter","","DefenseFighter",1.25)
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Tai_DefenseLaser","Weapon_Gun0","");
-addShield(NewShipType,"EMP",30,20);
+addShield(NewShipType,"EMP",65,20);
 NewShipType.battleScarCoverage=0
 NewShipType.sobDieTime=2
 NewShipType.sobSpecialDieTime=2

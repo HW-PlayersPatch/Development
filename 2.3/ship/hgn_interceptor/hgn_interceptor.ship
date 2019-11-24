@@ -166,7 +166,7 @@ addAbility(NewShipType,"RetireAbility",1,0);
 addCustomCode(NewShipType, "data:ship/Hgn_Interceptor/Hgn_Interceptor.lua", "", "", "Update_Hgn_Interceptor", "", "Hgn_Interceptor", 1)
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Hgn_KineticAutoGun","Weapon_FrontGun","Fire");
-addShield(NewShipType,"EMP",75,20);
+addShield(NewShipType,"EMP",110,20);
 NewShipType.battleScarCoverage=0
 NewShipType.sobDieTime=2
 NewShipType.sobSpecialDieTime=2
