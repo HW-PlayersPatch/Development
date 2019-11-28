@@ -1039,6 +1039,8 @@ end
 function Rule_Dread_Repairs_Complete()
 	if ( Timer_GetRemaining( 0 )  <= 0 ) then
 
+		Rule_Remove("Rule_Test_Lauch_Or_Destruction")
+
 		Rule_Add("Rule_Destroy_Vaygr")
 		
 		SobGroup_Launch("Dreadnaught", "Shipyard" )
