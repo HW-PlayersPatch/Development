@@ -21,7 +21,7 @@ KUS_DRONE_PARADE_POSITIONS = {
 }
 DF_MEM = {
 	group_name = 'drone_frigates',
-	group = MemGroup.Create(DF_MEM.group_name)
+	group = MemGroup.Create('drone_frigates')
 }
 function Drone_GetParadePosition(frigate_position, drone_index)
 	local parade_position = {}
@@ -143,9 +143,11 @@ function Create_DroneFrigate(CustomGroup, playerIndex, shipID)
 	SobGroup_CreateIfNotExist("all_drones" .. shipID)
 	SobGroup_CreateIfNotExist("frigate_attack_targets" .. shipID)
 	SobGroup_CreateIfNotExist("drone_attack_targets" .. shipID)
+
+	DF_MEM.group:set(shipID)
 end
 function Update_DroneFrigate(CustomGroup, playerIndex, shipID)
-	local this_df = DF_MEM.get(shipID)
+	local this_df = DF_MEM.group:get(shipID)
 
     NoSalvageScuttle(CustomGroup, playerIndex, shipID)
 	-- forces AI cpu drone activation if enemy ships are nearby
@@ -190,11 +192,13 @@ function Update_DroneFrigate(CustomGroup, playerIndex, shipID)
 					SobGroup_ParadeSobGroup(this_drone, CustomGroup, 0)
 				end
 				if (SobGroup_AnyAreAttacking(this_drone) == 1) then -- this check is seperate so the frigate can (uniquely) do move commands while shooting
+					print("move and shoot")
 					local parade_position = Drone_GetParadePosition(SobGroup_GetPosition(CustomGroup), k)
-					if (mod(DF_MEM.get(shipID).GetTick(), 2) == 0) then -- every 5th script call (2.3s)
+					if (mod(DF_MEM.group:get(shipID):GetTick(), 2) == 0) then -- every 5th script call (2.3s)
 						SobGroup_MoveToPoint(SobGroup_GetPlayerOwner(this_drone), this_drone, parade_position) -- move close to parade position
 					end
 				else
+					print("give up and parade")
 					SobGroup_ParadeSobGroup(this_drone, CustomGroup, 0) -- reform parade around frigate
 				end
 			end
@@ -204,7 +208,7 @@ function Update_DroneFrigate(CustomGroup, playerIndex, shipID)
 			--SobGroup_DockSobGroupInstant("kus_drone" .. tostring(shipID) .. tostring(k), CustomGroup)
 		end
 	end
-	this_df.NextTick()
+	this_df:NextTick()
 end
 function Destroy_DroneFrigate(CustomGroup, playerIndex, shipID)
 	for k = 0,SobGroup_Count("all_drones" .. shipID) - 1,1 do
