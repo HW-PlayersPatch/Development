@@ -24,41 +24,45 @@ MemGroup = {
 	--   _tick: string
 	--   GetTick: function() => number
 	--   NextTick: function() => number
-	-- In addition, the entity will also host the attributes defined
+	-- In addition, the entities will also host the attributes defined
 	-- in custom_attributes.
 	_new = function(group_name, custom_attribs)
 		local new_group = {
 			_entities = {},
 			_group_name = group_name,
 			_custom_attribs = custom_attribs,
-			set = function (entityID, entity)
-				MemGroup._groups[group_name].entites[entityID] = entity
-				local e = MemGroup._groups[group_name].entites[entityID]
-				if (e._tick == nil) then
-					e._tick = 0
-				end
-				function e:NextTick()
-					self._tick = self._tick + 1
-					if (self._tick > 128) then
-						self._tick = 0
-					end
-					return self._tick
-				end
-				function e:GetTick()
-					return self._tick
-				end
-				for i, v in MemGroup._groups[group_name]._custom_attribs do
-					e[i] = v
-				end
-				return e
-			end,
-			delete = function(entityID)
-				MemGroup._groups[group_name]._entites[entityID] = nil
-			end
 		}
 		function new_group:get(entityID)
-			return self._entites[entityID]
+			return self._entities[entityID]
 		end
+		function new_group:set(entityID, entity)
+			if (entity == nil) then
+				entity = {}
+			end
+			self._entities[entityID] = entity
+			local e = self._entities[entityID]
+			if (e._tick == nil) then
+				e._tick = 0
+			end
+			function e:NextTick()
+				self._tick = self._tick + 1
+				if (self._tick >= 127) then
+					self._tick = 0
+				end
+				return self._tick
+			end
+			function e:GetTick()
+				return self._tick
+			end
+			for i, v in self._custom_attribs do
+				e[i] = v
+			end
+			return e
+		end
+		function new_group:delete(entityID)
+			self._entities[entityID] = nil
+		end
+		return new_group
 	end,
 	-- Create
 	-- 1: group_name: string
