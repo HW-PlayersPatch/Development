@@ -178,14 +178,14 @@ function StatusUnderAttack(shipnm, enemy, attackcode)
 	print("****** StatusUnderAttack: shipnm, enemy, attackcode = {"..shipnm..","..enemy..","..attackcode.."}")
 	
 	if (attackcode > FC_OVERRIDE_DISTSQR) then
-		if (currentRace == Vaygr) then
+		if (raceHelper() == "Makaan") then
 			if (attackMapMak[""..shipnm] ~= nil) then
-				playSpeechActor(attackMapMak[""..shipnm],NameMakaan,0, Frequency_Status)
+				playSpeechActor(attackMapMak[""..shipnm],"Makaan",0, Frequency_Status)
 				return
 			end
 		else
 			if (attackMapFC[""..shipnm] ~= nil) then
-				playSpeechActor(attackMapFC[""..shipnm],NameFleetCommand,0, Frequency_Status)
+				playSpeechActor(attackMapFC[""..shipnm],"Fleet",0, Frequency_Status)
 				return
 			end
 		end
@@ -259,17 +259,17 @@ function StatusCaptureComplete(shipnm, targetnm, cameradistance)
 		elseif(generictargetnm == "Battlecruiser") then
 			playSpeechActor("STATUS_EnemyBattlecrusierCaptured_1",raceHelper(),0, Frequency_Status)
 		else
-			if (currentRace == Hiigaran) then
-				playSpeechActor("STATUS_MarineFrigate_Success",NameMarinePilot,NumMarinePilots, Frequency_Status)
-			elseif (currentRace == Vaygr) then
+			if (raceHelper() == "Makaan") then
 				playSpeechActor("STATUS_InfiltratorFrigate_Success",NameInfiltratorPilot,NumInfiltratorPilots, Frequency_Status)
+			elseif (Race_ID[currentRace] == "Hiigaran" or Race_ID[currentRace] == "2x_Hiigaran") then
+				playSpeechActor("STATUS_MarineFrigate_Success",NameMarinePilot,NumMarinePilots, Frequency_Status)
 			end	
 		end
 	else
-		if (currentRace == Hiigaran) then
-			playSpeechActor("STATUS_MarineFrigate_Success",NameMarinePilot,NumMarinePilots, Frequency_Status)
-		elseif (currentRace == Vaygr) then
+		if (raceHelper() == "Makaan") then
 			playSpeechActor("STATUS_InfiltratorFrigate_Success",NameInfiltratorPilot,NumInfiltratorPilots, Frequency_Status)
+		elseif (Race_ID[currentRace] == "Hiigaran" or Race_ID[currentRace] == "2x_Hiigaran") then
+			playSpeechActor("STATUS_MarineFrigate_Success",NameMarinePilot,NumMarinePilots, Frequency_Status)
 		end	
 	end
 

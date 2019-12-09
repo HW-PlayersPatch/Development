@@ -12,7 +12,7 @@ function Chatter_Init()
 end
 
 -- used for selecting FleetCommand or Makaan
-currentRace = 1
+-- currentRace = 1
 
 ----+++++++++++++++++++++++----
 --   PROBABILITY  TABLES      --
