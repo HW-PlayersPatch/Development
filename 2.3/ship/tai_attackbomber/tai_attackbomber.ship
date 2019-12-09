@@ -81,14 +81,14 @@ setSupplyValue(NewShipType, "Fighter", 1.0)
 setSupplyValue(NewShipType, "Bomber", 1.0)
 setSupplyValue(NewShipType, "LayoutFighter", 1.0)
 NewShipType.CombatFamily="Fighter_Bomber"
-NewShipType.fighterValue=8
+NewShipType.fighterValue=1.6
 NewShipType.corvetteValue=0
 NewShipType.frigateValue=0
 NewShipType.neutralValue=0
 NewShipType.antiFighterValue=0
 NewShipType.antiCorvetteValue=0
-NewShipType.antiFrigateValue=9
-NewShipType.totalValue=8
+NewShipType.antiFrigateValue=1.8
+NewShipType.totalValue=1.6
 NewShipType.buildCost=130
 NewShipType.buildTime=10
 NewShipType.buildPriorityOrder=30
@@ -161,7 +161,7 @@ addAbility(NewShipType,"RetireAbility",1,0);
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"HW1_Bomber","Weapon_Gun0","Weapon_Gun0");
 StartShipWeaponConfig(NewShipType,"HW1_Bomber","Weapon_Gun1","Weapon_Gun1");
-addShield(NewShipType,"EMP",30,20);
+addShield(NewShipType,"EMP",65,20);
 NewShipType.battleScarCoverage=0
 NewShipType.sobDieTime=2
 NewShipType.sobSpecialDieTime=2

@@ -75,13 +75,13 @@ NewShipType.ArmourFamily=getShipStr(NewShipType, "ArmourFamily", "LightArmour_hw
 setSupplyValue(NewShipType, "Corvette", 1.0)
 setSupplyValue(NewShipType, "LayoutCorvette", 1.0)
 NewShipType.fighterValue=0
-NewShipType.corvetteValue=13
+NewShipType.corvetteValue=4.33
 NewShipType.frigateValue=0
 NewShipType.neutralValue=0
-NewShipType.antiFighterValue=15
-NewShipType.antiCorvetteValue=8
+NewShipType.antiFighterValue=5
+NewShipType.antiCorvetteValue=2.66
 NewShipType.antiFrigateValue=0
-NewShipType.totalValue=13
+NewShipType.totalValue=4.33
 NewShipType.buildCost=225
 NewShipType.buildTime=21
 NewShipType.buildPriorityOrder=30
@@ -158,7 +158,7 @@ StartShipHardPointConfig(NewShipType,"Weapon_Gun2","Hardpoint_Gun2","Weapon","In
 StartShipHardPointConfig(NewShipType,"Weapon_Gun3","Hardpoint_Gun3","Weapon","Innate","Ship","Kus_MultiGun2","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Weapon_Gun4","Hardpoint_Gun4","Weapon","Innate","Ship","Kus_MultiGun1","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Weapon_Gun5","Hardpoint_Gun5","Weapon","Innate","Ship","Kus_MultiGun1","","","","","","","","");
-addShield(NewShipType,"EMP",45,20);
+addShield(NewShipType,"EMP",65,20);
 NewShipType.battleScarCoverage=1
 NewShipType.sobDieTime=2
 NewShipType.sobSpecialDieTime=1

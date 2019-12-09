@@ -80,14 +80,14 @@ setSupplyValue(NewShipType, "Fighter", 1.0)
 setSupplyValue(NewShipType, "CloakedFighters", 1.0)
 setSupplyValue(NewShipType, "LayoutFighter", 1.0)
 NewShipType.CombatFamily="Fighter_Special"
-NewShipType.fighterValue=6
+NewShipType.fighterValue=1.6
 NewShipType.corvetteValue=0
 NewShipType.frigateValue=0
 NewShipType.neutralValue=0
-NewShipType.antiFighterValue=6
+NewShipType.antiFighterValue=1.6
 NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
-NewShipType.totalValue=6
+NewShipType.totalValue=1.6
 NewShipType.buildCost=130
 NewShipType.buildTime=12
 NewShipType.buildPriorityOrder=50
@@ -160,7 +160,7 @@ addCustomCode(NewShipType, "data:ship/Kus_CloakedFighter/Kus_CloakedFighter.lua"
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Kus_CloakedFighter","Weapon_Gun0","Weapon_Gun0");
 StartShipWeaponConfig(NewShipType,"Kus_CloakedFighter","Weapon_Gun1","Weapon_Gun1");
-addShield(NewShipType,"EMP",30,20);
+addShield(NewShipType,"EMP",65,20);
 NewShipType.battleScarCoverage=0
 NewShipType.sobDieTime=2
 NewShipType.sobSpecialDieTime=2

@@ -81,13 +81,13 @@ setSupplyValue(NewShipType, "Corvette", 3.0)
 setSupplyValue(NewShipType, "LayoutCorvette", 3.0)
 NewShipType.CombatFamily="Corvette_Missile"
 NewShipType.fighterValue=0
-NewShipType.corvetteValue=10
+NewShipType.corvetteValue=2.5
 NewShipType.frigateValue=0
 NewShipType.neutralValue=0
 NewShipType.antiFighterValue=0
-NewShipType.antiCorvetteValue=10
+NewShipType.antiCorvetteValue=2.5
 NewShipType.antiFrigateValue=0
-NewShipType.totalValue=10
+NewShipType.totalValue=2.5
 NewShipType.buildCost=625
 NewShipType.buildTime=45
 NewShipType.buildPriorityOrder=10
@@ -162,7 +162,7 @@ addCustomCode(NewShipType, "data:ship/Vgr_MissileCorvette/Vgr_MissileCorvette.lu
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Vgr_ConcussionMissileLauncher","Weapon_MissileVette","Fire_Missile");
 StartShipWeaponConfig(NewShipType,"Vgr_ConcussionMissileLauncher_Medium","Weapon_MissileVetteAlt","Fire_MissileAlt");
-addShield(NewShipType,"EMP",75,20);
+addShield(NewShipType,"EMP",110,20);
 NewShipType.battleScarCoverage=1
 NewShipType.battleScarBudgetLow = 400
 NewShipType.battleScarBudgetNext = 600

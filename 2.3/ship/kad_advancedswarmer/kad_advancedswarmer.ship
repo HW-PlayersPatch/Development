@@ -65,14 +65,14 @@ NewShipType.CollisionFamily="Small"
 NewShipType.ArmourFamily="SwarmerArmor"
 setSupplyValue(NewShipType, "Fighter", 1.0)
 setSupplyValue(NewShipType, "LayoutFighter", 1.0)
-NewShipType.fighterValue=10
+NewShipType.fighterValue=2
 NewShipType.corvetteValue=0
 NewShipType.frigateValue=0
 NewShipType.neutralValue=0
-NewShipType.antiFighterValue=8
+NewShipType.antiFighterValue=1.6
 NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
-NewShipType.totalValue=8
+NewShipType.totalValue=2
 NewShipType.buildCost=250
 NewShipType.buildTime=6
 NewShipType.buildPriorityOrder=10

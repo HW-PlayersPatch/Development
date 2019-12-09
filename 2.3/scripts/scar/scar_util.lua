@@ -451,7 +451,7 @@ function HW2_SetResearchLevel( missionID )
 		
 		local researchList2 = {
 		
- 						{"SensDisProbe", 2 },
+ 						{"SensDisProbe", 4 },
 						{ "InstaAdvancedFrigateTech", 2 },
 						
 						{ "ShipyardHealthUpgrade1", 9 },

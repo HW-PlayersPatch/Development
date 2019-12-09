@@ -267,7 +267,7 @@ NewResearchMenu = {
 		{"Vaygr", "Platform","Vgr_HyperSpace_Platform"},
 		--{"Vaygr", "SubSystemModule","Vgr_C_Module_Research"},
 		--{"Vaygr", "SubSystemSensors","Vgr_C_Sensors_Advanced"},
-		{"Hiigaran", "Fighter","Hgn_Bomber"},
+		{"Hiigaran", "Fighter","Hgn_AttackBomber"},
 		{"Hiigaran", "Corvette","Hgn_MinelayerCorvette"},
 		{"Hiigaran", "Frigate","Hgn_DefenseFieldFrigate"},
 		{"Hiigaran", "Capital","Hgn_Shipyard"},

@@ -179,7 +179,7 @@ OrderData = {
 
 WeaponFire = {
 	-- factor that the damage gets multiplied with for friendly ships. Should be between 0 and 1. So 0 means there is no friendly fire, 1 means there is full friendly fire
-	FriendlyFireRatio			= 0.5,
+	FriendlyFireRatio			= 0.45,
 }
 
 HyperSpace = {

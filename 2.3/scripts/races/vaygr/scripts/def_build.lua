@@ -17,7 +17,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"vgr_c_production_fighter",
+		ThingToBuild = 			"Vgr_C_Production_Fighter",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		0,
@@ -27,7 +27,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"vgr_ms_production_fighter",
+		ThingToBuild = 			"Vgr_MS_Production_Fighter",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		0,
@@ -38,7 +38,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"vgr_c_production_corvette",
+		ThingToBuild = 			"Vgr_C_Production_Corvette",
 		RequiredResearch =		"CorvetteTech",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		0,
@@ -48,7 +48,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"vgr_ms_production_corvette",
+		ThingToBuild = 			"Vgr_MS_Production_Corvette",
 		RequiredResearch =		"CorvetteTech",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		0,
@@ -59,7 +59,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"vgr_c_production_frigate",
+		ThingToBuild = 			"Vgr_C_Production_Frigate",
 		RequiredResearch =		"FrigateTech",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		0,
@@ -69,7 +69,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"vgr_ms_production_frigate",
+		ThingToBuild = 			"Vgr_MS_Production_Frigate",
 		RequiredResearch =		"FrigateTech",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		0,
@@ -80,7 +80,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"vgr_c_module_platformcontrol",
+		ThingToBuild = 			"Vgr_C_Module_PlatformControl",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		0,
@@ -90,7 +90,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"vgr_ms_module_platformcontrol",
+		ThingToBuild = 			"Vgr_MS_Module_PlatformControl",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		0,
@@ -100,7 +100,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"vgr_ms_production_capship",
+		ThingToBuild = 			"Vgr_MS_Production_CapShip",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		0,
@@ -111,7 +111,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"vgr_sy_production_capship",
+		ThingToBuild = 			"Vgr_SY_Production_CapShip",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		10,
@@ -121,7 +121,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"vgr_c_module_research",
+		ThingToBuild = 			"Vgr_C_Module_Research",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		10,
@@ -131,7 +131,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"vgr_ms_module_research",
+		ThingToBuild = 			"Vgr_MS_Module_Research",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		10,
@@ -141,7 +141,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"vgr_c_module_cloakgenerator",
+		ThingToBuild = 			"Vgr_C_Module_CloakGenerator",
 		RequiredResearch =		"",
 		RequiredFleetSubSystems =	"Research",
 		DisplayPriority =		15,
@@ -152,7 +152,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"vgr_ms_module_cloakgenerator",
+		ThingToBuild = 			"Vgr_MS_Module_CloakGenerator",
 		RequiredResearch =		"",
 		RequiredFleetSubSystems =	"Research",
 		DisplayPriority =		15,
@@ -162,7 +162,7 @@ build =
 	
 		{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"vgr_c_module_hyperspaceinhibitor",
+		ThingToBuild = 			"Vgr_C_Module_HyperspaceInhibitor",
 		RequiredResearch =		"",
 		RequiredFleetSubSystems =	"Research",
 		DisplayPriority =		16,
@@ -172,7 +172,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"vgr_ms_module_hyperspaceinhibitor",
+		ThingToBuild = 			"Vgr_MS_Module_HyperspaceInhibitor",
 		RequiredResearch =		"",
 		RequiredFleetSubSystems =	"Research",
 		DisplayPriority =		16,
@@ -182,7 +182,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"vgr_c_module_firecontrol",
+		ThingToBuild = 			"Vgr_C_Module_FireControl",
 		RequiredResearch =		"",
 		RequiredFleetSubSystems =	"Research",
 		DisplayPriority =		21,
@@ -193,7 +193,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"vgr_ms_module_firecontrol",
+		ThingToBuild = 			"Vgr_MS_Module_FireControl",
 		RequiredResearch =		"",
 		RequiredFleetSubSystems =	"Research",
 		DisplayPriority =		21,
@@ -203,7 +203,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"vgr_c_module_hyperspace",
+		ThingToBuild = 			"Vgr_C_Module_Hyperspace",
 		RequiredResearch =		"HyperspaceGateTech",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		20,
@@ -213,7 +213,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"vgr_ms_module_hyperspace",
+		ThingToBuild = 			"Vgr_MS_Module_Hyperspace",
 		RequiredResearch =		"HyperspaceGateTech",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		20,
@@ -223,7 +223,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"vgr_c_sensors_advancedarray",
+		ThingToBuild = 			"Vgr_C_Sensors_AdvancedArray",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		25,
@@ -234,7 +234,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"vgr_ms_sensors_advancedarray",
+		ThingToBuild = 			"Vgr_MS_Sensors_AdvancedArray",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		25,
@@ -245,7 +245,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"vgr_c_sensors_detecthyperspace",
+		ThingToBuild = 			"Vgr_C_Sensors_DetectHyperspace",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		30,
@@ -255,7 +255,7 @@ build =
 
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"vgr_ms_sensors_detecthyperspace",
+		ThingToBuild = 			"Vgr_MS_Sensors_DetectHyperspace",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		30,
@@ -265,7 +265,7 @@ build =
 
 --	{ 
 --		Type = 					SubSystem, 
---		ThingToBuild = 			"vgr_c_module_buildspeed",
+--		ThingToBuild = 			"Vgr_C_Module_BuildSpeed",
 --		RequiredResearch =		"InstaFrigateTech",
 --		RequiredShipSubSystems =	"",
 --		DisplayPriority =		31,
@@ -275,7 +275,7 @@ build =
 
 --	{ 
 --		Type = 					SubSystem, 
---		ThingToBuild = 			"vgr_ms_module_buildspeed",
+--		ThingToBuild = 			"Vgr_MS_Module_BuildSpeed",
 --		RequiredResearch =		"InstaFrigateTech",
 --		RequiredShipSubSystems =	"",
 --		DisplayPriority =		31,
@@ -292,7 +292,7 @@ build =
 
 	{
 		Type = 					Ship, 
-		ThingToBuild = 			"vgr_scout",
+		ThingToBuild = 			"Vgr_Scout",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		20,
@@ -302,7 +302,7 @@ build =
 
 	{ 
 		Type = 					Ship, 
-		ThingToBuild = 			"vgr_interceptor",
+		ThingToBuild = 			"Vgr_Interceptor",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"FighterProduction",
 		DisplayPriority =		21,
@@ -312,7 +312,7 @@ build =
 
 	{ 
 		Type = 					Ship, 
-		ThingToBuild = 			"vgr_bomber",
+		ThingToBuild = 			"Vgr_Bomber",
 		RequiredResearch =		"PlasmaBombs",
 		RequiredShipSubSystems =	"FighterProduction",
 		DisplayPriority =		22,
@@ -322,7 +322,7 @@ build =
 
 	{ 
 		Type = 					Ship, 
-		ThingToBuild = 			"vgr_lancefighter",
+		ThingToBuild = 			"Vgr_LanceFighter",
 		RequiredResearch =		"LanceBeams",
 		RequiredShipSubSystems =	"FighterProduction",
 		DisplayPriority =		23,
@@ -334,7 +334,7 @@ build =
 
 	{ 
 		Type = 					Ship, 
-		ThingToBuild = 			"vgr_missilecorvette",
+		ThingToBuild = 			"Vgr_MissileCorvette",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"CorvetteProduction",
 		DisplayPriority =		100,
@@ -344,7 +344,7 @@ build =
 
 	{ 
 		Type = 					Ship, 
-		ThingToBuild = 			"vgr_lasercorvette",
+		ThingToBuild = 			"Vgr_LaserCorvette",
 		RequiredResearch =		"CorvetteLaser",
 		RequiredShipSubSystems =	"CorvetteProduction",
 		DisplayPriority =		105,
@@ -354,7 +354,7 @@ build =
 	
 	{ 
 		Type =					Ship, 
-		ThingToBuild =			"vgr_commandcorvette",
+		ThingToBuild =			"Vgr_CommandCorvette",
 		RequiredResearch =		"CorvetteCommand",
 		RequiredShipSubSystems =	"CorvetteProduction",
 		DisplayPriority =		110,
@@ -364,7 +364,7 @@ build =
 
 	{ 
 		Type = 					Ship, 
-		ThingToBuild = 			"vgr_minelayercorvette",
+		ThingToBuild = 			"Vgr_MinelayerCorvette",
 		RequiredResearch =		"CorvetteGraviticAttraction",
 		RequiredShipSubSystems =	"CorvetteProduction",
 		DisplayPriority =		115,
@@ -376,7 +376,7 @@ build =
 
 	{ 
 		Type = 					Ship, 
-		ThingToBuild = 			"vgr_assaultfrigate",
+		ThingToBuild = 			"Vgr_AssaultFrigate",
 		RequiredResearch =		"FrigateAssault",
 		RequiredShipSubSystems =	"FrigateProduction",
 		DisplayPriority =		200,
@@ -386,7 +386,7 @@ build =
 
 --	{ 
 --		Type = 					Ship, 
---		ThingToBuild = 			"vgr_transportfrigate",
+--		ThingToBuild = 			"Vgr_TransportFrigate",
 --		RequiredResearch =		"FrigateTransport",
 --		RequiredShipSubSystems =	"FrigateProduction",
 --		DisplayPriority =		210,
@@ -396,7 +396,7 @@ build =
 
 	{ 
 		Type = 					Ship, 
-		ThingToBuild = 			"vgr_heavymissilefrigate",
+		ThingToBuild = 			"Vgr_HeavyMissileFrigate",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"FrigateProduction",
 		DisplayPriority =		220,
@@ -406,7 +406,7 @@ build =
 
 	{ 
 		Type = 					Ship, 
-		ThingToBuild = 			"vgr_infiltratorfrigate",
+		ThingToBuild = 			"Vgr_InfiltratorFrigate",
 		RequiredResearch =		"FrigateInfiltrationTech",
 		RequiredShipSubSystems =	"FrigateProduction",
 		DisplayPriority =		230,
@@ -419,7 +419,7 @@ build =
 
 	{ 
 		Type = 					Ship, 
-		ThingToBuild = 			"vgr_destroyer",
+		ThingToBuild = 			"Vgr_Destroyer",
 		RequiredResearch =		"DestroyerGuns",
 		RequiredShipSubSystems =	"CapShipProduction",
 		DisplayPriority =		300,
@@ -429,7 +429,7 @@ build =
 
 	{ 
 		Type = 					Ship, 
-		ThingToBuild = 			"vgr_carrier",
+		ThingToBuild = 			"Vgr_Carrier",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"CapShipProduction",
 		DisplayPriority =		310,
@@ -439,7 +439,7 @@ build =
 
 	{ 
 		Type = 					Ship, 
-		ThingToBuild = 			"vgr_shipyard",
+		ThingToBuild = 			"Vgr_ShipYard",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"Hyperspace",
 		DisplayPriority =		320,
@@ -449,7 +449,7 @@ build =
 
 	{ 
 		Type = 					Ship, 
-		ThingToBuild = 			"vgr_battlecruiser",
+		ThingToBuild = 			"Vgr_BattleCruiser",
 		RequiredResearch =		"BattlecruiserIonWeapons",
 		RequiredShipSubSystems =	"CapShipProduction",
 		DisplayPriority =		330,
@@ -460,7 +460,7 @@ build =
 
 	{ 
 		Type =					Ship, 
-		ThingToBuild =			"vgr_weaponplatform_gun",
+		ThingToBuild =			"Vgr_WeaponPlatform_gun",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"PlatformProduction",
 		DisplayPriority =		400,
@@ -470,7 +470,7 @@ build =
 
 	{ 
 		Type = 					Ship, 
-		ThingToBuild = 			"vgr_weaponplatform_missile",
+		ThingToBuild = 			"Vgr_WeaponPlatform_missile",
 		RequiredResearch =		"PlatformHeavyMissiles",
 		RequiredShipSubSystems =	"PlatformProduction",
 		DisplayPriority =		410,
@@ -482,7 +482,7 @@ build =
 
 	{ 
 		Type = 					Ship, 
-		ThingToBuild = 			"vgr_resourcecollector",
+		ThingToBuild = 			"Vgr_ResourceCollector",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		500,
@@ -492,7 +492,7 @@ build =
 
 	{ 
 		Type = 					Ship, 
-		ThingToBuild = 			"vgr_resourcecontroller",
+		ThingToBuild = 			"Vgr_ResourceController",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		510,
@@ -502,7 +502,7 @@ build =
 
 	{ 
 		Type = 					Ship, 
-		ThingToBuild = 			"vgr_hyperspace_platform",
+		ThingToBuild = 			"Vgr_HyperSpace_Platform",
 		RequiredResearch =		"HyperspaceGateTech",
 		RequiredShipSubSystems =	"PlatformProduction",
 		DisplayPriority =		520,
@@ -512,7 +512,7 @@ build =
 
 	{ 
 		Type = 					Ship, 
-		ThingToBuild = 			"vgr_probe",
+		ThingToBuild = 			"Vgr_Probe",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		540,
@@ -522,7 +522,7 @@ build =
 
 	{ 
 		Type = 					Ship, 
-		ThingToBuild = 			"vgr_probe_prox",
+		ThingToBuild = 			"Vgr_Probe_Prox",
 		RequiredResearch =		"ProbeProxSensor",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		550,
@@ -532,7 +532,7 @@ build =
 
 	{ 
 		Type = 					Ship, 
-		ThingToBuild = 			"vgr_probe_ecm",
+		ThingToBuild = 			"Vgr_Probe_ECM",
 		RequiredResearch =		"ProbeSensorDisruption",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		560,
@@ -543,7 +543,7 @@ build =
 	-- Special --------------
 	{ 
 		Type = 					Ship, 
-		ThingToBuild = 			"vgr_planetkillermissile",
+		ThingToBuild = 			"Vgr_PlanetKillerMissile",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		612,

@@ -2,6 +2,16 @@
 --If you plan to change or add settings for another mod, please use "YourModName_" rather than "PlayersPatch_" to prevent conflicts in people's "Profile\PLAYERCFG.LUA".
 --Instructions are here: https://forums.gearboxsoftware.com/t/ui-in-game-screeen-slider-with-link-to-function/1528075/21
 
+function GetStanceOrderSetting()
+	StanceOrderSetting = GetOptionValueUI("PlayersPatch_StanceOrderSetting")
+
+	if StanceOrderSetting < 1 or StanceOrderSetting > 2 then
+		StanceOrderSetting = 1
+	end
+
+	return StanceOrderSetting
+end
+
 function GetTacticalOverlaySetting()
 	TacticalOverlaySetting = GetOptionValueUI("PlayersPatch_TacticalOverlaySetting")
 

@@ -5,8 +5,8 @@ RefCameraRotationSpeedScale = GetCameraRotationSpeedScale()
 RefCameraMaxZoomScale = GetCameraMaxZoomScale()
 RefMissionDifficultyScale = GetMissionDifficultyScale()
 
--- Resets the additional slider positions
--- This properly handles the Options>Change Sliders>Cancel>Options>Accept scenario
+--Resets the expanded options
+--This properly handles the Options>Change Settings>Cancel>Options>Accept scenario
 UI_AnchorSetScale('PlayersPatch_CameraPanSpeedScale', RefCameraPanSpeedScale, 1);
 UI_AnchorSetScale('PlayersPatch_CameraRotationSpeedScale', RefCameraRotationSpeedScale, 1);
 UI_AnchorSetScale('PlayersPatch_CameraMaxZoomScale', RefCameraMaxZoomScale, 1);
@@ -38,7 +38,7 @@ OPTION_GAMEPLAY_ORDERFEEDBACK		= Option_LabeledSlider("SFXVOLUME",				"$5114",	"
 OPTION_GAMEPLAY_DOTSCALE			= Option_LabeledSlider("DOTSCALE",				"$5475",	"lblDotScale",			"$5475",	"m_sbarDotScale",			"$5476", 1, 1, .1, 3, [[if (SetTacticalDotScale) then SetTacticalDotScale(%spos) end]]) --This had a bug that's been fixed
 
 
-------- Additional Sliders
+------- Expanded Options
 OPTION_GAMEPLAY_CAMERAPANSPEED = Option_LabeledSlider("CAMERAPANSPEED", "CAMERA PAN SPEED SCALE", "lblCameraPanSpeed", "CAMERA PAN SPEED SCALE", "m_sbarCameraPanSpeed", "ADJUST CAMERA PAN SPEED SCALE. DEFAULT IS 1. MUST RELAUNCH HOMEWORLD TO TAKE EFFECT.", 1, 1, 1.0, 2.0, [[UI_AnchorSetScale('PlayersPatch_CameraPanSpeedScale', %spos, 1);]])
 
 OPTION_GAMEPLAY_CAMERAROTATIONSPEED = Option_LabeledSlider("CAMERAROTATIONSPEED", "CAMERA ROTATION SPEED SCALE", "lblCameraRotationSpeed", "CAMERA ROTATION SPEED SCALE", "m_sbarCameraRotationSpeed", "ADJUST CAMERA ROTATION SPEED SCALE. DEFAULT IS 1. MUST RELAUNCH HOMEWORLD TO TAKE EFFECT.", 1, 1, 1.0, 2.0, [[UI_AnchorSetScale('PlayersPatch_CameraRotationSpeedScale', %spos, 1);]])
@@ -101,7 +101,6 @@ FE_GAMEPLAYOPTION_TAB = {
 						
 		--OPTION_GAMEPLAY_MOUSESENSITIVITY, --doesn't work
 		
-		-- Additional Sliders
 		OPTION_GAMEPLAY_CAMERAPANSPEED,
 		OPTION_GAMEPLAY_CAMERAROTATIONSPEED,
 		OPTION_GAMEPLAY_CAMERAMAXZOOM,
@@ -120,7 +119,7 @@ FE_GAMEPLAYOPTION_TAB = {
 	},
 }
 
---Sets the initial value/position for the additional sliders. The number in the second bracket must be it's location in the list.
+--Sets the initial value/position for the expanded slider options. The number in the second bracket must be it's location in the list.
 FE_GAMEPLAYOPTION_TAB[1][3][2][1].Text.text = RefCameraPanSpeedScale --initial value in the label
 FE_GAMEPLAYOPTION_TAB[1][3][2][2].scrollPosition = RefCameraPanSpeedScale --initial position for the scrollbar
 FE_GAMEPLAYOPTION_TAB[1][4][2][1].Text.text = RefCameraRotationSpeedScale --initial value in the label
