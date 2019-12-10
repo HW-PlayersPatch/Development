@@ -1,25 +1,5 @@
 dofilepath('data:scripts/playerspatch_ships_persistence.lua')
 
-KUS_DRONEFRIGATE_DRONE_COUNT = 14
-KUS_DRONEFRIGATE_WEAPON_RANGE = 2660
-KUS_DRONE_PARADE_POSITIONS = {
-	{210, 0, 0+10},
-	{-210, 0, 0+10},
-	{0, 210, 0+10},
-	{0, -210, 0+10},
-	{0, 0, 210+10},
-	{0, 0, -210+10},
-	{120, 120, 120+10},
-	{-120, 120, 120+10},
-	{120, -120, 120+10},
-	{-120, -120, 120+10},
-	{120, 120, -120+10},
-	{-120, 120, -120+10},
-	{120, -120, -120+10},
-	{-120, -120, -120+10},
-	{1050, -525, 700}
-}
-
 DF_MEM = MemGroup.Create('drone_frigates', {
 	too_far_die_distance = 950,
 	max_ticks_to_finish = 6,
@@ -47,7 +27,7 @@ DF_MEM = MemGroup.Create('drone_frigates', {
 function Drone_GetParadePosition(frigate_position, drone_index)
 	local parade_position = {}
 	for i, v in frigate_position do
-		parade_position[i] = v + KUS_DRONE_PARADE_POSITIONS[drone_index + 1][i]
+		parade_position[i] = v + DF_MEM.parade_positions[drone_index + 1][i]
 	end
 	return parade_position
 end
@@ -219,7 +199,7 @@ function Update_DroneFrigate(CustomGroup, playerIndex, shipID)
 					if SobGroup_AnyAreAttacking(CustomGroup) == 1 then -- override our target to attack anything the frigate itself is attacking
 						local frigate_attack_targets = "frigate_attack_targets" .. shipID
 						SobGroup_GetCommandTargets(frigate_attack_targets, CustomGroup, COMMAND_Attack)
-						if (SobGroup_GetDistanceToSobGroup(this_drone, frigate_attack_targets) <= KUS_DRONEFRIGATE_WEAPON_RANGE) then
+						if (SobGroup_GetDistanceToSobGroup(this_drone, frigate_attack_targets) <= DF_MEM.dronefrig_weapon_range) then
 							SobGroup_Attack(playerIndex, this_drone, frigate_attack_targets)
 						end
 					elseif SobGroup_IsCloaked(CustomGroup) == 1 or SobGroup_GetROE(CustomGroup) == PassiveROE then
