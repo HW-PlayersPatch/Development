@@ -29,9 +29,11 @@ MemGroup = {
 	_new = function(group_name, custom_attribs)
 		local new_group = {
 			_entities = {},
-			_group_name = group_name,
-			_custom_attribs = custom_attribs,
+			group_name = group_name,
 		}
+		for i, v in custom_attribs do
+			new_group[i] = v
+		end
 		function new_group:get(entityID)
 			return self._entities[entityID]
 		end
@@ -53,9 +55,6 @@ MemGroup = {
 			end
 			function e:GetTick()
 				return self._tick
-			end
-			for i, v in self._custom_attribs do
-				e[i] = v
 			end
 			return e
 		end
@@ -86,7 +85,7 @@ MemGroup = {
 	-- return: MemGroup
 	--
 	-- 'Hard' creation of group. If a group with this name already exists,
-	-- it will be silently overwritten. Internally calls NewMemGroup.
+	-- it will be silently overwritten. Internally calls _new.
 	ForceCreate = function (group_name, custom_attribs)
 		if custom_attribs == nil then
 			custom_attribs = {}
