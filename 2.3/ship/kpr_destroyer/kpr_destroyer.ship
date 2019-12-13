@@ -15,7 +15,7 @@ setTacticsMults(NewShipType, "FIRERATE", 0.98, 1.02, 1.0)
 NewShipType.isTransferable=0
 NewShipTypeuseEngagementRanges=1
 NewShipType.paradeData="kpr_destroyer_parade"
-NewShipType.defaultROE="Defensive"
+NewShipType.defaultROE="Aggressive"
 NewShipType.defaultStance="Aggressive"
 NewShipType.mass=300
 NewShipType.collisionMultiplier=1

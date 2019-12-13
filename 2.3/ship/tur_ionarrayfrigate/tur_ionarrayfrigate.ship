@@ -14,7 +14,7 @@ setTacticsMults(NewShipType, "ROTATIONACCEL", 1.10, 0.90, 1.0)
 setTacticsMults(NewShipType, "FIRERATE", 0.98, 1.02, 1.0)
 NewShipType.isTransferable=1
 NewShipTypeuseEngagementRanges=1
-NewShipType.defaultROE="Defensive"
+NewShipType.defaultROE="Aggressive"
 NewShipType.defaultStance="Aggressive"
 NewShipType.formationSpacing=250
 NewShipType.mass=100
