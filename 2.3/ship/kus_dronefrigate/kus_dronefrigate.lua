@@ -1,4 +1,3 @@
-dofilepath('data:scripts/playerspatch_ships_persistence.lua')
 
 DF_MEM = MemGroup.Create('drone_frigates', {
 	too_far_die_distance = 950,
@@ -31,6 +30,7 @@ function Drone_GetParadePosition(frigate_position, drone_index)
 	end
 	return parade_position
 end
+
 function SobGroup_AnyBeingCaptured(group)
 	local group_being_captured = group .. "_being_captured"
 	SobGroup_CreateAndClear(group_being_captured)
@@ -40,6 +40,7 @@ function SobGroup_AnyBeingCaptured(group)
 	end
 	return 0
 end
+
 function SobGroup_AnyAreAttacking(group)
 	local group_attacking = group .. "_attacking"
 	SobGroup_CreateAndClear(group_attacking)
@@ -49,11 +50,13 @@ function SobGroup_AnyAreAttacking(group)
 	end
 	return 0
 end
+
 function SobGroup_CreateAndClear(name)
 	SobGroup_CreateIfNotExist(name)
 	SobGroup_Clear(name)
 	return name;
 end
+
 function DroneFrigate_IsReady(frigate)
 	return (SobGroup_IsDoingAbility(frigate, AB_Hyperspace) == 0 and
 	SobGroup_IsDoingAbility(frigate, AB_HyperspaceViaGate) == 0 and
@@ -62,6 +65,7 @@ function DroneFrigate_IsReady(frigate)
 	SobGroup_IsDoingAbility(frigate, AB_Retire) == 0 and
 	SobGroup_AnyBeingCaptured(frigate) == 0)
 end
+
 function CreateNewDrone(index, drone, frigate, frigate_id)
 	SobGroup_CreateIfNotExist(drone)
 	if SobGroup_Count(drone) == 0 and -- group for this drone is empty, create the drone and add to group
@@ -80,6 +84,7 @@ function CreateNewDrone(index, drone, frigate, frigate_id)
 		end
 	end
 end
+
 function Drone_LaunchIfPossible(index, drone, frigate)
 	if SobGroup_IsDockedSobGroup(drone, frigate) == 1 then-- drone was docked
 		if DroneFrigate_IsReady(frigate) then
@@ -99,10 +104,12 @@ function Drone_LaunchIfPossible(index, drone, frigate)
 		end
 	end
 end
+
 function Drone_SetActive(drone, active)
 	SobGroup_AbilityActivate(drone, AB_Attack, active)
 	SobGroup_AbilityActivate(drone, AB_Targeting, active)
 end
+
 function Start_DroneFrigate(CustomGroup, playerIndex, shipID)
 	local r = random(1,6)
 	FX_StartEvent(CustomGroup, "dronelaunch_sfx"..r)
@@ -115,6 +122,7 @@ function Start_DroneFrigate(CustomGroup, playerIndex, shipID)
 	local this_df = DF_MEM:get(shipID)
 	this_df.attempting_finish = 0
 end
+
 function Do_DroneFrigate(CustomGroup, playerIndex, shipID)
 	local docked_with_frigate_group = "docked_with_" .. shipID
 	SobGroup_CreateAndClear(docked_with_frigate_group)
@@ -128,6 +136,7 @@ function Do_DroneFrigate(CustomGroup, playerIndex, shipID)
 		end
 	end
 end
+
 function Finish_DroneFrigate(CustomGroup, playerIndex, shipID)
 	local r = random(1,6)
 	FX_StartEvent(CustomGroup, "droneretract_sfx"..r)
@@ -143,7 +152,9 @@ function Finish_DroneFrigate(CustomGroup, playerIndex, shipID)
 	this_df.ticks_since_finish_call = 0
 	this_df.attempting_finish = 1
 end
+
 -----------------------------------------------------------------------------------
+
 function Create_DroneFrigate(CustomGroup, playerIndex, shipID)
 	SobGroup_SetSwitchOwnerFlag(CustomGroup, 0)
 	SobGroup_CreateIfNotExist("all_drones" .. shipID)
@@ -155,6 +166,7 @@ function Create_DroneFrigate(CustomGroup, playerIndex, shipID)
 		attempting_finish = 0
 	})
 end
+
 function Update_DroneFrigate(CustomGroup, playerIndex, shipID)
 	local this_df = DF_MEM:get(shipID)
 
@@ -228,6 +240,7 @@ function Update_DroneFrigate(CustomGroup, playerIndex, shipID)
 		this_df.ticks_since_finish_call = this_df.ticks_since_finish_call + 1
 	end
 end
+
 function Destroy_DroneFrigate(CustomGroup, playerIndex, shipID)
 	for k = 0,SobGroup_Count("all_drones" .. shipID) - 1,1 do
 		local this_drone = "kus_drone" .. tostring(shipID) .. tostring(k)
@@ -236,6 +249,7 @@ function Destroy_DroneFrigate(CustomGroup, playerIndex, shipID)
 		end
 	end
 end
+
 function SobGroup_GetDistanceToSobGroup(sg_Group1, sg_Group2)
 	if SobGroup_Empty(sg_Group1) == 0 and SobGroup_Empty(sg_Group2) == 0 then
 		local t_position1 = SobGroup_GetPosition(sg_Group1)
