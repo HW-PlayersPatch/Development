@@ -22,7 +22,7 @@ setTacticsMults(NewShipType, "BULLETSPEED", 1.10, 1.0, 1.0)
 setTacticsMults(NewShipType, "DAMAGEAPPLIED", 1.10, 0.90, 1.0)
 setTacticsMults(NewShipType, "FIRERATE", 1.0, 1.25, 1.0)
 NewShipType.formationSpacing=30
-NewShipType.defaultROE="Aggressive"
+NewShipType.defaultROE="Defensive"
 NewShipType.defaultStance="Aggressive"
 NewShipType.holdSlots=3
 NewShipType.mass=15

@@ -6,5 +6,4 @@ Number_Properties = {
 String_Properties_Priority = 1.0
 
 String_Properties = {
-    defaultROE="Aggressive",
 }

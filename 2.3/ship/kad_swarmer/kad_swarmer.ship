@@ -9,7 +9,7 @@ NewShipType.rearArmourDamage = getShipNum(NewShipType, "rearArmourDamage", 1.2)
 NewShipType.isTransferable=1
 setSpeedvsAccuracyApplied(NewShipType, 100.0, 5.0, 120, 1.0, 250, 1.0, 388, 0.98, 535, 0.7)
 NewShipType.formationSpacing=15
-NewShipType.defaultROE="Aggressive"
+NewShipType.defaultROE="Defensive"
 NewShipType.defaultStance="Aggressive"
 NewShipType.holdSlots=2
 NewShipType.mass=10

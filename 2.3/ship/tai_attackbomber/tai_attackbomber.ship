@@ -23,7 +23,7 @@ setTacticsMults(NewShipType, "FIRERATE", 1.0, 1.25, 1.0)
 setSpeedvsAccuracyApplied(NewShipType, 10.0, 1.5, 120, 1.0, 250, 1.0, 388, 0.58, 535, 0.40)
 NewShipType.isTransferable=1
 NewShipType.formationSpacing=15
-NewShipType.defaultROE=getShipStr(NewShipType, "defaultROE", "Defensive")
+NewShipType.defaultROE="Defensive"
 NewShipType.defaultStance="Aggressive"
 NewShipType.holdSlots=2
 NewShipType.mass=10
