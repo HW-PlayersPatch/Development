@@ -1,4 +1,3 @@
-
 DF_MEM = MemGroup.Create('drone_frigates', {
 	too_far_die_distance = 950,
 	max_ticks_to_finish = 6,
@@ -18,8 +17,7 @@ DF_MEM = MemGroup.Create('drone_frigates', {
 		{120, 120, -120+10},
 		{-120, 120, -120+10},
 		{120, -120, -120+10},
-		{-120, -120, -120+10},
-		{1050, -525, 700}
+		{-120, -120, -120+10}
 	}
 })
 
@@ -171,22 +169,9 @@ function Update_DroneFrigate(CustomGroup, playerIndex, shipID)
 	local this_df = DF_MEM:get(shipID)
 
     NoSalvageScuttle(CustomGroup, playerIndex, shipID)
-	-- forces AI cpu drone activation if enemy ships are nearby
+	-- forces AI cpu drone activation
 	if Player_GetLevelOfDifficulty(playerIndex) > 0 then
-		local playerIndex_ai = 0
-		local enemyships = 0
-		while playerIndex_ai < Universe_PlayerCount() do
-			if Player_IsAlive(playerIndex_ai) == 1 then
-				local distance = 4000
-				if SobGroup_FillProximitySobGroup(SobGroup_CreateAndClear("temp_" .. shipID), "Player_Ships"..playerIndex_ai, CustomGroup, distance) == 1 then
-					if AreAllied(playerIndex, playerIndex_ai) == 0 then
-						enemyships = 1
-					end
-				end
-			end
-			playerIndex_ai = playerIndex_ai + 1
-		end
-		if enemyships > 0 then
+		if DroneFrigate_IsReady(frigate) then
 			if SobGroup_IsDoingAbility(CustomGroup, AB_Custom) == 0 then
 				SobGroup_CustomCommand(CustomGroup)
 			end
@@ -203,25 +188,23 @@ function Update_DroneFrigate(CustomGroup, playerIndex, shipID)
 		else
 			Drone_SetActive(this_drone, 1)
 			if SobGroup_Empty(this_drone) == 0 then
-				if 	SobGroup_IsDockedSobGroup(this_drone, CustomGroup) == 0 and
-					SobGroup_IsDoingAbility(this_drone, AB_Dock) == 0 then
+				if SobGroup_IsDockedSobGroup(this_drone, CustomGroup) == 0 and SobGroup_IsDoingAbility(this_drone, AB_Dock) == 0 then
 					if SobGroup_GetDistanceToSobGroup(this_drone, CustomGroup) > 950 then -- too far from frigate, die
 						SobGroup_TakeDamage(this_drone, 1)
-					end
-					if SobGroup_AnyAreAttacking(CustomGroup) == 1 then -- override our target to attack anything the frigate itself is attacking
-						local frigate_attack_targets = "frigate_attack_targets" .. shipID
-						SobGroup_GetCommandTargets(frigate_attack_targets, CustomGroup, COMMAND_Attack)
-						if (SobGroup_GetDistanceToSobGroup(this_drone, frigate_attack_targets) <= DF_MEM.dronefrig_weapon_range) then
-							SobGroup_Attack(playerIndex, this_drone, frigate_attack_targets)
-						end
 					elseif SobGroup_IsCloaked(CustomGroup) == 1 or SobGroup_GetROE(CustomGroup) == PassiveROE then
 						Drone_SetActive(this_drone, 0)
 						SobGroup_ParadeSobGroup(this_drone, CustomGroup, 0)
-					end
-					if (SobGroup_AnyAreAttacking(this_drone) == 1) then -- this check is seperate so the frigate can (uniquely) do move commands while shooting
-						local parade_position = Drone_GetParadePosition(SobGroup_GetPosition(CustomGroup), k)
-						if (mod(this_df:GetTick(), 2) == 0) then -- every 5th script call (2.3s)
+					elseif SobGroup_AnyAreAttacking(CustomGroup) == 1 then -- override our target to attack anything the frigate itself is attacking
+						local frigate_attack_targets = "frigate_attack_targets" .. shipID
+						SobGroup_GetCommandTargets(frigate_attack_targets, CustomGroup, COMMAND_Attack)
+						SobGroup_Attack(playerIndex, this_drone, frigate_attack_targets)
+						if (SobGroup_AnyAreAttacking(this_drone) == 1) then -- this check is seperate so the frigate can (uniquely) do move commands while shooting
+							local parade_position = Drone_GetParadePosition(SobGroup_GetPosition(CustomGroup), k)
+							--if (mod(this_df:GetTick(), 2) == 0) then -- every X tick/script call
 							SobGroup_MoveToPoint(SobGroup_GetPlayerOwner(this_drone), this_drone, parade_position) -- move close to parade position
+							--end
+						else
+							SobGroup_ParadeSobGroup(this_drone, CustomGroup, 0) -- reform parade around frigate
 						end
 					else
 						SobGroup_ParadeSobGroup(this_drone, CustomGroup, 0) -- reform parade around frigate
