@@ -26,7 +26,7 @@ DF_MEM = MemGroup.Create('drone_frigates', {
 function Drone_GetParadePosition(frigate_position, drone_index)
 	local parade_position = {}
 	for i, v in frigate_position do
-		parade_position[i] = v + DF_MEM.parade_positions[drone_index + 1][i]
+		parade_position[i] = v + DF_MEM.parade_positions[drone_index][i]
 	end
 	return parade_position
 end
