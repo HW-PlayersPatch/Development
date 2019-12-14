@@ -171,7 +171,7 @@ function Update_DroneFrigate(CustomGroup, playerIndex, shipID)
     NoSalvageScuttle(CustomGroup, playerIndex, shipID)
 	-- forces AI cpu drone activation
 	if Player_GetLevelOfDifficulty(playerIndex) > 0 then
-		if DroneFrigate_IsReady(frigate) then
+		if DroneFrigate_IsReady(CustomGroup) then
 			if SobGroup_IsDoingAbility(CustomGroup, AB_Custom) == 0 then
 				SobGroup_CustomCommand(CustomGroup)
 			end
@@ -191,21 +191,19 @@ function Update_DroneFrigate(CustomGroup, playerIndex, shipID)
 				if SobGroup_IsDockedSobGroup(this_drone, CustomGroup) == 0 and SobGroup_IsDoingAbility(this_drone, AB_Dock) == 0 then
 					if SobGroup_GetDistanceToSobGroup(this_drone, CustomGroup) > 950 then -- too far from frigate, die
 						SobGroup_TakeDamage(this_drone, 1)
-					elseif SobGroup_IsCloaked(CustomGroup) == 1 or SobGroup_GetROE(CustomGroup) == PassiveROE then
-						Drone_SetActive(this_drone, 0)
-						SobGroup_ParadeSobGroup(this_drone, CustomGroup, 0)
 					elseif SobGroup_AnyAreAttacking(CustomGroup) == 1 then -- override our target to attack anything the frigate itself is attacking
 						local frigate_attack_targets = "frigate_attack_targets" .. shipID
 						SobGroup_GetCommandTargets(frigate_attack_targets, CustomGroup, COMMAND_Attack)
 						SobGroup_Attack(playerIndex, this_drone, frigate_attack_targets)
-						if (SobGroup_AnyAreAttacking(this_drone) == 1) then -- this check is seperate so the frigate can (uniquely) do move commands while shooting
-							local parade_position = Drone_GetParadePosition(SobGroup_GetPosition(CustomGroup), k)
-							--if (mod(this_df:GetTick(), 2) == 0) then -- every X tick/script call
-							SobGroup_MoveToPoint(SobGroup_GetPlayerOwner(this_drone), this_drone, parade_position) -- move close to parade position
-							--end
-						else
-							SobGroup_ParadeSobGroup(this_drone, CustomGroup, 0) -- reform parade around frigate
-						end
+					elseif SobGroup_IsCloaked(CustomGroup) == 1 or SobGroup_GetROE(CustomGroup) == PassiveROE then
+						Drone_SetActive(this_drone, 0)
+						SobGroup_ParadeSobGroup(this_drone, CustomGroup, 0)
+					end
+					if (SobGroup_AnyAreAttacking(this_drone) == 1) then -- this check is seperate so the frigate can (uniquely) do move commands while shooting
+						local parade_position = Drone_GetParadePosition(SobGroup_GetPosition(CustomGroup), k)
+						--if (mod(this_df:GetTick(), 2) == 0) then -- every X tick/script call
+						SobGroup_MoveToPoint(SobGroup_GetPlayerOwner(this_drone), this_drone, parade_position) -- move close to parade position
+						--end
 					else
 						SobGroup_ParadeSobGroup(this_drone, CustomGroup, 0) -- reform parade around frigate
 					end
