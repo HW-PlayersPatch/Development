@@ -2,7 +2,7 @@ DF_MEM = MemGroup.Create('drone_frigates', {
 	too_far_die_distance = 950,
 	max_ticks_to_finish = 6,
 	max_drone_count = 14,
-	dronefrig_weapon_range = 2660,
+	--dronefrig_weapon_range = 2660,
 	parade_positions = {
 		{210, 0, 0+10},
 		{-210, 0, 0+10},
@@ -17,14 +17,15 @@ DF_MEM = MemGroup.Create('drone_frigates', {
 		{120, 120, -120+10},
 		{-120, 120, -120+10},
 		{120, -120, -120+10},
-		{-120, -120, -120+10}
+		{-120, -120, -120+10},
+		{1050, -525, 700}
 	}
 })
 
 function Drone_GetParadePosition(frigate_position, drone_index)
 	local parade_position = {}
 	for i, v in frigate_position do
-		parade_position[i] = v + DF_MEM.parade_positions[drone_index][i]
+		parade_position[i] = v + DF_MEM.parade_positions[drone_index + 1][i]
 	end
 	return parade_position
 end
@@ -167,13 +168,27 @@ end
 
 function Update_DroneFrigate(CustomGroup, playerIndex, shipID)
 	local this_df = DF_MEM:get(shipID)
-
-    NoSalvageScuttle(CustomGroup, playerIndex, shipID)
-	-- forces AI cpu drone activation
+	NoSalvageScuttle(CustomGroup, playerIndex, shipID)
+	-- forces AI cpu drone activation if enemy ships are nearby
 	if Player_GetLevelOfDifficulty(playerIndex) > 0 then
-		if DroneFrigate_IsReady(CustomGroup) then
-			if SobGroup_IsDoingAbility(CustomGroup, AB_Custom) == 0 then
-				SobGroup_CustomCommand(CustomGroup)
+		if SobGroup_IsDoingAbility(CustomGroup, AB_Custom) == 0 then
+			local playerIndex_ai = 0
+			local enemyships = 0
+			while playerIndex_ai < Universe_PlayerCount() do
+				if Player_IsAlive(playerIndex_ai) == 1 then
+					local distance = 4000
+					if SobGroup_FillProximitySobGroup(SobGroup_CreateAndClear("temp_" .. shipID), "Player_Ships"..playerIndex_ai, CustomGroup, distance) == 1 then
+						if AreAllied(playerIndex, playerIndex_ai) == 0 then
+							enemyships = 1
+						end
+					end
+				end
+				playerIndex_ai = playerIndex_ai + 1
+			end
+			if enemyships > 0 then
+				if DroneFrigate_IsReady(CustomGroup) then
+					SobGroup_CustomCommand(CustomGroup)
+				end
 			end
 		end
 	end
@@ -189,21 +204,21 @@ function Update_DroneFrigate(CustomGroup, playerIndex, shipID)
 			Drone_SetActive(this_drone, 1)
 			if SobGroup_Empty(this_drone) == 0 then
 				if SobGroup_IsDockedSobGroup(this_drone, CustomGroup) == 0 and SobGroup_IsDoingAbility(this_drone, AB_Dock) == 0 then
-					if SobGroup_GetDistanceToSobGroup(this_drone, CustomGroup) > 950 then -- too far from frigate, die
+					if SobGroup_GetDistanceToSobGroup(this_drone, CustomGroup) > DF_MEM.too_far_die_distance then -- too far from frigate, die
 						SobGroup_TakeDamage(this_drone, 1)
 					elseif SobGroup_AnyAreAttacking(CustomGroup) == 1 then -- override our target to attack anything the frigate itself is attacking
 						local frigate_attack_targets = "frigate_attack_targets" .. shipID
 						SobGroup_GetCommandTargets(frigate_attack_targets, CustomGroup, COMMAND_Attack)
 						SobGroup_Attack(playerIndex, this_drone, frigate_attack_targets)
-					elseif SobGroup_IsCloaked(CustomGroup) == 1 or SobGroup_GetROE(CustomGroup) == PassiveROE then
+					elseif SobGroup_GetROE(CustomGroup) == PassiveROE then
 						Drone_SetActive(this_drone, 0)
 						SobGroup_ParadeSobGroup(this_drone, CustomGroup, 0)
 					end
 					if (SobGroup_AnyAreAttacking(this_drone) == 1) then -- this check is seperate so the frigate can (uniquely) do move commands while shooting
 						local parade_position = Drone_GetParadePosition(SobGroup_GetPosition(CustomGroup), k)
-						--if (mod(this_df:GetTick(), 2) == 0) then -- every X tick/script call
-						SobGroup_MoveToPoint(SobGroup_GetPlayerOwner(this_drone), this_drone, parade_position) -- move close to parade position
-						--end
+						if SobGroup_GetDistanceToParade(this_drone, parade_position) > 25 then -- too far from parade, move closer
+							SobGroup_MoveToPoint(SobGroup_GetPlayerOwner(this_drone), this_drone, parade_position) -- move close to parade position
+						end
 					else
 						SobGroup_ParadeSobGroup(this_drone, CustomGroup, 0) -- reform parade around frigate
 					end
@@ -235,6 +250,17 @@ function SobGroup_GetDistanceToSobGroup(sg_Group1, sg_Group2)
 	if SobGroup_Empty(sg_Group1) == 0 and SobGroup_Empty(sg_Group2) == 0 then
 		local t_position1 = SobGroup_GetPosition(sg_Group1)
 		local t_position2 = SobGroup_GetPosition(sg_Group2)
+		local li_distance = floor(sqrt((t_position1[1] - t_position2[1])*(t_position1[1] - t_position2[1]) + (t_position1[2] - t_position2[2])*(t_position1[2] - t_position2[2]) + (t_position1[3] - t_position2[3])*(t_position1[3] - t_position2[3])))
+		return li_distance
+	else
+		return 0
+	end
+end
+
+function SobGroup_GetDistanceToParade(sg_Group1, parade_pos)
+	if SobGroup_Empty(sg_Group1) == 0 then
+		local t_position1 = SobGroup_GetPosition(sg_Group1)
+		local t_position2 = parade_pos
 		local li_distance = floor(sqrt((t_position1[1] - t_position2[1])*(t_position1[1] - t_position2[1]) + (t_position1[2] - t_position2[2])*(t_position1[2] - t_position2[2]) + (t_position1[3] - t_position2[3])*(t_position1[3] - t_position2[3])))
 		return li_distance
 	else
