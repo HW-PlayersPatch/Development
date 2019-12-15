@@ -45,7 +45,7 @@ OPTION_GAMEPLAY_CAMERAROTATIONSPEED = Option_LabeledSlider("CAMERAROTATIONSPEED"
 
 OPTION_GAMEPLAY_CAMERAMAXZOOM = Option_LabeledSlider("CAMERAMAXZOOM", "CAMERA MAX ZOOM SCALE", "lblCameraMaxZoom", "CAMERA MAX ZOOM SCALE", "m_sbarCameraMaxZoom", "ADJUST CAMERA MAX ZOOM SCALE. DEFAULT IS 1. MUST RELAUNCH HOMEWORLD TO TAKE EFFECT.", 1, 1, 1.0, 2.0, [[UI_AnchorSetScale('PlayersPatch_CameraMaxZoomScale', %spos, 1);]])
 
-OPTION_GAMEPLAY_DIFFICULTY = Option_LabeledSlider("DIFFICULTY", "MISSION DIFFICULTY SCALE", "lblDifficulty", "MISSION DIFFICULTY SCALE", "m_sbarDifficulty", "ADJUST MISSION DIFFICULTY SCALE. EASY IS 0, STANDARD IS 1, HARD IS 1.5, EXPERT IS 2+. MUST RESTART MISSION TO TAKE EFFECT.", 1, 1, 0.0, 3.0, [[UI_AnchorSetScale('PlayersPatch_MissionDifficultyScale', %spos, 1);]])
+OPTION_GAMEPLAY_DIFFICULTY = Option_LabeledSlider("DIFFICULTY", "MISSION DIFFICULTY SCALE", "lblDifficulty", "MISSION DIFFICULTY SCALE", "m_sbarDifficulty", "ADJUST MISSION DIFFICULTY SCALE. EASY IS 0, STANDARD IS 1, HARD IS 1.5, EXPERT IS 2. MUST RESTART MISSION TO TAKE EFFECT.", 1, 1, 0.0, 2.0, [[UI_AnchorSetScale('PlayersPatch_MissionDifficultyScale', %spos, 1);]])
 
 
 --Fixed the spelling typo, etc, but it still doesn't work.

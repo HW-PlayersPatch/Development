@@ -3,7 +3,7 @@
 Resource = {
 	
 	-- amount of time (seconds) a collector waits (under an Idle or Parade status) before invoking "Resource Collector awaiting orders."
-	speechIdleWaitTime = 45,
+	speechIdleWaitTime = 30,
 	
 	-- amount of time (seconds) a collector waits in queue (for a resource) before invoking speech "full, expect delays"
 	speechWaitTime = 20,
