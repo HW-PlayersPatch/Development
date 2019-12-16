@@ -84,14 +84,14 @@ setSupplyValue(NewShipType, "Fighter", 3.0)
 setSupplyValue(NewShipType, "Scout", 3.0)
 setSupplyValue(NewShipType, "LayoutFighter", 3.0)
 NewShipType.CombatFamily="Fighter_EMPScout"
-NewShipType.fighterValue=1
+NewShipType.fighterValue=0.33
 NewShipType.corvetteValue=0
 NewShipType.frigateValue=0
 NewShipType.neutralValue=0
 NewShipType.antiFighterValue=0
 NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
-NewShipType.totalValue=1
+NewShipType.totalValue=0.33
 NewShipType.buildCost=300
 NewShipType.buildTime=20
 NewShipType.buildPriorityOrder=10
@@ -176,7 +176,7 @@ NewShipType.deadSobFadeTime=1
 setEngineTrail(NewShipType,0,6,"trail_ribbon.tga",0.001,0.5,0.025,7);
 setEngineBurn(NewShipType,18,0.5,1,12,0,0.7,0.1,25);
 loadShipPatchList(NewShipType,"data:sound/sfx/ship/Vaygr/Fighter/",0,"VScoutEng","");
-addShield(NewShipType,"EMP",100,20);
+addShield(NewShipType,"EMP",200,20);
 NewShipType.minFalloffDamageDist=15
 NewShipType.maxFalloffDamageDist=15*3
 NewShipType.maxFalloffScuttleDamageDist=15*6

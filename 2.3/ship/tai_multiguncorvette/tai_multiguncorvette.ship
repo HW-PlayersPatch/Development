@@ -75,13 +75,13 @@ NewShipType.ArmourFamily=getShipStr(NewShipType, "ArmourFamily", "LightArmour_hw
 setSupplyValue(NewShipType, "Corvette", 1.0)
 setSupplyValue(NewShipType, "LayoutCorvette", 1.0)
 NewShipType.fighterValue=0
-NewShipType.corvetteValue=13
+NewShipType.corvetteValue=4.33
 NewShipType.frigateValue=0
 NewShipType.neutralValue=0
-NewShipType.antiFighterValue=15
-NewShipType.antiCorvetteValue=8
+NewShipType.antiFighterValue=5
+NewShipType.antiCorvetteValue=2.66
 NewShipType.antiFrigateValue=0
-NewShipType.totalValue=13
+NewShipType.totalValue=4.33
 NewShipType.buildCost=225
 NewShipType.buildTime=21
 NewShipType.buildPriorityOrder=30
@@ -158,7 +158,7 @@ StartShipWeaponConfig(NewShipType,"Tai_MultiGun2","Weapon_Gun2","Weapon_Gun2");
 StartShipWeaponConfig(NewShipType,"Tai_MultiGun2","Weapon_Gun3","Weapon_Gun3");
 StartShipWeaponConfig(NewShipType,"Tai_MultiGun2","Weapon_Gun4","Weapon_Gun4");
 StartShipWeaponConfig(NewShipType,"Tai_MultiGun2","Weapon_Gun5","Weapon_Gun5");
-addShield(NewShipType,"EMP",45,20);
+addShield(NewShipType,"EMP",65,20);
 NewShipType.battleScarCoverage=1
 NewShipType.sobDieTime=2
 NewShipType.sobSpecialDieTime=1

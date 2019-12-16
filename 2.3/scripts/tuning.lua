@@ -3,7 +3,7 @@
 Resource = {
 	
 	-- amount of time (seconds) a collector waits (under an Idle or Parade status) before invoking "Resource Collector awaiting orders."
-	speechIdleWaitTime = 45,
+	speechIdleWaitTime = 30,
 	
 	-- amount of time (seconds) a collector waits in queue (for a resource) before invoking speech "full, expect delays"
 	speechWaitTime = 20,
@@ -179,7 +179,7 @@ OrderData = {
 
 WeaponFire = {
 	-- factor that the damage gets multiplied with for friendly ships. Should be between 0 and 1. So 0 means there is no friendly fire, 1 means there is full friendly fire
-	FriendlyFireRatio			= 0.5,
+	FriendlyFireRatio			= 0.45,
 }
 
 HyperSpace = {
@@ -218,7 +218,7 @@ RepairInfo = {
 	-- when a repair ship is latched to a target it will wait this many seconds after the repairs are finished before unlatching
 	timeToWaitAfterLastDamageBeforeUnlatching				= 5.0,
 	-- when ships are trying to repair the target is slowed down to this amount of it's max speed
-	slowDownFactor                                          = 0.95,
+	slowDownFactor                                          = 0.80,
 }
 
 EngineTrailInfo = {

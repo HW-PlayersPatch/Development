@@ -80,13 +80,13 @@ setSupplyValue(NewShipType, "Corvette", 3.0)
 setSupplyValue(NewShipType, "LayoutCorvette", 3.0)
 NewShipType.CombatFamily="Corvette_Gunship"
 NewShipType.fighterValue=0
-NewShipType.corvetteValue=10
+NewShipType.corvetteValue=3.33
 NewShipType.frigateValue=0
 NewShipType.neutralValue=0
-NewShipType.antiFighterValue=10
+NewShipType.antiFighterValue=3.33
 NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
-NewShipType.totalValue=10
+NewShipType.totalValue=3.33
 NewShipType.buildCost=625
 NewShipType.buildTime=45
 NewShipType.buildPriorityOrder=10
@@ -159,7 +159,7 @@ addCustomCode(NewShipType, "data:ship/Hgn_AssaultCorvette/Hgn_AssaultCorvette.lu
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Hgn_VulcanKineticTurret","Weapon_TurretTop","Fire_Top");
 StartShipWeaponConfig(NewShipType,"Hgn_VulcanKineticTurret","Weapon_TurretBottom","Fire_Bottom");
-addShield(NewShipType,"EMP",75,20);
+addShield(NewShipType,"EMP",110,20);
 NewShipType.battleScarCoverage=1
 NewShipType.battleScarBudgetLow = 400
 NewShipType.battleScarBudgetNext = 600

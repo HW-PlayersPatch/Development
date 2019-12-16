@@ -68,12 +68,12 @@ setSupplyValue(NewShipType, "Frigate", 1.0)
 setSupplyValue(NewShipType, "LayoutFrigate", 1.0)
 NewShipType.fighterValue=0
 NewShipType.corvetteValue=0
-NewShipType.frigateValue=15
+NewShipType.frigateValue=12
 NewShipType.neutralValue=0
-NewShipType.antiFighterValue=8
+NewShipType.antiFighterValue=10
 NewShipType.antiCorvetteValue=2
 NewShipType.antiFrigateValue=0
-NewShipType.totalValue=15
+NewShipType.totalValue=12
 NewShipType.buildCost=900
 NewShipType.buildTime=70
 NewShipType.buildPriorityOrder=40
@@ -170,6 +170,6 @@ NewShipType.maxFalloffDamageDist=100*2
 NewShipType.maxFalloffScuttleDamageDist=100*4
 NewShipType.explosiveScuttleDamageOnDeath=130
 NewShipType.maxFalloffForce=500*10
-NewShipType.explosiveDamageOnDeath=50												 
+NewShipType.explosiveDamageOnDeath=50
 NewShipType.hideNormalAttackUICooldown=1
 NewShipType.canSurround=1

@@ -24,4 +24,5 @@ setAccuracy(NewWeaponType,1,
 {BigCapitalShip=0.6},
 {ResourceLarge=0.6});
 setAngles(NewWeaponType,0,-60,60,-1,10);
+addAnimTurretSound(NewWeaponType,"Data:Sound/SFX/ETG/SPECIAL/SPECIAL_ABILITIES_TURRET_ON");
 setFireMultFactor(NewWeaponType, 1.0);

@@ -39,6 +39,21 @@ Anchor_Options = {
 		saveOptions = "scale",
 	},
 	{
+		anchorName = "PlayersPatch_StanceOrderSetting",
+		defScale = 1.0,
+		saveOptions = "scale",
+	},
+	{
+		anchorName = "PlayersPatch_TacticalOverlaySetting",
+		defScale = 2.0,
+		saveOptions = "scale",
+	},
+	{
+		anchorName = "PlayersPatch_ProductionTimeSetting",
+		defScale = 1.0,
+		saveOptions = "scale",
+	},
+	{
 		anchorName = "PlayersPatch_BuildResearchLaunchPanelsScale",
 		defScale = 1.0,
 		saveOptions = "scale",
@@ -60,16 +75,6 @@ Anchor_Options = {
 	},
 	{
 		anchorName = "PlayersPatch_MissionDifficultyScale",
-		defScale = 1.0,
-		saveOptions = "scale",
-	},
-	{
-		anchorName = "PlayersPatch_TacticalOverlaySetting",
-		defScale = 2.0,
-		saveOptions = "scale",
-	},
-	{
-		anchorName = "PlayersPatch_ProductionTimeSetting",
 		defScale = 1.0,
 		saveOptions = "scale",
 	},

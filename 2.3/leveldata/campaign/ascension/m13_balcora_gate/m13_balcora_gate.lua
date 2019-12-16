@@ -1202,7 +1202,7 @@ function Rule_gateAttackSetup()
 
 	Rule_Add ("Rule_chunkAttackerWatch")
 
-	Rule_Remove ("Rule_gateAttackSetup")
+	--Rule_Remove ("Rule_gateAttackSetup") --This line is commented out to fix the Dreadnought weapon beam effect
 end
 -----------------------------------------------------------------------------------------------------
 
@@ -1221,7 +1221,7 @@ function Rule_chunkAttackerWatch()
 
 	-- chunk 1
 --	if ( SobGroup_Empty ("BalcoraGate_Chunk1") == 1 ) and ( Chunk1DeadONCE == 0 ) then	-- if chunk 1 is destroyed
-	if ( SobGroup_GetHardPointHealth("Balcora_Gate", "Generator1") == 0) and ( Chunk1DeadONCE == 0 ) then	-- if chunk 1 is destroyed
+	if ( SobGroup_GetHardPointHealth("Balcora_Gate", "Generator1") == 0 and Chunk1DeadONCE == 0 ) then	-- if chunk 1 is destroyed
 		if (SobGroup_Empty ("VaygrShipyard") ~= 1) then							-- if shipyard is alive
 	        	SobGroup_GuardSobGroup("ChunkAttackers1", "VaygrShipyard")				-- guard Vaygr shipyard
 			CPU_AddSobGroup( 3, "ChunkAttackers1" )									-- hand the ships over to the AI
@@ -1240,7 +1240,7 @@ function Rule_chunkAttackerWatch()
 
 	-- chunk 2
 --	if ( SobGroup_Empty ("BalcoraGate_Chunk2") == 1 ) and ( Chunk2DeadONCE == 0 ) then	-- if chunk 2 is destroyed
-	if ( SobGroup_GetHardPointHealth("Balcora_Gate", "Generator2") == 0) and ( Chunk2DeadONCE == 0 ) then	-- if chunk 2 is destroyed
+	if ( SobGroup_GetHardPointHealth("Balcora_Gate", "Generator2") == 0 and Chunk2DeadONCE == 0 ) then	-- if chunk 2 is destroyed
 		if (SobGroup_Empty ("VaygrShipyard") ~= 1) then							-- if shipyard is alive
 	        	SobGroup_GuardSobGroup("ChunkAttackers2", "VaygrShipyard")				-- guard Vaygr shipyard
 			CPU_AddSobGroup( 3, "ChunkAttackers2" )									-- hand the ships over to the AI
@@ -1259,7 +1259,7 @@ function Rule_chunkAttackerWatch()
 
 	-- chunk 3
 --	if ( SobGroup_Empty ("BalcoraGate_Chunk3") == 1 ) and ( Chunk3DeadONCE == 0 ) then	-- if chunk 3 is destroyed
-	if ( SobGroup_GetHardPointHealth("Balcora_Gate", "Generator3") == 0) and ( Chunk3DeadONCE == 0 ) then	-- if chunk 2 is destroyed
+	if ( SobGroup_GetHardPointHealth("Balcora_Gate", "Generator3") == 0 and Chunk3DeadONCE == 0 ) then	-- if chunk 2 is destroyed
 		if (SobGroup_Empty ("VaygrShipyard") ~= 1) then							-- if shipyard is alive
 	        	SobGroup_GuardSobGroup("ChunkAttackers3", "VaygrShipyard")				-- guard Vaygr shipyard
 			CPU_AddSobGroup( 3, "ChunkAttackers3" )									-- hand the ships over to the AI

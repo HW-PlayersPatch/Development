@@ -83,13 +83,13 @@ setSupplyValue(NewShipType, "Corvette", 3.0)
 setSupplyValue(NewShipType, "LayoutCorvette", 3.0)
 NewShipType.CombatFamily="Corvette_Laser"
 NewShipType.fighterValue=0
-NewShipType.corvetteValue=10
+NewShipType.corvetteValue=2.5
 NewShipType.frigateValue=0
 NewShipType.neutralValue=0
 NewShipType.antiFighterValue=0
 NewShipType.antiCorvetteValue=0
-NewShipType.antiFrigateValue=10
-NewShipType.totalValue=10
+NewShipType.antiFrigateValue=2.5
+NewShipType.totalValue=2.5
 NewShipType.buildCost=650
 NewShipType.buildTime=45
 NewShipType.buildPriorityOrder=10
@@ -162,7 +162,7 @@ addAbility(NewShipType,"RetireAbility",1,0);
 addCustomCode(NewShipType, "data:ship/Vgr_LaserCorvette/Vgr_LaserCorvette.lua", "", "", "Update_Vgr_Laser_Corvette", "", "Vgr_LaserCorvette", 1)
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Vgr_Laser","Weapon_Laser","Fire_L");
-addShield(NewShipType,"EMP",75,20);
+addShield(NewShipType,"EMP",110,20);
 NewShipType.battleScarCoverage=1
 NewShipType.battleScarBudgetLow = 400
 NewShipType.battleScarBudgetNext = 600

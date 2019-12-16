@@ -43,6 +43,7 @@ SubSystem = 9
 Platform = 10
 Megalith = 11
 Flagship = 12
+Silent = 13
 
 -- Number of Actors per Actor type
 NumAllPilots = 5
@@ -127,6 +128,10 @@ function getType(shipnm)
 	
 	if (strfind (shipnmU, "DEBRIS") ~= nil) then
 		return MISC
+	end
+
+	if (shipnmU ~= "KUS_DRONEFRIGATE" and strfind(shipnmU, "DRONE") ~= nil) then
+		return Silent
 	end
 	
 	if (strfind (shipnmU, "KPR_") ~= nil) then
@@ -451,6 +456,10 @@ function CommandCombatMan(shipname, targetname)
 
 	shipType = getType(shipname)	
 	genericShipName = strsub(shipname,5)
+
+	if (shipType == Silent) then
+		return
+	end
 
 	if (shipType == Flagship and genericShipName~="Dreadnaught" ) then		
 		playSpeechActor("COMMAND_CombatMan_1", raceHelper(), 0, Frequency_Command )

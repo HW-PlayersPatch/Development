@@ -85,13 +85,13 @@ setSupplyValue(NewShipType, "LayoutCorvette", 1.0)
 NewShipType.CombatFamily="Corvette_Command"
 NewShipType.AttackPriorityMultiplier=0.92
 NewShipType.fighterValue=0
-NewShipType.corvetteValue=8
+NewShipType.corvetteValue=5
 NewShipType.frigateValue=0
 NewShipType.neutralValue=0
 NewShipType.antiFighterValue=0
 NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
-NewShipType.totalValue=8
+NewShipType.totalValue=5
 NewShipType.buildCost=600
 NewShipType.buildTime=45
 NewShipType.buildPriorityOrder=10
@@ -163,7 +163,7 @@ addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,0.90,"Fighter, Fighter_hw1, Corv
 {Corvette_hw1="flyround_CommandVette"},
 {Frigate="flyround_CommandVette"});
 LoadModel(NewShipType,1);
-addShield(NewShipType,"EMP",75,20);
+addShield(NewShipType,"EMP",110,20);
 AddShipMultiplier(NewShipType,"WeaponAccuracy","OwnShipsWithinRadiusExcludingThisShip","Linear",1.07,1.07,2200);
 AddShipMultiplier(NewShipType,"WeaponDamage","OwnShipsWithinRadiusExcludingThisShip","Linear",1.07,1.07,2200);
 StartShipWeaponConfig(NewShipType,"Vgr_CommandGun","Weapon_Gun","")
