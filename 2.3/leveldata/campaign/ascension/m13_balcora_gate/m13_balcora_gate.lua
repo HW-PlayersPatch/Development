@@ -1202,7 +1202,7 @@ function Rule_gateAttackSetup()
 
 	Rule_Add ("Rule_chunkAttackerWatch")
 
-	--Rule_Remove ("Rule_gateAttackSetup")
+	--Rule_Remove ("Rule_gateAttackSetup") --This line is commented out to fix the Dreadnought weapon beam effect
 end
 -----------------------------------------------------------------------------------------------------
 

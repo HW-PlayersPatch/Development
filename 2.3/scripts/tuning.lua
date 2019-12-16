@@ -218,7 +218,7 @@ RepairInfo = {
 	-- when a repair ship is latched to a target it will wait this many seconds after the repairs are finished before unlatching
 	timeToWaitAfterLastDamageBeforeUnlatching				= 5.0,
 	-- when ships are trying to repair the target is slowed down to this amount of it's max speed
-	slowDownFactor                                          = 0.95,
+	slowDownFactor                                          = 0.80,
 }
 
 EngineTrailInfo = {

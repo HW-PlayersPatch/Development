@@ -482,7 +482,7 @@ FE_UIOPTION_TAB = {
 			},
 			autosize=1,
 
-		},
+		}, --#7 in frame
 
 
 
