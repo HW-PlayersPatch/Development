@@ -1,31 +1,25 @@
--- Currently configured for 1 call per second. Heals when it hasn't been damaged in the last x seconds (combat_ticks_length).
+-- Currently configured for 1 call per second. Heals when it hasn't been damaged in the last x seconds (CF_MEM.combat_ticks_length).
 
--- variables here are stored globally and are accessable via this script regardless of invokation time
--- as such we need a persistant dictionary to identify which CF info we want to work with
-combat_ticks_length = 15
-global_cloakedfighters = {}
+CF_MEM = MemGroup.create('cloaked_fighters', {
+    combat_ticks_length = 15
+})
 
 -- init a new entry
 function log_new_cf(shipID)
-    local new_cf = {
+    local props = {
         combat_ticks_queue = {},
         current_HP = nil,
         last_checked_HP = nil
     }
-    for i = 1, combat_ticks_length do
+    for i = 1, CF_MEM.combat_ticks_length do
         new_cf.combat_ticks_queue[i] = 0
     end
-    global_cloakedfighters[shipID] = new_cf
-    return new_cf
+    CF_MEM:set(shipID, props)
+    return CF_MEM:get(shipID)
 end
 
--- get if exists, otherwise create new and return
-function fetch_info(shipID)
-    if global_cloakedfighters[shipID] == nil then
-        return log_new_cf(shipID)
-    else
-        return global_cloakedfighters[shipID]
-    end
+function Create_Kus_CloakedFighter(CustomGroup, playerIndex, shipID)
+    log_new_cf(shipID)
 end
 
 -- main loop
@@ -37,22 +31,22 @@ end
 -- checking into a queue (granularity), but requiring a totally clean queue for regeneration to kick in (controllability).
 function Update_Kus_CloakedFighter(CustomGroup, playerIndex, shipID)
 
-    local this_cf = fetch_info(shipID)
+    local this_cf = CF_MEM:get(shipID)
 
     this_cf.current_HP = SobGroup_HealthPercentage(CustomGroup)
-    for i = 1, combat_ticks_length - 1 do
+    for i = 1, CF_MEM.combat_ticks_length - 1 do
         this_cf.combat_ticks_queue[i] = this_cf.combat_ticks_queue[i + 1]
     end
     
     if this_cf.last_checked_HP ~= nil then
         if this_cf.current_HP < this_cf.last_checked_HP then
-            this_cf.combat_ticks_queue[combat_ticks_length] = 1
+            this_cf.combat_ticks_queue[CF_MEM.combat_ticks_length] = 1
         else
-            this_cf.combat_ticks_queue[combat_ticks_length] = 0
+            this_cf.combat_ticks_queue[CF_MEM.combat_ticks_length] = 0
         end
 
         local regen_enabled = 1
-        for i = 1, combat_ticks_length do
+        for i = 1, CF_MEM.combat_ticks_length do
             if this_cf.combat_ticks_queue[i] == 1 then -- in combat within window
                 regen_enabled = 0
             end
@@ -76,5 +70,5 @@ function Update_Kus_CloakedFighter(CustomGroup, playerIndex, shipID)
 end
 
 function Destroy_Kus_CloakedFighter(CustomGroup, playerIndex, shipID)
-    global_cloakedfighters[shipID] = nil
+    CF_MEM:delete(shipID)
 end
