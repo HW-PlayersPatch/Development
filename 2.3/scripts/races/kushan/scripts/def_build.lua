@@ -71,7 +71,7 @@ build =
 	{
 		Type =					Ship,
 		ThingToBuild =			"Kus_AttackBomber",
-		RequiredResearch =		"FighterChassis",
+		RequiredResearch =		"PlasmaBombLauncher",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		13,
 		DisplayedName =			"$11004",
