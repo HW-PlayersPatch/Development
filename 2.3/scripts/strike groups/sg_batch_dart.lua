@@ -53,6 +53,8 @@ Multipliers = {
 -- Vaygr Pop 4,5,8,16,24,28
 -- Vay Vette - 1,1+,2,4,6,7
 
+		{ "Fighter",AggressiveStance, "Graph", 5, 1.05, 6, 1.05, 10, 1.05, 15, 1.05, 20, 0.70,  }, 
+		{ "Fighter_hw1",AggressiveStance, "Graph", 5, 1.05, 6, 1.05, 10, 1.05, 15, 1.05, 20, 0.70,  },
 
    },
 
