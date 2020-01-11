@@ -26,7 +26,7 @@ base_research = {
 		Description =		"$11515",
 		Icon = 			Icon_Build,
 		TargetName =		"Tai_Interceptor",
-	},
+	},	
 	{
 		Name =			"DefenderSubSystems",
 		RequiredResearch =	"FighterDrive",
