@@ -1,4 +1,5 @@
 -- Ships utility functions
+doscanpath("data:scripts/playerspatch-lib", "*.lua")
 
 -- Show hw1 production subsystems
 function ShowProductionSubsystems(CustomGroup, playerIndex, shipType)
