@@ -152,6 +152,7 @@ addAbility(NewShipType,"CanAttack",1,0,1,0,0.35,1,"Fighter_hw1, Fighter, Swarmer
 addAbility(NewShipType,"GuardCommand",1,3000,500);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"RetireAbility",1,0);
+addCustomCode(NewShipType,"data:ship/Kus_LightCorvette/Kus_LightCorvette.lua","","Create_Kus_LightCorvette","Update_Kus_LightCorvette","Destroy_Kus_LightCorvette","Kus_LightCorvette",0.5)
 LoadModel(NewShipType,1);
 StartShipHardPointConfig(NewShipType,"Weapon_Gun0","Hardpoint_Gun0","Weapon","Innate","Ship","Kus_LtCorvette","","","","","","","","");
 addShield(NewShipType,"EMP",65,20);

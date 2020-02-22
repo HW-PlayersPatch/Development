@@ -165,7 +165,7 @@ addAbility(NewShipType,"RepairCommand",1,250,1,1,"Frontal_RepairCorvette",
 {BigCapitalShip="Frontal_RepairCorvette_BigCap"},
 {Mothership="Frontal_RepairCorvette_Mothership"});
 addAbility(NewShipType,"RetireAbility",1,0);
---addCustomCode(NewShipType,"data:Ship/Kus_RepairCorvette/Kus_RepairCorvette.lua","","Create_Kus_RepairCorvette","Update_Kus_RepairCorvette","Destroy_Kus_RepairCorvette","Kus_RepairCorvette",15)
+addCustomCode(NewShipType,"data:Ship/Kus_RepairCorvette/Kus_RepairCorvette.lua","","Create_Kus_RepairCorvette","Update_Kus_RepairCorvette","Destroy_Kus_RepairCorvette","Kus_RepairCorvette",0.3)
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Kus_RepairGun","Weapon_Gun0","Weapon_Gun0");
 StartShipWeaponConfig(NewShipType,"Kus_RepairGunHeal","Weapon_Rep0","Weapon_Rep0");
