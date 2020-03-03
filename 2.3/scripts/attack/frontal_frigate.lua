@@ -13,7 +13,7 @@ Data =
 	
 
 -- Once past this amount * the weapon range the ship will stop and face the target
-	inRangeFactor		= 0.85,
+	inRangeFactor		= 0.9,
     
 -- once in range and facing the target we will slide around maintaining heading until we are more 
 -- then this multiplied by our range from the target, then we will fly normally to catch up
@@ -32,8 +32,8 @@ Data =
 	
 -- delays for the things the attack style can do (in seconds)
    	flyToTargetBecauseItsFarOutOfRangeDelay = 0.0,
-    	flyToTargetBecauseItsMovingAwayDelay = 1.0,
-    	stopAndFaceTheTargetDelay = 1.0,
+    	flyToTargetBecauseItsMovingAwayDelay = 0.8,
+    	stopAndFaceTheTargetDelay = 0.65,
     	flyToAboveTheTargetDelay = 1.0,
 
 	safeDistanceFromTargetToDoActions = 600.0,
