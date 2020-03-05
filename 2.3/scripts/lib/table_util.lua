@@ -1,3 +1,5 @@
+--Table utility functions.
+
 function filter(table, predicate)
 	local out = {}
 	for i, v in table do
