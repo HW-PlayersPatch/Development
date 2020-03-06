@@ -162,7 +162,7 @@ addAbility(NewShipType,"RepairCommand",1,440,1,1,"Frontal_SupportFrigate",
 {SmallCapitalShip="frontal_RepairFrigate_SmallCap"},
 {BigCapitalShip="Frontal_RepairFrigate_BigCap"},
 {Mothership="frontal_RepairFrigate_Mothership"});
-addAbility(NewShipType,"RetireAbility",1,1);
+addAbility(NewShipType,"RetireAbility",1,0);
 NewShipType.noCombatGrouping=1
 addCustomCode(NewShipType,"data:Ship/Tai_SupportFrigate/Tai_SupportFrigate.lua","","Create_Tai_SupportFrigate","Update_Tai_SupportFrigate","Destroy_Tai_SupportFrigate","Tai_SupportFrigate",1)
 LoadModel(NewShipType,1);

@@ -153,7 +153,7 @@ addAbility(NewShipType,"CanBuildShips",1,"Fighter_Kus, Corvette_Kus, Frigate_Kus
 addAbility(NewShipType,"CanBeCaptured",160,0.1,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
-addAbility(NewShipType,"RetireAbility",1,1);
+addAbility(NewShipType,"RetireAbility",1,0);
 NewShipType.noCombatGrouping=1
 addCustomCode(NewShipType,"data:Ship/Kus_Carrier/Kus_Carrier.lua","Load_Kus_Carrier","Create_Kus_Carrier","Update_Kus_Carrier","","Kus_Carrier",2)
 LoadModel(NewShipType,1);

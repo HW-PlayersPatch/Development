@@ -152,7 +152,7 @@ addAbility(NewShipType,"CanBeCaptured",160,0.5,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"CloakAbility",0,2,2000,4000,3,100,1,1000);
-addAbility(NewShipType,"RetireAbility",1,1);
+addAbility(NewShipType,"RetireAbility",1,0);
 addAbility(NewShipType,"HyperspaceInhibitorAbility",0,10500);
 NewShipType.noCombatGrouping=1
 addCustomCode(NewShipType,"data:Ship/Hgn_Carrier/Hgn_Carrier.lua","","Create_Hgn_Carrier","Update_Hgn_Carrier","","Hgn_Carrier",4)
