@@ -261,17 +261,17 @@ Multipliers = {
    },
 }
 
-UnitLimit = 32
+UnitLimit = 66
 
 SupplyLimits =
 {
-	LayoutFighter = 21,
-	LayoutCorvette = 21,
+	LayoutFighter = 65,
+	LayoutCorvette = 66,
 	SalvageCorvette = 0,
-	LayoutFrigate = 11,
-	LayoutDestroyer = 5,
-	LayoutBattleCruiser = 1,
-	LayoutResource = 9,
+	LayoutFrigate = 54,
+	LayoutDestroyer = 7,
+	LayoutBattleCruiser = 3,
+	LayoutResource = 64,
 }
 
 --SubFormations = 
