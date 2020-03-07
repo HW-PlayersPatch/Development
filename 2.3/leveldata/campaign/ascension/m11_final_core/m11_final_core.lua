@@ -1243,7 +1243,7 @@ Events.intelevent_hsout  =
 		HW2_Wait( 2 ),
 	},	
 	{
-		HW2_SubTitleEvent( Actor_FleetIntel, "$45091", 10 ),	-- We have re-established contact with Captain Soban�s tracking device.
+		HW2_SubTitleEvent( Actor_FleetIntel, "$45091", 10 ),	-- We have re-established contact with Captain Soban’s tracking device.
 	},
 	{
 		HW2_Wait( 1 ),

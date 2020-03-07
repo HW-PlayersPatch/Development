@@ -64,9 +64,9 @@ supplyLimit("Research4", 1);
 supplyLimit("Research5", 1);
 
 --
-supplyLimit("Resource", 52);
+supplyLimit("Resource", 56);
 
-supplyLimit("ResourceCollector", 44);
+supplyLimit("ResourceCollector", 48);
 supplyLimit("ResourceController", 8);
 
 --

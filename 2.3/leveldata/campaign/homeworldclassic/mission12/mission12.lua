@@ -261,20 +261,20 @@ LSTRING_LocationCard = {  -- multilingual strings
 	"IL CUORE DELLA GALASSIA", }
 LSTRING_FICaughtInFieldTASKBAR = {  -- multilingual strings
 	"Destroy source of gravity field",
-	"Destruction de la source du champ de gravit�",
+	"Destruction de la source du champ de gravité",
 	"Quelle des Gravitationsfeldes vernichten.",
 	"Destruir la fuente del campo gravitatorio",
 	"Distruggi la fonte del campo gravitazionale", }
 LSTRING_FIUnderAttackTASKBAR = {  -- multilingual strings
 	"Protect the Fleet",
 	"Protection de la Flotte",
-	"Die Flotte sch�tzen.",
+	"Die Flotte schützen.",
 	"Proteger la flota",
 	"Progetta la flotta", }
 LSTRING_FIHelpDefectorTASKBAR = {  -- multilingual strings
 	"Protect the Defector",
 	"Protection du Transfuge",
-	"Den �berl�ufer sch�tzen.",
+	"Den Überläufer schützen.",
 	"Proteger el deflector",
 	"Proteggi il Defector", }
 LSTRING_Hyperspace = {  -- multilingual strings

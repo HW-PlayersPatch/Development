@@ -31,7 +31,7 @@ NewShipType.accelerationAngle=40
 NewShipType.mirrorAngle=0
 NewShipType.secondaryTurnAngle=70
 NewShipType.maxBankingAmount=20
-NewShipType.descendPitch=70
+NewShipType.descendPitch=5
 NewShipType.goalReachEpsilon=30
 NewShipType.slideMoveRange=100
 NewShipType.controllerType="Ship"
@@ -144,7 +144,7 @@ addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"CanBeCaptured",45,0.1,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
-addAbility(NewShipType,"RetireAbility",1,1);
+addAbility(NewShipType,"RetireAbility",1,0);
 addCustomCode(NewShipType,"data:ship/Kus_IonCannonFrigate/Kus_IonCannonFrigate.lua","","","Update_Kus_IonCannonFrigate","","Kus_IonCannonFrigate",4)
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Kus_IonCannon","Weapon_Gun0","Weapon_Gun0");
