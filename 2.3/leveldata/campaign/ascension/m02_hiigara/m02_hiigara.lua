@@ -604,9 +604,9 @@ function Rule_Init2()
 
         Rule_AddInterval ("Rule_reinforcementWatch", 3)                             -- First reinforcements = 'enemy reinforcement' event
 
---        Rule_Add("Rule_intelevent_frigateAttack")                   -- Hyperspace entry detected. / The Vaygr are using Frigates to attack the transports. / It�s doubtful we have enough firepower to defeat all of them.
+--        Rule_Add("Rule_intelevent_frigateAttack")                   -- Hyperspace entry detected. / The Vaygr are using Frigates to attack the transports. / It’s doubtful we have enough firepower to defeat all of them.
 
---        Rule_Add("Rule_intelevent_melarnDamaged")                       -- Captain Soban�s ship is sustaining heavy damage.  We cannot afford to lose him.
+--        Rule_Add("Rule_intelevent_melarnDamaged")                       -- Captain Soban’s ship is sustaining heavy damage.  We cannot afford to lose him.
 
 --        Rule_Add("Rule_intelevent_melarnDestroyed")             -- Captain Soban is lost.
 
@@ -5060,7 +5060,7 @@ Events.intelevent_WithHelpOfMelarn =
                 HW2_Wait ( 1 ),
         },
 	{
-		HW2_SubTitleEvent( Actor_FleetIntel, "$40170", 8 ),                     -- With the help of Captain Soban�s mercenaries we should be able to save the rest of the transports.
+		HW2_SubTitleEvent( Actor_FleetIntel, "$40170", 8 ),                     -- With the help of Captain Soban’s mercenaries we should be able to save the rest of the transports.
 	},
         {
                 HW2_Wait ( 1 ),
@@ -5097,7 +5097,7 @@ Events.intelevent_frigatesDestroyed =
 Events.intelevent_melarnDamaged =
 {
         {
-                HW2_SubTitleEvent( Actor_FleetIntel, "$40240",  8),                     -- Captain Soban�s ship is sustaining heavy damage.  We cannot afford to lose him.
+                HW2_SubTitleEvent( Actor_FleetIntel, "$40240",  8),                     -- Captain Soban’s ship is sustaining heavy damage.  We cannot afford to lose him.
         },
         {
                 HW2_Wait ( 0.5 ),
@@ -5373,7 +5373,7 @@ Events.intelevent_sobanLeaving =
         {
 		{"Rule_Add('Rule_intelevent_standbyForHyperspace')",""},			-- Start checking for end-of-mission conditions
 
-                HW2_SubTitleEvent( Actor_FleetIntel, "$40190",  8),                             	-- Captain Soban�s mission will be to track down the location of the Vaygr Leader.
+                HW2_SubTitleEvent( Actor_FleetIntel, "$40190",  8),                             	-- Captain Soban’s mission will be to track down the location of the Vaygr Leader.
         },
         {
                 HW2_Wait ( 0.5 ),

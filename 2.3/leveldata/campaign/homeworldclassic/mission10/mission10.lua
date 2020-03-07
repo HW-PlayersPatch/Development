@@ -106,31 +106,31 @@ strCurLanguage = 1  --Naive treatement of localization language.;
 LSTRING_Savegame = {  -- multilingual strings
 	"10 - Super Nova Station",
 	"10 - Station Super Nova",
-	"10 � Supernova-Station",
-	"10 - Estaci�n Supernova",
+	"10 – Supernova-Station",
+	"10 - Estación Supernova",
 	"10 - La stazione Super Nova", }
 LSTRING_LocationCard = {  -- multilingual strings
 	"Super Nova Research Station",
 	"Station de Recherche Super Nova",
 	"Supernova-Forschungsstation",
-	"Estaci�n de investigaci�n Supernova",
+	"Estación de investigación Supernova",
 	"Stazione di ricerca Super Nova", }
 LSTRING_Objective1 = {  -- multilingual strings
 	"Destroy Research Outpost",
 	"Station de Recherche Super Nova",
-	"Supernova-Forschungsstation zerst�ren",
-	"Destruir puesto de investigaci�n",
+	"Supernova-Forschungsstation zerstören",
+	"Destruir puesto de investigación",
 	"Distruggi l'avamposto di ricerca", }
 LSTRING_Objective2 = {  -- multilingual strings
 	"Destroy all defense forces",
-	"Destruction totalit� des forces defensives ",
-	"Alle Verteidigungsstreitkr�fte eliminieren.",
+	"Destruction totalité des forces defensives ",
+	"Alle Verteidigungsstreitkräfte eliminieren.",
 	"Destruir todas las fuerzas defensivas",
 	"Distruggi tutte le forze di difesa", }
 LSTRING_Objective3 = {  -- multilingual strings
 	"Destroy Enemy Carrier",
 	"Destruction transporteur ennemi",
-	"Gegnerisches Tr�gerschiff zerst�ren.",
+	"Gegnerisches Trägerschiff zerstören.",
 	"Destruir portanaves enemigo",
 	"Distruggi il Trasporto nemico", }
 LSTRING_Hyperspace = {  -- multilingual strings

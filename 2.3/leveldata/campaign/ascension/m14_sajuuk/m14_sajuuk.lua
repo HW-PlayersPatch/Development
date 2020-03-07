@@ -459,9 +459,9 @@ function Rule_Init()
 	Rule_AddInterval ( "Rule_PlayerLoses", 3 )							-- MISSION FAILED
 
 
-	Rule_AddInterval ("Rule_makaanDamaged", 3)							-- Makaan�s Flagship is heavily damaged.
+	Rule_AddInterval ("Rule_makaanDamaged", 3)							-- Makaan’s Flagship is heavily damaged.
 
-	Rule_AddInterval ("Rule_makaanCriticallyDamaged", 3)					-- Makaan�s Flagship is critically damaged.
+	Rule_AddInterval ("Rule_makaanCriticallyDamaged", 3)					-- Makaan’s Flagship is critically damaged.
 
 	
 	-------------------------------------------------------------------------------------------------
@@ -1111,7 +1111,7 @@ Events.intelevent_desperateMakaan =
 Events.intelevent_makaanDamaged =
 {
         {
-                HW2_SubTitleEvent( Actor_FleetIntel, "$46533", 10 ),	-- Makaan�s Flagship is heavily damaged.
+                HW2_SubTitleEvent( Actor_FleetIntel, "$46533", 10 ),	-- Makaan’s Flagship is heavily damaged.
         },
 	{
                 HW2_Wait ( 1 ),
@@ -1137,7 +1137,7 @@ Events.intelevent_makaanDamaged =
 Events.intelevent_makaanCriticallyDamaged =
 {
         {
-                HW2_SubTitleEvent( Actor_FleetIntel, "$46535", 10 ),	-- Makaan�s Flagship is critically damaged.
+                HW2_SubTitleEvent( Actor_FleetIntel, "$46535", 10 ),	-- Makaan’s Flagship is critically damaged.
 	},	
 	{
                 HW2_Wait ( 0.5 ),
