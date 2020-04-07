@@ -1,4 +1,4 @@
-StartWeaponConfig(NewWeaponType,"Fixed","Missile","Hgn_ClusterTorpedoA","Special Attack",120,4500,0,0,0,0,1,0,1,15,0,0,0,0,0,0,0.1,"Normal",0,0,0);
+StartWeaponConfig(NewWeaponType,"Fixed","Missile","Hgn_ClusterTorpedoA","Special Attack",120,4250,0,0,0,0,1,0,1,15,0,0,0,0,0,0,0.1,"Normal",0,0,0);
 AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",380,380,"");
 setPenetration(NewWeaponType,5,0.5,
 {LightArmour=0.8},
