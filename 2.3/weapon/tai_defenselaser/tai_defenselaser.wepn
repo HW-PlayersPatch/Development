@@ -6,6 +6,12 @@ setPenetration(NewWeaponType,5,0,
 {SmallMissileArmor=1}, 
 {HeavyMissileArmor=1}, 
 {SpaceMineArmor=1});
+setAccuracy(NewWeaponType, 0, 
+{SpaceMine=1},
+{Torpedo=1},
+{HeavyMissile=1},
+{SmallMissile=1},
+{Munition=1});
 setAngles(NewWeaponType,0,-45,45,-45,45);
 setMissileKiller(NewWeaponType,1);
 setFireMultFactor(NewWeaponType, 1.0);
