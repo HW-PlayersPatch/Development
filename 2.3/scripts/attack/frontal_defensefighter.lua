@@ -42,7 +42,7 @@ Data = {
 	RandomActions = {
 		{
 			Type = PickNewTarget,
-			Weighting = 10
+			Weighting = 5
 		},
 		{
 			Type = NoAction,
@@ -62,13 +62,31 @@ Data = {
 			maxParam = 3,
 			heatCost = 5,
 			heatThresh = 0
-		}
+		},
+		{
+			Type = MoveRoundTarget,
+			minParam = DegToRad(10),
+			maxParam = DegToRad(30),
+			heatCost = 3,
+ 			heatThresh = 0,
+			stance = "Ag,Pa",
+			Weighting = 30,
+		},
 	},
 	BeingAttackedActions = {
 		{
 			Type = NoAction,
 			Weighting = 25,
 			stance = "Ag,Pa"
+		},
+		{
+			Type = MoveRoundTarget,
+			minParam = DegToRad(10),
+			maxParam = DegToRad(30),
+			heatCost = 3,
+ 			heatThresh = 0,
+			stance = "Ag,Pa",
+			Weighting = 30,
 		},
 		{
 			Type = PickNewTarget,
@@ -99,13 +117,6 @@ Data = {
 			stance = "Ev"
 		},
 		{
-			Type = MoveRoundTarget,
-			minParam = 3.1415926536 * 25,
-			maxParam = 6.2831853072 * 25,
-			Weighting = 10,
-			stance = "Ev"
-		},
-		{
 			Type = InterpolateTarget,
 			Weighting = 10,
 			-- interpolate for 3 seconds, no variation
@@ -125,6 +136,24 @@ Data = {
 			Type = NoAction,
 			Weighting = 5,
 			stance = "Ev"
+		},
+		{
+			Type = MoveRoundTarget,
+			minParam = DegToRad(10),
+			maxParam = DegToRad(30),
+			heatCost = 3,
+ 			heatThresh = 0,
+			stance = "Ag,Pa",
+			Weighting = 30,
+		},
+		{
+			Type = MoveRoundTarget,
+			minParam = DegToRad(20),
+			maxParam = DegToRad(40),
+			heatCost = 3,
+ 			heatThresh = 0,
+			stance = "Ag,Pa",
+			Weighting = 30,
 		},
 		{
 			Type = InterpolateTarget,
@@ -154,7 +183,7 @@ Data = {
 		},
 		{
 			Type = PickNewTarget,
-			Weighting = 20,
+			Weighting = 10,
 			stance = "Ag"
 		},
 		{
