@@ -9,6 +9,7 @@ setPenetration(NewWeaponType,5,0,
 setAccuracy(NewWeaponType, 0, 
 {SpaceMine=1},
 {Torpedo=1},
+{SmallTorpedo=1},
 {HeavyMissile=1},
 {SmallMissile=1},
 {Munition=1});
