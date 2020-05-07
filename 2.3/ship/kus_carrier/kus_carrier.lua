@@ -1,4 +1,7 @@
-dofilepath("data:scripts/playerspatch_ships_util.lua")
+if (GLOBAL_LIB_IMPORTED == nil or GLOBAL_LIB_IMPORTED == 0) then
+	dofilepath("data:scripts/playerspatch/playerspatch_ships_util.lua")
+	GLOBAL_LIB_IMPORTED = 1
+end
 
 function Load_Kus_Carrier(playerIndex)
 	SobGroup_CreateIfNotExist("kus_carrier"..playerIndex)
