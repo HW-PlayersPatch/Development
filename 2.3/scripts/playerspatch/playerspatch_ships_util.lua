@@ -39,7 +39,7 @@ function UnderAttackReissueDock(group)
 end
 
 -- allows strike to stay docked with a hyperspacing support frigate
-function SupportFrigateHyperspaceDock(CustomGroup, shipID)
+function SupportFrigate_HyperspaceDock(CustomGroup, shipID)
 	print("ok?")
 	if (SobGroup_AreAllInRealSpace(CustomGroup)==1) then
 		if (SobGroup_Empty("LatchDockTempGroup"..shipID)==0) then --Exited Hyperspace with ships docked
