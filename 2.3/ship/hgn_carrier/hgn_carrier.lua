@@ -15,5 +15,5 @@ function Update_Hgn_Carrier(CustomGroup, playerIndex, shipID)
 	--SobGroup_CreateIfNotExist("hgn_carrier"..playerIndex)	
 	--SobGroup_Clear("hgn_carrier"..playerIndex)
 	--SobGroup_SobGroupAdd("hgn_carrier"..playerIndex, CustomGroup)	
-	NoSalvageScuttle(CustomGroup, playerIndex, shipID)
+	SobGroup_NoSalvageScuttle(CustomGroup, playerIndex, shipID)
 end

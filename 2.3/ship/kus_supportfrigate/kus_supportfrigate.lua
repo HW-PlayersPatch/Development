@@ -4,7 +4,7 @@ function Create_Kus_SupportFrigate(CustomGroup, playerIndex, shipID)
 end
 
 function Update_Kus_SupportFrigate(CustomGroup, playerIndex, shipID)
-	NoSalvageScuttle(CustomGroup, playerIndex, shipID)
+	SobGroup_NoSalvageScuttle(CustomGroup, playerIndex, shipID)
 	SupportFrigate_HyperspaceDock(CustomGroup, shipID)
 end
 

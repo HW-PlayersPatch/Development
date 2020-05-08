@@ -50,7 +50,7 @@ function Update_Tai_Carrier(CustomGroup, playerIndex, shipID)
 		SobGroup_AbilityActivate(CustomGroup, AB_Hyperspace, 0)	
 	end
 
-	NoSalvageScuttle(CustomGroup, playerIndex, shipID)
+	SobGroup_NoSalvageScuttle(CustomGroup, playerIndex, shipID)
 
 	ShowProductionSubsystems(CustomGroup, playerIndex, "CC")
 end

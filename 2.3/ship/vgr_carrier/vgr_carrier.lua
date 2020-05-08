@@ -15,5 +15,5 @@ function Update_Vgr_Carrier(CustomGroup, playerIndex, shipID)
 	--SobGroup_CreateIfNotExist("vgr_carrier"..playerIndex)	
 	--SobGroup_Clear("vgr_carrier"..playerIndex)
 	--SobGroup_SobGroupAdd("vgr_carrier"..playerIndex, CustomGroup)	
-	NoSalvageScuttle(CustomGroup, playerIndex, shipID)
+	SobGroup_NoSalvageScuttle(CustomGroup, playerIndex, shipID)
 end

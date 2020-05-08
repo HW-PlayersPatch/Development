@@ -126,7 +126,7 @@ function Create_Kus_GravWellGenerator(CustomGroup,playerIndex,shipID)
 end
 
 function Update_Kus_GravWellGenerator(CustomGroup,playerIndex,shipID)
-  NoSalvageScuttle(CustomGroup, playerIndex, shipID)
+  SobGroup_NoSalvageScuttle(CustomGroup, playerIndex, shipID)
 
   if (Player_GetLevelOfDifficulty(playerIndex) > 0 and Player_GetNumberOfSquadronsOfTypeAwakeOrSleeping(-1, "Special_Splitter")== 1) then
     local listCount = getn(GravityWellGeneratorShipList)
