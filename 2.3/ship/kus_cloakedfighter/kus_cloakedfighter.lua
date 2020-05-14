@@ -59,9 +59,10 @@ function Update_Kus_CloakedFighter(CustomGroup, playerIndex, shipID)
         if regen_enabled == 1 then
             if (
                 SobGroup_IsDocked(this_cf.self_group) and
-                SobGroup_AreAllInRealSpace(this_cf.self_group) == 1
+                SobGroup_AreAllInRealSpace(this_cf.self_group) == 1 and
+                SobGroup_GetActualSpeed(this_cf.group) < 10
             ) then -- not under attack
-                SobGroup_SetHealth(this_cf.self_group, this_cf.current_HP + 0.032) -- fully heals in about 30 seconds with 1 call per second
+                SobGroup_SetHealth(this_cf.self_group, this_cf.current_HP + 0.016) -- fully heals in about 60 seconds with 1 call per second
             end
         end
     end
