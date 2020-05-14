@@ -1450,33 +1450,6 @@ NewTaskbar = {
 					{
 						type = "ButtonHD",
 						buttonStyle = "RM_TaskbarHD_CommandButtonStyle",
-						helpTip = "$3138",
-						helpTipTextLabel = "commandsHelpTip",
-						name = "btnNeutralSt",
-						hotKeyID = 39,
-						cursorType = "Normal",
-						Layout = {					
-							size_WH = { w = TACTICSICON_W, h = TACTICSICON_H*2/3, wr = "px", hr = "px" },
-						},		
-								
-						stateIconOfs = { 0.0, 128/1024 },
-						stateIconCells = { 0, 1, 2, 3, 2, 2, 2, 3 },
-						IconBase = {
-							--size = {4, 4},
-							texture = "DATA:UI\\NewUI\\Taskbar\\CommandIcons\\cmd_ico_stance_neu_hw1c.dds",
-							uvRect = { 0/128, 24/1024, 128/128, 104/1024 },
-							patch_X = { 4,-120,4,0 },
-							patch_Y = { 4,-72,4,0 },
-							patch_Scale = 1,
-	
-							Surface = THREESTATEBUTTONSURFACE,
-
-						},
-						soundOnClicked 		= "SFX_ButtonClick",
-					},
-					{
-						type = "ButtonHD",
-						buttonStyle = "RM_TaskbarHD_CommandButtonStyle",
 						helpTip = "$3137",
 						helpTipTextLabel = "commandsHelpTip",
 						name = "btnEvasiveSt",
@@ -1490,7 +1463,34 @@ NewTaskbar = {
 						stateIconCells = { 0, 1, 2, 3, 2, 2, 2, 3 },
 						IconBase = {
 							--size = {4, 4},
-							texture = "DATA:UI\\NewUI\\Taskbar\\CommandIcons\\cmd_ico_stance_eva_hw1c.dds",
+							texture = "DATA:UI\\NewUI\\Taskbar\\CommandIcons\\cmd_ico_stance_eva.dds",
+							uvRect = { 0/128, 24/1024, 128/128, 104/1024 },
+							patch_X = { 4,-120,4,0 },
+							patch_Y = { 4,-72,4,0 },
+							patch_Scale = 1,
+	
+							Surface = THREESTATEBUTTONSURFACE,
+
+						},
+						soundOnClicked 		= "SFX_ButtonClick",
+					},
+					{
+						type = "ButtonHD",
+						buttonStyle = "RM_TaskbarHD_CommandButtonStyle",
+						helpTip = "$3138",
+						helpTipTextLabel = "commandsHelpTip",
+						name = "btnNeutralSt",
+						hotKeyID = 39,
+						cursorType = "Normal",
+						Layout = {					
+							size_WH = { w = TACTICSICON_W, h = TACTICSICON_H*2/3, wr = "px", hr = "px" },
+						},		
+								
+						stateIconOfs = { 0.0, 128/1024 },
+						stateIconCells = { 0, 1, 2, 3, 2, 2, 2, 3 },
+						IconBase = {
+							--size = {4, 4},
+							texture = "DATA:UI\\NewUI\\Taskbar\\CommandIcons\\cmd_ico_stance_neu.dds",
 							uvRect = { 0/128, 24/1024, 128/128, 104/1024 },
 							patch_X = { 4,-120,4,0 },
 							patch_Y = { 4,-72,4,0 },
