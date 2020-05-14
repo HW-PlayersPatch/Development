@@ -7,7 +7,7 @@
 dofilepath("data:scripts/playerspatch/playerspatch_speech_util.lua")
 --dofilepath("data:scripts/SCAR/SCAR_Util.lua")
 dofilepath("data:scripts/scar/restrict.lua")
-dofilepath("data:scripts/playerspatch/playerspatch_util.lua")
+dofilepath("data:scripts/playerspatch/playerspatch_sp_util.lua")
 dofilepath("data:scripts/SCAR/SCAR_Util.lua")
 
 -- objectives
@@ -334,7 +334,7 @@ function Rule_Set_Difficulty()
 	print ("Player fleet size = "..PlayerFleetSize)
 	
 	--Load expanded options
-	--dofilepath("data:scripts/playerspatch/playerspatch_util.lua")
+	--dofilepath("data:scripts/playerspatch/playerspatch_sp_util.lua")
 	RefMissionDifficultyScale = GetMissionDifficultyScale()
 
 	ReactiveFleetRatio = ((PlayerFleetSize / ReactiveFleetSize) * RefMissionDifficultyScale)  --Multiplied with difficulty value
