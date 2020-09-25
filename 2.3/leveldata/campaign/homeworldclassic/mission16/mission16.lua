@@ -24,7 +24,7 @@
 --kasfSoundEvent
 
 
-dofilepath("data:scripts/playerspatch_speech_util.lua")
+dofilepath("data:scripts/playerspatch/playerspatch_speech_util.lua")
 dofilepath("data:scripts/SCAR/SCAR_Util.lua")             --stock HW2 scripting utilities
 dofilepath("data:scripts/SCAR/KASUtil.lua")               --HW1->HW2 scripting utilities
 dofilepath("data:scripts/SCAR/SinglePlayerFlow.lua")      --Emulation of HW1 singleplayer functionality
@@ -194,81 +194,81 @@ LSTRING_LCLocationCard = {  -- multilingual strings
 	"&H &I &I &G &A &R &A", }
 LSTRING_FIKaranMindControlled = {  -- multilingual strings
 	"We've lost Karan.  Fleet Command is gone.  Emergency biotech teams are working to keep her alive.",
-	"Nous avons perdu Karan. Il n'y a plus d'Amiraut�. Les �quipes d'urgence de biotechniciens se tuent � la maintenir en vie.",
-	"Wir haben Karan verloren. Das Flottenkommando steht nicht mehr zur Verf�gung. Notfall-Teams der Biotech-Abteilung versuchen, sie am Leben zu erhalten.",
-	"Hemos perdido Karan. El mando de la flota ha desaparecido. Los equipos biot�cnicos de emergencia intentan mantenerla con vida.",
-	"Abbiamo perso Karan, il comando della flotta � stato distrutto. Delle squadre biotecnologiche d'emergenza stanno cercando di tenerla in vita.", }
+	"Nous avons perdu Karan. Il n'y a plus d'Amirauté. Les équipes d'urgence de biotechniciens se tuent à la maintenir en vie.",
+	"Wir haben Karan verloren. Das Flottenkommando steht nicht mehr zur Verfügung. Notfall-Teams der Biotech-Abteilung versuchen, sie am Leben zu erhalten.",
+	"Hemos perdido Karan. El mando de la flota ha desaparecido. Los equipos biotécnicos de emergencia intentan mantenerla con vida.",
+	"Abbiamo perso Karan, il comando della flotta è stato distrutto. Delle squadre biotecnologiche d'emergenza stanno cercando di tenerla in vita.", }
 LSTRING_FIOhBoyHereWeGoR1 = {  -- multilingual strings
 	"The collision asteroid must have served its purpose as a delay tactic.  There is a large number of Taiidan ships located here.\n\nA Mothership-class vessel is among them.\n\nAll of these forces must be destroyed.  Good luck.",
-	"Le choc avec l'astero�de devait �tre efficace comme moyen dilatoire. Un nombre important de vaisseaux Taiidan est bas� ici.\n\nEt parmi eux une unit� de type Vaisseau M�re.\n\nCes forces doivent �tre d�truites dans leur int�gralit�. Bonne chance.",
-	"Der Kollisionsasteroid d�rfte seinen Zweck als Hinhaltetaktik erf�llt haben. Es befinden sich viele Taiidan-Schiffe an dieser Stelle.\n\nDarunter ist auch ein Schiff der Mutterschiff-Klasse.\n\nDiese Streitkr�fte m�ssen ausnahmslos alle vernichtet werden. Viel Gl�ck.",
-	"El asteroide ha cumplido su misi�n como t�ctica de distracci�n. Hay muchas naves taiidanas aqu�.\n\nEntre ellas hay una de la clase Nave nodriza.\n\nEs necesario destruir todas sus fuerzas. �Suerte!",
-	"L'asteroide � servito ai nostri nemici per prendere tempo. C'� una grossa flotta di Taiidan in zona.\n\nComprende anche una Nave Madre.\n\nDevi distruggere tutte le forze nemiche, buona fortuna.", }
+	"Le choc avec l'asteroïde devait être efficace comme moyen dilatoire. Un nombre important de vaisseaux Taiidan est basé ici.\n\nEt parmi eux une unité de type Vaisseau Mère.\n\nCes forces doivent être détruites dans leur intégralité. Bonne chance.",
+	"Der Kollisionsasteroid dürfte seinen Zweck als Hinhaltetaktik erfüllt haben. Es befinden sich viele Taiidan-Schiffe an dieser Stelle.\n\nDarunter ist auch ein Schiff der Mutterschiff-Klasse.\n\nDiese Streitkräfte müssen ausnahmslos alle vernichtet werden. Viel Glück.",
+	"El asteroide ha cumplido su misión como táctica de distracción. Hay muchas naves taiidanas aquí.\n\nEntre ellas hay una de la clase Nave nodriza.\n\nEs necesario destruir todas sus fuerzas. ¡Suerte!",
+	"L'asteroide è servito ai nostri nemici per prendere tempo. C'è una grossa flotta di Taiidan in zona.\n\nComprende anche una Nave Madre.\n\nDevi distruggere tutte le forze nemiche, buona fortuna.", }
 LSTRING_FIOhBoyHereWeGoR2 = {  -- multilingual strings
 	"The collision asteroid must have served its purpose as a delay tactic.  There is a large number of Kushan ships located here.\n\nA Mothership-class vessel is among them.\n\nAll of these forces must be destroyed.  Good luck.",
-	"Le choc avec l'astero�de devait �tre efficace comme moyen dilatoire. Un nombre important de vaisseaux Kushan est bas� ici.\n\nEt parmi eux une unit� de type Vaisseau M�re.\n\nCes forces doivent �tre d�truites dans leur int�gralit�. Bonne chance.",
-	"Der Kollisionsasteroid d�rfte seinen Zweck als Hinhaltetaktik erf�llt haben. Es befinden sich viele Kushan-Schiffe an dieser Stelle.\n\nDarunter ist auch ein Schiff der Mutterschiff-Klasse.\n\nDiese Streitkr�fte m�ssen ausnahmslos alle vernichtet werden. Viel Gl�ck.",
-	"El asteroide ha cumplido su misi�n como t�ctica de distracci�n. Hay muchas naves kushanas aqu�.\n\nEntre ellas hay una de la clase Nave nodriza.\n\nEs necesario destruir todas sus fuerzas. �Suerte!",
-	"L'asteroide � servito ai nostri nemici per prendere tempo. C'� una grossa flotta di Kushan in zona.\n\nComprende anche una Nave Madre.\n\nDevi distruggere tutte le forze nemiche, buona fortuna.", }
+	"Le choc avec l'asteroïde devait être efficace comme moyen dilatoire. Un nombre important de vaisseaux Kushan est basé ici.\n\nEt parmi eux une unité de type Vaisseau Mère.\n\nCes forces doivent être détruites dans leur intégralité. Bonne chance.",
+	"Der Kollisionsasteroid dürfte seinen Zweck als Hinhaltetaktik erfüllt haben. Es befinden sich viele Kushan-Schiffe an dieser Stelle.\n\nDarunter ist auch ein Schiff der Mutterschiff-Klasse.\n\nDiese Streitkräfte müssen ausnahmslos alle vernichtet werden. Viel Glück.",
+	"El asteroide ha cumplido su misión como táctica de distracción. Hay muchas naves kushanas aquí.\n\nEntre ellas hay una de la clase Nave nodriza.\n\nEs necesario destruir todas sus fuerzas. ¡Suerte!",
+	"L'asteroide è servito ai nostri nemici per prendere tempo. C'è una grossa flotta di Kushan in zona.\n\nComprende anche una Nave Madre.\n\nDevi distruggere tutte le forze nemiche, buona fortuna.", }
 LSTRING_FIReinforcements = {  -- multilingual strings
 	"Enemy reinforcements emerging from hyperspace.",
 	"Des renforts ennemis surgissent de l' hyperespace.",
-	"Feindliche Verst�rkung aus dem Hyperraum eingetroffen.",
+	"Feindliche Verstärkung aus dem Hyperraum eingetroffen.",
 	"El enemigo recibe refuerzos desde el hiperespacio.",
 	"Dei rinforzi nemici sono appena usciti dall'Iperspazio.", }
 LSTRING_FIOverwhelmed = {  -- multilingual strings
 	"Another fleet is coming out of Hyperspace right on top of us.  We are being overwhelmed!",
-	"Une nouvelle flotte sort de l'Hyperespace juste au-dessus de nous. Nous sommes submerg�s !",
+	"Une nouvelle flotte sort de l'Hyperespace juste au-dessus de nous. Nous sommes submergés !",
 	"Direkt vor uns kommt eine weitere Flotte aus dem Hyperraum. Wir sind hoffnungslos in Unterzahl!",
-	"Otra flota est� saliendo del hiperespacio justo encima de nosotros. Nos superan en n�mero.",
-	"Una nuova flotta � uscita dall'Iperspazio proprio di fronte a noi. Sono troppi!", }
+	"Otra flota está saliendo del hiperespacio justo encima de nosotros. Nos superan en número.",
+	"Una nuova flotta è uscita dall'Iperspazio proprio di fronte a noi. Sono troppi!", }
 LSTRING_DEYayImHereButHurtR1 = {  -- multilingual strings
 	"This is Captain Elson.  We have been battling reinforcement fleets to get here and have lost many ships already.\n\nThe Emperor's flagship is here.  Together we can defeat him and the Taiidan fleet.  I am placing squadrons Cor and Jasah under your command.",
-	"Ici le Capitaine Elson. Nous avons d� nous battre contre les flottes de renfort pour arriver ici et nous avons perdu de nombreux vaisseaux.\n\nLe vaisseau-amiral de l'Empereur est ici. Group�s, la victoire contre lui et la flotte Taiidan est � notre port�e. Je vous confie le commandement des escadrons Cor et Jasah.",
-	"Hier spricht Captain Elson. Wir haben uns mit Verst�rkungsflotten herumgeschlagen, um hierher zu gelangen, und bereits viele Schiffe verloren.\n\nDas Flaggschiff des Imperators ist hier. Gemeinsam k�nnen wir sowohl ihn als auch die Taiidan-Flotte vernichten. Ich unterstelle die Geschwader Cor und Jasah eurem Kommando.",
-	"Aqu� el Capit�n Elson. Hemos combatido contra flotas de refuerzo para llegar hasta aqu� y ya hemos perdido muchas naves.\n\nLa nave insignia del Emperador est� aqu�. Juntos lo derrotaremos, a �l y a la flota taiidana. Pongo los escuadrones Cor y Jasah bajo tu mando.",
-	"Parla il Capitano Elson: abbiamo dovuto combattere con i rinforzi nemici per arrivare qui, e abbiamo gi� subito molte perdite.\n\nL'Ammiraglia dell'Imperatore � qui: insieme potremo distruggerla, e anche la flotta di Taiidan. Sto trasferendo sotto il tuo comando gli squadroni Cor e Jasah.", }
+	"Ici le Capitaine Elson. Nous avons dû nous battre contre les flottes de renfort pour arriver ici et nous avons perdu de nombreux vaisseaux.\n\nLe vaisseau-amiral de l'Empereur est ici. Groupés, la victoire contre lui et la flotte Taiidan est à notre portée. Je vous confie le commandement des escadrons Cor et Jasah.",
+	"Hier spricht Captain Elson. Wir haben uns mit Verstärkungsflotten herumgeschlagen, um hierher zu gelangen, und bereits viele Schiffe verloren.\n\nDas Flaggschiff des Imperators ist hier. Gemeinsam können wir sowohl ihn als auch die Taiidan-Flotte vernichten. Ich unterstelle die Geschwader Cor und Jasah eurem Kommando.",
+	"Aquí el Capitán Elson. Hemos combatido contra flotas de refuerzo para llegar hasta aquí y ya hemos perdido muchas naves.\n\nLa nave insignia del Emperador está aquí. Juntos lo derrotaremos, a él y a la flota taiidana. Pongo los escuadrones Cor y Jasah bajo tu mando.",
+	"Parla il Capitano Elson: abbiamo dovuto combattere con i rinforzi nemici per arrivare qui, e abbiamo già subito molte perdite.\n\nL'Ammiraglia dell'Imperatore è qui: insieme potremo distruggerla, e anche la flotta di Taiidan. Sto trasferendo sotto il tuo comando gli squadroni Cor e Jasah.", }
 LSTRING_DEYayImHereButHurtR2 = {  -- multilingual strings
 	"This is Captain Elson.  We have been battling reinforcement fleets to get here and have lost many ships already.\n\nThe Emperor's flagship is here.  Together we can defeat him and the Kushan fleet.  I am placing squadrons Cor and Jasah under your command.",
-	"Ici le Capitaine Elson. Nous avons d� nous battre contre les flottes de renfort pour arriver ici et nous avons perdu de nombreux vaisseaux.\n\nLe vaisseau-amiral de l'Empereur est ici. Group�s, la victoire contre lui et la flotte Kushan est � notre port�e. Je vous confie le commandement des escadrons Cor et Jasah.",
-	"Hier spricht Captain Elson. Wir haben uns mit Verst�rkungsflotten herumgeschlagen, um hierher zu gelangen, und bereits viele Schiffe verloren.\n\nDas Flaggschiff des Imperators ist hier. Gemeinsam k�nnen wir sowohl ihn als auch die Kushan-Flotte vernichten. Ich unterstelle die Geschwader Cor und Jasah eurem Kommando.",
-	"Aqu� el Capit�n Elson. Hemos combatido contra flotas de refuerzo para llegar hasta aqu� y ya hemos perdido muchas naves.\n\nLa nave insignia del Emperador est� aqu�. Juntos lo derrotaremos, a �l y a la flota kushana. Pongo los escuadrones Cor y Jasah bajo tu mando.",
-	"Parla il Capitano Elson: abbiamo dovuto combattere con i rinforzi nemici per arrivare qui, e abbiamo gi� subito molte perdite.\n\nL'Ammiraglia dell'Imperatore � qui: insieme potremo distruggerla, e anche la flotta di Taiidan. Sto trasferendo sotto il tuo comando gli squadroni Cor e Jasah.", }
+	"Ici le Capitaine Elson. Nous avons dû nous battre contre les flottes de renfort pour arriver ici et nous avons perdu de nombreux vaisseaux.\n\nLe vaisseau-amiral de l'Empereur est ici. Groupés, la victoire contre lui et la flotte Kushan est à notre portée. Je vous confie le commandement des escadrons Cor et Jasah.",
+	"Hier spricht Captain Elson. Wir haben uns mit Verstärkungsflotten herumgeschlagen, um hierher zu gelangen, und bereits viele Schiffe verloren.\n\nDas Flaggschiff des Imperators ist hier. Gemeinsam können wir sowohl ihn als auch die Kushan-Flotte vernichten. Ich unterstelle die Geschwader Cor und Jasah eurem Kommando.",
+	"Aquí el Capitán Elson. Hemos combatido contra flotas de refuerzo para llegar hasta aquí y ya hemos perdido muchas naves.\n\nLa nave insignia del Emperador está aquí. Juntos lo derrotaremos, a él y a la flota kushana. Pongo los escuadrones Cor y Jasah bajo tu mando.",
+	"Parla il Capitano Elson: abbiamo dovuto combattere con i rinforzi nemici per arrivare qui, e abbiamo già subito molte perdite.\n\nL'Ammiraglia dell'Imperatore è qui: insieme potremo distruggerla, e anche la flotta di Taiidan. Sto trasferendo sotto il tuo comando gli squadroni Cor e Jasah.", }
 LSTRING_FIHereIsMothership = {  -- multilingual strings
 	"Here is the Emperor's flagship.  It must be destroyed.",
-	"Voici le vaisseau-amiral de l'Empereur. Sa destruction est imp�rative.",
-	"Hier ist das Flaggschiff des Imperators. Es muss zerst�rt werden.",
-	"Aqu� est� la nave insignia del Emperador. Es necesario destruirla.",
+	"Voici le vaisseau-amiral de l'Empereur. Sa destruction est impérative.",
+	"Hier ist das Flaggschiff des Imperators. Es muss zerstört werden.",
+	"Aquí está la nave insignia del Emperador. Es necesario destruirla.",
 	"Ecco l'Ammiraglia dell'Imperatore... Deve essere distrutta.", }
 LSTRING_FCHoneyImHome = {  -- multilingual strings
 	"...Fleet Command back online.  The Emperor is gone.",
-	"�Amiraut� de retour. C'est fini pour l'Empereur.",
+	"…Amirauté de retour. C'est fini pour l'Empereur.",
 	"... Flottenkommando ist wieder online. Der Imperator wurde vernichtet.",
 	"...El mando de la flota vuelve a estar operativo. El Emperador ha desaparecido.",
-	"� Il comando della flotta � di nuovo operativo. L'Imperatore � andato.", }
+	"… Il comando della flotta è di nuovo operativo. L'Imperatore è andato.", }
 LSTRING_BTCouncilHere = {  -- multilingual strings
 	"We have brought the Council.  This war is over.",
-	"Le Conseil est venu avec nous. Cette guerre est termin�e.",
+	"Le Conseil est venu avec nous. Cette guerre est terminée.",
 	"Wir haben den Rat zusammengeholt. Dieser Krieg ist vorbei.",
 	"Hemos llegado a un acuerdo. La guerra ha terminado.",
-	"Abbiamo riportato il Concilio. La guerra � finita.", }
+	"Abbiamo riportato il Concilio. La guerra è finita.", }
 LSTRING_OBEradicate = {  -- multilingual strings
 	"Eradicate Enemy Forces",
-	"�radiquer Forces Ennemies",
-	"Feindliche Streitkr�fte vernichten",
+	"Éradiquer Forces Ennemies",
+	"Feindliche Streitkräfte vernichten",
 	"Acaba con las fuerzas enemigas",
 	"Annienta le forze nemiche", }
 LSTRING_OBKillMothership = {  -- multilingual strings
 	"Destroy Emperor's Flagship",
-	"D�truire B�timent de l'Empereur",
-	"Das Flaggschiff des Imperators zerst�ren",
+	"Détruire Bâtiment de l'Empereur",
+	"Das Flaggschiff des Imperators zerstören",
 	"Destruye la nave insignia del Emperador",
 	"Distruggi l'ammiraglia dell'Imperatore", }
 LSTRING_Objective1 = {  -- multilingual strings
 	"Destroy ALL SHIPS!",
-	"D�truisez tous les ennemis!",
+	"Détruisez tous les ennemis!",
 	"ALLE SCHIFFE vernichten!",
-	"�Destruye TODAS LAS NAVES!",
+	"¡Destruye TODAS LAS NAVES!",
 	"Distruggi TUTTE LE ASTRONAVI!!!!", }
 LSTRING_LevelSave = {  -- multilingual strings
 	"16 - Hiigara",

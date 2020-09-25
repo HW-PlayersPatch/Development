@@ -131,7 +131,7 @@ addAbility(NewShipType,"MoveCommand",1,0);
 NewShipType.dontDockWithOtherRaceShips=1
 NewShipType.ignoreRaceWhenDocking=1
 addAbility(NewShipType,"WaypointMove");
-addAbility(NewShipType,"HyperSpaceCommand",1,10,100,400,0,15);
+addAbility(NewShipType,"HyperSpaceCommand",1,10,100,400,0,3);
 addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1,"BigCapitalShip, SmallCapitalShip, Mothership, Frigate, Corvette, Fighter","Frontal",{Fighter="MoveToTargetAndShoot"},{Corvette="MoveToTargetAndShoot"});
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"CanBeRepaired");

@@ -45,7 +45,7 @@ stage = {
 		{setting = "Resources"},
 		{setting = "RallyPointsSelected"},
 		{setting = "SelectionIcons"},
-		{setting = "SphereModifiers" },
+		--{setting = "SphereModifiers" },
 	},
 	-- SHOW ALL INFORMATION
 	{

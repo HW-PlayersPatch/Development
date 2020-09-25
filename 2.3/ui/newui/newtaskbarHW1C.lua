@@ -805,7 +805,7 @@ NewTaskbar = {
 
 			-------- Top Bar -------
 			type = "Frame",	
-			name = "frame_controlgroups",		
+			name = "frame_sensors",		
 
 			Layout = {	
 				pos_XY = { x = 0.5, y = 0, xr = "par", yr = "px" },

@@ -21,7 +21,7 @@
 --kasfSoundEvent
 
 
-dofilepath("data:scripts/playerspatch_speech_util.lua")
+dofilepath("data:scripts/playerspatch/playerspatch_speech_util.lua")
 dofilepath("data:scripts/SCAR/SCAR_Util.lua")             --stock HW2 scripting utilities
 dofilepath("data:scripts/SCAR/KASUtil.lua")               --HW1->HW2 scripting utilities
 dofilepath("data:scripts/SCAR/SinglePlayerFlow.lua")      --Emulation of HW1 singleplayer functionality
@@ -176,40 +176,40 @@ strCurLanguage = 1  --Naive treatement of localization language.;
 
 LSTRING_LocationCard = {  -- multilingual strings
 	"Great Wastelands",
-	"Macro-d�serts",
-	"Gro�e Ein�de",
-	"Grandes p�ramos",
+	"Macro-déserts",
+	"Große Einöde",
+	"Grandes páramos",
 	"Le lande desolate", }
 LSTRING_PrimaryObjective01 = {  -- multilingual strings
 	"Begin collection of resources.",
-	"D�marrage collecte des ressources.",
+	"Démarrage collecte des ressources.",
 	"Mit der Sammlung von Rohstoffen beginnen.",
-	"Comenzar recolecci�n de recursos.",
+	"Comenzar recolección de recursos.",
 	"Inizia la raccolta delle risorse.", }
 LSTRING_PrimaryObjective02 = {  -- multilingual strings
 	"Destroy all Turanic Raider ships",
-	"Destruction totalit� des Vaisseaux du Maraudeur Turanique",
-	"Alle Schiffe der turanischen Freibeuter sind zu zerst�ren.",
-	"Destruir todas las naves de asalto tur�nicas",
+	"Destruction totalité des Vaisseaux du Maraudeur Turanique",
+	"Alle Schiffe der turanischen Freibeuter sind zu zerstören.",
+	"Destruir todas las naves de asalto turánicas",
 	"Distruggi tutte le astronavi Raider dei Turanic", }
 LSTRING_SecondaryObjective01 = {  -- multilingual strings
 	"Build and Deploy Resource Controller",
-	"Construction et mise en place du Contr�leur des Ressources",
-	"Rohstoff�berwachungsschiff bauen und einsetzen.",
+	"Construction et mise en place du Contrôleur des Ressources",
+	"Rohstoffüberwachungsschiff bauen und einsetzen.",
 	"Construir y desarrollar controlador de recursos",
 	"Costruisci e posiziona un Controllore di Risorse.", }
 LSTRING_FISetupCollection = {  -- multilingual strings
 	"Set up a collection operation.",
-	"Mise en oeuvre op�ration de collecte.",
+	"Mise en oeuvre opération de collecte.",
 	"Sammelaktion einleiten.",
-	"Establecer operaci�n de recolecci�n.",
+	"Establecer operación de recolección.",
 	"Prepara un'operazione di raccolta.", }
 LSTRING_FIResourceControllerTip = {  -- multilingual strings
 	"Move your resource controller as close to heavy resource areas as possible.  This will reduce your resource collectors dropoff time and increase your resource collection efficiency.",
-	"Approchez le plus possible votre Contr�leur des Ressources des gisements importants de ressources. Ceci r�duira la dur�e de d�chargement pour le Collecteur de Ressources et am�liorera l'efficacit� de la collecte.",
-	"Bringen Sie Ihr Rohstoff�berwachungsschiff so dicht wie m�glich an ergiebige Rohstoffbereiche heran. Das verringert die Transportzeit der Rohstoffernteschiffe und erh�ht die Effizienz der Rohstoffernte.",
-	"Acerca el controlador de recursos a las zonas con abundancia de recursos tanto como puedas. Esto reduce el tiempo de descarga de los recolectores de recursos y aumenta la eficacia de la recolecci�n.",
-	"Sposta il Collettore di Risorse il pi� vicino possibile alle zone pi� ricche di risorse. In questo modo, ridurrai al minimo i tempi morti della raccolta, ottimizzandone la produzione.", }
+	"Approchez le plus possible votre Contrôleur des Ressources des gisements importants de ressources. Ceci réduira la durée de déchargement pour le Collecteur de Ressources et améliorera l'efficacité de la collecte.",
+	"Bringen Sie Ihr Rohstoffüberwachungsschiff so dicht wie möglich an ergiebige Rohstoffbereiche heran. Das verringert die Transportzeit der Rohstoffernteschiffe und erhöht die Effizienz der Rohstoffernte.",
+	"Acerca el controlador de recursos a las zonas con abundancia de recursos tanto como puedas. Esto reduce el tiempo de descarga de los recolectores de recursos y aumenta la eficacia de la recolección.",
+	"Sposta il Collettore di Risorse il più vicino possibile alle zone più ricche di risorse. In questo modo, ridurrai al minimo i tempi morti della raccolta, ottimizzandone la produzione.", }
 LSTRING_TraderIntro = {  -- multilingual strings
 	"Welcome.",
 	"Bienvenue.",
@@ -224,28 +224,28 @@ LSTRING_TraderPurchaseMade = {  -- multilingual strings
 	"Grazie. Speriamo che il tuo acquisto ti torni utile.", }
 LSTRING_Savegame = {  -- multilingual strings
 	"04 - Great Wastelands",
-	"04 - Macro-d�serts",
-	"04 - Gro�e Ein�de",
-	"04 - Grandes p�ramos",
+	"04 - Macro-déserts",
+	"04 - Große Einöde",
+	"04 - Grandes páramos",
 	"04 - Le lande desolate", }
 LSTRING_Objective1 = {  -- multilingual strings
 	"Protect The Fleet",
 	"Protection de la Flotte",
-	"Die Flotte sch�tzen.",
+	"Die Flotte schützen.",
 	"Proteger la flota",
 	"Progetta la flotta", }
 LSTRING_GoodBusiness = {  -- multilingual strings
 	"When you have collected enough resources we have a piece of technology that we would be willing to sell you.",
-	"Nous poss�dons une avanc�e technologique que nous serions pr�ts � vous vendre lorsque vous aurez r�uni assez de ressources.",
-	"Wenn ihr gen�gend Rohstoffe gesammelt habt, haben wir eine Technologie, die wir euch verkaufen w�rden",
-	"Cuando hayas recolectado suficientes recursos, tenemos cierta tecnolog�a que estamos dispuestos a venderte.",
-	"Quando avrai raccolto risorse sufficienti, vieni da noi: abbiamo qualcosa che crediamo ti potr� tornare davvero utile.", }
+	"Nous possédons une avancée technologique que nous serions prêts à vous vendre lorsque vous aurez réuni assez de ressources.",
+	"Wenn ihr genügend Rohstoffe gesammelt habt, haben wir eine Technologie, die wir euch verkaufen würden",
+	"Cuando hayas recolectado suficientes recursos, tenemos cierta tecnología que estamos dispuestos a venderte.",
+	"Quando avrai raccolto risorse sufficienti, vieni da noi: abbiamo qualcosa che crediamo ti potrà tornare davvero utile.", }
 LSTRING_IonFrigs = {  -- multilingual strings
 	"Several Turanic Raider capital ships have just hyperspaced in close to the Mothership.  They pose by far the greatest threat yet faced.  Protecting the Mothership is the highest priority.",
-	"Plusieurs Unit�s lourdes du Maraudeur Turanique viennent de sortir de l'hyperespace pr�s du Vaisseau M�re. C'est de loin la menace la plus s�rieuse qui se soit pr�sent�e jusqu'� pr�sent. Priorit� absolue : Protection du Vaisseau M�re.",
-	"Mehrere Schlachtschiffe der turanischen Freibeuter sind gerade in der N�he des Mutterschiffs aus dem Hyperraum gekommen. Sie stellen mit Abstand die gr��te Gefahr dar, der wir uns je gegen�ber sahen. Der Schutz des Mutterschiffs hat oberste Priorit�t.",
-	"Varias Naves capital tur�nicas de asalto acaban de salir del hiperespacio cerca de la Nave nodriza. Representan el mayor peligro al que nos hemos enfrentado. Nuestra prioridad es la de proteger a la Nave nodriza.",
-	"Molte navi Incursori dei Turanic sono appena emerse dall'Iperspazio e si stanno dirigendo verso l'Astronave Madre. Siamo di fronte a una minaccia senza precedenti, � assolutamente necessario difendere l'Astronave Madre.", }
+	"Plusieurs Unités lourdes du Maraudeur Turanique viennent de sortir de l'hyperespace près du Vaisseau Mère. C'est de loin la menace la plus sérieuse qui se soit présentée jusqu'à présent. Priorité absolue : Protection du Vaisseau Mère.",
+	"Mehrere Schlachtschiffe der turanischen Freibeuter sind gerade in der Nähe des Mutterschiffs aus dem Hyperraum gekommen. Sie stellen mit Abstand die größte Gefahr dar, der wir uns je gegenüber sahen. Der Schutz des Mutterschiffs hat oberste Priorität.",
+	"Varias Naves capital turánicas de asalto acaban de salir del hiperespacio cerca de la Nave nodriza. Representan el mayor peligro al que nos hemos enfrentado. Nuestra prioridad es la de proteger a la Nave nodriza.",
+	"Molte navi Incursori dei Turanic sono appena emerse dall'Iperspazio e si stanno dirigendo verso l'Astronave Madre. Siamo di fronte a una minaccia senza precedenti, è assolutamente necessario difendere l'Astronave Madre.", }
 LSTRING_TBHyperspace = {  -- multilingual strings
 	"                HYPERSPACE",
 	"                HYPERESPACE",
@@ -255,8 +255,8 @@ LSTRING_TBHyperspace = {  -- multilingual strings
 LSTRING_FIGoGetThem = {  -- multilingual strings
 	"Destroy Retreating Turanic Raider Carrier",
 	"Destruction du transporteur fuyard du Maraudeur Turanique",
-	"Tr�gerschiffe der zur�ckweichenden turanischen Freibeuter zerst�ren.",
-	"Destruir el portanaves de asalto tur�nico que se retira",
+	"Trägerschiffe der zurückweichenden turanischen Freibeuter zerstören.",
+	"Destruir el portanaves de asalto turánico que se retira",
 	"Distruggi l'astronave Porta-Incursori dei Turanic in ritirata.", }
 
 --

@@ -18,7 +18,7 @@
 --  for run-time scoping of symbols (variables, timers, etc.)
 
 
-dofilepath("data:scripts/playerspatch_speech_util.lua")
+dofilepath("data:scripts/playerspatch/playerspatch_speech_util.lua")
 dofilepath("data:scripts/SCAR/SCAR_Util.lua")             --stock HW2 scripting utilities
 dofilepath("data:scripts/SCAR/KASUtil.lua")               --HW1->HW2 scripting utilities
 dofilepath("data:scripts/SCAR/SinglePlayerFlow.lua")      --Emulation of HW1 singleplayer functionality
@@ -92,20 +92,20 @@ strCurLanguage = 1  --Naive treatement of localization language.;
 
 LSTRING_Location = {  -- multilingual strings
 	"CHAPEL PERILOUS",
-	"Chapelle des P�rils",
+	"Chapelle des Périls",
 	"Gefahr im Verzug",
 	"CAPILLA DEL PELIGRO",
 	"CHAPEL PERILOUS", }
 LSTRING_LevelName = {  -- multilingual strings
 	"15 - Chapel Perilous",
-	"15 - Chapelle des P�rils",
+	"15 - Chapelle des Périls",
 	"15 - Gefahr im Verzug",
 	"15 - Capilla del peligro",
 	"15 - Chapel Perilous", }
 LSTRING_Objective1 = {  -- multilingual strings
 	"Destroy the object",
 	"Destruction de l'objet",
-	"Das Objekt zerst�ren.",
+	"Das Objekt zerstören.",
 	"Destruir el objeto",
 	"Distruggi l'oggetto", }
 LSTRING_Hyperspace = {  -- multilingual strings

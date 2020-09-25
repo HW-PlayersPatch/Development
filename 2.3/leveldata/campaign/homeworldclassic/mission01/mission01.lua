@@ -27,7 +27,7 @@
 --kasfTutSetTextDisplayBoxToSubtitleRegion
 
 
-dofilepath("data:scripts/playerspatch_speech_util.lua")
+dofilepath("data:scripts/playerspatch/playerspatch_speech_util.lua")
 dofilepath("data:scripts/SCAR/SCAR_Util.lua")             --stock HW2 scripting utilities
 dofilepath("data:scripts/SCAR/KASUtil.lua")               --HW1->HW2 scripting utilities
 dofilepath("data:scripts/SCAR/SinglePlayerFlow.lua")      --Emulation of HW1 singleplayer functionality
@@ -206,7 +206,7 @@ LSTRING_LocationCard = {  -- multilingual strings
 	"IL SISTEMA DI KHARAK", }
 LSTRING_HarvestTASKBAR = {  -- multilingual strings
 	"Harvest asteroids",
-	"Collecte astero�des",
+	"Collecte asteroïdes",
 	"Rohstoffe in Asteroiden ernten.",
 	"Cosechar asteroides",
 	"Raccogli degli asteroidi", }
@@ -214,36 +214,36 @@ LSTRING_ResearchShipTASKBAR = {  -- multilingual strings
 	"Construct a Research Ship",
 	"Construction Vaisseau de Recherche",
 	"Ein Forschungsschiff bauen",
-	"Construir nave de investigaci�n",
+	"Construir nave de investigación",
 	"Costruisci una Nave da Ricerca", }
 LSTRING_StartResearchTASKBAR = {  -- multilingual strings
 	"Research Fighter Chassis",
-	"Recherche sur les ch�ssis de chasseur",
-	"J�ger-Chassis erforschen.",
+	"Recherche sur les châssis de chasseur",
+	"Jäger-Chassis erforschen.",
 	"Investigar chasis de caza",
 	"Ricerca struttura Caccia Stellare", }
 LSTRING_ScoutTrialFormationTASKBAR = {  -- multilingual strings
 	"Destroy Target Drones using a formation",
-	"Destruction des Drones-cibles. M�thode : Formation",
+	"Destruction des Drones-cibles. Méthode : Formation",
 	"Zieldrohnen mit einer Formation vernichten.",
-	"Destruir naves teledirigidas con una formaci�n",
+	"Destruir naves teledirigidas con una formación",
 	"Distruggere il bersaglio Droni servendosi di una formazione", }
 LSTRING_ScoutTrialTacticsTASKBAR = {  -- multilingual strings
 	"Destroy Target Drones using tactics",
-	"Destruction des Drones-cibles. M�thode : Tactique",
-	"Zieldrohnen unter Verwendung von Taktiken zerst�ren.",
-	"Destruir naves teledirigidas con t�cticas",
+	"Destruction des Drones-cibles. Méthode : Tactique",
+	"Zieldrohnen unter Verwendung von Taktiken zerstören.",
+	"Destruir naves teledirigidas con tácticas",
 	"Distruggi il bersaglio Droni con una strategia", }
 LSTRING_SalvageTrialTASKBAR = {  -- multilingual strings
 	"Capture the Drone using a Salvage Corvette.",
 	"Capture du Drone. Moyens : Corvette de sauvetage.",
-	"Drohne mit Hilfe einer Bergungskorvette �bernehmen.",
+	"Drohne mit Hilfe einer Bergungskorvette übernehmen.",
 	"Capturar la nave teledirigida con una corbeta de salvamento",
 	"Cattura il Drone utilizzando una Corvetta di Recupero", }
 LSTRING_InterceptorTrialTASKBAR = {  -- multilingual strings
 	"Use Interceptors to destroy advanced drones",
 	"Destruction des Drones de pointe. Moyens : Intercepteurs",
-	"Abfangj�ger zur Zerst�rung von Superdrohnen verwenden.",
+	"Abfangjäger zur Zerstörung von Superdrohnen verwenden.",
 	"Usar interceptadores para destruir naves teledirigidas avanzadas",
 	"Utilizza gli Intercettori per distruggere i Droni rimasti", }
 LSTRING_HyperspaceTASKBAR = {  -- multilingual strings
@@ -254,8 +254,8 @@ LSTRING_HyperspaceTASKBAR = {  -- multilingual strings
 	"                    IPERSPAZIO", }
 LSTRING_ObjectiveIncomplete = {  -- multilingual strings
 	"A mission objective remains incomplete. Consult objectives.",
-	"Il reste un objectif de mission � accomplir. Consulter objectifs.Il reste un objectif de mission � accomplir. Consulter objectifs.",
-	"Eine Aufgabe dieser Mission ist noch nicht abgeschlossen. Bitte Aufgabenziele �berpr�fen.",
+	"Il reste un objectif de mission à accomplir. Consulter objectifs.Il reste un objectif de mission à accomplir. Consulter objectifs.",
+	"Eine Aufgabe dieser Mission ist noch nicht abgeschlossen. Bitte Aufgabenziele überprüfen.",
 	"",
 	"", }
 

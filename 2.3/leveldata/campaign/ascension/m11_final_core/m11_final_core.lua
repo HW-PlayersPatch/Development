@@ -4,7 +4,7 @@
 --
 ----------------------------------------------------------------------------------
 -- import library files
-dofilepath("data:scripts/playerspatch_speech_util.lua")
+dofilepath("data:scripts/playerspatch/playerspatch_speech_util.lua")
 dofilepath("data:scripts/SCAR/SCAR_Util.lua")
 dofilepath("data:scripts/scar/restrict.lua")
 
@@ -1243,7 +1243,7 @@ Events.intelevent_hsout  =
 		HW2_Wait( 2 ),
 	},	
 	{
-		HW2_SubTitleEvent( Actor_FleetIntel, "$45091", 10 ),	-- We have re-established contact with Captain Soban�s tracking device.
+		HW2_SubTitleEvent( Actor_FleetIntel, "$45091", 10 ),	-- We have re-established contact with Captain Soban’s tracking device.
 	},
 	{
 		HW2_Wait( 1 ),

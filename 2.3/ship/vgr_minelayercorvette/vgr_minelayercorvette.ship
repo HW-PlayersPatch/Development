@@ -18,7 +18,7 @@ setTacticsMults(NewShipType, "ROTATIONBRAKE", 1.0, 1.0, 1.0)
 setTacticsMults(NewShipType, "WEAPONACCURACY", 1.0, 1.0, 1.0)
 setTacticsMults(NewShipType, "WEAPONDAMAGE", 1.0, 1.0, 1.0)
 setTacticsMults(NewShipType, "BULLETSPEED", 1.10, 1.0, 1.0)
-setTacticsMults(NewShipType, "DAMAGEAPPLIED", 1.10, 0.90, 1.0)
+setTacticsMults(NewShipType, "DAMAGEAPPLIED", 1.10, 1.0, 1.0)
 setTacticsMults(NewShipType, "FIRERATE", 1.0, 1.25, 1.0)
 NewShipType.isTransferable=1
 NewShipType.formationSpacing=40

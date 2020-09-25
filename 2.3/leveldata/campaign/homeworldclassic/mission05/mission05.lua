@@ -22,7 +22,7 @@
 --kasfTutSetTextDisplayBoxToSubtitleRegion
 
 
-dofilepath("data:scripts/playerspatch_speech_util.lua")
+dofilepath("data:scripts/playerspatch/playerspatch_speech_util.lua")
 dofilepath("data:scripts/SCAR/SCAR_Util.lua")             --stock HW2 scripting utilities
 dofilepath("data:scripts/SCAR/KASUtil.lua")               --HW1->HW2 scripting utilities
 dofilepath("data:scripts/SCAR/SinglePlayerFlow.lua")      --Emulation of HW1 singleplayer functionality
@@ -229,37 +229,37 @@ strCurLanguage = 1  --Naive treatement of localization language.;
 
 LSTRING_Savegame = {  -- multilingual strings
 	"05 - Great Wastelands",
-	"05 - Macro-d�serts",
-	"05 - Gro�e Ein�de",
-	"05 - Grandes p�ramos",
+	"05 - Macro-déserts",
+	"05 - Große Einöde",
+	"05 - Grandes páramos",
 	"05 - Le lande desolate", }
 LSTRING_LocationCard = {  -- multilingual strings
 	"GREAT WASTELANDS",
 	"MACRO-DESERTS",
-	"GROSSE EIN�DE",
-	"GRANDES P�RAMOS",
+	"GROSSE EINÖDE",
+	"GRANDES PÁRAMOS",
 	"LE LANDE DESOLATE", }
 LSTRING_FISendProbeTASKBAR = {  -- multilingual strings
 	"Investigate the asteroid belt",
-	"Sondez la ceinture d'ast�ro�des",
-	"Den Asteroideng�rtel untersuchen.",
-	"Investigar el cintur�n de asteroides",
+	"Sondez la ceinture d'astéroïdes",
+	"Den Asteroidengürtel untersuchen.",
+	"Investigar el cinturón de asteroides",
 	"Indaga nella fascia asteroidale", }
 LSTRING_FIEradicateTASKBAR = {  -- multilingual strings
 	"Eradicate all enemy ships",
-	"Elimination totalit� vaisseaux ennemis",
-	"Alle feindlichen Schiffe ausl�schen.",
+	"Elimination totalité vaisseaux ennemis",
+	"Alle feindlichen Schiffe auslöschen.",
 	"Erradicar todas las naves enemigas",
 	"Distruggi tutti i vascelli nemici", }
 LSTRING_FIDestroyResTASKBAR = {  -- multilingual strings
 	"Destroy Enemy Resource Collector",
 	"Destruction Collecteur de Ressources Ennemi.",
-	"Rohstoffschiffe des Feindes zerst�ren.",
+	"Rohstoffschiffe des Feindes zerstören.",
 	"Destruir recolector de recursos enemigo",
 	"Distruggi i Collettori di Risorse nemici", }
 LSTRING_FITeachDefendersTASKBAR = {  -- multilingual strings
 	"Research Defender sub-systems",
-	"Recherche sur les sous-syst�mes de d�fense",
+	"Recherche sur les sous-systèmes de défense",
 	"Abwehrkreuzer-Subsysteme erforschen.",
 	"Investigar subsistemas de defensa",
 	"Ricerca i sotto-sistemi del Difensore", }

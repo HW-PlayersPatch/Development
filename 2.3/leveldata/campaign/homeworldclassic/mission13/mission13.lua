@@ -21,7 +21,7 @@
 --kasfSoundEvent
 
 
-dofilepath("data:scripts/playerspatch_speech_util.lua")
+dofilepath("data:scripts/playerspatch/playerspatch_speech_util.lua")
 dofilepath("data:scripts/SCAR/SCAR_Util.lua")             --stock HW2 scripting utilities
 dofilepath("data:scripts/SCAR/KASUtil.lua")               --HW1->HW2 scripting utilities
 dofilepath("data:scripts/SCAR/SinglePlayerFlow.lua")      --Emulation of HW1 singleplayer functionality
@@ -133,21 +133,21 @@ strCurLanguage = 1  --Naive treatement of localization language.;
 
 LSTRING_Savegame = {  -- multilingual strings
 	"13 - The Karos Graveyard",
-	"13 - Le Cimeti�re de Karos",
-	"13 � Der Friedhof von Karros",
+	"13 - Le Cimetière de Karos",
+	"13 – Der Friedhof von Karros",
 	"13 - El cementerio de Karos",
 	"13 - Il cimitero di Karos", }
 LSTRING_LocationCard = {  -- multilingual strings
 	"The Karos Graveyard - The Shining Hinterlands",
-	"Cimeti�re de Karos - Arri�re-pays des Lumi�res",
-	"Der Friedhof von Karros � Das leuchtende Hinterland",
+	"Cimetière de Karos - Arrière-pays des Lumières",
+	"Der Friedhof von Karros – Das leuchtende Hinterland",
 	"El cementerio de Karos - El interior brillante",
 	"Il cimitero di Karos - il Territorio Splendente", }
 LSTRING_Objective1 = {  -- multilingual strings
 	"Dock Strike Craft With Communications Relay",
-	"Amarrage de l'Unit� l�g�re avec le Relais de Communications",
+	"Amarrage de l'Unité légère avec le Relais de Communications",
 	"Kampfschiff an Kommunikationsrelais andocken.",
-	"Acoplar nave de ataque a rel� de comunicaciones",
+	"Acoplar nave de ataque a relé de comunicaciones",
 	"Attracca con la nave d'assalto al ripetitore di comunicazione", }
 LSTRING_HyperSpaceEnabled = {  -- multilingual strings
 	"Hyperspace Enabled.",

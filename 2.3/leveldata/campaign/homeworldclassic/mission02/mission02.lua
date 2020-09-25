@@ -22,7 +22,7 @@
 --kasfTutSetTextDisplayBoxToSubtitleRegion
 
 
-dofilepath("data:scripts/playerspatch_speech_util.lua")
+dofilepath("data:scripts/playerspatch/playerspatch_speech_util.lua")
 dofilepath("data:scripts/SCAR/SCAR_Util.lua")             --stock HW2 scripting utilities
 dofilepath("data:scripts/SCAR/KASUtil.lua")               --HW1->HW2 scripting utilities
 dofilepath("data:scripts/SCAR/SinglePlayerFlow.lua")      --Emulation of HW1 singleplayer functionality
@@ -280,8 +280,8 @@ strCurLanguage = 1  --Naive treatement of localization language.;
 
 LSTRING_Savegame = {  -- multilingual strings
     "02 - Outskirts of Kharak System",
-    "02 - P�riph�rie du Syst�me Kharak ",
-    "02 - Au�enbereich des Kharak-Systems",
+    "02 - Périphérie du Système Kharak ",
+    "02 - Außenbereich des Kharak-Systems",
     "02 - Inmediaciones del sistema de Kharak",
     "02 - Margine esterno del sistema di Kharak", }
 LSTRING_LocationCard = {  -- multilingual strings
@@ -304,27 +304,27 @@ LSTRING_FISalvageVesselTASKBAR = {  -- multilingual strings
     "Salva il Khar-Selim", }
 LSTRING_FCProtectMothershipTASKBAR = {  -- multilingual strings
     "Protect the Mothership",
-    "Protection Vaisseau M�re",
-    "Das Mutterschiff sch�tzen.",
+    "Protection Vaisseau Mère",
+    "Das Mutterschiff schützen.",
     "Proteger la Nave nodriza",
     "Proteggi l'Astronave Madre", }
 LSTRING_DefendSalvageTeamTASKBAR = {  -- multilingual strings
     "Defend Salvage Team",
-    "D�fense Equipe de sauvetage",
+    "Défense Equipe de sauvetage",
     "Bergungsteam verteidigen.",
     "Defender equipo de salvamento",
     "Difendi la squadra di recupero", }
 LSTRING_FIDefendMothershipTASKBAR = {  -- multilingual strings
     "Defend the Mothership",
-    "D�fense Vaisseau M�re",
-    "Das Mutterschiff sch�tzen.",
+    "Défense Vaisseau Mère",
+    "Das Mutterschiff schützen.",
     "Defender la Nave nodriza",
     "Difendi l'Astronave Madre", }
 LSTRING_FIInvestigateP1MothershipTASKBAR = {  -- multilingual strings
     "Investigate power source",
-    "Expertise alimentation �lectrique",
+    "Expertise alimentation électrique",
     "Energiequelle untersuchen.",
-    "Investigar fuente de energ�a",
+    "Investigar fuente de energía",
     "Indaga sulla fonte d'energia", }
 LSTRING_FIDestroyAllP1TASKBAR = {  -- multilingual strings
     "Destroy the attacking force",

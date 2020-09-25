@@ -14,5 +14,5 @@ function Update_Tai_Destroyer(CustomGroup, playerIndex, shipID)
 		end
 	end
 	
-	NoSalvageScuttle(CustomGroup, playerIndex, shipID)
+	SobGroup_NoSalvageScuttle(CustomGroup, playerIndex, shipID)
 end

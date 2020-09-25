@@ -1,3 +1,3 @@
 function Update_Vgr_Lance_Fighter(CustomGroup, playerIndex, shipID)
-    UnderAttackReissueDock(CustomGroup)
+    SobGroup_UnderAttackReissueDock(CustomGroup)
 end

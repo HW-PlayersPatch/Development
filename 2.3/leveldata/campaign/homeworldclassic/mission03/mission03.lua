@@ -21,7 +21,7 @@
 --kasfSoundEvent
 
 
-dofilepath("data:scripts/playerspatch_speech_util.lua")
+dofilepath("data:scripts/playerspatch/playerspatch_speech_util.lua")
 dofilepath("data:scripts/SCAR/SCAR_Util.lua")             --stock HW2 scripting utilities
 dofilepath("data:scripts/SCAR/KASUtil.lua")               --HW1->HW2 scripting utilities
 dofilepath("data:scripts/SCAR/SinglePlayerFlow.lua")      --Emulation of HW1 singleplayer functionality
@@ -144,62 +144,62 @@ LSTRING_FCFleetCommandFreaks = {  -- multilingual strings
 	"It's gone. . .Everything's gone!. . .Kharak is burning!",
 	"Disparu. . . Tout a disparu !. . . Kharak est en flammes !",
 	"Nichts ... Alles ist weg! ... ... Kharak steht in Flammen!",
-	"Ha desaparecido. . Todo ha desaparecido. . �Kharak est� en llamas!",
-	"� perduto� Tutto � perduto! Kharak sta bruciando!", }
+	"Ha desaparecido. . Todo ha desaparecido. . ¡Kharak está en llamas!",
+	"È perduto… Tutto è perduto! Kharak sta bruciando!", }
 LSTRING_FINervousIntel = {  -- multilingual strings
 	"A-Analyzing Kharak... \nNorthern polar regions have been consumed by some kind of firestorm.  All cities still burning... Average surface temperature two six four.  The Scaffold has been destroyed.  All orbital facilities destroyed.  Significant debris ring in low Kharak orbit.\n\nReceiving no communications from anywhere in the system... Not even automated beacons.",
-	"Bilan de la situation � Kharak... \nR�gions polaires septentrionales d�vast�es par tornade de flammes.  Totalit� zones urbaines flambe encore ... Temp�rature moyenne en surface deux soixante-quatre. Echafaud d�truit. Totalit� installations orbitales d�truite. Anneau de d�bris r�v�lateur sur orbite inf�rieure de Kharak.\n\nR�ception nulle des communications venant d'aucun point du syst�me... Pas m�me des balises autonomes.",
-	"Analyse von Kharak ... \nDie n�rdlichen Polarregionen wurden von einer Art Feuersturm vernichtet. Die St�dte stehen noch immer in Flammen ... Durchschnittliche Oberfl�chentemperatur bei Zwo-Sechs-Vier. Die Rampe wurde zerst�rt. Alle Orbit-Einrichtungen vernichtet. Auff�lliger Tr�mmerring im niedrigen Orbit um Kharak.\n\nKeinerlei Kommunikation im System zu empfangen ... Nicht einmal station�re Signale.",
-	"Analizando Kharak... \nUna especie de tormenta de fuego ha destruido el polo norte.  Todas las ciudades siguen ardiendo. Temperatura media de la superficie: 128 grados.  El andamio ha sido destruido.  Todas las instalaciones orbitales est�n destruidas.  Considerable anillo de residuos en la �rbita baja de Kharak.\n\nNo se reciben comunicaciones de ning�n lugar del sistema... Ni siquiera llegan balizas autom�ticas.",
-	"A-Analisi di Kharak... \nLe regioni polari settentrionali sono state martoriate da una sorta di tempesta di fuoco. Tutte le citt� stanno ancora bruciando... La temperatura media della superficie � di 264 gradi. Lo Scaffold � stato distrutto. Tutti i centri orbitali sono stati distrutti. Significativi anelli di frammenti nella bassa orbita di Kharak.\n\nMancata ricezione di comunicazioni provenienti dal sistema, non ricevo nemmeno i radiofari automatici.", }
+	"Bilan de la situation à Kharak... \nRégions polaires septentrionales dévastées par tornade de flammes.  Totalité zones urbaines flambe encore ... Température moyenne en surface deux soixante-quatre. Echafaud détruit. Totalité installations orbitales détruite. Anneau de débris révélateur sur orbite inférieure de Kharak.\n\nRéception nulle des communications venant d'aucun point du système... Pas même des balises autonomes.",
+	"Analyse von Kharak ... \nDie nördlichen Polarregionen wurden von einer Art Feuersturm vernichtet. Die Städte stehen noch immer in Flammen ... Durchschnittliche Oberflächentemperatur bei Zwo-Sechs-Vier. Die Rampe wurde zerstört. Alle Orbit-Einrichtungen vernichtet. Auffälliger Trümmerring im niedrigen Orbit um Kharak.\n\nKeinerlei Kommunikation im System zu empfangen ... Nicht einmal stationäre Signale.",
+	"Analizando Kharak... \nUna especie de tormenta de fuego ha destruido el polo norte.  Todas las ciudades siguen ardiendo. Temperatura media de la superficie: 128 grados.  El andamio ha sido destruido.  Todas las instalaciones orbitales están destruidas.  Considerable anillo de residuos en la órbita baja de Kharak.\n\nNo se reciben comunicaciones de ningún lugar del sistema... Ni siquiera llegan balizas automáticas.",
+	"A-Analisi di Kharak... \nLe regioni polari settentrionali sono state martoriate da una sorta di tempesta di fuoco. Tutte le città stanno ancora bruciando... La temperatura media della superficie è di 264 gradi. Lo Scaffold è stato distrutto. Tutti i centri orbitali sono stati distrutti. Significativi anelli di frammenti nella bassa orbita di Kharak.\n\nMancata ricezione di comunicazioni provenienti dal sistema, non ricevo nemmeno i radiofari automatici.", }
 LSTRING_FCFleetCommandHasHope = {  -- multilingual strings
 	"Wait!  On the maintenance frequency.  I'm getting a signal from the Cryogenic Tray systems in orbit.  One of them is suffering a massive malfunction.",
-	"Attendez ! Sur la fr�quence de maintenance, je re�ois un signal des plates-formes cryog�niques plac�es sur orbite. D�faillance massive d'une des unit�s.",
-	"Moment mal! Auf der Wartungsfrequenz ... Ich fange da ein Signal von den im Orbit befindlichen K�lteschlaf-Containersystemen auf. Eines davon zeigt eine massive Fehlfunktion.",
-	"�Espera! En la frecuencia de mantenimiento. Recibo una se�al de los sistemas de soporte criog�nico en �rbita. Uno de ellos tiene graves problemas de funcionamiento.",
-	"Un attimo! Sulla frequenza di manutenzione... Sto ricevendo un segnale dalle Camere Criogeniche orbitali. In una di esse, si � verificato un grave guasto.", }
+	"Attendez ! Sur la fréquence de maintenance, je reçois un signal des plates-formes cryogéniques placées sur orbite. Défaillance massive d'une des unités.",
+	"Moment mal! Auf der Wartungsfrequenz ... Ich fange da ein Signal von den im Orbit befindlichen Kälteschlaf-Containersystemen auf. Eines davon zeigt eine massive Fehlfunktion.",
+	"¡Espera! En la frecuencia de mantenimiento. Recibo una señal de los sistemas de soporte criogénico en órbita. Uno de ellos tiene graves problemas de funcionamiento.",
+	"Un attimo! Sulla frequenza di manutenzione... Sto ricevendo un segnale dalle Camere Criogeniche orbitali. In una di esse, si è verificato un grave guasto.", }
 LSTRING_FIGetThoseGuys = {  -- multilingual strings
 	"The Cryo Trays are under attack.  Defend them.",
-	"Les modules cryog�niques sont attaqu�s. D�fendez-les",
-	"Die K�lteschlaf-Container werden angegriffen. Sie m�ssen verteidigt werden. ",
-	"Est�n atacando los soportes criog�nicos. Defi�ndelos.",
+	"Les modules cryogéniques sont attaqués. Défendez-les",
+	"Die Kälteschlaf-Container werden angegriffen. Sie müssen verteidigt werden. ",
+	"Están atacando los soportes criogénicos. Defiéndelos.",
 	"Le camere criogeniche sono sotto attacco: difendile.", }
 LSTRING_OBDefendCryos = {  -- multilingual strings
 	"Defend cryo trays",
-	"D�fendre les modules cryog�niques",
-	"K�lteschlaf-Container verteidigen.",
-	"Defiende los soportes criog�nicos",
+	"Défendre les modules cryogéniques",
+	"Kälteschlaf-Container verteidigen.",
+	"Defiende los soportes criogénicos",
 	"Difendi le camere criogeniche", }
 LSTRING_FIThoseGuysAreMeanies = {  -- multilingual strings
 	"These ships are not, repeat NOT related to the hostile units we previously encountered.  We must capture at least one vessel to find out who is responsible for this genocide.  Intelligence is vital to our immediate survival.",
-	"Plates-formes cryos attaqu�es.\n\nPar vaisseaux non-apparent�s, je souligne NON-apparent�s, aux unit�s hostiles rencontr�es pr�c�demment. Il est n�cessaire de capturer au moins une unit� pour d�terminer qui est responsable de ce g�nocide. Notre survie imm�diate d�pend des Renseignements.",
-	"Die K�lteschlaf-Container werden angegriffen.\n\nDiese Schiffe haben nichts, ich wiederhole NICHTS, mit den fr�her angetroffenen feindlichen Einheiten zu tun. Wir m�ssen wenigsten ein Schiff �bernehmen, um herauszufinden, wer f�r diesen Genozid verantwortlich ist. Informationen sind f�r unser �berleben jetzt �u�erst wichtig.",
-	"Estas naves no est�n, repito, no est�n relacionadas con las unidades hostiles encontradas anteriormente. Debemos capturar al menos una nave para descubrir al responsable de este genocidio. La inteligencia es b�sica para la supervivencia inmediata.",
-	"Queste navi non sono, ripeto, NON sono collegate alle unit� ostili che abbiamo incontrato in precedenza. Dobbiamo catturare almeno un vascello per scoprire chi � il responsabile di questo genocidio. Queste informazioni sono vitali per la nostra sopravvivenza.", }
+	"Plates-formes cryos attaquées.\n\nPar vaisseaux non-apparentés, je souligne NON-apparentés, aux unités hostiles rencontrées précédemment. Il est nécessaire de capturer au moins une unité pour déterminer qui est responsable de ce génocide. Notre survie immédiate dépend des Renseignements.",
+	"Die Kälteschlaf-Container werden angegriffen.\n\nDiese Schiffe haben nichts, ich wiederhole NICHTS, mit den früher angetroffenen feindlichen Einheiten zu tun. Wir müssen wenigsten ein Schiff übernehmen, um herauszufinden, wer für diesen Genozid verantwortlich ist. Informationen sind für unser Überleben jetzt äußerst wichtig.",
+	"Estas naves no están, repito, no están relacionadas con las unidades hostiles encontradas anteriormente. Debemos capturar al menos una nave para descubrir al responsable de este genocidio. La inteligencia es básica para la supervivencia inmediata.",
+	"Queste navi non sono, ripeto, NON sono collegate alle unità ostili che abbiamo incontrato in precedenza. Dobbiamo catturare almeno un vascello per scoprire chi è il responsabile di questo genocidio. Queste informazioni sono vitali per la nostra sopravvivenza.", }
 LSTRING_OBObjective1 = {  -- multilingual strings
 	"Capture enemy ship using 2 Salvage Corvettes",
-	"Capture Unit� ennemie avec 2 Corvettes de Recuperation",
+	"Capture Unité ennemie avec 2 Corvettes de Recuperation",
 	"Feindliches Schlachtschiff mit 2 Bergungskorvetten erobern.",
 	"Captura la nave enemiga utilizando 2 corbetas de salvamento",
 	"Cattura l'astronave nemica con 2 Corvette di Recupero", }
 LSTRING_FIWeveKilledTheMeanies = {  -- multilingual strings
 	"Enemy units neutralized.  Begin salvaging the cryo trays.",
-	"Unit�s ennemies neutralis�es. R�cup�rez les modules cryog�niques.",
-	"Feindliche Einheiten neutralisiert. Beginnen Sie mit der Bergung der K�lteschlaf-Container.",
-	"Neutralizadas las unidades enemigas. Comienza el rescate de los soportes criog�nicos.",
-	"Unit� nemica neutralizzata. Comincia il recupero delle camere criogeniche.", }
+	"Unités ennemies neutralisées. Récupérez les modules cryogéniques.",
+	"Feindliche Einheiten neutralisiert. Beginnen Sie mit der Bergung der Kälteschlaf-Container.",
+	"Neutralizadas las unidades enemigas. Comienza el rescate de los soportes criogénicos.",
+	"Unità nemica neutralizzata. Comincia il recupero delle camere criogeniche.", }
 LSTRING_OBSalvageCryos = {  -- multilingual strings
 	"Salvage cryo trays",
 	"Sauver les plates-formes",
 	"Container abholen",
-	"Rescata los soportes criog�nicos",
+	"Rescata los soportes criogénicos",
 	"Recupera le camere criogeniche", }
 LSTRING_FCSaveThoseCryos = {  -- multilingual strings
 	"The people in those trays are all that remain of our people.  Without them, we will become extinct.",
-	"Les individus � bord des plates-formes sont les derniers survivants de notre esp�ce. S'ils disparaissent, c'est l'extinction.",
+	"Les individus à bord des plates-formes sont les derniers survivants de notre espèce. S'ils disparaissent, c'est l'extinction.",
 	"Die Menschen in diesen Containern sind der ganze Rest unseres Volkes. Ohne sie werden wir aussterben.",
 	"Las personas que se encuentran en esos soportes son todo lo que queda de nuestro pueblo. Sin ellos nos extinguiremos.",
-	"Le persone in quelle camere criogeniche sono tutto ci� che resta della nostra razza. Senza di loro, siamo destinati all'estinzione.", }
+	"Le persone in quelle camere criogeniche sono tutto ciò che resta della nostra razza. Senza di loro, siamo destinati all'estinzione.", }
 LSTRING_OBObjective2 = {  -- multilingual strings
 	"Destroy remaining enemy ships",
 	"Destruction reliquat flotte ennemie",
@@ -208,81 +208,81 @@ LSTRING_OBObjective2 = {  -- multilingual strings
 	"Distruggi le navi nemiche restanti", }
 LSTRING_FIFoundRecording = {  -- multilingual strings
 	"Hostile vessel captured.  Crew interned.  Interrogation will take place on a neuronic level.  Subjects will not survive.  While searching the enemy ship's computer systems, we came across these flight recordings.",
-	"Vaisseau hostile captur�. Equipage intern�. Interrogatoire neurophysiologique imminent.  Survie des sujets impossible. Nous sommes tomb�s sur ces enregistrements de vol pendant la fouille des syst�mes informatiques du vaisseau ennemi.",
-	"Feindliches Schiff �bernommen. Mannschaft gefangen genommen. Befragung wird auf neuronaler Stufe durchgef�hrt. Die Untersuchungsobjekte werden nicht �berleben. Bei der Untersuchung der Computersysteme des feindlichen Schiffs sind wir auf folgende Flugdaten gesto�en.",
-	"Nave enemiga capturada.  Tripulaci�n bajo custodia.  Ser�n sometidos a interrogatorio neuronal.  No sobrevivir�n.  Al examinar los sistemas inform�ticos de la nave enemiga hemos encontrado estos cuadernos de bit�cora.",
-	"Vascello nemico catturato, l'equipaggio � stato internato per l'interrogatorio a livello neurologico. I soggetti non sopravviveranno. Nell'esame dei computer della nave nemica, abbiamo trovato alcuni dati del registratore di volo.", }
+	"Vaisseau hostile capturé. Equipage interné. Interrogatoire neurophysiologique imminent.  Survie des sujets impossible. Nous sommes tombés sur ces enregistrements de vol pendant la fouille des systèmes informatiques du vaisseau ennemi.",
+	"Feindliches Schiff übernommen. Mannschaft gefangen genommen. Befragung wird auf neuronaler Stufe durchgeführt. Die Untersuchungsobjekte werden nicht überleben. Bei der Untersuchung der Computersysteme des feindlichen Schiffs sind wir auf folgende Flugdaten gestoßen.",
+	"Nave enemiga capturada.  Tripulación bajo custodia.  Serán sometidos a interrogatorio neuronal.  No sobrevivirán.  Al examinar los sistemas informáticos de la nave enemiga hemos encontrado estos cuadernos de bitácora.",
+	"Vascello nemico catturato, l'equipaggio è stato internato per l'interrogatorio a livello neurologico. I soggetti non sopravviveranno. Nell'esame dei computer della nave nemica, abbiamo trovato alcuni dati del registratore di volo.", }
 LSTRING_FITheyreBiggerThanUs = {  -- multilingual strings
 	"...Analysis of the recording indicates that the Kharak missile defenses heavily damaged the attacking fleet.\n\nHowever, we have concluded that they can still easily defeat us.  Based on scanner telemetry recovered from the Khar-Selim, we have plotted a course to a deep space asteroid belt.\n\nOnce we have built a sufficient attack fleet there, we will be ready to track down the enemy and destroy them.",
-	"...Apr�s examen, ces enregistrements indiquent que les batteries de missiles defensifs de Kharak ont inflig� des pertes importantes � l'agresseur.\n\nMais ses forces restent bien sup�rieures aux n�tres. A partir des donn�es t�l�m�triques num�ris�es r�cup�r�es au Khar-Selim, nous nous sommes d�termin� une trajectoire vers une ceinture d'astero�des lointaine.\n\nDe l�, apr�s avoir rassembl� une flotte d'attaque suffisante, nous pourrons pourchasser l'ennemi et l'an�antir.",
-	"... Die Analyse der Aufzeichnungen zeigen, dass die Raketenverteidigung von Kharak der angreifenden Flotte schwere Sch�den zugef�gt hat.\n\nTrotzdem sind wir der �berzeugung, dass der Feind uns noch immer mit Leichtigkeit besiegen kann. Basierend auf den Scanner-Telemetrie-Daten, die von der Khar-Selim geborgen wurden, haben wir einen Kurs zu einem weit entlegenen Asteroideng�rtel berechnet.\n\nSobald wir dort eine gen�gend gro�e Angriffsflotte gebaut haben, k�nnen wir den Feind stellen und vernichten.",
-	"El an�lisis de la grabaci�n indica que las defensas de misiles de Kharak han provocado graves da�os a la flota de ataque.\n\nSin embargo, creemos que pueden derrotarnos con facilidad.  A partir de la telemetr�a recuperada del Khar-Selim hemos trazado un curso a un cintur�n de asteroides en el espacio profundo.\n\nCuando hayamos creado una flota de ataque suficiente, estaremos preparados para seguir al enemigo y destruirlo.",
-	"... Le analisi dei dati indicano che le difese missilistiche di Kharak hanno inflitto pesanti danni alla flotta attaccante.\n\nPurtroppo, i nostri nemici sembrano in grado di sconfiggerci con facilit�. Usando i dati delle scansioni recuperate dal Khar-Selim, abbiamo elaborato una rotta verso una cintura asteroidale nello spazio profondo.\n\nL� assembleremo una forza d'attacco sufficientemente forte da rintracciare e distruggere il nemico.", }
+	"...Après examen, ces enregistrements indiquent que les batteries de missiles defensifs de Kharak ont infligé des pertes importantes à l'agresseur.\n\nMais ses forces restent bien supérieures aux nôtres. A partir des données télémétriques numérisées récupérées au Khar-Selim, nous nous sommes déterminé une trajectoire vers une ceinture d'asteroïdes lointaine.\n\nDe là, après avoir rassemblé une flotte d'attaque suffisante, nous pourrons pourchasser l'ennemi et l'anéantir.",
+	"... Die Analyse der Aufzeichnungen zeigen, dass die Raketenverteidigung von Kharak der angreifenden Flotte schwere Schäden zugefügt hat.\n\nTrotzdem sind wir der Überzeugung, dass der Feind uns noch immer mit Leichtigkeit besiegen kann. Basierend auf den Scanner-Telemetrie-Daten, die von der Khar-Selim geborgen wurden, haben wir einen Kurs zu einem weit entlegenen Asteroidengürtel berechnet.\n\nSobald wir dort eine genügend große Angriffsflotte gebaut haben, können wir den Feind stellen und vernichten.",
+	"El análisis de la grabación indica que las defensas de misiles de Kharak han provocado graves daños a la flota de ataque.\n\nSin embargo, creemos que pueden derrotarnos con facilidad.  A partir de la telemetría recuperada del Khar-Selim hemos trazado un curso a un cinturón de asteroides en el espacio profundo.\n\nCuando hayamos creado una flota de ataque suficiente, estaremos preparados para seguir al enemigo y destruirlo.",
+	"... Le analisi dei dati indicano che le difese missilistiche di Kharak hanno inflitto pesanti danni alla flotta attaccante.\n\nPurtroppo, i nostri nemici sembrano in grado di sconfiggerci con facilità. Usando i dati delle scansioni recuperate dal Khar-Selim, abbiamo elaborato una rotta verso una cintura asteroidale nello spazio profondo.\n\nLà assembleremo una forza d'attacco sufficientemente forte da rintracciare e distruggere il nemico.", }
 LSTRING_FIResearchTaken = {  -- multilingual strings
 	"Our research division has analyzed the captured frigate.  We have reverse engineered their drive technology and developed plans for two new ships. The Support Frigate will provide repair and refuel service to Strike Craft in the field.The Resource Controller will allow for remote collection of resources.  Plans for a third vessel are underway, but first the captured Frigate's chassis must be researched.",
-	"La Fr�gate captur�e a �t� analys�e par notre service scientifique. L'inversion de leur technologie de propulsion a permis de tracer les plans de deux nouveaux vaisseaux. La Fr�gate d'assistance assurera la r�paration et le ravitaillement des Unit�s l�g�res en action. Le Contr�leur des Ressources  permettra la collecte lointaine de ressources. La conception d'un troisi�me vaisseau continuera apr�s l'analyse technique du ch�ssis de la Fr�gate captur�e.",
-	"Unsere Forschungsabteilung hat die erbeutete Fregatte analysiert. Wir haben die Komponenten ihrer Antriebstechnologie zur�ckentwickelt und mit Hilfe dieser Erkenntnisse Pl�ne f�r zwei neue Schiffe erstellt. Die Begleitfregatte wird den Kampfschiffen im Feld f�r Reparaturen und zur Erg�nzung des Treibstoffvorrats zur Verf�gung stehen. Das Rohstoff�berwachungsschiff wird das Sammeln entfernter Rohstoffe erm�glichen. Pl�ne f�r ein drittes Schiff sind in Arbeit. Aber zun�chst muss das Chassis der erbeuteten Fregatte erforscht werden.",
-	"Nuestra divisi�n de investigaci�n ha analizado la fragata capturada. El an�lisis de su tecnolog�a de propulsi�n nos ha permitido elaborar planos para naves nuevas. La fragata de apoyo proporcionar� servicio de reparaci�n y reabastecimiento a las naves de ataque. El controlador de recursos permitir� recolectar recursos a distancia. Estamos trabajando en los planos de una tercera nave, pero antes hay que investigar el chasis de la fragata capturada.",
-	"I nostri ricercatori hanno analizzato a fondo la fregata catturata; siamo riusciti a comprendere la tecnologia dei loro motori, sviluppando dei piani per due nuove astronavi. La Fregata di Supporto, che fornir� protezione e rifornimenti ai velivoli d'assalto sul campo, e il Collettore di Risorse, che ci permetter� di raccogliere risorse a distanza. Stiamo lavorando anche su una terza astronave, ma dobbiamo ancora esaminare a fondo la struttura del vascello nemico.", }
+	"La Frégate capturée a été analysée par notre service scientifique. L'inversion de leur technologie de propulsion a permis de tracer les plans de deux nouveaux vaisseaux. La Frégate d'assistance assurera la réparation et le ravitaillement des Unités légères en action. Le Contrôleur des Ressources  permettra la collecte lointaine de ressources. La conception d'un troisième vaisseau continuera après l'analyse technique du châssis de la Frégate capturée.",
+	"Unsere Forschungsabteilung hat die erbeutete Fregatte analysiert. Wir haben die Komponenten ihrer Antriebstechnologie zurückentwickelt und mit Hilfe dieser Erkenntnisse Pläne für zwei neue Schiffe erstellt. Die Begleitfregatte wird den Kampfschiffen im Feld für Reparaturen und zur Ergänzung des Treibstoffvorrats zur Verfügung stehen. Das Rohstoffüberwachungsschiff wird das Sammeln entfernter Rohstoffe ermöglichen. Pläne für ein drittes Schiff sind in Arbeit. Aber zunächst muss das Chassis der erbeuteten Fregatte erforscht werden.",
+	"Nuestra división de investigación ha analizado la fragata capturada. El análisis de su tecnología de propulsión nos ha permitido elaborar planos para naves nuevas. La fragata de apoyo proporcionará servicio de reparación y reabastecimiento a las naves de ataque. El controlador de recursos permitirá recolectar recursos a distancia. Estamos trabajando en los planos de una tercera nave, pero antes hay que investigar el chasis de la fragata capturada.",
+	"I nostri ricercatori hanno analizzato a fondo la fregata catturata; siamo riusciti a comprendere la tecnologia dei loro motori, sviluppando dei piani per due nuove astronavi. La Fregata di Supporto, che fornirà protezione e rifornimenti ai velivoli d'assalto sul campo, e il Collettore di Risorse, che ci permetterà di raccogliere risorse a distanza. Stiamo lavorando anche su una terza astronave, ma dobbiamo ancora esaminare a fondo la struttura del vascello nemico.", }
 LSTRING_FCCryoSalvaged01 = {  -- multilingual strings
 	"First cryo tray loaded. 100,000 colonists safely aboard the Mothership.",
-	"Chargement de la premi�re plate-forme cryo accompli. 100 000 colons sont � l'abri � bord du Vaisseau M�re.",
-	"Erster K�lteschlaf-Container geladen. 100.000 Kolonisten sicher an Bord des Mutterschiffs.",
-	"Primer soporte criog�nico cargado. 100.000 colonos a salvo a bordo de la Nave nodriza.",
+	"Chargement de la première plate-forme cryo accompli. 100 000 colons sont à l'abri à bord du Vaisseau Mère.",
+	"Erster Kälteschlaf-Container geladen. 100.000 Kolonisten sicher an Bord des Mutterschiffs.",
+	"Primer soporte criogénico cargado. 100.000 colonos a salvo a bordo de la Nave nodriza.",
 	"Prima Camera Criogenica al sicuro. 100.000 coloni sono sani e salvi a bordo dell'astronave madre.", }
 LSTRING_FCCryoSalvaged02 = {  -- multilingual strings
 	"Second cryo tray loaded. 200,000 colonists safely aboard the Mothership.",
-	"Chargement de la deuxi�me plate-forme cryo accompli. 200,000 colons sont � l'abri � bord du Vaisseau M�re.",
-	"Zweiter K�lteschlaf-Container geladen. 200.000 Kolonisten sicher an Bord des Mutterschiffs.",
-	"Segundo soporte criog�nico cargado. 200.000 colonos a salvo, a bordo de la Nave nodriza.",
+	"Chargement de la deuxième plate-forme cryo accompli. 200,000 colons sont à l'abri à bord du Vaisseau Mère.",
+	"Zweiter Kälteschlaf-Container geladen. 200.000 Kolonisten sicher an Bord des Mutterschiffs.",
+	"Segundo soporte criogénico cargado. 200.000 colonos a salvo, a bordo de la Nave nodriza.",
 	"Seconda Camera Criogenica al sicuro. 200.000 coloni sono sani e salvi a bordo dell'astronave madre.", }
 LSTRING_FCCryoSalvaged03 = {  -- multilingual strings
 	"Third cryo tray loaded. 300,000 colonists safely aboard the Mothership.",
-	"Chargement de la troisi�me plate-forme cryo accompli. 300 000 colons sont � l'abri � bord du Vaisseau M�re.",
-	"Dritter K�lteschlaf-Container geladen. 300.000 Kolonisten sicher an Bord des Mutterschiffs.",
-	"Tercer soporte criog�nico cargado. 300.000 colonos a salvo a bordo de la Nave nodriza.",
+	"Chargement de la troisième plate-forme cryo accompli. 300 000 colons sont à l'abri à bord du Vaisseau Mère.",
+	"Dritter Kälteschlaf-Container geladen. 300.000 Kolonisten sicher an Bord des Mutterschiffs.",
+	"Tercer soporte criogénico cargado. 300.000 colonos a salvo a bordo de la Nave nodriza.",
 	"Terza Camera Criogenica al sicuro. 300.000 coloni sono sani e salvi a bordo dell'astronave madre.", }
 LSTRING_FCCryoSalvaged04 = {  -- multilingual strings
 	"Fourth cryo tray loaded. 400,000 colonists safely aboard the Mothership.",
-	"Chargement de la quatri�me plate-forme cryo accompli. 400 000 colons sont � l'abri � bord du Vaisseau M�re.",
-	"Vierter K�lteschlaf-Container geladen. 400.000 Kolonisten sicher an Bord des Mutterschiffs.",
-	"Cuarto soporte criog�nico cargado. 400.000 colonos a salvo a bordo de la Nave nodriza.",
+	"Chargement de la quatrième plate-forme cryo accompli. 400 000 colons sont à l'abri à bord du Vaisseau Mère.",
+	"Vierter Kälteschlaf-Container geladen. 400.000 Kolonisten sicher an Bord des Mutterschiffs.",
+	"Cuarto soporte criogénico cargado. 400.000 colonos a salvo a bordo de la Nave nodriza.",
 	"Quarta Camera Criogenica al sicuro. 400.000 coloni sono sani e salvi a bordo dell'astronave madre.", }
 LSTRING_FCCryoSalvaged05 = {  -- multilingual strings
 	"Fifth cryo tray loaded. 500,000 colonists safely aboard the Mothership.",
-	"Chargement de la cinqui�me plate-forme cryo accompli. 500,000 colons sont � l'abri � bord du Vaisseau M�re.",
-	"F�nfter K�lteschlaf-Container geladen. 500.000 Kolonisten sicher an Bord des Mutterschiffs.",
-	"Quinto soporte criog�nico cargado. 500.000 colonos a salvo a bordo de la Nave nodriza.",
+	"Chargement de la cinquième plate-forme cryo accompli. 500,000 colons sont à l'abri à bord du Vaisseau Mère.",
+	"Fünfter Kälteschlaf-Container geladen. 500.000 Kolonisten sicher an Bord des Mutterschiffs.",
+	"Quinto soporte criogénico cargado. 500.000 colonos a salvo a bordo de la Nave nodriza.",
 	"Quinta Camera Criogenica al sicuro. 500.000 coloni sono sani e salvi a bordo dell'astronave madre.", }
 LSTRING_FIWithdrawToSalvage = {  -- multilingual strings
 	"Advise that we withdraw attack and deploy the Salvage Corvettes.  We need that ship captured.",
-	"Communiqu� : attaque interrompue et d�ploiement amorc� des Corvettes de sauvetage. La capture de ce vaisseau est prioritaire.",
-	"Wir sollten den Angriff abbrechen und die Bergungskorvetten in Marsch setzen. Wir m�ssen dieses Schiff �bernehmen.",
+	"Communiqué : attaque interrompue et déploiement amorcé des Corvettes de sauvetage. La capture de ce vaisseau est prioritaire.",
+	"Wir sollten den Angriff abbrechen und die Bergungskorvetten in Marsch setzen. Wir müssen dieses Schiff übernehmen.",
 	"Recomendamos suspender el ataque y desplegar las corbetas de salvamento. Es necesario capturar esa nave.",
 	"Consiglio di sospendere l'attacco e di inviare le Corvette di Recupero. Ci serve quell'astronave.", }
 LSTRING_FCCryosDead = {  -- multilingual strings
 	"We have failed.  The colonits were the last of our people. Without them we will perish.",
-	"Echec de l'op�ration. Les colons �taient les derniers survivants de notre esp�ce. Leur disparition signifie l'extinction.",
+	"Echec de l'opération. Les colons étaient les derniers survivants de notre espèce. Leur disparition signifie l'extinction.",
 	"Wir haben versagt. Die Kolonisten waren die Letzten unseres Volkes. Ohne sie werden wir aussterben.",
 	"Hemos fracasado. Esos colonos eran todos los que quedaban de nuestro pueblo. Sin ellos, nos extinguiremos.",
 	"Abbiamo fallito. I coloni erano tutta la nostra gente rimasta, senza di loro siamo destinati a perire.", }
 LSTRING_FIFrigatesDiedEscaped = {  -- multilingual strings
 	"We failed to capture the enemy vessel.  Without its information, we cannot proceed.",
-	"La capture du vaisseau ennemi a �chou�. Sans l'information qu'il contient, nous restons bloqu�s.",
-	"Wir haben es nicht geschafft, das feindliche Schiff zu �bernehmen. Ohne seine Informationen k�nnen wir nicht weiterarbeiten.",
-	"No hemos conseguido capturar la nave enemiga. Sin esa informaci�n no podemos seguir.",
-	"Non siamo riusciti a catturare il vascello nemico: senza la possibilit� di esaminarlo non possiamo fare nulla!", }
+	"La capture du vaisseau ennemi a échoué. Sans l'information qu'il contient, nous restons bloqués.",
+	"Wir haben es nicht geschafft, das feindliche Schiff zu übernehmen. Ohne seine Informationen können wir nicht weiterarbeiten.",
+	"No hemos conseguido capturar la nave enemiga. Sin esa información no podemos seguir.",
+	"Non siamo riusciti a catturare il vascello nemico: senza la possibilità di esaminarlo non possiamo fare nulla!", }
 LSTRING_LevelSave = {  -- multilingual strings
 	"03 - Return To Kharak",
 	"03 - Retour vers Kharak",
-	"03 � R�ckkehr nach Kharak",
+	"03 – Rückkehr nach Kharak",
 	"03 - Volver a Kharak",
 	"03 - Ritorno a Kharak", }
 LSTRING_FIWereFinished = {  -- multilingual strings
 	"Cryogenic Trays loaded.  Hyperspace module charged.  It's time to go after them.",
-	"Chargement des plates-formes cryo accompli. Module Hyperspatial activ�. L'heure est venue de leur faire la chasse.",
-	"K�lteschlaf-Container geladen. Hypersprung-Modul aufgeladen. Es wird Zeit, dass wir die Verfolgung aufnehmen.",
-	"Soportes criog�nicos cargados. M�dulo hiperespacial cargado. Ha llegado el momento de ir tras ellos.",
+	"Chargement des plates-formes cryo accompli. Module Hyperspatial activé. L'heure est venue de leur faire la chasse.",
+	"Kälteschlaf-Container geladen. Hypersprung-Modul aufgeladen. Es wird Zeit, dass wir die Verfolgung aufnehmen.",
+	"Soportes criogénicos cargados. Módulo hiperespacial cargado. Ha llegado el momento de ir tras ellos.",
 	"Camere Criogeniche a bordo. Modulo iperspaziale caricato. Siamo pronti a inseguirli.", }
 LSTRING_TBHyperspace = {  -- multilingual strings
 	"                HYPERSPACE",
@@ -292,10 +292,10 @@ LSTRING_TBHyperspace = {  -- multilingual strings
 	"				IPERSPAZIO", }
 LSTRING_OBReadyToGo = {  -- multilingual strings
 	"Cryogenic Trays loaded.  Hyperspace module charged.  It's time to go.",
-	"Chargement des plates-formes cryo accompli. Module Hyperspatial activ�. On y va.",
-	"K�lteschlaf-Container geladen. Hypersprung-Modul aufgeladen. Es wird Zeit zum Abflug.",
-	"Soportes criog�nicos cargados. M�dulo hiperespacial cargado. Ha llegado el momento de partir.",
-	"Camere Criogeniche a bordo. Modulo iperspaziale caricato. � ora di andare.", }
+	"Chargement des plates-formes cryo accompli. Module Hyperspatial activé. On y va.",
+	"Kälteschlaf-Container geladen. Hypersprung-Modul aufgeladen. Es wird Zeit zum Abflug.",
+	"Soportes criogénicos cargados. Módulo hiperespacial cargado. Ha llegado el momento de partir.",
+	"Camere Criogeniche a bordo. Modulo iperspaziale caricato. È ora di andare.", }
 
 --
 --  "initialize" code for Mission03 ImNotHere FSM

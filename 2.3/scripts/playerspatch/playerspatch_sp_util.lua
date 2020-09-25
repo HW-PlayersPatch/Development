@@ -1,4 +1,4 @@
---Singleplayer campaign utility functions. (Note, this file is also loaded via scar_util.lua)
+--Singleplayer campaign utility functions.
 
 --Expanded option functions.
 --If you plan to change or add settings for another mod, please use "YourModName_" rather than "PlayersPatch_" to prevent conflicts in people's "Profile\PLAYERCFG.LUA".

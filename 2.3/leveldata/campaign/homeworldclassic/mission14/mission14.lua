@@ -23,7 +23,7 @@
 --kasfTutSetTextDisplayBoxToSubtitleRegion
 
 
-dofilepath("data:scripts/playerspatch_speech_util.lua")
+dofilepath("data:scripts/playerspatch/playerspatch_speech_util.lua")
 dofilepath("data:scripts/SCAR/SCAR_Util.lua")             --stock HW2 scripting utilities
 dofilepath("data:scripts/SCAR/KASUtil.lua")               --HW1->HW2 scripting utilities
 dofilepath("data:scripts/SCAR/SinglePlayerFlow.lua")      --Emulation of HW1 singleplayer functionality
@@ -210,25 +210,25 @@ strCurLanguage = 1  --Naive treatement of localization language.;
 LSTRING_Savegame = {  -- multilingual strings
 	"14 - Bridge of Sighs",
 	"14 - Pont des Soupirs",
-	"14 � Br�cke der Seufzer",
+	"14 – Brücke der Seufzer",
 	"14 - El puente de los suspiros",
 	"14 - Il ponte di Sighs", }
 LSTRING_LocationCard = {  -- multilingual strings
 	"BRIDGE OF SIGHS",
 	"PONT DES SOUPIRS",
-	"BR�CKE DER SEUFZER",
+	"BRÜCKE DER SEUFZER",
 	"EL PUENTE DE LOS SUSPIROS",
 	"IL PONTE DI SIGHS", }
 LSTRING_FIDestroyGennyTASKBAR = {  -- multilingual strings
 	"Destroy field generator",
-	"Destruction g�n�rateur de champs",
-	"Feldgenerator zerst�ren.",
+	"Destruction générateur de champs",
+	"Feldgenerator zerstören.",
 	"Destruir generador de campo",
 	"Distruggi il generatore del campo.", }
 LSTRING_FIDestroyGatesTASKBAR = {  -- multilingual strings
 	"Destroy hyperspace gates",
-	"Destruction acc�s � l'hyperespace",
-	"Hyperraumtore zerst�ren.",
+	"Destruction accès à l'hyperespace",
+	"Hyperraumtore zerstören.",
 	"Destruir puertas hiperespaciales",
 	"Distruggi i portali dell'Iperspazio.", }
 LSTRING_Hyperspace = {  -- multilingual strings

@@ -150,7 +150,7 @@ addAbility(NewShipType,"CanBeCaptured",160,0.1,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"CloakAbility",0,2,2000,4000,3,100,1,1000);
-addAbility(NewShipType,"RetireAbility",1,1);
+addAbility(NewShipType,"RetireAbility",1,0);
 addAbility(NewShipType,"HyperspaceInhibitorAbility",0,10500);
 addCustomCode(NewShipType,"data:Ship/Vgr_Carrier/Vgr_Carrier.lua","","Create_Vgr_Carrier","Update_Vgr_Carrier","","Vgr_Carrier",4)
 LoadModel(NewShipType,1);

@@ -36,17 +36,17 @@ SpacingRange = 	 { 75, 1.45, 200, 1.1 }
 SpacingRangeAg = { 75, 1.45, 200, 1.1 }
 SpacingRangeEv = { 75, 1.8,  200, 1.5 }
 
-UnitLimit = 56
+UnitLimit = 66
 
 SupplyLimits =
 {
-	LayoutFighter = 32,
-	LayoutCorvette = 18,
+	LayoutFighter = 65,
+	LayoutCorvette = 66,
 	SalvageCorvette = 0,
-	LayoutFrigate = 12,
-	LayoutDestroyer = 4,
-	LayoutBattleCruiser = 1,
-	LayoutResource = 9,
+	LayoutFrigate = 54,
+	LayoutDestroyer = 7,
+	LayoutBattleCruiser = 3,
+	LayoutResource = 64,
 }
 
 SubFormations =

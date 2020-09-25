@@ -163,7 +163,7 @@ addAbility(NewShipType,"RepairCommand",1,440,1,1,"Frontal_SupportFrigate",
 {SmallCapitalShip="frontal_RepairFrigate_SmallCap"},
 {BigCapitalShip="Frontal_RepairFrigate_BigCap"},
 {Mothership="frontal_RepairFrigate_Mothership"});
-addAbility(NewShipType,"RetireAbility",1,1);
+addAbility(NewShipType,"RetireAbility",1,0);
 addCustomCode(NewShipType,"data:Ship/Kus_SupportFrigate/Kus_SupportFrigate.lua","","Create_Kus_SupportFrigate","Update_Kus_SupportFrigate","Destroy_Kus_SupportFrigate","Kus_SupportFrigate",1)
 LoadModel(NewShipType,1);
 StartShipHardPointConfig(NewShipType,"Weapon_Gun0","Hardpoint_Gun0","Weapon","Innate","Ship","Kus_SupportGun","","","","","","","","");
