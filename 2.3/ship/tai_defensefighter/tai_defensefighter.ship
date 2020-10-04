@@ -20,7 +20,6 @@ setTacticsMults(NewShipType, "WEAPONDAMAGE", 1.20, 0.8, 1.0)
 setTacticsMults(NewShipType, "BULLETSPEED", 1.10, 1.0, 1.0)
 setTacticsMults(NewShipType, "DAMAGEAPPLIED", 1.10, 1.0, 1.0)
 setTacticsMults(NewShipType, "FIRERATE", 1.0, 1.25, 1.0)
-setSpeedvsAccuracyApplied(NewShipType, 100.0, 5.0, 120, 1.0, 250, 1.0, 388, 0.98, 535, 0.70)
 NewShipType.isTransferable=1
 NewShipType.formationSpacing=15
 NewShipType.defaultROE="Defensive"
@@ -145,7 +144,7 @@ NewShipType.launchNrOfShipsInDockFormation=1
 NewShipType.launchFormation="n_delta"
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
-addAbility(NewShipType,"CanAttack",1,1,1,0,0.35,1,"SpaceMine,Torpedo,HeavyMissile,SmallMissile,Munition","flyround_defensefighter");
+addAbility(NewShipType,"CanAttack",1,1,1,0,0.35,1,"SpaceMine,HeavyMissile,Torpedo,SmallMissile,SmallTorpedo,Munition","frontal_defensefighter");
 addAbility(NewShipType,"GuardCommand",1,500,100);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"RetireAbility",1,0);
