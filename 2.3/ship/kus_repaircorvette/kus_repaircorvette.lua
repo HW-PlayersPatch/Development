@@ -7,6 +7,7 @@ end
 
 function Update_Kus_RepairCorvette(CustomGroup, playerIndex, shipID)
 	local this_rc = GLOBAL_SHIPS:get(shipID)
-	local targets = MemGroup_GetSupportTargets(this_rc)
-	local 
+	local targets = SuppUtil_GetSupportTargets(this_rc)
+
 end
+

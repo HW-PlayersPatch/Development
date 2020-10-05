@@ -116,3 +116,15 @@ MemGroup = {
 		return MemGroup._groups[group_name] ~= nil
 	end
 }
+
+-- not mutally exclusive
+MemGroup_FAMILY_TYPES = {
+	production = 'production',
+	capital = 'capital',
+	frigate = 'frigate',
+	corvette = 'corvette',
+	fighter = 'fighter',
+	resourcing = 'resourcing',
+	utility = 'utility',
+	default = 'default'
+}
