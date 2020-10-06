@@ -1,7 +1,7 @@
 --Taiidan
 supplyLimit("Frigate", 39);
 
-supplyLimit("Resource", 38);
-supplyLimit("ResourceCollector", 33);
+supplyLimit("Resource", 35);
+supplyLimit("ResourceCollector", 30);
 
 supplyDesc("Battlecruiser", "HeavyCruiser");

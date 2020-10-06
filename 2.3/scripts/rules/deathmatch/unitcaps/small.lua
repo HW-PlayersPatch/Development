@@ -42,8 +42,8 @@ supplyLimit("Probe", 4);
 supplyLimit("ECMProbe", 4);
 supplyLimit("ProximitySensor", 4);
 --
-supplyLimit("Resource", 21);
-supplyLimit("ResourceCollector", 18);
+supplyLimit("Resource", 19);
+supplyLimit("ResourceCollector", 16);
 supplyLimit("ResourceController", 3);
 --
 supplyLimit("NonCombat", 20);
