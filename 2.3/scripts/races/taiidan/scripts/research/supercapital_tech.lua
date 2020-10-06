@@ -3,10 +3,10 @@ base_research = {
 
 	{
 		Name =			"SuperCapitalShipDrive",
-		RequiredResearch =	"CapitalShipChassis",
+		RequiredResearch =	"",
 		RequiredSubSystems =	"Research",
-		Cost = 			1500,
-		Time = 			50,
+		Cost = 			2000,
+		Time = 			70,
 		DisplayedName =		"$11542",
 		ShortDisplayedName =	"$11542",
 		DisplayPriority =		41,
@@ -18,8 +18,8 @@ base_research = {
 		Name =			"GuidedMissiles",
 		RequiredResearch =	"SuperCapitalShipDrive",
 		RequiredSubSystems =	"Research",
-		Cost = 			3500,
-		Time = 			120,
+		Cost = 			4000,
+		Time = 			160,
 		DisplayedName =		"$11546",
 		ShortDisplayedName =	"$11546",
 		DisplayPriority =		44,
@@ -29,7 +29,7 @@ base_research = {
 	},
 	{
 		Name =			"SuperHeavyChassis",
-		RequiredResearch =	"SuperCapitalShipDrive & IonCannons",
+		RequiredResearch =	"SuperCapitalShipDrive",
 		RequiredSubSystems =	"Research",
 		Cost = 			4000,
 		Time = 			140,
@@ -42,7 +42,7 @@ base_research = {
 	},
 	{
 		Name =			"HeavyGuns",
-		RequiredResearch =	"SuperHeavyChassis & SuperCapitalShipDrive & IonCannons",
+		RequiredResearch =	"SuperHeavyChassis & SuperCapitalShipDrive",
 		RequiredSubSystems =	"Research",
 		Cost = 			7000,
 		Time = 			360,
