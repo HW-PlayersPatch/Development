@@ -3,7 +3,7 @@ base_research = {
 	{
 		Name = "CorvetteDamageLevel1", 
 		RequiredResearch = "", 
-		RequiredSubSystems = "", 
+		RequiredSubSystems = "Research", 
 		Cost = 1500, 
 		Time = 60, 
 		DisplayedName = "Upgradable base damage for HW1 corvettes", 
@@ -20,7 +20,7 @@ base_research = {
 	{
 		Name = "CorvetteDamageLevel2", 
 		RequiredResearch = "CorvetteDamageLevel1", 
-		RequiredSubSystems = "", 
+		RequiredSubSystems = "Research", 
 		Cost = 1500, 
 		Time = 60, 
 		DisplayedName = "Upgradable base damage for HW1 corvettes", 

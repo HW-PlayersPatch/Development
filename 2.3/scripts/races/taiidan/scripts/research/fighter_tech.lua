@@ -3,7 +3,7 @@ base_research = {
 	{
 		Name = "FighterDamageLevel1", 
 		RequiredResearch = "", 
-		RequiredSubSystems = "", 
+		RequiredSubSystems = "Research", 
 		Cost = 1100, 
 		Time = 60, 
 		DisplayedName = "Upgradable base damage for HW1 fighters", 
@@ -20,7 +20,7 @@ base_research = {
 	{
 		Name = "FighterDamageLevel2", 
 		RequiredResearch = "FighterDamageLevel1", 
-		RequiredSubSystems = "", 
+		RequiredSubSystems = "Research", 
 		Cost = 1100, 
 		Time = 60, 
 		DisplayedName = "Upgradable base damage for HW1 fighters", 
