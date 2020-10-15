@@ -3,7 +3,7 @@ base_research = {
 	{
 		Name = "CorvetteDamageLevel1", 
 		RequiredResearch = "", 
-		RequiredSubSystems = "", 
+		RequiredSubSystems = "Research", 
 		Cost = 1100, 
 		Time = 60, 
 		DisplayedName = "Upgradable base damage for HW1 corvettes", 
