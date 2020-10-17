@@ -24,14 +24,14 @@ Data =
 -- once in range and facing the target we will slide around maintaining heading until we are more 
 -- then this multiplied by our range from the target, then we will fly normally to catch up
 
-        slideDistanceMultiplier = 1.1,
+        slideDistanceMultiplier = 1.0,
 
 	tooSlowSpeed		= 3.0,
 	tooFastMultiplier	= 1.4,
 	facingAngle		= 0,
 		
 	-- when facing faster targets we will start moving after they have been out of range for this long
-	tooLongOutOfRange		= 2.0,
+	tooLongOutOfRange		= 0.2,
 		
 -- when doing a move attack we will break off if after we get further than this multipled by our max weapon range from the target.
 	moveAttackMaxDistanceMultiplier = 1.2,
@@ -42,9 +42,9 @@ Data =
 	maxTimeToSpendFlyingToAbove = 4.0,
 
 -- delays for the things the attack style can do (in seconds)
-   	flyToTargetBecauseItsFarOutOfRangeDelay = 1.0,
-    	flyToTargetBecauseItsMovingAwayDelay = 1.0,
-    	stopAndFaceTheTargetDelay = 1.0,
+   	flyToTargetBecauseItsFarOutOfRangeDelay = 0.5,
+    	flyToTargetBecauseItsMovingAwayDelay = 0.5,
+    	stopAndFaceTheTargetDelay = 0.5,
     	flyToAboveTheTargetDelay = 1.0,
 
 	safeDistanceFromTargetToDoActions   = 500.0,
