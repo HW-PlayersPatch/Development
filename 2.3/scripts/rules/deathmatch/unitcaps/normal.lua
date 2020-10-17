@@ -14,7 +14,7 @@ supplyLimit("CloakedFighters", 20);
 --
 supplyLimit("Corvette", 42);
 
-supplyLimit("MinelayerCorvette",4);
+supplyLimit("MinelayerCorvette",6);
 supplyLimit("CommandCorvette",2);
 supplyLimit("SalvageCorvette",14);
 --
