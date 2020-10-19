@@ -1,4 +1,4 @@
-StartWeaponConfig(NewWeaponType,"AnimatedTurret","Bullet","Kinetic_Small","Normal",1650,1600,0,0,0,0,1,1,1,2.7,0,0,1,0,40,40,0.1,"Normal",1,0,0);
+StartWeaponConfig(NewWeaponType,"AnimatedTurret","Bullet","Kinetic_Small","Normal",1650,1600,0,0,0,0,1,1,1,2.7,0,0,1,0,70,70,0.1,"Normal",1,0,0);
 AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",100,100,"");
 setPenetration(NewWeaponType,5,1,
 {PlanetKillerArmour=0},
@@ -10,7 +10,7 @@ setPenetration(NewWeaponType,5,1,
 {SubSystemArmour=0.625},
 {Unarmoured=0.5},
 {Unarmoured_hw1=1.0},
-{LightArmour=0.28},
+{LightArmour=0.27},
 {LightArmour_hw1=0.25},
 {MediumArmour=0.91},
 {HeavyArmour=0.87},
@@ -33,7 +33,7 @@ setAccuracy(NewWeaponType,1,
 {BigCapitalShip=1},
 {ResourceLarge=0.50});
 --setAngles(NewWeaponType,0,-45,145,-10,30);
-setAngles(NewWeaponType,0,-35,70,-10,30);
+setAngles(NewWeaponType,0,-35,70,-15,45);
 addAnimTurretSound(NewWeaponType,"Data:Sound/SFX/ETG/SPECIAL/SPECIAL_ABILITIES_TURRET_ON");
 setMissProperties(NewWeaponType, 0.02, 0.04, 0.20, 0.30, 0.55, 0.55);
 setLifetimeMult(NewWeaponType, 1.75);
