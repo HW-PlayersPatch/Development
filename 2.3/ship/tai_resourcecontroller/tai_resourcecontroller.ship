@@ -2,7 +2,7 @@ NewShipType = StartShipConfig()
 NewShipType.displayedName="$10048"
 NewShipType.sobDescription="$10049"
 NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 30000)
-NewShipType.regentime=1500
+NewShipType.regentime=600
 NewShipType.minRegenTime=300
 NewShipType.sideArmourDamage=1
 NewShipType.rearArmourDamage=1
@@ -136,7 +136,7 @@ NewShipType.launchFormation="delta"
 addAbility(NewShipType,"ShipHold",1,125,0,"rallypoint","",70,
 {Fighter="36"},
 {Corvette="340"},
-{Utility="175"});
+{Utility="250"});
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand",1,1.1,300,800,0,4);
