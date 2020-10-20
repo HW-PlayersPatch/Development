@@ -89,7 +89,8 @@ function Gravwell_CalcStunnableShipsGroup(target_group, CustomGroup, shipID)
 	return target_group
 end
 
--- old code, applies a tumble effect
+-- applies 'random' multipliers to the pitch/yaw/roll values of the groups tumble vector
+-- random vals are actually a pregenned list indexed using Universe_GameTime()
 function Gravwell_CalcTumbleVecForGroup(target_group)
 	local tumble_vector = SobGroup_GetPosition(target_group)
 	for i = 1, 3 do
@@ -101,6 +102,7 @@ function Gravwell_CalcTumbleVecForGroup(target_group)
 	return tumble_vector
 end
 
+-- frees the given group from any effects this gravwell was applying
 function Gravwell_FreeGroup(target_group)
 	if (target_group ~= nil and target_group ~= GW_DEFAULT_GROUP) then
 		if (SobGroup_Count(target_group) > 0) then
@@ -111,6 +113,7 @@ function Gravwell_FreeGroup(target_group)
 	end
 end
 
+-- frees any ships from the previous run which have since escaped the gravwell's effect range
 function Gravwell_FreeEscapedShips(stunnable_ships, shipID)
 	local old_stunned_group = GlobalGravitywellTable[shipID]
 	local escaped_ships = SobGroup_CreateAndClear("escaped-ships" .. shipID)
@@ -123,6 +126,7 @@ function Gravwell_FreeEscapedShips(stunnable_ships, shipID)
 	return escaped_ships
 end
 
+-- sets whether the given group should be 'stunned' or not (AB_Move/AB_Steering/AB_Attack/AB_Targeting)
 function Gravwell_SetGroupStunned(target_group, stunned)
 	if (stunned == 1) then
 		FX_StartEvent(target_group, GW_GLOW_ANIMATION)
