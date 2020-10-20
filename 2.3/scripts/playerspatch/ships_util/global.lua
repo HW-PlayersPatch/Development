@@ -81,3 +81,35 @@ function SobGroup_AlterSpeedMult(target_group, mult)
 
 	return target_group
 end
+
+STUN_EFFECT_ABILITIES = {
+	AB_Cloak,
+	AB_AcceptDocking,
+	AB_Builder,
+	AB_Hyperspace,
+	AB_FormHyperspaceGate,
+	AB_HyperspaceViaGate,
+	AB_SpecialAttack,
+	AB_DefenseField,
+	AB_DefenseFieldShield,
+	AB_Steering,
+	AB_Targeting,
+	AB_Lights,
+}
+STUN_EFFECT_EVENT = "PowerOff"
+
+-- sets whether the given group should be 'stunned' or not (AB_Move/AB_Steering/AB_Attack/AB_Targeting)
+function SobGroup_SetGroupStunned(target_group, stunned)
+	if (stunned == 1) then
+		FX_StartEvent(target_group, STUN_EFFECT_EVENT)
+		SobGroup_Disable(target_group, 99999)
+	else
+		FX_StopEvent(target_group, STUN_EFFECT_EVENT)
+		SobGroup_Disable(target_group, 0)
+	end
+	local ability_status = modulo(stunned + 1, 2) -- 0 -> 1, 1 -> 0, 2 -> 1, ...
+	for _, ability in STUN_EFFECT_ABILITIES do
+		SobGroup_AbilityActivate(target_group, ability, ability_status)
+	end
+	return target_group
+end
