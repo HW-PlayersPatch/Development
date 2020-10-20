@@ -15,7 +15,7 @@ function Create_Kus_Mothership(CustomGroup, playerIndex, shipID)
 	end
 end
 
-function Update_Kus_Mothership(CustomGroup, playerIndex, shipID)		
+function Update_Kus_Mothership(CustomGroup, playerIndex, shipID)	
 	SobGroup_CreateIfNotExist("kus_mothership"..playerIndex)
 	SobGroup_CreateIfNotExist("kus_production"..playerIndex)
 	SobGroup_SobGroupAdd("kus_mothership"..playerIndex, CustomGroup)
