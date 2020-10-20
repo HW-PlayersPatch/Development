@@ -94,7 +94,3 @@ function Update_Kus_GravWellGenerator(CustomGroup,playerIndex,shipID)
     end
   end
 end
-
-function Destroy_Kus_GravWellGenerator(CustomGroup, playerIndex, shipID)
-	GlobalGravitywellTable[shipID] = nil
-end
