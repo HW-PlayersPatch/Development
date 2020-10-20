@@ -53,6 +53,7 @@ GW_ABILITY_DISABLE_LIST = {
 GW_SALV_LIST = "kus_salvagecorvette, tai_salvagecorvette"
 GW_RADIUS = 3000
 GW_GLOW_ANIMATION = "PowerOff"
+GW_TICK_DAMAGE = 0.0190
 GW_DEFAULT_GROUP = SobGroup_CreateAndClear("__gravwell_default_group")
 GW_TUMBLE_SPICE = { -- premade random table
 	0.69,
