@@ -1,6 +1,6 @@
--- Ships utility functions
-
 -- Group management --
+-- By: Fear
+-- 
 -- Use this object to persist memory across script calls.
 --
 -- This is just a global table of tables with a small api.

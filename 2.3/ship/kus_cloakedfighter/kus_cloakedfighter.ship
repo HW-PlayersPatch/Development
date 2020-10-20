@@ -156,7 +156,7 @@ addAbility(NewShipType,"GuardCommand",1,3000,500);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"CloakAbility",1,3,25,2222,0,0,222,222);
 addAbility(NewShipType,"RetireAbility",1,0);
-addCustomCode(NewShipType, "data:ship/Kus_CloakedFighter/Kus_CloakedFighter.lua", "", "", "Update_Kus_CloakedFighter", "Destroy_Kus_CloakedFighter", "Kus_CloakedFighter", 1)
+addCustomCode(NewShipType, "data:ship/Kus_CloakedFighter/Kus_CloakedFighter.lua", "", "Create_Kus_CloakedFighter", "Update_Kus_CloakedFighter", "Destroy_Kus_CloakedFighter", "Kus_CloakedFighter", 0.5)
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Kus_CloakedFighter","Weapon_Gun0","Weapon_Gun0");
 StartShipWeaponConfig(NewShipType,"Kus_CloakedFighter","Weapon_Gun1","Weapon_Gun1");
