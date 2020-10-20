@@ -11,7 +11,7 @@ end
 -- See scripts\playerspatch\ships_util\
 function Do_Kus_GravWellGenerator(CustomGroup, playerIndex, shipID)
 	FX_StartEvent(CustomGroup, "PowerUp")
-	SobGroup_TakeDamage(CustomGroup, 0.0095)
+	SobGroup_TakeDamage(CustomGroup, GW_TICK_DMG)
 
 	local stunnable_ships = Gravwell_CalcStunnableShipsGroup("stunnable-ships-" .. shipID .. "-" .. Universe_GameTime(), CustomGroup, shipID)
 	
