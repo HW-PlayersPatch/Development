@@ -1,128 +1,54 @@
-GravityWellGeneratorShipList =
-{
-  "hgn_scout","hgn_interceptor","hgn_attackbomber",  "hgn_assaultcorvette","hgn_pulsarcorvette","hgn_minelayercorvette",
-  "vgr_scout","vgr_interceptor","vgr_lancefighter","vgr_bomber",  "vgr_missilecorvette","vgr_lasercorvette","vgr_commandcorvette","vgr_minelayercorvette",
-  "kus_scout","kus_interceptor","kus_attackbomber","kus_defender","kus_cloakedfighter",  "kus_lightcorvette","kus_heavycorvette","kus_repaircorvette","kus_multiguncorvette","kus_minelayercorvette",
-  "tai_scout","tai_interceptor","tai_attackbomber","tai_defender","tai_defensefighter",  "tai_lightcorvette","tai_heavycorvette","tai_repaircorvette","tai_multiguncorvette","tai_minelayercorvette",--32
+---
+--- ===== ABILITY: =====
+---
 
-  "junk_junkyarddog",
-  "tur_fighter","tur_missilecorvette","tur_standardcorvette",
-  "kad_swarmer","kad_advancedswarmer",
-}
-
-GravityWellGeneratorSalvageList = "kus_salvagecorvette, tai_salvagecorvette"
-GravityWellDistance = 3000
-
-function Start_Tai_GravWellGenerator(CustomGroup,playerIndex,shipID)
-  FX_StartEvent(CustomGroup, "gravwellon_sfx"..random(1,6))
-
-  SobGroup_CreateIfNotExist("GravWell_"..shipID)
-  SobGroup_CreateIfNotExist("GravWell_Affected"..shipID)
-
-  SobGroup_CreateIfNotExist("GravWell_Temp0"); SobGroup_CreateIfNotExist("GravWell_Temp1")
-  SobGroup_CreateIfNotExist("GravWell_Temp2"); SobGroup_CreateIfNotExist("GravWell_Temp3")
+function Start_Tai_GravWellGenerator(CustomGroup, playerIndex, shipID)
+	GlobalGravitywellTable[shipID] = gravitywell_default_group
+	FX_StartEvent(CustomGroup, "gravwellon_sfx" .. random(1, 6))
+	SobGroup_AbilityActivate(CustomGroup, AB_Hyperspace, 0)
 end
 
-function Do_Tai_GravWellGenerator(CustomGroup,playerIndex,shipID)
-  local listCount = getn(GravityWellGeneratorShipList)
-  local tumbleRange = 100
+-- See scripts\playerspatch\ships_util\
+function Do_Tai_GravWellGenerator(CustomGroup, playerIndex, shipID)
+	FX_StartEvent(CustomGroup, "PowerUp")
+	SobGroup_TakeDamage(CustomGroup, GW_TICK_DMG)
 
-  for i = 0, Universe_PlayerCount()- 1 do
-    if (Player_IsAlive(i)== 1) then
-      for x = 1, listCount do
-        SobGroup_FillShipsByType("GravWell_Temp0", "Player_Ships"..i, GravityWellGeneratorShipList[x])
+	local stunnable_ships = Gravwell_CalcStunnableShipsGroup("stunnable-ships-" .. shipID .. "-" .. Universe_GameTime(), CustomGroup, shipID)
+	
+	-- refresh targets, undo ability disable on escaped ships
+	Gravwell_FreeEscapedShips(stunnable_ships, shipID)
 
-        if (SobGroup_AreAnyOfTheseTypes("GravWell_Temp0", GravityWellGeneratorSalvageList)== 1) then
-          if (AreAllied(playerIndex, SobGroup_OwnedBy("GravWell_Temp0"))== 0) then
-            SobGroup_SobGroupAdd("GravWell_"..shipID, "GravWell_Temp0")
-          end
-        else
-          SobGroup_SobGroupAdd("GravWell_"..shipID, "GravWell_Temp0")
-        end
-      end
-    end
-  end
+	-- stunning (abilities)
+	Gravwell_SetGroupStunned(stunnable_ships, 1)
 
-  SobGroup_Clear("GravWell_Temp2")
-  SobGroup_TakeDamage(CustomGroup, 0.0190)
-  SobGroup_AbilityActivate(CustomGroup, AB_Hyperspace, 0)
+	-- slowdown
+	SobGroup_AlterSpeedMult(stunnable_ships, 0.3)
 
-  FX_StartEvent(CustomGroup, "PowerUp")
+	-- tumbling
+	local tumble_vector = Gravwell_CalcTumbleVecForGroup(stunnable_ships)
+	SobGroup_Tumble(stunnable_ships, tumble_vector)
 
-  if (SobGroup_FillProximitySobGroup("GravWell_Temp0", "GravWell_"..shipID, CustomGroup, GravityWellDistance)== 1) then
-    while (tumbleRange < GravityWellDistance) do
-      if (SobGroup_FillProximitySobGroup("GravWell_Temp1", "GravWell_Temp0", CustomGroup, tumbleRange)== 1) then
-        SobGroup_FillSubstract("GravWell_Temp3", "GravWell_Temp1", "GravWell_Temp2")
-        SobGroup_AbilityActivate("GravWell_Temp3", AB_Attack, 0)
-
-        local tSpeed = SobGroup_GetSpeed("GravWell_Temp3")
-        local tVector = SobGroup_GetPosition("GravWell_Temp3")
-
-        tSpeed = tSpeed / 2.5
-
-        if (tSpeed < 0.05) then
-          tSpeed = 0
-        end
-        if (Universe_GameTime() > 35) then
-          SobGroup_SetSpeed("GravWell_Temp3", tSpeed)
-        end
-        if (SobGroup_GetActualSpeed("GravWell_Temp3") <= 50) then
-          SobGroup_AbilityActivate("GravWell_Temp3", AB_Move, 0)
-          FX_StartEvent("GravWell_Temp3", "PowerOff")
-        end
-
-        while (tVector[1] > 0.45 or tVector[1] < -0.45 or tVector[2] > 0.45 or tVector[2] < -0.45 or tVector[3] > 0.45 or tVector[3] < -0.45) do
-          for i = 1,3 do
-            if (tVector[i] > 0.45 or tVector[i] < -0.45) then
-              tVector[i]= tVector[i]* 0.25
-            end
-          end
-        end
-
-        SobGroup_Tumble("GravWell_Temp3", tVector)
-        SobGroup_SobGroupAdd("GravWell_Temp2", "GravWell_Temp3")
-      end
-
-      tumbleRange = tumbleRange + 100
-    end
-  end
-
-  SobGroup_FillSubstract("GravWell_Temp3", "GravWell_Affected"..shipID, "GravWell_Temp2")
-
-  if (SobGroup_Count("GravWell_Temp3") > 0) then
-    SobGroup_SetSpeed("GravWell_Temp3", 1)
-
-    SobGroup_AbilityActivate("GravWell_Temp3", AB_Targeting, 1)
-    SobGroup_AbilityActivate("GravWell_Temp3", AB_Attack, 1)
-    SobGroup_AbilityActivate("GravWell_Temp3", AB_Move, 1)
-
-    SobGroup_ClearTumble("GravWell_Temp3")
-  end
-
-  SobGroup_Copy("GravWell_Affected"..shipID, "GravWell_Temp2")
+	-- no errs, save this in the register
+	GlobalGravitywellTable[shipID] = stunnable_ships;
 end
 
-function Finish_Tai_GravWellGenerator(CustomGroup,playerIndex,shipID)
-  FX_StartEvent(CustomGroup, "gravwellcollapse_sfx"..random(1,6))
-
-  SobGroup_AbilityActivate(CustomGroup, AB_Hyperspace, 1)
-
-  SobGroup_SetSpeed("GravWell_Affected"..shipID, 1)
-  SobGroup_AbilityActivate("GravWell_Affected"..shipID, AB_Targeting, 1)
-  SobGroup_AbilityActivate("GravWell_Affected"..shipID, AB_Attack, 1)
-  SobGroup_AbilityActivate("GravWell_Affected"..shipID, AB_Move, 1)
-  SobGroup_ClearTumble("GravWell_Affected"..shipID)
-
-  SobGroup_Clear("GravWell_Affected"..shipID)
-  SobGroup_Clear("GravWell_"..shipID)
+function Finish_Tai_GravWellGenerator(CustomGroup, playerIndex, shipID)
+	local stunned_group = GlobalGravitywellTable[shipID]
+	Gravwell_FreeGroup(stunned_group)
+	
+	GlobalGravitywellTable[shipID] = gravitywell_default_group
+	FX_StartEvent(CustomGroup, "gravwellcollapse_sfx" .. random(1, 3))
+	SobGroup_AbilityActivate(CustomGroup, AB_Hyperspace, 1)
 end
 
+--
+-- ===== AUTORUN: =====
+--
 
-function Create_Tai_GravWellGenerator(CustomGroup,playerIndex,shipID)
-  SobGroup_CreateIfNotExist("GravWell_"..shipID)
-  SobGroup_CreateIfNotExist("GravWell_Affected"..shipID)
-  SobGroup_CreateIfNotExist("GravWell_Temp0")
-  SobGroup_CreateIfNotExist("GravWell_Temp1")
+function Create_Tai_GravWellGenerator(CustomGroup, playerIndex, shipID)
+	-- sp stuff
+	SobGroup_CreateIfNotExist("GravWell_Temp0")
+	SobGroup_CreateIfNotExist("GravWell_Temp1")
 end
 
 function Update_Tai_GravWellGenerator(CustomGroup,playerIndex,shipID)
@@ -176,14 +102,4 @@ function Update_Tai_GravWellGenerator(CustomGroup,playerIndex,shipID)
 		SobGroup_AbilityActivate(CustomGroup, AB_Move, 0)
 	end	
 
-end
-
-function Destroy_Tai_GravWellGenerator(CustomGroup,playerIndex,shipID)
-  SobGroup_SetSpeed("GravWell_Affected"..shipID, 1)
-  SobGroup_AbilityActivate("GravWell_Affected"..shipID, AB_Targeting, 1)
-  SobGroup_AbilityActivate("GravWell_Affected"..shipID, AB_Attack, 1)
-  SobGroup_AbilityActivate("GravWell_Affected"..shipID, AB_Move, 1)
-  SobGroup_ClearTumble("GravWell_Affected"..shipID)
-  SobGroup_Clear("GravWell_Affected"..shipID)
-  SobGroup_Clear("GravWell_"..shipID)
 end
