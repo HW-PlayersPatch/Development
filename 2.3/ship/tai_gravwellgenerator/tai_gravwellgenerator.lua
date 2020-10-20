@@ -11,31 +11,35 @@ end
 -- See scripts\playerspatch\ships_util\
 function Do_Tai_GravWellGenerator(CustomGroup, playerIndex, shipID)
 	FX_StartEvent(CustomGroup, "PowerUp")
-	SobGroup_TakeDamage(CustomGroup, GW_TICK_DMG)
+	SobGroup_TakeDamage(CustomGroup, GW_TICK_DAMAGE)
 
-	local stunnable_ships = Gravwell_CalcStunnableShipsGroup("stunnable-ships-" .. shipID .. "-" .. Universe_GameTime(), CustomGroup, shipID)
-	
+	local stunnable_ships = Gravwell_CalcStunnableShipsGroup(
+		"stunnable-ships-" .. shipID .. "-" .. Universe_GameTime(),
+		CustomGroup,
+		shipID
+	)
+
 	-- refresh targets, undo ability disable on escaped ships
 	Gravwell_FreeEscapedShips(stunnable_ships, shipID)
 
 	-- stunning (abilities)
-	Gravwell_SetGroupStunned(stunnable_ships, 1)
+	SobGroup_SetGroupStunned(stunnable_ships, 1)
 
 	-- slowdown
-	SobGroup_AlterSpeedMult(stunnable_ships, 0.3)
+	SobGroup_AlterSpeedMult(stunnable_ships, 0)
 
 	-- tumbling
 	local tumble_vector = Gravwell_CalcTumbleVecForGroup(stunnable_ships)
 	SobGroup_Tumble(stunnable_ships, tumble_vector)
 
 	-- no errs, save this in the register
-	GlobalGravitywellTable[shipID] = stunnable_ships;
+	GlobalGravitywellTable[shipID] = stunnable_ships
 end
 
 function Finish_Tai_GravWellGenerator(CustomGroup, playerIndex, shipID)
 	local stunned_group = GlobalGravitywellTable[shipID]
 	Gravwell_FreeGroup(stunned_group)
-	
+
 	GlobalGravitywellTable[shipID] = gravitywell_default_group
 	FX_StartEvent(CustomGroup, "gravwellcollapse_sfx" .. random(1, 3))
 	SobGroup_AbilityActivate(CustomGroup, AB_Hyperspace, 1)
@@ -51,55 +55,68 @@ function Create_Tai_GravWellGenerator(CustomGroup, playerIndex, shipID)
 	SobGroup_CreateIfNotExist("GravWell_Temp1")
 end
 
-function Update_Tai_GravWellGenerator(CustomGroup,playerIndex,shipID)
-  SobGroup_NoSalvageScuttle(CustomGroup, playerIndex, shipID)
+function Update_Tai_GravWellGenerator(CustomGroup, playerIndex, shipID)
+	SobGroup_NoSalvageScuttle(CustomGroup, playerIndex, shipID)
 
-  if (Player_GetLevelOfDifficulty(playerIndex) > 0 and Player_GetNumberOfSquadronsOfTypeAwakeOrSleeping(-1, "Special_Splitter")== 1) then
-    local listCount = getn(GravityWellGeneratorShipList)
-    local alliedShips,enemyShips = 0,0
+	if
+		(Player_GetLevelOfDifficulty(playerIndex) > 0 and
+			Player_GetNumberOfSquadronsOfTypeAwakeOrSleeping(-1, "Special_Splitter") == 1)
+	 then
+		local listCount = getn(GravityWellGeneratorShipList)
+		local alliedShips, enemyShips = 0, 0
 
-    for i = 0, Universe_PlayerCount()- 1 do
-      if (Player_IsAlive(i)== 1) then
-        SobGroup_Clear("GravWell_Temp0")
+		for i = 0, Universe_PlayerCount() - 1 do
+			if (Player_IsAlive(i) == 1) then
+				SobGroup_Clear("GravWell_Temp0")
 
-        for x = 1, listCount do
-          SobGroup_FillShipsByType("GravWell_Temp0", "Player_Ships"..i, GravityWellGeneratorShipList[x])
-          SobGroup_SobGroupAdd("GravWell_Temp1", "GravWell_Temp0")
-        end
+				for x = 1, listCount do
+					SobGroup_FillShipsByType("GravWell_Temp0", "Player_Ships" .. i, GravityWellGeneratorShipList[x])
+					SobGroup_SobGroupAdd("GravWell_Temp1", "GravWell_Temp0")
+				end
 
-        if (SobGroup_FillProximitySobGroup("GravWell_Temp0", "GravWell_Temp1", CustomGroup, GravityWellDistance)== 1) then
-          if (AreAllied(playerIndex, i)== 1) then
-            alliedShips = alliedShips + SobGroup_Count("GravWell_Temp0")
-          else
-            enemyShips = enemyShips + SobGroup_Count("GravWell_Temp0")
-          end
-        end
-      end
-    end
+				if (SobGroup_FillProximitySobGroup("GravWell_Temp0", "GravWell_Temp1", CustomGroup, GravityWellDistance) == 1) then
+					if (AreAllied(playerIndex, i) == 1) then
+						alliedShips = alliedShips + SobGroup_Count("GravWell_Temp0")
+					else
+						enemyShips = enemyShips + SobGroup_Count("GravWell_Temp0")
+					end
+				end
+			end
+		end
 
-    if (enemyShips > 8 and enemyShips > (alliedShips * 2)) then
-      SobGroup_CustomCommand(CustomGroup)
-    end
+		if (enemyShips > 8 and enemyShips > (alliedShips * 2)) then
+			SobGroup_CustomCommand(CustomGroup)
+		end
 
-    SobGroup_FillShipsByType("GravWell_Temp0", "Player_Ships"..playerIndex,  PlayerRace_GetString(playerIndex, "def_type_mothership", ""))
+		SobGroup_FillShipsByType(
+			"GravWell_Temp0",
+			"Player_Ships" .. playerIndex,
+			PlayerRace_GetString(playerIndex, "def_type_mothership", "")
+		)
 
-    if (SobGroup_Count("GravWell_Temp0") > 0) then
-      SobGroup_ParadeSobGroup(CustomGroup, "GravWell_Temp0", 0)
-    else
-      SobGroup_FillShipsByType("GravWell_Temp0", "Player_Ships"..playerIndex,  PlayerRace_GetString(playerIndex, "def_type_carrier", ""))
+		if (SobGroup_Count("GravWell_Temp0") > 0) then
+			SobGroup_ParadeSobGroup(CustomGroup, "GravWell_Temp0", 0)
+		else
+			SobGroup_FillShipsByType(
+				"GravWell_Temp0",
+				"Player_Ships" .. playerIndex,
+				PlayerRace_GetString(playerIndex, "def_type_carrier", "")
+			)
 
-      if (SobGroup_Count("GravWell_Temp0") > 0) then
-        SobGroup_ParadeSobGroup(CustomGroup, "GravWell_Temp0", 0)
-      end
-    end
-  end
-  
+			if (SobGroup_Count("GravWell_Temp0") > 0) then
+				SobGroup_ParadeSobGroup(CustomGroup, "GravWell_Temp0", 0)
+			end
+		end
+	end
+
 	--hw1 mission 12
-	SobGroup_CreateIfNotExist("GravwellTeam1")		
-	SobGroup_CreateIfNotExist("GravwellTeam2")	
-	SobGroup_CreateIfNotExist("GravwellTeam3")	
-	if SobGroup_GroupInGroup("GravwellTeam1", CustomGroup) == 1 or SobGroup_GroupInGroup("GravwellTeam2", CustomGroup) == 1 or SobGroup_GroupInGroup("GravwellTeam3", CustomGroup) == 1 then
+	SobGroup_CreateIfNotExist("GravwellTeam1")
+	SobGroup_CreateIfNotExist("GravwellTeam2")
+	SobGroup_CreateIfNotExist("GravwellTeam3")
+	if
+		SobGroup_GroupInGroup("GravwellTeam1", CustomGroup) == 1 or SobGroup_GroupInGroup("GravwellTeam2", CustomGroup) == 1 or
+			SobGroup_GroupInGroup("GravwellTeam3", CustomGroup) == 1
+	 then
 		SobGroup_AbilityActivate(CustomGroup, AB_Move, 0)
-	end	
-
+	end
 end
