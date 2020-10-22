@@ -1,3 +1,3 @@
 function Update_Vgr_Interceptor(CustomGroup, playerIndex, shipID)
-    UnderAttackReissueDock(CustomGroup)
+    SobGroup_UnderAttackReissueDock(CustomGroup)
 end

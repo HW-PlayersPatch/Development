@@ -1,4 +1,7 @@
-dofilepath("data:scripts/playerspatch_ships_util.lua")
+if (GLOBAL_LIB_IMPORTED == nil or GLOBAL_LIB_IMPORTED == 0) then
+	dofilepath("data:scripts/playerspatch/playerspatch_ships_util.lua")
+	GLOBAL_LIB_IMPORTED = 1
+end
 
 function Load_Kus_Mothership(playerIndex)	
 	SobGroup_CreateIfNotExist("kus_mothership"..playerIndex)
@@ -15,7 +18,7 @@ function Create_Kus_Mothership(CustomGroup, playerIndex, shipID)
 	end
 end
 
-function Update_Kus_Mothership(CustomGroup, playerIndex, shipID)		
+function Update_Kus_Mothership(CustomGroup, playerIndex, shipID)	
 	SobGroup_CreateIfNotExist("kus_mothership"..playerIndex)
 	SobGroup_CreateIfNotExist("kus_production"..playerIndex)
 	SobGroup_SobGroupAdd("kus_mothership"..playerIndex, CustomGroup)

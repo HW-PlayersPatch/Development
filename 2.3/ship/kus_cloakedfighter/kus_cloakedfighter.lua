@@ -1,31 +1,25 @@
--- Currently configured for 1 call per second. Heals when it hasn't been damaged in the last x seconds (combat_ticks_length).
+dofilepath("data:scripts/lib/print_table.lua")
 
--- variables here are stored globally and are accessable via this script regardless of invokation time
--- as such we need a persistant dictionary to identify which CF info we want to work with
-combat_ticks_length = 15
-global_cloakedfighters = {}
+-- Cloaked fighter regeneration
+-- By: Fear
 
--- init a new entry
-function log_new_cf(shipID)
-    local new_cf = {
-        combat_ticks_queue = {},
+CF_MEM = MemGroup.Create('cloaked_fighters', {
+    combat_ticks_length = 20
+})
+
+-- Currently configured for 2 calls per second. Heals when it hasn't been damaged in the last x/2 seconds (combat_ticks_length/2).
+
+function Create_Kus_CloakedFighter(CustomGroup, playerIndex, shipID)
+    local queue = {}
+    for i = 1, CF_MEM.combat_ticks_length do
+        queue[i] = 0
+    end
+    CF_MEM:set(shipID, {
+        self_group = CustomGroup,
+        combat_ticks_queue = queue,
         current_HP = nil,
         last_checked_HP = nil
-    }
-    for i = 1, combat_ticks_length do
-        new_cf.combat_ticks_queue[i] = 0
-    end
-    global_cloakedfighters[shipID] = new_cf
-    return new_cf
-end
-
--- get if exists, otherwise create new and return
-function fetch_info(shipID)
-    if global_cloakedfighters[shipID] == nil then
-        return log_new_cf(shipID)
-    else
-        return global_cloakedfighters[shipID]
-    end
+    })
 end
 
 -- main loop
@@ -37,22 +31,23 @@ end
 -- checking into a queue (granularity), but requiring a totally clean queue for regeneration to kick in (controllability).
 function Update_Kus_CloakedFighter(CustomGroup, playerIndex, shipID)
 
-    local this_cf = fetch_info(shipID)
+    local this_cf = CF_MEM:get(shipID)
 
-    this_cf.current_HP = SobGroup_HealthPercentage(CustomGroup)
-    for i = 1, combat_ticks_length - 1 do
+    this_cf.current_HP = SobGroup_HealthPercentage(this_cf.self_group)
+    for i = 1, CF_MEM.combat_ticks_length - 1 do
         this_cf.combat_ticks_queue[i] = this_cf.combat_ticks_queue[i + 1]
     end
     
-    if this_cf.last_checked_HP ~= nil then
-        if this_cf.current_HP < this_cf.last_checked_HP then
-            this_cf.combat_ticks_queue[combat_ticks_length] = 1
+    if (this_cf.last_checked_HP ~= nil) then
+        
+        if (this_cf.current_HP < this_cf.last_checked_HP) then
+            this_cf.combat_ticks_queue[CF_MEM.combat_ticks_length] = 1
         else
-            this_cf.combat_ticks_queue[combat_ticks_length] = 0
+            this_cf.combat_ticks_queue[CF_MEM.combat_ticks_length] = 0
         end
 
         local regen_enabled = 1
-        for i = 1, combat_ticks_length do
+        for i = 1, CF_MEM.combat_ticks_length do
             if this_cf.combat_ticks_queue[i] == 1 then -- in combat within window
                 regen_enabled = 0
             end
@@ -62,19 +57,19 @@ function Update_Kus_CloakedFighter(CustomGroup, playerIndex, shipID)
         end
 
         if regen_enabled == 1 then
-            if (SobGroup_UnderAttack(CustomGroup) == 0) then -- not under attack
-                if (SobGroup_IsDocked(CustomGroup) == 0) then -- not docked
-                    if (SobGroup_GetActualSpeed(CustomGroup) < 1) then -- stopped
-                        SobGroup_SetHealth(CustomGroup, this_cf.current_HP + 0.016) -- fully heals in about 60 seconds with 1 call per second
-                    end
-                end
+            if (
+                SobGroup_IsDocked(this_cf.self_group) and
+                SobGroup_AreAllInRealSpace(this_cf.self_group) == 1 and
+                SobGroup_GetActualSpeed(this_cf.group) < 10
+            ) then -- not under attack
+                SobGroup_SetHealth(this_cf.self_group, this_cf.current_HP + 0.016) -- fully heals in about 60 seconds with 1 call per second
             end
         end
     end
 
-    this_cf.last_checked_HP = SobGroup_HealthPercentage(CustomGroup)
+    this_cf.last_checked_HP = SobGroup_HealthPercentage(this_cf.self_group)
 end
 
 function Destroy_Kus_CloakedFighter(CustomGroup, playerIndex, shipID)
-    global_cloakedfighters[shipID] = nil
+    CF_MEM:delete(shipID)
 end
