@@ -2,6 +2,20 @@
 -- For any functionality which isn't ship/race specific
 -- By: Fear, QuadS
 
+-- Creates a new sobgroup if one doesn't exist, then clears the group to ensure
+-- the group referenced by the return string is clear.
+function SobGroup_CreateAndClear(name)
+	SobGroup_CreateIfNotExist(name)
+	SobGroup_Clear(name)
+	return name;
+end
+
+-- overwrites target_group with the content of incoming_group
+function SobGroup_Overwrite(target_group, incoming_group)
+	SobGroup_Clear(target_group)
+	SobGroup_SobGroupAdd(target_group, incoming_group)
+end
+
 -- Disable scuttle while a captured unit is being dropped off by salvage corvettes
 function SobGroup_NoSalvageScuttle(CustomGroup)
 	SobGroup_AbilityActivate(CustomGroup, AB_Scuttle, 1 - SobGroup_IsDoingAbility(CustomGroup, AB_Dock))
@@ -42,14 +56,6 @@ function SobGroup_AnyAreAttacking(group)
 		return 1
 	end
 	return 0
-end
-
--- Creates a new sobgroup if one doesn't exist, then clears the group to ensure
--- the group referenced by the return string is clear.
-function SobGroup_CreateAndClear(name)
-	SobGroup_CreateIfNotExist(name)
-	SobGroup_Clear(name)
-	return name;
 end
 
 -- returns a group of all active ships for all players
@@ -103,9 +109,11 @@ function SobGroup_SetGroupStunned(target_group, stunned)
 	if (stunned == 1) then
 		FX_StartEvent(target_group, STUN_EFFECT_EVENT)
 		SobGroup_Disable(target_group, 99999)
+		SobGroup_SetSpeed(target_group, 0)
 	else
 		FX_StopEvent(target_group, STUN_EFFECT_EVENT)
 		SobGroup_Disable(target_group, 0)
+		SobGroup_SetSpeed(target_group, 1)
 	end
 	local ability_status = modulo(stunned + 1, 2) -- 0 -> 1, 1 -> 0, 2 -> 1, ...
 	for _, ability in STUN_EFFECT_ABILITIES do
@@ -113,3 +121,5 @@ function SobGroup_SetGroupStunned(target_group, stunned)
 	end
 	return target_group
 end
+
+DEFAULT_SOBGROUP = SobGroup_CreateAndClear("__PLAYERSPATCH_EMPTY_GROUP")

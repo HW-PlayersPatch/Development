@@ -1,3 +1,5 @@
+dofilepath("data:scripts/lib/table_util.lua")
+
 -- Group management --
 -- By: Fear
 -- 
@@ -45,6 +47,7 @@ MemGroup = {
 			end
 			self._entities[entityID] = entity
 			local e = self._entities[entityID]
+			e.id = entityID
 			if (e._tick == nil) then
 				e._tick = 0
 			end
@@ -116,3 +119,6 @@ MemGroup = {
 		return MemGroup._groups[group_name] ~= nil
 	end
 }
+
+print(MemGroup)
+print("executed: memgroup.lua")
