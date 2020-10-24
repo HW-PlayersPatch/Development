@@ -22,7 +22,7 @@ supplyLimit("SalvageCorvette",14);
 --
 supplyLimit("Frigate", 21);
 
-supplyLimit("DefenseFieldFrigate",2);
+supplyLimit("DefenseFieldFrigate",5);
 supplyLimit("CaptureFrigate",6);
 --
 -- Kushan FamilySupplyOverride Frigate 24

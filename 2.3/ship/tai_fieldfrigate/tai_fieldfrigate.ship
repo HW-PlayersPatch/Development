@@ -75,8 +75,8 @@ NewShipType.antiFighterValue=0
 NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=5
 NewShipType.totalValue=9
-NewShipType.buildCost=900
-NewShipType.buildTime=70
+NewShipType.buildCost=800
+NewShipType.buildTime=55
 NewShipType.buildPriorityOrder=40
 NewShipType.retaliationRange=2000
 NewShipType.retaliationDistanceFromGoal=160
@@ -137,7 +137,7 @@ addAbility(NewShipType,"CanBeCaptured",45,0.1,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RetireAbility",1,0);
-addMagneticField(NewShipType,"MagneticField",1000,100,"defenseField_generic",15,"defenseField_generic",100,"plasma_hit_spray_MagneticField","defensefield_sphere_spray_TFF");
+addMagneticField(NewShipType,"MagneticField",1000,100,"defenseField_generic",40,"defenseField_generic",100,"plasma_hit_spray_MagneticField","defensefield_sphere_spray_TFF");
 addAbility(NewShipType,"DefenseFieldShieldAbility",0,1200,0,0);
 AddShipMultiplier(NewShipType,"WeaponDamage","EnemyShipsWithinRadius","Linear",0.93,0.93,1200);
 AddShipMultiplier(NewShipType,"WeaponAccuracy","EnemyShipsWithinRadius","Linear",0.93,0.93,1200);
