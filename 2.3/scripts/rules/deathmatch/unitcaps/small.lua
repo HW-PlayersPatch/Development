@@ -22,7 +22,7 @@ supplyLimit("SalvageCorvette",10);
 --
 supplyLimit("Frigate", 12);
 
-supplyLimit("DefenseFieldFrigate",1);
+supplyLimit("DefenseFieldFrigate",2);
 supplyLimit("CaptureFrigate",4);
 --
 
