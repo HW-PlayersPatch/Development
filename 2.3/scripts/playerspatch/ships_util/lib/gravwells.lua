@@ -217,6 +217,10 @@ function GW_MEM:Update(CustomGroup, playerIndex, shipID)
 end
 
 function GW_MEM:Destroy(group, player_index, ship_id)
+	print("destroy call")
+	self:Get(group, player_index, ship_id)
+		:SetGroupStunned(0)
+		:FreeEscapedShips()
 	self:delete(ship_id)
 end
 
@@ -240,7 +244,9 @@ function GW_MEM:Do(group, player_index, ship_id)
 end
 
 function GW_MEM:Finish(group, player_index, ship_id)
+	print("finish call")
 	self:Get(group, player_index, ship_id)
+		:FreeEscapedShips()
 		:SetGroupStunned(0)
 	FX_StartEvent(group, "gravwellcollapse_sfx" .. random(1, 3))
 	SobGroup_AbilityActivate(group, AB_Hyperspace, 1)
