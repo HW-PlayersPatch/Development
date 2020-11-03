@@ -148,7 +148,7 @@ addAbility(NewShipType,"CanAttack",1,1,1,0,0.35,1,"SpaceMine,HeavyMissile,Torped
 addAbility(NewShipType,"GuardCommand",1,500,100);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"RetireAbility",1,0);
-addMagneticField(NewShipType,"MagneticField",600,100,"defenseField_generic",85,"defenseField_generic",100,"plasma_hit_spray_MagneticField","defensefield_sphere_spray_DF");
+addMagneticField(NewShipType,"MagneticField",600,100,"defenseField_generic",90,"defenseField_generic",100,"plasma_hit_spray_MagneticField","defensefield_sphere_spray_DF");
 AddShipMultiplier(NewShipType,"WeaponAccuracy","EnemyShipsWithinRadius","Linear",0.99,0.99,700);
 addCustomCode(NewShipType,"data:ship/Tai_DefenseFighter/Tai_DefenseFighter.lua","","","updateDefenseFighter","","DefenseFighter",1.25)
 LoadModel(NewShipType,1);
