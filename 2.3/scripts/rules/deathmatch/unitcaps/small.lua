@@ -22,7 +22,8 @@ supplyLimit("SalvageCorvette",10);
 --
 supplyLimit("Frigate", 12);
 
-supplyLimit("DefenseFieldFrigate",2);
+supplyLimit("FieldFrigate",2);
+supplyLimit("DefenseFieldFrigate",1);
 supplyLimit("CaptureFrigate",4);
 --
 
@@ -88,6 +89,7 @@ supplyIndent("CloakedFighters", 1);
 supplyIndent("CommandCorvette", 1);
 supplyIndent("SalvageCorvette", 1);
 
+supplyIndent("FieldFrigate", 1);
 supplyIndent("DefenseFieldFrigate", 1);
 supplyIndent("CaptureFrigate", 1);
 

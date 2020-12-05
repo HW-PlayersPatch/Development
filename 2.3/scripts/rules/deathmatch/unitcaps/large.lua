@@ -22,7 +22,8 @@ supplyLimit("SalvageCorvette",18);
 --
 supplyLimit("Frigate", 30);
 
-supplyLimit("DefenseFieldFrigate",7);
+supplyLimit("FieldFrigate",7);
+supplyLimit("DefenseFieldFrigate",3);
 supplyLimit("CaptureFrigate",8);		
 --
 -- Kushan FamilyOverride Frigate 24
@@ -93,6 +94,7 @@ supplyIndent("CloakedFighters", 1);
 supplyIndent("CommandCorvette", 1);
 supplyIndent("SalvageCorvette", 1);
 
+supplyIndent("FieldFrigate", 1);
 supplyIndent("DefenseFieldFrigate", 1);
 supplyIndent("CaptureFrigate", 1);
 
