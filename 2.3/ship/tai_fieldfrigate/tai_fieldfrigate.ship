@@ -64,7 +64,7 @@ NewShipType.AutoFormationFamily="Frigate"
 NewShipType.CollisionFamily="Big"
 NewShipType.ArmourFamily=getShipStr(NewShipType, "ArmourFamily", "MediumArmour")
 setSupplyValue(NewShipType, "Frigate", 1.0)
-setSupplyValue(NewShipType, "DefenseFieldFrigate", 1.0)
+setSupplyValue(NewShipType, "FieldFrigate", 1.0)
 setSupplyValue(NewShipType, "LayoutFrigate", 1.0)
 NewShipType.AttackPriorityMultiplier=0.96
 NewShipType.fighterValue=0
