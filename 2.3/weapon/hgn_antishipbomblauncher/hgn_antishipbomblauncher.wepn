@@ -13,7 +13,7 @@ setPenetration(NewWeaponType,5,1,
 {HeavyMissileArmor=0},
 {SmallMissileArmor=0},
 {SubSystemArmour=2.5},
-{TurretArmour=0.70},
+{TurretArmour=0.89},
 {MediumArmour=1.20},
 {HeavyArmour=1.10});
 setAccuracy(NewWeaponType,1,
