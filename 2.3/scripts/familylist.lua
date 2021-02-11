@@ -764,6 +764,11 @@ unitcapsFamily =
 		stringParam = "$2124",
 	},
 	{
+		name = "FieldFrigate",
+		numParam = 34,
+		stringParam = "$2124", -- just use same str as dff
+	},
+	{
 		name = "Capital",
 		numParam = 40,
 		stringParam = "$2116",
