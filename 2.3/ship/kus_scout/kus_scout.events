@@ -216,7 +216,7 @@ effects =
 						{ "marker", "SpeedBurst", }, 
 						{ "fx", "resourcing_dust_spray_full", }, 
 						{ "sound", "SPECIAL/SPECIAL_ABILITIES_SPEEDBURST", }, 
-						{ "fx_scale", "0.25", }, 
+						{ "fx_scale", "0.6", }, 
 				},
 				SpeedBurst2 = 
 				{ 
@@ -225,7 +225,7 @@ effects =
 						{ "marker", "SpeedBurst", }, 
 						{ "fx", "resourcing_dust_spray_full", }, 
 						--{ "sound", "SPECIAL/SPECIAL_ABILITIES_SPEEDBURST", }, 
-						{ "fx_scale", "0.25", }, 
+						{ "fx_scale", "0.6", }, 
 				},
 				SpeedBurst3 = 
 				{ 
@@ -234,7 +234,7 @@ effects =
 						{ "marker", "SpeedBurst", }, 
 						{ "fx", "resourcing_dust_spray_full", }, 
 						--{ "sound", "SPECIAL/SPECIAL_ABILITIES_SPEEDBURST", }, 
-						{ "fx_scale", "0.25", }, 
+						{ "fx_scale", "0.6", }, 
 				},
 				SpeedBurst4 = 
 				{ 
@@ -243,7 +243,7 @@ effects =
 						{ "marker", "SpeedBurst", }, 
 						{ "fx", "resourcing_dust_spray_full", }, 
 						--{ "sound", "SPECIAL/SPECIAL_ABILITIES_SPEEDBURST", }, 
-						{ "fx_scale", "0.25", }, 
+						{ "fx_scale", "0.6", }, 
 				},
 				SpeedBurst5 = 
 				{ 
@@ -252,7 +252,7 @@ effects =
 						{ "marker", "SpeedBurst", }, 
 						{ "fx", "resourcing_dust_spray_full", }, 
 						--{ "sound", "SPECIAL/SPECIAL_ABILITIES_SPEEDBURST", }, 
-						{ "fx_scale", "0.25", }, 
+						{ "fx_scale", "0.6", }, 
 				},
 				SpeedBurst6 = 
 				{ 
@@ -261,7 +261,7 @@ effects =
 						{ "marker", "SpeedBurst", }, 
 						{ "fx", "resourcing_dust_spray_full", }, 
 						--{ "sound", "SPECIAL/SPECIAL_ABILITIES_SPEEDBURST", }, 
-						{ "fx_scale", "0.25", }, 
+						{ "fx_scale", "0.6", }, 
 				},
 				SpeedBurst7 = 
 				{ 
@@ -270,7 +270,7 @@ effects =
 						{ "marker", "SpeedBurst", }, 
 						{ "fx", "resourcing_dust_spray_full", }, 
 						--{ "sound", "SPECIAL/SPECIAL_ABILITIES_SPEEDBURST", }, 
-						{ "fx_scale", "0.25", }, 
+						{ "fx_scale", "0.6", }, 
 				},
 				SpeedBurst8 = 
 				{ 
@@ -279,7 +279,7 @@ effects =
 						{ "marker", "SpeedBurst", }, 
 						{ "fx", "resourcing_dust_spray_full", }, 
 						--{ "sound", "SPECIAL/SPECIAL_ABILITIES_SPEEDBURST", }, 
-						{ "fx_scale", "0.25", }, 
+						{ "fx_scale", "0.6", }, 
 				},
 				SpeedBurst9 = 
 				{ 
@@ -288,7 +288,7 @@ effects =
 						{ "marker", "SpeedBurst", }, 
 						{ "fx", "resourcing_dust_spray_full", }, 
 						--{ "sound", "SPECIAL/SPECIAL_ABILITIES_SPEEDBURST", }, 
-						{ "fx_scale", "0.25", }, 
+						{ "fx_scale", "0.6", }, 
 				},
 				SpeedBurst10 = 
 				{ 
@@ -297,7 +297,7 @@ effects =
 						{ "marker", "SpeedBurst", }, 
 						{ "fx", "resourcing_dust_spray_full", }, 
 						--{ "sound", "SPECIAL/SPECIAL_ABILITIES_SPEEDBURST", }, 
-						{ "fx_scale", "0.25", }, 
+						{ "fx_scale", "0.6", }, 
 				},
 				Radiation =
         {
