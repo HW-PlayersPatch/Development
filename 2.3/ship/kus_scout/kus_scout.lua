@@ -1,14 +1,11 @@
 function Start_Kus_Scout(CustomGroup, playerIndex, shipID)  
-	SobGroup_SetMaxSpeedMultiplier(CustomGroup, 1.1)
-	FX_PlayEffect("speed_burst_flash", CustomGroup, 1.5)
+	Scout_SpeedBurst_Start(CustomGroup)
 end
 
 function Do_Kus_Scout(CustomGroup, playerIndex, shipID)
-	if SobGroup_GetActualSpeed(CustomGroup) >= 110 then
-		FX_StartEvent(CustomGroup, "SpeedBurst")
-	end	
+	Scout_SpeedBurst_Do(CustomGroup)
 end
 
 function Finish_Kus_Scout(CustomGroup, playerIndex, shipID)	
-	SobGroup_SetMaxSpeedMultiplier(CustomGroup, 1)
+	Scout_SpeedBurst_Finish()
 end
