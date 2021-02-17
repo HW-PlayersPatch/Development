@@ -157,7 +157,7 @@ addAbility(NewShipType,"CanAttack",1,0,1,500,0.35,1,"Fighter_hw1, Fighter, Swarm
 addAbility(NewShipType,"GuardCommand",1,3000,500);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"RetireAbility",1,0);
-addAbility(NewShipType,"CustomCommand",1,"Speed Burst",1,0,1200,120,12,3,1100,"data:Ship/Kus_Scout/Kus_Scout.lua","Start_Kus_Scout","Do_Kus_Scout","Finish_Kus_Scout","Kus_Scout",1.5,3,1)
+addAbility(NewShipType,"CustomCommand",1,"Speed Burst",1,0,1200,1200,12,3,200,"data:Ship/Kus_Scout/Kus_Scout.lua","Start_Kus_Scout","Do_Kus_Scout","Finish_Kus_Scout","Kus_Scout",0.3,3,1)
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Kus_Scout","Weapon_Gun0","Weapon_Gun0");
 StartShipWeaponConfig(NewShipType,"Kus_Scout","Weapon_Gun1","Weapon_Gun1");

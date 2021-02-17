@@ -1,13 +1,11 @@
 function Start_Tai_Scout(CustomGroup, playerIndex, shipID)  
-	SobGroup_SetMaxSpeedMultiplier(CustomGroup, 1.1)		
+	Scout_SpeedBurst_Start(CustomGroup)		
 end
 
 function Do_Tai_Scout(CustomGroup, playerIndex, shipID)		
-	if SobGroup_GetActualSpeed(CustomGroup) >= 110 then
-		FX_StartEvent(CustomGroup, "SpeedBurst")
-	end
+	Scout_SpeedBurst_Do(CustomGroup)
 end
 
 function Finish_Tai_Scout(CustomGroup, playerIndex, shipID)	
-	SobGroup_SetMaxSpeedMultiplier(CustomGroup, 1)
+	Scout_SpeedBurst_Finish(CustomGroup)
 end
