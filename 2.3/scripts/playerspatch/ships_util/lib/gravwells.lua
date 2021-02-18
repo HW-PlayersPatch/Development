@@ -137,7 +137,7 @@ function GW_MEM:Create(own_group, player_index, ship_id)
 		local tumble_vector = SobGroup_GetPosition(self.stunnable_ships)
 		for i = 1, 3 do
 			local spice = GW_MEM.tumble_randtable[GW_MEM.tumble_randtable_index] or 0.5
-			GW_MEM.tumble_randtable_index = modulo(floor(abs(Universe_GameTime() * pow(100, i))), getn(GW_MEM.tumble_randtable) + 1)
+			GW_MEM.tumble_randtable_index = modulo(GW_MEM.tumble_randtable_index + 1, getn(GW_MEM))
 			tumble_vector[i] = modulo(tumble_vector[i] * spice, 1)
 		end
 		SobGroup_Tumble(self.stunnable_ships, tumble_vector)
@@ -229,7 +229,7 @@ end
 
 function GW_MEM:Start(group, player_index, ship_id)
 	local this_gravwell = self:Get(group, player_index, ship_id)
-	FX_StartEvent(this_gravwell.own_group, "gravwellon_sfx" .. random(1, 6))
+	FX_StartEvent(this_gravwell.own_group, "gravwellon_sfx" .. 1)
 	SobGroup_AbilityActivate(this_gravwell.own_group, AB_Hyperspace, 0)
 end
 
@@ -246,6 +246,6 @@ function GW_MEM:Finish(group, player_index, ship_id)
 	self:Get(group, player_index, ship_id)
 		:FreeEscapedShips()
 		:SetGroupStunned(0)
-	FX_StartEvent(group, "gravwellcollapse_sfx" .. random(1, 3))
+	FX_StartEvent(group, "gravwellcollapse_sfx" .. 1)
 	SobGroup_AbilityActivate(group, AB_Hyperspace, 1)
 end
