@@ -91,19 +91,24 @@ function GW_MEM:Create(own_group, player_index, ship_id)
 	-- should be called once, essentially a housekeep for the gravwell
 	-- plays glow fx, applies self damage, and saves the stunned group for the next pass
 	function GRAVWELL_PROTO:Tick()
+		print("[" .. self.id .. "]:Tick start")
 		FX_StartEvent(self.own_group, "PowerUp")
 		SobGroup_TakeDamage(self.own_group, GW_MEM.tick_self_damage)
 		SobGroup_Overwrite(self.old_stunnable_ships, self.stunnable_ships)
+		print("[" .. self.id .. "]:Tick end")
 	end
 	
 	-- stuns the stunnable group calculated by CalcStunnableShipsGroup
 	function GRAVWELL_PROTO:SetGroupStunned(stunned)
+		print("[" .. self.id .. "]:SetGroupStunned start")
 		SobGroup_SetGroupStunned(self.stunnable_ships, stunned)
+		print("[" .. self.id .. "]:SetGroupStunned end")
 		return self
 	end
 	
 	-- frees any ships in the old group which aren't in the current group
 	function GRAVWELL_PROTO:FreeEscapedShips()
+		print("[" .. self.id .. "]:FreeEscapedShips start")
 		local escaped_ships = SobGroup_CreateAndClear("escaped-ships" .. "-" .. self.id)
 		if (SobGroup_Count(self.old_stunnable_ships) > 0) then
 			local temp_fill_group = SobGroup_CreateAndClear("escaped-ships-temp" .. "-" .. self.id)
@@ -113,27 +118,31 @@ function GW_MEM:Create(own_group, player_index, ship_id)
 				SobGroup_SetGroupStunned(escaped_ships, 0)
 			end
 		end
+		print("[" .. self.id .. "]:FreeEscapedShips end")
 		return self
 	end
 	
 	-- calc which ships are in our radius, save them in the current stunnables group
 	function GRAVWELL_PROTO:CalcStunnableShipsGroup()
+		print("[" .. self.id .. "]:CalcStunnableShipsGroup start")
 		local all_ships = Sobgroup_GetAllActiveShips()
 		local ships_in_radius = SobGroup_CreateAndClear("ships-in-radius-" .. self.id)
 		SobGroup_FillProximitySobGroup(ships_in_radius, all_ships, self.own_group, GW_MEM.effect_range)
-		local stunnable_fill = SobGroup_CreateAndClear("temp-stunnable-ships-" .. self.id .. "-" .. Universe_GameTime())
+		local stunnable_fill = SobGroup_CreateAndClear("temp-stunnable-ships-" .. self.id)
 		for _, ship_type in GW_MEM.target_types do
 			local temp_fill_group = SobGroup_CreateAndClear("acc" .. self.id)
 			SobGroup_FillShipsByType(temp_fill_group, ships_in_radius, ship_type)
 			SobGroup_SobGroupAdd(stunnable_fill, temp_fill_group)
 		end
 		SobGroup_Overwrite(self.stunnable_ships, stunnable_fill)
+		print("[" .. self.id .. "]:CalcStunnableShipsGroup end")
 		return self
 	end
 	
 	-- applies 'random' multipliers to the pitch/yaw/roll values of the groups tumble vector
 	-- random vals are actually a pregenned list indexed using Universe_GameTime()
 	function GRAVWELL_PROTO:TumbleGroup()
+		print("[" .. self.id .. "]:TumbleGroup start")
 		local tumble_vector = SobGroup_GetPosition(self.stunnable_ships)
 		for i = 1, 3 do
 			local spice = GW_MEM.tumble_randtable[GW_MEM.tumble_randtable_index] or 0.5
@@ -141,6 +150,7 @@ function GW_MEM:Create(own_group, player_index, ship_id)
 			tumble_vector[i] = modulo(tumble_vector[i] * spice, 1)
 		end
 		SobGroup_Tumble(self.stunnable_ships, tumble_vector)
+		print("[" .. self.id .. "]:TumbleGroup end")
 		return self
 	end
 
@@ -229,23 +239,30 @@ end
 
 function GW_MEM:Start(group, player_index, ship_id)
 	local this_gravwell = self:Get(group, player_index, ship_id)
+	print("GW " .. ship_id .. " START")
+	printTbl(this_gravwell)
 	FX_StartEvent(this_gravwell.own_group, "gravwellon_sfx" .. 1)
 	SobGroup_AbilityActivate(this_gravwell.own_group, AB_Hyperspace, 0)
+	print("END GW " .. ship_id .. " START")
 end
 
 function GW_MEM:Do(group, player_index, ship_id)
+	print("GW " .. ship_id .. " DO")
 	self:Get(group, player_index, ship_id)
 		:CalcStunnableShipsGroup() -- calc stunnable ships in radius
 		:FreeEscapedShips() -- free any ships which escaped since last pass
 		:SetGroupStunned(1) -- sets the stunnable ships to stunned
 		:TumbleGroup() -- tumbles the stunned ships
 		:Tick() -- play fx, take damage, save stunned group as old stunned group for next run
+	print("END GW " .. ship_id .. " DO")
 end
 
 function GW_MEM:Finish(group, player_index, ship_id)
+	print("GW " .. ship_id .. " FINISH")
 	self:Get(group, player_index, ship_id)
 		:FreeEscapedShips()
 		:SetGroupStunned(0)
 	FX_StartEvent(group, "gravwellcollapse_sfx" .. 1)
 	SobGroup_AbilityActivate(group, AB_Hyperspace, 1)
+	print("END GW " .. ship_id .. " DO")
 end
