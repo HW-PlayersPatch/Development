@@ -59,11 +59,13 @@ function SobGroup_AnyAreAttacking(group)
 end
 
 -- returns a group of all active ships for all players
-function Sobgroup_GetAllActiveShips(target_group)
+function Universe_GetAllActiveShips(target_group)
 	local all_ships = "all-ships"
 	SobGroup_CreateIfNotExist(all_ships)
 	for i = 0, Universe_PlayerCount() - 1 do
-		SobGroup_SobGroupAdd(all_ships, "Player_Ships" .. i)
+		if (Player_IsAlive(i)) then
+			SobGroup_SobGroupAdd(all_ships, "Player_Ships" .. i)
+		end
 	end
 	if (target_group ~= nil) then
 		SobGroup_CreateIfNotExist(target_group)
@@ -89,27 +91,30 @@ function SobGroup_AlterSpeedMult(target_group, mult)
 end
 
 STUN_EFFECT_ABILITIES = {
-	AB_Cloak,
-	AB_AcceptDocking,
-	AB_Builder,
-	AB_Hyperspace,
-	AB_FormHyperspaceGate,
-	AB_HyperspaceViaGate,
+	-- AB_Cloak,
+	-- AB_AcceptDocking,
+	-- AB_Builder,
+	-- AB_Hyperspace,
+	-- AB_FormHyperspaceGate,
+	-- AB_HyperspaceViaGate,
 	AB_SpecialAttack,
-	AB_DefenseField,
-	AB_DefenseFieldShield,
+	-- AB_DefenseField,
+	-- AB_DefenseFieldShield,
 	AB_Steering,
 	AB_Targeting,
-	AB_Lights,
+	-- AB_Lights,
 }
 STUN_EFFECT_EVENT = "PowerOff"
 
 -- sets whether the given group should be 'stunned' or not (AB_Move/AB_Steering/AB_Attack/AB_Targeting)
-function SobGroup_SetGroupStunned(target_group, stunned)
+function SobGroup_SetGroupStunned(target_group, stunned, duration)
+	if (duration == nil) then
+		duration = 99
+	end
 	if (SobGroup_Count(target_group) > 0) then
 		if (stunned == 1) then
 			FX_StartEvent(target_group, STUN_EFFECT_EVENT)
-			SobGroup_Disable(target_group, 99999)
+			SobGroup_Disable(target_group, duration)
 			SobGroup_SetSpeed(target_group, 0)
 		else
 			FX_StopEvent(target_group, STUN_EFFECT_EVENT)
