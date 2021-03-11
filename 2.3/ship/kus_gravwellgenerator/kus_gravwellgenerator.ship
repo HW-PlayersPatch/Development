@@ -135,7 +135,7 @@ addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RetireAbility",1,0);
 addAbility(NewShipType,"HyperspaceInhibitorAbility",1,10500)
 addAbility(NewShipType,"CustomCommand",1,"$3191",1,0,166,1,0.65,0.0,300,"data:Ship/Kus_GravWellGenerator/Kus_GravWellGenerator.lua","Start_Kus_GravWellGenerator","Do_Kus_GravWellGenerator","Finish_Kus_GravWellGenerator","Kus_GravWellGenerator",1.0,1,1,1,1)
-addCustomCode(NewShipType,"data:Ship/Kus_GravWellGenerator/Kus_GravWellGenerator.lua","","Create_Kus_GravWellGenerator","Update_Kus_GravWellGenerator","Destroy_Kus_GravWellGenerator","Kus_GravWellGenerator",1.0)
+addCustomCode(NewShipType,"data:Ship/Kus_GravWellGenerator/Kus_GravWellGenerator.lua","","Create_Kus_GravWellGenerator","Update_Kus_GravWellGenerator","Destroy_Kus_GravWellGenerator","Kus_GravWellGenerator",0.5)
 LoadModel(NewShipType,1);
 addShield(NewShipType,"EMP",220,20);
 AddShipAbility(NewShipType, "Hyperspace", 0, "EnemyShipsWithinRadius", 10500)
