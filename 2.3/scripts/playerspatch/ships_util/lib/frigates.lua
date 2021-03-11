@@ -47,3 +47,10 @@ function SupportFrigate_HyperspaceDock(CustomGroup, shipID)
 		end
 	end
 end
+
+-- hgn def field glow
+function DefenseFieldFrigate_Glow(CustomGroup, playerIndex, shipID)
+	if (SobGroup_IsDoingAbility(CustomGroup, AB_DefenseField) == 1) then
+		FX_PlayEffect("defense-field-active", CustomGroup, 3.5)
+	end
+end

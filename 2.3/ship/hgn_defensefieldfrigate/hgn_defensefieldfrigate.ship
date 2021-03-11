@@ -143,7 +143,7 @@ addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RetireAbility",1,0);
 addAbility(NewShipType,"DefenseFieldAbility",1,0,1200,200,200,0.7,0.6,0,"defensefield_sphere_spray");
 addAbility(NewShipType,"DefenseFieldShieldAbility",0,1200,0,0);
-addCustomCode(NewShipType,"data:ship/Hgn_DefenseFieldFrigate/Hgn_DefenseFieldFrigate.lua","","","Update_Hgn_DefenseFieldFrigate","","Hgn_DefenseFieldFrigate",4)
+addCustomCode(NewShipType,"data:ship/Hgn_DefenseFieldFrigate/Hgn_DefenseFieldFrigate.lua","","","Update_Hgn_DefenseFieldFrigate","","Hgn_DefenseFieldFrigate",1.5)
 LoadModel(NewShipType,1);
 StartShipHardPointConfig(NewShipType,"Weapon_Top","Hardpoint_Top","Weapon","Innate","Ship","Hgn_VulcanKineticTurretHeavy","","","","","","","","");
 addShield(NewShipType,"EMP",310,20);
