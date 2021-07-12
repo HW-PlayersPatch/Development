@@ -5,7 +5,7 @@ supplyLimit("Interceptor", 125);
 supplyLimit("Bomber", 125);
 supplyLimit("LanceFighter", 125);
 supplyLimit("Defenders", 30);
-supplyLimit("Defensefighters", 20);
+supplyLimit("Defensefighters", 24);
 supplyLimit("CloakedFighters", 30);
 --
 -- Vaygr FamilyOverride Fighter 205
