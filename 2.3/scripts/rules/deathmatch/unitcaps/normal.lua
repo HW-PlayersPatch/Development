@@ -20,7 +20,7 @@ supplyLimit("SalvageCorvette",14);
 --
 -- Vaygr FamilySupplyOverride Corvette 56
 --
-supplyLimit("Frigate", 21);
+supplyLimit("Frigate", 22);
 
 supplyLimit("FieldFrigate", 5);
 supplyLimit("DefenseFieldFrigate",2);

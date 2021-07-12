@@ -274,6 +274,25 @@ base_research = {
 		ShortDisplayedName = "10% Hyperspace Exit Damage", 
 		DoNotGrant = 1,
 	},
+
+	{
+		Name = "Scout speed limiter", 
+		RequiredResearch = "FighterspeedUpgrade1", 
+		RequiredSubSystems = "", 
+		Cost = 0, 
+		Time = 0, 
+		DisplayedName = "Scout speed limiter", 
+		DisplayPriority = 950, 
+		Description = "", 
+		UpgradeType = Modifier, 
+		TargetType = Ship, 
+		UpgradeName = "MaxSpeed", 
+		UpgradeValue = 1, 
+		TargetName = "Vgr_Scout", 
+		Icon = Icon_Speed, 
+		ShortDisplayedName = "Scout speed limiter", 
+		DoNotGrant = 1,
+	},
 	
 }
 -- Add these items to the research tree!

@@ -15,7 +15,7 @@ setPenetration(NewWeaponType,20,1,
 {LightArmour_hw1=0.30},
 {MediumArmour=1.0*1.05},
 {HeavyArmour=1.0},
-{ResArmour=0.8},
+{ResArmour=0.55},
 {HeavyArmour=1.0});
 setAccuracy(NewWeaponType,1,
 {Swarmer=0.01},
@@ -30,7 +30,7 @@ setAccuracy(NewWeaponType,1,
 {Frigate=1.0},
 {SmallCapitalShip=1.0},
 {BigCapitalShip=1.0},
-{Resource=0.75},
+{Resource=0.6},
 {munition=0.01});
 setAngles(NewWeaponType,0,-120,120,-2.5,60);
 setMiscValues(NewWeaponType,2.5,0.5);
