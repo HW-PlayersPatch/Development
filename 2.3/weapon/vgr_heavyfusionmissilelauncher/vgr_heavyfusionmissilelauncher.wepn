@@ -1,7 +1,7 @@
 
 StartWeaponConfig(NewWeaponType,"Fixed","Missile","Vgr_MediumMissile","Normal",40,3750,0,0,0,2,1,0,1,16,0,0,0,0,0,0,0.1,"Normal",0,1,0);
 AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",2700,2700,"");
-setPenetration(NewWeaponType,30,1,
+setPenetration(NewWeaponType,35,1,
 {PlanetKillerArmour=0},
 {SwarmerArmor=0.10},
 {SpaceMineArmor=1},

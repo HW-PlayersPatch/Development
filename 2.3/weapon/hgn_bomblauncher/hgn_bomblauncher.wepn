@@ -1,6 +1,6 @@
 StartWeaponConfig(NewWeaponType,"AnimatedTurret","Bullet","Plasma_Bomb","Normal Only",1800,2000,0,0,0,0,1,1,1,2.1,0,0,1,0,260,40,0.1,"Normal",0,0,0);
 AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",135,135,"");
-setPenetration(NewWeaponType,5,1,
+setPenetration(NewWeaponType,15,1,
 {Unarmoured=1.0},
 {Unarmoured_hw1=1.0},
 {LightArmour=0.7},

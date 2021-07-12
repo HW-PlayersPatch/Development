@@ -1,7 +1,6 @@
-
 NewSubSystemType = StartSubSystemConfig()
-NewSubSystemType.displayedName="$2040"
-NewSubSystemType.sobDescription="$2041"
+NewSubSystemType.displayedName="$2030"
+NewSubSystemType.sobDescription="$2031"
 NewSubSystemType.tacticalIcon="hexagon"
 NewSubSystemType.tacticalIconMinSize=0.0035
 NewSubSystemType.tacticalIconMinFadeSize=0.0045
@@ -9,7 +8,7 @@ NewSubSystemType.tacticalIconMaxFadeSize=0.008
 NewSubSystemType.groupMergeSize=0.001
 NewSubSystemType.mouseOverMinFadeSize=0.045
 NewSubSystemType.mouseOverMaxFadeSize=0.1
-NewSubSystemType.maxhealth=10000
+NewSubSystemType.maxhealth=25000
 NewSubSystemType.regentime=250
 NewSubSystemType.nlips=0
 NewSubSystemType.nlipsRange=0
@@ -21,20 +20,19 @@ NewSubSystemType.selectionLimit=5000
 NewSubSystemType.preciseATILimit=5000
 NewSubSystemType.selectionPriority=37.5
 NewSubSystemType.type="System"
-NewSubSystemType.typeString="CloakSensor"
+NewSubSystemType.typeString="HCEngine"
 NewSubSystemType.collateralDamage=100
-NewSubSystemType.inactiveTimeAfterDamage=10
+NewSubSystemType.inactiveTimeAfterDamage=80
 NewSubSystemType.activateHealthPercentage=0.1
-NewSubSystemType.costToBuild=800
-NewSubSystemType.timeToBuild=60
+NewSubSystemType.costToBuild=500
+NewSubSystemType.timeToBuild=35
 NewSubSystemType.isResearch=0
 NewSubSystemType.visible=1
+NewSubSystemType.innate=1
 LoadHODFile(NewSubSystemType,1);
-NewSubSystemType.BuildFamily="SubSystem_Hgn"
+NewSubSystemType.BuildFamily="SubSystem_Tai"
 NewSubSystemType.AttackFamily="SubSystem"
 NewSubSystemType.DockFamily="CantDock"
-NewSubSystemType.DisplayFamily="SubSystemSensors"
+NewSubSystemType.DisplayFamily="SubSystemModule"
 NewSubSystemType.ArmourFamily="SubSystemArmour"
-NewSubSystemType.sobDieTime=1
-AddSubSystemMultiplier(NewSubSystemType,"CloakDetection","ThisShipOnly","None",4,4,0);
-AddSubSystemMultiplier(NewSubSystemType,"VisualRange","ThisShipOnly","None",4,4,0);
+AddSubSystemMultiplier(NewSubSystemType,"Speed","ThisShipOnly","Linear",1,0,0);
