@@ -130,7 +130,7 @@ NewShipType.launchFormation="delta"
 addAbility(NewShipType, "ShipHold", 1, 0, 0, "rallypoint", "drone,drone1,drone2,drone3", 50)
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
-addAbility(NewShipType,"HyperSpaceCommand",1,1.1,200,700,0,4);
+addAbility(NewShipType,"HyperSpaceCommand",1,1,200,500,0,3);
 addAbility(NewShipType,"CanAttack",1,1,0,1,0.35,1.5,"Fighter_hw1, Fighter, Swarmer, Corvette_hw1, Corvette,,,,,, Capturer, Frigate, SmallCapitalShip, BigCapitalShip, Utility","frontal_Frigate",
 {Fighter="MoveToTargetAndShoot_Frigate"},
 {Fighter_hw1="MoveToTargetAndShoot_Frigate"},

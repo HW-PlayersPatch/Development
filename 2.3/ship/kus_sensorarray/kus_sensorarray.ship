@@ -132,7 +132,7 @@ NewShipType.launchFormation="delta"
 NewShipType.canJoinStrikeGroup=0
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
-addAbility(NewShipType,"HyperSpaceCommand",1,3,500,1300,0,4);
+addAbility(NewShipType,"HyperSpaceCommand",1,1,200,500,0,3);
 addAbility(NewShipType,"GuardCommand",1,3000,800);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"CanBeCaptured",90,0.5,"CapCap");
