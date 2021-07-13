@@ -74,8 +74,8 @@ NewShipType.antiFighterValue=0
 NewShipType.antiCorvetteValue=0
 NewShipType.antiFrigateValue=0
 NewShipType.totalValue=0
-NewShipType.buildCost=375
-NewShipType.buildTime=25
+NewShipType.buildCost=400
+NewShipType.buildTime=15
 NewShipType.buildPriorityOrder=10
 NewShipType.retaliationRange=4800
 NewShipType.retaliationDistanceFromGoal=160
@@ -131,8 +131,8 @@ NewShipType.launchNrOfShipsInDockFormation=1
 NewShipType.launchFormation="delta"
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
-addAbility(NewShipType,"HyperSpaceCommand",1,1,250,500,0,3);
-addAbility(NewShipType,"FormHyperspaceGateCommand",1,1000,500,500,0);
+addAbility(NewShipType,"HyperSpaceCommand",1,1,250,500,0,1);
+addAbility(NewShipType,"FormHyperspaceGateCommand",1,1000,500,200,0);
 addAbility(NewShipType,"CanBeCaptured",30,0.1);
 LoadModel(NewShipType,1);
 addShield(NewShipType,"EMP",10000,20);
