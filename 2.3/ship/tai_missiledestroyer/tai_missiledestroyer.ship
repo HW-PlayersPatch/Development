@@ -141,7 +141,7 @@ NewShipType.launchFormation="delta"
 NewShipType.strikeGroupRadius=200
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
-addAbility(NewShipType,"HyperSpaceCommand",1,2.2,400,1200,0,4);
+addAbility(NewShipType,"HyperSpaceCommand",1,2,400,800,0,3);
 holdCanAttackFams = getShipStr(NewShipType, "CanAttackFams", "Corvette_hw1, Corvette, Fighter_hw1, Fighter, Utility,,,,,, Frigate, SmallCapitalShip, BigCapitalShip, Mothership")
 addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1.5,holdCanAttackFams,"Frontal",
 {Fighter="Frontal"},
