@@ -172,7 +172,6 @@ loadShipPatchList(NewShipType,"data:sound/sfx/ship/Hiigaran/NonMilitary/",0,"Eng
 loadLatchPointList(NewShipType,"SalCap","SalvagePoint1","SalvagePoint2");
 loadLatchPointList(NewShipType,"CapCap","CapturePoint1");
 loadLatchPointList(NewShipType,"RepCap","RepairPoint1","RepairPoint2");
-SpawnDustCloudOnDeath(NewShipType, "DustCloud_0", 1, 0,70,0,0, 0,0,0,40, 0,0,0,120, 0,0,0,10, 1.0,0.349,0.199,0.2, 100,50);
 NewShipType.minFalloffDamageDist=25
 NewShipType.maxFalloffDamageDist=25*3
 NewShipType.maxFalloffScuttleDamageDist=25*6

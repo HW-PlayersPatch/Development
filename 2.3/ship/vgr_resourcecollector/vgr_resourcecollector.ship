@@ -162,7 +162,6 @@ setEngineTrail(NewShipType,1,4.5,"trail_ribbon.tga",0.001,0.1,0.025,2);
 setEngineBurn(NewShipType,6,0.5,0.6,16,1.05,0.1,0.25,28);
 loadShipPatchList(NewShipType,"data:sound/sfx/ship/Vaygr/NonMilitary/",0,"Engines/VResourcerEng","",1,"Ambience/VResourcerAmb","");
 loadLatchPointList(NewShipType,"SalCap","SalvagePoint1");		
-SpawnDustCloudOnDeath(NewShipType, "DustCloud_0", 1, 0,70,0,0, 0,0,0,40, 0,0,0,120, 0,0,0,10, 1.0,0.349,0.199,0.2, 100,50);
 NewShipType.minFalloffDamageDist=15
 NewShipType.maxFalloffDamageDist=15*3
 NewShipType.maxFalloffScuttleDamageDist=15*6

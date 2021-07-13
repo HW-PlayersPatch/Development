@@ -166,7 +166,6 @@ loadLatchPointList(NewShipType,"RepCap","RepairPoint1","RepairPoint2");
 loadLatchPointList(NewShipType,"SalCap","SalvagePoint1","SalvagePoint2");
 loadLatchPointList(NewShipType,"CapCap","CapturePoint1");
 --loadLatchPointList(NewShipType,"RepCap","SalvagePoint1","SalvagePoint2","CapturePoint1");								 
-SpawnDustCloudOnDeath(NewShipType, "DustCloud_0", 1, 0,70,0,0, 0,0,0,40, 0,0,0,120, 0,0,0,10, 1.0,0.349,0.199,0.2, 100,50)
 NewShipType.minFalloffDamageDist=25
 NewShipType.maxFalloffDamageDist=25*3
 NewShipType.maxFalloffScuttleDamageDist=25*6

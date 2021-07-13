@@ -164,7 +164,6 @@ setEngineBurn(NewShipType,6,3,3,4,0.1,0.1,0.1,15);
 setEngineGlow(NewShipType,1,1,1.02,20,300,50,1.5,{0.27, 0.47, .69, 0.25});
 loadShipPatchList(NewShipType,"data:sound/sfx/ship/Hiigaran/NonMilitary/",0,"Engines/HResourcerEng","",1,"Ambience/HResourcerAmb","");
 loadLatchPointList(NewShipType,"SalCap","SalvagePoint1");		
-SpawnDustCloudOnDeath(NewShipType, "DustCloud_0", 1, 0,70,0,0, 0,0,0,40, 0,0,0,120, 0,0,0,10, 1.0,0.349,0.199,0.2, 100,50)
 NewShipType.minFalloffDamageDist=15
 NewShipType.maxFalloffDamageDist=15*3
 NewShipType.maxFalloffScuttleDamageDist=15*6
