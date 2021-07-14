@@ -17,7 +17,7 @@ setPenetration(NewWeaponType,15,1,
 {MediumArmour=1.20},
 {SuperUtilityArmour = 1.20},
 {HeavyArmour=1.10},
-{DestroyerArmour = 1.10});
+{DestroyerArmour = 1.20});
 setAccuracy(NewWeaponType,1,
 {Swarmer=0.01},
 {SpaceMine=0.01},
