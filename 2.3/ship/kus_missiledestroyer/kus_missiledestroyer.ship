@@ -68,7 +68,7 @@ NewShipType.AvoidanceFamily="Capital"
 NewShipType.DisplayFamily="Capital"
 NewShipType.AutoFormationFamily="CapShip"
 NewShipType.CollisionFamily="Big"
-NewShipType.ArmourFamily=getShipStr(NewShipType, "ArmourFamily", "HeavyArmour")
+NewShipType.ArmourFamily=getShipStr(NewShipType, "ArmourFamily", "DestroyerArmour")
 setSupplyValue(NewShipType, "Capital", 1.0)
 setSupplyValue(NewShipType, "Destroyer", 1.0)
 setSupplyValue(NewShipType, "MissileDestroyer", 1.0)

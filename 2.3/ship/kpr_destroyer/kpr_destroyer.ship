@@ -71,7 +71,7 @@ NewShipType.AvoidanceFamily="SuperCap"
 NewShipType.DisplayFamily="Capital"
 NewShipType.AutoFormationFamily="CapShip"
 NewShipType.CollisionFamily="Big"
-NewShipType.ArmourFamily=getShipStr(NewShipType, "ArmourFamily", "HeavyArmour")
+NewShipType.ArmourFamily=getShipStr(NewShipType, "ArmourFamily", "DestroyerArmour")
 setSupplyValue(NewShipType, "SinglePlayerMisc", 1.0)
 NewShipType.fighterValue=0
 NewShipType.corvetteValue=0
