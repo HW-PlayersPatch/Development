@@ -669,7 +669,7 @@ armourFamily =
 		name = "DestroyerArmour"
 	},
 	{
-		name = "SuperUtility"
+		name = "SuperUtilityArmour"
 	}
 }
 
