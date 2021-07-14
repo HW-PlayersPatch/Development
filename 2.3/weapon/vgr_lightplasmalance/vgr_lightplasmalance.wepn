@@ -9,6 +9,7 @@ setPenetration(NewWeaponType,5,1,
 {TurretArmour=0.6},
 {MediumArmour=0.4},
 {HeavyArmour=0.4},
+{DestroyerArmour = 0.4},
 {PlanetKillerArmour=0},
 {SwarmerArmor=0.10},
 {SpaceMineArmor=0.5});

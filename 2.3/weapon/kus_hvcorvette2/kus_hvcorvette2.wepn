@@ -14,6 +14,7 @@ setPenetration(NewWeaponType,15,1,
 {LightArmour_hw1=0.25},
 {MediumArmour=0.91},
 {HeavyArmour=0.87},
+{DestroyerArmour = 0.87},
 {MineArmour=0.3},
 {TurretArmour=1.0},
 {ResArmour=0.4});
