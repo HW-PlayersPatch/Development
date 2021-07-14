@@ -13,6 +13,8 @@ setPenetration(NewWeaponType,5,0.5,
 {unarmoured=0.02*3},
 {unarmoured_hw1=0.02*3});
 setAccuracy(NewWeaponType,1,
+{Fighter=0.5},
+{Fighter_hw1=0.5},
 {Swarmer=0.01},
 {SpaceMine=0.01},
 {Torpedo=0},
