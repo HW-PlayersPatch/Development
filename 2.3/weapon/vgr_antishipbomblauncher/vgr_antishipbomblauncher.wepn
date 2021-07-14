@@ -12,7 +12,7 @@ setPenetration(NewWeaponType,5,1,
 {LightArmour=0.7},
 {LightArmour_hw1=0.8},
 {MediumArmour=1.10},
-{SuperUtilityArmour = 1.10},
+{SuperUtilityArmour = 1},
 {HeavyArmour=1.12},
 {DestroyerArmour = 1.22},
 {SubSystemArmour=2.5});
