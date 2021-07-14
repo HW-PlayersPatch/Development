@@ -33,7 +33,7 @@ setAccuracy(NewWeaponType,1,
 {Resource=0.80},
 {SmallCapitalShip=0.90},
 {BigCapitalShip=0.90},
-{ResourceLarge=0.60});
+{ResourceLarge=0.95});
 setAngles(NewWeaponType,0,-23,23,-23,23);
 setFrustratedTimers(NewWeaponType, 0.0, 10.0);
 setLifetimeMult(NewWeaponType, 1.55);
