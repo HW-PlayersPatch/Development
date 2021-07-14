@@ -1,1 +1,1 @@
-PlayersPatchBuildNumber = " + 2.3 Players Patch | build 15 (lategame)"
+PlayersPatchBuildNumber = " + 2.3 Players Patch | build 15 (ArmourFamily update)"
