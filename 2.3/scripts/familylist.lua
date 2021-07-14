@@ -665,6 +665,12 @@ armourFamily =
     {
         name = "ProbeArmour",
     },
+	{
+		name = "DestroyerArmour"
+	},
+	{
+		name = "SuperUtility"
+	}
 }
 
 -- numParam -> display priority -> order undefined if priority not unique
