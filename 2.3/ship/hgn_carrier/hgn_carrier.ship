@@ -70,7 +70,7 @@ NewShipType.AvoidanceFamily="SuperCap"
 NewShipType.DisplayFamily="Capital"
 NewShipType.AutoFormationFamily="CapShip"
 NewShipType.CollisionFamily="Big"
-NewShipType.ArmourFamily=getShipStr(NewShipType, "ArmourFamily", "HeavyArmour")
+NewShipType.ArmourFamily=getShipStr(NewShipType, "ArmourFamily", "SuperUtilityArmour")
 setSupplyValue(NewShipType, "Capital", 1.0)
 setSupplyValue(NewShipType, "Carrier", 1.0)
 NewShipType.AttackPriorityMultiplier=0.96
