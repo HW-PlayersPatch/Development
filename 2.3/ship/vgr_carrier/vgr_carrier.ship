@@ -133,6 +133,7 @@ NewShipType.dockFormation="delta"
 NewShipType.queueFormation="dockline"
 NewShipType.dontDockWithOtherRaceShips=1
 NewShipType.ignoreRaceWhenDocking=0
+NewShipType.canBeDockForSalvageCapture=2
 addAbility(NewShipType,"CanLaunch");
 NewShipType.launchTimeBetweenTwoFormations=1
 NewShipType.launchTimeBeforeStart=2
