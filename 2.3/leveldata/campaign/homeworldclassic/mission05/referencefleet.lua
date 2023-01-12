@@ -13,32 +13,36 @@ Fleet =
     },
     {
         Type = "Kus_ResourceCollector",
-        Number = 2,
+        Number = 3,
     },
     {
         Type = "Kus_SalvageCorvette",
-        Number = 2,
-    },       
+        Number = 4,
+    },
     {
         Type = "Kus_Interceptor",
-        Number =12,
+        Number = 20,
     },
     {
         Type = "Kus_LightCorvette",
-        Number = 4,
+        Number = 10,
     },
     {
         Type = "Kus_HeavyCorvette",
-        Number = 4,
+        Number = 10,
     },
     {
         Type = "Kus_AssaultFrigate",
         Number = 2,
     },
+    {
+        Type = "Kus_IonCannonFrigate",
+        Number = 2,
+    },
 }
 
 -- and we think they should have this much money:
-RUs = 1000
+RUs = 1600
 
 --Load expanded options
 dofilepath("data:scripts/playerspatch_util.lua")
