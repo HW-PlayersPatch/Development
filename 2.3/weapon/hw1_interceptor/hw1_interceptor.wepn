@@ -17,7 +17,7 @@ setPenetration(NewWeaponType,5,1,
 {TurretArmour=0.50},
 {ResArmour=0.50});
 setAccuracy(NewWeaponType,1,
-{Swarmer=0.80},
+{Swarmer=1.0},
 {SpaceMine=0.35},
 {Torpedo=0},
 {HeavyMissile=0},
