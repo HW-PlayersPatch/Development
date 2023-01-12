@@ -13,7 +13,7 @@ Fleet =
     },
     {
         Type = "Kus_ResourceCollector",
-        Number = 1,
+        Number = 2,
     },
     {
         Type = "Kus_SalvageCorvette",
@@ -21,7 +21,7 @@ Fleet =
     },
     {
         Type = "Kus_Scout",
-        Number = 5,
+        Number = 8,
     },
     {
         Type = "Kus_Interceptor",
@@ -30,11 +30,11 @@ Fleet =
 }
 
 -- and we think they should have this much money:
-RUs = 200
+RUs = 100
 
 --Load expanded options
 dofilepath("data:scripts/playerspatch_util.lua")
 RefMissionDifficultyScale = GetMissionDifficultyScale()
 
 multiplierForExtraShips = RefMissionDifficultyScale
-multiplierForExtraRU = RefMissionDifficultyScale
+multiplierForExtraRU = 1 -- dont scale RU for early missions
