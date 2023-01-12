@@ -41,4 +41,4 @@ dofilepath("data:scripts/playerspatch_util.lua")
 RefMissionDifficultyScale = GetMissionDifficultyScale()
 
 multiplierForExtraShips = RefMissionDifficultyScale
-multiplierForExtraRU = RefMissionDifficultyScale
+multiplierForExtraRU = 1 -- dont scale RU for early missions
