@@ -13,19 +13,19 @@ Fleet =
     },
     {
         Type = "Kus_ResourceCollector",
-        Number = 3,
-    },
-    {
-        Type = "Kus_SalvageCorvette",
         Number = 2,
-    },    
+    },
     {
         Type = "Kus_Interceptor",
         Number = 20,
     },
     {
-        Type = "Kus_AttackBomber",
-        Number = 12,
+        Type = "Kus_SalvageCorvette",
+        Number = 2,
+    },
+    {
+        Type = "Kus_RepairCorvette",
+        Number = 2,
     },
     {
         Type = "Kus_LightCorvette",
