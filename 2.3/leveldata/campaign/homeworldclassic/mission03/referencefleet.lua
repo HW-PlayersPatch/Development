@@ -29,7 +29,7 @@ Fleet =
     },
     {
         Type = "Kus_LightCorvette",
-        Number = 10,
+        Number = 8,
     },
     {
         Type = "Kus_HeavyCorvette",
@@ -38,7 +38,7 @@ Fleet =
 }
 
 -- and we think they should have this much money:
-RUs = 800
+RUs = 1200
 
 --Load expanded options
 dofilepath("data:scripts/playerspatch_util.lua")
