@@ -1,7 +1,7 @@
 --Kushan
 supplyLimit("Frigate", 33);
 
-supplyLimit("Resource", 33);
-supplyLimit("ResourceCollector", 28);
+supplyLimit("Resource", 31);
+supplyLimit("ResourceCollector", 26);
 
 supplyDesc("Battlecruiser", "HeavyCruiser");
