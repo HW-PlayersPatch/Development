@@ -390,6 +390,10 @@ attackFamily =
 		numParam = 1,
 	},
 	{
+		name = "SmallTorpedo",
+		numParam = 1,
+	},
+	{
 		name = "HeavyMissile",
 		numParam = 1,
 	},
