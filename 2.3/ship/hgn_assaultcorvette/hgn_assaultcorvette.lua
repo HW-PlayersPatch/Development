@@ -1,3 +1,3 @@
 function Update_Hgn_Assault_Corvette(CustomGroup, playerIndex, shipID)
-    UnderAttackReissueDock(CustomGroup)
+    SobGroup_UnderAttackReissueDock(CustomGroup)
 end
