@@ -1,4 +1,7 @@
-dofilepath("data:scripts/playerspatch_ships_util.lua")
+if (GLOBAL_LIB_IMPORTED == nil or GLOBAL_LIB_IMPORTED == 0) then
+	dofilepath("data:scripts/playerspatch/playerspatch_ships_util.lua")
+	GLOBAL_LIB_IMPORTED = 1
+end
 
 function Create_Vgr_Mothership(CustomGroup, playerIndex, shipID) 	
 	if playerIndex == Universe_CurrentPlayer() then

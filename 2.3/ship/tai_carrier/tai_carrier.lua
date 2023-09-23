@@ -1,4 +1,7 @@
-dofilepath("data:scripts/playerspatch_ships_util.lua")
+if (GLOBAL_LIB_IMPORTED == nil or GLOBAL_LIB_IMPORTED == 0) then
+	dofilepath("data:scripts/playerspatch/playerspatch_ships_util.lua")
+	GLOBAL_LIB_IMPORTED = 1
+end
 
 function Load_Tai_Carrier(playerIndex)    
 	SobGroup_CreateIfNotExist("tai_carrier"..playerIndex)
@@ -47,7 +50,7 @@ function Update_Tai_Carrier(CustomGroup, playerIndex, shipID)
 		SobGroup_AbilityActivate(CustomGroup, AB_Hyperspace, 0)	
 	end
 
-	NoSalvageScuttle(CustomGroup, playerIndex, shipID)
+	SobGroup_NoSalvageScuttle(CustomGroup, playerIndex, shipID)
 
 	ShowProductionSubsystems(CustomGroup, playerIndex, "CC")
 end
