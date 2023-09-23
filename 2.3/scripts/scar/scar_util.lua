@@ -246,7 +246,7 @@ end
 -- Logs reactive fleet info to HwRM.log if the -luatrace command line flag is used
 function HW2_ReactiveInfo()
 
-	dofilepath("data:scripts/playerspatch_util.lua")
+	dofilepath("data:scripts/playerspatch/playerspatch_sp_util.lua")
 	
 	local extra_ships = ((GetActualPlayerFleetSizeInRU() - GetReactiveFleetSizeInRU())*GetMultiplierForExtraShips() )  --Add multiplier to log adequate info
 	local extra_money = ((GetActualPlayerFleetExtraRU() - GetReactiveFleetExtraRU())*GetMultiplierForExtraRU() )

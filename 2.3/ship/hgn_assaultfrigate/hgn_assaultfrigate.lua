@@ -1,3 +1,3 @@
 function Update_Hgn_AssaultFrigate(CustomGroup, playerIndex, shipID)
-    NoSalvageScuttle(CustomGroup, playerIndex, shipID)
+    SobGroup_NoSalvageScuttle(CustomGroup, playerIndex, shipID)
 end
